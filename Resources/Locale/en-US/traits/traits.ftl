@@ -62,3 +62,6 @@ trait-french-desc = Your accent seems to have a certain «je ne sais quoi».
 
 trait-spanish-name = Spanish accent
 trait-spanish-desc = Hola señor, donde esta la biblioteca.
+
+trait-uncloneable-name = Uncloneable
+trait-uncloneable-desc = Cannot be cloned
