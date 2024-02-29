@@ -67,7 +67,7 @@ jobs:
         username: staticfiles
         key: ${{ secrets.UMBRA_BUILD_PUSH_KEY }}
         passphrase: ${{ secrets.UMBRA_BUILD_PUSH_PASSPHRASE }}
-        script: /home/staticfiles/workdir/ingest.sh
+        script: "/home/staticfiles/workdir/ingest.sh ${{ github.sha }}"
 
     # - name: Publish changelog (Discord)
     #   run: Tools/actions_changelogs_since_last_run.py
