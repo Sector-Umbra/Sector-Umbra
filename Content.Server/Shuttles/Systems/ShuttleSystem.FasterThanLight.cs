@@ -763,8 +763,7 @@ public sealed partial class ShuttleSystem
 
                 if (_bodyQuery.TryGetComponent(ent, out var mob))
                 {
-                    var gibs = _bobby.GibBody(ent, body: mob);
-                    immune.UnionWith(gibs);
+                    // UMBRA CD: FTL Gibbing removed.
                     continue;
                 }
 
