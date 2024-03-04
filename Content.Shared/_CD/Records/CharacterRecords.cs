@@ -7,7 +7,6 @@ namespace Content.Shared._CD.Records;
 [Serializable, NetSerializable]
 public sealed class CharacterRecords
 {
-    private const int TextShortLen = 64;
     private const int TextMedLen = 128;
     private const int TextVeryLargeLen = 2048;
 
@@ -68,6 +67,11 @@ public sealed class CharacterRecords
         public void EnsureValid()
         {
             Title = ClampString(Title, TextMedLen);
+            if (Title.Length == 0)
+            {
+                // If the user does not proved a title, give it something so it is not blank
+                Title = Loc.GetString("cd-records-entry-default-title");
+            }
             Involved = ClampString(Involved, TextMedLen);
             Description = ClampString(Description, TextVeryLargeLen);
         }
@@ -186,11 +190,11 @@ public sealed class CharacterRecords
         Height = Math.Clamp(Height, 0, MaxHeight);
         Weight = Math.Clamp(Weight, 0, MaxWeight);
         EmergencyContactName =
-            ClampString(EmergencyContactName, TextShortLen);
-        IdentifyingFeatures = ClampString(IdentifyingFeatures, TextShortLen);
-        Allergies = ClampString(Allergies, TextShortLen);
-        DrugAllergies = ClampString(DrugAllergies, TextShortLen);
-        PostmortemInstructions = ClampString(PostmortemInstructions, TextShortLen);
+            ClampString(EmergencyContactName, TextMedLen);
+        IdentifyingFeatures = ClampString(IdentifyingFeatures, TextMedLen);
+        Allergies = ClampString(Allergies, TextMedLen);
+        DrugAllergies = ClampString(DrugAllergies, TextMedLen);
+        PostmortemInstructions = ClampString(PostmortemInstructions, TextMedLen);
 
         EnsureValidEntries(EmploymentEntries);
         EnsureValidEntries(MedicalEntries);

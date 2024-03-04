@@ -12,7 +12,7 @@ namespace Content.Client._CD.Records.UI;
 [GenerateTypedNameReferences]
 public sealed partial class CharacterRecordViewer : FancyWindow
 {
-    public event Action<NetEntity?, uint?>? OnKeySelected;
+    public event Action<uint?, uint?>? OnListingItemSelected;
     public event Action<StationRecordFilterType, string?>? OnFiltersChanged;
 
     private bool _isPopulating;
@@ -53,8 +53,8 @@ public sealed partial class CharacterRecordViewer : FancyWindow
             if (!RecordListing.GetSelected().Any())
                 return;
             var selected = RecordListing.GetSelected().First();
-            var (ent, key) = ((NetEntity, uint?))selected.Metadata!;
-            OnKeySelected?.Invoke(ent, key);
+            var (index, listingKey) = ((uint, uint?))selected.Metadata!;
+            OnListingItemSelected?.Invoke(index,  listingKey);
         };
 
         RecordListing.OnItemDeselected += _ =>
@@ -63,7 +63,7 @@ public sealed partial class CharacterRecordViewer : FancyWindow
             // This could cause a deselection but we don't want to really deselect because it would
             // interrupt what the player is doing.
             if (!_isPopulating)
-                OnKeySelected?.Invoke(null, null);
+                OnListingItemSelected?.Invoke(null, null);
         };
 
         RecordFilters.OnPressed += _ =>
@@ -74,6 +74,11 @@ public sealed partial class CharacterRecordViewer : FancyWindow
         RecordFiltersReset.OnPressed += _ =>
         {
             OnFiltersChanged?.Invoke(StationRecordFilterType.Name, null);
+        };
+
+        RecordFiltersValue.OnTextEntered += text =>
+        {
+            OnFiltersChanged?.Invoke(_filterType, text.Text);
         };
 
         RecordFilterType.OnItemSelected += eventArgs =>
@@ -180,15 +185,21 @@ public sealed partial class CharacterRecordViewer : FancyWindow
             RecordFilterType.SelectId((int) state.Filter.Type);
         }
 
-        _isPopulating = true;
-
-        RecordListing.Clear();
-        foreach (var (key, (txt, stationRecordsKey)) in state.RecordListing)
+        // If the counts are the same it is probably not needed to refresh the entry list. This provides
+        // a much better UI experience at the cost of the user possibly needing to re-open the UI under
+        // very specific circumstances that are *very* unlikely to appear in real gameplay.
+        if (RecordListing.Count != state.RecordListing.Count)
         {
-            RecordListing.AddItem(txt, metadata: (key, stationRecordsKey));
-        }
+            _isPopulating = true;
 
-        _isPopulating = false;
+            RecordListing.Clear();
+            foreach (var (key, (txt, stationRecordsKey)) in state.RecordListing)
+            {
+                RecordListing.AddItem(txt, metadata: (key, stationRecordsKey));
+            }
+
+            _isPopulating = false;
+        }
 
         #endregion
 
@@ -216,7 +227,7 @@ public sealed partial class CharacterRecordViewer : FancyWindow
         RecordContainerSpecies.Text = record.Species;
         RecordContainerHeight.Text = cr.Height + " " + UnitConversion.GetImperialDisplayLength(cr.Height);
         RecordContainerWeight.Text = cr.Weight + " " + UnitConversion.GetImperialDisplayMass(cr.Weight);
-        RecordContainerContactName.SetMessage(cr.EmergencyContactName);
+        RecordContainerContactName.SetValue(cr.EmergencyContactName);
 
         RecordContainerEmployment.Visible = false;
         RecordContainerMedical.Visible = false;
@@ -282,16 +293,16 @@ public sealed partial class CharacterRecordViewer : FancyWindow
         RecordContainerMedical.Visible = true;
         var cr = record.CharacterRecords;
         RecordContainerMedical.Visible = true;
-        RecordContainerAllergies.SetMessage(cr.Allergies);
-        RecordContainerDrugAllergies.SetMessage(cr.DrugAllergies);
-        RecordContainerPostmortem.SetMessage(cr.PostmortemInstructions);
+        RecordContainerAllergies.SetValue(cr.Allergies);
+        RecordContainerDrugAllergies.SetValue(cr.DrugAllergies);
+        RecordContainerPostmortem.SetValue(cr.PostmortemInstructions);
         RecordContainerSex.Text = record.Sex.ToString();
     }
 
     private void UpdateRecordBoxSecurity(FullCharacterRecords record, (SecurityStatus, string?)? criminal)
     {
         RecordContainerSecurity.Visible = true;
-        RecordContainerIdentFeatures.SetMessage(record.CharacterRecords.IdentifyingFeatures, defaultColor: Color.White);
+        RecordContainerIdentFeatures.SetValue(record.CharacterRecords.IdentifyingFeatures);
         RecordContainerFingerprint.Text = record.Fingerprint ?? Loc.GetString("cd-character-records-viewer-unknown");
         RecordContainerDNA.Text = record.DNA ?? Loc.GetString("cd-character-records-viewer-unknown");
 
