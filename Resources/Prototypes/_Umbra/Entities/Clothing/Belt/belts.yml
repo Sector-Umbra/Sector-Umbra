@@ -1,0 +1,16 @@
+﻿- type: entity
+  parent: ClothingBeltStorageBase
+  id: ClothingBeltMoonlitHolster
+  name: moonlit shoulder holster
+  description: A robust holster tailored to Aur'sai.
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Belt/moonlit.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Belt/moonlit.rsi
+  - type: Item
+    size: Normal
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,3,3
