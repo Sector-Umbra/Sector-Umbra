@@ -11,6 +11,9 @@
     state: icon
     noRot: false
   - type: ImmovableRod
+    damage:
+      types:
+        Piercing: 300
   - type: TimedDespawn
     lifetime: 30.0
   - type: Physics

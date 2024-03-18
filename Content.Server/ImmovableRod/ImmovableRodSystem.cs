@@ -3,6 +3,7 @@ using Content.Server.Popups;
 using Content.Shared.Body.Components;
 using Content.Shared.Examine;
 using Content.Shared.Popups;
+using Content.Shared.Damage;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Map;
@@ -22,6 +23,7 @@ public sealed class ImmovableRodSystem : EntitySystem
     [Dependency] private readonly PopupSystem _popup = default!;
     [Dependency] private readonly SharedPhysicsSystem _physics = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
+    [Dependency] private readonly DamageableSystem _damageableSystem = default!; // Sector Umbra
 
     public override void Update(float frameTime)
     {
@@ -100,7 +102,8 @@ public sealed class ImmovableRodSystem : EntitySystem
             component.MobCount++;
 
             _popup.PopupEntity(Loc.GetString("immovable-rod-penetrated-mob", ("rod", uid), ("mob", ent)), uid, PopupType.LargeCaution);
-            _bodySystem.GibBody(ent, body: body);
+            // Sector Umbra: deal damage instead of gibbing
+            _damageableSystem.TryChangeDamage(ent, component.Damage, ignoreResistances: true, origin: uid);
             return;
         }
 
