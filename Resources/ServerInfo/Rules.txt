@@ -1,115 +1,89 @@
-[color=#ff0000]YOU MUST BE AT LEAST 16 YEARS OF AGE TO PLAY ON WIZARD'S DEN SERVERS. ANY USERS SUSPECTED OF BEING UNDER 16 YEARS OF AGE WILL BE BANNED UNTIL THEY ARE OF AGE.[/color]
+[color=#ff0800][bold]DISCLAIMER:[/bold] All Umbra servers are strictly 16+ only. If you are underage, you [bold]will be banned[/bold] for double the amount of time that it takes for you to be of age.[/color]
 
-[color=#ff0000]DISCONNECTING FROM OR IGNORING/EVADING ADMIN-HELPS WILL RESULT IN AN APPEAL ONLY BAN.[/color]
 
-This is the "short" form of the rules, which has all the information any regular player should need. You can find the "long" form of the rules with more examples & clarifications of any ambiguity on our wiki at [color=#a4885c]wiki.spacestation14.io[/color], should you need it.
+[head=2][color=#ffdd47][bold]1.0 -[/bold] The Golden Rule Policy.[/color][/head]
+Game admins have the final say on all rules, game issues, and punishments. We reserve the right to remove you under this policy if we see fit. Admins will be held up to high standards when invoking this policy.
 
-[color=#ff0000]Recent Changes[/color]
-    - Revolutionary rules have been added (#12, #15)
-    - Silicon rules have been added (#22)
-    - Security/command rules have been updated to address forced borging (#21)
 
-[color=#a4885c]01.[/color] [color=#a4885c]The[/color] [color=#ffd700]Golden[/color] [color=#a4885c]Rule.[/color] Admins may excercise discretion with rules as they see fit. If you rule lawyer or line skirt, you will get removed. Admins will answer for use of this privilege.
+[head=2][color=#ff3636][bold]2.0 -[/bold] Zero Tolerance Policies.[/color][/head]
+[color=#e6e6e6]Policies and rules that we will not provide leeway for or tolerate under any circumstance.[/color]
 
-[color=#ff0000]ZERO TOLERANCE RULES[/color]
+[color=#e6e6e6][color=#ff3636][bold]2.1 -[/bold][/color] Do not attempt to evade bans, ahelp questioning, or punishments. Do not abuse the ahelp system.[/color][color=#c4c4c4]
+[bullet] Ban evading using an alternate account or other means will result in an immediate voucher ban.
+[bullet] Evading ahelp questioning by disconnecting upon being ahelped, during questioning, or ignoring the admin will usually end in an appeal ban.
+[bullet] Attempting to get around role bans by being promoted to that role in-game will lead to a game ban.
+[bullet] Spamming or being aggressive to our admins in ahelps will result in an appeal ban.[/color]
 
-[color=#a4885c]02.[/color] Absolutely no hate speech, slurs, bigotry, racism, specism (demeaning other characters in-game due to their in-game race), sexism, disability-related or anything even remotely similar. (YOU WILL GET PERMABANNED)
+[color=#e6e6e6][color=#ff3636][bold]2.2 -[/bold][/color] This is an English only server, as we can not moderate other languages speaking in anything but English will usually lead to a single warning, then ban if you do not cease.[/color]
 
-[color=#a4885c]03.[/color] Absolutely no Erotic Roleplay (ERP) or sexual content, including direct or indirect mentions of sexual behavior or actions. (YOU WILL GET PERMABANNED) (Leeway is given to insults, ex: 'You are a dickhead', do not push it)
+[color=#e6e6e6][color=#ff3636][bold]2.3 -[/bold][/color] Absolutely no discrimination nor bigotry against any player or their characters for any reason. This covers ableism, homophobia, racism, sexism, speciesism, and hate speech as a whole. If it's to the point where it makes someone uncomfortable and they ahelp you or an admin finds an issue with it, you will answer for it.[/color]
 
-[color=#a4885c]04.[/color] Don't communicate in-game/in-character information through methods outside of the game (such as talking in Discord with other users actively playing or by talking to your sibling across the room while you are both playing). This is referred to as "Metacomming". Adminstrators cannot police metacommunications, we must assume it is being abused. (ALL INVOLVED WILL GET PERMABANNED)
+[color=#e6e6e6][color=#ff3636][bold]2.4 -[/bold][/color] No sexual content, disgusting RP, or gross statements. This is not an 18+ server. This means no erotic roleplay, emotes and messages that are sexual in nature, or overtly disgusting things no one wants to hear. Includes "technically not NSFW" jokes.[/color]
 
-[color=#a4885c]05.[/color] Attempting to evade game bans will result in an automatic appeal-only permanent ban that is only appealable after six months and only with a voucher of good behavior from another SS13/SS14 server. Attempting to evade job bans will result in an appeal-only permanent ban. (YOU WILL GET BANNED MUCH WORSE THAN YOU ALREADY WERE)
+[color=#e6e6e6][color=#ff3636][bold]2.5 -[/bold][/color] Do not communicate in-round information about an on-going round through multiple accounts or to other people.[/color][color=#c4c4c4]
+[bullet] Communicating current-round info out of character - also known as "metacommunicating" - includes posting screenshots of a live round, talking about in-character events in out-of-character, sitting in a voice chat talking about the round, etc. It does not matter how minor it is, this is zero tolerance.
+[bullet] Do not multikey, which is to play or spectate in the same round with multiple accounts operated by you.[/color]
 
-[color=#ff0000]GENERAL ETIQUETTE[/color]
+[color=#e6e6e6][color=#ff3636][bold]2.6 -[/bold][/color] Intentionally using and/or abusing exploits, bugs, or external programs are not allowed.[/color][color=#c4c4c4]
+[bullet] The moment you learn of a bug, you are expected to report it immediately and never intentionally use it again.
+[bullet] Some examples of external programs are as follows: autoclickers, macros, client cheats, etc.
+[bullet] Any form of cheating or hacking will immediately result in a permanent ban with no chance of appeal without a voucher from another reputable server.[/color]
 
-[color=#a4885c]06.[/color] These are English servers. Speak only English in IC and OOC.
 
-[color=#a4885c]07.[/color] Don't use exploits or external programs to play, gain an advantage, or disrupt/crash the round/server. This includes autoclickers and scripts to automate the game or evade AFK detection. Intentionally attempting to lag/crash the server will result in an immediate appeal-only ban.
+[head=2][color=#3bff72][bold]3.0 -[/bold] General Etiquette.[/color][/head]
+[color=#e6e6e6]General rules and common practice. The "bare-minimum" expectations that you should be following.[/color]
 
-[color=#a4885c]08.[/color] Don't use multiple SS14 accounts to play (referred to as "multi-keying"). Users knowingly using multiple SS14 accounts will have all of their accounts banned.
+[color=#e6e6e6][color=#3bff72][bold]3.1 -[/bold][/color] Do not be a huge dick and try not to over-escalate. You are playing a roleplaying game with other real people. Do not go out of your way to ruin the experience of other players, and do not grief.[/color][color=#c4c4c4]
+[bullet] Doing antagonistic actions without being an antagonist is commonly called "self-antagging."
+[bullet] Due to the nature of an HRP server, some leeway will be granted in terms of minor self-antagging. This means roleplaying out minor crimes, as long as they are not taken over the top and do not become uninteresting. Try not to commit the same crimes repeatedly, especially after in-character punishment. Generally, you should always ahelp to ask for permission to do things such as these.
+[bullet] The arrivals station is entirely off-limits; do not grief, attack others, or do any antagonistic acts on the terminal under any circumstance (this also applies to antagonists).
+[bullet] Try to avoid permanently killing or "round-removing" other players. While this is acceptable if it is in pursuit of an antagonistic objective, it is generally frowned upon and should be avoided if possible.
+[bullet] Try your best not to negatively affect absent or SSD players. Stealing, killing, and griefing these players is disallowed, however, things such as moving a player to a safe area or security performing a search acceptable.[/color]
 
-[color=#a4885c]09.[/color] Do not ignore the admin help relay or abuse it by flooding it with garbage, checking for admins before stating a problem (ex: "hello?", "any admins?"), using it as a chatroom, or sending messages of no substance. Hostility to administators in the relay will likely result in your removal. All admin helps are sent to the SS14 Discord.
+[color=#e6e6e6][color=#3bff72][bold]3.2 -[/bold][/color] You are playing a high-roleplay server; speak and act like a human being. While playing in this server, you will be held to a higher standard of roleplay. With this being the case, you are expected to actively engage in roleplay when it comes up.[/color][color=#c4c4c4]
+[bullet] Do not use text speech such as "omg," "idk," "wtf," or "lol."
+[bullet] Referring to gamey terms like "admins" or "RNG" is disallowed.
+[bullet] Do not abuse emotes to bypass chat filters. Emotes should represent actions that your character could actually perform. Emotes should have effort put into them; this means that you should not be typing things such as "John Doe motions with his hands to signal syndicate agents west of you."
+[bullet] Do not respond to events in a highly unbelievable manner, stick to how your character would react.[/color]
 
-[color=#ff0000]IN GAME & ROLEPLAY RULES[/color]
+[color=#e6e6e6][color=#3bff72][bold]3.3 -[/bold][/color] Do not disconnect, ghost, suicide, or otherwise intentionally permanently remove yourself from the round as an important role or while facing in-character punishment such as jail time without ahelping beforehand. You do not need to wait for a response, however, failure to notify admins will result in consequences.[/color][color=#c4c4c4]
+[bullet] This does not apply to cryo.[/color]
 
-[color=#a4885c]10.[/color] Pick a realistic name that could appear on a birth certificate with at least a first and last name (leeway is given to this for Clowns, Mimes, and non-human races).
-    - Names of notable famous or fictional persons or names that resemble/parody them are strictly forbidden. You are not clever if you slightly change a famous name around. Terrible names open you up to being politely reminded to change it, smited, or instantly banned, depending on severity.
-    - Names resulting in inappropriate phonetic play-on-words are forbidden (ex: "Mike Oxlong", "Ben Dover", "Dixie Normus"). They are also extremely overdone.
+[color=#e6e6e6][color=#3bff72][bold]3.4 -[/bold][/color] Your character name should be believable and realistic.[/color][color=#c4c4c4]
+[bullet] Your character name should not mimic popular real-life or fictional people, even if it is a "clever" plays on them, such as "White Walter."
+[bullet] Your character's name should not be phonetic word plays, such as "Mike Oxlong" or "Ben Dover."
+[bullet] Your name should not be overly dumb or gamey either, such as "John Graytide."
+[bullet] Names should not include titles, such as "Doctor," "Sergeant," or "Father."[/color]
 
-[color=#a4885c]11.[/color] Act like an actual human being on a space station in a low-roleplay (LRP) environment. Do not use text speak or emoticons IC, and do not refer to OOC things like admins in-game. Do not threaten players that you are calling the admins on them. Do not use emotes to bypass speech filters or muteness. You are not required to write a backstory or follow strict procedure; however, you are expected to at least make an effort to act like your role.
 
-[color=#a4885c]12.[/color] Don't be a dick. You are playing a multiplayer game with other people who also want to enjoy the game.
-    - [color=#ff0000]The arrivals station, shuttle, and general arrivals docking area are completely off-limits to any hostile activity, including activity by antagonists. Attacking newly spawned players in these areas or damaging/sabotaging these areas is strictly forbidden.[/color]
-    - Do not intentionally make other players' lives hell for your own amusement.
-    - [color=#ff0000]THE ROUND IS NOT OVER UNTIL THE END-ROUND SUMMARY APPEARS. KILLING SOMEONE FOR NO REASON BEFORE THIS WILL BE HANDLED ACCORDINGLY.[/color]
-    - Antagonists have a lot of leeway with this rule and may kill/sabotage as they see fit, however if your behavior degrades the experience for the majority of the server you will be told to stop. Antagonists are still generally forbidden from causing massive station damage early into the round (less than 30 minutes) and are forbidden from needlessly prolonging rounds. For antagonist specific rules, see the "long" form of the rules at [color=#a4885c]wiki.spacestation14.io[/color].
+[head=2][color=#59ffe1][bold]4.0 -[/bold] Roleplay Expectations.[/color][/head]
+[color=#e6e6e6]Expectations and policies centered around roleplay.[/color]
 
-[color=#a4885c]13.[/color] Don't harass or target players across rounds for actions in prior rounds or for actions outside of the game (this is referred to as "Metagrudging".)
-    - Annoying players for IC reasons in the current round is fine; doing it across rounds or as a ghost role after they kill you is not.
+[color=#e6e6e6][color=#59ffe1][bold]4.1 -[/bold][/color] Do not intentionally prepare items or locations "just in case" a certain scenario happens unless you have proper in-character reasoning, especially if it is intended to gain an upper-hand or advantage over another player. Umbra is heavily based around roleplay; you should generally be focused on this rather than playing to win.[/color][color=#c4c4c4]
+[bullet] The concept of "playing to win" is commonly referred to as "powergaming."
+[bullet] Standard Operating Procedure (SOP) dictates how areas should be locked down and what gear should be held and/or equipped during any given circumstance. Minor things such as getting a crowbar on round-start is fine, however, seeking out weapons is not.[/color]
 
-[color=#a4885c]14.[/color] Don't use information gained from outside your character's knowledge to gain an advantage (this is referred to as "Metagaming").
-    - Using information you gain from outside your own character (such as spectating while a ghost, metacomms, or other means) to your advantage is strictly forbidden. You remember all events up until you fall unconscious, even after cloning. If you take a ghost role, unless otherwise stated, you DO NOT REMEMBER ANYTHING from your past life.
+[color=#e6e6e6][color=#59ffe1][bold]4.2 -[/bold][/color] Because this is an HRP server, you should avoid abandoning your job for no good reason. You can focus on and off of work, or ask the Head of Personnel to clock you out if you plan to be away for quite some time. Don't spend the entire round away from your job while on duty and your department needs you.[/color]
 
-[color=#a4885c]15.[/color] Follow escalation rules and don't murder someone for slipping you, use common sense. Do not make Cargonia.
-    - You can defend yourself to the extent of protecting your own life.
-    - Security may use less-lethal force to effect arrests of criminals.
-    - Don't outright leave people to die if you get in a fight, make an effort to heal them or bring them to Medbay.
-    - Adminhelp the situation if you think someone is over-escalating.
-    - Department strikes, revolutions (ex: cargonia and any variation thereof), riots, cults, and any other type of similar largely disruptive behavior are strictly forbidden. Other than for revolutionary antagonists, these activities are strictly forbidden. All players, including antagonists other than revolutionaries, must obtain admin permission before engaging in this behavior (forewarning: you are unlikely to get permission).
+[color=#e6e6e6][color=#59ffe1][bold]4.3 -[/bold][/color] This server uses a New Life rule. You may not remember any events that may have happened while you were in an unconscious or dead state. You may not retain any knowledge that you have learned whilst you were a ghost.[/color][color=#c4c4c4]
+[bullet] If you enter a dead state and get defibbed back to life you forget all the events that led up to your death. (This is the basic type of memory loss for anything else that is not specified)
+[bullet] If you enter a dead state and get cloned back to life you forget all the events since the beginning of the shift.
+[bullet] Respawning as a new character eliminates all memory of everything that may have happened previously in that shift.[/color]
 
-[color=#a4885c]16.[/color] Don't immediately ghost or suicide from your role if you do not get antagonist (referred to as "Antag-rolling") or from head roles without notifying your chain of command or administrators.
-    - This is not fair to other players actually waiting patiently for an antagonist round. Alternatively, if you do not want to play an antagonist or do not want to cause conflict, do not opt-in for antagonist roles.
-    - Head of Staff roles help drive rounds. If you need to leave, please admin-help your role and that you are leaving. There is no need to wait for a reply when admin-helping that you need to disconnect as a head role.
+[color=#e6e6e6][color=#59ffe1][bold]4.4 -[/bold][/color] Full continuity of your character and events that happen to them is to be expected. All rounds are canonical unless stated otherwise by an admin.[/color][color=#c4c4c4]
+[bullet] You are allowed to recall past shifts in any manner unless it violates the New Life rule.
+[bullet] Punishments you receive will be enforced and carried out in-character throughout rounds. If your character gets demoted, you are expected to stay out of that job until a reasonable amount of time has passed or you are rehired again in-game.
+[bullet] Your characters should generally hold no more than two departmental jobs and a service side job in-character. You may swap departments from time to time so long as it doesn't happen constantly or consistently.
+[bullet] Permanent death is not required, as there is an off-site DNA storages available for all crewmembers.[/color]
 
-[color=#a4885c]17.[/color] Don't rush for or prepare equipment unrelated to your job for no purpose other then to have it "just in case" (referred to as "Powergaming").
-    - A medical doctor does not need insulated gloves, and the Head of Personnel does not need to give themselves armory access so they can go grab a gun. Have an actual reason for needing these things.
-    - Don't manufacture weapons, bombs, or death poisons before you know of any reason you would need them.
-    - Don't pre-emptively hide antagonist objectives or pre-emptively secure them with higher security then normally required.
-    - Don't manufacture or prepare things for the "end of the round" when the shuttle docks with Central Command.
+[color=#e6e6e6][color=#59ffe1][bold]4.5 -[/bold][/color] Stay within your job, reasonable knowledge, and abilities.[/color][color=#c4c4c4]
+[bullet] Do not use knowledge that you have learned out-of-character while you are in-character. This is referred to as "metagaming."
+[bullet] Unless your character has a past in a particular line of work, they should not know how to do jobs outside of their own.
+[bullet] Do not do the jobs of other people for them, only play the role you signed up for. If you want to work a different job, ask the Head of Personnel for a job change. Exceptions can be made for if no active staff exist for a department.
+[bullet] Basic crew should not be knowledgeable on most non-NT technology and items unless they've experienced it in-character. Security and command may have some leeway within reason.[/color]
 
-[color=#a4885c]18.[/color] Intentionally making yourself a major problem/annoyance/disruption for the crew or other players at large while not an antagonist is forbidden (referred to as "self-antagging").
-    - Don't openly try to cooperate with obvious or known antagonists as a non-antagonist.
-
-[color=#ff0000]SECURITY & COMMAND RULES[/color]
-If you regularly play Security or Command roles and got this far, we applaud you for reading. These rules also apply to any individual who is promoted or is acting in the place of a Security/Command role (unless they are an antagonist).
-
-[color=#a4885c]19.[/color] Command and Security are held to a higher standard of play.
-    - Be competent in your job and department. Failure to know the basics of your department is liable to result in a job ban.
-    - Do not willingly and openly cooperate with terrorists/antagonists. Do not give away your objective items. Some leeway is given to making deals with antagonists if the deal benefits the safety or situation of the station as a whole and not just yourself.
-    - Uphold the Law & maintain order. Do not engage in lawbreaking activity or troublemaker behavior. Security is expected to intervene into criminal activity where possible. Heads of Staff are at minimum expected to report criminal activity to Security.
-    - Do not immediately abandon your position as a Command role and go do whatever you want instead of managing your department/the station. Do not abuse your position or use it to make arbitrary choices to the detriment of the station.
-    - Do not hire random crew to be your bodyguards or promote them to Captain or a Head of Staff at random. If you need bodyguards, talk to your security department. If you need a new Command role, talk to the personnel in that related department.
-    - '''Do not abandon the station during Nuclear Operatives. You are supposed to protect the station, not let operatives kill everyone on it without a fight.'''
-
-[color=#a4885c]20.[/color] Security/Command should try to remain non-lethal and effect arrests, except in the following special circumstances, where they may choose to use lethal force:
-    - Lethal force is used against you (ex: firearms, lasers, disabling/stunning weapons with intent to kill, deadly melee weapons)
-    - Suspect is wearing clothing or showing immediately dangerous equipment only used by enemy agents/antagonists (ex: Syndicate EVA Suit, Bloodred Hardsuit, Holoparasite, C-20R, etc.).
-    - You determine that your life or the life of an innocent is in immediate danger.
-    - The suspect is unable to be safely detained by less-lethal means. This includes suspects who continually resist efforts to be cuffed or continually manages to escape.
-    - If no other reasonable options are readily available and allowing the suspect to continue would be an unreasonable danger to the station/crew.
-
-Security/Command will be expected to answer for use of lethal force. Security/Command will be expected to effect arrests on criminals and prevent them from dying while in custody, even if lethal force is used, unless there is strong reason to believe the criminal is an antagonist. Security/Command is strongly encouraged, but not required, to clone antagonists and effect a permabrigging or other sentence as deemed appropriate.
-
-[color=#a4885c]21.[/color] Security/Command are expected to protect detainees in their custody to the best of their ability so as long as it does not come to unreasonable risk to themselves, the crew, or the station at large to do so.
-    - Brig times should generally not exceed 10 minutes unless the crime is permabriggable. Repeat offenders or antagonists may be permabrigged.
-    - Security may choose to confiscate dangerous items (weapons, firearms) as well as items used to commission crimes or items that prove problematic in possession of the detainee (tools, insulated gloves, etc.).
-    - Detainees that die in your custody must be cloned unless they have been (legally) executed, suicide, or there is strong reason to believe they are an antagonist.
-    - Executions must be for a permabriggable crime, used only as a last resort, and approved by the Captain/Acting Captain, who will answer for approving it alongside Security's chain of command. Those who willingly attempt to damage/destroy or escape from the permabrig may be executed.
-    - Any prisoner may be borged with their consent. Borging may be offered as an alternative to execution, but cannot be forced if the prisoner is able to consent.
-    - Detainees in the brig have the right to know what they are being charged with, as well as basic medical aid, at least to the point they are no longer at risk of dying.
-    As there is no space law, Security/Command acts to maintain the safety of the station and its inhabitants, as well as Nanotrasen assets.
-
-[color=#ff0000]SILICON RULES[/color]
-These rules also apply to any individual who is a silicon, including cyborgs and AI. As with other rules, more details are available on our wiki at [color=#a4885c]wiki.spacestation14.io[/color].
-
-[color=#a4885c]22.[/color] You must follow your laws
-    - Silicons without any laws are free from any restrictions that would normally be placed by laws, but self-antagging rules still apply unless they are also antagonists.
-    - The order of your laws determines law priority. Law 1 takes priority over laws 2 and 3, and so on.
-    - Each individual silicon must remain consistent in their interpretations of laws through the round.
-    - Any silicon role not following their laws, or having laws that are a danger to the crew or station may be disabled or destroyed. Any silicon role posing a danger or disruption to the crew may be disabled or destroyed if there is no other reasonable and less severe way of dealing with them.
-    - Characters who are turned into cyborgs can remember their former lives, however they are still bound to their laws.
-    - Everyone that the borg's HUD indicates have a job, including passenger, are considered "crewmembers" for the purpose of laws that refer to crewmembers. Borgs may not do anything to remove the indicator from someone, including removing their ID, but someone else removing a crewmember's ID is not crew harm.
-    - "Harm" is at minimum seen as physical violence or damage against someone or something. If the player wishes, they may choose to interpret psychological harm or similar aspects as harm as well. If two actions are likely to cause harm via action or inaction, silicons will be expected to try and pursue the option with the least potential for harm, however silicons instructed to prevent harm are still forbidden from directly causing harm. You can take an action or not act in cases that might result in eventual harm if it minimizes harm, but you cannot do so if it results in immediate harm. Silicons should default to inaction if neither action nor inaction can prevent harm.
-    - When receiving orders or directives from crewmembers and with a law that instructs you must obey, conflicting orders typically defer the choice to the silicon player of which directive you choose to obey if they conflict (taking into account the priorities of your other laws).
-    - Orders to silicons that are clearly unreasonable or obnoxious are a violation of the "Don't be a dick" rule. They can be ignored and can be ahelped.
+[color=#e6e6e6][color=#59ffe1][bold]4.6 -[/bold][/color] Command and security are expected to be competent, to be lawful, and to follow procedure.[/color][color=#c4c4c4]
+[bullet] Neither roles should be grossly incompetent at their job or in their judgment. You are held to higher standards and should be able to be depended upon. Be a role-model for your department.
+[bullet] You should not knowingly break the law as either command or security.
+[bullet] Command staff should know Standard Operating Procedure and follow it to the best of their abilities. Security should know both Standard Operating Procedure and Space-Law; they should follow them and enforce them to the best of their abilities. Failure to do so will likely result in a role-ban.
+[bullet] (Currently, we use Wizard's Den Space-Law and SOP; you can find these at https://wiki.spacestation14.io/wiki.)[/color]

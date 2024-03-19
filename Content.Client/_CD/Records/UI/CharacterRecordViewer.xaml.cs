@@ -74,6 +74,12 @@ public sealed partial class CharacterRecordViewer : FancyWindow
         RecordFiltersReset.OnPressed += _ =>
         {
             OnFiltersChanged?.Invoke(StationRecordFilterType.Name, null);
+            RecordFiltersValue.Clear();
+        };
+
+        RecordFiltersValue.OnTextEntered += text =>
+        {
+            OnFiltersChanged?.Invoke(_filterType, text.Text);
         };
 
         RecordFiltersValue.OnTextEntered += text =>
