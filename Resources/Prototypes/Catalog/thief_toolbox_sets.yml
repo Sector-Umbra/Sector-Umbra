@@ -89,7 +89,7 @@
   content:
   - EncryptionKeyStationMaster
   - CyberPen
-  - SpyCrewMonitor
+  # - SpyCrewMonitor # Umbra - Removed SpyCrewMonitor as it does not exist.
   - BriefcaseThiefBribingBundleFilled
   - ClothingMaskGasVoiceChameleon
   #- todo Chameleon Stamp
