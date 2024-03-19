@@ -50,6 +50,7 @@
   showInVote: false
   rules:
     - Traitor
+    - SubGamemodesRule
     - BasicStationEventScheduler
 
 - type: gamePreset
@@ -74,6 +75,7 @@
   showInVote: false
   rules:
     - Nukeops
+    - SubGamemodesRule
     - BasicStationEventScheduler
 
 - type: gamePreset
@@ -87,6 +89,7 @@
   showInVote: false
   rules:
     - Revolutionary
+    - SubGamemodesRule
     - BasicStationEventScheduler
 
 - type: gamePreset
