@@ -25,7 +25,7 @@ using Robust.Server.Containers;
 using Robust.Shared.Containers;
 using Content.Server._CD.Storage.Components;
 
-namespace Content.Server.CryoSleep;
+namespace Content.Server._CD.CryoSleep;
 
 public sealed class CryoSleepSystem : EntitySystem
 {
@@ -52,7 +52,7 @@ public sealed class CryoSleepSystem : EntitySystem
         SubscribeLocalEvent<CryoSleepComponent, GetVerbsEvent<AlternativeVerb>>(AddAlternativeVerbs);
         SubscribeLocalEvent<CryoSleepComponent, DestructionEventArgs>((e, c, _) => EjectBody(e, c));
         SubscribeLocalEvent<CryoSleepComponent, DragDropTargetEvent>(OnDragDrop);
-    }       
+    }
 
     private void ComponentInit(EntityUid uid, CryoSleepComponent component, ComponentInit args)
     {
@@ -67,7 +67,7 @@ public sealed class CryoSleepSystem : EntitySystem
         if (!HasComp<MobStateComponent>(toInsert.Value))
             return false;
 
-        var inserted = component.BodyContainer.Insert(toInsert.Value, EntityManager);
+        var inserted = _container.Insert(toInsert.Value, component.BodyContainer);
 
         return inserted;
     }
@@ -90,7 +90,7 @@ public sealed class CryoSleepSystem : EntitySystem
             }
         }
 
-        var success = component.BodyContainer.Insert(toInsert.Value, EntityManager);
+        var success = _container.Insert(toInsert.Value, component.BodyContainer);
 
         if (success && mindComp?.Session != null)
         {
@@ -178,7 +178,7 @@ public sealed class CryoSleepSystem : EntitySystem
         if (toEject == null)
             return false;
 
-        component.BodyContainer.Remove(toEject.Value);
+        _container.Remove(toEject.Value, component.BodyContainer);
         _climb.ForciblySetClimbing(toEject.Value, pod);
 
         return true;
