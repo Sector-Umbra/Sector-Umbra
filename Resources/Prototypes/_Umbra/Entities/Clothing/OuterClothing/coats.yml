@@ -1,53 +1,12 @@
-﻿- type: entity
-  parent: ClothingOuterStorageBase
-  id: ClothingOuterCoatMoonlitBase
+﻿# Player: Aexxie - Character: Aur'sai
+- type: entity
+  parent: ClothingOuterCoatHoSTrench
+  id: PersonalItemClothingOuterCoatMoonlitHoS
   name: moonlit coat
   description: An elegant coat tailored for Agent Aur'sai.
-  abstract: true
+  suffix: PersonalItem, HoS
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/OuterClothing/Coats/coatmoonlit.rsi
   - type: Clothing
     sprite: _Umbra/Clothing/OuterClothing/Coats/coatmoonlit.rsi
-
-- type: entity
-  parent: ClothingOuterCoatMoonlitBase
-  id: ClothingOuterCoatMoonlitWinter
-  suffix: Personal, Aexxie, Winter
-  components:
-  - type: TemperatureProtection
-    coefficient: 0.1
-  - type: Armor
-    modifiers:
-      coefficients:
-        Slash: 0.95
-        Heat: 0.90
-
-- type: entity
-  parent: [ ClothingOuterCoatMoonlitBase,  ClothingOuterArmorBasic ]
-  id: ClothingOuterCoatMoonlitSecurity
-  suffix: Personal, Aexxie, Security
-
-- type: entity
-  parent: [ ClothingOuterCoatMoonlitBase,  ClothingOuterCoatHoSTrench ]
-  id: ClothingOuterCoatMoonlitHoS
-  suffix: Personal, Aexxie, HoS
-
-- type: entity
-  parent: ClothingOuterCoatMoonlitBase
-  id: ClothingOuterCoatMoonlit
-  suffix: Personal, Aexxie, CDoS
-  components:
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.5
-        Slash: 0.5
-        Piercing: 0.5
-        Heat: 0.60
-        Caustic: 0.85
-  - type: ExplosionResistance
-    damageCoefficient: 0.65
-  - type: Storage
-    grid:
-    - 0,0,3,1

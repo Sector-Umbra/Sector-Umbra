@@ -22,7 +22,6 @@
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraAursaiCommander
   name: aur'sai figurine
-  suffix: Aur'sai, Commander
   components:
   - type: Sprite
     state: aursai_commander
@@ -31,7 +30,6 @@
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraBrainsRD
   name: borgs-the-brains figurine
-  suffix: Borgs-the-Brains, RD
   components:
   - type: Sprite
     state: brains_rd
@@ -40,7 +38,7 @@
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraDeejaMD
   name: deeja-wujeeta figurine
-  suffix: Deeja-Wujeeta, MD
+  suffix: MD
   components:
   - type: Sprite
     state: deeja_doctor
@@ -49,7 +47,7 @@
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraDeejaSalvage
   name: deeja-wujeeta figurine
-  suffix: Deeja-Wujeeta, Salvage
+  suffix: Salvage
   components:
   - type: Sprite
     state: deeja_salvage
@@ -58,7 +56,6 @@
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraFakeskyPassenger
   name: fake sky tomson figurine
-  suffix: Sky Tomson, Fake, Passenger
   components:
   - type: Sprite
     state: fakesky_passenger
@@ -67,25 +64,22 @@
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraGazesSalvage
   name: gazes-the-galaxy figurine
-  suffix: Gazes-the-Galaxy, Salvage
   components:
   - type: Sprite
     state: gazes_salvage
 
 - type: entity
   parent: BaseFigurineUmbra
-  id: ToyFigurineUmbraKateCommander
-  name: kate figurine
-  suffix: Kate, Commander
+  id: ToyFigurineUmbraGhazetCommander
+  name: ghazet figurine
   components:
   - type: Sprite
-    state: kate_commander
+    state: ghazet_commander
 
 - type: entity
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraMoonCMO
   name: moonlight galileo figurine
-  suffix: Moonlight Galileo, CMO
   components:
   - type: Sprite
     state: moon_cmo
@@ -94,7 +88,6 @@
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraNashiraDetective
   name: nashira figurine
-  suffix: Nashira, Detective
   components:
   - type: Sprite
     state: nashira_detective
@@ -103,7 +96,6 @@
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraNebulaRD
   name: nebula-niimina figurine
-  suffix: Nebula-Niimina, RD
   components:
   - type: Sprite
     state: nebula_rd
@@ -112,7 +104,6 @@
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraPietMD
   name: piet fuchs figurine
-  suffix: Piet Fuchs, MD
   components:
   - type: Sprite
     state: piet_doctor
@@ -121,7 +112,6 @@
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraSkyMD
   name: sky tomson figurine
-  suffix: Sky Tomson, MD
   components:
   - type: Sprite
     state: sky_doctor
@@ -130,7 +120,6 @@
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraStarsBartender
   name: stares-at-stars figurine
-  suffix: Stares-at-Stars, Bartender
   components:
   - type: Sprite
     state: stars_bartender
@@ -139,7 +128,6 @@
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraWipesJanitor
   name: wipes-the-floor figurine
-  suffix: Wipes-the-Floor, Janitor
   components:
   - type: Sprite
     state: wipes_janitor
@@ -148,7 +136,6 @@
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraZackCargo
   name: zack ohminch figurine
-  suffix: Zack Ohminch, Cargo
   components:
   - type: Sprite
     state: zack_cargo
