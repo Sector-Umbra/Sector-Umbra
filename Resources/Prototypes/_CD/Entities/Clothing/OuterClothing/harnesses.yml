@@ -4,10 +4,8 @@
   parent: ClothingBeltStorageBase
   id: ClothingBeltHarnessBase
   components:
-  - type: Storage
-    capacity: 25
   - type: Item
-    size: 25
+    size: Huge
 
 # Actual harnesses
 - type: entity
@@ -21,7 +19,6 @@
   - type: Clothing
     sprite: _CD/Clothing/Belt/Harnesses/etu_trauma.rsi
   - type: Storage
-    capacity: 60 # This is literally just the medical belt without the visualizers
     whitelist:
       tags:
         - Wrench

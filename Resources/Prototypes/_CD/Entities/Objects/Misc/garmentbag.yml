@@ -5,7 +5,7 @@
   name: debug garment bag
   components:
   - type: Item
-    size: 10
+    size: Normal
   - type: Tag
   - type: Sprite
     sprite: _CD/Objects/Misc/GarmentBags/debug.rsi
