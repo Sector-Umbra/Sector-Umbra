@@ -128,7 +128,7 @@
       orGroup: SpacemenFig
     - id: ToyFigurineUmbraGazesSalvage
       orGroup: SpacemenFig
-    - id: ToyFigurineUmbraKateCommander
+    - id: ToyFigurineUmbraGhazetCommander
       orGroup: SpacemenFig
     - id: ToyFigurineUmbraMoonCMO
       orGroup: SpacemenFig
