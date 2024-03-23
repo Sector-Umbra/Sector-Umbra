@@ -1,0 +1,11 @@
+- type: entity
+  parent: ClothingNeckBellCollar
+  id: ClothingNeckLoopsBellCollar
+  name: Loops' bell collar
+  description: A blue collar with a large, silver bell. Good for keeping track of your kobold.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Neck/Misc/loopsbellcollar.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Neck/Misc/loopsbellcollar.rsi
