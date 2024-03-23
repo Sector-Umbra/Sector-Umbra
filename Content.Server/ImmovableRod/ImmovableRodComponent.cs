@@ -39,6 +39,6 @@ public sealed partial class ImmovableRodComponent : Component
     public bool DestroyTiles = true;
 
     // Sector Umbra
-    [DataField("damage")]
-    public DamageSpecifier Damage;
+    [DataField("damage", required: true)]
+    public DamageSpecifier Damage = default!;
 }
