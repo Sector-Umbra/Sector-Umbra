@@ -1,3 +1,4 @@
+using Content.Shared.Damage;
 using Robust.Shared.Audio;
 
 namespace Content.Server.ImmovableRod;
@@ -36,4 +37,8 @@ public sealed partial class ImmovableRodComponent : Component
     /// </summary>
     [DataField("destroyTiles")]
     public bool DestroyTiles = true;
+
+    // Sector Umbra
+    [DataField("damage", required: true)]
+    public DamageSpecifier Damage = default!;
 }
