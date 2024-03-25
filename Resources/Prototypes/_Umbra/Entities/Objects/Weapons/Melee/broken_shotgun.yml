@@ -1,0 +1,35 @@
+- type: entity
+  name: repurposed shotgun
+  parent: BaseItem
+  id: MeleeShotgun
+  description: A broken shotgun that no longer functions, repurposed into a capable smashing instrument. Percussive therapy.
+  components:
+  - type: Sprite
+    sprite: _Umbra/Objects/Weapons/Melee/broken_shotgun.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: -90
+    damage:
+      types:
+        Blunt: 10
+        Structural: 5
+  - type: Wieldable
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Blunt: 5
+        Structural: 10
+  - type: Item
+    size: Normal
+    sprite: _Umbra/Objects/Weapons/Melee/broken_shotgun_64x.rsi
+    storedRotation: -45
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
+    - suitStorage
+  - type: UseDelay
+    delay: 1
+  - type: Tag
+    tags:
+    - BaseballBat
