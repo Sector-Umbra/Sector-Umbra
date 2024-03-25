@@ -2,7 +2,7 @@
   name: repurposed shotgun
   parent: BaseItem
   id: MeleeShotgun
-  description: A broken shotgun that no longer functions, repurposed into a capable smashing instrument. Percussive therapy.
+  description: A broken shotgun that no longer functions, remade into a capable smashing instrument. Percussive therapy.
   components:
   - type: Sprite
     sprite: _Umbra/Objects/Weapons/Melee/broken_shotgun.rsi
