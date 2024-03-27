@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "sprited by Sky (https://github.com/Kukutis96513)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+    "states": [
+        {
+          "name": "aursai_commander"
+        },
+        {
+          "name": "brains_rd"
+        },
+        {
+          "name": "deeja_doctor"
+        },
+        {
+          "name": "deeja_salvage"
+        },
+        {
+          "name": "fakesky_passenger"
+        },
+        {
+          "name": "gazes_salvage"
+        },
+        {
+          "name": "ghazet_commander"
+        },
+        {
+          "name": "moon_cmo"
+        },
+        {
+          "name": "nashira_detective"
+        },
+        {
+          "name": "nebula_rd"
+        },
+        {
+          "name": "piet_doctor"
+        },
+        {
+          "name": "sky_doctor"
+        },
+        {
+          "name": "stars_bartender"
+        },
+        {
+          "name": "wipes_janitor"
+        },
+        {
+          "name": "zack_cargo"
+        }
+    ]
+}

@@ -211,3 +211,8 @@ ClothingBackpackSatchelFilledDetective: ClothingBackpackSatchelSecurityFilledDet
 ImprovisedExplosive: FireBomb
 ImprovisedExplosiveEmpty: FireBombEmpty
 ImprovisedExplosiveFuel: FireBombFuel
+
+# 2024-03-12 (UMBRA)
+MysteryFigureBox: MysteryFigureBoxUmbra
+VendingMachineGames: VendingMachineGamesUmbra
+SpacemenFigureSpawner: SpacemenFigureSpawnerUmbra

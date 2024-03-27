@@ -1,0 +1,12 @@
+﻿# Player: Aexxie - Character: Aur'sai
+- type: entity
+  parent: ClothingOuterCoatHoSTrench
+  id: PersonalItemClothingOuterCoatMoonlitHoS
+  name: moonlit coat
+  description: An elegant coat tailored for Agent Aur'sai.
+  suffix: PersonalItem, HoS
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/OuterClothing/Coats/coatmoonlit.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/OuterClothing/Coats/coatmoonlit.rsi

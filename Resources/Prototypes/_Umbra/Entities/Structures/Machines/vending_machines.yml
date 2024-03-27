@@ -1,0 +1,14 @@
+﻿- type: entity
+  parent: VendingMachineGames
+  id: VendingMachineGamesUmbra
+  name: Good Clean Fun
+  suffix: Umbra
+  description: Vends things that the Captain and Head of Personnel are probably not going to appreciate you fiddling with instead of your job...
+  components:
+  - type: VendingMachine
+    pack: GoodCleanFunInventoryUmbra
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    ejectState: eject-unshaded
+    ejectDelay: 1.8
