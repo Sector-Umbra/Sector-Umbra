@@ -1,3 +1,17 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckBellCollar
+  name: bell collar
+  description: A way to inform others about your presence, or just to annoy everyone around you!
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Neck/bellcollar.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Neck/bellcollar.rsi
+  - type: EmitsSoundOnMove
+    soundCollection:
+      collection: FootstepJester
+
 # Player: Deeja - Character: Deeja-Wujeeta
 - type: entity
   parent: ClothingNeckBase
@@ -14,7 +28,7 @@
     currentNodeId: 271828
     pointsPerNode: 0 #Instead of 6500 points. Purely Cosmetic
     nodeTree:
-    - nodeData: {} 
+    - nodeData: {}
       effect: EffectGoodFeeling #So well crafted that when you look at it you feel happiness
       triggered: False
       trigger: TriggerExamine
