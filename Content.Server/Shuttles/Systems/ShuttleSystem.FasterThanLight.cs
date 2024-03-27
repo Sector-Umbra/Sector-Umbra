@@ -860,7 +860,7 @@ public sealed partial class ShuttleSystem
 
                 if (_bodyQuery.TryGetComponent(ent, out var mob))
                 {
-                    // CD: FTL Gibbing removed.
+                    // UMBRA CD: FTL Gibbing removed.
                     continue;
                 }
 

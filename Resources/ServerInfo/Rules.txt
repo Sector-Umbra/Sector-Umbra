@@ -1,4 +1,4 @@
-[color=#ff0800][bold]DISCLAIMER:[/bold] All Starlit Halo servers are strictly 16+ only. If you are underage, you [bold]will be banned[/bold] for double the amount of time that it takes for you to be of age.[/color]
+[color=#ff0800][bold]DISCLAIMER:[/bold] All Umbra servers are strictly 16+ only. If you are underage, you [bold]will be banned[/bold] for double the amount of time that it takes for you to be of age.[/color]
 
 
 [head=2][color=#ffdd47][bold]1.0 -[/bold] The Golden Rule Policy.[/color][/head]
@@ -59,7 +59,7 @@ Game admins have the final say on all rules, game issues, and punishments. We re
 [head=2][color=#59ffe1][bold]4.0 -[/bold] Roleplay Expectations.[/color][/head]
 [color=#e6e6e6]Expectations and policies centered around roleplay.[/color]
 
-[color=#e6e6e6][color=#59ffe1][bold]4.1 -[/bold][/color] Do not intentionally prepare items or locations "just in case" a certain scenario happens unless you have proper in-character reasoning, especially if it is intended to gain an upper-hand or advantage over another player. Starlit Elysium is heavily based around roleplay; you should generally be focused on this rather than playing to win.[/color][color=#c4c4c4]
+[color=#e6e6e6][color=#59ffe1][bold]4.1 -[/bold][/color] Do not intentionally prepare items or locations "just in case" a certain scenario happens unless you have proper in-character reasoning, especially if it is intended to gain an upper-hand or advantage over another player. Umbra is heavily based around roleplay; you should generally be focused on this rather than playing to win.[/color][color=#c4c4c4]
 [bullet] The concept of "playing to win" is commonly referred to as "powergaming."
 [bullet] Standard Operating Procedure (SOP) dictates how areas should be locked down and what gear should be held and/or equipped during any given circumstance. Minor things such as getting a crowbar on round-start is fine, however, seeking out weapons is not.[/color]
 
