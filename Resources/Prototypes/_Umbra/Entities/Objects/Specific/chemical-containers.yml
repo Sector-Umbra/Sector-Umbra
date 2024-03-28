@@ -1,0 +1,42 @@
+- type: entity
+  name: bluespace jug
+  parent: BaseItem
+  description: Powered by experimental bluespace technology.
+  id: BluespaceJug
+  components:
+  - type: Sprite
+    sprite: _umbra/Objects/Specific/Chemistry/jug_bluespace.rsi
+    layers:
+      - state: jugbluespace
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 2000
+        canMix: true
+  - type: Item
+    size: Normal
+  - type: RefillableSolution
+    solution: beaker
+  - type: DrainableSolution
+    solution: beaker
+  - type: ExaminableSolution
+    solution: beaker
+  - type: DrawableSolution
+    solution: beaker
+  - type: InjectableSolution
+    solution: beaker
+  - type: SolutionTransfer
+    canChangeTransferAmount: true
+  - type: Spillable
+    solution: beaker
+  - type: StaticPrice
+    price: 60
+  - type: UserInterface
+    interfaces:
+      - key: enum.TransferAmountUiKey.Key
+        type: TransferAmountBoundUserInterface
+  - type: Drink
+    solution: beaker
+  - type: Tag
+    tags:
+    - ChemDispensable

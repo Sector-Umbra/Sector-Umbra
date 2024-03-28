@@ -309,6 +309,7 @@
       - HolofanProjector
       - BluespaceBeaker
       - SyringeBluespace
+      - BluespaceJug
       - WeaponForceGun
       - WeaponLaserSvalinn
       - WeaponProtoKineticAccelerator
@@ -848,6 +849,7 @@
       - CryostasisBeaker
       - BluespaceBeaker
       - SyringeBluespace
+      - BluespaceJug
       - SyringeCryostasis
   - type: Machine
     board: MedicalTechFabCircuitboard
