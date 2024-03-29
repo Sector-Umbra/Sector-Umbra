@@ -232,6 +232,7 @@
   - type: VendingMachineRestock
     canRestock:
     - GoodCleanFunInventory
+    - GoodCleanFunInventoryUmbra # Sector Umbra
   - type: Sprite
     layers:
     - state: base
