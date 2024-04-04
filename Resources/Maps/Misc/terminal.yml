@@ -4348,7 +4348,7 @@ entities:
     - type: Transform
       pos: -4.5,8.5
       parent: 818
-- proto: DefibrillatorCabinet
+- proto: DefibrillatorCabinetFilled
   entities:
   - uid: 1017
     components:
