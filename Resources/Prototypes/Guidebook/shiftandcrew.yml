@@ -19,6 +19,7 @@
   name: guide-entry-survival
   text: "/ServerInfo/Guidebook/Survival.xml"
 
+# Umbra: Preserve Chemicals guidebook.
 - type: guideEntry
   id: Chemicals
   name: guide-entry-chemicals
