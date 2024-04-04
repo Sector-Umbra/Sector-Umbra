@@ -19,13 +19,6 @@
   name: guide-entry-survival
   text: "/ServerInfo/Guidebook/Survival.xml"
 
-# Umbra: Preserve Chemicals guidebook.
-- type: guideEntry
-  id: Chemicals
-  name: guide-entry-chemicals
-  text: "/ServerInfo/Guidebook/Chemicals.xml"
-  filterEnabled: True
-
 - type: guideEntry
   id: Janitorial
   name: guide-entry-janitorial
