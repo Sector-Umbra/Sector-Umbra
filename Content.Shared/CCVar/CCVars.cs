@@ -107,6 +107,13 @@ namespace Content.Shared.CCVar
         public static readonly CVarDef<bool>
             EventsEnabled = CVarDef.Create("events.enabled", true, CVar.ARCHIVE | CVar.SERVERONLY);
 
+        /// Umbra
+        /// <summary>
+        /// Whether or not station events that pose a potential round ending threat can be ran.
+        /// </summary>
+        public static readonly CVarDef<bool> RoundEndingThreatsEnabled =
+            CVarDef.Create("events.allow_round_ending_threats", false, CVar.SERVERONLY);
+
         /// <summary>
         ///     Average time (in minutes) for when the ramping event scheduler should stop increasing the chaos modifier.
         ///     Close to how long you expect a round to last, so you'll probably have to tweak this on downstreams.
@@ -732,7 +739,7 @@ namespace Content.Shared.CCVar
 
         public static readonly CVarDef<bool> CombatModeIndicatorsPointShow =
             CVarDef.Create("hud.combat_mode_indicators_point_show", true, CVar.ARCHIVE | CVar.CLIENTONLY);
-        
+
         public static readonly CVarDef<bool> LoocAboveHeadShow =
             CVarDef.Create("hud.show_looc_above_head", true, CVar.ARCHIVE | CVar.CLIENTONLY);
 
@@ -1230,7 +1237,7 @@ namespace Content.Shared.CCVar
         /// </summary>
         public static readonly CVarDef<bool> OocEnableDuringRound =
             CVarDef.Create("ooc.enable_during_round", false, CVar.NOTIFY | CVar.REPLICATED | CVar.SERVER);
-        
+
         public static readonly CVarDef<bool> ShowOocPatronColor =
             CVarDef.Create("ooc.show_ooc_patron_color", true, CVar.ARCHIVE | CVar.REPLICATED | CVar.CLIENT);
 

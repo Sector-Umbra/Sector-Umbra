@@ -390,6 +390,7 @@
     minimumPlayers: 15
     weight: 5
     duration: 1
+    roundEndingThreat: true # Umbra
   - type: ZombieRule
     minStartDelay: 0 #let them know immediately
     maxStartDelay: 10
@@ -408,6 +409,7 @@
     minimumPlayers: 20
     reoccurrenceDelay: 30
     duration: 1
+    roundEndingThreat: true # Umbra
   - type: LoneOpsSpawnRule
 
 - type: entity
