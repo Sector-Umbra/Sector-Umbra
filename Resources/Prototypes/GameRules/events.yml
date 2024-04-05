@@ -276,7 +276,7 @@
     - Security
     - Service
     - Supply
-    extraCount: 2
+    extraCount: 5 # Umbra: 2 -> 5 (Makes Solar Flares much more effective at their job, leaving only two channels unaffected.)
     lightBreakChancePerSecond: 0.0003
     doorToggleChancePerSecond: 0.001
 
@@ -390,6 +390,7 @@
     minimumPlayers: 15
     weight: 5
     duration: 1
+    roundEndingThreat: true # Umbra
   - type: ZombieRule
     minStartDelay: 0 #let them know immediately
     maxStartDelay: 10
@@ -408,6 +409,7 @@
     minimumPlayers: 20
     reoccurrenceDelay: 30
     duration: 1
+    roundEndingThreat: true # Umbra
   - type: LoneOpsSpawnRule
 
 - type: entity
@@ -440,6 +442,31 @@
     earliestStart: 45
     minimumPlayers: 20
   - type: ImmovableRodRule
+    rodPrototypes:
+    - id: ImmovableRodKeepTilesStill
+      prob: 0.95
+      orGroup: rodProto
+    - id: ImmovableRodMop
+      prob: 0.0072
+      orGroup: rodProto
+    - id: ImmovableRodShark
+      prob: 0.0072
+      orGroup: rodProto
+    - id: ImmovableRodClown
+      prob: 0.0072
+      orGroup: rodProto
+    - id: ImmovableRodBanana
+      prob: 0.0072
+      orGroup: rodProto
+    - id: ImmovableRodHammer
+      prob: 0.0072
+      orGroup: rodProto
+    - id: ImmovableRodThrongler
+      prob: 0.0072
+      orGroup: rodProto
+    - id: ImmovableRodGibstick
+      prob: 0.0072
+      orGroup: rodProto
 
 - type: entity
   noSpawn: true

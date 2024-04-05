@@ -88,4 +88,11 @@ public sealed partial class StationEventComponent : Component
     [DataField("endTime", customTypeSerializer: typeof(TimeOffsetSerializer))]
     [AutoPausedField]
     public TimeSpan? EndTime;
+
+    /// Umbra
+    /// <summary>
+    /// Whether or not this event poses a potentially round-ending threat.
+    /// </summary>
+    [DataField("roundEndingThreat")]
+    public bool RoundEndingThreat = false;
 }

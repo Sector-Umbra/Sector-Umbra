@@ -50,7 +50,7 @@
     ClothingShoesBootsWork: 3
     ClothingShoesLuxuryHeelBoots: 3
     ClothingHeadHatFedoraBrown: 2
-    ClothingHeadHatFlowerCrown: 2
+    ClothingHeadHatFlowerWreath: 2  # Umbra: Change ClothingHeadHatFlowerCrown to ClothingHeadHatFlowerWreath as per migration of 2024-03-31.
     ClothingHeadHatFedoraGrey: 2
     ClothingHeadHatBoaterhat: 2
     ClothingHeadSafari: 2
