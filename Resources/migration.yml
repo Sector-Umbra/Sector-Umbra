@@ -167,10 +167,10 @@ ClothingHeadHelmetVoidParamed: null
 # 2024-01-19
 DefaultStationBeaconTeslaEngine: null
 
-# 2024-01-23 CD Change, replacing upstream cryopods with our own
-CryogenicSleepUnit: MachineCryoSleepPod
-CryogenicSleepUnitSpawner: MachineCryoSleepPod
-CryogenicSleepUnitSpawnerLateJoin: MachineCryoSleepPod
+# 2024-01-23 CD Change, replacing upstream cryopods with our own (Umbra: Reverted on 2024-04-05)
+# CryogenicSleepUnit: MachineCryoSleepPod
+# CryogenicSleepUnitSpawner: MachineCryoSleepPod
+# CryogenicSleepUnitSpawnerLateJoin: MachineCryoSleepPod
 
 
 # 2024-01-27 (Reverted on 2024-03-10)
@@ -288,3 +288,6 @@ ClothingOuterArmorScaf: ClothingOuterArmorBasic
 ClothingNeckFlowerWreath: ClothingHeadHatFlowerWreath
 ClothingHeadHatFlowerCrown: ClothingHeadHatFlowerWreath
 BriefcaseSyndieBase: null
+
+# 2024-04-05 (UMBRA)
+MachineCryoSleepPod: CryogenicSleepUnit
