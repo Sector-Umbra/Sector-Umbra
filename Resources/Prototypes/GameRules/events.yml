@@ -276,7 +276,7 @@
     - Security
     - Service
     - Supply
-    extraCount: 2
+    extraCount: 5 # Umbra: Make solar flares much more significant, only leaving two channels unaffected.
     lightBreakChancePerSecond: 0.0003
     doorToggleChancePerSecond: 0.001
 
