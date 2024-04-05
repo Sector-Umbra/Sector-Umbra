@@ -20,11 +20,16 @@ public sealed class EventManagerSystem : EntitySystem
     public bool EventsEnabled { get; private set; }
     private void SetEnabled(bool value) => EventsEnabled = value;
 
+    // Below two lines are necessary to ensure the CVar being changed midround actually has effect. // Umbra
+    public bool RoundEndingThreatsEnabled { get; private set; } // Umbra
+    private void SetRoundEndingThreatsEnabled(bool value) => RoundEndingThreatsEnabled = value; // Umbra
+
     public override void Initialize()
     {
         base.Initialize();
 
         Subs.CVar(_configurationManager, CCVars.EventsEnabled, SetEnabled, true);
+        Subs.CVar(_configurationManager, CCVars.RoundEndingThreatsEnabled, SetRoundEndingThreatsEnabled, true); // Umbra
     }
 
     /// <summary>
@@ -160,6 +165,13 @@ public sealed class EventManagerSystem : EntitySystem
 
     private bool CanRun(EntityPrototype prototype, StationEventComponent stationEvent, int playerCount, TimeSpan currentTime)
     {
+        // Umbra
+        // If the event is set to manual only, report this event cannot be run at this time.
+        if (!RoundEndingThreatsEnabled && stationEvent.RoundEndingThreat)
+        {
+            return false;
+        }
+
         if (GameTicker.IsGameRuleActive(prototype.ID))
             return false;
 
