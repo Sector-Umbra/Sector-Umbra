@@ -91,7 +91,7 @@ public sealed partial class StationEventComponent : Component
 
     /// Umbra
     /// <summary>
-    /// Whether or not this event is eligible for being picked auotmatically by event schedulers.
+    /// Whether or not this event poses a potentially round-ending threat.
     /// </summary>
     [DataField("roundEndingThreat")]
     public bool RoundEndingThreat = false;
