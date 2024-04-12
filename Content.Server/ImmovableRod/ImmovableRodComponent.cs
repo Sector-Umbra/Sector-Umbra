@@ -38,7 +38,15 @@ public sealed partial class ImmovableRodComponent : Component
     [DataField("destroyTiles")]
     public bool DestroyTiles = true;
 
-    // Sector Umbra
-    [DataField("damage", required: true)]
-    public DamageSpecifier Damage = default!;
+    /// <summary>
+    ///     If true, this will gib & delete bodies
+    /// </summary>
+    [DataField]
+    public bool ShouldGib = true;
+
+    /// <summary>
+    ///     Damage done, if not gibbing
+    /// </summary>
+    [DataField]
+    public DamageSpecifier? Damage;
 }
