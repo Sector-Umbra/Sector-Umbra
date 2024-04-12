@@ -11,7 +11,8 @@
     state: icon
     noRot: false
   - type: ImmovableRod
-    damage:
+    shouldGib: false # Umbra
+    damage: # Umbra
       types:
         Piercing: 300
   - type: Physics

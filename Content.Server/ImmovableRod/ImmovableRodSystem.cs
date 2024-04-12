@@ -115,7 +115,9 @@ public sealed class ImmovableRodSystem : EntitySystem
                 if (component.Damage == null || !TryComp<DamageableComponent>(ent, out var damageable))
                     return;
 
-                _damageable.SetDamage(ent, damageable, component.Damage);
+                // Sector Umbra - Use TryChangeDamage instead of SetDamage
+                //_damageable.SetDamage(ent, damageable, component.Damage);
+                _damageable.TryChangeDamage(ent, component.Damage, ignoreResistances: true);
                 return;
             }
 
