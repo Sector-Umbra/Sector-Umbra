@@ -351,7 +351,7 @@ entities:
   - uid: 164
     components:
     - type: Transform
-      pos: -1.5341365,12.695566
+      pos: -1.3323807,12.628268
       parent: 2
 - proto: BriefcaseBrownFilled
   entities:
@@ -573,16 +573,9 @@ entities:
     - type: Transform
       pos: 0.5,8.5
       parent: 2
-- proto: FaxMachineCentcom
-  entities:
-  - uid: 166
-    components:
-    - type: Transform
-      pos: 1.5,7.5
-      parent: 2
 - proto: filingCabinetRandom
   entities:
-  - uid: 112
+  - uid: 87
     components:
     - type: Transform
       pos: -2.5,7.5
@@ -807,7 +800,7 @@ entities:
       parent: 2
 - proto: PosterContrabandWehWatches
   entities:
-  - uid: 173
+  - uid: 174
     components:
     - type: Transform
       rot: 3.141592653589793 rad
@@ -815,7 +808,7 @@ entities:
       parent: 2
 - proto: PosterLegitNanotrasenLogo
   entities:
-  - uid: 170
+  - uid: 171
     components:
     - type: Transform
       rot: 3.141592653589793 rad
@@ -823,7 +816,7 @@ entities:
       parent: 2
 - proto: PosterLegitNoERP
   entities:
-  - uid: 171
+  - uid: 172
     components:
     - type: Transform
       rot: 3.141592653589793 rad
@@ -831,7 +824,7 @@ entities:
       parent: 2
 - proto: PosterLegitSafetyInternals
   entities:
-  - uid: 172
+  - uid: 173
     components:
     - type: Transform
       rot: 3.141592653589793 rad
@@ -839,7 +832,7 @@ entities:
       parent: 2
 - proto: PosterLegitWorkForAFuture
   entities:
-  - uid: 174
+  - uid: 175
     components:
     - type: Transform
       rot: 3.141592653589793 rad
@@ -880,7 +873,7 @@ entities:
       parent: 2
 - proto: PoweredlightGreen
   entities:
-  - uid: 169
+  - uid: 170
     components:
     - type: Transform
       rot: 3.141592653589793 rad
@@ -888,7 +881,7 @@ entities:
       parent: 2
 - proto: PoweredlightRed
   entities:
-  - uid: 1
+  - uid: 169
     components:
     - type: Transform
       rot: 3.141592653589793 rad
@@ -1020,12 +1013,6 @@ entities:
     - type: Transform
       pos: -1.5,12.5
       parent: 2
-  - uid: 18
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 1.5,7.5
-      parent: 2
 - proto: TableWood
   entities:
   - uid: 23
@@ -1074,12 +1061,19 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -3.5,4.5
       parent: 2
-- proto: VendingMachineCoffee
+- proto: ToyFigurineUmbraGhazetCommander
   entities:
-  - uid: 87
+  - uid: 1
     components:
     - type: Transform
-      pos: 0.5,12.5
+      pos: -1.7365717,12.706393
+      parent: 2
+- proto: VendingMachineCoffee
+  entities:
+  - uid: 18
+    components:
+    - type: Transform
+      pos: 1.5,7.5
       parent: 2
 - proto: WallShuttle
   entities:
@@ -1211,6 +1205,13 @@ entities:
     components:
     - type: Transform
       pos: -0.5,10.5
+      parent: 2
+- proto: WaterCooler
+  entities:
+  - uid: 112
+    components:
+    - type: Transform
+      pos: 0.5,12.5
       parent: 2
 - proto: WindoorSecureCentralCommandLocked
   entities:
