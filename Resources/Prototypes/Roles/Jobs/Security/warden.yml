@@ -4,8 +4,7 @@
   description: job-description-warden
   playTimeTracker: JobWarden
   requirements:
-    - !type:RoleTimeRequirement
-      role: OverallPlaytimeRequirement
+    - !type:OverallPlaytimeRequirement
       time: 3600 # 1 hr
   startingGear: WardenGear
   icon: "JobIconWarden"
