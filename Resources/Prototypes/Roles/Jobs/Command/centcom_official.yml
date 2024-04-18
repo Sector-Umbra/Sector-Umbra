@@ -25,3 +25,5 @@
     id: CentcomPDA
     ears: ClothingHeadsetAltCentCom
     belt: WeaponPistolN1984
+    pocket1: BoxFolderBlack
+    # pocket2: PenCentcom # Umbra: Removed pen that CC officials already spawn with in their PDA.
