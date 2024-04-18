@@ -24,7 +24,6 @@
       interval: 10
   - !type:AddImplantSpecial
     implants: [ SadTromboneImplant ]
-
 - type: startingGear
   id: ClownGear
   equipment:
