@@ -1,0 +1,31 @@
+## Plushies
+# Player: Tych0 - Character: Nashira-Najma
+- type: entity
+  parent: BasePlushie
+  id: PlushieMaple
+  name: maple moondancer plushie
+  description: A custom made moth plushie belonging to Nashira-Najma. Do not eat.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_maple
+    sprite: _Umbra/Objects/Fun/toys.rsi
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Voice/Moth/moth_squeak.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Voice/Moth/moth_squeak.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Voice/Moth/moth_squeak.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Voice/Moth/moth_squeak.ogg
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Voice/Moth/moth_squeak.ogg
+  - type: Food
+    requiresSpecialDigestion: true
+    useSound:
+      path: /Audio/Voice/Moth/moth_scream.ogg
