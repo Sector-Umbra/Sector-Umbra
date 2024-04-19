@@ -65,6 +65,8 @@
         - ClothingUniformJumpsuitPirate
         - ClothingShoesBootsCowboyFancy
         - ClothingHeadHatCowboyBountyHunter
+        - ClothingNeckAutismPin
+        - ClothingNeckGoldAutismPin
         - ClothingOuterCoatCowboyDuster #CD Item
       rareChance: 0.01
       prototypes:
