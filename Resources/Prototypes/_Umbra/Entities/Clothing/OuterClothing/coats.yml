@@ -1,4 +1,4 @@
-﻿# Player: Aexxie - Character: Aur'sai
+# Player: Aexxie - Character: Aur'sai
 - type: entity
   parent: ClothingOuterCoatHoSTrench
   id: PersonalItemClothingOuterCoatMoonlitHoS
@@ -10,3 +10,25 @@
     sprite: _Umbra/Clothing/OuterClothing/Coats/coatmoonlit.rsi
   - type: Clothing
     sprite: _Umbra/Clothing/OuterClothing/Coats/coatmoonlit.rsi
+
+# Player: OverwatchVoice - Character: Yarna Crimson
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: PersonalItemClothingOuterYarnaArmourCoat
+  name: Yarna's armoured winter coat
+  description: A elegant winter coat made with high-quality fibers, featuring two golden shoulder guards, there is a small label that reads "Yarna-Crimson".
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/OuterClothing/Coats/yarnaarmouredcoat.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/OuterClothing/Coats/yarnaarmouredcoat.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.70
+        Slash: 0.70
+        Piercing: 0.70
+        Heat: 0.70
+  - type: ExplosionResistance
+    damageCoefficient: 0.90
