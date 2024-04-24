@@ -51,6 +51,19 @@
     node: flowerwreath
 
 - type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatFlowerWreathGeorgia
+  name: Mile's flower braid
+  description: Georgia's braid is woven with tiger lillies and vines.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Misc/georgia-flower-wreath.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Misc/georgia-flower-wreath.rsi
+    slots:
+    - HEAD
+
+- type: entity
   parent: ClothingHeadLightBase
   id: ClothingHeadHatPumpkin
   name: pumpkin hat
