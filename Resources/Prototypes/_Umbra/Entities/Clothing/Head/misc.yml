@@ -7,9 +7,9 @@
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra/Clothing/Head/Misc/georgia-flower-braid.rsi
+    sprite: _Umbra/Clothing/Head/georgia-flower-braid.rsi
   - type: Clothing
-    sprite:  _Umbra/Clothing/Head/Misc/georgia-flower-braid.rsi
+    sprite:  _Umbra/Clothing/Head/georgia-flower-braid.rsi
     slots:
     - HEAD
   - type: Tag
