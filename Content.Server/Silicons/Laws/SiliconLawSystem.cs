@@ -18,6 +18,7 @@ using Content.Shared.Silicons.Laws;
 using Content.Shared.Silicons.Laws.Components;
 using Content.Shared.Stunnable;
 using Content.Shared.Wires;
+using JetBrains.Annotations;
 using Robust.Server.GameObjects;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
@@ -289,6 +290,19 @@ public sealed class SiliconLawSystem : SharedSiliconLawSystem
         laws.ObeysTo = proto.ObeysTo;
 
         return laws;
+    }
+
+    [PublicAPI]
+    public void SetLaws(List<SiliconLaw> newLaws, EntityUid target)
+    {
+        if (!TryComp<SiliconLawProviderComponent>(target, out var component))
+            return;
+
+        if (component.Lawset == null)
+            component.Lawset = new SiliconLawset();
+
+        component.Lawset.Laws = newLaws;
+        NotifyLawsChanged(target);
     }
 }
 
