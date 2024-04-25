@@ -1,0 +1,18 @@
+# Player: FlannelViolin - Character: Georgia A Miles
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatFlowerBraidGeorgia
+  name: Miles' flower braid
+  description: Georgia's braid is woven with tiger lilies and vines.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Head/georgia-flower-braid.rsi
+  - type: Clothing
+    sprite:  _Umbra/Clothing/Head/georgia-flower-braid.rsi
+    slots:
+    - HEAD
+  - type: Tag
+    # Removes WhitelistChameleon and HamsterWearable
+    tags: []
+
