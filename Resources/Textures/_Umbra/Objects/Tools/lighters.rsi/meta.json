@@ -14,11 +14,17 @@
       "name": "zippo_bozelli_open"
     },
     {
-       "name": "zippo_top"
+       "name": "zippo_bozelli_top"
     },
     {
-        "name": "lighter_flame"
-    },
+        "name": "lighter_flame",
+        "delays": [
+          [
+            0.2,
+            0.1
+          ]
+        ]
+      },
     {
       "name": "zippo-inhand-left",
       "directions": 4
