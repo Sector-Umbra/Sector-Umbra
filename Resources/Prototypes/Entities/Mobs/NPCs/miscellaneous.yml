@@ -69,7 +69,7 @@
 
 - type: entity
   id: MobTomatoKiller
-  parent: 
+  parent:
   - BaseSimpleMob
   - MobDamageable
   - MobBloodstream
@@ -79,7 +79,7 @@
   description: it seems today it's not you eating tomatoes, it's the tomatoes eating you.
   components:
   - type: Item
-    size: 80
+    size: Huge
   - type: NpcFactionMember
     factions:
       - SimpleHostile
@@ -91,7 +91,7 @@
       components:
       - HumanoidAppearance
   - type: Sprite
-    sprite: Mobs/Demons/tomatokiller.rsi 
+    sprite: Mobs/Demons/tomatokiller.rsi
     noRot: true
     layers:
       - map: [ "enum.DamageStateVisualLayers.Base" ]
