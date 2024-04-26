@@ -11,9 +11,9 @@
   - Maintenance
   extendedAccess:
   - Chemistry
+
 - type: startingGear
   id: DoctorGear
   equipment:
-    shoes: ClothingShoesColorWhite
     ears: ClothingHeadsetMedical
     belt: ClothingBeltMedicalFilled

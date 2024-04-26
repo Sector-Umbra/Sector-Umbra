@@ -122,12 +122,6 @@ public sealed partial class SpeciesPrototype : IPrototype
     public int MaxAge = 120;
 
     /// <summary>
-    ///     The Style used for the guidebook info link in the character profile editor
-    /// </summary>
-    [DataField]
-    public string GuideBookIcon = "SpeciesInfoDefault";
-
-    /// <summary>
     /// The minimum height for this species
     /// </summary>
     [DataField("minHeight")]

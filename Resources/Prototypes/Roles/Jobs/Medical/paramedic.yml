@@ -3,9 +3,6 @@
   name: job-name-paramedic
   description: job-description-paramedic
   playTimeTracker: JobParamedic
-  requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 10800 # 3 hrs
   startingGear: ParamedicGear
   icon: "JobIconParamedic"
   supervisors: job-supervisors-cmo
@@ -14,10 +11,10 @@
   - Maintenance
   extendedAccess:
   - Chemistry
+
 - type: startingGear
   id: ParamedicGear
   equipment:
-    shoes: ClothingShoesColorBlue
     id: ParamedicPDA
     ears: ClothingHeadsetMedical
     belt: ClothingBeltMedicalEMTFilled

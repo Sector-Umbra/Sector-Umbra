@@ -218,7 +218,7 @@ namespace Content.Server.Database
             var cdRecords = profile.CDCharacterRecords != null
                 ? RecordsSerialization.DeserializeJson(profile.CDCharacterRecords)
                 : CharacterRecords.DefaultRecords();
-                
+
             var loadouts = new Dictionary<string, RoleLoadout>();
 
             foreach (var role in profile.Loadouts)
@@ -263,8 +263,8 @@ namespace Content.Server.Database
                 (PreferenceUnavailableMode) profile.PreferenceUnavailable,
                 antags.ToList(),
                 traits.ToList(),
+                loadouts,
                 cdRecords
-                loadouts
             );
         }
 
@@ -318,7 +318,7 @@ namespace Content.Server.Database
 
             // CD: Store records
             profile.CDCharacterRecords = JsonSerializer.SerializeToDocument(humanoid.CDCharacterRecords ?? CharacterRecords.DefaultRecords());
-            
+
             profile.Loadouts.Clear();
 
             foreach (var (role, loadouts) in humanoid.Loadouts)

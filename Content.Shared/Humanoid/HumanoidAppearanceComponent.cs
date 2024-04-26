@@ -84,6 +84,12 @@ public sealed partial class HumanoidAppearanceComponent : Component
     public Color? CachedFacialHairColor;
 
     /// <summary>
+    ///     Which layers of this humanoid that should be hidden on equipping a corresponding item..
+    /// </summary>
+    [DataField]
+    public HashSet<HumanoidVisualLayers> HideLayersOnEquip = [HumanoidVisualLayers.Hair];
+
+    /// <summary>
     ///     The height of this humanoid.
     /// </summary>
     [DataField, AutoNetworkedField]

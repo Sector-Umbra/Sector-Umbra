@@ -16,10 +16,10 @@
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
+
 - type: startingGear
   id: DetectiveGear
   equipment:
-    shoes: ClothingShoesBootsCombatFilled
     eyes: ClothingEyesGlassesSecurity
     id: DetectivePDA
     ears: ClothingHeadsetSecurity

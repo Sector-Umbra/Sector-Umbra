@@ -30,7 +30,7 @@ namespace Content.Shared.Preferences
     public sealed partial class HumanoidCharacterProfile : ICharacterProfile
     {
         public const int MaxNameLength = 32;
-        public const int MaxDescLength = 512;
+        public const int MaxDescLength = 1024; // CosmaticDrift-LargerCharacterDescriptions // Was 512
 
         private readonly Dictionary<string, JobPriority> _jobPriorities;
         private readonly List<string> _antagPreferences;
@@ -55,7 +55,7 @@ namespace Content.Shared.Preferences
             PreferenceUnavailableMode preferenceUnavailable,
             List<string> antagPreferences,
             List<string> traitPreferences,
-            Dictionary<string, RoleLoadout> loadouts)
+            Dictionary<string, RoleLoadout> loadouts,
             CharacterRecords? cdCharacterRecords)
         {
             Name = name;
@@ -72,7 +72,7 @@ namespace Content.Shared.Preferences
             _antagPreferences = antagPreferences;
             _traitPreferences = traitPreferences;
             _loadouts = loadouts;
-                        CDCharacterRecords = cdCharacterRecords;
+            CDCharacterRecords = cdCharacterRecords;
         }
 
         /// <summary>Copy constructor but with overridable references (to prevent useless copies)</summary>
@@ -80,7 +80,8 @@ namespace Content.Shared.Preferences
             HumanoidCharacterProfile other,
             Dictionary<string, JobPriority> jobPriorities,
             List<string> antagPreferences,
-            List<string> traitPreferences)
+            List<string> traitPreferences,
+            Dictionary<string, RoleLoadout> loadouts)
             : this(other.Name, other.FlavorText, other.Species, other.Height, other.Age, other.Sex, other.Gender, other.Appearance, other.SpawnPriority,
                 jobPriorities, other.PreferenceUnavailable, antagPreferences, traitPreferences, loadouts, other.CDCharacterRecords)
         {
@@ -106,6 +107,7 @@ namespace Content.Shared.Preferences
             PreferenceUnavailableMode preferenceUnavailable,
             IReadOnlyList<string> antagPreferences,
             IReadOnlyList<string> traitPreferences,
+            Dictionary<string, RoleLoadout> loadouts,
             CharacterRecords? cdCharacterRecords)
             : this(name, flavortext, species, height, age, sex, gender, appearance, spawnPriority, new Dictionary<string, JobPriority>(jobPriorities),
                 preferenceUnavailable, new List<string>(antagPreferences), new List<string>(traitPreferences), new Dictionary<string, RoleLoadout>(loadouts), cdCharacterRecords)
@@ -338,6 +340,7 @@ namespace Content.Shared.Preferences
                     list.Remove(antagId);
                 }
             }
+
             return new(this, _jobPriorities, list, _traitPreferences, _loadouts);
         }
 
@@ -537,7 +540,7 @@ namespace Content.Shared.Preferences
             _traitPreferences.AddRange(traits);
 
             CDCharacterRecords?.EnsureValid();
-            
+
             // Checks prototypes exist for all loadouts and dump / set to default if not.
             var toRemove = new ValueList<string>();
 
@@ -602,6 +605,23 @@ namespace Content.Shared.Preferences
         public void SetLoadout(RoleLoadout loadout)
         {
             _loadouts[loadout.Role.Id] = loadout;
+        }
+
+        public HumanoidCharacterProfile WithLoadout(RoleLoadout loadout)
+        {
+            // Deep copies so we don't modify the DB profile.
+            var copied = new Dictionary<string, RoleLoadout>();
+
+            foreach (var proto in _loadouts)
+            {
+                if (proto.Key == loadout.Role)
+                    continue;
+
+                copied[proto.Key] = proto.Value.Clone();
+            }
+
+            copied[loadout.Role] = loadout.Clone();
+            return new(this, _jobPriorities, _antagPreferences, _traitPreferences, copied);
         }
 
         public RoleLoadout GetLoadoutOrDefault(string id, IEntityManager entManager, IPrototypeManager protoManager)

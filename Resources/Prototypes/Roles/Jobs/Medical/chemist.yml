@@ -10,13 +10,12 @@
   - Medical
   - Chemistry
   - Maintenance
+
 - type: startingGear
   id: ChemistGear
   equipment:
-    back: ClothingBackpackChemistryFilled
-    shoes: ClothingShoesColorWhite
     id: ChemistryPDA
     ears: ClothingHeadsetMedical
     belt: ChemBag
     pocket1: HandLabeler
-    # the purple glasses?
+    eyes: ClothingEyesGlassesChemical
