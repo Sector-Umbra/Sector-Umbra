@@ -1,0 +1,49 @@
+# General job-agnostic items, for when a job has no job-specific personal items
+- type: loadoutGroup
+  id: PersonalItemsJobAgnostic
+  name: loadout-group-personal-items
+  minLimit: 0
+  maxLimit: 2
+  loadouts:
+  - ClothingNeckArtifactNecklace
+  - FrostCoat
+  - BozelliLighter
+  - ClothingNeckLoopsBellCollar
+  - PlushieMaple
+  - ClothingHeadHatFlowerBraidGeorgia
+  - ClothingEyesReadingGlasses
+  - ClothingNeckWipesFriendMedal
+
+# Personal items including those specific to hoS
+- type: loadoutGroup
+  id: PersonalItemsHoS
+  name: loadout-group-personal-items
+  minLimit: 0
+  maxLimit: 2
+  loadouts:
+  - ClothingNeckArtifactNecklace
+  - FrostCoat
+  - BozelliLighter
+  - ClothingNeckLoopsBellCollar
+  - PlushieMaple
+  - ClothingHeadHatFlowerBraidGeorgia
+  - PersonalItemClothingOuterCoatMoonlitHoS
+  - ClothingEyesReadingGlasses
+  - ClothingNeckWipesFriendMedal
+
+# Personal items including those specific to Detective
+- type: loadoutGroup
+  id: PersonalItemsDetective
+  name: loadout-group-personal-items
+  minLimit: 0
+  maxLimit: 2
+  loadouts:
+  - ClothingNeckArtifactNecklace
+  - FrostCoat
+  - BozelliLighter
+  - ClothingNeckLoopsBellCollar
+  - PlushieMaple
+  - ClothingHeadHatFlowerBraidGeorgia
+  - ClothingBeltMoonlitHolster
+  - ClothingEyesReadingGlasses
+  - ClothingNeckWipesFriendMedal

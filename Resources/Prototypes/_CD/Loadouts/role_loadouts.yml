@@ -10,6 +10,7 @@
   - PrivateInvestigatorShoes
   - PrivateInvestigatorGlasses
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 # Engineering
 - type: roleLoadout
@@ -21,6 +22,7 @@
   - StationEngineerOuterClothing
   - StationEngineerShoes
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 # Science
 - type: roleLoadout
@@ -34,6 +36,7 @@
   - ScientistGloves
   - ScientistShoes
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 # Security
 - type: roleLoadout
@@ -47,6 +50,7 @@
   - SecurityBelt
   - SecurityGlassesOrHud
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 # Medical
 - type: roleLoadout
@@ -60,6 +64,7 @@
   - SeniorPhysicianOuterClothing
   - MedicalShoes
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 # Wildcards
 - type: roleLoadout

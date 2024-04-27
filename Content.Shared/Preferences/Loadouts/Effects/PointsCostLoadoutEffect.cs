@@ -13,6 +13,7 @@ public sealed partial class PointsCostLoadoutEffect : LoadoutEffect
     public override bool Validate(
         RoleLoadout loadout,
         ICommonSession session,
+        ICharacterProfile? profile, // Umbra: required for personal items
         IDependencyCollection collection,
         [NotNullWhen(false)] out FormattedMessage? reason)
     {
