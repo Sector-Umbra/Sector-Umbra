@@ -23,15 +23,16 @@ public sealed partial class PersonalItemLoadoutEffect : LoadoutEffect
         IDependencyCollection collection,
         [NotNullWhen(false)] out FormattedMessage? reason)
     {
-        if (profile is HumanoidCharacterProfile humanoid && humanoid.Name != CharacterName)
+        if (profile is HumanoidCharacterProfile humanoid &&
+            humanoid.Name.Equals(CharacterName, StringComparison.InvariantCultureIgnoreCase))
         {
-            reason = FormattedMessage.FromUnformatted(Loc.GetString(
-                "loadout-personal-item-belongs-to",
-                ("character", CharacterName)));
-            return false;
+            reason = null;
+            return true;
         }
 
-        reason = null;
-        return true;
+        reason = FormattedMessage.FromUnformatted(Loc.GetString(
+            "loadout-personal-item-belongs-to",
+            ("character", CharacterName)));
+        return false;
     }
 }
