@@ -1,1 +1,1 @@
-﻿electrical-overload-system-buzz = buzzes loudly
+﻿electrical-overload-system-buzz = buzzes
