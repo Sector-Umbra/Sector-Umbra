@@ -16,18 +16,11 @@
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
+
 - type: startingGear
   id: DetectiveGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitDetective
-    back: ClothingBackpackSecurityFilledDetective
-    shoes: ClothingShoesBootsCombatFilled
     eyes: ClothingEyesGlassesSecurity
-    head: ClothingHeadHatFedoraBrown
-    outerClothing: ClothingOuterVestDetective
     id: DetectivePDA
     ears: ClothingHeadsetSecurity
     belt: ClothingBeltHolsterFilled
-  innerClothingSkirt: ClothingUniformJumpskirtDetective
-  satchel: ClothingBackpackSatchelSecurityFilledDetective
-  duffelbag: ClothingBackpackDuffelSecurityFilledDetective

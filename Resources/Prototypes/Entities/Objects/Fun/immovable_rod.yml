@@ -39,6 +39,7 @@
 
 - type: entity
   id: ImmovableRodDespawn
+  suffix: Despawn
   parent: ImmovableRod
   components:
   - type: TimedDespawn
