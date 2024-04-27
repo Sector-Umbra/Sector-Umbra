@@ -35,13 +35,6 @@ public sealed class SiliconLawEui : BaseEui
 
     public void UpdateLaws(SiliconLawBoundComponent? lawBoundComponent, EntityUid player)
     {
-        var adminData = _adminManager.GetAdminData(Player);
-        if (adminData == null || !adminData.HasFlag(AdminFlags.Admin))
-        {
-            _sawmill.Warning("Player {0} tried to open silicon law UI without permission.", player);
-            return;
-        }
-
         if (!IsAllowed())
             return;
 
@@ -71,7 +64,7 @@ public sealed class SiliconLawEui : BaseEui
         var adminData = _adminManager.GetAdminData(Player);
         if (adminData == null || !adminData.HasFlag(AdminFlags.Admin))
         {
-            _sawmill.Warning("Player {0} tried to open silicon law UI without permission.", Player.UserId);
+            _sawmill.Warning("Player {0} tried to open / use silicon law UI without permission.", Player.UserId);
             return false;
         }
 
