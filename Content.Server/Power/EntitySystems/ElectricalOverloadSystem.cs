@@ -46,7 +46,7 @@ public sealed class ElectricalOverloadSystem : EntitySystem
                 if (component.NextBuzz > DateTime.Now)
                     continue;
 
-                component.NextBuzz = DateTime.Now + TimeSpan.FromSeconds(_random.NextDouble(3, 5));
+                component.NextBuzz = DateTime.Now + TimeSpan.FromSeconds(_random.NextDouble(7, 15));
                 _chatSystem.TrySendInGameICMessage(
                     entity,
                     Loc.GetString("electrical-overload-system-buzz"),
