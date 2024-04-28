@@ -51,13 +51,8 @@ public sealed class ElectricalOverloadSystem : EntitySystem
                     entity,
                     Loc.GetString("electrical-overload-system-buzz"),
                     InGameICChatType.Emote,
-                    true,
-                    false,
-                    null,
-                    null,
-                    null,
-                    true,
-                    true
+                    hideChat: true,
+                    ignoreActionBlocker: true
                 );
                 continue;
             }
