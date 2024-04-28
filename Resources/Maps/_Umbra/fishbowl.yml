@@ -10,7 +10,7 @@ tilemap:
   128: Lattice
   129: Plating
 entities:
-- proto: "NT Fishbowl"
+- proto: ""
   entities:
   - uid: 2
     components:
