@@ -15,10 +15,7 @@ entities:
   - uid: 2
     components:
     - type: MetaData
-      name: grid
-    - type: Transform
-      pos: 0.74296975,0.354878
-      parent: invalid
+      name: NT-Fishbowl
     - type: MapGrid
       chunks:
         0,0:
@@ -148,6 +145,58 @@ entities:
     - type: GridAtmosphere
       version: 2
       data:
+        tiles:
+          0,1:
+            0: 13073
+            1: 68
+          0,0:
+            1: 24576
+          -1,1:
+            0: 61132
+            1: 17
+          0,2:
+            0: 29040
+          -1,2:
+            0: 61160
+          0,3:
+            0: 1
+            1: 4192
+          -1,3:
+            0: 2188
+            1: 16432
+          -1,0:
+            1: 12288
+        uniqueMixes:
+        - volume: 2500
+          temperature: 293.15
+          moles:
+          - 21.824879
+          - 82.10312
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          immutable: True
+          moles:
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
