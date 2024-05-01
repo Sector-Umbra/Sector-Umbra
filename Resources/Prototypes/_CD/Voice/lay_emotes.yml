@@ -1,5 +1,6 @@
 - type: emote
   id: LayDown
+  name: chat-emote-name-lay-down
   chatMessages: [lays down]
   chatTriggers:
     - lay
@@ -30,9 +31,10 @@
     - goes prone.
     - collapses
     - collapses.
-    
+
 - type: emote
   id: StandUp
+  name: chat-emote-name-stand-up
   chatMessages: [stands up]
   chatTriggers:
     - stand
@@ -49,4 +51,4 @@
     - stood up.
     - gets up
     - gets up.
-    
+
