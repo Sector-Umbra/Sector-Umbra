@@ -244,6 +244,7 @@ namespace Content.IntegrationTests.Tests
                         Assert.That(lateSpawns, Is.GreaterThan(0), $"Found no latejoin spawn points on {mapProto}");
                     }
 
+                    /* SECTOR UMBRA: We do not need to test available spawnpoints, as we use a custom arrivals system.
                     // Test all availableJobs have spawnPoints
                     // This is done inside gamemap test because loading the map takes ages and we already have it.
                     var jobList = entManager.GetComponent<StationJobsComponent>(station).RoundStartJobList
@@ -262,6 +263,7 @@ namespace Content.IntegrationTests.Tests
 
                     Assert.That(missingSpawnPoints, Has.Count.EqualTo(0),
                         $"There is no spawnpoint for {string.Join(", ", missingSpawnPoints)} on {mapProto}.");
+                    */
                 }
 
                 try
