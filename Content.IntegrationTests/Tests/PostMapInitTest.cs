@@ -65,7 +65,11 @@ namespace Content.IntegrationTests.Tests
             "Atlas",
             "Reach",
             "Train",
-            "Oasis"
+            "Oasis",
+            // CD
+            "Ferrous",
+            // Umbra
+            "Ukea"
         };
 
         /// <summary>
