@@ -172,8 +172,8 @@
     - Cargo
   - type: UserInterface
     interfaces:
-    - key: enum.StorageUiKey.Key
-      type: StorageBoundUserInterface
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -355,12 +355,12 @@
     interactSuccessSound:
       path: /Audio/Ambience/Objects/periodic_beep.ogg
   - type: ShowHealthBars
-    damageContainers: 
+    damageContainers:
     - Biological
   - type: ShowHealthIcons
-    damageContainers: 
+    damageContainers:
     - Biological
-  
+
 - type: entity
   parent: MobSiliconBase
   id: MobMimeBot
