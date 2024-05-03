@@ -127,7 +127,13 @@ public sealed class AccessOverriderSystem : SharedAccessOverriderSystem
             currentAccess = ConvertAccessHashSetsToList(currentAccessHashsets).ToArray();
         }
 
-        if (component.PrivilegedIdSlot.Item is { Valid: true } idCard)
+        // Umbra: Allow admin PDA to configure access
+        if (!component.RequiresPrivilegedId)
+        {
+            possibleAccess = component.AccessLevels.ToArray();
+            missingAccess = Array.Empty<ProtoId<AccessLevelPrototype>>();
+        }
+        else if (component.PrivilegedIdSlot.Item is { Valid: true } idCard)
         {
             privilegedIdName = EntityManager.GetComponent<MetaDataComponent>(idCard).EntityName;
 
@@ -145,8 +151,10 @@ public sealed class AccessOverriderSystem : SharedAccessOverriderSystem
         AccessOverriderBoundUserInterfaceState newState;
 
         newState = new AccessOverriderBoundUserInterfaceState(
-            component.PrivilegedIdSlot.HasItem,
-            PrivilegedIdIsAuthorized(uid, component),
+            // Umbra: Allow admin PDA to configure access
+            !component.RequiresPrivilegedId || component.PrivilegedIdSlot.HasItem,
+            // Umbra: Allow admin PDA to configure access
+            !component.RequiresPrivilegedId || PrivilegedIdIsAuthorized(uid, component),
             currentAccess,
             possibleAccess,
             missingAccess,
@@ -226,23 +234,27 @@ public sealed class AccessOverriderSystem : SharedAccessOverriderSystem
         if (oldTags.SequenceEqual(newAccessList))
             return;
 
-        var difference = newAccessList.Union(oldTags).Except(newAccessList.Intersect(oldTags)).ToHashSet();
-        var privilegedPerms = _accessReader.FindAccessTags(privilegedId!.Value).ToHashSet();
-
-        if (!difference.IsSubsetOf(privilegedPerms))
+        // Umbra: Allow admin PDA to configure access
+        if (component.RequiresPrivilegedId)
         {
-            _sawmill.Warning($"User {ToPrettyString(uid)} tried to modify permissions they could not give/take!");
+            var difference = newAccessList.Union(oldTags).Except(newAccessList.Intersect(oldTags)).ToHashSet();
+            var privilegedPerms = _accessReader.FindAccessTags(privilegedId!.Value).ToHashSet();
 
-            return;
-        }
+            if (!difference.IsSubsetOf(privilegedPerms))
+            {
+                _sawmill.Warning($"User {ToPrettyString(uid)} tried to modify permissions they could not give/take!");
 
-        if (!oldTags.ToHashSet().IsSubsetOf(privilegedPerms))
-        {
-            _sawmill.Warning($"User {ToPrettyString(uid)} tried to modify permissions when they do not have sufficient access!");
-            _popupSystem.PopupEntity(Loc.GetString("access-overrider-cannot-modify-access"), player, player);
-            _audioSystem.PlayPvs(component.DenialSound, uid);
+                return;
+            }
 
-            return;
+            if (!oldTags.ToHashSet().IsSubsetOf(privilegedPerms))
+            {
+                _sawmill.Warning($"User {ToPrettyString(uid)} tried to modify permissions when they do not have sufficient access!");
+                _popupSystem.PopupEntity(Loc.GetString("access-overrider-cannot-modify-access"), player, player);
+                _audioSystem.PlayPvs(component.DenialSound, uid);
+
+                return;
+            }
         }
 
         var addedTags = newAccessList.Except(oldTags).Select(tag => "+" + tag).ToList();
@@ -264,6 +276,9 @@ public sealed class AccessOverriderSystem : SharedAccessOverriderSystem
     private bool PrivilegedIdIsAuthorized(EntityUid uid, AccessOverriderComponent? component = null)
     {
         if (!Resolve(uid, ref component))
+            return true;
+
+        if (!component.RequiresPrivilegedId)
             return true;
 
         if (_accessReader.GetMainAccessReader(uid, out var accessReader))

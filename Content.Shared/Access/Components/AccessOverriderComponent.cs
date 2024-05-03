@@ -16,6 +16,10 @@ public sealed partial class AccessOverriderComponent : Component
     [DataField]
     public ItemSlot PrivilegedIdSlot = new();
 
+    // Umbra: Allow admin PDA to configure access
+    [DataField]
+    public bool RequiresPrivilegedId = true;
+
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField]
     public SoundSpecifier? DenialSound;
