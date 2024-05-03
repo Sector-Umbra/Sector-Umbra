@@ -1,0 +1,13 @@
+- type: entity
+  name: ammonia husk
+  parent: MobPurpleSnake
+  id: MobAmmoniaHusk
+  suffix: AI
+  description: An impossible being made out of built up ammonia. Should you really be this close?
+
+- type: entity
+  name: ammonia husk
+  parent: MobSmallPurpleSnake
+  id: MobSmallAmmoniaHusk
+  suffix: AI, small
+  description: An impossible being made out of built up ammonia. Should you really be this close?
