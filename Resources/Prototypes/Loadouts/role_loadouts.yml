@@ -261,6 +261,7 @@
   - SecurityBelt
   - HeadofSecurityOuterClothing
   - SecurityShoes
+  - SecurityGlassesOrHud # CD Addition
   - Trinkets
 
 - type: roleLoadout
@@ -272,6 +273,7 @@
   - SecurityBelt
   - WardenOuterClothing
   - SecurityShoes
+  - SecurityGlassesOrHud # CD Addition
   - Trinkets
 
 - type: roleLoadout
@@ -284,6 +286,7 @@
   - SecurityShoes
   - SecurityPDA
   - SecurityBelt
+  - SecurityGlassesOrHud # CD Addition
   - Trinkets
 
 - type: roleLoadout
@@ -295,6 +298,7 @@
   - DetectiveBackpack
   - DetectiveOuterClothing
   - SecurityShoes
+  - SecurityGlassesOrHud # CD Addition
   - Trinkets
 
 - type: roleLoadout
@@ -302,6 +306,7 @@
   groups:
   - SecurityCadetJumpsuit
   - SecurityBackpack
+  - SecurityGlassesOrHud # CD Addition
   - Trinkets
 
 # Medical
