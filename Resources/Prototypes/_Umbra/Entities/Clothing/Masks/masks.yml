@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingNeckChewtoy
+  name: synthetic chew-toy
+  description: A sheet of some unknown material with self-healing properties. You can't taste anything when chewing it.
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Mask/chewtoy.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Mask/chewtoy.rsi
