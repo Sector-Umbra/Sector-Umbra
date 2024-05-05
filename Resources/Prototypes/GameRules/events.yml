@@ -468,6 +468,7 @@
     startAnnouncement: station-event-communication-interception
     startAudio:
       path: /Audio/Announcements/intercept.ogg
+    roundEndingThreat: true # Umbra - Pending a better way to prevent this event from rolling automatically. Ever.
   - type: AlertLevelInterceptionRule
   - type: TraitorRule
   - type: AntagSelection
