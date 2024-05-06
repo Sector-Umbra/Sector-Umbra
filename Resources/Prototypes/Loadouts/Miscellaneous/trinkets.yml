@@ -117,3 +117,14 @@
   storage:
     back:
     - ClothingNeckGoldAutismPin
+
+#Umbra Specific
+- type: loadout
+  id: ClothingNeckChewtoy
+  equipment: ClothingNeckChewtoy
+
+- type: startingGear
+  id: ClothingNeckChewtoy
+  storage:
+    back:
+    - ClothingNeckChewtoy
