@@ -1,7 +1,8 @@
 - type: entity
   parent: ClothingMaskBase
   id: ClothingNeckChewtoy
-  name: synthetic chew-toy
+  name: Welds' synthetic chew fidget
+  suffix: PersonalItem
   description: A sheet of some unknown material with self-healing properties. You can't taste anything when chewing it.
   components:
   - type: Sprite
