@@ -10,3 +10,16 @@
     sprite: _Umbra/Clothing/OuterClothing/Coats/yarnaarmouredcoat.rsi
   - type: Clothing
     sprite: _Umbra/Clothing/OuterClothing/Coats/yarnaarmouredcoat.rsi
+
+# Jalopy's Raincoat
+- type: entity
+  parent: ClothingOuterCoatDetectiveLoadout
+  id: PersonalItemClothingOuterCoatReinforcedRaincoat
+  name: reinforced raincoat
+  description: An old coat, padded with kevlar on the inside. "Every once in a while I think about gettin a new coat, but there's no rush on that. There's still plenty of wear in this fella!"
+  suffix: PersonalItem, Detective
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/OuterClothing/Coats/reinforced_raincoat.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/OuterClothing/Coats/reinforced_raincoat.rsi
