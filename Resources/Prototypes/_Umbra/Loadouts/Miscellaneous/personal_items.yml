@@ -26,6 +26,20 @@
     back:
     - FrostCoat
 
+# Jalopy's reinforced raincoat
+- type: loadout
+  id: ClothingOuterCoatReinforcedRaincoat
+  equipment: ClothingOuterCoatReinforcedRaincoat
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Jalopy Oldman
+
+- type: startingGear
+  id: ClothingOuterCoatReinforcedRaincoat
+  storage:
+    back:
+    - ClothingOuterCoatReinforcedRaincoat
+
 # John's Flippo
 - type: loadout
   id: BozelliLighter
@@ -82,34 +96,6 @@
     back:
     - ClothingHeadHatFlowerBraidGeorgia
 
-# moonlit coat
-- type: loadout
-  id: PersonalItemClothingOuterCoatMoonlitHoS
-  equipment: PersonalItemClothingOuterCoatMoonlitHoS
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character: "Aur'sai"
-
-- type: startingGear
-  id: PersonalItemClothingOuterCoatMoonlitHoS
-  storage:
-    back:
-    - PersonalItemClothingOuterCoatMoonlitHoS
-
-# moonlit shoulder holster
-- type: loadout
-  id: ClothingBeltMoonlitHolster
-  equipment: ClothingBeltMoonlitHolster
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character: "Aur'sai"
-
-- type: startingGear
-  id: ClothingBeltMoonlitHolster
-  storage:
-    back:
-    - ClothingBeltMoonlitHolster
-
 # Reading's reading glasses
 - type: loadout
   id: ClothingEyesReadingGlasses
@@ -137,3 +123,17 @@
   storage:
     back:
     - ClothingNeckWipesFriendMedal
+
+# Yarna's armoured winter coat
+- type: loadout
+  id: ClothingOuterYarnaArmourCoat
+  equipment: ClothingOuterYarnaArmourCoat
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Yarna Crimson
+
+- type: startingGear
+  id: ClothingOuterYarnaArmourCoat
+  storage:
+    back:
+    - ClothingOuterYarnaArmourCoat

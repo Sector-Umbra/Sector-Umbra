@@ -287,7 +287,7 @@
   - SecurityShoes
   - SecurityGlassesOrHud # CD Addition
   - Trinkets
-  - PersonalItemsHoS # Umbra
+  - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobWarden
@@ -300,7 +300,7 @@
   - SecurityShoes
   - SecurityGlassesOrHud # CD Addition
   - Trinkets
-  - PersonalItemsJobAgnostic # Umbra
+  - PersonalItemsWarden # Umbra
 
 - type: roleLoadout
   id: JobSecurityOfficer

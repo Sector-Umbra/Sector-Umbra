@@ -1,3 +1,11 @@
+# Items within each group are ordered alphabetically by item name.
+#
+# IF YOU NEED A NEW GROUP:
+#   1. Copy PersonalItemsJobAgnostic.
+#   2. Replace 'JobAgnostic' with the ONE job the group is intended for.
+#   3. Add job-specific loadouts to the group.
+#   4. Replace the job's PersonalItemsJobAgnostic loadout group with the new group.
+
 # General job-agnostic items, for when a job has no job-specific personal items
 - type: loadoutGroup
   id: PersonalItemsJobAgnostic
@@ -14,9 +22,9 @@
   - ClothingEyesReadingGlasses
   - ClothingNeckWipesFriendMedal
 
-# Personal items including those specific to hoS
+# Personal items specialised for Warden
 - type: loadoutGroup
-  id: PersonalItemsHoS
+  id: PersonalItemsWarden
   name: loadout-group-personal-items
   minLimit: 0
   maxLimit: 2
@@ -27,11 +35,11 @@
   - ClothingNeckLoopsBellCollar
   - PlushieMaple
   - ClothingHeadHatFlowerBraidGeorgia
-  - PersonalItemClothingOuterCoatMoonlitHoS
   - ClothingEyesReadingGlasses
   - ClothingNeckWipesFriendMedal
+  - ClothingOuterYarnaArmourCoat
 
-# Personal items including those specific to Detective
+# Personal items specialised for Detective
 - type: loadoutGroup
   id: PersonalItemsDetective
   name: loadout-group-personal-items
@@ -44,6 +52,6 @@
   - ClothingNeckLoopsBellCollar
   - PlushieMaple
   - ClothingHeadHatFlowerBraidGeorgia
-  - ClothingBeltMoonlitHolster
   - ClothingEyesReadingGlasses
+  - ClothingOuterCoatReinforcedRaincoat
   - ClothingNeckWipesFriendMedal
