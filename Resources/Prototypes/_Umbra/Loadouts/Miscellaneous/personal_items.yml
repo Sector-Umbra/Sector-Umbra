@@ -110,6 +110,20 @@
     back:
     - ClothingEyesReadingGlasses
 
+# Welds' synthetic chew fidget
+- type: loadout
+  id: ClothingNeckChewtoy
+  equipment: ClothingNeckChewtoy
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Welds-The-Pipes
+
+- type: startingGear
+  id: ClothingNeckChewtoy
+  storage:
+    back:
+    - ClothingNeckChewtoy
+
 # Wipes' friend medal
 - type: loadout
   id: ClothingNeckWipesFriendMedal
