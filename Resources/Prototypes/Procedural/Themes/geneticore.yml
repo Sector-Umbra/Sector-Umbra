@@ -158,6 +158,12 @@
   tags:
     - Geneticore
 
+- type: dungeonRoom
+  id: Geneticore13x3c
+  size: 13,3
+  atlas: /Maps/Dungeon/geneticore.yml
+  offset: 28,30
+
 # - 11x3
 - type: dungeonRoom
   id: Geneticore11x3a
@@ -172,6 +178,14 @@
   size: 11,3
   atlas: /Maps/Dungeon/geneticore.yml
   offset: 12,34
+  tags:
+    - Geneticore
+
+- type: dungeonRoom
+  id: Geneticore11x3c
+  size: 11,3
+  atlas: /Maps/Dungeon/geneticore.yml
+  offset: 24,34
   tags:
     - Geneticore
 
@@ -197,6 +211,30 @@
   size: 7,3
   atlas: /Maps/Dungeon/geneticore.yml
   offset: 16,38
+  tags:
+    - Geneticore
+
+- type: dungeonRoom
+  id: Geneticore7x3d
+  size: 7,3
+  atlas: /Maps/Dungeon/geneticore.yml
+  offset: 24,38
+  tags:
+    - Geneticore
+
+- type: dungeonRoom
+  id: Geneticre7x3e
+  size: 7,3
+  atlas: /Maps/Dungeon/geneticore.yml
+  offset: 32,38
+  tags:
+    - Geneticore
+
+- type: dungeonRoom
+  id: Geneticore7x3f
+  size: 7,3
+  atlas: /Maps/Dungeon/geneticore.yml
+  offset: 40,38
   tags:
     - Geneticore
 
@@ -280,6 +318,38 @@
   size: 3,5
   atlas: /Maps/Dungeon/geneticore.yml
   offset: 16,24
+  tags:
+    - Geneticore
+
+- type: dungeonRoom
+  id: Geneticore3x5f
+  size: 3,5
+  atlas: /Maps/Dungeon/geneticore.yml
+  offset: 20,24
+  tags:
+    - Geneticore
+
+- type: dungeonRoom
+  id: Geneticore3x5g
+  size: 3,5
+  atlas: /Maps/Dungeon/geneticore.yml
+  offset: 24,24
+  tags:
+    - Geneticore
+
+- type: dungeonRoom
+  id: Geneticore3x5h
+  size: 3,5
+  atlas: /Maps/Dungeon/geneticore.yml
+  offset: 28,24
+  tags:
+    - Geneticore
+
+- type: dungeonRoom
+  id: Geneticore3x5i
+  size: 3,5
+  atlas: /Maps/Dungeon/geneticore.yml
+  offset: 32,24
   tags:
     - Geneticore
 
