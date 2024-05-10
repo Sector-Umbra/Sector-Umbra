@@ -8,6 +8,7 @@
   - CaptainBackpack
   - CaptainOuterClothing
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobHeadOfPersonnel
@@ -19,6 +20,7 @@
   - HoPOuterClothing
   - Glasses
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 # Civilian
 - type: roleLoadout
@@ -32,6 +34,7 @@
   - PassengerShoes
   - Glasses
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobBartender
@@ -42,6 +45,7 @@
   - BartenderOuterClothing
   - Glasses
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobServiceWorker
@@ -50,6 +54,7 @@
   - CommonBackpack
   - Glasses
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobChef
@@ -61,6 +66,7 @@
   - ChefOuterClothing
   - Glasses
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobLibrarian
@@ -69,6 +75,7 @@
   - CommonBackpack
   - Glasses
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobLawyer
@@ -78,6 +85,7 @@
   - LawyerBackpack
   - Glasses
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobChaplain
@@ -90,6 +98,7 @@
   - ChaplainOuterClothing
   - Glasses
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobJanitor
@@ -101,6 +110,7 @@
   - JanitorOuterClothing
   - Glasses
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobBotanist
@@ -111,6 +121,7 @@
   - BotanistOuterClothing
   - Glasses
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobClown
@@ -122,6 +133,7 @@
   - ClownShoes
   - Glasses
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobMime
@@ -133,6 +145,7 @@
   - MimeOuterClothing
   - Glasses
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobMusician
@@ -141,6 +154,7 @@
   - MusicianOuterClothing
   - Glasses
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 # Cargo
 - type: roleLoadout
@@ -154,6 +168,7 @@
   - QuartermasterShoes
   - Glasses
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobCargoTechnician
@@ -165,6 +180,7 @@
   - CargoTechnicianShoes
   - Glasses
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobSalvageSpecialist
@@ -174,6 +190,7 @@
   - SalvageSpecialistShoes
   - Glasses
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 # Engineering
 - type: roleLoadout
@@ -186,6 +203,7 @@
   - ChiefEngineerOuterClothing
   - ChiefEngineerShoes
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobTechnicalAssistant
@@ -193,6 +211,7 @@
   - TechnicalAssistantJumpsuit
   - StationEngineerBackpack
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobStationEngineer
@@ -204,6 +223,7 @@
   - StationEngineerShoes
   - StationEngineerID
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobAtmosphericTechnician
@@ -213,6 +233,7 @@
   - AtmosphericTechnicianOuterClothing
   - AtmosphericTechnicianShoes
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 # Science
 - type: roleLoadout
@@ -227,6 +248,7 @@
   - ResearchDirectorShoes
   - Glasses
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobScientist
@@ -241,6 +263,7 @@
   - ScientistPDA
   - Glasses
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobResearchAssistant
@@ -249,6 +272,7 @@
   - ScientistBackpack
   - Glasses
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 # Security
 - type: roleLoadout
@@ -263,6 +287,7 @@
   - SecurityShoes
   - SecurityGlassesOrHud # CD Addition
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobWarden
@@ -275,6 +300,7 @@
   - SecurityShoes
   - SecurityGlassesOrHud # CD Addition
   - Trinkets
+  - PersonalItemsWarden # Umbra
 
 - type: roleLoadout
   id: JobSecurityOfficer
@@ -288,6 +314,7 @@
   - SecurityBelt
   - SecurityGlassesOrHud # CD Addition
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobDetective
@@ -300,6 +327,7 @@
   - SecurityShoes
   - SecurityGlassesOrHud # CD Addition
   - Trinkets
+  - PersonalItemsDetective # Umbra
 
 - type: roleLoadout
   id: JobSecurityCadet
@@ -308,6 +336,7 @@
   - SecurityBackpack
   - SecurityGlassesOrHud # CD Addition
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 # Medical
 - type: roleLoadout
@@ -323,6 +352,7 @@
   - ChiefMedicalOfficerShoes
   - Glasses
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobMedicalDoctor
@@ -337,6 +367,7 @@
   - MedicalDoctorPDA
   - Glasses
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobMedicalIntern
@@ -345,6 +376,7 @@
   - MedicalBackpack
   - Glasses
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobChemist
@@ -356,6 +388,7 @@
   - ChemistOuterClothing
   - MedicalShoes
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobParamedic
@@ -371,6 +404,7 @@
   - ParamedicShoes
   - Glasses
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 # Wildcards
 - type: roleLoadout
@@ -379,6 +413,7 @@
   - CommonBackpack
   - Glasses
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobReporter
@@ -387,6 +422,7 @@
   - CommonBackpack
   - Glasses
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobPsychologist
@@ -394,6 +430,7 @@
   - MedicalBackpack
   - Glasses
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
 
 - type: roleLoadout
   id: JobBoxer
@@ -403,3 +440,4 @@
   - CommonBackpack
   - Glasses
   - Trinkets
+  - PersonalItemsJobAgnostic # Umbra

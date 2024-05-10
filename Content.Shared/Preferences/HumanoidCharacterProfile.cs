@@ -553,7 +553,8 @@ namespace Content.Shared.Preferences
                     continue;
                 }
 
-                loadouts.EnsureValid(session, collection);
+                // Umbra: pass character profile
+                loadouts.EnsureValid(session, this, collection);
             }
 
             foreach (var value in toRemove)
