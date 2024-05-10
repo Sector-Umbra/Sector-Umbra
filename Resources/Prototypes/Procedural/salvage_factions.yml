@@ -42,3 +42,20 @@
   configs:
     DefenseStructure: CarpStatue
     Megafauna: MobDragonDungeon
+
+- type: salvageFaction
+  id: Flesh
+  entries:
+    - proto: MobFleshGolemSalvage
+    - proto: MobFleshClampSalvage
+    - proto: MobFleshLoverSalvage
+    - proto: MobFleshJaredSalvage
+    - proto: MobAbominationSalvage
+
+- type: salvageFaction
+  id: Elemental
+  entries:
+    - proto: MobQuartzCrab
+    - proto: MobIronCrab
+    - proto: MobUraniumCrab
+    - proto: MobSilverCrab
