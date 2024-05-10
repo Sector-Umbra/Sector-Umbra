@@ -2,7 +2,7 @@
   parent: ClothingShoesBase
   id: ClothingShoesMiscWeldsWalker
   name: Welds' R.I.G
-  description: Made from an ATMOS hardsuit and a pair of Magboots. You don't know how, but it has gyroscoptic capabilities. No wonder They're still here.
+  description: Made from an ATMOS hardsuit and a pair of Magboots. You don't know how, but it has gyroscoptic capabilities. No wonder they're still here.
   suffix: PersonalItem
   components:
   - type: Sprite
