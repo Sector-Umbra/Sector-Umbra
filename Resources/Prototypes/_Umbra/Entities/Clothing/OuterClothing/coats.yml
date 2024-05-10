@@ -1,7 +1,7 @@
 # Player: OverwatchVoice - Character: Yarna Crimson
 - type: entity
   parent: ClothingOuterCoatWarden
-  id: PersonalItemClothingOuterYarnaArmourCoat
+  id: ClothingOuterYarnaArmourCoat
   name: Yarna's armoured winter coat
   description: A elegant winter coat made with high-quality fibers, featuring two golden shoulder guards, there is a small label that reads "Yarna-Crimson".
   suffix: PersonalItem, Warden
@@ -11,10 +11,10 @@
   - type: Clothing
     sprite: _Umbra/Clothing/OuterClothing/Coats/yarnaarmouredcoat.rsi
 
-# Jalopy's Raincoat
+# Player: SlamBamActionMan - Character: Jalopy Oldman
 - type: entity
   parent: ClothingOuterCoatDetectiveLoadout
-  id: PersonalItemClothingOuterCoatReinforcedRaincoat
+  id: ClothingOuterCoatReinforcedRaincoat
   name: reinforced raincoat
   description: An old coat, padded with kevlar on the inside. "Every once in a while I think about gettin a new coat, but there's no rush on that. There's still plenty of wear in this fella!"
   suffix: PersonalItem, Detective
