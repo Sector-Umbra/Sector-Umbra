@@ -1,6 +1,6 @@
 - type: entity
   parent: BaseItem
-  id: Fateseekersgemstone
+  id: FateseekersGemstone
   name: Fateseeker's mysterious gemstone
   description: A mysterious gemstone, shining and glowing. It looks quite worn off.
   suffix: PersonalItem
