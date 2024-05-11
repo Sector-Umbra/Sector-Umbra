@@ -9,17 +9,17 @@
 
   "states": [
     {
-      "name": "icon",
+      "name": "light",
       "delays": [
         [
           1.0,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       ]
     },
@@ -28,8 +28,12 @@
       "directions": 4
     },
     {
-      "name": "inhand-left",
-      "directions": 4
+        "name": "inhand-left",
+        "directions": 4
+    },
+    {
+        "name": "icon",
+        "directions":  1
     }
   ]
 

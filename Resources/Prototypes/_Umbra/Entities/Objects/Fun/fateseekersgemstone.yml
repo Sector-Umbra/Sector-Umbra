@@ -5,6 +5,15 @@
   description: A mysterious gemstone, shining and glowing. It looks quite worn off.
   suffix: PersonalItem
   components:
-  - type: Sprite
-    sprite: _Umbra/Objects/Fun/fateseekersgemstone.rsi
-    state: icon
+   - type: Sprite
+     sprite: _Umbra/Objects/Fun/fateseekersgemstone.rsi
+     layers:
+      - state: icon
+      - state: light
+        visible: true
+        shader: unshaded
+        map: ["enum.ToggleVisuals.Layer"]
+   ##- type: EmitSoundOnUse 
+   ##  sound: /Audio/_Umbra/Items/Fun/fateseekersgemstoneuse.ogg  [[FOR FUTURE]]
+   ##- type: UseDelay
+   ##  delay: 5.0
