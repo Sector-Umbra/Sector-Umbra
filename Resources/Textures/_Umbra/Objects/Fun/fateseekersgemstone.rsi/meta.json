@@ -9,7 +9,7 @@
 
   "states": [
     {
-      "name": "light",
+      "name": "icon-active",
       "delays": [
         [
           1.0,
