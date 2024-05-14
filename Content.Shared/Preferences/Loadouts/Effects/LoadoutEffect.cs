@@ -13,6 +13,7 @@ public abstract partial class LoadoutEffect
     public abstract bool Validate(
         RoleLoadout loadout,
         ICommonSession session,
+        ICharacterProfile? profile, // Umbra: required for personal items
         IDependencyCollection collection,
         [NotNullWhen(false)] out FormattedMessage? reason);
 

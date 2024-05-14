@@ -31,6 +31,7 @@ public sealed partial class LoadoutGroupContainer : BoxContainer
     public void RefreshLoadouts(RoleLoadout loadout, ICommonSession session, IDependencyCollection collection)
     {
         var protoMan = collection.Resolve<IPrototypeManager>();
+        var prefMan = collection.Resolve<IClientPreferencesManager>(); // Umbra: personal items
         var loadoutSystem = collection.Resolve<IEntityManager>().System<LoadoutSystem>();
         RestrictionsContainer.DisposeAllChildren();
 
@@ -65,6 +66,7 @@ public sealed partial class LoadoutGroupContainer : BoxContainer
         // Didn't use options because this is more robust in future.
 
         var selected = loadout.SelectedLoadouts[_groupProto.ID];
+        var profile = prefMan.Preferences?.SelectedCharacter; // Umbra: personal items
 
         foreach (var loadoutProto in _groupProto.Loadouts)
         {
@@ -74,7 +76,8 @@ public sealed partial class LoadoutGroupContainer : BoxContainer
             var matchingLoadout = selected.FirstOrDefault(e => e.Prototype == loadoutProto);
             var pressed = matchingLoadout != null;
 
-            var enabled = loadout.IsValid(session, loadoutProto, collection, out var reason);
+            // Umbra: pass character profile
+            var enabled = loadout.IsValid(session, loadoutProto, profile, collection, out var reason);
             var loadoutContainer = new LoadoutContainer(loadoutProto, !enabled, reason);
             loadoutContainer.Select.Pressed = pressed;
             loadoutContainer.Text = loadoutSystem.GetName(loadProto);

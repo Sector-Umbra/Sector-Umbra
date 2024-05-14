@@ -14,7 +14,7 @@
   - extended
   - shittersafari
   name: extended-title
-  showInVote: true #2boring2vote
+  showInVote: true #2boring2vote - Umbra: Really not boring. Shush, original commenter.
   description: extended-description
   rules:
   - BasicStationEventScheduler
@@ -29,6 +29,16 @@
   description: secret-description
   rules:
     - Secret
+
+- type: gamePreset
+  id: SecretExtended #For Admin Use: Runs Extended but shows "Secret" in lobby.
+  alias:
+    - secretextended
+  name: secret-title
+  showInVote: false #Admin Use
+  description: secret-description
+  rules:
+    - BasicStationEventScheduler
 
 - type: gamePreset
   id: Sandbox
@@ -106,14 +116,3 @@
   rules:
   - Zombie
   - BasicStationEventScheduler
-
-- type: gamePreset
-  id: Pirates
-  alias:
-    - pirates
-  name: pirates-title
-  description: pirates-description
-  showInVote: false
-  rules:
-    - Pirates
-    - BasicStationEventScheduler

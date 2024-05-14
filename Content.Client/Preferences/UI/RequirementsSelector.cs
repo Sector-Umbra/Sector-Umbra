@@ -119,6 +119,7 @@ public abstract class RequirementsSelector<T> : BoxContainer where T : IPrototyp
         // else
         else
         {
+            var prefMan = collection.Resolve<IClientPreferencesManager>(); // Umbra: personal items
             var session = collection.Resolve<IPlayerManager>().LocalSession!;
             // TODO: Most of lobby state should be a uicontroller
             // trying to handle all this shit is a big-ass mess.
@@ -150,7 +151,8 @@ public abstract class RequirementsSelector<T> : BoxContainer where T : IPrototyp
                         if (!_loadout.RemoveLoadout(selectedGroup, selectedLoadout, protoManager))
                             return;
 
-                        _loadout.EnsureValid(session, collection);
+                        // Umbra: pass character profile
+                        _loadout.EnsureValid(session, prefMan.Preferences?.SelectedCharacter, collection);
                         _loadoutWindow.RefreshLoadouts(_loadout, session, collection);
                         var controller = UserInterfaceManager.GetUIController<LobbyUIController>();
                         controller.ReloadProfile();
@@ -162,7 +164,8 @@ public abstract class RequirementsSelector<T> : BoxContainer where T : IPrototyp
                         if (!_loadout.AddLoadout(selectedGroup, selectedLoadout, protoManager))
                             return;
 
-                        _loadout.EnsureValid(session, collection);
+                        // Umbra: pass character profile
+                        _loadout.EnsureValid(session, prefMan.Preferences?.SelectedCharacter, collection);
                         _loadoutWindow.RefreshLoadouts(_loadout, session, collection);
                         var controller = UserInterfaceManager.GetUIController<LobbyUIController>();
                         controller.ReloadProfile();
