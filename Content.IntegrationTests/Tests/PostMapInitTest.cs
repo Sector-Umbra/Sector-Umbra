@@ -65,11 +65,13 @@ namespace Content.IntegrationTests.Tests
             "Atlas",
             "Reach",
             "Train",
-            "Oasis",
-            // CD
-            "Ferrous",
-            // Umbra
-            "Ukea"
+            "Oasis"
+        };
+
+        // UMBRA: We need to be able to mark non-upstream maps as not tested.
+        private static readonly string[] UntestedGameMaps =
+        {
+            "Ferrous"
         };
 
         /// <summary>
@@ -323,6 +325,13 @@ namespace Content.IntegrationTests.Tests
                 .ToHashSet();
 
             Assert.That(gameMaps.Remove(PoolManager.TestMap));
+
+            // UMBRA - Remove untested maps from the gameMaps set, such that the following statement does not error.
+            foreach (string untestedMap in UntestedGameMaps)
+            {
+                Assert.That(gameMaps.Remove(untestedMap), "UMBRA: Game map prototype missing from untested list: " + untestedMap);
+            }
+            // END UMBRA
 
             Assert.That(gameMaps, Is.EquivalentTo(GameMaps.ToHashSet()), "Game map prototype missing from test cases.");
 
