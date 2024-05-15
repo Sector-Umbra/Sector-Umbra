@@ -1,0 +1,443 @@
+# Command
+- type: roleLoadout
+  id: JobCaptain
+  groups:
+  - CaptainHead
+  - CaptainNeck
+  - CaptainJumpsuit
+  - CaptainBackpack
+  - CaptainOuterClothing
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+- type: roleLoadout
+  id: JobHeadOfPersonnel
+  groups:
+  - HoPHead
+  - HoPNeck
+  - HoPJumpsuit
+  - HoPBackpack
+  - HoPOuterClothing
+  - Glasses
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+# Civilian
+- type: roleLoadout
+  id: JobPassenger
+  groups:
+  - PassengerJumpsuit
+  - CommonBackpack
+  - PassengerFace
+  - PassengerGloves
+  - PassengerOuterClothing
+  - PassengerShoes
+  - Glasses
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+- type: roleLoadout
+  id: JobBartender
+  groups:
+  - BartenderHead
+  - BartenderJumpsuit
+  - CommonBackpack
+  - BartenderOuterClothing
+  - Glasses
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+- type: roleLoadout
+  id: JobServiceWorker
+  groups:
+  - BartenderJumpsuit
+  - CommonBackpack
+  - Glasses
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+- type: roleLoadout
+  id: JobChef
+  groups:
+  - ChefHead
+  - ChefMask
+  - ChefJumpsuit
+  - CommonBackpack
+  - ChefOuterClothing
+  - Glasses
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+- type: roleLoadout
+  id: JobLibrarian
+  groups:
+  - LibrarianJumpsuit
+  - CommonBackpack
+  - Glasses
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+- type: roleLoadout
+  id: JobLawyer
+  groups:
+  - LawyerNeck
+  - LawyerJumpsuit
+  - LawyerBackpack
+  - Glasses
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+- type: roleLoadout
+  id: JobChaplain
+  groups:
+  - ChaplainHead
+  - ChaplainMask
+  - ChaplainNeck
+  - ChaplainJumpsuit
+  - ChaplainBackpack
+  - ChaplainOuterClothing
+  - Glasses
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+- type: roleLoadout
+  id: JobJanitor
+  groups:
+  - JanitorHead
+  - JanitorJumpsuit
+  - JanitorGloves
+  - CommonBackpack
+  - JanitorOuterClothing
+  - Glasses
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+- type: roleLoadout
+  id: JobBotanist
+  groups:
+  - BotanistHead
+  - BotanistJumpsuit
+  - BotanistBackpack
+  - BotanistOuterClothing
+  - Glasses
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+- type: roleLoadout
+  id: JobClown
+  groups:
+  - ClownHead
+  - ClownJumpsuit
+  - ClownBackpack
+  - ClownOuterClothing
+  - ClownShoes
+  - Glasses
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+- type: roleLoadout
+  id: JobMime
+  groups:
+  - MimeHead
+  - MimeMask
+  - MimeJumpsuit
+  - MimeBackpack
+  - MimeOuterClothing
+  - Glasses
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+- type: roleLoadout
+  id: JobMusician
+  groups:
+  - MusicianBackpack
+  - MusicianOuterClothing
+  - Glasses
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+# Cargo
+- type: roleLoadout
+  id: JobQuartermaster
+  groups:
+  - QuartermasterHead
+  - QuartermasterNeck
+  - QuartermasterJumpsuit
+  - QuartermasterBackpack
+  - QuartermasterOuterClothing
+  - QuartermasterShoes
+  - Glasses
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+- type: roleLoadout
+  id: JobCargoTechnician
+  groups:
+  - CargoTechnicianHead
+  - CargoTechnicianJumpsuit
+  - CargoTechnicianBackpack
+  - CargoTechnicianOuterClothing
+  - CargoTechnicianShoes
+  - Glasses
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+- type: roleLoadout
+  id: JobSalvageSpecialist
+  groups:
+  - SalvageSpecialistBackpack
+  - SalvageSpecialistOuterClothing
+  - SalvageSpecialistShoes
+  - Glasses
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+# Engineering
+- type: roleLoadout
+  id: JobChiefEngineer
+  groups:
+  - ChiefEngineerHead
+  - ChiefEngineerJumpsuit
+  - ChiefEngineerBackpack
+  - ChiefEngineerNeck
+  - ChiefEngineerOuterClothing
+  - ChiefEngineerShoes
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+- type: roleLoadout
+  id: JobTechnicalAssistant
+  groups:
+  - TechnicalAssistantJumpsuit
+  - StationEngineerBackpack
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+- type: roleLoadout
+  id: JobStationEngineer
+  groups:
+  - StationEngineerHead
+  - StationEngineerJumpsuit
+  - StationEngineerBackpack
+  - StationEngineerOuterClothing
+  - StationEngineerShoes
+  - StationEngineerID
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+- type: roleLoadout
+  id: JobAtmosphericTechnician
+  groups:
+  - AtmosphericTechnicianJumpsuit
+  - AtmosphericTechnicianBackpack
+  - AtmosphericTechnicianOuterClothing
+  - AtmosphericTechnicianShoes
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+# Science
+- type: roleLoadout
+  id: JobResearchDirector
+  groups:
+  - ResearchDirectorHead
+  - ResearchDirectorNeck
+  - ResearchDirectorJumpsuit
+  - ResearchDirectorBackpack
+  - ResearchDirectorOuterClothing
+  - ScientistGloves
+  - ResearchDirectorShoes
+  - Glasses
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+- type: roleLoadout
+  id: JobScientist
+  groups:
+  - ScientistHead
+  - ScientistNeck
+  - ScientistJumpsuit
+  - ScientistBackpack
+  - ScientistOuterClothing
+  - ScientistGloves
+  - ScientistShoes
+  - ScientistPDA
+  - Glasses
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+- type: roleLoadout
+  id: JobResearchAssistant
+  groups:
+  - ResearchAssistantJumpsuit
+  - ScientistBackpack
+  - Glasses
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+# Security
+- type: roleLoadout
+  id: JobHeadOfSecurity
+  groups:
+  - HeadofSecurityHead
+  - HeadofSecurityNeck
+  - HeadofSecurityJumpsuit
+  - SecurityBackpack
+  - SecurityBelt
+  - HeadofSecurityOuterClothing
+  - SecurityShoes
+  - SecurityGlassesOrHud # CD Addition
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+- type: roleLoadout
+  id: JobWarden
+  groups:
+  - WardenHead
+  - WardenJumpsuit
+  - SecurityBackpack
+  - SecurityBelt
+  - WardenOuterClothing
+  - SecurityShoes
+  - SecurityGlassesOrHud # CD Addition
+  - Trinkets
+  - PersonalItemsWarden # Umbra
+
+- type: roleLoadout
+  id: JobSecurityOfficer
+  groups:
+  - SecurityHead
+  - SecurityJumpsuit
+  - SecurityBackpack
+  - SecurityOuterClothing
+  - SecurityShoes
+  - SecurityPDA
+  - SecurityBelt
+  - SecurityGlassesOrHud # CD Addition
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+- type: roleLoadout
+  id: JobDetective
+  groups:
+  - DetectiveHead
+  - DetectiveNeck
+  - DetectiveJumpsuit
+  - DetectiveBackpack
+  - DetectiveOuterClothing
+  - SecurityShoes
+  - SecurityGlassesOrHud # CD Addition
+  - Trinkets
+  - PersonalItemsDetective # Umbra
+
+- type: roleLoadout
+  id: JobSecurityCadet
+  groups:
+  - SecurityCadetJumpsuit
+  - SecurityBackpack
+  - SecurityGlassesOrHud # CD Addition
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+# Medical
+- type: roleLoadout
+  id: JobChiefMedicalOfficer
+  groups:
+  - ChiefMedicalOfficerHead
+  - MedicalMask
+  - ChiefMedicalOfficerJumpsuit
+  - MedicalGloves
+  - ChiefMedicalOfficerBackpack
+  - ChiefMedicalOfficerOuterClothing
+  - ChiefMedicalOfficerNeck
+  - ChiefMedicalOfficerShoes
+  - Glasses
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+- type: roleLoadout
+  id: JobMedicalDoctor
+  groups:
+  - MedicalDoctorHead
+  - MedicalMask
+  - MedicalDoctorJumpsuit
+  - MedicalGloves
+  - MedicalBackpack
+  - MedicalDoctorOuterClothing
+  - MedicalShoes
+  - MedicalDoctorPDA
+  - Glasses
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+- type: roleLoadout
+  id: JobMedicalIntern
+  groups:
+  - MedicalInternJumpsuit
+  - MedicalBackpack
+  - Glasses
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+- type: roleLoadout
+  id: JobChemist
+  groups:
+  - MedicalMask
+  - ChemistJumpsuit
+  - MedicalGloves
+  - ChemistBackpack
+  - ChemistOuterClothing
+  - MedicalShoes
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+- type: roleLoadout
+  id: JobParamedic
+  groups:
+  - ParamedicHead
+  # CD: ETU Gear
+  - ParamedicMask
+  - ParamedicJumpsuit
+  # CD: ETU Gear
+  - ParamedicGloves
+  - ParamedicBackpack
+  - ParamedicOuterClothing
+  - ParamedicShoes
+  - Glasses
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+# Wildcards
+- type: roleLoadout
+  id: JobZookeeper
+  groups:
+  - CommonBackpack
+  - Glasses
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+- type: roleLoadout
+  id: JobReporter
+  groups:
+  - ReporterJumpsuit
+  - CommonBackpack
+  - Glasses
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+- type: roleLoadout
+  id: JobPsychologist
+  groups:
+  - MedicalBackpack
+  - Glasses
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra
+
+- type: roleLoadout
+  id: JobBoxer
+  groups:
+  - BoxerJumpsuit
+  - BoxerGloves
+  - CommonBackpack
+  - Glasses
+  - Trinkets
+  - PersonalItemsJobAgnostic # Umbra

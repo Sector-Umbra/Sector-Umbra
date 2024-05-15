@@ -64,7 +64,14 @@ namespace Content.IntegrationTests.Tests
             "MeteorArena",
             "Atlas",
             "Reach",
-            "Train"
+            "Train",
+            "Oasis"
+        };
+
+        // UMBRA: We need to be able to mark non-upstream maps as not tested.
+        private static readonly string[] UntestedGameMaps =
+        {
+            "Ferrous"
         };
 
         /// <summary>
@@ -156,7 +163,10 @@ namespace Content.IntegrationTests.Tests
         [Test, TestCaseSource(nameof(GameMaps))]
         public async Task GameMapsLoadableTest(string mapProto)
         {
-            await using var pair = await PoolManager.GetServerClient();
+            await using var pair = await PoolManager.GetServerClient(new PoolSettings
+            {
+                Dirty = true // Stations spawn a bunch of nullspace entities and maps like centcomm.
+            });
             var server = pair.Server;
 
             var mapManager = server.ResolveDependency<IMapManager>();
@@ -240,6 +250,7 @@ namespace Content.IntegrationTests.Tests
                         Assert.That(lateSpawns, Is.GreaterThan(0), $"Found no latejoin spawn points on {mapProto}");
                     }
 
+                    /* SECTOR UMBRA: We do not need to test available spawnpoints, as we use a custom arrivals system.
                     // Test all availableJobs have spawnPoints
                     // This is done inside gamemap test because loading the map takes ages and we already have it.
                     var jobList = entManager.GetComponent<StationJobsComponent>(station).RoundStartJobList
@@ -258,6 +269,7 @@ namespace Content.IntegrationTests.Tests
 
                     Assert.That(missingSpawnPoints, Has.Count.EqualTo(0),
                         $"There is no spawnpoint for {string.Join(", ", missingSpawnPoints)} on {mapProto}.");
+                    */
                 }
 
                 try
@@ -313,6 +325,13 @@ namespace Content.IntegrationTests.Tests
                 .ToHashSet();
 
             Assert.That(gameMaps.Remove(PoolManager.TestMap));
+
+            // UMBRA - Remove untested maps from the gameMaps set, such that the following statement does not error.
+            foreach (string untestedMap in UntestedGameMaps)
+            {
+                Assert.That(gameMaps.Remove(untestedMap), "UMBRA: Game map prototype missing from untested list: " + untestedMap);
+            }
+            // END UMBRA
 
             Assert.That(gameMaps, Is.EquivalentTo(GameMaps.ToHashSet()), "Game map prototype missing from test cases.");
 

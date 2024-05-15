@@ -1,0 +1,23 @@
+# Player: Jerg - Character: John Bozelli
+- type: entity
+  name: John's Flippo
+  parent: FlippoLighter
+  id: BozelliLighter
+  description: "A worn bronze lighter. The clock face engraving has been rubbed down almost completely"
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Objects/Tools/lighters.rsi
+    layers:
+    - state: zippo_bozelli_base
+      map: ["base"]
+    - state: zippo_bozelli_top
+      map: ["top"]
+      visible: false
+    - state: zippo_bozelli_open
+      map: ["open"]
+      visible: false
+    - state: lighter_flame
+      map: ["flame"]
+      visible: false
+      shader: unshaded

@@ -66,6 +66,6 @@
     ClothingHandsGlovesColorWhite: 2
     ClothingNeckTieDet: 2
     ClothingNeckTieRed: 2
-    ClothingEyesGlassesSunglasses: 2
+    ClothingEyesGlassesCheapSunglasses: 2 # Umbra: Replace regular sunglasses with cheap ones; 2024-05-01.
     ClothingEyesGlassesAviator: 4
     BoxPridePins: 2
