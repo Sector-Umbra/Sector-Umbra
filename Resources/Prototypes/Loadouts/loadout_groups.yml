@@ -17,7 +17,16 @@
   - ClothingNeckTransPin
   - ClothingNeckAutismPin
   - ClothingNeckGoldAutismPin
-
+  
+- type: loadoutGroup
+  id: Glasses
+  name: loadout-group-glasses
+  minLimit: 0
+  loadouts:
+  - Glasses
+  - GlassesJamjar
+  - GlassesJensen
+  
 # Command
 - type: loadoutGroup
   id: CaptainHead
@@ -229,6 +238,14 @@
   minLimit: 0
   loadouts:
   - LawyerNeck
+
+- type: loadoutGroup
+  id: LawyerBackpack
+  name: loadout-group-lawyer-backpack
+  loadouts:
+  - LawyerBackpack
+  - LawyerSatchel
+  - LawyerDuffel
 
 - type: loadoutGroup
   id: ChaplainHead
@@ -1117,7 +1134,6 @@
   - ParamedicHead
   # CD: ETU Loadout
   - HeadHelmetETUPointman
-  - HeadHelmetETUPilot
 
 - type: loadoutGroup
   id: ParamedicJumpsuit
@@ -1136,7 +1152,7 @@
   - ParamedicWindbreaker
   - ParamedicWintercoat
   # CD: ETU Loadout
-  - BeltHarnessETU
+  # - BeltHarnessETU
 
 - type: loadoutGroup
   id: ParamedicBackpack
@@ -1152,6 +1168,8 @@
   loadouts:
   - BlueShoes
   - MedicalWinterBoots
+  # CD: ETU Loadout
+  - ShoesColorSlate
 
 # Wildcards
 - type: loadoutGroup

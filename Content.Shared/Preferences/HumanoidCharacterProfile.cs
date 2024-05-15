@@ -387,6 +387,7 @@ namespace Content.Shared.Preferences
             if (Height != other.Height) return false;
             if (Sex != other.Sex) return false;
             if (Gender != other.Gender) return false;
+            if (Species != other.Species) return false;
             if (PreferenceUnavailable != other.PreferenceUnavailable) return false;
             if (SpawnPriority != other.SpawnPriority) return false;
             if (!_jobPriorities.SequenceEqual(other._jobPriorities)) return false;
@@ -552,7 +553,8 @@ namespace Content.Shared.Preferences
                     continue;
                 }
 
-                loadouts.EnsureValid(session, collection);
+                // Umbra: pass character profile
+                loadouts.EnsureValid(session, this, collection);
             }
 
             foreach (var value in toRemove)
