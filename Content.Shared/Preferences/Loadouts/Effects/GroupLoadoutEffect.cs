@@ -13,13 +13,19 @@ public sealed partial class GroupLoadoutEffect : LoadoutEffect
     [DataField(required: true)]
     public ProtoId<LoadoutEffectGroupPrototype> Proto;
 
-    public override bool Validate(RoleLoadout loadout, ICommonSession session, IDependencyCollection collection, [NotNullWhen(false)] out FormattedMessage? reason)
+    public override bool Validate(
+        RoleLoadout loadout,
+        ICommonSession session,
+        ICharacterProfile? profile, // Umbra: required for personal items
+        IDependencyCollection collection,
+        [NotNullWhen(false)] out FormattedMessage? reason)
     {
         var effectsProto = collection.Resolve<IPrototypeManager>().Index(Proto);
 
         foreach (var effect in effectsProto.Effects)
         {
-            if (!effect.Validate(loadout, session, collection, out reason))
+            // Umbra: pass character profile
+            if (!effect.Validate(loadout, session, profile, collection, out reason))
                 return false;
         }
 
