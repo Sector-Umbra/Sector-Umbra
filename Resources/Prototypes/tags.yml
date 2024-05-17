@@ -623,9 +623,6 @@
   id: GeigerCounter
 
 - type: Tag
-  id: Geneticore
-
-- type: Tag
   id: GlassAirlock
 
 - type: Tag

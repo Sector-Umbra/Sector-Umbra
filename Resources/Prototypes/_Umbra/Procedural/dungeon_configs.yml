@@ -1,0 +1,92 @@
+- type: dungeonConfig
+  id: Geneticore
+  generator: !type:PrefabDunGen
+    tile: FloorDark
+    roomWhitelist:
+      - Geneticore
+    presets:
+      - Bucket
+      - Wow
+      - SpaceShip
+      - Tall
+  postGeneration:
+    - !type:CorridorPostGen
+      tile: FloorDark
+      width: 3
+
+    - !type:DungeonEntrancePostGen
+      count: 2
+
+    - !type:RoomEntrancePostGen
+      entities:
+        - CableApcExtension
+        - AirlockGlass
+      tile: FloorDark
+
+    - !type:EntranceFlankPostGen
+      tile: FloorDark
+      entities:
+        - Grille
+        - BorderedReinforcedWindow
+
+    - !type:ExternalWindowPostGen
+      tile: FloorDark
+      entities:
+        - Grille
+        - BorderedReinforcedWindow
+
+    - !type:WallMountPostGen
+      spawns:
+        # Posters
+        - id: RandomPosterLegit
+          orGroup: content
+        - id: ExtinguisherCabinetFilled
+          prob: 0.2
+          orGroup: content
+        - id: RandomPainting
+          prob: 0.05
+          orGroup: content
+        - id: IntercomCommon
+          prob: 0.1
+          orGroup: content
+
+    - !type:BoundaryWallPostGen
+      tile: FloorDark
+      wall: WallMining
+      cornerWall: WallMining
+
+    - !type:JunctionPostGen
+      tile: FloorDark
+      width: 1
+      entities:
+        - AirlockMiningGlass
+
+    - !type:JunctionPostGen
+      tile: FloorDark
+      entities:
+        - AirlockMiningGlass
+
+    - !type:AutoCablingPostGen
+
+    - !type:CornerClutterPostGen
+      contents:
+        - id: PottedPlantRandom
+          amount: 1
+
+    - !type:CorridorDecalSkirtingPostGen
+      color: "#D381C996"
+      cardinalDecals:
+        South: BrickTileWhiteLineS
+        East: BrickTileWhiteLineE
+        North: BrickTileWhiteLineN
+        West: BrickTileWhiteLineW
+      cornerDecals:
+        SouthEast: BrickTileWhiteCornerSe
+        SouthWest: BrickTileWhiteCornerSw
+        NorthEast: BrickTileWhiteCornerNe
+        NorthWest: BrickTileWhiteCornerNw
+      pocketDecals:
+        SouthWest: BrickTileWhiteInnerSw
+        SouthEast: BrickTileWhiteInnerSe
+        NorthWest: BrickTileWhiteInnerNw
+        NorthEast: BrickTileWhiteInnerNe

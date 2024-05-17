@@ -23,10 +23,6 @@
   cost: 2
   biome: Lava
 
-- type: salvageBiomeMod
-  id: Shadow
-  biome: Shadow
-
 #- type: salvageBiomeMod
 #  id: Space
 #  cost: 1
@@ -253,8 +249,4 @@
   biomes:
     - Caves
 
-- type: salvageDungeonMod
-  id: Geneticore
-  proto: Geneticore
-  biomes:
-    - Shadow
+

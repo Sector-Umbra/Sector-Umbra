@@ -105,7 +105,7 @@
         - proto: WeaponTeslaGun
           prob: 0.1
           cost: 2
-        # Sector Umbra
+        # Start of umbra additions
         - proto: WeaponCrusher
           prob: 0.3
           cost: 2
@@ -134,6 +134,7 @@
         - proto: Katana
           prob: 0.1
         - proto: ArtifactAnalyzerMachineCircuitboard
+        # End of umbra additions
 
 # Mob loot table
 
