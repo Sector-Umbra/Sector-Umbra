@@ -504,6 +504,7 @@
     - !type:BiomeEntityLayer
       allowedTiles:
       - FloorChromite
+      # Umbra
       threshold: 0.5
       noise:
         seed: 3
@@ -513,6 +514,7 @@
         lacunarity: 2
         gain: 0.4
       entities:
+      # Umbra
       - ShadowKudzuWeak
     - !type:BiomeDummyLayer
       id: Loot
