@@ -138,6 +138,20 @@
     back:
     - ClothingNeckChewtoy
 
+# Welds' RIG
+- type: loadout
+  id: ClothingShoesMiscWeldsWalker
+  equipment: ClothingShoesMiscWeldsWalker
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Welds-The-Pipes
+
+- type: startingGear
+  id: ClothingShoesMiscWeldsWalker
+  storage:
+    back:
+    - ClothingShoesMiscWeldsWalker
+
 # Wipes' friend medal
 - type: loadout
   id: ClothingNeckWipesFriendMedal
