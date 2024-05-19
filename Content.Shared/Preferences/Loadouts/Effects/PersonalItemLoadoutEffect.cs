@@ -17,9 +17,9 @@ public sealed partial class PersonalItemLoadoutEffect : LoadoutEffect
     public string CharacterName = default!;
 
     public override bool Validate(
+        HumanoidCharacterProfile profile,
         RoleLoadout loadout,
         ICommonSession session,
-        ICharacterProfile? profile,
         IDependencyCollection collection,
         [NotNullWhen(false)] out FormattedMessage? reason)
     {
