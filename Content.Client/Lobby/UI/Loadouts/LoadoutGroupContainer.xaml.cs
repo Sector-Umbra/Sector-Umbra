@@ -67,7 +67,6 @@ public sealed partial class LoadoutGroupContainer : BoxContainer
         // Didn't use options because this is more robust in future.
 
         var selected = loadout.SelectedLoadouts[_groupProto.ID];
-        var profile = prefMan.Preferences?.SelectedCharacter; // Umbra: personal items
 
         foreach (var loadoutProto in _groupProto.Loadouts)
         {

@@ -80,10 +80,6 @@ namespace Content.Shared.Preferences
         [DataField]
         public string Species { get; set; } = SharedHumanoidAppearanceSystem.DefaultSpecies;
 
-        // CD Addition
-        [DataField]
-        public float Height { get; set; } = 1f;
-
         [DataField]
         public int Age { get; set; } = 18;
 
@@ -110,9 +106,6 @@ namespace Content.Shared.Preferences
         [DataField]
         public SpawnPriorityPreference SpawnPriority { get; private set; } = SpawnPriorityPreference.None;
 
-        [DataField]
-        public CharacterRecords CDCharacterRecords { get; set; } = CharacterRecords.DefaultRecords();
-
         /// <summary>
         /// <see cref="_jobPriorities"/>
         /// </summary>
@@ -135,6 +128,12 @@ namespace Content.Shared.Preferences
         public PreferenceUnavailableMode PreferenceUnavailable { get; private set; } =
             PreferenceUnavailableMode.SpawnAsOverflow;
 
+        [DataField("cosmaticDriftCharacterHeight")]
+        public float Height = 1f;
+
+        [DataField("cosmaticDriftCharacterRecords")]
+        public CharacterRecords? CDCharacterRecords;
+
         public HumanoidCharacterProfile(
             string name,
             string flavortext,
@@ -150,7 +149,7 @@ namespace Content.Shared.Preferences
             HashSet<string> antagPreferences,
             HashSet<string> traitPreferences,
             Dictionary<string, RoleLoadout> loadouts,
-            CharacterRecords cdCharacterRecords)
+            CharacterRecords? cdCharacterRecords)
         {
             Name = name;
             FlavorText = flavortext;
@@ -185,7 +184,7 @@ namespace Content.Shared.Preferences
                 new HashSet<string>(other.AntagPreferences),
                 new HashSet<string>(other.TraitPreferences),
                 new Dictionary<string, RoleLoadout>(other.Loadouts),
-                new CharacterRecords(other.CDCharacterRecords))
+                other.CDCharacterRecords)
         {
         }
 
@@ -560,7 +559,14 @@ namespace Content.Shared.Preferences
             _traitPreferences.Clear();
             _traitPreferences.UnionWith(traits);
 
-            CDCharacterRecords?.EnsureValid();
+            if (CDCharacterRecords == null)
+            {
+                CDCharacterRecords = CharacterRecords.DefaultRecords();
+            }
+            else
+            {
+                CDCharacterRecords!.EnsureValid();
+            }
 
             // Checks prototypes exist for all loadouts and dump / set to default if not.
             var toRemove = new ValueList<string>();

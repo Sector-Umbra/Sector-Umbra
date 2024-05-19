@@ -14,7 +14,6 @@ public sealed partial class PointsCostLoadoutEffect : LoadoutEffect
         HumanoidCharacterProfile profile,
         RoleLoadout loadout,
         ICommonSession session,
-        ICharacterProfile? profile, // Umbra: required for personal items
         IDependencyCollection collection,
         [NotNullWhen(false)] out FormattedMessage? reason)
     {

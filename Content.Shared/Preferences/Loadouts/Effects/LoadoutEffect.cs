@@ -14,7 +14,6 @@ public abstract partial class LoadoutEffect
         HumanoidCharacterProfile profile,
         RoleLoadout loadout,
         ICommonSession session,
-        ICharacterProfile? profile, // Umbra: required for personal items
         IDependencyCollection collection,
         [NotNullWhen(false)] out FormattedMessage? reason);
 

@@ -57,7 +57,6 @@ namespace Content.Client.Lobby.UI
 
         // One at a time.
         private LoadoutWindow? _loadoutWindow;
-        private LineEdit _heightPicker => CHeight;
 
         private bool _exporting;
 
@@ -222,7 +221,7 @@ namespace Content.Client.Lobby.UI
 
             #region CDHeight
 
-            _heightPicker.OnTextChanged += args =>
+            CDHeight.OnTextChanged += args =>
             {
                 if (Profile is null || !float.TryParse(args.Text, out var newHeight))
                     return;
@@ -238,9 +237,9 @@ namespace Content.Client.Lobby.UI
                 SetProfileHeight(newHeight);
             };
 
-            CHeightReset.OnPressed += _ =>
+            CDHeightReset.OnPressed += _ =>
             {
-                _heightPicker.SetText(_defaultHeight.ToString(CultureInfo.InvariantCulture), true);
+                CDHeight.SetText(_defaultHeight.ToString(CultureInfo.InvariantCulture), true);
             };
 
             CDHeightSlider.OnValueChanged += _ =>
@@ -249,7 +248,7 @@ namespace Content.Client.Lobby.UI
                     return;
                 var prototype = _prototypeManager.Index<SpeciesPrototype>(Profile.Species);
                 var newHeight = MathF.Round(MathHelper.Lerp(prototype.MinHeight, prototype.MaxHeight, CDHeightSlider.Value), 2);
-                _heightPicker.Text = newHeight.ToString(CultureInfo.InvariantCulture);
+                CDHeight.Text = newHeight.ToString(CultureInfo.InvariantCulture);
                 SetProfileHeight(newHeight);
             };
 
@@ -450,8 +449,8 @@ namespace Content.Client.Lobby.UI
             #region CosmaticRecords
 
             _recordsTab = new RecordEditorGui(UpdateProfileRecords);
-            _tabContainer.AddChild(_recordsTab);
-            _tabContainer.SetTabTitle(_tabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-cd-records-tab"));
+            TabContainer.AddChild(_recordsTab);
+            TabContainer.SetTabTitle(TabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-cd-records-tab"));
 
             #endregion CosmaticRecords
 
@@ -727,10 +726,9 @@ namespace Content.Client.Lobby.UI
             UpdateCMarkingsHair();
             UpdateCMarkingsFacialHair();
 
-            // CD Addition
+            // CD: our controls
             UpdateHeightControls();
-            // CD Addition
-            _recordsTab.Update(Profile);
+            _recordsTab.Update(profile);
 
             RefreshAntags();
             RefreshJobs();
@@ -1169,7 +1167,8 @@ namespace Content.Client.Lobby.UI
         private void SetProfileHeight(float height)
         {
             Profile = Profile?.WithHeight(height);
-            IsDirty = true;
+            SetDirty();
+            ReloadProfilePreview();
         }
 
         private void SetSpawnPriority(SpawnPriorityPreference newSpawnPriority)
@@ -1364,7 +1363,7 @@ namespace Content.Client.Lobby.UI
                 return;
             }
 
-            var species = _speciesList.Find(x => x.ID == Profile.Species);
+            var species = _species.Find(x => x.ID == Profile.Species);
             if (species != null)
                 _defaultHeight = species.DefaultHeight;
 
@@ -1372,7 +1371,7 @@ namespace Content.Client.Lobby.UI
             var sliderPercent = (Profile.Height - prototype.MinHeight) /
                                 (prototype.MaxHeight - prototype.MinHeight);
             CDHeightSlider.Value = sliderPercent;
-            _heightPicker.Text = Profile.Height.ToString(CultureInfo.InvariantCulture);
+            CDHeight.Text = Profile.Height.ToString(CultureInfo.InvariantCulture);
         }
 
         private void UpdateSpawnPriorityControls()
