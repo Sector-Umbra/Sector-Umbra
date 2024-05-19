@@ -26,6 +26,20 @@
     back:
     - FrostCoat
 
+# Fateseeker's gemstone
+- type: loadout
+  id: FateseekersGemstone
+  equipment: FateseekersGemstone
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Fateseeker
+
+- type: startingGear
+  id: FateseekersGemstone
+  storage:
+    back:
+    - FateseekersGemstone
+
 # Jalopy's reinforced raincoat
 - type: loadout
   id: ClothingOuterCoatReinforcedRaincoat
