@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: BaseItem
   id: BaseFigurineUmbra
   name: figurine
@@ -139,3 +139,11 @@
   components:
   - type: Sprite
     state: zack_cargo
+
+- type: entity
+  parent: BaseFigurineUmbra
+  id: ToyFigurineUmbraLasSalvage
+  name: aaas-las figurine
+  components:
+  - type: Sprite
+    state: las_salvage
