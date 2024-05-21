@@ -7,6 +7,7 @@ using Content.Shared.Examine;
 using Content.Shared.Interaction;
 using Content.Shared.Paper;
 using Content.Shared.Tag;
+using Content.Shared.Verbs;
 using Robust.Server.GameObjects;
 using Robust.Shared.Player;
 using Robust.Shared.Audio.Systems;
@@ -38,6 +39,9 @@ namespace Content.Server.Paper
             SubscribeLocalEvent<ActivateOnPaperOpenedComponent, PaperWriteEvent>(OnPaperWrite);
 
             SubscribeLocalEvent<PaperComponent, MapInitEvent>(OnMapInit);
+
+            // Umbra - Signing alt verb event listener.
+            SubscribeLocalEvent<PaperComponent, GetVerbsEvent<AlternativeVerb>>(AddSignVerb);
         }
 
         private void OnMapInit(EntityUid uid, PaperComponent paperComp, MapInitEvent args)
@@ -187,6 +191,75 @@ namespace Content.Server.Paper
             }
             return true;
         }
+
+        // BEGIN OF UMBRA ADDITIONS
+        // Umbra: Send paper signing alt verb to the client if applicable.
+        // Based on LockSystem.cs for alt-click behavior.
+        private void AddSignVerb(EntityUid uid, PaperComponent component, GetVerbsEvent<AlternativeVerb> args)
+        {
+            if (!args.CanAccess || !args.CanInteract)
+                return;
+
+            // Sanity check
+            if (uid != args.Target)
+                return;
+
+            // Pens have a `Write` tag.
+            if (!args.Using.HasValue || !_tagSystem.HasTag(args.Using.Value, "Write"))
+                return;
+
+            AlternativeVerb verb = new()
+            {
+                Act = () =>
+                {
+                    TrySign(args.Target, args.User, component);
+                },
+                Text = Loc.GetString("paper-component-action-sign")
+                // Icon = Don't have an icon yet. Todo for later.
+            };
+            args.Verbs.Add(verb);
+        }
+
+        // Umbra: Actual signature code.
+        public bool TrySign(EntityUid paper, EntityUid signer, PaperComponent paperComp)
+        {
+            // Generate display information.
+            StampDisplayInfo info = new StampDisplayInfo
+            {
+                StampedName = Name(signer),
+                StampedColor = Color.DarkGray
+            };
+
+            // Try stamp with the info, return false if failed.
+            if (TryStamp(paper, info, "paper_stamp-generic", paperComp))
+            {
+                // Signing successful, popup time.
+
+                _popupSystem.PopupEntity(
+                    Loc.GetString("paper-component-action-signed-other",
+                        ("user", signer),
+                        ("target", paper)
+                    ),
+                    signer,
+                    Filter.PvsExcept(signer, entityManager: EntityManager),
+                    true
+                );
+                var stampPaperSelfMessage = Loc.GetString("paper-component-action-stamp-paper-self",
+                    ("target", paper));
+                _popupSystem.PopupEntity(stampPaperSelfMessage, signer, signer);
+
+                _audio.PlayPvs(paperComp.Sound, paper);
+
+                _adminLogger.Add(LogType.Verb, LogImpact.Low, $"{ToPrettyString(signer):player} has signed {ToPrettyString(paper):paper}.");
+
+                UpdateUserInterface(paper, paperComp);
+
+                return true;
+            }
+
+            return false;
+        }
+        // END OF UMBRA ADDITIONS
 
         public void SetContent(EntityUid uid, string content, PaperComponent? paperComp = null)
         {
