@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   name: Spacemen Minifigure Spawner
   suffix: Umbra
   id: SpacemenFigureSpawnerUmbra
@@ -76,5 +76,8 @@
       - ToyFigurineUmbraStarsBartender
       - ToyFigurineUmbraWipesJanitor
       - ToyFigurineUmbraZackCargo
+      - ToyFigurineUmbraLasSalvage
+      - ToyFigurineUmbraLoopsQM
+      - ToyFigurineUmbraAlmaBotany
       chance: 0.90
       offset: 0.2
