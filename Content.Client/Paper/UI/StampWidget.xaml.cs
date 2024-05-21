@@ -26,6 +26,8 @@ public sealed partial class StampWidget : PanelContainer
             StampedByLabel.Text = Loc.GetString(value.StampedName);
             StampedByLabel.FontColorOverride = value.StampedColor;
             ModulateSelfOverride = value.StampedColor;
+            // Umbra: PanelOverride is the border texture, as inferred from ctor. Set null if the stamp is a signature.
+            PanelOverride = value.ShowBorder ? _borderTexture : null;
         }
     }
 

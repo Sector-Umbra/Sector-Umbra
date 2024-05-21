@@ -227,7 +227,8 @@ namespace Content.Server.Paper
             StampDisplayInfo info = new StampDisplayInfo
             {
                 StampedName = Name(signer),
-                StampedColor = Color.DarkGray
+                StampedColor = Color.DarkGray,
+                ShowBorder = false
             };
 
             // Try stamp with the info, return false if failed.

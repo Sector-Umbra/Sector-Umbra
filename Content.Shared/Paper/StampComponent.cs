@@ -22,6 +22,10 @@ public partial struct StampDisplayInfo
 
     [DataField("stampedColor")]
     public Color StampedColor;
+
+    // Umbra: Signatures do not show borders. Regular stamps still do.
+    [DataField("showBorder")]
+    public bool ShowBorder = true;
 };
 
 [RegisterComponent]
