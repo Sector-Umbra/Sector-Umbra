@@ -214,7 +214,7 @@ namespace Content.Server.Paper
                 {
                     TrySign(args.Target, args.User, component);
                 },
-                Text = Loc.GetString("paper-component-action-sign")
+                Text = Loc.GetString("paper-component-verb-sign")
                 // Icon = Don't have an icon yet. Todo for later.
             };
             args.Verbs.Add(verb);
@@ -237,7 +237,8 @@ namespace Content.Server.Paper
                 // Signing successful, popup time.
 
                 _popupSystem.PopupEntity(
-                    Loc.GetString("paper-component-action-signed-other",
+                    Loc.GetString(
+                        "paper-component-action-signed-other",
                         ("user", signer),
                         ("target", paper)
                     ),
@@ -245,9 +246,15 @@ namespace Content.Server.Paper
                     Filter.PvsExcept(signer, entityManager: EntityManager),
                     true
                 );
-                var stampPaperSelfMessage = Loc.GetString("paper-component-action-stamp-paper-self",
-                    ("target", paper));
-                _popupSystem.PopupEntity(stampPaperSelfMessage, signer, signer);
+
+                _popupSystem.PopupEntity(
+                    Loc.GetString(
+                        "paper-component-action-signed-self",
+                        ("target", paper)
+                    ),
+                    signer,
+                    signer
+                );
 
                 _audio.PlayPvs(paperComp.Sound, paper);
 
