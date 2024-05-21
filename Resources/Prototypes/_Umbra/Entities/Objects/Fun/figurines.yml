@@ -147,3 +147,19 @@
   components:
   - type: Sprite
     state: las_salvage
+
+- type: entity
+  parent: BaseFigurineUmbra
+  id: ToyFigurineUmbraLoopsQM
+  name: loops-the-horns figurine
+  components:
+  - type: Sprite
+    state: loops_qm
+
+- type: entity
+  parent: BaseFigurineUmbra
+  id: ToyFigurineUmbraAlmaBotany
+  name: alma vashli figurine
+  components:
+  - type: Sprite
+    state: alma_botany

@@ -54,6 +54,12 @@
         },
         {
           "name": "las_salvage"
+        },
+        {
+          "name": "loops_qm"
+        },
+        {
+          "name": "alma_botany"
         }
     ]
 }
