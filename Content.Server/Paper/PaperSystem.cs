@@ -227,7 +227,7 @@ namespace Content.Server.Paper
             StampDisplayInfo info = new StampDisplayInfo
             {
                 StampedName = Name(signer),
-                StampedColor = Color.DarkGray,
+                StampedColor = Color.FromHex("#333333"),
                 ShowBorder = false
             };
 
