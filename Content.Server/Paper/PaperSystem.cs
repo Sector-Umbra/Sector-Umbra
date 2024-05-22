@@ -90,12 +90,34 @@ namespace Content.Server.Paper
 
                 if (paperComp.StampedBy.Count > 0)
                 {
-                    var commaSeparated =
-                        string.Join(", ", paperComp.StampedBy.Select(s => Loc.GetString(s.StampedName)));
-                    args.PushMarkup(
-                        Loc.GetString(
-                            "paper-component-examine-detail-stamped-by", ("paper", uid), ("stamps", commaSeparated))
-                    );
+                    // Umbra: Separate into stamps and signatures.
+                    var stamps = paperComp.StampedBy.FindAll(s => s.Type == StampType.RubberStamp);
+                    var signatures = paperComp.StampedBy.FindAll(s => s.Type == StampType.Signature);
+
+                    // Umbra: If we have stamps, render them.
+                    if (stamps.Count > 0)
+                    {
+                        var joined = string.Join(", ", stamps.Select(s => Loc.GetString(s.StampedName)));
+                        args.PushMarkup(
+                            Loc.GetString(
+                                "paper-component-examine-detail-stamped-by",
+                                ("paper", uid),
+                                ("stamps", joined)
+                                )
+                            );
+                    }
+                    // Umbra: Ditto for signatures.
+                    if (signatures.Count > 0)
+                    {
+                        var joined = string.Join(", ", signatures.Select(s => s.StampedName));
+                        args.PushMarkup(
+                            Loc.GetString(
+                                "paper-component-examine-detail-signed-by",
+                                ("paper", uid),
+                                ("stamps", joined)
+                            )
+                        );
+                    }
                 }
             }
         }
@@ -228,7 +250,7 @@ namespace Content.Server.Paper
             {
                 StampedName = Name(signer),
                 StampedColor = Color.FromHex("#333333"),
-                ShowBorder = false
+                Type = StampType.Signature
             };
 
             // Try stamp with the info, return false if failed.
