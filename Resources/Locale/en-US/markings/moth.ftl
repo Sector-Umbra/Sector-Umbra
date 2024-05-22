@@ -394,3 +394,6 @@ marking-MothLArmWitchwing = Moth Left Arm (Witch Wing)
 
 marking-MothRArmWitchwing-witchwing_r_arm = Right Arm
 marking-MothRArmWitchwing = Moth Right Arm (Witch Wing)
+
+marking-MothAntennasOnion-onion = Antennae
+marking-MothAntennasOnion = Antennae (Onion)

@@ -86,6 +86,10 @@
     {
       "name": "underwing_secondary",
       "directions": 4
+    },
+    {
+      "name": "onion",
+      "directions": 4
     }
   ]
 }

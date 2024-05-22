@@ -172,6 +172,15 @@
   - sprite: Mobs/Customization/Moth/moth_antennas.rsi
     state: underwing_secondary
 
+- type: marking
+  id: MothAntennasOnion
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Moth]
+  sprites:
+  - sprite: Mobs/Customization/Moth/moth_antennas.rsi
+    state: onion
+
 # Wings
 - type: marking
   id: MothWingsDefault
