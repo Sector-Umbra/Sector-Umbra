@@ -94,6 +94,7 @@
   - type: InventorySlots
   - type: Loadout
     prototypes: [ MobAghostGear ]
+  - type: BypassInteractionChecks
   - type: CharacterRecordConsole
     consoleType: Admin
     # Needed for security records console functionality
