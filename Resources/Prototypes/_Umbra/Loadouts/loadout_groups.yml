@@ -23,6 +23,8 @@
   - ClothingNeckChewtoy
   - ClothingShoesMiscWeldsWalker
   - ClothingNeckWipesFriendMedal
+  - FateseekersGemstone
+  - ClothingUniformJumpsuitCarpSuit
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -42,6 +44,8 @@
   - ClothingShoesMiscWeldsWalker
   - ClothingNeckWipesFriendMedal
   - ClothingOuterYarnaArmourCoat
+  - FateseekersGemstone
+  - ClothingUniformJumpsuitCarpSuit
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -61,3 +65,5 @@
   - ClothingNeckChewtoy
   - ClothingShoesMiscWeldsWalker
   - ClothingNeckWipesFriendMedal
+  - FateseekersGemstone
+  - ClothingUniformJumpsuitCarpSuit

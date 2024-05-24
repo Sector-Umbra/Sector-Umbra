@@ -1,3 +1,18 @@
+# Chance's Carp Suit
+- type: loadout
+  id: ClothingUniformJumpsuitCarpSuit
+  equipment:  ClothingUniformJumpsuitCarpSuit
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Chance Boulevard
+
+- type: startingGear
+  id: ClothingUniformJumpsuitCarpSuit
+  storage:
+    back:
+    - ClothingUniformJumpsuitCarpSuit
+
+
 # Deeja's artifact necklace
 - type: loadout
   id: ClothingNeckArtifactNecklace
@@ -25,6 +40,20 @@
   storage:
     back:
     - FrostCoat
+
+# Fateseeker's gemstone
+- type: loadout
+  id: FateseekersGemstone
+  equipment: FateseekersGemstone
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Fateseeker
+
+- type: startingGear
+  id: FateseekersGemstone
+  storage:
+    back:
+    - FateseekersGemstone
 
 # Jalopy's reinforced raincoat
 - type: loadout
