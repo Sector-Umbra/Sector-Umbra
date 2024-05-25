@@ -78,6 +78,8 @@ command-description-mind-get =
     Grabs the mind from the entity, if any.
 command-description-mind-control =
     Assumes control of an entity with the given player.
+command-description-mind-swap =
+    Swaps the minds of two entities.
 command-description-addaccesslog =
     Adds an access log to this entity. Do note that this bypasses the log's default limit and pause check.
 command-description-stationevent-simulate =
