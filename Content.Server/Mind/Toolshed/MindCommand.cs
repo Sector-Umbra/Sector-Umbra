@@ -13,6 +13,7 @@ namespace Content.Server.Mind.Toolshed;
 public sealed class MindCommand : ToolshedCommand
 {
     private SharedMindSystem? _mind;
+    private MindSwapSystem? _mindSwapSystem;
 
     [CommandImplementation("get")]
     public MindComponent? Get([PipedArgument] ICommonSession session)
@@ -51,5 +52,15 @@ public sealed class MindCommand : ToolshedCommand
 
         _mind.TransferTo(mindId, target, mind: mind);
         return target;
+    }
+
+    [CommandImplementation("swap")]
+    public void Swap(
+            [CommandInvocationContext] IInvocationContext ctx,
+            [PipedArgument] EntityUid target1,
+            [CommandArgument] EntityUid target2)
+    {
+        _mindSwapSystem ??= GetSys<MindSwapSystem>();
+        _mindSwapSystem.SwapMinds(target1, target2);
     }
 }

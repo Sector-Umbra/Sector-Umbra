@@ -363,4 +363,21 @@ public sealed class MindSystem : SharedMindSystem
         MakeSentientCommand.MakeSentient(target, EntityManager);
         TransferTo(mindId, target, ghostCheckOverride: true, mind: mind);
     }
+
+    public void SwapMinds(EntityUid mind1, EntityUid mind2)
+    {
+        if (!TryComp(mind1, out MindComponent? mindComp1) || !TryComp(mind2, out MindComponent? mindComp2))
+            return;
+
+        var entity1 = mindComp1.OwnedEntity;
+        var entity2 = mindComp2.OwnedEntity;
+
+        if (entity1 == entity2)
+            return;
+
+        if (entity1 != null)
+            TransferTo(mind1, entity2, ghostCheckOverride: true, mind: mindComp1);
+        if (entity2 != null)
+            TransferTo(mind2, entity1,  ghostCheckOverride: true, mind: mindComp2);
+    }
 }

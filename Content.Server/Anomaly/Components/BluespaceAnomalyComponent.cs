@@ -36,4 +36,10 @@ public sealed partial class BluespaceAnomalyComponent : Component
     /// </summary>
     [DataField("teleportSound"), ViewVariables(VVAccess.ReadWrite)]
     public SoundSpecifier TeleportSound = new SoundPathSpecifier("/Audio/Effects/teleport_arrival.ogg");
+
+    /// <summary>
+    /// The chance that minds will be swapped during a pulse event.
+    /// </summary>
+    [DataField]
+    public float MindSwapChance = 0.2f;
 }
