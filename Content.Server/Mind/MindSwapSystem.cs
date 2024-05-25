@@ -32,12 +32,21 @@ public sealed class MindSwapSystem : EntitySystem
             return; // No need to do anything if we can't swap back.
 
         Timer.Spawn(5000,
-            () => _popupSystem.PopupEntity(
-            message: Loc.GetString("mind-swap-minds-message-hug"),
-            uid: ev.Person,
-            recipient: ev.Person,
-            PopupType.Large
-        ));
+            () =>
+            {
+                _popupSystem.PopupEntity(
+                    message: Loc.GetString("mind-swap-minds-message-hug"),
+                    uid: ev.Person,
+                    recipient: ev.Person,
+                    PopupType.Large);
+
+                _popupSystem.PopupEntity(
+                    message: Loc.GetString("mind-swap-minds-message-hug"),
+                    uid: ev.Person,
+                    recipient: ev.Target,
+                    PopupType.Large);
+            }
+        );
     }
 
     /// <summary>
@@ -68,6 +77,10 @@ public sealed class MindSwapSystem : EntitySystem
         }
     }
 
+    /// <summary>
+    /// Swaps minds between two entities, while also adding some flavor text and paralyzing them for a short time.
+    /// </summary>
+    /// <param name="allowSwapBack">Whether the entities can swap minds back.</param>
     public void SwapMinds(EntityUid a, EntityUid b, bool allowSwapBack = true)
     {
         if (a == b)
@@ -85,22 +98,9 @@ public sealed class MindSwapSystem : EntitySystem
 
         _mindSystem.SwapMinds(mindA.Value, mindB.Value);
         _adminLogger.Add(LogType.Mind, $"{ToPrettyString(a)} and {ToPrettyString(b)} have swapped minds.");
-        _stunSystem.TryParalyze(a, TimeSpan.FromSeconds(5), true);
-        _popupSystem.PopupEntity(
-            message: Loc.GetString("mind-swap-minds"),
-            uid: a,
-            recipient: a,
-            PopupType.Large
-        );
+        NotifyEntity(a);
+        NotifyEntity(b);
 
-        _stunSystem.TryParalyze(b, TimeSpan.FromSeconds(5), true);
-        _popupSystem.PopupEntity(
-            message: Loc.GetString("mind-swap-minds"),
-            uid: b,
-            recipient: b,
-            PopupType.Large
-        );
-        RaiseLocalEvent(new MindSwappedEvent(a, b, allowSwapBack));
         RaiseLocalEvent(new MindSwappedEvent(a, b, allowSwapBack));
 
         if (!allowSwapBack)
@@ -108,18 +108,29 @@ public sealed class MindSwapSystem : EntitySystem
             return;
         }
 
-        var targetHuggedA = EnsureComp<RecentlySwappedComponent>(a);
-        targetHuggedA.RecentlyHugged.Clear();
-        targetHuggedA.TimerCancelToken?.Cancel();
-        targetHuggedA.TimerCancelToken = new CancellationTokenSource();
+        ResetRecentlySwappedComponent(a, EnsureComp<RecentlySwappedComponent>(a));
+        ResetRecentlySwappedComponent(b, EnsureComp<RecentlySwappedComponent>(b));
+    }
 
-        var targetHuggedB = EnsureComp<RecentlySwappedComponent>(b);
-        targetHuggedB.RecentlyHugged.Clear();
-        targetHuggedB.TimerCancelToken?.Cancel();
-        targetHuggedB.TimerCancelToken = new CancellationTokenSource();
+    private void NotifyEntity(EntityUid entity)
+    {
+        _stunSystem.TryParalyze(entity, TimeSpan.FromSeconds(5), true);
+        _popupSystem.PopupEntity(
+            message: Loc.GetString("mind-swap-minds"),
+            uid: entity,
+            recipient: entity,
+            PopupType.Large
+        );
+    }
 
-        Timer.Spawn(60000, () => RemComp(b, targetHuggedB), targetHuggedB.TimerCancelToken.Token);
-        Timer.Spawn(60000, () => RemComp(a, targetHuggedA), targetHuggedA.TimerCancelToken.Token);
+    private void ResetRecentlySwappedComponent(EntityUid entity, RecentlySwappedComponent recentlySwappedComponent)
+    {
+        var targetHugged = EnsureComp<RecentlySwappedComponent>(entity);
+        targetHugged.RecentlyHugged.Clear();
+        targetHugged.TimerCancelToken?.Cancel();
+        targetHugged.TimerCancelToken = new CancellationTokenSource();
+
+        Timer.Spawn(60000, () => RemComp(entity, recentlySwappedComponent), recentlySwappedComponent.TimerCancelToken.Token);
     }
 }
 
