@@ -395,9 +395,9 @@
         prototype: InitialInfected
 
 - type: entity
-  id: LoneOpsSpawn
-  parent: BaseGameRule
   noSpawn: true
+  parent: BaseNukeopsRule
+  id: LoneOpsSpawn
   components:
   - type: StationEvent
     earliestStart: 35
@@ -431,9 +431,9 @@
         prototype: Nukeops
 
 - type: entity
-  id: SleeperAgentsRule
-  parent: BaseGameRule
   noSpawn: true
+  parent: BaseTraitorRule
+  id: SleeperAgentsRule
   components:
   - type: StationEvent
     earliestStart: 30
@@ -445,7 +445,6 @@
       path: /Audio/Announcements/intercept.ogg
     roundEndingThreat: true # Umbra - Pending a better way to prevent this event from rolling automatically. Ever.
   - type: AlertLevelInterceptionRule
-  - type: TraitorRule
   - type: AntagSelection
     definitions:
     - prefRoles: [ Traitor ]
