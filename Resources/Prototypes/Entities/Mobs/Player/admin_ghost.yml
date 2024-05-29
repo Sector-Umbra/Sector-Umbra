@@ -61,8 +61,9 @@
         toggleAction: ActionAGhostShowCargo
       enum.CrewMonitoringUIKey.Key:
         toggleAction: ActionAGhostShowCrewMonitoring
-      enum.GeneralStationRecordConsoleKey.Key:
-        toggleAction: ActionAGhostShowStationRecords
+      # Disable wizden records
+      #enum.GeneralStationRecordConsoleKey.Key:
+      #  toggleAction: ActionAGhostShowStationRecords
       enum.CharacterRecordConsoleKey.Key:
         toggleAction: ActionAGhostShowCharacterRecords
   - type: SolarControlConsole # look ma i AM the computer!
