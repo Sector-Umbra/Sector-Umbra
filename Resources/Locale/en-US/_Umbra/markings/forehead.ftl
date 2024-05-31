@@ -1,2 +1,2 @@
-marking-MothMarkingOnion-onion = Ring
-marking-MothMarkingOnion = Forehead Tattoo (Ring)
+marking-MothMarkingRing-ring = Ring
+marking-MothMarkingRing = Forehead Tattoo (Ring)
