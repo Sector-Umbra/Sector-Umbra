@@ -512,22 +512,6 @@
       prob: 0.0072
       orGroup: rodProto
 
-# Umbra addition: ImmovableRodSpawnFake
-- type: entity
-  id: ImmovableRodSpawnFake
-  parent: BaseGameRule
-  noSpawn: true
-  components:
-  - type: StationEvent
-    startAnnouncement: station-event-immovable-rod-start-announcement
-    startAudio:
-      path: /Audio/Announcements/attention.ogg
-    weight: 3.5
-    duration: 1
-    earliestStart: 30
-    minimumPlayers: 300 # Never spawn automatically.
-  - type: AnnouncementOnlyRule
-
 - type: entity
   noSpawn: true
   parent: BaseGameRule
