@@ -526,6 +526,7 @@
     duration: 1
     earliestStart: 30
     minimumPlayers: 300 # Never spawn automatically.
+  - type: AnnouncementOnlyRule
 
 - type: entity
   noSpawn: true
