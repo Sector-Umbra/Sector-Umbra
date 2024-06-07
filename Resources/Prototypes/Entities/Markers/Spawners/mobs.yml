@@ -842,7 +842,6 @@
 - type: entity
   name: clown spider spawner
   id: SpawnClownSpider
-  parent: MarkerBase
   components:
   - type: Sprite
     layers:
@@ -852,3 +851,17 @@
   - type: ConditionalSpawner
     prototypes:
     - MobClownSpider
+
+- type: entity
+  name: xeno queen entity spawner
+  id: SpawnMobXenoQueen
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: running
+      sprite: Mobs/Aliens/Xenos/queen.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobXenoQueen
