@@ -30,5 +30,5 @@
     - Service
   - type: NpcFactionMember
     factions:
-      - Cat
+#      - Cat
       - PetsNT
