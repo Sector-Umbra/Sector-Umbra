@@ -221,7 +221,6 @@
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
       path: /Audio/Announcements/attention.ogg
-    startDelay: 10
     earliestStart: 30 # Umbra: 15 -> 30
     minimumPlayers: 30 # Umbra
     weight: 3 # Umbra: 6 -> 3
