@@ -65,14 +65,14 @@ namespace Content.IntegrationTests.Tests
             "Atlas",
             "Reach",
             "Train",
-            "Oasis"
+            "Oasis",
+            "Xeno"
         };
 
         // UMBRA: We need to be able to mark non-upstream maps as not tested.
         private static readonly string[] UntestedGameMaps =
         {
-            "Ferrous",
-            "Xeno"
+            "Ferrous"
         };
 
         /// <summary>
