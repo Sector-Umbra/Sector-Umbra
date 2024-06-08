@@ -9539,8 +9539,6 @@ entities:
       pos: 25.5,-13.5
       parent: 2
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 16095
       - 9040
@@ -9659,8 +9657,6 @@ entities:
       pos: 27.5,-42.5
       parent: 2
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 5862
       - 9236
@@ -10238,8 +10234,6 @@ entities:
       pos: -7.5,-16.5
       parent: 2
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 14458
       - 16095
@@ -47509,8 +47503,6 @@ entities:
       pos: 13.5,-56.5
       parent: 2
     - type: DisposalUnit
-      recentlyEjected:
-      - invalid
   - uid: 6263
     components:
     - type: Transform
@@ -69640,8 +69632,6 @@ entities:
       pos: 40.5,-46.5
       parent: 2
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 9241
     - type: AtmosPipeColor
@@ -70826,8 +70816,6 @@ entities:
       pos: 43.5,-46.5
       parent: 2
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 9241
     - type: AtmosPipeColor
