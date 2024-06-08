@@ -4045,10 +4045,10 @@ entities:
           8,-16:
             0: 15
             1: 256
-            4: 17408
+            2: 17408
           8,-15:
             1: 4096
-            4: 4
+            2: 4
           8,-14:
             0: 32752
           8,-13:
@@ -4692,8 +4692,8 @@ entities:
             0: 65535
           9,-16:
             0: 15
-            5: 4352
-            2: 17408
+            3: 4352
+            4: 17408
           10,-20:
             0: 64512
           10,-19:
@@ -4704,8 +4704,8 @@ entities:
             0: 65535
           10,-16:
             0: 15
-            2: 4352
-            6: 17408
+            4: 4352
+            5: 17408
           11,-20:
             0: 16128
           11,-19:
@@ -4716,7 +4716,7 @@ entities:
             0: 65535
           11,-16:
             0: 15
-            2: 4352
+            4: 4352
             1: 1024
           12,-20:
             0: 7936
@@ -4749,7 +4749,7 @@ entities:
           12,-25:
             0: 61183
           12,-16:
-            2: 3822
+            4: 3822
           13,-20:
             0: 36608
           13,-19:
@@ -4954,7 +4954,7 @@ entities:
             0: 60928
           11,-15:
             1: 32768
-            2: 1
+            4: 1
           12,-14:
             0: 65518
           11,-14:
@@ -4966,7 +4966,7 @@ entities:
             0: 4068
           12,-12:
             0: 43207
-            3: 4352
+            6: 4352
           13,-15:
             0: 47786
           13,-14:
@@ -5062,12 +5062,12 @@ entities:
             1: 63624
           11,-12:
             0: 4508
-            3: 52224
+            6: 52224
           12,-11:
-            3: 4369
+            6: 4369
             0: 52424
           11,-11:
-            3: 52428
+            6: 52428
             0: 4371
           12,-10:
             0: 17748
@@ -5286,14 +5286,14 @@ entities:
           10,-2:
             1: 8
           9,-15:
-            5: 1
-            2: 4
+            3: 1
+            4: 4
             1: 32768
           9,-14:
             0: 36848
           10,-15:
-            2: 1
-            6: 4
+            4: 1
+            5: 4
           10,-14:
             0: 65520
           -8,-23:
@@ -5384,10 +5384,55 @@ entities:
         - volume: 2500
           temperature: 293.15
           moles:
+          - 6666.982
           - 0
           - 0
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.15
+          moles:
+          - 0
+          - 6666.982
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.15
+          moles:
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.15
+          moles:
+          - 0
+          - 0
+          - 0
+          - 6666.982
           - 0
           - 0
           - 0
@@ -5403,51 +5448,6 @@ entities:
           - 82.10312
           - 0
           - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.15
-          moles:
-          - 6666.982
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.15
-          moles:
-          - 0
-          - 6666.982
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.15
-          moles:
-          - 0
-          - 0
-          - 0
-          - 6666.982
           - 0
           - 0
           - 0
@@ -7973,31 +7973,31 @@ entities:
     - type: Transform
       pos: 51.5,-104.5
       parent: 2
-    - type: DeviceLinkSink
-      links:
-      - 6887
-      - 6869
     - type: DeviceLinkSource
       linkedPorts:
         6887:
         - DoorStatus: DoorBolt
         6869:
         - DoorStatus: DoorBolt
+    - type: DeviceLinkSink
+      links:
+      - 6887
+      - 6869
   - uid: 6890
     components:
     - type: Transform
       pos: 52.5,-104.5
       parent: 2
-    - type: DeviceLinkSink
-      links:
-      - 6887
-      - 6869
     - type: DeviceLinkSource
       linkedPorts:
         6887:
         - DoorStatus: DoorBolt
         6869:
         - DoorStatus: DoorBolt
+    - type: DeviceLinkSink
+      links:
+      - 6887
+      - 6869
 - proto: AirlockFreezerLocked
   entities:
   - uid: 4273
@@ -8488,7 +8488,7 @@ entities:
       pos: 76.5,-50.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -3447.8508
+      secondsUntilStateChange: -3508.6604
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -37455,18 +37455,6 @@ entities:
     - type: Transform
       pos: 4.5,-19.5
       parent: 2
-- proto: chem_master
-  entities:
-  - uid: 2284
-    components:
-    - type: Transform
-      pos: 17.5,-73.5
-      parent: 2
-  - uid: 6278
-    components:
-    - type: Transform
-      pos: 21.5,-72.5
-      parent: 2
 - proto: ChemDispenser
   entities:
   - uid: 4427
@@ -37490,6 +37478,18 @@ entities:
     components:
     - type: Transform
       pos: 21.5,-71.5
+      parent: 2
+- proto: ChemMaster
+  entities:
+  - uid: 2284
+    components:
+    - type: Transform
+      pos: 17.5,-73.5
+      parent: 2
+  - uid: 6278
+    components:
+    - type: Transform
+      pos: 21.5,-72.5
       parent: 2
 - proto: ChessBoard
   entities:
@@ -41741,31 +41741,31 @@ entities:
     - type: Transform
       pos: -4.432915,2.5572884
       parent: 2
-- proto: CryogenicSleepUnit
+- proto: CryogenicSleepUnitSpawnerLateJoin
   entities:
-  - uid: 5902
+  - uid: 72
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
+      rot: 1.5707963267948966 rad
       pos: -0.5,-1.5
       parent: 2
-  - uid: 5903
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -0.5,-2.5
-      parent: 2
-  - uid: 5904
+  - uid: 5902
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 3.5,-2.5
       parent: 2
-  - uid: 5905
+  - uid: 5903
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 3.5,-3.5
+      parent: 2
+  - uid: 5904
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -0.5,-2.5
       parent: 2
 - proto: CryoPod
   entities:
@@ -47502,7 +47502,6 @@ entities:
     - type: Transform
       pos: 13.5,-56.5
       parent: 2
-    - type: DisposalUnit
   - uid: 6263
     components:
     - type: Transform
@@ -56199,8 +56198,12 @@ entities:
   - uid: 7882
     components:
     - type: Transform
+      anchored: False
       pos: 49.5,-64.5
       parent: 2
+    - type: Physics
+      canCollide: True
+      bodyType: Dynamic
   - uid: 7885
     components:
     - type: Transform
@@ -65246,11 +65249,15 @@ entities:
   - uid: 10456
     components:
     - type: Transform
+      anchored: False
       rot: 3.141592653589793 rad
       pos: -45.5,-66.5
       parent: 2
     - type: AtmosPipeColor
       color: '#990000FF'
+    - type: Physics
+      canCollide: True
+      bodyType: Dynamic
   - uid: 10457
     components:
     - type: Transform
@@ -71506,11 +71513,6 @@ entities:
       parent: 2
 - proto: Grille
   entities:
-  - uid: 72
-    components:
-    - type: Transform
-      pos: -0.5,-0.5
-      parent: 2
   - uid: 73
     components:
     - type: Transform
@@ -78914,7 +78916,7 @@ entities:
     - type: Transform
       pos: -10.263266,-42.415524
       parent: 2
-- proto: MysteryFigureBox
+- proto: MysteryFigureBoxUmbra
   entities:
   - uid: 2242
     components:
@@ -79181,7 +79183,8 @@ entities:
     - type: Paper
       stampState: paper_stamp-centcom
       stampedBy:
-      - stampedColor: '#006600FF'
+      - type: RubberStamp
+        stampedColor: '#006600FF'
         stampedName: stamp-component-stamped-name-centcom
       content: >2-
 
@@ -91409,7 +91412,7 @@ entities:
     - type: Transform
       pos: -39.601955,-32.50758
       parent: 2
-- proto: soda_dispenser
+- proto: SodaDispenser
   entities:
   - uid: 7005
     components:
@@ -97099,7 +97102,7 @@ entities:
     - type: Transform
       pos: -17.5,-59.5
       parent: 2
-- proto: VendingMachineGames
+- proto: VendingMachineGamesUmbra
   entities:
   - uid: 1895
     components:
