@@ -139,6 +139,20 @@
     back:
     - ClothingEyesReadingGlasses
 
+# Rye's tie
+- type: loadout
+  id: ClothingNeckRyeTie
+  equipment: ClothingNeckRyeTie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Ryeversi Venusta
+
+- type: startingGear
+  id: ClothingNeckRyeTie
+  storage:
+    back:
+    - ClothingNeckRyeTie
+
 # Welds' synthetic chew fidget
 - type: loadout
   id: ClothingNeckChewtoy
