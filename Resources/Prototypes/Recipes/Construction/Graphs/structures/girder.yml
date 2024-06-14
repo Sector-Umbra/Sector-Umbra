@@ -173,7 +173,7 @@
             - tool: Welding
               doAfter: 10
 
-    # Umbra, Xeno map
+    # Umbra: Xeno map
     - node: wallChitin
       entity: WallSolidChitin
       edges:
@@ -420,7 +420,9 @@
             - tool: Cutting
               doAfter: 1
 
-    # Umbra, Xeno map
+    # START OF UMBRA ADDITION
+
+    # Umbra: Xeno map
     - node: reinforcedWallChitin
       entity: WallReinforcedChitin
       edges:
@@ -472,6 +474,8 @@
                   data: 0
             - tool: Cutting
               doAfter: 1
+
+    # END OF UMBRA ADDITION
 
     - node: shuttleWall
       entity: WallShuttle
