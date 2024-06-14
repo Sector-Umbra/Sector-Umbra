@@ -800,11 +800,8 @@
     graph: Girder
     node: diagonalshuttleWall
 
-  # START OF UMBRA CHANGES
-
-  # Umbra change: Edited to no longer be a child of WallReinforced, so that ReinforcedWallReplacementMarker is not included
 - type: entity
-  parent: BaseWall
+  parent: BaseWall # Umbra: Parent off of BaseWall instead of WallReinforced to prevent roundstart wall variation from applying.
   id: WallShuttle
   name: shuttle wall
   suffix: Reinforced, Exterior
@@ -834,6 +831,7 @@
           5: { state: shuttle_construct-5, visible: true}
   - type: Reflect
     reflectProb: 1
+  # START OF UMBRA ADDITIONS
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: StructuralMetallicStrong
@@ -863,14 +861,15 @@
     price: 150
   - type: RadiationBlocker
     resistance: 5
+  # END OF UMBRA ADDITIONS
 
-  # Umbra change: Edited to no longer be a child of WallSolid, so that WallReplacementMarker is not included
 - type: entity
-  parent: BaseWall
+  parent: BaseWall # Umbra: Parent off of BaseWall instead of WallSolid to prevent roundstart wall variation from applying.
   id: WallShuttleInterior
   name: shuttle wall
   suffix: Interior
   components:
+  # START OF UMBRA ADDITIONS
   - type: Tag
     tags:
       - Wall
@@ -900,6 +899,7 @@
         node: girder
       - !type:DoActsBehavior
         acts: ["Destruction"]
+  # END OF UMBRA ADDITIONS
   - type: Sprite
     sprite: Structures/Walls/shuttleinterior.rsi
   - type: Icon
@@ -912,8 +912,6 @@
     base: state
   - type: Reflect
     reflectProb: 1
-
-# END OF UMBRA CHANGES
 
 - type: entity
   parent: BaseWall
