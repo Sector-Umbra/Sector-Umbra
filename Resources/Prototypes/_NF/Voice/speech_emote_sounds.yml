@@ -1,0 +1,6 @@
+- type: emoteSounds
+  id: Cat
+  sound:
+    path: /Audio/Animals/cat_meow.ogg
+    params:
+      variation: 0.125
