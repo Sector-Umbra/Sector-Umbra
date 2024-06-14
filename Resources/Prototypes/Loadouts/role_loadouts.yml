@@ -32,6 +32,7 @@
   - PassengerGloves
   - PassengerOuterClothing
   - PassengerShoes
+  - PassengerTitles #CD titles
   - Glasses
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
@@ -260,7 +261,9 @@
   - ScientistOuterClothing
   - ScientistGloves
   - ScientistShoes
-  - ScientistPDA
+  # CD: use our title system
+  #- ScientistPDA
+  - ScientistTitles
   - Glasses
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
