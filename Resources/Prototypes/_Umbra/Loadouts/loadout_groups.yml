@@ -25,6 +25,7 @@
   - ClothingNeckWipesFriendMedal
   - FateseekersGemstone
   - ClothingUniformJumpsuitCarpSuit
+  - ClothingNeckRyeTie
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -46,6 +47,7 @@
   - ClothingOuterYarnaArmourCoat
   - FateseekersGemstone
   - ClothingUniformJumpsuitCarpSuit
+  - ClothingNeckRyeTie
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -67,3 +69,4 @@
   - ClothingNeckWipesFriendMedal
   - FateseekersGemstone
   - ClothingUniformJumpsuitCarpSuit
+  - ClothingNeckRyeTie
