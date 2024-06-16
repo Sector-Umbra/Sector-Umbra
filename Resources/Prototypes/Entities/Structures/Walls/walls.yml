@@ -801,7 +801,7 @@
     node: diagonalshuttleWall
 
 - type: entity
-  parent: WallReinforced
+  parent: BaseWall # Umbra: Parent off of BaseWall instead of WallReinforced to prevent roundstart wall variation from applying.
   id: WallShuttle
   name: shuttle wall
   suffix: Reinforced, Exterior
@@ -831,13 +831,75 @@
           5: { state: shuttle_construct-5, visible: true}
   - type: Reflect
     reflectProb: 1
+  # START OF UMBRA ADDITIONS
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallicStrong
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 600
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+      - !type:ChangeConstructionNodeBehavior
+        node: girder
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: StaticPrice
+    price: 150
+  - type: RadiationBlocker
+    resistance: 5
+  # END OF UMBRA ADDITIONS
 
 - type: entity
-  parent: WallSolid
+  parent: BaseWall # Umbra: Parent off of BaseWall instead of WallSolid to prevent roundstart wall variation from applying.
   id: WallShuttleInterior
   name: shuttle wall
   suffix: Interior
   components:
+  # START OF UMBRA ADDITIONS
+  - type: Tag
+    tags:
+      - Wall
+  - type: RCDDeconstructable
+    cost: 6
+    delay: 8
+    fx: EffectRCDDeconstruct8
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+      - !type:ChangeConstructionNodeBehavior
+        node: girder
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  # END OF UMBRA ADDITIONS
   - type: Sprite
     sprite: Structures/Walls/shuttleinterior.rsi
   - type: Icon

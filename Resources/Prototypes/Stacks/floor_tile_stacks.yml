@@ -1,4 +1,4 @@
-﻿- type: stack
+- type: stack
   id: FloorTileSteel
   name: steel tile
   spawn: FloorTileItemSteel
