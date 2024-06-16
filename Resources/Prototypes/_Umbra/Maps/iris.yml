@@ -1,7 +1,7 @@
 - type: gameMap
   id: Iris
   mapName: 'Iris'
-  mapPath: /Maps/_Umbra/Iris.yml
+  mapPath: /Maps/_Umbra/iris.yml
   minPlayers: 25
   maxPlayers: 60
   stations:
@@ -16,8 +16,6 @@
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/emergency_courser.yml
         - type: StationJobs
-          overflowJobs:
-            - Passenger
           availableJobs:
             #service
             Captain: [ 1, 1 ]
