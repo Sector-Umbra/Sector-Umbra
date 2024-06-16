@@ -8905,27 +8905,6 @@ entities:
       - 10596
       - 10745
       - 10746
-  - uid: 46
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 24.5,45.5
-      parent: 2
-    - type: DeviceList
-      configurators:
-      - invalid
-      devices:
-      - 10601
-      - 10600
-      - 10599
-      - 10596
-      - 569
-      - 10637
-      - 10639
-      - 10635
-      - 10640
-      - 10636
-      - 10660
   - uid: 47
     components:
     - type: Transform
@@ -69661,9 +69640,6 @@ entities:
     - type: Transform
       pos: 37.5,58.5
       parent: 2
-    - type: DisposalUnit
-      recentlyEjected:
-      - invalid
   - uid: 9918
     components:
     - type: Transform
@@ -69845,8 +69821,6 @@ entities:
       pos: 41.5,4.5
       parent: 2
     - type: DisposalUnit
-      recentlyEjected:
-      - invalid
   - uid: 9959
     components:
     - type: Transform
@@ -74616,16 +74590,6 @@ entities:
     - type: Transform
       pos: 3.5,56.5
       parent: 2
-  - uid: 10658
-    components:
-    - type: Transform
-      pos: 4.5,56.5
-      parent: 2
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 49
   - uid: 10659
     components:
     - type: Transform
@@ -77968,9 +77932,6 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#0055EEFF'
-    - type: Followed
-      following:
-      - invalid
   - uid: 11059
     components:
     - type: Transform
