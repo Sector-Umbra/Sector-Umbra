@@ -29,3 +29,34 @@
     requiresSpecialDigestion: true
     useSound:
       path: /Audio/Voice/Moth/moth_scream.ogg
+
+# Player: PolarTundra - Character: Vesper
+- type: entity
+  parent: BasePlushie
+  id: PlushieVesper
+  name: vesper plushie
+  description: A custom made moth plushie belonging to Vesper. Do not eat. It will scream.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_vesper
+    sprite: _Umbra/Objects/Fun/toys.rsi
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Voice/Moth/moth_squeak.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Voice/Moth/moth_squeak.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Voice/Moth/moth_squeak.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Voice/Moth/moth_squeak.ogg
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Voice/Moth/moth_squeak.ogg
+  - type: Food
+    requiresSpecialDigestion: true
+    useSound:
+      path: /Audio/Voice/Moth/moth_scream.ogg
