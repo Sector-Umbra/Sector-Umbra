@@ -1083,7 +1083,7 @@ namespace Content.Client.Lobby.UI
         }
 
         // CD: Records editor
-        private void UpdateProfileRecords(CharacterRecords records)
+        private void UpdateProfileRecords(PlayerProvidedCharacterRecords records)
         {
             if (Profile is null)
                 return;
