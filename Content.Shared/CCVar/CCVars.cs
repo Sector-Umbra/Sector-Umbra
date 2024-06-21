@@ -1590,6 +1590,12 @@ namespace Content.Shared.CCVar
         public static readonly CVarDef<int> EmergencyShuttleAutoCallExtensionTime =
             CVarDef.Create("shuttle.auto_call_extension_time", 45, CVar.SERVERONLY);
 
+        /// <summary>
+        ///     Whether the round should end timer should start automatically when the shuttle lands at Central Command.
+        /// </summary>
+        public static readonly CVarDef<bool> CallRoundEndWithEmergencyShuttle =
+            CVarDef.Create("shuttle.call_round_end_with_emergency_shuttle", true, CVar.SERVERONLY);
+
         /*
          * Crew Manifests
          */
