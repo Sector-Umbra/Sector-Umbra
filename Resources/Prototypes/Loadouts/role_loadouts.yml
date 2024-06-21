@@ -151,10 +151,12 @@
 - type: roleLoadout
   id: JobMusician
   groups:
+  - MusicianJumpsuit
   - CommonBackpack
   - MusicianOuterClothing
   - Glasses
   - Trinkets
+  - Instruments
   - PersonalItemsJobAgnostic # Umbra
 
 # Cargo
