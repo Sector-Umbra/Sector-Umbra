@@ -13,14 +13,14 @@ public sealed class RoundEndShuttleCommand : ToolshedCommand
     [CommandImplementation("enable")]
     public void Enable([CommandInvocationContext] IInvocationContext ctx)
     {
-        _cfg.SetCVar(CCVars.CallRoundEndWithEmergencyShuttle, true);
+        _cfg.SetCVar(CCVars.EnableEndOfRoundTimer, true);
         ctx.WriteLine("The round end timer will now start upon shuttle landing.");
     }
 
     [CommandImplementation("disable")]
     public void Disable([CommandInvocationContext] IInvocationContext ctx)
     {
-        _cfg.SetCVar(CCVars.CallRoundEndWithEmergencyShuttle, false);
+        _cfg.SetCVar(CCVars.EnableEndOfRoundTimer, false);
         ctx.WriteLine("The round end timer will no longer start upon shuttle landing.");
     }
 }
