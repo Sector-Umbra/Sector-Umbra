@@ -20,7 +20,6 @@ public sealed class LayEmoteSystem : EntitySystem
 
         SubscribeLocalEvent<LayEmoteComponent, ComponentShutdown>(OnShutdown);
         SubscribeLocalEvent<LayEmoteComponent, BuckledEvent>(OnBuckle);
-        SubscribeLocalEvent<LayEmoteComponent, UnbuckledEvent>(OnUnbuckle);
         SubscribeLocalEvent<LayEmoteComponent, MobStateChangedEvent>(OnMobStateChanged);
         SubscribeLocalEvent<LayEmoteComponent, EmoteEvent>(OnEmote);
         SubscribeLocalEvent<LayEmoteComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovementSpeedModifiers);
@@ -38,12 +37,6 @@ public sealed class LayEmoteSystem : EntitySystem
     {
         if (component.Laying)
             _standingSystem.Stand(args.Buckle.Owner);
-    }
-
-    private void OnUnbuckle(EntityUid uid, LayEmoteComponent component, ref UnbuckledEvent args)
-    {
-        if (!component.Laying)
-            _standingSystem.Down(args.Buckle.Owner);
     }
 
     private void OnMobStateChanged(EntityUid uid, LayEmoteComponent component, MobStateChangedEvent args)

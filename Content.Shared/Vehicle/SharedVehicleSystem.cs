@@ -53,7 +53,7 @@ public abstract partial class SharedVehicleSystem : EntitySystem
         InitializeRider();
 
         SubscribeLocalEvent<VehicleComponent, ComponentStartup>(OnVehicleStartup);
-        SubscribeLocalEvent<VehicleComponent, BuckledEvent>(OnBuckle);
+        SubscribeLocalEvent<VehicleComponent, StrappedEvent>(OnBuckle);
         SubscribeLocalEvent<VehicleComponent, UnbuckledEvent>(OnUnbuckled);
         SubscribeLocalEvent<VehicleComponent, HonkActionEvent>(OnHonkAction);
         SubscribeLocalEvent<VehicleComponent, EntInsertedIntoContainerMessage>(OnEntInserted);
@@ -107,15 +107,15 @@ public abstract partial class SharedVehicleSystem : EntitySystem
         // Remove rider
 
         // Clean up actions and virtual items
-        _actionsSystem.RemoveProvidedActions(args.Buckle.Comp.BuckledTo!.Value, uid);
+        _actionsSystem.RemoveProvidedActions(args.Buckle.Owner, uid);
 
         if (component.UseHand == true)
-            _virtualItemSystem.DeleteInHandsMatching(args.Buckle.Comp.BuckledTo!.Value, uid);
+            _virtualItemSystem.DeleteInHandsMatching(args.Buckle.Owner, uid);
 
 
         // Entity is no longer riding
-        RemComp<RiderComponent>(args.Buckle.Comp.BuckledTo!.Value);
-        RemComp<RelayInputMoverComponent>(args.Buckle.Comp.BuckledTo!.Value);
+        RemComp<RiderComponent>(args.Buckle.Owner);
+        RemComp<RelayInputMoverComponent>(args.Buckle.Owner);
         _tagSystem.RemoveTag(uid, "DoorBumpOpener");
 
         Appearance.SetData(uid, VehicleVisuals.HideRider, false);
@@ -124,13 +124,13 @@ public abstract partial class SharedVehicleSystem : EntitySystem
         Dirty(component);
     }
 
-    private void OnBuckle(EntityUid uid, VehicleComponent component, ref BuckledEvent args)
+    private void OnBuckle(EntityUid uid, VehicleComponent component, ref StrappedEvent args)
     {
         // Add Rider
         if (component.UseHand == true)
         {
             // Add a virtual item to rider's hand, unbuckle if we can't.
-            if (!_virtualItemSystem.TrySpawnVirtualItemInHand(uid, args.Buckle.Comp.BuckledTo!.Value))
+            if (!_virtualItemSystem.TrySpawnVirtualItemInHand(uid, args.Buckle.Owner))
             {
                 _buckle.TryUnbuckle(uid, uid, true);
                 return;
@@ -138,8 +138,8 @@ public abstract partial class SharedVehicleSystem : EntitySystem
         }
         // Set up the rider and vehicle with each other
         EnsureComp<InputMoverComponent>(uid);
-        var rider = EnsureComp<RiderComponent>(args.Buckle.Comp.BuckledTo!.Value);
-        component.Rider = args.Buckle.Comp.BuckledTo!.Value;
+        var rider = EnsureComp<RiderComponent>(args.Buckle.Owner);
+        component.Rider = args.Buckle.Owner;
         component.LastRider = component.Rider;
         Dirty(component);
         Appearance.SetData(uid, VehicleVisuals.HideRider, true);
@@ -152,17 +152,17 @@ public abstract partial class SharedVehicleSystem : EntitySystem
         if (TryComp<InputMoverComponent>(uid, out var mover))
             UpdateDrawDepth(uid, GetDrawDepth(Transform(uid), component, mover.RelativeRotation.Degrees));
 
-        if (TryComp<ActionsComponent>(args.Buckle.Comp.BuckledTo!.Value, out var actions) && TryComp<UnpoweredFlashlightComponent>(uid, out var flashlight))
+        if (TryComp<ActionsComponent>(args.Buckle.Owner, out var actions) && TryComp<UnpoweredFlashlightComponent>(uid, out var flashlight))
         {
-            _actionsSystem.AddAction(args.Buckle.Comp.BuckledTo!.Value, ref flashlight.ToggleActionEntity, flashlight.ToggleAction, uid, actions);
+            _actionsSystem.AddAction(args.Buckle.Owner, ref flashlight.ToggleActionEntity, flashlight.ToggleAction, uid, actions);
         }
 
         if (component.HornSound != null)
         {
-            _actionsSystem.AddAction(args.Buckle.Comp.BuckledTo!.Value, ref component.HornActionEntity, component.HornAction, uid, actions);
+            _actionsSystem.AddAction(args.Buckle.Owner, ref component.HornActionEntity, component.HornAction, uid, actions);
         }
 
-        _joints.ClearJoints(args.Buckle.Comp.BuckledTo!.Value);
+        _joints.ClearJoints(args.Buckle.Owner);
 
         _tagSystem.AddTag(uid, "DoorBumpOpener");
     }
