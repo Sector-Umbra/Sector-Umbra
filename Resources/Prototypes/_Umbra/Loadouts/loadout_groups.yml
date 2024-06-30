@@ -27,6 +27,8 @@
   - FateseekersGemstone
   - ClothingUniformJumpsuitCarpSuit
   - ClothingNeckRyeTie
+  - ClothingHeadHatRainbowFlowerJasmi
+
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -50,6 +52,7 @@
   - FateseekersGemstone
   - ClothingUniformJumpsuitCarpSuit
   - ClothingNeckRyeTie
+  - ClothingHeadHatRainbowFlowerJasmi
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -73,3 +76,4 @@
   - FateseekersGemstone
   - ClothingUniformJumpsuitCarpSuit
   - ClothingNeckRyeTie
+  - ClothingHeadHatRainbowFlowerJasmi
