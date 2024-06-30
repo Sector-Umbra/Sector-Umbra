@@ -7,6 +7,6 @@
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra\Clothing\Neck\Scarfs\borgsscarf.rsi
+    sprite: _Umbra/Clothing/Neck/Scarfs/borgsscarf.rsi
   - type: Clothing
-    sprite: _Umbra\Clothing\Neck\Scarfs\borgsscarf.rsi
+    sprite: _Umbra/Clothing/Neck/Scarfs/borgsscarf.rsi
