@@ -1,0 +1,12 @@
+# Player: Tych0 - Character: Borgs-the-Brains
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckBorgsScarf
+  name: Borgs' Scarf
+  description: A purple striped scarf with artifact fragments sewn into it. Definitely safe. 
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra\Clothing\Neck\Scarfs\borgsscarf.rsi
+  - type: Clothing
+    sprite: _Umbra\Clothing\Neck\Scarfs\borgsscarf.rsi

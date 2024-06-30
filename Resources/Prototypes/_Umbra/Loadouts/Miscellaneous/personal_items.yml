@@ -1,3 +1,31 @@
+#Borgs' Beret
+- type: loadout
+  id: ClothingHeadBorgsBeret
+  equipment: ClothingHeadBorgsBeret
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Borgs-the-Brains
+
+- type: startingGear
+  id: ClothingHeadBorgsBeret
+  storage:
+    back:
+    - ClothingHeadBorgsBeret
+
+#Borgs' Scarf
+- type: loadout
+  id: ClothingNeckBorgsScarf
+  equipment: ClothingNeckBorgsScarf
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Borgs-the-Brains
+
+- type: startingGear
+  id: ClothingNeckBorgsScarf
+  storage:
+    back:
+    - ClothingNeckBorgsScarf
+
 # Chance's Carp Suit
 - type: loadout
   id: ClothingUniformJumpsuitCarpSuit
@@ -11,7 +39,6 @@
   storage:
     back:
     - ClothingUniformJumpsuitCarpSuit
-
 
 # Deeja's artifact necklace
 - type: loadout

@@ -1,0 +1,12 @@
+# Player: Tych0 - Character: Borgs-the-Brains
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadBorgsBeret
+  name: Borgs' Beret
+  description: Borgs' personal beret. It has a preserved exotic flower and a carved artifact fragment sewn onto it.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra\Clothing\Head\Hats\borgsberet.rsi
+  - type: Clothing
+    sprite: _Umbra\Clothing\Head\Hats\borgsberet.rsi
