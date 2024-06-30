@@ -112,7 +112,7 @@
     back:
     - ClothingNeckLoopsBellCollar
 
-# maple moondancer plushie
+# Nashira-Najma's maple moondancer plushie
 - type: loadout
   id: PlushieMaple
   equipment: PlushieMaple
@@ -125,6 +125,20 @@
   storage:
     back:
     - PlushieMaple
+
+# Vesper's vesper plushie
+- type: loadout
+  id: PlushieVesper
+  equipment: PlushieVesper
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Vesper
+
+- type: startingGear
+  id: PlushieVesper
+  storage:
+    back:
+    - PlushieVesper
 
 # Miles' flower braid
 - type: loadout
@@ -153,6 +167,20 @@
   storage:
     back:
     - ClothingEyesReadingGlasses
+
+# Rye's tie
+- type: loadout
+  id: ClothingNeckRyeTie
+  equipment: ClothingNeckRyeTie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Ryeversi Venusta
+
+- type: startingGear
+  id: ClothingNeckRyeTie
+  storage:
+    back:
+    - ClothingNeckRyeTie
 
 # Welds' synthetic chew fidget
 - type: loadout

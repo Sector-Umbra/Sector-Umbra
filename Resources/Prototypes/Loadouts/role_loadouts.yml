@@ -32,6 +32,7 @@
   - PassengerGloves
   - PassengerOuterClothing
   - PassengerShoes
+  - PassengerTitles #CD titles
   - Glasses
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
@@ -82,7 +83,7 @@
   groups:
   - LawyerNeck
   - LawyerJumpsuit
-  - LawyerBackpack
+  - CommonBackpack
   - Glasses
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
@@ -94,7 +95,7 @@
   - ChaplainMask
   - ChaplainNeck
   - ChaplainJumpsuit
-  - ChaplainBackpack
+  - CommonBackpack
   - ChaplainOuterClothing
   - Glasses
   - Trinkets
@@ -150,10 +151,12 @@
 - type: roleLoadout
   id: JobMusician
   groups:
-  - MusicianBackpack
+  - MusicianJumpsuit
+  - CommonBackpack
   - MusicianOuterClothing
   - Glasses
   - Trinkets
+  - Instruments
   - PersonalItemsJobAgnostic # Umbra
 
 # Cargo
@@ -163,7 +166,7 @@
   - QuartermasterHead
   - QuartermasterNeck
   - QuartermasterJumpsuit
-  - QuartermasterBackpack
+  - CargoTechnicianBackpack
   - QuartermasterOuterClothing
   - QuartermasterShoes
   - Glasses
@@ -198,7 +201,7 @@
   groups:
   - ChiefEngineerHead
   - ChiefEngineerJumpsuit
-  - ChiefEngineerBackpack
+  - StationEngineerBackpack
   - ChiefEngineerNeck
   - ChiefEngineerOuterClothing
   - ChiefEngineerShoes
@@ -242,7 +245,7 @@
   - ResearchDirectorHead
   - ResearchDirectorNeck
   - ResearchDirectorJumpsuit
-  - ResearchDirectorBackpack
+  - ScientistBackpack
   - ResearchDirectorOuterClothing
   - ScientistGloves
   - ResearchDirectorShoes
@@ -260,7 +263,9 @@
   - ScientistOuterClothing
   - ScientistGloves
   - ScientistShoes
-  - ScientistPDA
+  # CD: use our title system
+  #- ScientistPDA
+  - ScientistTitles
   - Glasses
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
@@ -322,7 +327,7 @@
   - DetectiveHead
   - DetectiveNeck
   - DetectiveJumpsuit
-  - DetectiveBackpack
+  - SecurityBackpack
   - DetectiveOuterClothing
   - SecurityShoes
   - SecurityGlassesOrHud # CD Addition
@@ -346,7 +351,7 @@
   - MedicalMask
   - ChiefMedicalOfficerJumpsuit
   - MedicalGloves
-  - ChiefMedicalOfficerBackpack
+  - MedicalBackpack
   - ChiefMedicalOfficerOuterClothing
   - ChiefMedicalOfficerNeck
   - ChiefMedicalOfficerShoes
@@ -399,7 +404,7 @@
   - ParamedicJumpsuit
   # CD: ETU Gear
   - ParamedicGloves
-  - ParamedicBackpack
+  - MedicalBackpack
   - ParamedicOuterClothing
   - ParamedicShoes
   - Glasses

@@ -772,7 +772,7 @@
   - type: Food
     requiresSpecialDigestion: true
     useSound:
-      path: /Audio/Voice/Moth/moth_chitter.ogg
+      path: /Audio/Voice/Moth/moth_scream.ogg # Umbra: moth_chitter -> moth_scream
 
 ## Cheapo Figurines
 
@@ -1222,6 +1222,7 @@
     - type: StaminaDamageOnHit
       damage: 8
     - type: MeleeWeapon
+      wideAnimationRotation: -135
       damage:
         types:
           Blunt: 0
