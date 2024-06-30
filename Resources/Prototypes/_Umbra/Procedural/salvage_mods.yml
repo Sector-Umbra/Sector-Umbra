@@ -1,0 +1,9 @@
+- type: salvageBiomeMod
+  id: Shadow
+  biome: Shadow
+
+- type: salvageDungeonMod
+  id: Geneticore
+  proto: Geneticore
+  biomes:
+    - Shadow
