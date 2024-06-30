@@ -21,7 +21,7 @@
   parent: ClothingHeadBase
   id: ClothingHeadHatRainbowFlowerJasmi
   name: Jasmi's Rainbow Hairflower
-  description: Jasmi's custom hairflower, with pedals colored in a rainbow pattern. 
+  description: Jasmi's custom hairflower, with petals colored in a rainbow pattern. 
   suffix: PersonalItem
   components:
   - type: Sprite
