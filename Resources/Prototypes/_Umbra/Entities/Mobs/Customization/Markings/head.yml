@@ -1,0 +1,8 @@
+- type: marking
+  id: LizardHeadAquaticFrills
+  bodyPart: Head
+  markingCategory: HeadTop
+  speciesRestriction: [Reptilian]
+  sprites:
+  - sprite: _Umbra/Mobs/Customization/aquaticheadfrills.rsi
+    state: AquaticHeadFrills
