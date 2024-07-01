@@ -163,3 +163,11 @@
   components:
   - type: Sprite
     state: alma_botany
+
+- type: entity
+  parent: BaseFigurineUmbra
+  id: ToyFigurineUmbraJasmiMD
+  name: jasmi-glorb figurine
+  components:
+  - type: Sprite
+    state: jasmi_doctor
