@@ -1,0 +1,8 @@
+- type: marking
+  id: LizardTailAquaticFrills
+  bodyPart: Tail
+  markingCategory: Overlay
+  speciesRestriction: [Reptilian]
+  sprites:
+  - sprite: _Umbra/Mobs/Customization/aquatictailfrills.rsi
+    state: AquaticTailFrills
