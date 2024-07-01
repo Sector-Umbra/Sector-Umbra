@@ -132,7 +132,7 @@ namespace Content.Shared.Preferences
         public float Height = 1f;
 
         [DataField("cosmaticDriftCharacterRecords")]
-        public CharacterRecords? CDCharacterRecords;
+        public PlayerProvidedCharacterRecords? CDCharacterRecords;
 
         public HumanoidCharacterProfile(
             string name,
@@ -149,7 +149,7 @@ namespace Content.Shared.Preferences
             HashSet<ProtoId<AntagPrototype>> antagPreferences,
             HashSet<ProtoId<TraitPrototype>> traitPreferences,
             Dictionary<string, RoleLoadout> loadouts,
-            CharacterRecords? cdCharacterRecords)
+            PlayerProvidedCharacterRecords? cdCharacterRecords)
         {
             Name = name;
             FlavorText = flavortext;
@@ -458,7 +458,7 @@ namespace Content.Shared.Preferences
             };
         }
 
-        public HumanoidCharacterProfile WithCDCharacterRecords(CharacterRecords records)
+        public HumanoidCharacterProfile WithCDCharacterRecords(PlayerProvidedCharacterRecords records)
         {
             return new HumanoidCharacterProfile(this) { CDCharacterRecords = records };
         }
@@ -644,7 +644,7 @@ namespace Content.Shared.Preferences
 
             if (CDCharacterRecords == null)
             {
-                CDCharacterRecords = CharacterRecords.DefaultRecords();
+                CDCharacterRecords = PlayerProvidedCharacterRecords.DefaultRecords();
             }
             else
             {
@@ -734,15 +734,15 @@ namespace Content.Shared.Preferences
             return profile;
         }
 
-        public RoleLoadout GetLoadoutOrDefault(string id, ProtoId<SpeciesPrototype>? species, IEntityManager entManager, IPrototypeManager protoManager)
+        public RoleLoadout GetLoadoutOrDefault(string id, ICommonSession? session, ProtoId<SpeciesPrototype>? species, IEntityManager entManager, IPrototypeManager protoManager)
         {
             if (!_loadouts.TryGetValue(id, out var loadout))
             {
                 loadout = new RoleLoadout(id);
-                loadout.SetDefault(protoManager, force: true);
+                loadout.SetDefault(this, session, protoManager, force: true);
             }
 
-            loadout.SetDefault(protoManager);
+            loadout.SetDefault(this, session, protoManager);
             return loadout;
         }
 

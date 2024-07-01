@@ -97,7 +97,7 @@
     back:
     - ClothingNeckLoopsBellCollar
 
-# maple moondancer plushie
+# Nashira-Najma's maple moondancer plushie
 - type: loadout
   id: PlushieMaple
   equipment: PlushieMaple
@@ -110,6 +110,20 @@
   storage:
     back:
     - PlushieMaple
+
+# Vesper's vesper plushie
+- type: loadout
+  id: PlushieVesper
+  equipment: PlushieVesper
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Vesper
+
+- type: startingGear
+  id: PlushieVesper
+  storage:
+    back:
+    - PlushieVesper
 
 # Miles' flower braid
 - type: loadout
