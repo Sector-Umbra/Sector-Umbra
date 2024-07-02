@@ -156,3 +156,5 @@
       orGroup: SpacemenFig
     - id: ToyFigurineUmbraJohnScientist
       orGroup: SpacemenFig
+    - id: ToyFigurineUmbraJasmiScientist
+      orGroup: SpacemenFig
