@@ -84,20 +84,6 @@
     back:
     - ClothingHeadHatRainbowFlowerJasmi
 
-# John's Flippo
-- type: loadout
-  id: BozelliLighter
-  equipment: BozelliLighter
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character: John Bozelli
-
-- type: startingGear
-  id: BozelliLighter
-  storage:
-    back:
-    - BozelliLighter
-
 # Loops' bell collar
 - type: loadout
   id: ClothingNeckLoopsBellCollar
