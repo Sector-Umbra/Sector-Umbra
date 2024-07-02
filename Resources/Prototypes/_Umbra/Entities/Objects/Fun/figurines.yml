@@ -171,3 +171,11 @@
   components:
   - type: Sprite
     state: jasmi_doctor
+
+- type: entity
+  parent: BaseFigurineUmbra
+  id: ToyFigurineUmbraJohnScientist
+  name: john armstrong figurine
+  components:
+  - type: Sprite
+    state: john_scientist

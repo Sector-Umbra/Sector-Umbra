@@ -63,6 +63,9 @@
         },
         {
           "name": "jasmi_doctor"
+        },
+        {
+          "name": "john_scientist"
         }
     ]
 }
