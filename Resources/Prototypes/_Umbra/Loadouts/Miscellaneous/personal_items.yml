@@ -1,3 +1,4 @@
+
 # Chance's Carp Suit
 - type: loadout
   id: ClothingUniformJumpsuitCarpSuit
@@ -68,6 +69,20 @@
   storage:
     back:
     - ClothingOuterCoatReinforcedRaincoat
+
+# Jasmi's hairflower
+- type: loadout
+  id: ClothingHeadHatRainbowFlowerJasmi
+  equipment: ClothingHeadHatRainbowFlowerJasmi
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Jasmi-Glorb
+
+- type: startingGear
+  id: ClothingHeadHatRainbowFlowerJasmi
+  storage:
+    back:
+    - ClothingHeadHatRainbowFlowerJasmi
 
 # Loops' bell collar
 - type: loadout
