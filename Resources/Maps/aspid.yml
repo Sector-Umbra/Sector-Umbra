@@ -88539,7 +88539,7 @@ entities:
   - uid: 3537
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
+      rot: 0 rad
       pos: -6.5,29.5
       parent: 1
 - proto: MachineCentrifuge
