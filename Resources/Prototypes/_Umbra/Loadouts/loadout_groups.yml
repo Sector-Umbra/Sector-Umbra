@@ -15,7 +15,6 @@
   loadouts:
   - ClothingNeckArtifactNecklace
   - FrostCoat
-  - BozelliLighter
   - ClothingNeckLoopsBellCollar
   - PlushieMaple
   - PlushieVesper
@@ -27,6 +26,7 @@
   - FateseekersGemstone
   - ClothingUniformJumpsuitCarpSuit
   - ClothingNeckRyeTie
+  - ClothingHeadHatRainbowFlowerJasmi
   - ClothingHeadBorgsBeret
   - ClothingNeckBorgsScarf
 
@@ -39,7 +39,6 @@
   loadouts:
   - ClothingNeckArtifactNecklace
   - FrostCoat
-  - BozelliLighter
   - ClothingNeckLoopsBellCollar
   - PlushieMaple
   - PlushieVesper
@@ -52,6 +51,7 @@
   - FateseekersGemstone
   - ClothingUniformJumpsuitCarpSuit
   - ClothingNeckRyeTie
+  - ClothingHeadHatRainbowFlowerJasmi
   - ClothingHeadBorgsBeret
   - ClothingNeckBorgsScarf
 
@@ -64,7 +64,6 @@
   loadouts:
   - ClothingNeckArtifactNecklace
   - FrostCoat
-  - BozelliLighter
   - ClothingNeckLoopsBellCollar
   - PlushieMaple
   - PlushieVesper
@@ -77,5 +76,6 @@
   - FateseekersGemstone
   - ClothingUniformJumpsuitCarpSuit
   - ClothingNeckRyeTie
+  - ClothingHeadHatRainbowFlowerJasmi
   - ClothingHeadBorgsBeret
   - ClothingNeckBorgsScarf

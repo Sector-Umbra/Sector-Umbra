@@ -96,19 +96,19 @@
     back:
     - ClothingOuterCoatReinforcedRaincoat
 
-# John's Flippo
+# Jasmi's hairflower
 - type: loadout
-  id: BozelliLighter
-  equipment: BozelliLighter
+  id: ClothingHeadHatRainbowFlowerJasmi
+  equipment: ClothingHeadHatRainbowFlowerJasmi
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: John Bozelli
+    character: Jasmi-Glorb
 
 - type: startingGear
-  id: BozelliLighter
+  id: ClothingHeadHatRainbowFlowerJasmi
   storage:
     back:
-    - BozelliLighter
+    - ClothingHeadHatRainbowFlowerJasmi
 
 # Loops' bell collar
 - type: loadout
