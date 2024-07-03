@@ -168,9 +168,19 @@
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraJasmiMD
   name: jasmi-glorb figurine
+  suffix: MD
   components:
   - type: Sprite
     state: jasmi_doctor
+
+- type: entity
+  parent: BaseFigurineUmbra
+  id: ToyFigurineUmbraJasmiScientist
+  name: jasmi-glorb figurine
+  suffix: Sci
+  components:
+  - type: Sprite
+    state: jasmi_scientist
 
 - type: entity
   parent: BaseFigurineUmbra
@@ -180,10 +190,3 @@
   - type: Sprite
     state: john_scientist
 
-- type: entity
-  parent: BaseFigurineUmbra
-  id: ToyFigurineUmbraJasmiScientist
-  name: jasmi-glorb figurine
-  components:
-  - type: Sprite
-    state: jasmi_scientist
