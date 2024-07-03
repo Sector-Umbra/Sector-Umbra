@@ -47,7 +47,6 @@
   description: greenshift-description
   rules:
   - BasicRoundstartVariation
-  # - GameRuleMeteorScheduler # Umbra: It's greenshift. No meteors.
 
 - type: gamePreset
   id: Secret

@@ -48,7 +48,7 @@ public sealed partial class StampComponent : Component
     public string StampedName { get; set; } = "stamp-component-stamped-name-default";
 
     /// <summary>
-    ///     Tne sprite state of the stamp to display on the paper from paper Sprite path.
+    ///     The sprite state of the stamp to display on the paper from paper Sprite path.
     /// </summary>
     [DataField("stampState")]
     public string StampState { get; set; } = "paper_stamp-generic";

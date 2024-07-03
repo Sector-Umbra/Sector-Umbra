@@ -7,8 +7,10 @@
   - CaptainJumpsuit
   - CaptainBackpack
   - CaptainOuterClothing
+  - Survival
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
+
 
 - type: roleLoadout
   id: JobHeadOfPersonnel
@@ -19,6 +21,7 @@
   - HoPBackpack
   - HoPOuterClothing
   - Glasses
+  - Survival
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -34,6 +37,7 @@
   - PassengerShoes
   - PassengerTitles #CD titles
   - Glasses
+  - Survival
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -45,6 +49,7 @@
   - CommonBackpack
   - BartenderOuterClothing
   - Glasses
+  - Survival
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -54,6 +59,7 @@
   - BartenderJumpsuit
   - CommonBackpack
   - Glasses
+  - Survival
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -66,6 +72,7 @@
   - CommonBackpack
   - ChefOuterClothing
   - Glasses
+  - Survival
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -75,6 +82,7 @@
   - LibrarianJumpsuit
   - CommonBackpack
   - Glasses
+  - Survival
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -85,6 +93,7 @@
   - LawyerJumpsuit
   - CommonBackpack
   - Glasses
+  - Survival
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -98,6 +107,7 @@
   - CommonBackpack
   - ChaplainOuterClothing
   - Glasses
+  - Survival
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -110,8 +120,10 @@
   - CommonBackpack
   - JanitorOuterClothing
   - Glasses
+  - Survival
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
+  - JanitorPlunger
 
 - type: roleLoadout
   id: JobBotanist
@@ -121,6 +133,7 @@
   - BotanistBackpack
   - BotanistOuterClothing
   - Glasses
+  - Survival
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -133,6 +146,7 @@
   - ClownOuterClothing
   - ClownShoes
   - Glasses
+  - SurvivalClown
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -145,6 +159,7 @@
   - MimeBackpack
   - MimeOuterClothing
   - Glasses
+  - Survival
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -155,6 +170,7 @@
   - CommonBackpack
   - MusicianOuterClothing
   - Glasses
+  - Survival
   - Trinkets
   - Instruments
   - PersonalItemsJobAgnostic # Umbra
@@ -170,6 +186,7 @@
   - QuartermasterOuterClothing
   - QuartermasterShoes
   - Glasses
+  - Survival
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -182,6 +199,7 @@
   - CargoTechnicianOuterClothing
   - CargoTechnicianShoes
   - Glasses
+  - Survival
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -192,6 +210,7 @@
   - SalvageSpecialistOuterClothing
   - SalvageSpecialistShoes
   - Glasses
+  - Survival
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -205,6 +224,7 @@
   - ChiefEngineerNeck
   - ChiefEngineerOuterClothing
   - ChiefEngineerShoes
+  - SurvivalExtended
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -213,6 +233,7 @@
   groups:
   - TechnicalAssistantJumpsuit
   - StationEngineerBackpack
+  - SurvivalExtended
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -225,6 +246,7 @@
   - StationEngineerOuterClothing
   - StationEngineerShoes
   - StationEngineerID
+  - SurvivalExtended
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -235,6 +257,7 @@
   - AtmosphericTechnicianBackpack
   - AtmosphericTechnicianOuterClothing
   - AtmosphericTechnicianShoes
+  - SurvivalExtended
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -250,6 +273,7 @@
   - ScientistGloves
   - ResearchDirectorShoes
   - Glasses
+  - Survival
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -267,6 +291,7 @@
   #- ScientistPDA
   - ScientistTitles
   - Glasses
+  - Survival
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -276,6 +301,7 @@
   - ResearchAssistantJumpsuit
   - ScientistBackpack
   - Glasses
+  - Survival
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -291,6 +317,7 @@
   - HeadofSecurityOuterClothing
   - SecurityShoes
   - SecurityGlassesOrHud # CD Addition
+  - SurvivalSecurity
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -303,6 +330,7 @@
   - SecurityBelt
   - WardenOuterClothing
   - SecurityShoes
+  - SurvivalSecurity
   - SecurityGlassesOrHud # CD Addition
   - Trinkets
   - PersonalItemsWarden # Umbra
@@ -317,6 +345,7 @@
   - SecurityShoes
   - SecurityPDA
   - SecurityBelt
+  - SurvivalSecurity
   - SecurityGlassesOrHud # CD Addition
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
@@ -330,6 +359,7 @@
   - SecurityBackpack
   - DetectiveOuterClothing
   - SecurityShoes
+  - SurvivalSecurity
   - SecurityGlassesOrHud # CD Addition
   - Trinkets
   - PersonalItemsDetective # Umbra
@@ -339,6 +369,7 @@
   groups:
   - SecurityCadetJumpsuit
   - SecurityBackpack
+  - SurvivalSecurity
   - SecurityGlassesOrHud # CD Addition
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
@@ -356,6 +387,7 @@
   - ChiefMedicalOfficerNeck
   - ChiefMedicalOfficerShoes
   - Glasses
+  - SurvivalMedical
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -371,6 +403,7 @@
   - MedicalShoes
   - MedicalDoctorPDA
   - Glasses
+  - SurvivalMedical
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -380,6 +413,7 @@
   - MedicalInternJumpsuit
   - MedicalBackpack
   - Glasses
+  - SurvivalMedical
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -392,6 +426,7 @@
   - ChemistBackpack
   - ChemistOuterClothing
   - MedicalShoes
+  - SurvivalMedical
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -408,6 +443,7 @@
   - ParamedicOuterClothing
   - ParamedicShoes
   - Glasses
+  - SurvivalMedical
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -417,6 +453,7 @@
   groups:
   - CommonBackpack
   - Glasses
+  - Survival
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -426,6 +463,7 @@
   - ReporterJumpsuit
   - CommonBackpack
   - Glasses
+  - Survival
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -434,6 +472,7 @@
   groups:
   - MedicalBackpack
   - Glasses
+  - Survival
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
 
@@ -444,5 +483,38 @@
   - BoxerGloves
   - CommonBackpack
   - Glasses
+  - Survival
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
+
+# These loadouts will be used without player configuration, thus they must be designed to work without manual selection
+
+- type: roleLoadout
+  id: LoadoutSurvivalStandard
+  groups:
+  - Survival
+
+- type: roleLoadout
+  id: LoadoutSurvivalClown
+  groups:
+  - SurvivalClown
+
+- type: roleLoadout
+  id: LoadoutSurvivalExtended
+  groups:
+  - SurvivalExtended
+
+- type: roleLoadout
+  id: LoadoutSurvivalMedical
+  groups:
+  - SurvivalMedical
+
+- type: roleLoadout
+  id: LoadoutSurvivalSecurity
+  groups:
+  - SurvivalSecurity
+
+- type: roleLoadout
+  id: LoadoutSurvivalSyndicate
+  groups:
+  - SurvivalSyndicate
