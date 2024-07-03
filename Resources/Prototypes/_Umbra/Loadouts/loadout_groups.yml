@@ -27,7 +27,8 @@
   - ClothingUniformJumpsuitCarpSuit
   - ClothingNeckRyeTie
   - ClothingHeadHatRainbowFlowerJasmi
-
+  - ClothingHeadBorgsBeret
+  - ClothingNeckBorgsScarf
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -51,6 +52,8 @@
   - ClothingUniformJumpsuitCarpSuit
   - ClothingNeckRyeTie
   - ClothingHeadHatRainbowFlowerJasmi
+  - ClothingHeadBorgsBeret
+  - ClothingNeckBorgsScarf
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -74,3 +77,5 @@
   - ClothingUniformJumpsuitCarpSuit
   - ClothingNeckRyeTie
   - ClothingHeadHatRainbowFlowerJasmi
+  - ClothingHeadBorgsBeret
+  - ClothingNeckBorgsScarf
