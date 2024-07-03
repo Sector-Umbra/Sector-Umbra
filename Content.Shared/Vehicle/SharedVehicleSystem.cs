@@ -53,8 +53,9 @@ public abstract partial class SharedVehicleSystem : EntitySystem
         InitializeRider();
 
         SubscribeLocalEvent<VehicleComponent, ComponentStartup>(OnVehicleStartup);
-        SubscribeLocalEvent<VehicleComponent, StrappedEvent>(OnBuckle);
-        SubscribeLocalEvent<VehicleComponent, UnstrappedEvent>(OnUnbuckled);
+        SubscribeLocalEvent<VehicleComponent, StrapAttemptEvent>(OnStrapAttempt);
+        SubscribeLocalEvent<VehicleComponent, StrappedEvent>(OnStrapped);
+        SubscribeLocalEvent<VehicleComponent, UnstrappedEvent>(OnUnstrapped);
         SubscribeLocalEvent<VehicleComponent, HonkActionEvent>(OnHonkAction);
         SubscribeLocalEvent<VehicleComponent, EntInsertedIntoContainerMessage>(OnEntInserted);
         SubscribeLocalEvent<VehicleComponent, EntRemovedFromContainerMessage>(OnEntRemoved);
@@ -102,7 +103,7 @@ public abstract partial class SharedVehicleSystem : EntitySystem
         _modifier.RefreshMovementSpeedModifiers(uid);
     }
 
-    private void OnUnbuckled(EntityUid uid, VehicleComponent component, ref UnstrappedEvent args)
+    private void OnUnstrapped(EntityUid uid, VehicleComponent component, ref UnstrappedEvent args)
     {
         // Remove rider
         var riderUid = args.Buckle.Owner;
@@ -124,19 +125,25 @@ public abstract partial class SharedVehicleSystem : EntitySystem
         Dirty(uid, component);
     }
 
-    private void OnBuckle(EntityUid uid, VehicleComponent component, ref StrappedEvent args)
+    private void OnStrapAttempt(EntityUid uid, VehicleComponent component, ref StrapAttemptEvent args)
     {
         // Add Rider
         var riderUid = args.Buckle.Owner;
         if (component.UseHand == true)
         {
-            // Add a virtual item to rider's hand, unbuckle if we can't.
+            // Add a virtual item to rider's hand, cancel if we can't.
             if (!_virtualItemSystem.TrySpawnVirtualItemInHand(uid, riderUid))
             {
-                _buckle.TryUnbuckle(uid, uid, true);
+                args.Cancelled = true;
                 return;
             }
         }
+    }
+
+    private void OnStrapped(EntityUid uid, VehicleComponent component, ref StrappedEvent args)
+    {
+        var riderUid = args.Buckle.Owner;
+
         // Set up the rider and vehicle with each other
         EnsureComp<InputMoverComponent>(uid);
         var rider = EnsureComp<RiderComponent>(riderUid);
