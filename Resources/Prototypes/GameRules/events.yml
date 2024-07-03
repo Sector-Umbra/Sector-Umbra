@@ -459,6 +459,7 @@
     startAnnouncement: station-event-communication-interception
     startAudio:
       path: /Audio/Announcements/intercept.ogg
+    duration: null # the rule has to last the whole round not 1 second
     roundEndingThreat: true # Umbra - Pending a better way to prevent this event from rolling automatically. Ever.
   - type: AlertLevelInterceptionRule
   - type: AntagSelection
