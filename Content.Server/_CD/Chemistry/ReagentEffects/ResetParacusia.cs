@@ -18,12 +18,13 @@ public sealed partial class ResetParacusia : EntityEffect
 
     public override void Effect(EntityEffectBaseArgs args)
     {
-        EntityEffectReagentArgs rArgs = (EntityEffectReagentArgs) args;
-
-        if (rArgs.Scale != 1f)
+        if (args is not EntityEffectReagentArgs reagentArgs)
             return;
 
-        var sys = rArgs.EntityManager.EntitySysManager.GetEntitySystem<ParacusiaSystem>();
-        sys.SetIncidentDelay(rArgs.TargetEntity, new TimeSpan(0, 0, TimerReset));
+        if (reagentArgs.Scale != 1f)
+            return;
+
+        var sys = reagentArgs.EntityManager.EntitySysManager.GetEntitySystem<ParacusiaSystem>();
+        sys.SetIncidentDelay(reagentArgs.TargetEntity, new TimeSpan(0, 0, TimerReset));
     }
 }
