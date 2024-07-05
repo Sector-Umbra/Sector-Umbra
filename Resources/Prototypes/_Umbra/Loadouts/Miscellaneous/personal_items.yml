@@ -124,6 +124,20 @@
     back:
     - ClothingHeadHatRainbowFlowerJasmi
 
+# Jotty's Pet Rock
+- type: loadout
+  id: PetRockBobby
+  equipment: PetRockBobby
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Joetta-Beedell
+
+- type: startingGear
+  id: PetRockBobby
+  storage:
+    back:
+    - PetRockBobby   
+
 # Loops' bell collar
 - type: loadout
   id: ClothingNeckLoopsBellCollar
