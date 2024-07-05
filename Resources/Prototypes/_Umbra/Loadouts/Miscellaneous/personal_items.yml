@@ -166,6 +166,20 @@
     back:
     - PlushieVesper
 
+# Oliver's oliver's plushie
+- type: loadout
+  id: PlushieOliver
+  equipment: PlushieOliver
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Oliver Cambridge
+
+- type: startingGear
+  id: PlushieOliver
+  storage:
+    back:
+    - PlushieOliver
+
 # Miles' flower braid
 - type: loadout
   id: ClothingHeadHatFlowerBraidGeorgia
