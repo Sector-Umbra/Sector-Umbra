@@ -180,6 +180,20 @@
     back:
     - ClothingHeadHatFlowerBraidGeorgia
 
+# Nova's Jacket
+- type: loadout
+  id: ClothingOuterGalaxyCoat
+  equipment: ClothingOuterGalaxyCoat
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Nova Gem
+
+- type: startingGear
+  id: ClothingOuterGalaxyCoat
+  storage:
+    back:
+    - ClothingOuterGalaxyCoat
+
 # Reading's reading glasses
 - type: loadout
   id: ClothingEyesReadingGlasses

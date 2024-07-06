@@ -24,6 +24,25 @@
   - type: Clothing
     sprite: _Umbra/Clothing/OuterClothing/Coats/reinforced_raincoat.rsi
 
+
+# Player: Sphiral - Character: Nova Gem
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterGalaxyCoat
+  name: Tailored Galaxy Coat
+  description: A custom-tailored, colorful coat covered with the sights of the universe itself. There's a tag denoting the name "Nova Gem" on the inside.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/OuterClothing/Coats/galaxycoat.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/OuterClothing/Coats/galaxycoat.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatCatEars2
+    slot: head
+
+
+
 # Inspector's coat, removed by upstream, re-added in _Umbra namespace
 - type: entity
   parent: ClothingOuterStorageBase
