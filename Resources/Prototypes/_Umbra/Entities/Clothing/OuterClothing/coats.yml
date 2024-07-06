@@ -37,6 +37,11 @@
     sprite: _Umbra/Clothing/OuterClothing/Coats/galaxycoat.rsi
   - type: Clothing
     sprite: _Umbra/Clothing/OuterClothing/Coats/galaxycoat.rsi
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+      storagebase: !type:Container
+        ents: []
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatCatEars2
     slot: head
