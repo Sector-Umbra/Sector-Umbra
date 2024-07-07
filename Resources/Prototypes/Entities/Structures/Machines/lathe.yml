@@ -333,7 +333,7 @@
       - FauxTileAstroIce
       - FauxTileAstroSnow
       - OreBagOfHolding
-      - DeviceQuantumSpinInverter
+#     - DeviceQuantumSpinInverter # Umbra change, commented out due to QSI bugs
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - BoxBeanbag
