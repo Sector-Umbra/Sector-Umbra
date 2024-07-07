@@ -138,6 +138,20 @@
     back:
     - ClothingNeckLoopsBellCollar
 
+# Miles' flower braid
+- type: loadout
+  id: ClothingHeadHatFlowerBraidGeorgia
+  equipment: ClothingHeadHatFlowerBraidGeorgia
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Georgia A Miles
+
+- type: startingGear
+  id: ClothingHeadHatFlowerBraidGeorgia
+  storage:
+    back:
+    - ClothingHeadHatFlowerBraidGeorgia
+
 # Nashira-Najma's maple moondancer plushie
 - type: loadout
   id: PlushieMaple
@@ -152,33 +166,19 @@
     back:
     - PlushieMaple
 
-# Vesper's vesper plushie
+# Oliver's oliver's plushie
 - type: loadout
-  id: PlushieVesper
-  equipment: PlushieVesper
+  id: PlushieOliver
+  equipment: PlushieOliver
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Vesper
+    character: Oliver Cambridge
 
 - type: startingGear
-  id: PlushieVesper
+  id: PlushieOliver
   storage:
     back:
-    - PlushieVesper
-
-# Miles' flower braid
-- type: loadout
-  id: ClothingHeadHatFlowerBraidGeorgia
-  equipment: ClothingHeadHatFlowerBraidGeorgia
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character: Georgia A Miles
-
-- type: startingGear
-  id: ClothingHeadHatFlowerBraidGeorgia
-  storage:
-    back:
-    - ClothingHeadHatFlowerBraidGeorgia
+    - PlushieOliver
 
 # Reading's reading glasses
 - type: loadout
@@ -207,6 +207,20 @@
   storage:
     back:
     - ClothingNeckRyeTie
+
+# Vesper's vesper plushie
+- type: loadout
+  id: PlushieVesper
+  equipment: PlushieVesper
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Vesper
+
+- type: startingGear
+  id: PlushieVesper
+  storage:
+    back:
+    - PlushieVesper
 
 # Welds' synthetic chew fidget
 - type: loadout
