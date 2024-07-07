@@ -167,7 +167,7 @@
 - type: entity
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraJasmiMD
-  name: jasmi-glorb figurine
+  name: jasmi-wujeeta figurine
   suffix: MD
   components:
   - type: Sprite
@@ -176,7 +176,7 @@
 - type: entity
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraJasmiScientist
-  name: jasmi-glorb figurine
+  name: jasmi-wujeeta figurine
   suffix: Sci
   components:
   - type: Sprite
