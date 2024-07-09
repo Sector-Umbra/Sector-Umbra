@@ -116,7 +116,7 @@
   equipment: ClothingHeadHatRainbowFlowerJasmi
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Jasmi-Glorb
+    character: Jasmi-Wujeeta
 
 - type: startingGear
   id: ClothingHeadHatRainbowFlowerJasmi
