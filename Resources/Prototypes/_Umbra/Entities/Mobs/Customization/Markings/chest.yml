@@ -1,8 +1,0 @@
-- type: marking
-  id: LizardBackAquaticFrills  
-  bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [Reptilian]
-  sprites:
-  - sprite: _Umbra/Mobs/Customization/aquaticbackfrills.rsi
-    state: AquaticBackFrills
