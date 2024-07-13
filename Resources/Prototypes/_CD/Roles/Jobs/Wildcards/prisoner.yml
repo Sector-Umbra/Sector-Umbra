@@ -10,6 +10,8 @@
   - !type:NotifyDepartmentSpecial
     notify_text: job-prisoner-sec-notify-text
     radio_channel: Security
+  - !type:AddImplantSpecial #Umbra Change - Prisoners will start with tracking inplants.
+    implants: [ TrackingImplant ] #Umbra Change
 
 - type: startingGear
   id: PrisonerGear
