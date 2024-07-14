@@ -21,7 +21,7 @@
 - type: entity
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraAursaiCommander
-  name: aur'sai figurine
+  name: Aur'sai figurine
   components:
   - type: Sprite
     state: aursai_commander
@@ -29,7 +29,7 @@
 - type: entity
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraBrainsRD
-  name: borgs-the-brains figurine
+  name: borgs-The-Brains figurine
   components:
   - type: Sprite
     state: brains_rd
@@ -37,7 +37,7 @@
 - type: entity
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraDeejaMD
-  name: deeja-wujeeta figurine
+  name: Deeja-Wujeeta figurine
   suffix: MD
   components:
   - type: Sprite
@@ -46,7 +46,7 @@
 - type: entity
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraDeejaSalvage
-  name: deeja-wujeeta figurine
+  name: Deeja-Wujeeta figurine
   suffix: Salvage
   components:
   - type: Sprite
@@ -55,15 +55,15 @@
 - type: entity
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraFakeskyPassenger
-  name: fake sky tomson figurine
+  name: Desh-Neeus figurine
   components:
   - type: Sprite
-    state: fakesky_passenger
+    state: desh_passenger
 
 - type: entity
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraGazesSalvage
-  name: gazes-the-galaxy figurine
+  name: Gazes-The-Galaxy figurine
   components:
   - type: Sprite
     state: gazes_salvage
@@ -71,7 +71,7 @@
 - type: entity
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraGhazetCommander
-  name: ghazet figurine
+  name: Ghazet figurine
   components:
   - type: Sprite
     state: ghazet_commander
@@ -79,7 +79,7 @@
 - type: entity
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraMoonCMO
-  name: moonlight galileo figurine
+  name: Moonlight Galileo figurine
   components:
   - type: Sprite
     state: moon_cmo
@@ -87,7 +87,7 @@
 - type: entity
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraNashiraDetective
-  name: nashira figurine
+  name: Nashira figurine
   components:
   - type: Sprite
     state: nashira_detective
@@ -95,7 +95,7 @@
 - type: entity
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraNebulaRD
-  name: nebula-niimina figurine
+  name: Nebula-Niimina figurine
   components:
   - type: Sprite
     state: nebula_rd
@@ -103,7 +103,7 @@
 - type: entity
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraPietMD
-  name: piet fuchs figurine
+  name: Piet Fuchs figurine
   components:
   - type: Sprite
     state: piet_doctor
@@ -111,7 +111,7 @@
 - type: entity
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraSkyMD
-  name: sky tomson figurine
+  name: Sky Tomson figurine
   components:
   - type: Sprite
     state: sky_doctor
@@ -119,7 +119,7 @@
 - type: entity
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraStarsBartender
-  name: stares-at-stars figurine
+  name: Stares-at-Stars figurine
   components:
   - type: Sprite
     state: stars_bartender
@@ -127,7 +127,7 @@
 - type: entity
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraWipesJanitor
-  name: wipes-the-floor figurine
+  name: Wipes-The-Floor figurine
   components:
   - type: Sprite
     state: wipes_janitor
@@ -135,7 +135,7 @@
 - type: entity
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraZackCargo
-  name: zack ohminch figurine
+  name: Zack Ohminch figurine
   components:
   - type: Sprite
     state: zack_cargo
@@ -143,7 +143,7 @@
 - type: entity
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraLasSalvage
-  name: aaas-las figurine
+  name: Aaas-Las figurine
   components:
   - type: Sprite
     state: las_salvage
@@ -151,7 +151,7 @@
 - type: entity
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraLoopsQM
-  name: loops-the-horns figurine
+  name: Loops-The-Horns figurine
   components:
   - type: Sprite
     state: loops_qm
@@ -159,7 +159,7 @@
 - type: entity
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraAlmaBotany
-  name: alma vashli figurine
+  name: Alma-Vashli figurine
   components:
   - type: Sprite
     state: alma_botany
@@ -167,7 +167,7 @@
 - type: entity
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraJasmiMD
-  name: jasmi-wujeeta figurine
+  name: Jasmi-Wujeeta figurine
   suffix: MD
   components:
   - type: Sprite
@@ -176,7 +176,7 @@
 - type: entity
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraJasmiScientist
-  name: jasmi-wujeeta figurine
+  name: Jasmi-Wujeeta figurine
   suffix: Sci
   components:
   - type: Sprite
@@ -185,7 +185,7 @@
 - type: entity
   parent: BaseFigurineUmbra
   id: ToyFigurineUmbraJohnScientist
-  name: john armstrong figurine
+  name: John Armstrong figurine
   components:
   - type: Sprite
     state: john_scientist
