@@ -68,6 +68,20 @@
     back:
     - ClothingNeckArtifactNecklace
 
+# Deeja's Jasmi-Wujeeta plushie
+- type: loadout
+  id: PlushieJasmi
+  equipment: PlushieJasmi
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Deeja-Wujeeta
+
+- type: startingGear
+  id: PlushieJasmi
+  storage:
+    back:
+    - PlushieJasmi
+
 # Frosty winter coat
 - type: loadout
   id: FrostCoat
@@ -123,6 +137,20 @@
   storage:
     back:
     - ClothingHeadHatRainbowFlowerJasmi
+
+# Jasmi's Deeja-Wujeeta plushie
+- type: loadout
+  id: PlushieDeeja
+  equipment: PlushieDeeja
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Jasmi-Wujeeta
+
+- type: startingGear
+  id: PlushieDeeja
+  storage:
+    back:
+    - PlushieDeeja
 
 # Loops' bell collar
 - type: loadout
