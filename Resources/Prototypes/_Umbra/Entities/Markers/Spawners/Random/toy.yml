@@ -79,5 +79,8 @@
       - ToyFigurineUmbraLasSalvage
       - ToyFigurineUmbraLoopsQM
       - ToyFigurineUmbraAlmaBotany
+      - ToyFigurineUmbraJasmiMD
+      - ToyFigurineUmbraJohnScientist
+      - ToyFigurineUmbraJasmiScientist
       chance: 0.90
       offset: 0.2

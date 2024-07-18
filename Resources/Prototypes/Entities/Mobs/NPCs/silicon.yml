@@ -107,6 +107,8 @@
     proto: robot
   - type: ZombieImmune
   - type: StepTriggerImmune
+  - type: NoSlip
+  - type: Insulated
 
 - type: entity
   parent: [ MobSiliconBase, BaseVehicle]
@@ -141,7 +143,6 @@
     description: ghost-role-information-taxibot-description
   - type: Strap
     buckleOffset: "0, 0"
-    maxBuckleDistance: 1
   - type: Construction
     graph: TaxiBot
     node: bot
@@ -192,6 +193,7 @@
     makeSentient: true
     name: ghost-role-information-honkbot-name
     description: ghost-role-information-honkbot-description
+    rules: ghost-role-information-freeagent-rules
     raffle:
       settings: default
   - type: GhostTakeoverAvailable
@@ -219,6 +221,7 @@
     makeSentient: true
     name: ghost-role-information-jonkbot-name
     description: ghost-role-information-jonkbot-description
+    rules: ghost-role-information-freeagent-rules
     raffle:
       settings: default
   - type: InteractionPopup
@@ -271,7 +274,6 @@
   - type: MovementSpeedModifier
     baseWalkSpeed: 2
     baseSprintSpeed: 3
-  - type: NoSlip
   - type: HTN
     rootTask:
       task: CleanbotCompound
@@ -284,7 +286,10 @@
       path: /Audio/Ambience/Objects/periodic_beep.ogg
 
 - type: entity
-  parent: MobSiliconBase
+  parent:
+  - MobSiliconBase
+  - ShowMedicalIcons
+  - StripableInventoryBase
   id: MobMedibot
   name: medibot
   description: No substitute for a doctor, but better than nothing.
@@ -318,32 +323,25 @@
   - type: Construction
     graph: MediBot
     node: bot
-  - type: NoSlip
   - type: Anchorable
   - type: InteractionPopup
     interactSuccessString: petting-success-medibot
     interactFailureString: petting-failure-medibot
     interactSuccessSound:
       path: /Audio/Ambience/Objects/periodic_beep.ogg
-  - type: ShowHealthBars
-    damageContainers:
-    - Biological
-  - type: ShowHealthIcons
-    damageContainers:
-    - Biological
+  - type: Advertise
+    pack: MedibotAds
+  - type: Inventory
+    templateId: medibot
 
 - type: entity
-  parent: MobSiliconBase
+  parent:
+  - MobSiliconBase
+  - StripableInventoryBase
   id: MobMimeBot
   name: mimebot
   description: Why not give mimebot a friendly wave.
   components:
-  - type: InventorySlots
-  - type: Strippable
-  - type: UserInterface
-    interfaces:
-      enum.StrippingUiKey.Key:
-        type: StrippableBoundUserInterface
   - type: Sprite
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
@@ -357,6 +355,7 @@
     makeSentient: true
     name: ghost-role-information-mimebot-name
     description: ghost-role-information-mimebot-description
+    rules: ghost-role-information-freeagent-rules
     raffle:
       settings: default
   - type: GhostTakeoverAvailable
@@ -380,6 +379,7 @@
     makeSentient: true
     name: ghost-role-information-supplybot-name
     description: ghost-role-information-supplybot-description
+    rules: ghost-role-information-nonantagonist-rules
     raffle:
       settings: default
   - type: GhostTakeoverAvailable

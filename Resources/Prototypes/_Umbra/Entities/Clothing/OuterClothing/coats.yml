@@ -23,3 +23,15 @@
     sprite: _Umbra/Clothing/OuterClothing/Coats/reinforced_raincoat.rsi
   - type: Clothing
     sprite: _Umbra/Clothing/OuterClothing/Coats/reinforced_raincoat.rsi
+
+# Inspector's coat, removed by upstream, re-added in _Umbra namespace
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatInspector
+  name: inspector's coat
+  description: A strict inspector's coat for being intimidating during inspections.
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/OuterClothing/Coats/insp_coat.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/OuterClothing/Coats/insp_coat.rsi
