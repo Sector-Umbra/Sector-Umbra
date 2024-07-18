@@ -105,36 +105,6 @@
         - proto: WeaponTeslaGun
           prob: 0.1
           cost: 2
-        # Start of umbra additions
-        - proto: WeaponCrusher
-          prob: 0.3
-          cost: 2
-        - proto: WeaponCrusherDagger
-          prob: 0.3
-          cost: 2
-        - proto: WeaponCrusherGlaive
-          prob: 0.2
-          cost: 5
-        - proto: MiningDrill
-          prob: 0.5
-        - proto: VendingMachineRestockVendomat
-          prob: 0.5
-          cost: 3
-        - proto: VendingMachineRestockPTech
-          prob: 0.1
-        - proto: VendingMachineRestockChemVend
-          prob: 0.5
-          cost: 4
-        - proto: VendingMachineRestockMedical
-          prob: 0.5
-          cost: 3
-        - proto: Stimpack
-          prob: 0.5
-          cost: 2
-        - proto: Katana
-          prob: 0.1
-        - proto: ArtifactAnalyzerMachineCircuitboard
-        # End of umbra additions
 
 # Mob loot table
 
