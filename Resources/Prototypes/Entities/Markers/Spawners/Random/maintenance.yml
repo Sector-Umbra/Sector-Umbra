@@ -67,6 +67,7 @@
         - ClothingHeadHatCowboyBountyHunter
         - ClothingNeckAutismPin
         - ClothingNeckGoldAutismPin
+        - WristwatchGold
         - ClothingOuterCoatCowboyDuster #CD Item
       rareChance: 0.01
       prototypes:
@@ -129,6 +130,7 @@
         - ClothingShoesTourist
         - ClothingUniformJumpsuitLoungewear
         - ClothingHeadHatCowboyRed
+        - Wristwatch
       chance: 0.6
       offset: 0.0
 
