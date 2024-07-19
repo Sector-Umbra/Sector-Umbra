@@ -32,6 +32,7 @@
   - ClothingHeadHatRainbowFlowerJasmi
   - ClothingHeadBorgsBeret
   - ClothingNeckBorgsScarf
+  - PetRockBobby
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -60,6 +61,7 @@
   - ClothingHeadHatRainbowFlowerJasmi
   - ClothingHeadBorgsBeret
   - ClothingNeckBorgsScarf
+  - PetRockBobby
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -88,3 +90,4 @@
   - ClothingHeadHatRainbowFlowerJasmi
   - ClothingHeadBorgsBeret
   - ClothingNeckBorgsScarf
+  - PetRockBobby
