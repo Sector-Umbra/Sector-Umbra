@@ -969,23 +969,22 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-# Umbra change, commented out due to QSI bugs
-# - proto: DeviceQuantumSpinInverter
-#   entities:
-#   - uid: 25
-#     components:
-#     - type: Transform
-#       parent: 21
-#     - type: Physics
-#       canCollide: False
-#     - type: InsideEntityStorage
-#   - uid: 30
-#     components:
-#     - type: Transform
-#       parent: 26
-#     - type: Physics
-#       canCollide: False
-#     - type: InsideEntityStorage
+- proto: DeviceQuantumSpinInverter
+  entities:
+  - uid: 25
+    components:
+    - type: Transform
+      parent: 21
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 30
+    components:
+    - type: Transform
+      parent: 26
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: EmergencyFunnyOxygenTankFilled
   entities:
   - uid: 98
