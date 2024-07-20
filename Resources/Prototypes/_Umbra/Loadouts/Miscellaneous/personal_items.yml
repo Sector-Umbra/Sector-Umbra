@@ -68,6 +68,20 @@
     back:
     - ClothingNeckArtifactNecklace
 
+# Deeja's Jasmi-Wujeeta plushie
+- type: loadout
+  id: PlushieJasmi
+  equipment: PlushieJasmi
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Deeja-Wujeeta
+
+- type: startingGear
+  id: PlushieJasmi
+  storage:
+    back:
+    - PlushieJasmi
+
 # Frosty winter coat
 - type: loadout
   id: FrostCoat
@@ -124,6 +138,34 @@
     back:
     - ClothingHeadHatRainbowFlowerJasmi
 
+# Jotty's Pet Rock
+- type: loadout
+  id: PetRockBobby
+  equipment: PetRockBobby
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Joetta-Beedell
+
+- type: startingGear
+  id: PetRockBobby
+  storage:
+    back:
+    - PetRockBobby   
+    
+# Jasmi's Deeja-Wujeeta plushie
+- type: loadout
+  id: PlushieDeeja
+  equipment: PlushieDeeja
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Jasmi-Wujeeta
+
+- type: startingGear
+  id: PlushieDeeja
+  storage:
+    back:
+    - PlushieDeeja
+
 # Loops' bell collar
 - type: loadout
   id: ClothingNeckLoopsBellCollar
@@ -179,6 +221,20 @@
   storage:
     back:
     - PlushieOliver
+
+# Nova's Jacket
+- type: loadout
+  id: ClothingOuterGalaxyCoat
+  equipment: ClothingOuterGalaxyCoat
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Nova Gem
+
+- type: startingGear
+  id: ClothingOuterGalaxyCoat
+  storage:
+    back:
+    - ClothingOuterGalaxyCoat
 
 # Reading's reading glasses
 - type: loadout

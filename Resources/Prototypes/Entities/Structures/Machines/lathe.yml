@@ -333,7 +333,7 @@
       - FauxTileAstroIce
       - FauxTileAstroSnow
       - OreBagOfHolding
-      - DeviceQuantumSpinInverter
+#     - DeviceQuantumSpinInverter # Umbra change, commented out due to QSI bugs
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - BoxBeanbag
@@ -1184,6 +1184,7 @@
         - IngotGold30
         - IngotSilver30
         - MaterialBananium10
+        - MaterialDiamond
 
 - type: entity
   parent: OreProcessor
