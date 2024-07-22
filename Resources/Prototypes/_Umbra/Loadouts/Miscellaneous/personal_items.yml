@@ -144,7 +144,7 @@
   equipment: PetRockBobby
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Joetta-Beedell
+    character: Joetta Beedell
 
 - type: startingGear
   id: PetRockBobby
