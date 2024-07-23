@@ -1,0 +1,14 @@
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatCatEars2
+  noSpawn: true
+  name: Nova's cat ears
+  description: "They seem to be twitching to every little sound around them... how odd."
+  components:
+  - type: Tag
+    tags: [] # ignore "WhitelistChameleon" tag
+  - type: Sprite
+    sprite: _Umbra/Clothing/Head/novagalaxyhood.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Head/novagalaxyhood.rsi

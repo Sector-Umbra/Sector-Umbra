@@ -19,7 +19,7 @@ public sealed class LayEmoteSystem : EntitySystem
         base.Initialize();
 
         SubscribeLocalEvent<LayEmoteComponent, ComponentShutdown>(OnShutdown);
-        SubscribeLocalEvent<LayEmoteComponent, BuckleChangeEvent>(OnBuckleChange);
+        SubscribeLocalEvent<LayEmoteComponent, BuckledEvent>(OnBuckle);
         SubscribeLocalEvent<LayEmoteComponent, MobStateChangedEvent>(OnMobStateChanged);
         SubscribeLocalEvent<LayEmoteComponent, EmoteEvent>(OnEmote);
         SubscribeLocalEvent<LayEmoteComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovementSpeedModifiers);
@@ -33,18 +33,15 @@ public sealed class LayEmoteSystem : EntitySystem
     }
 
     // If buckled, make sure someone is standing. Unbuckling while laying down should keep someone laying down and vice versa.
-    private void OnBuckleChange(EntityUid uid, LayEmoteComponent component, ref BuckleChangeEvent args)
+    private void OnBuckle(EntityUid uid, LayEmoteComponent component, ref BuckledEvent args)
     {
-        if (args.Buckling && component.Laying)
-            _standingSystem.Stand(args.BuckledEntity);
-
-        if (!args.Buckling && component.Laying)
-            _standingSystem.Down(args.BuckledEntity);
+        if (component.Laying)
+            _standingSystem.Stand(args.Buckle.Owner);
     }
 
     private void OnMobStateChanged(EntityUid uid, LayEmoteComponent component, MobStateChangedEvent args)
     {
-        // Hoping this should work fine as going crit - dead or dead - crit shouldn't matter, and crit - alive would stand you up anyways.  
+        // Hoping this should work fine as going crit - dead or dead - crit shouldn't matter, and crit - alive would stand you up anyways.
         component.Laying = false;
     }
 
@@ -58,7 +55,7 @@ public sealed class LayEmoteSystem : EntitySystem
             return;
 
         // If they're not laying down & they emote to lay down, make them.
-        if (!component.Laying && args.Emote.ID == component.LayEmoteId) 
+        if (!component.Laying && args.Emote.ID == component.LayEmoteId)
         {
             component.Laying = true;
             _standingSystem.Down(uid);

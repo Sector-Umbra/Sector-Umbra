@@ -15,10 +15,12 @@
   loadouts:
   - ClothingNeckArtifactNecklace
   - FrostCoat
-  - BozelliLighter
   - ClothingNeckLoopsBellCollar
+  - PlushieDeeja
+  - PlushieJasmi
   - PlushieMaple
   - PlushieVesper
+  - PlushieOliver
   - ClothingHeadHatFlowerBraidGeorgia
   - ClothingEyesReadingGlasses
   - ClothingNeckChewtoy
@@ -27,6 +29,12 @@
   - FateseekersGemstone
   - ClothingUniformJumpsuitCarpSuit
   - ClothingNeckRyeTie
+  - ClothingHeadHatRainbowFlowerJasmi
+  - ClothingHeadBorgsBeret
+  - ClothingNeckBorgsScarf
+  - ClothingOuterGalaxyCoat
+  - PetRockBobby
+
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -37,10 +45,12 @@
   loadouts:
   - ClothingNeckArtifactNecklace
   - FrostCoat
-  - BozelliLighter
   - ClothingNeckLoopsBellCollar
+  - PlushieDeeja
+  - PlushieJasmi
   - PlushieMaple
   - PlushieVesper
+  - PlushieOliver
   - ClothingHeadHatFlowerBraidGeorgia
   - ClothingEyesReadingGlasses
   - ClothingNeckChewtoy
@@ -50,6 +60,12 @@
   - FateseekersGemstone
   - ClothingUniformJumpsuitCarpSuit
   - ClothingNeckRyeTie
+  - ClothingHeadHatRainbowFlowerJasmi
+  - ClothingHeadBorgsBeret
+  - ClothingNeckBorgsScarf
+  - ClothingOuterGalaxyCoat
+  - PetRockBobby
+
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -60,10 +76,12 @@
   loadouts:
   - ClothingNeckArtifactNecklace
   - FrostCoat
-  - BozelliLighter
   - ClothingNeckLoopsBellCollar
+  - PlushieDeeja
+  - PlushieJasmi
   - PlushieMaple
   - PlushieVesper
+  - PlushieOliver
   - ClothingHeadHatFlowerBraidGeorgia
   - ClothingEyesReadingGlasses
   - ClothingOuterCoatReinforcedRaincoat
@@ -73,3 +91,8 @@
   - FateseekersGemstone
   - ClothingUniformJumpsuitCarpSuit
   - ClothingNeckRyeTie
+  - ClothingHeadHatRainbowFlowerJasmi
+  - ClothingHeadBorgsBeret
+  - ClothingNeckBorgsScarf
+  - ClothingOuterGalaxyCoat
+  - PetRockBobby
