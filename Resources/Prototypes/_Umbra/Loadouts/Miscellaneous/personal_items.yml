@@ -82,6 +82,20 @@
     back:
     - PlushieJasmi
 
+# Eris' Hearing-Aid
+- type: loadout
+  id: ClothingHeadsetErisAid
+  equipment: ClothingHeadsetErisAid
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Eris Rose
+
+- type: startingGear
+  id: ClothingHeadsetErisAid
+  storage:
+    back:
+    - ClothingHeadsetErisAid
+
 # Frosty winter coat
 - type: loadout
   id: FrostCoat
@@ -150,8 +164,8 @@
   id: PetRockBobby
   storage:
     back:
-    - PetRockBobby   
-    
+    - PetRockBobby
+
 # Jasmi's Deeja-Wujeeta plushie
 - type: loadout
   id: PlushieDeeja
