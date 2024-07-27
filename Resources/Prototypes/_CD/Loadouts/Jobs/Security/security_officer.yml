@@ -22,3 +22,21 @@
   id: SecurityPlateCarrier
   equipment:
     belt: ClothingBeltSecurityPlateCarrier
+
+- type: loadout
+  id: SecurityCasualsuit
+  equipment: SecurityCasualsuit
+
+- type: startingGear
+  id: SecurityCasualsuit
+  equipment:
+    jumpsuit: ClothingUniformSecurtyCasual
+
+- type: loadout
+  id: SecurityCasualskirt
+  equipment: SecurityCasualskirt
+
+- type: startingGear
+  id: SecurityCasualskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtSecurtyCasual
