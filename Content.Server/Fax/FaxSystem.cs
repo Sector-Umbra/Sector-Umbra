@@ -301,9 +301,11 @@ public sealed class FaxSystem : EntitySystem
                     args.Data.TryGetValue(FaxConstants.FaxPaperStampedByData, out List<StampDisplayInfo>? stampedBy);
                     args.Data.TryGetValue(FaxConstants.FaxPaperPrototypeData, out string? prototypeId);
                     args.Data.TryGetValue(FaxConstants.FaxPaperLockedData, out bool? locked);
+                    args.Data.TryGetValue(FaxConstants.FaxSenderName, out string? senderName);
+                    args.Data.TryGetValue(FaxConstants.FaxSenderMachineName, out string? senderMachineName);
 
                     var printout = new FaxPrintout(content, name, label, prototypeId, stampState, stampedBy, locked ?? false);
-                    Receive(uid, printout, args.SenderAddress);
+                    Receive(uid, printout, args.SenderAddress, null, senderName, senderMachineName);
 
                     break;
             }
@@ -515,8 +517,8 @@ public sealed class FaxSystem : EntitySystem
             return;
 
         TryComp<NameModifierComponent>(sendEntity, out var nameMod);
-
         TryComp<LabelComponent>(sendEntity, out var labelComponent);
+        TryComp<MetaDataComponent>(args.Actor, out var metaDataComponent);
 
         var payload = new NetworkPayload()
         {
@@ -525,6 +527,8 @@ public sealed class FaxSystem : EntitySystem
             { FaxConstants.FaxPaperLabelData, labelComponent?.CurrentLabel },
             { FaxConstants.FaxPaperContentData, paper.Content },
             { FaxConstants.FaxPaperLockedData, paper.EditingDisabled },
+            { FaxConstants.FaxSenderName, metaDataComponent?.EntityName },
+            { FaxConstants.FaxSenderMachineName, component.FaxName }
         };
 
         if (metadata.EntityPrototype != null)
@@ -561,7 +565,7 @@ public sealed class FaxSystem : EntitySystem
     ///     Accepts a new message and adds it to the queue to print
     ///     If has parameter "notifyAdmins" also output a special message to admin chat.
     /// </summary>
-    public void Receive(EntityUid uid, FaxPrintout printout, string? fromAddress = null, FaxMachineComponent? component = null)
+    public void Receive(EntityUid uid, FaxPrintout printout, string? fromAddress = null, FaxMachineComponent? component = null, string? senderName = null, string? senderMachineName = null)
     {
         if (!Resolve(uid, ref component))
             return;
@@ -574,7 +578,7 @@ public sealed class FaxSystem : EntitySystem
         _appearanceSystem.SetData(uid, FaxMachineVisuals.VisualState, FaxMachineVisualState.Printing);
 
         if (component.NotifyAdmins)
-            NotifyAdmins(faxName);
+            NotifyAdmins(senderName, senderMachineName, component.FaxName);
 
         component.PrintingQueue.Enqueue(printout);
     }
@@ -615,9 +619,12 @@ public sealed class FaxSystem : EntitySystem
         _adminLogger.Add(LogType.Action, LogImpact.Low, $"\"{component.FaxName}\" {ToPrettyString(uid):tool} printed {ToPrettyString(printed):subject}: {printout.Content}");
     }
 
-    private void NotifyAdmins(string faxName)
+    private void NotifyAdmins(string? senderName, string? senderMachineName, string? receiverMachineName)
     {
-        _chat.SendAdminAnnouncement(Loc.GetString("fax-machine-chat-notify", ("fax", faxName)));
+        _chat.SendAdminAnnouncement(Loc.GetString("fax-machine-chat-notify",
+            ("actor", senderName ?? "unknown"),
+            ("source", senderMachineName ?? "unknown"),
+            ("destination", receiverMachineName ?? "unknown")));
         _audioSystem.PlayGlobal("/Audio/Machines/high_tech_confirm.ogg", Filter.Empty().AddPlayers(_adminManager.ActiveAdmins), false, AudioParams.Default.WithVolume(-8f));
     }
 }
