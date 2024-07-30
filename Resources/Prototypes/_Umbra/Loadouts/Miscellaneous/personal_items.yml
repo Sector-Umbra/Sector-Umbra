@@ -166,6 +166,20 @@
     back:
     - PlushieDeeja
 
+# John Armstrong's Juniper Armstrong plushie
+- type: loadout
+  id: PlushieJuniper
+  equipment: PlushieJuniper
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: John Armstrong
+
+- type: startingGear
+  id: PlushieJuniper
+  storage:
+    back:
+    - PlushieJuniper
+
 # Loops' bell collar
 - type: loadout
   id: ClothingNeckLoopsBellCollar
