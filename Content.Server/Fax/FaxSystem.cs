@@ -621,12 +621,15 @@ public sealed class FaxSystem : EntitySystem
         _adminLogger.Add(LogType.Action, LogImpact.Low, $"\"{component.FaxName}\" {ToPrettyString(uid):tool} printed {ToPrettyString(printed):subject}: {printout.Content}");
     }
 
+    /// <summary>
+    ///     Umbra: Added name of who sent the fax, and the name of the machine that sent the fax.
+    /// </summary>
     private void NotifyAdmins(string? senderName, string? senderMachineName, string? receiverMachineName)
     {
         _chat.SendAdminAnnouncement(Loc.GetString("fax-machine-chat-notify",
-            ("actor", senderName ?? "unknown"),
-            ("source", senderMachineName ?? "unknown"),
-            ("destination", receiverMachineName ?? "unknown")));
+            ("actor", senderName ?? "unknown"), // Umbra: Use name of player who sent it
+            ("source", senderMachineName ?? "unknown"), // Umbra: Use name of fax machine that sent it
+            ("destination", receiverMachineName ?? "unknown"))); // Umbra: Use name of fax machine that received it
         _audioSystem.PlayGlobal("/Audio/Machines/high_tech_confirm.ogg", Filter.Empty().AddPlayers(_adminManager.ActiveAdmins), false, AudioParams.Default.WithVolume(-8f));
     }
 }
