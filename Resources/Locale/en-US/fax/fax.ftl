@@ -23,6 +23,7 @@ fax-machine-ui-paper = Paper:
 fax-machine-ui-paper-inserted = Paper in tray
 fax-machine-ui-paper-not-inserted = No paper
 
+# Umbra: Replaced message with one that actually shows *who* sent the fax and where *from* as well.
 fax-machine-chat-notify = {$actor} faxed from {$source} to {$destination}
 
 fax-machine-printed-paper-name = printed paper
