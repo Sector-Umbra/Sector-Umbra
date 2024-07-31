@@ -21,8 +21,8 @@ public static class FaxConstants
 
     // Data
 
-    public const string FaxSenderName = "fax_sender_actor";
-    public const string FaxSenderMachineName = "fax_sender_machine_name";
+    public const string FaxSenderActorName = "fax_sender_actor_name"; // Umbra
+    public const string FaxSenderMachineName = "fax_sender_machine_name"; // Umbra
     public const string FaxNameData = "fax_data_name";
     public const string FaxPaperNameData = "fax_data_title";
     public const string FaxPaperLabelData = "fax_data_label";

@@ -301,11 +301,12 @@ public sealed class FaxSystem : EntitySystem
                     args.Data.TryGetValue(FaxConstants.FaxPaperStampedByData, out List<StampDisplayInfo>? stampedBy);
                     args.Data.TryGetValue(FaxConstants.FaxPaperPrototypeData, out string? prototypeId);
                     args.Data.TryGetValue(FaxConstants.FaxPaperLockedData, out bool? locked);
-                    args.Data.TryGetValue(FaxConstants.FaxSenderName, out string? senderName);
+                    // Umbra: Add sender actor & machine name:
+                    args.Data.TryGetValue(FaxConstants.FaxSenderActorName, out string? senderActorName);
                     args.Data.TryGetValue(FaxConstants.FaxSenderMachineName, out string? senderMachineName);
 
                     var printout = new FaxPrintout(content, name, label, prototypeId, stampState, stampedBy, locked ?? false);
-                    Receive(uid, printout, args.SenderAddress, null, senderName, senderMachineName);
+                    Receive(uid, printout, args.SenderAddress, null, senderActorName, senderMachineName);
 
                     break;
             }
@@ -518,7 +519,7 @@ public sealed class FaxSystem : EntitySystem
 
         TryComp<NameModifierComponent>(sendEntity, out var nameMod);
         TryComp<LabelComponent>(sendEntity, out var labelComponent);
-        TryComp<MetaDataComponent>(args.Actor, out var metaDataComponent);
+        TryComp<MetaDataComponent>(args.Actor, out var metaDataComponent); // Umbra: Grab sender actor name
 
         var payload = new NetworkPayload()
         {
@@ -527,8 +528,8 @@ public sealed class FaxSystem : EntitySystem
             { FaxConstants.FaxPaperLabelData, labelComponent?.CurrentLabel },
             { FaxConstants.FaxPaperContentData, paper.Content },
             { FaxConstants.FaxPaperLockedData, paper.EditingDisabled },
-            { FaxConstants.FaxSenderName, metaDataComponent?.EntityName },
-            { FaxConstants.FaxSenderMachineName, component.FaxName }
+            { FaxConstants.FaxSenderActorName, metaDataComponent?.EntityName }, // Umbra: Grab sender actor name
+            { FaxConstants.FaxSenderMachineName, component.FaxName } // Umbra: Grab sender machine name
         };
 
         if (metadata.EntityPrototype != null)
@@ -564,8 +565,9 @@ public sealed class FaxSystem : EntitySystem
     /// <summary>
     ///     Accepts a new message and adds it to the queue to print
     ///     If has parameter "notifyAdmins" also output a special message to admin chat.
+    ///     Umbra: Added senderActorName, senderMachineName to admin chat log who sent it and where from.
     /// </summary>
-    public void Receive(EntityUid uid, FaxPrintout printout, string? fromAddress = null, FaxMachineComponent? component = null, string? senderName = null, string? senderMachineName = null)
+    public void Receive(EntityUid uid, FaxPrintout printout, string? fromAddress = null, FaxMachineComponent? component = null, string? senderActorName = null, string? senderMachineName = null)
     {
         if (!Resolve(uid, ref component))
             return;
@@ -578,7 +580,7 @@ public sealed class FaxSystem : EntitySystem
         _appearanceSystem.SetData(uid, FaxMachineVisuals.VisualState, FaxMachineVisualState.Printing);
 
         if (component.NotifyAdmins)
-            NotifyAdmins(senderName, senderMachineName, component.FaxName);
+            NotifyAdmins(senderActorName, senderMachineName, component.FaxName); // Umbra: Added sender* names
 
         component.PrintingQueue.Enqueue(printout);
     }
