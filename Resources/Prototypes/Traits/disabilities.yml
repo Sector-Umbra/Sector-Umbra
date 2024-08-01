@@ -42,15 +42,6 @@
     - type: Unrevivable
 
 - type: trait
-  id: LightweightDrunk
-  name: trait-lightweight-name
-  description: trait-lightweight-desc
-  category: Disabilities
-  components:
-    - type: LightweightDrunk
-      boozeStrengthMultiplier: 2
-
-- type: trait
   id: Paracusia
   name: trait-paracusia-name
   description: trait-paracusia-desc
@@ -62,6 +53,7 @@
       maxSoundDistance: 7
       sounds:
         collection: Paracusia
+
 - type: trait
   id: Muted
   name: trait-muted-name
@@ -85,11 +77,3 @@
     - type: BuckleOnMapInit
       prototype: VehicleWheelchair
     - type: LegsParalyzed
-
-- type: trait
-  id: Snoring
-  name: trait-snoring-name
-  description: trait-snoring-desc
-  category: Disabilities
-  components:
-    - type: Snoring
