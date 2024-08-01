@@ -34,14 +34,6 @@
       durationOfIncident: 10, 30
 
 - type: trait
-  id: Pacifist
-  name: trait-pacifist-name
-  description: trait-pacifist-desc
-  category: Disabilities
-  components:
-    - type: Pacified
-
-- type: trait
   id: Unrevivable
   name: trait-unrevivable-name
   description: trait-unrevivable-desc
@@ -70,11 +62,11 @@
       maxSoundDistance: 7
       sounds:
         collection: Paracusia
-
 - type: trait
   id: Muted
   name: trait-muted-name
   description: trait-muted-desc
+  category: Disabilities
   blacklist:
     components:
       - BorgChassis
@@ -85,6 +77,7 @@
   id: WheelchairBound
   name: trait-wheelchair-bound-name
   description: trait-wheelchair-bound-desc
+  category: Disabilities
   blacklist:
     components:
       - BorgChassis
