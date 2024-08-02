@@ -2,6 +2,7 @@
 - type: roleLoadout
   id: JobPrivateInvestigator
   groups: #Using Detective groups is probably a bad idea, but it's easier this way.
+  - GroupTankHarness
   - DetectiveHead
   - DetectiveJumpsuit
   - CommonBackpack
@@ -9,25 +10,31 @@
   - PrivateInvestigatorGloves
   - PrivateInvestigatorShoes
   - PrivateInvestigatorGlasses
+  - Survival
   - Trinkets
+  - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
 
 # Engineering
 - type: roleLoadout
   id: JobSeniorEngineer
   groups:
+  - GroupTankHarness
   - StationEngineerHead
   - SeniorEngineerJumpsuit
   - StationEngineerBackpack
   - StationEngineerOuterClothing
   - StationEngineerShoes
+  - SurvivalExtended
   - Trinkets
+  - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
 
 # Science
 - type: roleLoadout
   id: JobSeniorResearcher
   groups:
+  - GroupTankHarness
   - ScientistHead
   - ScientistNeck
   - SeniorResearcherJumpsuit
@@ -35,13 +42,16 @@
   - SeniorResearcherOuterClothing
   - ScientistGloves
   - ScientistShoes
+  - Survival
   - Trinkets
+  - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
 
 # Security
 - type: roleLoadout
   id: JobSeniorOfficer
   groups:
+  - GroupTankHarness
   - SecurityHead
   - SeniorOfficerJumpsuit
   - SecurityBackpack
@@ -49,13 +59,16 @@
   - SecurityShoes
   - SecurityBelt
   - SecurityGlassesOrHud
+  - SurvivalSecurity
   - Trinkets
+  - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
 
 # Medical
 - type: roleLoadout
   id: JobSeniorPhysician
   groups:
+  - GroupTankHarness
   - SeniorPhysicianHead
   - MedicalMask
   - SeniorPhysicianJumpsuit
@@ -63,12 +76,17 @@
   - MedicalBackpack
   - SeniorPhysicianOuterClothing
   - MedicalShoes
+  - SurvivalMedical
   - Trinkets
+  - GroupSpeciesBreathTool
   - PersonalItemsJobAgnostic # Umbra
 
 # Wildcards
 - type: roleLoadout
   id: JobPrisoner
   groups:
+  - GroupTankHarness
   - PrisonerJumpsuit
   - PrisonerFun
+  - GroupSpeciesBreathTool
+  - Survival
