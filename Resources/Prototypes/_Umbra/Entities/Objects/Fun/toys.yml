@@ -99,3 +99,16 @@
           Quantity: 10
         - ReagentId: Slime
           Quantity: 10
+
+# Players: MrGreen - Character: John Armstrong
+- type: entity
+  parent: PlushieLizard
+  id: PlushieJuniper
+  name: juniper armstrong plushie
+  description: A custom made lizard plushie belonging to John Armstrong, gifted by his son Juniper Armstrong. Do not eat.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_juniper
+    sprite: _Umbra/Objects/Fun/toys.rsi
+

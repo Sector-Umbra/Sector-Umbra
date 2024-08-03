@@ -18,6 +18,7 @@
   - ClothingNeckLoopsBellCollar
   - PlushieDeeja
   - PlushieJasmi
+  - PlushieJuniper
   - PlushieMaple
   - PlushieVesper
   - PlushieOliver
@@ -35,7 +36,8 @@
   - ClothingOuterGalaxyCoat
   - PetRockBobby
   - PlushieEris
-
+  - ClothingHeadsetErisAid
+  - ClothingNeckHushPendant
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -49,6 +51,7 @@
   - ClothingNeckLoopsBellCollar
   - PlushieDeeja
   - PlushieJasmi
+  - PlushieJuniper
   - PlushieMaple
   - PlushieVesper
   - PlushieOliver
@@ -67,7 +70,8 @@
   - ClothingOuterGalaxyCoat
   - PetRockBobby
   - PlushieEris
-
+  - ClothingHeadsetErisAid
+  - ClothingNeckHushPendant
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -81,6 +85,7 @@
   - ClothingNeckLoopsBellCollar
   - PlushieDeeja
   - PlushieJasmi
+  - PlushieJuniper
   - PlushieMaple
   - PlushieVesper
   - PlushieOliver
@@ -99,3 +104,5 @@
   - ClothingOuterGalaxyCoat
   - PetRockBobby
   - PlushieEris
+  - ClothingHeadsetErisAid
+  - ClothingNeckHushPendant
