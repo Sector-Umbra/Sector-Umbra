@@ -34,6 +34,7 @@
   - ClothingNeckBorgsScarf
   - ClothingOuterGalaxyCoat
   - PetRockBobby
+  - ClothingNeckHushPendant
 
 
 # Personal items specialised for Warden
@@ -65,7 +66,7 @@
   - ClothingNeckBorgsScarf
   - ClothingOuterGalaxyCoat
   - PetRockBobby
-
+  - ClothingNeckHushPendant
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -96,3 +97,4 @@
   - ClothingNeckBorgsScarf
   - ClothingOuterGalaxyCoat
   - PetRockBobby
+  - ClothingNeckHushPendant
