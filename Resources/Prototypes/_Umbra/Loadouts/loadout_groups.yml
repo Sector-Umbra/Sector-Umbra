@@ -30,6 +30,7 @@
   - ClothingHeadHatRainbowFlowerJasmi
   - ClothingHeadBorgsBeret
   - ClothingNeckBorgsScarf
+  - ClothingNeckHushPendant
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -56,6 +57,7 @@
   - ClothingHeadHatRainbowFlowerJasmi
   - ClothingHeadBorgsBeret
   - ClothingNeckBorgsScarf
+  - ClothingNeckHushPendant
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -82,3 +84,4 @@
   - ClothingHeadHatRainbowFlowerJasmi
   - ClothingHeadBorgsBeret
   - ClothingNeckBorgsScarf
+  - ClothingNeckHushPendant
