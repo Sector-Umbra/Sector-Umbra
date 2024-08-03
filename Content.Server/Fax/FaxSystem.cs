@@ -301,9 +301,12 @@ public sealed class FaxSystem : EntitySystem
                     args.Data.TryGetValue(FaxConstants.FaxPaperStampedByData, out List<StampDisplayInfo>? stampedBy);
                     args.Data.TryGetValue(FaxConstants.FaxPaperPrototypeData, out string? prototypeId);
                     args.Data.TryGetValue(FaxConstants.FaxPaperLockedData, out bool? locked);
+                    // Umbra: Add sender actor & machine name:
+                    args.Data.TryGetValue(FaxConstants.FaxSenderActorName, out string? senderActorName);
+                    args.Data.TryGetValue(FaxConstants.FaxSenderMachineName, out string? senderMachineName);
 
                     var printout = new FaxPrintout(content, name, label, prototypeId, stampState, stampedBy, locked ?? false);
-                    Receive(uid, printout, args.SenderAddress);
+                    Receive(uid, printout, args.SenderAddress, null, senderActorName, senderMachineName);
 
                     break;
             }
@@ -515,8 +518,8 @@ public sealed class FaxSystem : EntitySystem
             return;
 
         TryComp<NameModifierComponent>(sendEntity, out var nameMod);
-
         TryComp<LabelComponent>(sendEntity, out var labelComponent);
+        TryComp<MetaDataComponent>(args.Actor, out var metaDataComponent); // Umbra: Grab sender actor name
 
         var payload = new NetworkPayload()
         {
@@ -525,6 +528,8 @@ public sealed class FaxSystem : EntitySystem
             { FaxConstants.FaxPaperLabelData, labelComponent?.CurrentLabel },
             { FaxConstants.FaxPaperContentData, paper.Content },
             { FaxConstants.FaxPaperLockedData, paper.EditingDisabled },
+            { FaxConstants.FaxSenderActorName, metaDataComponent?.EntityName }, // Umbra: Grab sender actor name
+            { FaxConstants.FaxSenderMachineName, component.FaxName } // Umbra: Grab sender machine name
         };
 
         if (metadata.EntityPrototype != null)
@@ -560,8 +565,9 @@ public sealed class FaxSystem : EntitySystem
     /// <summary>
     ///     Accepts a new message and adds it to the queue to print
     ///     If has parameter "notifyAdmins" also output a special message to admin chat.
+    ///     Umbra: Added senderActorName, senderMachineName to admin chat log who sent it and where from.
     /// </summary>
-    public void Receive(EntityUid uid, FaxPrintout printout, string? fromAddress = null, FaxMachineComponent? component = null)
+    public void Receive(EntityUid uid, FaxPrintout printout, string? fromAddress = null, FaxMachineComponent? component = null, string? senderActorName = null, string? senderMachineName = null)
     {
         if (!Resolve(uid, ref component))
             return;
@@ -574,7 +580,7 @@ public sealed class FaxSystem : EntitySystem
         _appearanceSystem.SetData(uid, FaxMachineVisuals.VisualState, FaxMachineVisualState.Printing);
 
         if (component.NotifyAdmins)
-            NotifyAdmins(faxName);
+            NotifyAdmins(senderActorName, senderMachineName, component.FaxName); // Umbra: Added sender* names
 
         component.PrintingQueue.Enqueue(printout);
     }
@@ -615,9 +621,15 @@ public sealed class FaxSystem : EntitySystem
         _adminLogger.Add(LogType.Action, LogImpact.Low, $"\"{component.FaxName}\" {ToPrettyString(uid):tool} printed {ToPrettyString(printed):subject}: {printout.Content}");
     }
 
-    private void NotifyAdmins(string faxName)
+    /// <summary>
+    ///     Umbra: Added name of who sent the fax, and the name of the machine that sent the fax.
+    /// </summary>
+    private void NotifyAdmins(string? senderName, string? senderMachineName, string? receiverMachineName)
     {
-        _chat.SendAdminAnnouncement(Loc.GetString("fax-machine-chat-notify", ("fax", faxName)));
+        _chat.SendAdminAnnouncement(Loc.GetString("fax-machine-chat-notify",
+            ("actor", senderName ?? "unknown"), // Umbra: Use name of player who sent it
+            ("source", senderMachineName ?? "unknown"), // Umbra: Use name of fax machine that sent it
+            ("destination", receiverMachineName ?? "unknown"))); // Umbra: Use name of fax machine that received it
         _audioSystem.PlayGlobal("/Audio/Machines/high_tech_confirm.ogg", Filter.Empty().AddPlayers(_adminManager.ActiveAdmins), false, AudioParams.Default.WithVolume(-8f));
     }
 }
