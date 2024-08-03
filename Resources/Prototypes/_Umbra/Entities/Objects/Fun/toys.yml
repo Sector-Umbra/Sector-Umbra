@@ -85,20 +85,6 @@
   - type: Sprite
     state: plushie_eris
     sprite: _Umbra/Objects/Fun/toys.rsi
-  - type: Extractable
-    juiceSolution:
-      reagents:
-      - ReagentId: Slime
-        Quantity: 30
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 20
-        reagents:
-        - ReagentId: Fiber
-          Quantity: 10
-        - ReagentId: Slime
-          Quantity: 10
 
 # Players: MrGreen - Character: John Armstrong
 - type: entity
