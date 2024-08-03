@@ -2,9 +2,6 @@
   id: Geneticore
 
 - type: Tag
-  id: Flesh
-
-- type: Tag
   id: Elemental
 
 - type: Tag
