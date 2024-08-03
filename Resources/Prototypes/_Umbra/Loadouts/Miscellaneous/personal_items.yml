@@ -124,6 +124,20 @@
     back:
     - FateseekersGemstone
 
+# Hush's pendant
+- type: loadout
+  id: ClothingNeckHushPendant
+  equipment: ClothingNeckHushPendant
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Hush Pallister
+
+- type: startingGear
+  id: ClothingNeckHushPendant
+  storage:
+    back:
+    - ClothingNeckHushPendant
+
 # Jalopy's reinforced raincoat
 - type: loadout
   id: ClothingOuterCoatReinforcedRaincoat

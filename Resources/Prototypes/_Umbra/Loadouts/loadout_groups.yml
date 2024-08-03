@@ -35,7 +35,7 @@
   - ClothingOuterGalaxyCoat
   - PetRockBobby
   - ClothingHeadsetErisAid
-
+  - ClothingNeckHushPendant
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -67,7 +67,7 @@
   - ClothingOuterGalaxyCoat
   - PetRockBobby
   - ClothingHeadsetErisAid
-
+  - ClothingNeckHushPendant
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -99,3 +99,4 @@
   - ClothingOuterGalaxyCoat
   - PetRockBobby
   - ClothingHeadsetErisAid
+  - ClothingNeckHushPendant
