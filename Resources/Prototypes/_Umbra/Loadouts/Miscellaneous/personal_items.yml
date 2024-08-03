@@ -82,6 +82,35 @@
     back:
     - PlushieJasmi
 
+
+# Eris' Plushie
+- type: loadout
+  id: PlushieEris
+  equipment: PlushieEris
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Eris Rose
+
+- type: startingGear
+  id: PlushieEris
+  storage:
+    back:
+    - PlushieEris
+
+# Eris' Hearing-Aid
+- type: loadout
+  id: ClothingHeadsetErisAid
+  equipment: ClothingHeadsetErisAid
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Eris Rose
+
+- type: startingGear
+  id: ClothingHeadsetErisAid
+  storage:
+    back:
+    - ClothingHeadsetErisAid
+
 # Frosty winter coat
 - type: loadout
   id: FrostCoat
@@ -109,6 +138,20 @@
   storage:
     back:
     - FateseekersGemstone
+
+# Hush's pendant
+- type: loadout
+  id: ClothingNeckHushPendant
+  equipment: ClothingNeckHushPendant
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Hush Pallister
+
+- type: startingGear
+  id: ClothingNeckHushPendant
+  storage:
+    back:
+    - ClothingNeckHushPendant
 
 # Jalopy's reinforced raincoat
 - type: loadout
@@ -144,14 +187,14 @@
   equipment: PetRockBobby
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Joetta-Beedell
+    character: Joetta Beedell
 
 - type: startingGear
   id: PetRockBobby
   storage:
     back:
-    - PetRockBobby   
-    
+    - PetRockBobby
+
 # Jasmi's Deeja-Wujeeta plushie
 - type: loadout
   id: PlushieDeeja
@@ -165,6 +208,20 @@
   storage:
     back:
     - PlushieDeeja
+
+# John Armstrong's Juniper Armstrong plushie
+- type: loadout
+  id: PlushieJuniper
+  equipment: PlushieJuniper
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: John Armstrong
+
+- type: startingGear
+  id: PlushieJuniper
+  storage:
+    back:
+    - PlushieJuniper
 
 # Loops' bell collar
 - type: loadout
