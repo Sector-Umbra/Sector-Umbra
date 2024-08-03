@@ -82,6 +82,21 @@
     back:
     - PlushieJasmi
 
+
+# Eris' Plushie
+- type: loadout
+  id: PlushieEris
+  equipment: PlushieEris
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Eris Rose
+
+- type: startingGear
+  id: PlushieEris
+  storage:
+    back:
+    - PlushieEris
+
 # Eris' Hearing-Aid
 - type: loadout
   id: ClothingHeadsetErisAid
