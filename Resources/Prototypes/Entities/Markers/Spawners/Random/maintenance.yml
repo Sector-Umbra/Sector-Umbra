@@ -65,6 +65,9 @@
         - ClothingUniformJumpsuitPirate
         - ClothingShoesBootsCowboyFancy
         - ClothingHeadHatCowboyBountyHunter
+        - ClothingNeckAutismPin
+        - ClothingNeckGoldAutismPin
+        - WristwatchGold
         - ClothingOuterCoatCowboyDuster #CD Item
       rareChance: 0.01
       prototypes:
@@ -78,7 +81,7 @@
         - ClothingHeadHatCone
         - ClothingNeckBling
         - ClothingHeadHelmetCosmonaut
-        - ClothingHeadHelmetScaf
+        - ClothingHeadHelmetBasic
         - ClothingShoeSlippersDuck
         - ClothingUnderSocksBee
         - ClothingUnderSocksCoder
@@ -127,6 +130,7 @@
         - ClothingShoesTourist
         - ClothingUniformJumpsuitLoungewear
         - ClothingHeadHatCowboyRed
+        - Wristwatch
       chance: 0.6
       offset: 0.0
 
@@ -174,12 +178,7 @@
         - MaterialCloth10
         - MaterialWoodPlank10
         - ResearchDisk
-        - DeathPaint
         - Plunger
-        - SprayPaintBlue
-        - SprayPaintRed
-        - SprayPaintGreen
-        - SprayPaintOrange
         - TechnologyDisk
         - PowerCellMedium
         - PowerCellSmall

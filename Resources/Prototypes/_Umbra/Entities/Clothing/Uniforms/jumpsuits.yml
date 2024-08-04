@@ -1,0 +1,12 @@
+# Player: Skarlet - Character: Chance Boulevard
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCarpSuit
+  name: Carp Suit
+  description: Nothing beats a custom-made suit. Just don't ask where the carp leather came from...
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Uniforms/Jumpsuit/carpsuit.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Uniforms/Jumpsuit/carpsuit.rsi

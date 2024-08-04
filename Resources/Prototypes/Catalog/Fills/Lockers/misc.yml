@@ -20,16 +20,16 @@
   components:
   - type: StorageFill
     contents:
-      - id: ClothingOuterSuitEmergency
       - id: ClothingMaskBreath
+      - id: ClothingOuterSuitEmergency
       - id: EmergencyOxygenTankFilled
-        prob: 0.80
-        orGroup: EmergencyTankOrRegularTank
+        prob: 0.5
+        orGroup: OxygenTank
       - id: OxygenTankFilled
-        prob: 0.20
-        orGroup: EmergencyTankOrRegularTank
+        prob: 0.5
+        orGroup: OxygenTank
       - id: ToolboxEmergencyFilled
-        prob: 0.4
+        prob: 0.5
       - id: MedkitOxygenFilled
         prob: 0.2
       - id: WeaponFlareGun
@@ -44,16 +44,16 @@
   components:
   - type: StorageFill
     contents:
-      - id: ClothingOuterSuitEmergency
       - id: ClothingMaskBreath
+      - id: ClothingOuterSuitEmergency
       - id: EmergencyOxygenTankFilled
-        prob: 0.80
-        orGroup: EmergencyTankOrRegularTank
+        prob: 0.5
+        orGroup: OxygenTank
       - id: OxygenTankFilled
-        prob: 0.20
-        orGroup: EmergencyTankOrRegularTank
+        prob: 0.5
+        orGroup: OxygenTank
       - id: ToolboxEmergencyFilled
-        prob: 0.4
+        prob: 0.5
       - id: MedkitOxygenFilled
         prob: 0.2
       - id: WeaponFlareGun
@@ -62,31 +62,69 @@
         prob: 0.1
 
 - type: entity
+  id: ClosetEmergencyN2FilledRandom
+  parent: ClosetEmergencyN2
+  suffix: Filled, Random
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingMaskBreath
+      - id: ClothingOuterSuitEmergency
+      - id: EmergencyNitrogenTankFilled
+        prob: 0.5
+        orGroup: NitrogenTank
+      - id: NitrogenTankFilled
+        prob: 0.5
+        orGroup: NitrogenTank
+
+- type: entity
   id: ClosetFireFilled
   parent: ClosetFire
   suffix: Filled
   components:
-    - type: StorageFill
-      contents:
-        - id: ClothingOuterSuitFire
-        - id: ClothingHeadHelmetFire
-        - id: ClothingMaskGas
-        - id: OxygenTankFilled
-        - id: FireExtinguisher
-          prob: 0.25
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterSuitFire
+      - id: ClothingHeadHelmetFire
+      - id: ClothingMaskGas
+      - id: EmergencyOxygenTankFilled
+        prob: 0.5
+        orGroup: OxygenTank
+      - id: OxygenTankFilled
+        prob: 0.5
+        orGroup: OxygenTank
+      - id: CrowbarRed
+      - id: FireExtinguisher
+        prob: 0.98
+        orGroup: FireExtinguisher
+      - id: SprayBottleWater #It's just budget cut after budget cut man
+        prob: 0.02
+        orGroup: FireExtinguisher
+
 - type: entity
   id: ClosetWallFireFilledRandom
   parent: ClosetWallFire
   suffix: Filled
   components:
-    - type: StorageFill
-      contents:
-        - id: ClothingOuterSuitFire
-        - id: ClothingHeadHelmetFire
-        - id: ClothingMaskGas
-        - id: OxygenTankFilled
-        - id: FireExtinguisher
-          prob: 0.25
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterSuitFire
+      - id: ClothingHeadHelmetFire
+      - id: ClothingMaskGas
+      - id: EmergencyOxygenTankFilled
+        prob: 0.5
+        orGroup: OxygenTank
+      - id: OxygenTankFilled
+        prob: 0.5
+        orGroup: OxygenTank
+      - id: CrowbarRed
+      - id: FireExtinguisher
+        prob: 0.98
+        orGroup: FireExtinguisher
+      - id: SprayBottleWater #It's just budget cut after budget cut man
+        prob: 0.02
+        orGroup: FireExtinguisher
+
 - type: entity
   id: ClosetMaintenanceFilledRandom
   suffix: Filled, Random
@@ -145,10 +183,6 @@
           prob: 0.25
         - id: StrangePill
           prob: 0.20
-        - id: DeathPaint
-          prob: 0.05
-        - id: DeathPaintTwo
-          prob: 0.05
         - id: DrinkMopwataBottleRandom
           prob: 0.20
         - id: ModularReceiver
@@ -159,6 +193,10 @@
           prob: 0.20
         - id: BarberScissors
           prob: 0.05
+        - id: Wristwatch
+          prob: 0.05
+        - id: BookRandomStory
+          prob: 0.1
         # Syndicate loot
         - id: null
           prob: 0.95

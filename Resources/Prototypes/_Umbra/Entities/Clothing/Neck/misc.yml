@@ -36,3 +36,16 @@
     sprite: _Umbra/Clothing/Neck/Misc/loopsbellcollar.rsi
   - type: Clothing
     sprite: _Umbra/Clothing/Neck/Misc/loopsbellcollar.rsi
+
+# Player: AuridiumThePaladin - Character: Hush Pallister
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckHushPendant
+  name: Hush's pendant
+  suffix: PersonalItem
+  description: A silver-gold necklace with an inscription on it, it states "Leap of faith, do you doubt?"
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Neck/Misc/hushpendant.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Neck/Misc/hushpendant.rsi

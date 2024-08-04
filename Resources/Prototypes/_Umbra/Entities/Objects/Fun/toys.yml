@@ -1,0 +1,100 @@
+## Plushies
+# Player: Tych0 - Character: Nashira-Najma
+- type: entity
+  parent: PlushieMoth
+  id: PlushieMaple
+  name: maple moondancer plushie
+  description: A custom made moth plushie belonging to Nashira-Najma. Do not eat.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_maple
+    sprite: _Umbra/Objects/Fun/toys.rsi
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Voice/Moth/moth_squeak.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Voice/Moth/moth_squeak.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Voice/Moth/moth_squeak.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Voice/Moth/moth_squeak.ogg
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Voice/Moth/moth_squeak.ogg
+
+# Player: PolarTundra - Character: Vesper
+- type: entity
+  parent: PlushieMoth
+  id: PlushieVesper
+  name: vesper plushie
+  description: A custom made moth plushie belonging to Vesper. Do not eat. It will scream.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_vesper
+    sprite: _Umbra/Objects/Fun/toys.rsi
+
+# Player: lemonrat - Character: Oliver Cambridge
+- type: entity
+  parent: PlushieLizard
+  id: PlushieOliver
+  name: oliver's plushie
+  description: The plushie Oliver's Dad gave to him when they first met.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_oliver
+    sprite: _Umbra/Objects/Fun/toys.rsi
+
+# Players: foob - Character: Jasmi-Wujeeta
+- type: entity
+  parent: PlushieLizard
+  id: PlushieDeeja
+  name: deeja-wujeeta plushie
+  description: A custom made lizard plushie belonging to Jasmi-Wujeeta so she can always have her sister by her side. Do not eat.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_deeja
+    sprite: _Umbra/Objects/Fun/toys.rsi
+
+# Players: Deeja - Character: Deeja-Wujeeta
+- type: entity
+  parent: PlushieLizard
+  id: PlushieJasmi
+  name: jasmi-wujeeta plushie
+  description: A custom made lizard plushie belonging to Deeja-Wujeeta so she can always have her sister by her side. Do not eat.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_jasmi
+    sprite: _Umbra/Objects/Fun/toys.rsi
+
+# Players: AjexRose - Character: Eris Rose
+- type: entity
+  parent: PlushieSlime
+  id: PlushieEris
+  name: eris rose plushie
+  description: A plushie made in the image of Eris Rose, made by the loving hands of the residents of Orphina Station. Throught different dimensions and different adventures, dont forget the people you love. Dont forget home.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_eris
+    sprite: _Umbra/Objects/Fun/toys.rsi
+
+# Players: MrGreen - Character: John Armstrong
+- type: entity
+  parent: PlushieLizard
+  id: PlushieJuniper
+  name: juniper armstrong plushie
+  description: A custom made lizard plushie belonging to John Armstrong, gifted by his son Juniper Armstrong. Do not eat.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_juniper
+    sprite: _Umbra/Objects/Fun/toys.rsi
+

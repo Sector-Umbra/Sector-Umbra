@@ -1,0 +1,15 @@
+# Player: Arimah - Character: Really-Likes-Reading
+- type: entity
+  parent: ClothingEyesGlasses
+  id: ClothingEyesReadingGlasses
+  name: Reading's reading glasses
+  description: A stylish pair of half-moon glasses worn by Really-Likes-Reading. For reading!
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Eyes/Glasses/readingglasses.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Eyes/Glasses/readingglasses.rsi
+  - type: Tag
+    # Removes WhitelistChameleon and HamsterWearable
+    tags: []

@@ -22,7 +22,21 @@ public partial struct StampDisplayInfo
 
     [DataField("stampedColor")]
     public Color StampedColor;
+
+    // Umbra: Stamp type.
+    [DataField("type")]
+    public StampType Type = StampType.RubberStamp;
 };
+
+/// UMBRA
+/// <summary>
+/// Stamp "types". Currently, rubber stamp and signatures.
+/// </summary>
+public enum StampType
+{
+    RubberStamp,
+    Signature
+}
 
 [RegisterComponent]
 public sealed partial class StampComponent : Component
@@ -34,7 +48,7 @@ public sealed partial class StampComponent : Component
     public string StampedName { get; set; } = "stamp-component-stamped-name-default";
 
     /// <summary>
-    ///     Tne sprite state of the stamp to display on the paper from paper Sprite path.
+    ///     The sprite state of the stamp to display on the paper from paper Sprite path.
     /// </summary>
     [DataField("stampState")]
     public string StampState { get; set; } = "paper_stamp-generic";

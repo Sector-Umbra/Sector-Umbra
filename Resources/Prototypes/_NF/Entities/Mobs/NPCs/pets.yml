@@ -1,0 +1,34 @@
+- type: entity
+  name: Clippy
+  parent: MobCatGhost
+  id: MobCatClippy
+  description: It looks like you’re writing a letter, would you like help?
+  components:
+  - type: GhostRole
+    name: ghost-role-information-clippy-name
+    description: ghost-role-information-clippy-description
+  - type: Loadout
+    prototypes: [ MobClippyGear ]
+  - type: RandomMetadata
+    nameSegments: [names_cat_clippy] # Its needed to fix the names since it was using the MobCatGhost list.
+  - type: AutoImplant
+    implants:
+    - MindShieldImplant
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatCat
+      amount: 1
+#    - id: MaterialHideClippy
+  - type: IntrinsicRadioReceiver
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Common # Umbra
+    - Service
+  - type: ActiveRadio
+    channels:
+    - Common # Umbra
+    - Service
+  - type: NpcFactionMember
+    factions:
+#      - Cat
+      - PetsNT

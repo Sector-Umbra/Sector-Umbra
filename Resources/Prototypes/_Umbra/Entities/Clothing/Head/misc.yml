@@ -1,0 +1,36 @@
+# Player: FlannelViolin - Character: Georgia A Miles
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatFlowerBraidGeorgia
+  name: Miles' flower braid
+  description: Georgia's braid is woven with tiger lilies and vines.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Head/georgia-flower-braid.rsi
+  - type: Clothing
+    sprite:  _Umbra/Clothing/Head/georgia-flower-braid.rsi
+    slots:
+    - HEAD
+  - type: Tag
+    # Removes WhitelistChameleon and HamsterWearable
+    tags: []
+
+# Player: foob - Character: Jasmi-Glorb
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatRainbowFlowerJasmi
+  name: Jasmi's Rainbow Hairflower
+  description: Jasmi's custom hairflower, with petals colored in a rainbow pattern. 
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Head/jasmi-rainbow-hairflower.rsi
+  - type: Clothing
+    sprite:  _Umbra/Clothing/Head/jasmi-rainbow-hairflower.rsi
+    slots:
+    - HEAD
+  - type: Tag
+    # Removes WhitelistChameleon and HamsterWearable
+    tags: []
+

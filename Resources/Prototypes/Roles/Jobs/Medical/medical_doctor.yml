@@ -3,10 +3,6 @@
   name: job-name-doctor
   description: job-description-doctor
   playTimeTracker: JobMedicalDoctor
-  requirements:
-    - !type:DepartmentTimeRequirement
-      department: Medical
-      time: 14400 #4 hrs
   startingGear: DoctorGear
   icon: "JobIconMedicalDoctor"
   supervisors: job-supervisors-cmo
@@ -19,13 +15,8 @@
 - type: startingGear
   id: DoctorGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitMedicalDoctor
-    back: ClothingBackpackMedicalFilled
-    shoes: ClothingShoesColorWhite
-    outerClothing: ClothingOuterCoatLab
-    id: MedicalPDA
     ears: ClothingHeadsetMedical
     belt: ClothingBeltMedicalFilled
-  innerClothingSkirt: ClothingUniformJumpskirtMedicalDoctor
-  satchel: ClothingBackpackSatchelMedicalFilled
-  duffelbag: ClothingBackpackDuffelMedicalFilled
+  #storage:
+    #back:
+    #- Stuff

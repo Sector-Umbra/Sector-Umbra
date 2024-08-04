@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: BaseItem
   id: BaseFigurineUmbra
   name: figurine
@@ -139,3 +139,54 @@
   components:
   - type: Sprite
     state: zack_cargo
+
+- type: entity
+  parent: BaseFigurineUmbra
+  id: ToyFigurineUmbraLasSalvage
+  name: aaas-las figurine
+  components:
+  - type: Sprite
+    state: las_salvage
+
+- type: entity
+  parent: BaseFigurineUmbra
+  id: ToyFigurineUmbraLoopsQM
+  name: loops-the-horns figurine
+  components:
+  - type: Sprite
+    state: loops_qm
+
+- type: entity
+  parent: BaseFigurineUmbra
+  id: ToyFigurineUmbraAlmaBotany
+  name: alma vashli figurine
+  components:
+  - type: Sprite
+    state: alma_botany
+
+- type: entity
+  parent: BaseFigurineUmbra
+  id: ToyFigurineUmbraJasmiMD
+  name: jasmi-wujeeta figurine
+  suffix: MD
+  components:
+  - type: Sprite
+    state: jasmi_doctor
+
+- type: entity
+  parent: BaseFigurineUmbra
+  id: ToyFigurineUmbraJasmiScientist
+  name: jasmi-wujeeta figurine
+  suffix: Sci
+  components:
+  - type: Sprite
+    state: jasmi_scientist
+
+- type: entity
+  parent: BaseFigurineUmbra
+  id: ToyFigurineUmbraJohnScientist
+  name: john armstrong figurine
+  components:
+  - type: Sprite
+    state: john_scientist
+

@@ -4,18 +4,8 @@
   description: job-description-captain
   playTimeTracker: JobCaptain
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Engineering
-      time: 54000 # 15 hours
-    - !type:DepartmentTimeRequirement
-      department: Medical
-      time: 54000 # 15 hours
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 54000 # 15 hours
-    - !type:DepartmentTimeRequirement
-      department: Command
-      time: 54000 # 15 hours
+    - !type:OverallPlaytimeRequirement
+      time: 10800 # 3 hours
   weight: 20
   startingGear: CaptainGear
   icon: "JobIconCaptain"
@@ -31,19 +21,15 @@
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
-
 - type: startingGear
   id: CaptainGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitCaptain
-    back: ClothingBackpackCaptainFilled
     shoes: ClothingShoesBootsLaceup
-    head: ClothingHeadHatCaptain
     eyes: ClothingEyesGlassesSunglasses
     gloves: ClothingHandsGlovesCaptain
-    outerClothing: ClothingOuterArmorCaptainCarapace
     id: CaptainPDA
     ears: ClothingHeadsetAltCommand
-  innerClothingSkirt: ClothingUniformJumpskirtCaptain
-  satchel: ClothingBackpackSatchelCaptainFilled
-  duffelbag: ClothingBackpackDuffelCaptainFilled
+  storage:
+    back:
+    - Flash
+    # - StationCharter

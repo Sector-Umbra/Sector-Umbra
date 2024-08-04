@@ -2,6 +2,8 @@
   id: Train
   mapName: 'Train'
   mapPath: /Maps/train.yml
+  maxRandomOffset: 0
+  randomRotation: false
   minPlayers: 10
   maxPlayers: 50
   stations:
@@ -14,10 +16,8 @@
             !type:NanotrasenNameGenerator
             prefixCreator: 'ED'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Shuttles/emergency_omega.yml # To do - add railway station
+          emergencyShuttlePath: /Maps/Shuttles/emergency_omega.yml # TODO - add railway station
         - type: StationJobs
-          overflowJobs:
-            - Passenger
           availableJobs:
             #service
             Captain: [ 1, 1 ]
@@ -32,23 +32,27 @@
             Detective: [ 1, 1 ]
             #engineering
             ChiefEngineer: [ 1, 1 ]
+            SeniorEngineer: [ 1, 1 ]
             AtmosphericTechnician: [ 3, 3 ]
             StationEngineer: [ 5, 5 ]
             TechnicalAssistant: [ 3, 3 ]
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
+            SeniorPhysician: [ 1, 1 ]
             Chemist: [ 2, 2 ]
             MedicalDoctor: [ 3, 3 ]
             MedicalIntern: [ 2, 2 ]
             #science
             ResearchDirector: [ 1, 1 ]
+            SeniorResearcher: [ 1, 1 ]
             Scientist: [ 4, 4 ]
             ResearchAssistant: [ 2, 2 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
-            SecurityOfficer: [ 4, 4 ]
-            SecurityCadet: [ 2, 3 ]
+            SeniorOfficer: [ 1, 1 ]
+            SecurityOfficer: [ 6, 6 ]
+            SecurityCadet: [ 3, 3 ]
             Lawyer: [ 1, 2 ]
             #supply
             Quartermaster: [ 1, 1 ]

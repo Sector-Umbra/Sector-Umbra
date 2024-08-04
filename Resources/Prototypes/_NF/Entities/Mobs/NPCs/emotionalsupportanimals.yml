@@ -1,0 +1,52 @@
+- type: entity
+  id: BaseEmotionalGhost
+  abstract: true
+  components:
+  - type: GhostRole
+    name: ghost-role-information-emotional-support-name
+    description: ghost-role-information-emotional-support-description
+    rules: ghost-role-information-emotional-support-rules
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+  - type: GhostTakeoverAvailable
+  - type: CombatMode
+    combatToggleAction: ActionCombatModeToggleOff
+  - type: Grammar
+    attributes:
+      gender: epicene
+  - type: IdExaminable
+  - type: Strippable
+  - type: UserInterface
+    interfaces:
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
+  - type: Inventory
+    templateId: emotionalsupportpet
+  - type: Tag
+    tags:
+    - CannotSuicide
+    - DoorBumpOpener
+    - VimPilot
+  - type: Puller
+    needsHands: false
+
+- type: entity
+  id: BaseEmotionalGhostCat
+  abstract: true
+  components:
+  - type: ReplacementAccent
+    accent: cat
+  - type: Vocal
+    sounds:
+      Male: Cat
+      Female: Cat
+      Unsexed: Cat
+  - type: Inventory
+    speciesId: cat
+
+- type: entity
+  suffix: Ghost
+  parent: [BaseEmotionalGhost, BaseEmotionalGhostCat, MobCat]
+  id: MobCatGhost
+  abstract: true

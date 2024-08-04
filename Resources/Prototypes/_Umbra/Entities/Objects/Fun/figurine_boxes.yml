@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: PresentRandom
   id: MysteryFigureBoxUmbra
   name: mystery spacemen minifigure box
@@ -145,4 +145,16 @@
     - id: ToyFigurineUmbraWipesJanitor
       orGroup: SpacemenFig
     - id: ToyFigurineUmbraZackCargo
+      orGroup: SpacemenFig
+    - id: ToyFigurineUmbraLasSalvage
+      orGroup: SpacemenFig
+    - id: ToyFigurineUmbraLoopsQM
+      orGroup: SpacemenFig
+    - id: ToyFigurineUmbraAlmaBotany
+      orGroup: SpacemenFig
+    - id: ToyFigurineUmbraJasmiMD
+      orGroup: SpacemenFig
+    - id: ToyFigurineUmbraJohnScientist
+      orGroup: SpacemenFig
+    - id: ToyFigurineUmbraJasmiScientist
       orGroup: SpacemenFig

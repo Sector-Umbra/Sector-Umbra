@@ -1,0 +1,21 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from https://github.com/ParadiseSS13/Paradise/commit/2882ed8e1c4b2d6b059973004db40704055d7684, customised by Tych0theSynth",
+    "size": {
+      "x": 32,
+      "y": 32
+    },
+      "states": [
+          {
+              "name": "bobby",
+              "delays": [
+                [
+                 120,
+                 120,
+                 120
+                ]
+            ]
+          }
+      ]
+  }

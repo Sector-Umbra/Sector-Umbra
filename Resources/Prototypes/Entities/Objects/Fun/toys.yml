@@ -184,6 +184,19 @@
     energy: 2
   - type: RgbLightController
     layers: [ 0 ]
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: bee-inhand-left
+        shader: unshaded
+      right:
+      - state: bee-inhand-right
+        shader: unshaded
+  - type: Clothing
+    clothingVisuals:
+      head:
+      - state: bee-equipped-HELMET
+        shader: unshaded
 
 - type: entity
   parent: BasePlushie
@@ -288,6 +301,12 @@
           Quantity: 10
         - ReagentId: JuiceThatMakesYouWeh
           Quantity: 10
+  - type: Clothing
+    quickEquip: false
+    sprite: Objects/Fun/toys.rsi
+    equippedPrefix: lizard
+    slots:
+    - HEAD
 
 - type: entity
   parent: PlushieLizard
@@ -543,6 +562,15 @@
     energy: 2
   - type: RgbLightController
     layers: [ 0 ]
+  - type: Item
+    heldPrefix: rainbowcarpplush
+    inhandVisuals:
+      left:
+      - state: rainbowcarpplush-inhand-left
+        shader: unshaded
+      right:
+      - state: rainbowcarpplush-inhand-right
+        shader: unshaded
 
 - type: entity
   parent: PlushieCarp
@@ -772,7 +800,7 @@
   - type: Food
     requiresSpecialDigestion: true
     useSound:
-      path: /Audio/Voice/Moth/moth_chitter.ogg
+      path: /Audio/Voice/Moth/moth_scream.ogg # Umbra: moth_chitter -> moth_scream
 
 ## Cheapo Figurines
 
@@ -869,6 +897,7 @@
   - type: Sprite
   - type: Item
     size: Normal
+  - type: PacifismAllowedGun
 
 - type: entity
   parent: FoamWeaponBase
@@ -896,7 +925,7 @@
         - BulletFoam
     capacity: 1
     soundInsert:
-      path: /Audio/Weapons/drawbow2.ogg
+      path: /Audio/Items/bow_pull.ogg
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
@@ -1177,7 +1206,6 @@
   description: New Sandy-Cat plastic sword! Comes with realistic sound and full color! Looks almost like the real thing!
   components:
     - type: EnergySword
-      isSharp: false
       colorOptions:
         - DodgerBlue
     - type: ItemToggle
@@ -1223,6 +1251,7 @@
     - type: StaminaDamageOnHit
       damage: 8
     - type: MeleeWeapon
+      wideAnimationRotation: -135
       damage:
         types:
           Blunt: 0
@@ -1243,7 +1272,7 @@
 - type: entity
   parent: BasePlushie
   id: ToyAmongPequeno
-  name: among pequeno
+  name: among pequeño
   description: sus!
   components:
   - type: Sprite
@@ -1311,9 +1340,11 @@
   components:
     - type: Sprite
       sprite: Objects/Fun/rubber_hammer.rsi
-      layers:
-        - state: icon
-          shader: unshaded
+      state: icon
+    - type: WeaponRandom
+      damageBonus:
+          types:
+              Blunt: 1000
     - type: StaminaDamageOnHit
       damage: 8
     - type: Item

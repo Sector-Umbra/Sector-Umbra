@@ -51,6 +51,24 @@
         },
         {
           "name": "zack_cargo"
+        },
+        {
+          "name": "las_salvage"
+        },
+        {
+          "name": "loops_qm"
+        },
+        {
+          "name": "alma_botany"
+        },
+        {
+          "name": "jasmi_doctor"
+        },
+        {
+          "name": "john_scientist"
+        },
+        {
+          "name": "jasmi_scientist"
         }
     ]
 }
