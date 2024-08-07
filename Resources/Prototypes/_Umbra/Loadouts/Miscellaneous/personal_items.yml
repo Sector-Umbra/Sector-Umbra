@@ -321,6 +321,20 @@
     back:
     - ClothingNeckRyeTie
 
+# Sereketh's Ocean coat
+- type: loadout
+  id: Oceancoat
+  equipment: Oceancoat
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: Sereketh Pallister II
+
+- type: startingGear
+  id: Oceancoat
+  storage:
+    back:
+    - Oceancoat
+
 # Vesper's vesper plushie
 - type: loadout
   id: PlushieVesper
