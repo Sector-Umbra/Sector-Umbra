@@ -349,7 +349,8 @@
   equipment: Oceancoat
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Sereketh Pallister II
+    character:
+    - Sereketh Pallister II
 
 - type: startingGear
   id: Oceancoat
