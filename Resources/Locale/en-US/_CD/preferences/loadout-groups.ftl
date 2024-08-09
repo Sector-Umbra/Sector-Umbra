@@ -21,7 +21,6 @@ loadout-group-security-glasses-or-hud = Security Glasses
 loadout-group-senior-physician-head = Senior Physician head
 loadout-group-senior-physician-jumpsuit = Senior Physician jumpsuit
 loadout-group-senior-physician-outerclothing = Senior Physician outer clothing
-loadout-group-medical-id = Medical ID
 
 # Wildcards
 loadout-group-prisoner-jumpsuit = Prisoner jumpsuit

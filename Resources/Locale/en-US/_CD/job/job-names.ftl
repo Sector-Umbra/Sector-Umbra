@@ -17,4 +17,3 @@ JobSeniorResearcher = Senior Researcher
 # Titles
 cd-job-title-roboticist = Roboticist
 cd-job-title-offduty = Off-Duty Staff
-umbra-job-title-nurse = Nurse
