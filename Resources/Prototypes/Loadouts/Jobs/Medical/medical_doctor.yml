@@ -119,6 +119,15 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtMedicalDoctor
 
+- type: loadout
+  id: SkirtOfLife
+  equipment: SkirtOfLife
+
+- type: startingGear
+  id: SkirtOfLife
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtOfLife
+
 # - type: loadout (CD: Disabling senior clothing)
 #   id: SeniorPhysicianJumpsuit
 #   equipment: SeniorPhysicianJumpsuit
