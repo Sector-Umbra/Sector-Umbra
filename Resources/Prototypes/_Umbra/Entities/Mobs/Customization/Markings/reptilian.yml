@@ -1,0 +1,35 @@
+- type: marking
+  id: LizardBackAquaticFrills  
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Reptilian]
+  sprites:
+  - sprite: _Umbra/Mobs/Customization/aquaticbackfrills.rsi
+    state: AquaticBackFrills
+
+- type: marking
+  id: ChestLizardScalesGradient
+  bodyPart: Chest
+  markingCategory: Overlay
+  speciesRestriction: [Reptilian]
+  sprites:
+  - sprite: _Umbra/Mobs/Customization/chestscalesgradient.rsi
+    state: ChestLizardGradient
+
+- type: marking
+  id: LegsLizardScalesGradient
+  bodyPart: LLeg #<- I am aware that this only selects one leg, but the sprite still works on both of them, If I would to insert "LLeg, Rleg", then the sprite would appear a layer above the clothing. -Lumithrax
+  markingCategory: Overlay
+  speciesRestriction: [Reptilian]
+  sprites:
+  - sprite: _Umbra/Mobs/Customization/upperlegsscalesgradient.rsi
+    state: LegsLizardGradient
+
+- type: marking
+  id: FeetLizardScalesGradient
+  bodyPart: RFoot
+  markingCategory: Overlay
+  speciesRestriction: [Reptilian]
+  sprites:
+  - sprite: _Umbra/Mobs/Customization/footscalesgradient.rsi
+    state: FootLizardScalesGradient
