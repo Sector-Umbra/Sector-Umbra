@@ -18,7 +18,8 @@
   equipment: ClothingHeadBorgsBeret
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Borgs-the-Brains
+    character:
+    - Borgs-the-Brains
 
 - type: startingGear
   id: ClothingHeadBorgsBeret
@@ -32,7 +33,8 @@
   equipment: ClothingNeckBorgsScarf
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Borgs-the-Brains
+    character: 
+    - Borgs-the-Brains
 
 - type: startingGear
   id: ClothingNeckBorgsScarf
@@ -46,7 +48,8 @@
   equipment:  ClothingUniformJumpsuitCarpSuit
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Chance Boulevard
+    character: 
+    - Chance Boulevard
 
 - type: startingGear
   id: ClothingUniformJumpsuitCarpSuit
@@ -60,7 +63,8 @@
   equipment: ClothingNeckArtifactNecklace
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Deeja-Wujeeta
+    character: 
+    - Deeja-Wujeeta
 
 - type: startingGear
   id: ClothingNeckArtifactNecklace
@@ -74,7 +78,8 @@
   equipment: PlushieJasmi
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Deeja-Wujeeta
+    character: 
+    - Deeja-Wujeeta
 
 - type: startingGear
   id: PlushieJasmi
@@ -89,7 +94,8 @@
   equipment: PlushieEris
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Eris Rose
+    character: 
+    - Eris Rose
 
 - type: startingGear
   id: PlushieEris
@@ -103,7 +109,8 @@
   equipment: ClothingHeadsetErisAid
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Eris Rose
+    character:
+    - Eris Rose
 
 - type: startingGear
   id: ClothingHeadsetErisAid
@@ -117,7 +124,8 @@
   equipment: FrostCoat
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Frostbite-Drago
+    character: 
+    - Frostbite-Drago
 
 - type: startingGear
   id: FrostCoat
@@ -131,7 +139,8 @@
   equipment: FateseekersGemstone
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Fateseeker
+    character: 
+    - Fateseeker
 
 - type: startingGear
   id: FateseekersGemstone
@@ -145,7 +154,8 @@
   equipment: ClothingNeckHushPendant
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Hush Pallister
+    character: 
+    - Hush Pallister
 
 - type: startingGear
   id: ClothingNeckHushPendant
@@ -159,7 +169,8 @@
   equipment: ClothingOuterCoatReinforcedRaincoat
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Jalopy Oldman
+    character: 
+    - Jalopy Oldman
 
 - type: startingGear
   id: ClothingOuterCoatReinforcedRaincoat
@@ -173,7 +184,8 @@
   equipment: ClothingHeadHatRainbowFlowerJasmi
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Jasmi-Wujeeta
+    character: 
+    - Jasmi-Wujeeta
 
 - type: startingGear
   id: ClothingHeadHatRainbowFlowerJasmi
@@ -187,7 +199,8 @@
   equipment: PetRockBobby
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Joetta Beedell
+    character: 
+    - Joetta Beedell
 
 - type: startingGear
   id: PetRockBobby
@@ -201,7 +214,8 @@
   equipment: PlushieDeeja
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Jasmi-Wujeeta
+    character: 
+    - Jasmi-Wujeeta
 
 - type: startingGear
   id: PlushieDeeja
@@ -215,7 +229,8 @@
   equipment: PlushieJuniper
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: John Armstrong
+    character: 
+    - John Armstrong
 
 - type: startingGear
   id: PlushieJuniper
@@ -229,7 +244,8 @@
   equipment: ClothingNeckLoopsBellCollar
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Loops-the-Horns
+    character: 
+    - Loops-the-Horns
 
 - type: startingGear
   id: ClothingNeckLoopsBellCollar
@@ -243,7 +259,8 @@
   equipment: ClothingHeadHatFlowerBraidGeorgia
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Georgia A Miles
+    character: 
+    - Georgia A Miles
 
 - type: startingGear
   id: ClothingHeadHatFlowerBraidGeorgia
@@ -257,7 +274,8 @@
   equipment: PlushieMaple
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Nashira-Najma
+    character: 
+    - Nashira-Najma
 
 - type: startingGear
   id: PlushieMaple
@@ -271,7 +289,8 @@
   equipment: PlushieOliver
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Oliver Cambridge
+    character: 
+    - Oliver Cambridge
 
 - type: startingGear
   id: PlushieOliver
@@ -285,7 +304,8 @@
   equipment: ClothingOuterGalaxyCoat
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Nova Gem
+    character: 
+    - Nova Gem
 
 - type: startingGear
   id: ClothingOuterGalaxyCoat
@@ -299,7 +319,8 @@
   equipment: ClothingEyesReadingGlasses
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Really-Likes-Reading
+    character: 
+    - Really-Likes-Reading
 
 - type: startingGear
   id: ClothingEyesReadingGlasses
@@ -313,7 +334,8 @@
   equipment: ClothingNeckRyeTie
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Ryeversi Venusta
+    character: 
+    - Ryeversi Venusta
 
 - type: startingGear
   id: ClothingNeckRyeTie
@@ -327,7 +349,8 @@
   equipment: PlushieVesper
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Vesper
+    character: 
+    - Vesper
 
 - type: startingGear
   id: PlushieVesper
@@ -341,7 +364,8 @@
   equipment: ClothingNeckChewtoy
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Welds-The-Pipes
+    character: 
+    - Welds-The-Pipes
 
 - type: startingGear
   id: ClothingNeckChewtoy
@@ -355,7 +379,8 @@
   equipment: ClothingShoesMiscWeldsWalker
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Welds-The-Pipes
+    character: 
+    - Welds-The-Pipes
 
 - type: startingGear
   id: ClothingShoesMiscWeldsWalker
@@ -369,7 +394,8 @@
   equipment: ClothingNeckWipesFriendMedal
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Wipes-the-Floor
+    character: 
+    - Wipes-the-Floor
 
 - type: startingGear
   id: ClothingNeckWipesFriendMedal
@@ -383,7 +409,8 @@
   equipment: ClothingOuterYarnaArmourCoat
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Yarna Crimson
+    character: 
+    - Yarna Crimson
 
 - type: startingGear
   id: ClothingOuterYarnaArmourCoat
