@@ -9,7 +9,7 @@
   components:
   - type: Sprite
     state: plushie_maple
-    sprite: _Umbra/Objects/Fun/Toys/plushie_maple_moondancer.rsi
+    sprite: _Umbra/Objects/Fun/Toys/plushie_maple_mooondancer.rsi
 
 # Player: PolarTundra - Character: Vesper
 - type: entity
@@ -93,7 +93,7 @@
   components:
   - type: Sprite
     state: plushie_juniper
-    sprite: _Umbra/Objects/Fun/plushie_juniper.rsi
+    sprite: _Umbra/Objects/Fun/Toys/plushie_juniper.rsi
   - type: Clothing
     quickEquip: false
     sprite: _Umbra/Objects/Fun/Toys/plushie_juniper.rsi
