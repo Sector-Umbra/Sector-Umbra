@@ -96,7 +96,7 @@
   components:
   - type: Sprite
     state: plushie_eris
-    sprite: _Umbra/Objects/Fun/toys.rsi
+    sprite: _Umbra/Objects/Fun/Toys/plushie_eris.rsi
 
 # Players: MrGreen - Character: John Armstrong
 - type: entity
