@@ -119,7 +119,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtMedicalDoctor
 
-- type: loadout
+- type: loadout  # Umbra
   id: SkirtOfLife
   equipment: SkirtOfLife
 

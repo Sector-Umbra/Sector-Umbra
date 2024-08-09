@@ -1096,7 +1096,7 @@
   loadouts:
   - MedicalDoctorJumpsuit
   - MedicalDoctorJumpskirt
-  - SkirtOfLife
+  - SkirtOfLife # Umbra
   # CD: Separate Senior roles
   # - SeniorPhysicianJumpsuit
   # - SeniorPhysicianJumpskirt
