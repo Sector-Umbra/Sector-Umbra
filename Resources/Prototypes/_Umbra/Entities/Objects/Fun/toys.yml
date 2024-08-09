@@ -36,7 +36,7 @@
   components:
   - type: Sprite
     state: plushie_vesper
-    sprite: _Umbra/Objects/Fun/toys.rsi
+    sprite: _Umbra/Objects/Fun/Toys/plushie_vesper.rsi
 
 # Player: lemonrat - Character: Oliver Cambridge
 - type: entity
@@ -48,7 +48,7 @@
   components:
   - type: Sprite
     state: plushie_oliver
-    sprite: _Umbra/Objects/Fun/toys.rsi
+    sprite: _Umbra/Objects/Fun/Toys/plushie_oliver.rsi
 
 # Players: foob - Character: Jasmi-Wujeeta
 - type: entity
