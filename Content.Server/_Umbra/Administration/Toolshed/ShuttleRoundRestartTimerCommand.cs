@@ -6,7 +6,7 @@ using Robust.Shared.Toolshed;
 namespace Content.Server.Administration.Toolshed;
 
 [ToolshedCommand, AdminCommand(AdminFlags.Admin)]
-public sealed class RoundEndShuttleCommand : ToolshedCommand
+public sealed class ShuttleRoundRestartTimerCommand : ToolshedCommand
 {
     [Dependency] private readonly IConfigurationManager _cfg = default!;
 

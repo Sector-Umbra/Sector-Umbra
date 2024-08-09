@@ -1,2 +1,2 @@
-﻿command-description-roundendshuttle-enable = Turns the round end timer on once the shuttle lands. This will not have an affect if the shuttle already launched.
-command-description-roundendshuttle-disable = Turns the round end timer off once the shuttle lands. This will not have an affect if the shuttle already launched.
+﻿command-description-shuttleroundrestarttimer-enable = Turns on the automatic round restart timer. This will not have an effect if the shuttle has already left the station.
+command-description-shuttleroundrestarttimer-disable = Turns off the automatic round restart timer. This will not have an effect if the shuttle has already left the station.
