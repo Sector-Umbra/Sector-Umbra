@@ -9,7 +9,7 @@
   components:
   - type: Sprite
     state: plushie_maple
-    sprite: _Umbra/Objects/Fun/toys.rsi
+    sprite: _Umbra/Objects/Fun/Toys/plushie_maple_moondancer.rsi
   - type: EmitSoundOnUse
     sound:
       path: /Audio/Voice/Moth/moth_squeak.ogg
