@@ -14,7 +14,7 @@ namespace Content.Shared.Preferences.Loadouts.Effects;
 public sealed partial class PersonalItemLoadoutEffect : LoadoutEffect
 {
     [DataField("character", required: true)]
-    public string CharacterName = default!;
+    public HashSet<string> CharacterName = default!;
 
     public override bool Validate(
         HumanoidCharacterProfile profile,
@@ -23,8 +23,7 @@ public sealed partial class PersonalItemLoadoutEffect : LoadoutEffect
         IDependencyCollection collection,
         [NotNullWhen(false)] out FormattedMessage? reason)
     {
-        if (profile is HumanoidCharacterProfile humanoid &&
-            humanoid.Name.Equals(CharacterName, StringComparison.InvariantCultureIgnoreCase))
+        if (profile is HumanoidCharacterProfile humanoid && CharacterName.Contains(humanoid.Name))
         {
             reason = null;
             return true;
@@ -32,7 +31,7 @@ public sealed partial class PersonalItemLoadoutEffect : LoadoutEffect
 
         reason = FormattedMessage.FromUnformatted(Loc.GetString(
             "loadout-personal-item-belongs-to",
-            ("character", CharacterName)));
+            ("character", string.Join(", ", CharacterName))));
         return false;
     }
 }
