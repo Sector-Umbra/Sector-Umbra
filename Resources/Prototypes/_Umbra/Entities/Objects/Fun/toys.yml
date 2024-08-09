@@ -60,10 +60,10 @@
   components:
   - type: Sprite
     state: plushie_deeja
-    sprite: _Umbra/Objects/Fun/toys.rsi
+    sprite: _Umbra/Objects/Fun/Toys/plushie_deeja.rsi
   - type: Clothing
     quickEquip: false
-    sprite: _Umbra/Objects/Fun/toys.rsi
+    sprite: _Umbra/Objects/Fun/Toys/plushie_deeja.rsi
     equippedPrefix: deeja
     slots:
     - HEAD
