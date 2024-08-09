@@ -78,10 +78,10 @@
   components:
   - type: Sprite
     state: plushie_jasmi
-    sprite: _Umbra/Objects/Fun/toys.rsi
+    sprite: _Umbra/Objects/Fun/Toys/plushie_jasmi.rsi
   - type: Clothing
     quickEquip: false
-    sprite: _Umbra/Objects/Fun/toys.rsi
+    sprite: _Umbra/Objects/Fun/Toys/plushie_jasmi.rsi
     equippedPrefix: jasmi
     slots:
     - HEAD
