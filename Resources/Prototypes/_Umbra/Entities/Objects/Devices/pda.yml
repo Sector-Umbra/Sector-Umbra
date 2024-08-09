@@ -1,0 +1,42 @@
+#Alternate titles
+- type: entity
+  id: NursePDA
+  parent: BasePDA
+  name: nurse PDA
+  description: A medical nurse's PDA.
+  components:
+  - type: ItemToggle
+    toggleLight: false
+    onUse: false
+  - type: HealthAnalyzer
+    scanDelay: 1
+    scanningEndSound:
+      path: "/Audio/Items/Medical/healthscanner.ogg"
+  - type: Sprite
+    sprite: _Umbra/Objects/Devices/pda.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
+  - type: Icon
+    sprite: _Umbra/Objects/Devices/pda.rsi
+    state: pda-nurse
+  - type: Pda
+    id: MedicalIDCard
+    state: pda-nurse
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentVColor: "#b52a46"
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - idcard
+    - Belt
+  - type: RenameId
+    value: umbra-job-title-nurse = Nurse

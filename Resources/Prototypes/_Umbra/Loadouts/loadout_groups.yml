@@ -106,3 +106,13 @@
   - PlushieEris
   - ClothingHeadsetErisAid
   - ClothingNeckHushPendant
+
+# Job Titles
+
+# Medical Job Titles
+- type: loadoutGroup
+  id: MedicalDoctorTitles
+  name: loadout-group-medical-id
+  loadouts:
+  - MedicalPDA
+  - NursePDA
