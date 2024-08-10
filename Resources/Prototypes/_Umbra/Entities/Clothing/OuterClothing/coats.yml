@@ -1,3 +1,22 @@
+# Player: AjexRose - Character: Stella Viatrix
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterStellaEntropyRig
+  name: Entropy Rig Model-XVI
+  description: A expensive and heavy rig meant to allow those suffering from Entropy Decay Syndrome some relief and normality. This rig seems to have customized colors and a small magnet system. It has a logo for Arcadia Industries.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/OuterClothing/Coats/entropyrig.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/OuterClothing/Coats/entropyrig.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 0.80
+    sprintModifier: 0.80
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHalo
+
 # Player: OverwatchVoice - Character: Yarna Crimson
 - type: entity
   parent: ClothingOuterCoatWarden

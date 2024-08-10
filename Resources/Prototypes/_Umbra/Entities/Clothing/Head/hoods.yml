@@ -12,3 +12,17 @@
     sprite: _Umbra/Clothing/Head/novagalaxyhood.rsi
   - type: Clothing
     sprite: _Umbra/Clothing/Head/novagalaxyhood.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHalo
+  noSpawn: true
+  name: Stella's Halo Ring
+  description: A small halo kept above a person's head using small but powerful magnets
+  components:
+  - type: Tag
+    tags: [ ] # ignore "WhitelistChameleon" tag
+  - type: Sprite
+    sprite: _Umbra/Clothing/Head/entropyrighood.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Head/entropyrighood.rsi
