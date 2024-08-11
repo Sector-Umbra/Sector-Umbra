@@ -1,6 +1,6 @@
 # Player: AjexRose - Character: Stella Viatrix
 - type: entity
-  parent: ClothingOuterBase
+  parent: ClothingOuterStorageBase
   id: ClothingOuterStellaEntropyRig
   name: Entropy Rig Model-XVI
   description: A expensive and heavy rig meant to allow those suffering from Entropy Decay Syndrome some relief and normality. This rig seems to have customized colors and a small magnet system. It has a logo for Arcadia Industries.
@@ -16,6 +16,11 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHalo
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot { }
+      storagebase: !type:Container
+        ents: [ ]
 
 # Player: OverwatchVoice - Character: Yarna Crimson
 - type: entity
