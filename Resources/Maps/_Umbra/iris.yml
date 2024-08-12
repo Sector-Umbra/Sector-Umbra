@@ -8661,24 +8661,28 @@ entities:
     - type: Transform
       parent: 20
     - type: InstantAction
+      keywords: []
       container: 20
   - uid: 25
     components:
     - type: Transform
       parent: 24
     - type: InstantAction
+      keywords: []
       container: 24
   - uid: 28
     components:
     - type: Transform
       parent: 27
     - type: InstantAction
+      keywords: []
       container: 27
   - uid: 15801
     components:
     - type: Transform
       parent: 17093
     - type: InstantAction
+      keywords: []
       container: 17093
 - proto: ActionToggleLight
   entities:
@@ -114595,7 +114599,7 @@ entities:
       pos: 10.5,62.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -438194.97
+      secondsUntilStateChange: -438315.22
       state: Opening
 - proto: HospitalCurtainsOpen
   entities:
@@ -114635,7 +114639,7 @@ entities:
       pos: 12.5,0.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -682722.94
+      secondsUntilStateChange: -682843.2
       state: Closing
   - uid: 15469
     components:
@@ -115047,7 +115051,7 @@ entities:
       pos: -16.5,-42.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -530528.3
+      secondsUntilStateChange: -530648.56
       state: Opening
 - proto: InflatableDoorStack
   entities:
@@ -115326,6 +115330,26 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 2.1310096,-10.408611
+      parent: 2
+- proto: JetpackSecurityFilled
+  entities:
+  - uid: 16
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 31.281923,23.718805
+      parent: 2
+  - uid: 17
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 31.490255,23.468805
+      parent: 2
+  - uid: 18
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 31.705534,23.607695
       parent: 2
 - proto: Jug
   entities:
