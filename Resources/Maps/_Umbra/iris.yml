@@ -8193,10 +8193,6 @@ entities:
       container: 14
 - proto: ActionToggleInternals
   entities:
-  - uid: 17
-    components:
-    - type: Transform
-      parent: 16
   - uid: 21
     components:
     - type: Transform
@@ -103890,7 +103886,7 @@ entities:
       pos: 10.5,62.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -357230.47
+      secondsUntilStateChange: -357418.5
       state: Opening
 - proto: HospitalCurtainsOpen
   entities:
@@ -103930,7 +103926,7 @@ entities:
       pos: 12.5,0.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -601758.4
+      secondsUntilStateChange: -601946.4
       state: Closing
   - uid: 15468
     components:
@@ -104276,7 +104272,7 @@ entities:
       pos: -16.5,-42.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -449563.78
+      secondsUntilStateChange: -449751.8
       state: Opening
 - proto: InflatableDoorStack
   entities:
