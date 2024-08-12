@@ -8656,12 +8656,6 @@ entities:
       parent: 14
     - type: EntityTargetAction
       container: 14
-- proto: ActionToggleInternals
-  entities:
-  - uid: 17
-    components:
-    - type: Transform
-      parent: 16
   - uid: 21
     components:
     - type: Transform
