@@ -8911,21 +8911,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 24.5,45.5
       parent: 2
-    # - type: DeviceList
-    #   configurators:
-    #   - invalid
-    #   devices:
-    #   - 10601
-    #   - 10600
-    #   - 10599
-    #   - 10596
-    #   - 569
-    #   - 10637
-    #   - 10639
-    #   - 10635
-    #   - 10640
-    #   - 10636
-    #   - 10660
   - uid: 47
     components:
     - type: Transform
@@ -61015,12 +61000,6 @@ entities:
       parent: 2
 - proto: ComputerComms
   entities:
-  - uid: 8737
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 9.5,1.5
-      parent: 2
   - uid: 19666
     components:
     - type: Transform
@@ -61441,6 +61420,14 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 71.5,31.5
+      parent: 2
+- proto: ComputerTabletopComms
+  entities:
+  - uid: 26375
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 9.5,1.5
       parent: 2
 - proto: ComputerTelevision
   entities:
@@ -114620,7 +114607,7 @@ entities:
       pos: 10.5,62.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -438085.8
+      secondsUntilStateChange: -438194.97
       state: Opening
 - proto: HospitalCurtainsOpen
   entities:
@@ -114660,7 +114647,7 @@ entities:
       pos: 12.5,0.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -682613.75
+      secondsUntilStateChange: -682722.94
       state: Closing
   - uid: 15469
     components:
@@ -115072,7 +115059,7 @@ entities:
       pos: -16.5,-42.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -530419.1
+      secondsUntilStateChange: -530528.3
       state: Opening
 - proto: InflatableDoorStack
   entities:
@@ -140766,6 +140753,11 @@ entities:
     components:
     - type: Transform
       pos: 27.5,-8.5
+      parent: 2
+  - uid: 8737
+    components:
+    - type: Transform
+      pos: 9.5,1.5
       parent: 2
   - uid: 15803
     components:
