@@ -8686,12 +8686,6 @@ entities:
       parent: 17093
     - type: InstantAction
       container: 17093
-- proto: ActionToggleJetpack
-  entities:
-  - uid: 18
-    components:
-    - type: Transform
-      parent: 16
 - proto: ActionToggleLight
   entities:
   - uid: 30
@@ -115338,33 +115332,6 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 2.1310096,-10.408611
-      parent: 2
-- proto: JetpackSecurityFilled
-  entities:
-  - uid: 16
-    components:
-    - type: Transform
-      pos: 31.414862,23.418415
-      parent: 2
-    - type: GasTank
-      toggleActionEntity: 17
-    - type: Jetpack
-      toggleActionEntity: 18
-    - type: ContainerContainer
-      containers:
-        ProvidedActionContainer: !type:Container
-          ents:
-          - 18
-          - 17
-  - uid: 15564
-    components:
-    - type: Transform
-      pos: 31.246206,23.846632
-      parent: 2
-  - uid: 15565
-    components:
-    - type: Transform
-      pos: 31.666971,23.8084
       parent: 2
 - proto: Jug
   entities:
