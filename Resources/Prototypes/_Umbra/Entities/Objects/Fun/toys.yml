@@ -61,6 +61,12 @@
   - type: Sprite
     state: plushie_deeja
     sprite: _Umbra/Objects/Fun/toys.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/toys.rsi
+    equippedPrefix: deeja
+    slots:
+    - HEAD
 
 # Players: Deeja - Character: Deeja-Wujeeta
 - type: entity
@@ -73,6 +79,12 @@
   - type: Sprite
     state: plushie_jasmi
     sprite: _Umbra/Objects/Fun/toys.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/toys.rsi
+    equippedPrefix: jasmi
+    slots:
+    - HEAD
 
 # Players: AjexRose - Character: Eris Rose
 - type: entity
@@ -97,4 +109,9 @@
   - type: Sprite
     state: plushie_juniper
     sprite: _Umbra/Objects/Fun/toys.rsi
-
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/toys.rsi
+    equippedPrefix: juniper
+    slots:
+    - HEAD
