@@ -14,5 +14,5 @@
 - type: stack
   id: FloorTileGraywashed
   name: graywashed floor
-  spawn: FloorTileGraywashed
+  spawn: FloorTileItemGraywashed
   maxCount: 30
