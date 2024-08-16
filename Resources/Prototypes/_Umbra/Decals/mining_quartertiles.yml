@@ -3,82 +3,82 @@
   tags: ["station", "markings"]
   sprite:
     sprite: _Umbra/Decals/mining_quarter.rsi
-    state: bottomleft-dark
+    state: bottomleft_dark
 
 - type: decal
   id: MiningQuarterTileDarkSE
   tags: ["station", "markings"]
   sprite:
     sprite: _Umbra/Decals/mining_quarter.rsi
-    state: bottomright-dark
+    state: bottomright_dark
 
 - type: decal
   id: MiningQuarterTileDarkNW
   tags: ["station", "markings"]
   sprite:
     sprite: _Umbra/Decals/mining_quarter.rsi
-    state: topleft-dark
+    state: topleft_dark
 
 - type: decal
   id: MiningQuarterTileDarkNE
   tags: ["station", "markings"]
   sprite:
     sprite: _Umbra/Decals/mining_quarter.rsi
-    state: topright-dark
+    state: topright_dark
 
 - type: decal
   id: MiningQuarterTileNormalSW
   tags: ["station", "markings"]
   sprite:
     sprite: _Umbra/Decals/mining_quarter.rsi
-    state: bottomleft-normal
+    state: bottomleft_normal
 
 - type: decal
   id: MiningQuarterTileNormalSE
   tags: ["station", "markings"]
   sprite:
     sprite: _Umbra/Decals/mining_quarter.rsi
-    state: bottomright-normal
+    state: bottomright_normal
 
 - type: decal
   id: MiningQuarterTileNormalNW
   tags: ["station", "markings"]
   sprite:
     sprite: _Umbra/Decals/mining_quarter.rsi
-    state: topleft-normal
+    state: topleft_normal
 
 - type: decal
   id: MiningQuarterTileNormalNE
   tags: ["station", "markings"]
   sprite:
     sprite: _Umbra/Decals/mining_quarter.rsi
-    state: topright-normal
+    state: topright_normal
 
 - type: decal
   id: MiningQuarterTileLightSW
   tags: ["station", "markings"]
   sprite:
     sprite: _Umbra/Decals/mining_quarter.rsi
-    state: bottomleft-light
+    state: bottomleft_light
 
 - type: decal
   id: MiningQuarterTileLightSE
   tags: ["station", "markings"]
   sprite:
     sprite: _Umbra/Decals/mining_quarter.rsi
-    state: bottomright-light
+    state: bottomright_light
 
 - type: decal
   id: MiningQuarterTileLightNW
   tags: ["station", "markings"]
   sprite:
     sprite: _Umbra/Decals/mining_quarter.rsi
-    state: topleft-light
+    state: topleft_light
 
 - type: decal
   id: MiningQuarterTileLightNE
   tags: ["station", "markings"]
   sprite:
     sprite: _Umbra/Decals/mining_quarter.rsi
-    state: topright-light
+    state: topright_light
 
