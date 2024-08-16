@@ -10,7 +10,6 @@
     sprite: _Umbra/Structures/Windows/shielded.rsi
   - type: Repairable
     fuelCost: 15
-    doAfterDelay: 2.5
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: RGlass
