@@ -10,3 +10,16 @@
     sprite: _Umbra/Clothing/OuterClothing/WinterCoats/frostcoat.rsi
   - type: Clothing
     sprite: _Umbra/Clothing/OuterClothing/WinterCoats/frostcoat.rsi
+
+# Player: PIGEONPEAS - Character: Sereketh Pallister II
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: Oceancoat
+  name: Ocean Winter Coat
+  description: A simple, ocean themed winter coat. It has two little lightning bolts coming out of the coat's fluff.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/OuterClothing/WinterCoats/oceancoat.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/OuterClothing/WinterCoats/oceancoat.rsi

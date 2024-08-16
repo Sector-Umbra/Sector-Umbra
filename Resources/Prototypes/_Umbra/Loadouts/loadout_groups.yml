@@ -39,6 +39,7 @@
   - JohansCodex
   - ClothingHeadsetErisAid
   - ClothingNeckHushPendant
+  - Oceancoat
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -74,6 +75,7 @@
   - JohansCodex
   - ClothingHeadsetErisAid
   - ClothingNeckHushPendant
+  - Oceancoat
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -108,3 +110,4 @@
   - PlushieEris
   - ClothingHeadsetErisAid
   - ClothingNeckHushPendant
+  - Oceancoat
