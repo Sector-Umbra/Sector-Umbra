@@ -1,0 +1,84 @@
+﻿- type: decal
+  id: MiningQuarterTileDarkSW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Umbra/Decals/mining_quarter.rsi
+    state: bottomleft-dark
+
+- type: decal
+  id: MiningQuarterTileDarkSE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Umbra/Decals/mining_quarter.rsi
+    state: bottomright-dark
+
+- type: decal
+  id: MiningQuarterTileDarkNW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Umbra/Decals/mining_quarter.rsi
+    state: topleft-dark
+
+- type: decal
+  id: MiningQuarterTileDarkNE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Umbra/Decals/mining_quarter.rsi
+    state: topright-dark
+
+- type: decal
+  id: MiningQuarterTileNormalSW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Umbra/Decals/mining_quarter.rsi
+    state: bottomleft-normal
+
+- type: decal
+  id: MiningQuarterTileNormalSE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Umbra/Decals/mining_quarter.rsi
+    state: bottomright-normal
+
+- type: decal
+  id: MiningQuarterTileNormalNW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Umbra/Decals/mining_quarter.rsi
+    state: topleft-normal
+
+- type: decal
+  id: MiningQuarterTileNormalNE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Umbra/Decals/mining_quarter.rsi
+    state: topright-normal
+
+- type: decal
+  id: MiningQuarterTileLightSW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Umbra/Decals/mining_quarter.rsi
+    state: bottomleft-light
+
+- type: decal
+  id: MiningQuarterTileLightSE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Umbra/Decals/mining_quarter.rsi
+    state: bottomright-light
+
+- type: decal
+  id: MiningQuarterTileLightNW
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Umbra/Decals/mining_quarter.rsi
+    state: topleft-light
+
+- type: decal
+  id: MiningQuarterTileLightNE
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Umbra/Decals/mining_quarter.rsi
+    state: topright-light
+

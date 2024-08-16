@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Inspiration from Paradise 'Mining', modified by Github KittenColony / Discord kittencolony (297865728374210561)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "full"
+    },
+    {
+      "name": "bwwindow0",
+      "directions": 4
+    },
+    {
+      "name": "bwwindow1",
+      "directions": 4
+    },
+    {
+      "name": "bwwindow2",
+      "directions": 4
+    },
+    {
+      "name": "bwwindow3",
+      "directions": 4
+    },
+    {
+      "name": "bwwindow4",
+      "directions": 4
+    },
+    {
+      "name": "bwwindow5",
+      "directions": 4
+    },
+    {
+      "name": "bwwindow6",
+      "directions": 4
+    },
+    {
+      "name": "bwwindow7",
+      "directions": 4
+    }
+  ]
+}

@@ -31,3 +31,20 @@
     - FloorXeno
   - type: Stack
     stackType: FloorTileXeno
+
+- type: entity
+  name: graywashed tile
+  parent: FloorTileItemBase
+  id: FloorTileItemGraywashed
+  components:
+  - type: Sprite
+    sprite: _Umbra/Objects/Tiles/tile.rsi
+    state: graywashed
+  - type: Item
+    heldPrefix: steel
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorGraywashed
+  - type: Stack
+    stackType: FloorTileBlackwater

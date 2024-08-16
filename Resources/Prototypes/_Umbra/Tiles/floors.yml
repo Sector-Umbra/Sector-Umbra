@@ -22,3 +22,21 @@
   itemDrop: FloorTileItemXeno
   friction: 0.05 #slippy
   heatCapacity: 10000
+
+- type: tile
+  id: FloorGraywashed
+  name: tiles-graywashed-floor
+  sprite: /Textures/_Umbra/Tiles/graywashed.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemGraywashed
+  heatCapacity: 10000

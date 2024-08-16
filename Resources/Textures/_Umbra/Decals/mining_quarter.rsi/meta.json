@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-SA-3.0",
+  "copyright": "Tiles from Paradise (https://github.com/ParadiseSS13/Paradise/commit/43889a89d5a9378fd120d627f74613edb1841a66), modified by Github KittenColony / Discord kittencolony (297865728374210561)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+    "name": "bottomleft_light"
+  },
+  {
+    "name": "bottomright_light"
+  },
+  {
+    "name": "topleft_light"
+  },
+  {
+    "name": "topright_light"
+  },
+  {
+    "name": "bottomleft_normal"
+  },
+  {
+    "name": "bottomright_normal"
+  },
+  {
+    "name": "topleft_normal"
+  },
+  {
+    "name": "topright_normal"
+  },
+  {
+    "name": "bottomleft_dark"
+  },
+  {
+    "name": "bottomright_dark"
+  },
+  {
+    "name": "topleft_dark"
+  },
+  {
+    "name": "topright_dark"
+  }
+  ]
+}
