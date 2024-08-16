@@ -61,6 +61,12 @@
   - type: Sprite
     state: plushie_deeja
     sprite: _Umbra/Objects/Fun/toys.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/toys.rsi
+    equippedPrefix: deeja
+    slots:
+    - HEAD
 
 # Players: Deeja - Character: Deeja-Wujeeta
 - type: entity
@@ -72,6 +78,24 @@
   components:
   - type: Sprite
     state: plushie_jasmi
+    sprite: _Umbra/Objects/Fun/toys.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/toys.rsi
+    equippedPrefix: jasmi
+    slots:
+    - HEAD
+
+# Players: AjexRose - Character: Eris Rose
+- type: entity
+  parent: PlushieSlime
+  id: PlushieEris
+  name: eris rose plushie
+  description: A plushie made in the image of Eris Rose, made by the loving hands of the residents of Orphina Station. Throught different dimensions and different adventures, dont forget the people you love. Dont forget home.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_eris
     sprite: _Umbra/Objects/Fun/toys.rsi
 
 # Players: MrGreen - Character: John Armstrong
@@ -85,3 +109,9 @@
   - type: Sprite
     state: plushie_juniper
     sprite: _Umbra/Objects/Fun/toys.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/toys.rsi
+    equippedPrefix: juniper
+    slots:
+    - HEAD
