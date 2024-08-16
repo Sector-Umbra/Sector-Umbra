@@ -47,4 +47,4 @@
       - Plating
       - FloorGraywashed
   - type: Stack
-    stackType: FloorTileBlackwater
+    stackType: FloorTileGraywashed

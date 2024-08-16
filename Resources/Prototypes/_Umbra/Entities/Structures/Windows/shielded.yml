@@ -37,7 +37,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
-    base: rwindow
+    base: bwwindow
   - type: Appearance
   - type: DamageVisuals
     thresholds: [4, 8, 12]
