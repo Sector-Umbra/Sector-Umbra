@@ -172,7 +172,8 @@
   equipment: JohansCodex
   effects:
   - !type:PersonalItemLoadoutEffect
-    character: Johan Ullman
+    character: 
+    - Johan Ullman
 
 - type: startingGear
   id: JohansCodex
