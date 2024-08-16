@@ -10,3 +10,9 @@
   name: xeno floor
   spawn: FloorTileItemXeno
   maxCount: 30
+
+- type: stack
+  id: FloorTileGraywashed
+  name: graywashed floor
+  spawn: FloorTileGraywashed
+  maxCount: 30
