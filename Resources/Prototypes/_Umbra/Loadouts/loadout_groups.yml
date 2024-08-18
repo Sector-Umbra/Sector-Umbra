@@ -39,6 +39,7 @@
   - ClothingHeadsetErisAid
   - ClothingNeckHushPendant
   - Oceancoat
+  - PlushieHeart
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -74,6 +75,7 @@
   - ClothingHeadsetErisAid
   - ClothingNeckHushPendant
   - Oceancoat
+  - PlushieHeart
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -109,3 +111,4 @@
   - ClothingHeadsetErisAid
   - ClothingNeckHushPendant
   - Oceancoat
+  - PlushieHeart
