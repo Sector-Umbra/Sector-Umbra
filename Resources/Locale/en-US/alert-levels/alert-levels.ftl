@@ -11,9 +11,17 @@ alert-level-blue = Blue
 alert-level-blue-announcement = There is a confirmed threat to the station. Security should perform random checks. Crewmembers are advised to be vigilant and report suspicious activity to security.
 alert-level-blue-instructions = Crewmembers are advised to be vigilant and report suspicious activity to security.
 
+alert-level-orange = Orange
+alert-level-orange-announcement = There are currently multiple unknown or hostile life forms on board the station. All crewmembers are advised to stay in their departments and to report any aggressive entities to security.
+alert-level-orange-instructions = Crewmembers are advised to be vigilant and report hostile life forms to security.
+
 alert-level-red = Red
 alert-level-red-announcement = There is an immediate threat to the station. Security should prepare to use lethal force if necessary. Crewmembers should find a safe place to shelter in, and are advised to follow any present authorities.
 alert-level-red-instructions = Crewmembers should find a safe place to shelter in, and are advised to follow any present authorities.
+
+alert-level-white = White
+alert-level-white-announcement = There is currently a supernatural or eldritch level abnormality on the station. All crewmembers are to remain vigilant, seek shelter, listen to command orders and to report any supernatural phenomena to security.
+alert-level-white-instructions = Crewmembers are advised to be remain in their departments and to report any supernatural sightings to security.
 
 alert-level-violet = Violet
 alert-level-violet-announcement = There is a viral threat on the station. Medical staff are advised to isolate crewmembers with any symptoms. Crewmembers are advised to distance themselves from others and perform safety measures to prevent further spread.
