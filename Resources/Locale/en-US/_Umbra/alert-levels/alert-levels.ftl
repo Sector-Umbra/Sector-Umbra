@@ -3,5 +3,5 @@ alert-level-orange-announcement = There are currently several unknown or hostile
 alert-level-orange-instructions = Crewmembers are advised to remain vigilant and report hostile life forms to security.
 
 alert-level-white = White
-alert-level-white-announcement = There is currently an unexplained abnormality on the station. All crewmembers are to remain vigilant, seek shelter, listen to command orders and to report any unknown phenomena to security.
-alert-level-white-instructions = Crewmembers are advised to be remain in their departments and to report any unexplained or unnatural sightings to security.
+alert-level-white-announcement = There is currently an unexplained abnormality on the station. All crewmembers are to remain vigilant, seek shelter, listen to command orders and to report any unknown phenomena to security or science.
+alert-level-white-instructions = Crewmembers are advised to be remain in their departments and to report any unexplained or unnatural sightings to security or science.
