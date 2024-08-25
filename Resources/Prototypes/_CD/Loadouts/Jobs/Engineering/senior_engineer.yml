@@ -10,7 +10,8 @@
 
 - type: loadout
   id: SeniorEngineerJumpskirt
-  equipment: SeniorEngineerJumpskirt
+  equipment: 
+    jumpsuit: SeniorEngineerJumpskirt
 
 - type: startingGear
   id: SeniorEngineerJumpskirt

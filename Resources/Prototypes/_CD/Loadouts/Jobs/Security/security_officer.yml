@@ -9,7 +9,8 @@
 
 - type: loadout
   id: EyesHudSecurity
-  equipment: EyesHudSecurity
+  equipment:
+    eyes: EyesHudSecurity
 
 - type: startingGear
   id: EyesHudSecurity
