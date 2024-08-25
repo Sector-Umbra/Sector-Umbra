@@ -563,7 +563,7 @@
           5: { state: reinf_construct-5, visible: true}
   - type: ReinforcedWallReplacementMarker
   - type: StaticPrice
-    price: 150
+    price: 250
   - type: RadiationBlocker
     resistance: 5
 
@@ -801,37 +801,11 @@
     node: diagonalshuttleWall
 
 - type: entity
-  parent: BaseWall # Umbra: Parent off of BaseWall instead of WallReinforced to prevent roundstart wall variation from applying.
+  parent: BaseWall
   id: WallShuttle
   name: shuttle wall
   suffix: Reinforced, Exterior
   components:
-  - type: Sprite
-    sprite: Structures/Walls/shuttle.rsi
-  - type: Icon
-    sprite: Structures/Walls/shuttle.rsi
-    state: full
-  - type: Construction
-    graph: Girder
-    node: shuttleWall
-  - type: IconSmooth
-    key: walls
-    base: state
-  - type: Appearance
-  - type: GenericVisualizer
-    visuals:
-      enum.ShuttleWallVisuals.DeconstructionStage:
-        ShuttleWallVisualLayers.Deconstruction:
-          -1: { visible: false }
-          0: { state: shuttle_construct-0, visible: true}
-          1: { state: shuttle_construct-1, visible: true}
-          2: { state: shuttle_construct-2, visible: true}
-          3: { state: shuttle_construct-3, visible: true}
-          4: { state: shuttle_construct-4, visible: true}
-          5: { state: shuttle_construct-5, visible: true}
-  - type: Reflect
-    reflectProb: 1
-  # START OF UMBRA ADDITIONS
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: StructuralMetallicStrong
@@ -858,21 +832,41 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: StaticPrice
-    price: 150
+    price: 250
   - type: RadiationBlocker
     resistance: 5
-  # END OF UMBRA ADDITIONS
+  - type: Sprite
+    sprite: Structures/Walls/shuttle.rsi
+  - type: Icon
+    sprite: Structures/Walls/shuttle.rsi
+    state: full
+  - type: Construction
+    graph: Girder
+    node: shuttleWall
+  - type: IconSmooth
+    key: walls
+    base: state
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ShuttleWallVisuals.DeconstructionStage:
+        ShuttleWallVisualLayers.Deconstruction:
+          -1: { visible: false }
+          0: { state: shuttle_construct-0, visible: true}
+          1: { state: shuttle_construct-1, visible: true}
+          2: { state: shuttle_construct-2, visible: true}
+          3: { state: shuttle_construct-3, visible: true}
+          4: { state: shuttle_construct-4, visible: true}
+          5: { state: shuttle_construct-5, visible: true}
+  - type: Reflect
+    reflectProb: 1
 
 - type: entity
-  parent: BaseWall # Umbra: Parent off of BaseWall instead of WallSolid to prevent roundstart wall variation from applying.
+  parent: BaseWall
   id: WallShuttleInterior
   name: shuttle wall
   suffix: Interior
   components:
-  # START OF UMBRA ADDITIONS
-  - type: Tag
-    tags:
-      - Wall
   - type: RCDDeconstructable
     cost: 6
     delay: 8
@@ -899,7 +893,6 @@
         node: girder
       - !type:DoActsBehavior
         acts: ["Destruction"]
-  # END OF UMBRA ADDITIONS
   - type: Sprite
     sprite: Structures/Walls/shuttleinterior.rsi
   - type: Icon
@@ -1151,7 +1144,7 @@
 - type: entity
   parent: BaseWall
   id: WallMining
-  name: wall
+  name: mining wall
   components:
   - type: Tag
     tags:
@@ -1180,7 +1173,7 @@
 - type: entity
   parent: WallShuttleDiagonal
   id: WallMiningDiagonal
-  name: wall
+  name: mining wall
   suffix: diagonal
   placement:
     mode: SnapgridCenter

@@ -61,10 +61,12 @@ namespace Content.IntegrationTests.Tests
             "Core",
             "Marathon",
             "MeteorArena",
+            "Saltern",
             "Atlas",
             "Reach",
             "Train",
             "Oasis",
+            "Cog",
             "Xeno"
         };
 
