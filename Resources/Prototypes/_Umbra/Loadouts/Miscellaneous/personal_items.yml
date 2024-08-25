@@ -118,6 +118,21 @@
     back:
     - ClothingHeadsetErisAid
 
+# Esther's nia plushie
+- type: loadout
+  id: PlushieNia
+  equipment: PlushieNia
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Esther Scarlet
+
+- type: startingGear
+  id: PlushieNia
+  storage:
+    back:
+    - PlushieNia
+
 # Frosty winter coat
 - type: loadout
   id: FrostCoat
@@ -282,6 +297,21 @@
   storage:
     back:
     - PlushieMaple
+
+# Nia's esther plushie
+- type: loadout
+  id: PlushieEsther
+  equipment: PlushieEsther
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Nia Noctis
+
+- type: startingGear
+  id: PlushieEsther
+  storage:
+    back:
+    - PlushieEsther
 
 # Oliver's oliver's plushie
 - type: loadout

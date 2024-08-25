@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Modified plushie_moth.png sprite by Onenineone from https://github.com/space-wizards/space-station-14/blob/master/Resources/Textures/Objects/Fun/toys.rsi/plushie_moth.png",
+    "size": {
+      "x": 32,
+      "y": 32
+    },
+    "states": [
+      {
+        "name": "plushie_nia"
+      }
+    ]
+  }
