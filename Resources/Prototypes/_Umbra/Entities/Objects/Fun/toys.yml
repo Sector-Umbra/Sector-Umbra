@@ -130,7 +130,7 @@
   parent: PlushieMoth
   id: PlushieNia
   name: nia plushie
-  description: A plushie depicting Nia Noctis! It's very fuzzy and soft. There is a very subtle pout on it's face...
+  description: A plushie depicting Nia Noctis! It's very fuzzy and soft. There is a very subtle pout on its face...
   suffix: PersonalItem
   components:
   - type: Sprite
