@@ -9,7 +9,8 @@
 
 - type: loadout
   id: OffDutyPDA
-  equipment: OffDutyPDA
+  equipment: 
+    id: OffDutyPDA
 
 - type: startingGear
   id: OffDutyPDA
