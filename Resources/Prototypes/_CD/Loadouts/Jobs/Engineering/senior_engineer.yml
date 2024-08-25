@@ -1,7 +1,8 @@
 # Jumpsuit
 - type: loadout
   id: SeniorEngineerJumpsuit
-  equipment: SeniorEngineerJumpsuit
+  equipment:
+    jumpsuit: SeniorEngineerJumpsuit
 
 - type: startingGear
   id: SeniorEngineerJumpsuit

@@ -1,7 +1,8 @@
 # Outerclothing
 - type: loadout
   id: JensonCoat
-  equipment: JensonCoat
+  equipment:
+    outerClothing: JensonCoat
 
 - type: startingGear
   id: JensonCoat
@@ -10,7 +11,8 @@
 
 - type: loadout
   id: InspectorCoat
-  equipment: InspectorCoat
+  equipment:
+    outerClothing: InspectorCoat
 
 - type: startingGear
   id: InspectorCoat
@@ -19,7 +21,8 @@
 
 - type: loadout
   id: TrenchCoat
-  equipment: TrenchCoat
+  equipment:
+    outerClothing: TrenchCoat
 
 - type: startingGear
   id: TrenchCoat
@@ -29,7 +32,8 @@
 # Gloves
 - type: loadout
   id: BlackGloves
-  equipment: BlackGloves
+  equipment:
+    gloves: BlackGloves
 
 - type: startingGear
   id: BlackGloves
@@ -39,7 +43,8 @@
 # Shoes
 - type: loadout
   id: Jackboots
-  equipment: Jackboots
+  equipment:
+    shoes: Jackboots
 
 - type: startingGear
   id: Jackboots
@@ -48,7 +53,8 @@
 
 - type: loadout
   id: LaceupShoes
-  equipment: LaceupShoes
+  equipment:
+    shoes: LaceupShoes
 
 - type: startingGear
   id: LaceupShoes
@@ -57,7 +63,8 @@
 
 - type: loadout
   id: LeatherShoes
-  equipment: LeatherShoes
+  equipment:
+    shoes: LeatherShoes
 
 - type: startingGear
   id: LeatherShoes
@@ -77,7 +84,8 @@
 
 - type: loadout
   id: Aviators
-  equipment: Aviators
+  equipment:
+    eyes: Aviators
 
 - type: startingGear
   id: Aviators

@@ -1,6 +1,7 @@
 - type: loadout
   id: EyesGlassesSecurity
-  equipment: EyesGlassesSecurity
+  equipment:
+    eyes: EyesGlassesSecurity
 
 - type: startingGear
   id: EyesGlassesSecurity

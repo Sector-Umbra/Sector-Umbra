@@ -15,7 +15,8 @@
 #Borgs' Beret
 - type: loadout
   id: ClothingHeadBorgsBeret
-  equipment: ClothingHeadBorgsBeret
+  equipment:
+    back: ClothingHeadBorgsBeret
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -30,7 +31,8 @@
 #Borgs' Scarf
 - type: loadout
   id: ClothingNeckBorgsScarf
-  equipment: ClothingNeckBorgsScarf
+  equipment:
+    back: ClothingNeckBorgsScarf
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -45,7 +47,8 @@
 # Chance's Carp Suit
 - type: loadout
   id: ClothingUniformJumpsuitCarpSuit
-  equipment:  ClothingUniformJumpsuitCarpSuit
+  equipment:  
+    back: ClothingUniformJumpsuitCarpSuit
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -60,7 +63,8 @@
 # Deeja's artifact necklace
 - type: loadout
   id: ClothingNeckArtifactNecklace
-  equipment: ClothingNeckArtifactNecklace
+  equipment: 
+    back: ClothingNeckArtifactNecklace
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -75,7 +79,8 @@
 # Deeja's Jasmi-Wujeeta plushie
 - type: loadout
   id: PlushieJasmi
-  equipment: PlushieJasmi
+  equipment:
+    back: PlushieJasmi
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -91,7 +96,8 @@
 # Eris' Plushie
 - type: loadout
   id: PlushieEris
-  equipment: PlushieEris
+  equipment: 
+    back: PlushieEris
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -106,7 +112,8 @@
 # Eris' Hearing-Aid
 - type: loadout
   id: ClothingHeadsetErisAid
-  equipment: ClothingHeadsetErisAid
+  equipment:
+    back: ClothingHeadsetErisAid
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -121,7 +128,8 @@
 # Frosty winter coat
 - type: loadout
   id: FrostCoat
-  equipment: FrostCoat
+  equipment:
+    back: FrostCoat
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -136,7 +144,8 @@
 # Fateseeker's gemstone
 - type: loadout
   id: FateseekersGemstone
-  equipment: FateseekersGemstone
+  equipment: 
+    back: FateseekersGemstone
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -151,7 +160,8 @@
 # Hush's pendant
 - type: loadout
   id: ClothingNeckHushPendant
-  equipment: ClothingNeckHushPendant
+  equipment: 
+    back: ClothingNeckHushPendant
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -166,7 +176,8 @@
 # Jalopy's reinforced raincoat
 - type: loadout
   id: ClothingOuterCoatReinforcedRaincoat
-  equipment: ClothingOuterCoatReinforcedRaincoat
+  equipment: 
+    back: ClothingOuterCoatReinforcedRaincoat
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -181,7 +192,8 @@
 # Jasmi's hairflower
 - type: loadout
   id: ClothingHeadHatRainbowFlowerJasmi
-  equipment: ClothingHeadHatRainbowFlowerJasmi
+  equipment: 
+    head: ClothingHeadHatRainbowFlowerJasmi
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -196,7 +208,8 @@
 # Jotty's Pet Rock
 - type: loadout
   id: PetRockBobby
-  equipment: PetRockBobby
+  equipment:
+    back: PetRockBobby
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -211,7 +224,8 @@
 # Jasmi's Deeja-Wujeeta plushie
 - type: loadout
   id: PlushieDeeja
-  equipment: PlushieDeeja
+  equipment:
+    back: PlushieDeeja
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -226,7 +240,8 @@
 # John Armstrong's Juniper Armstrong plushie
 - type: loadout
   id: PlushieJuniper
-  equipment: PlushieJuniper
+  equipment:
+    back: PlushieJuniper
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -241,7 +256,8 @@
 # Loops' bell collar
 - type: loadout
   id: ClothingNeckLoopsBellCollar
-  equipment: ClothingNeckLoopsBellCollar
+  equipment:
+    back: ClothingNeckLoopsBellCollar
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -256,7 +272,8 @@
 # Miles' flower braid
 - type: loadout
   id: ClothingHeadHatFlowerBraidGeorgia
-  equipment: ClothingHeadHatFlowerBraidGeorgia
+  equipment:
+    head: ClothingHeadHatFlowerBraidGeorgia
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -271,7 +288,8 @@
 # Nashira-Najma's maple moondancer plushie
 - type: loadout
   id: PlushieMaple
-  equipment: PlushieMaple
+  equipment:
+    back: PlushieMaple
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -286,7 +304,8 @@
 # Oliver's oliver's plushie
 - type: loadout
   id: PlushieOliver
-  equipment: PlushieOliver
+  equipment:
+    back: PlushieOliver
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -301,7 +320,8 @@
 # Nova's Jacket
 - type: loadout
   id: ClothingOuterGalaxyCoat
-  equipment: ClothingOuterGalaxyCoat
+  equipment:
+    back: ClothingOuterGalaxyCoat
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -316,7 +336,8 @@
 # Reading's reading glasses
 - type: loadout
   id: ClothingEyesReadingGlasses
-  equipment: ClothingEyesReadingGlasses
+  equipment:
+    back: ClothingEyesReadingGlasses
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -331,7 +352,8 @@
 # Rye's tie
 - type: loadout
   id: ClothingNeckRyeTie
-  equipment: ClothingNeckRyeTie
+  equipment:
+    back: ClothingNeckRyeTie
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -346,7 +368,8 @@
 # Sereketh's Ocean coat
 - type: loadout
   id: Oceancoat
-  equipment: Oceancoat
+  equipment: 
+    back: Oceancoat
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -361,7 +384,8 @@
 # Smoke's Heart Plushie
 - type: loadout
   id: PlushieHeart
-  equipment: PlushieHeart
+  equipment: 
+    back: PlushieHeart
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -376,7 +400,8 @@
 # Vesper's vesper plushie
 - type: loadout
   id: PlushieVesper
-  equipment: PlushieVesper
+  equipment: 
+    back: PlushieVesper
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -391,7 +416,8 @@
 # Welds' synthetic chew fidget
 - type: loadout
   id: ClothingNeckChewtoy
-  equipment: ClothingNeckChewtoy
+  equipment:
+    back: ClothingNeckChewtoy
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -406,7 +432,8 @@
 # Welds' RIG
 - type: loadout
   id: ClothingShoesMiscWeldsWalker
-  equipment: ClothingShoesMiscWeldsWalker
+  equipment:
+    back: ClothingShoesMiscWeldsWalker
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -421,7 +448,8 @@
 # Wipes' friend medal
 - type: loadout
   id: ClothingNeckWipesFriendMedal
-  equipment: ClothingNeckWipesFriendMedal
+  equipment:
+    back: ClothingNeckWipesFriendMedal
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -436,7 +464,8 @@
 # Yarna's armoured winter coat
 - type: loadout
   id: ClothingOuterYarnaArmourCoat
-  equipment: ClothingOuterYarnaArmourCoat
+  equipment: 
+    outerClothing: ClothingOuterYarnaArmourCoat
   effects:
   - !type:PersonalItemLoadoutEffect
     character:

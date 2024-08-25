@@ -1,6 +1,7 @@
 - type: loadout
   id: PassengerPDA
-  equipment: PassengerPDA
+  equipment:
+    id: PassengerPDA
 
 - type: startingGear
   id: PassengerPDA
