@@ -39,7 +39,6 @@
             MedicalDoctor: [ 6, 6 ]
             Psychologist: [ 1, 1 ]
             MedicalIntern: [ 1, 2 ]
-            Psychologist: [ 1, 1 ] # Umbra
             #science
             ResearchDirector: [ 1, 1 ]
             Scientist: [ 6, 6 ]
