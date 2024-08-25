@@ -9,22 +9,7 @@
   components:
   - type: Sprite
     state: plushie_maple
-    sprite: _Umbra/Objects/Fun/toys.rsi
-  - type: EmitSoundOnUse
-    sound:
-      path: /Audio/Voice/Moth/moth_squeak.ogg
-  - type: EmitSoundOnLand
-    sound:
-      path: /Audio/Voice/Moth/moth_squeak.ogg
-  - type: EmitSoundOnActivate
-    sound:
-      path: /Audio/Voice/Moth/moth_squeak.ogg
-  - type: EmitSoundOnTrigger
-    sound:
-      path: /Audio/Voice/Moth/moth_squeak.ogg
-  - type: MeleeWeapon
-    soundHit:
-      path: /Audio/Voice/Moth/moth_squeak.ogg
+    sprite: _Umbra/Objects/Fun/Toys/plushie_maple_mooondancer.rsi
 
 # Player: PolarTundra - Character: Vesper
 - type: entity
@@ -36,7 +21,7 @@
   components:
   - type: Sprite
     state: plushie_vesper
-    sprite: _Umbra/Objects/Fun/toys.rsi
+    sprite: _Umbra/Objects/Fun/Toys/plushie_vesper.rsi
 
 # Player: lemonrat - Character: Oliver Cambridge
 - type: entity
@@ -48,7 +33,7 @@
   components:
   - type: Sprite
     state: plushie_oliver
-    sprite: _Umbra/Objects/Fun/toys.rsi
+    sprite: _Umbra/Objects/Fun/Toys/plushie_oliver.rsi
 
 # Players: foob - Character: Jasmi-Wujeeta
 - type: entity
@@ -60,10 +45,10 @@
   components:
   - type: Sprite
     state: plushie_deeja
-    sprite: _Umbra/Objects/Fun/toys.rsi
+    sprite: _Umbra/Objects/Fun/Toys/plushie_deeja.rsi
   - type: Clothing
     quickEquip: false
-    sprite: _Umbra/Objects/Fun/toys.rsi
+    sprite: _Umbra/Objects/Fun/Toys/plushie_deeja.rsi
     equippedPrefix: deeja
     slots:
     - HEAD
@@ -78,10 +63,10 @@
   components:
   - type: Sprite
     state: plushie_jasmi
-    sprite: _Umbra/Objects/Fun/toys.rsi
+    sprite: _Umbra/Objects/Fun/Toys/plushie_jasmi.rsi
   - type: Clothing
     quickEquip: false
-    sprite: _Umbra/Objects/Fun/toys.rsi
+    sprite: _Umbra/Objects/Fun/Toys/plushie_jasmi.rsi
     equippedPrefix: jasmi
     slots:
     - HEAD
@@ -96,7 +81,7 @@
   components:
   - type: Sprite
     state: plushie_eris
-    sprite: _Umbra/Objects/Fun/toys.rsi
+    sprite: _Umbra/Objects/Fun/Toys/plushie_eris.rsi
 
 # Players: MrGreen - Character: John Armstrong
 - type: entity
@@ -108,10 +93,22 @@
   components:
   - type: Sprite
     state: plushie_juniper
-    sprite: _Umbra/Objects/Fun/toys.rsi
+    sprite: _Umbra/Objects/Fun/Toys/plushie_juniper.rsi
   - type: Clothing
     quickEquip: false
-    sprite: _Umbra/Objects/Fun/toys.rsi
+    sprite: _Umbra/Objects/Fun/Toys/plushie_juniper.rsi
     equippedPrefix: juniper
     slots:
     - HEAD
+
+# Players: countrynerds - Character: Smoke Phillips
+- type: entity
+  parent: BasePlushie
+  id: PlushieHeart
+  name: smoke phillips' heart plushie
+  description: A well worn and well carried plushie depicting an anatomical heart on top of it's cartoon heart shape. A signature is embroided into it reading "Rebecca Phillips"
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: heart_plushie
+    sprite: _Umbra/Objects/Fun/Toys/plushie_heart.rsi
