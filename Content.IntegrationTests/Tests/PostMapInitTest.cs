@@ -56,7 +56,6 @@ namespace Content.IntegrationTests.Tests
             "Origin",
             "CentComm",
             "Box",
-            "Europa",
             "Saltern",
             "Core",
             "Marathon",
