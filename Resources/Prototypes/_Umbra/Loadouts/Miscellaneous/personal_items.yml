@@ -447,3 +447,18 @@
   storage:
     back:
     - ClothingOuterYarnaArmourCoat
+
+# Gar's ripped sweatpants
+- type: loadout
+  id: ClothingUniformJumpsuitSweatpants
+  equipment:  ClothingUniformJumpsuitSweatpants
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Gar-Tei
+
+- type: startingGear
+  id: ClothingUniformJumpsuitSweatpants
+  storage:
+    back:
+    - ClothingUniformJumpsuitSweatpants
