@@ -42,6 +42,7 @@
             MedicalIntern: [ 2, 2 ]
             Paramedic: [ 1, 2 ]
             SeniorPhysician: [ 1, 1 ]
+            Psychologist: [ 1, 1 ] # Umbra
             #science
             ResearchDirector: [ 1, 1 ]
             Scientist: [ 2, 2 ]

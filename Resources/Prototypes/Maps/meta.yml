@@ -37,6 +37,7 @@
             MedicalDoctor: [ 5, 5 ]
             MedicalIntern: [ 3, 6 ]
             Paramedic: [ 1, 1 ]
+            Psychologist: [ 1, 1 ] # Umbra
             #science
             ResearchDirector: [ 1, 1 ]
             Scientist: [ 5, 7 ]
