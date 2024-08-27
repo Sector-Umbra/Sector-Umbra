@@ -193,6 +193,21 @@
     back:
     - ClothingHeadHatRainbowFlowerJasmi
 
+# Johan's Codex
+- type: loadout
+  id: JohansCodex
+  equipment: JohansCodex
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character: 
+    - Johan Ullman
+
+- type: startingGear
+  id: JohansCodex
+  storage:
+    back:
+    - JohansCodex
+
 # Jotty's Pet Rock
 - type: loadout
   id: PetRockBobby
