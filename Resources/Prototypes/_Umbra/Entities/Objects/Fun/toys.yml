@@ -112,3 +112,15 @@
   - type: Sprite
     state: heart_plushie
     sprite: _Umbra/Objects/Fun/Toys/plushie_heart.rsi
+
+# Players: Jacketed - Character: Defenestrates-The-Dragon
+- type: entity
+  parent: PlushieRainbowCarp
+  id: PlushieDragonCarp
+  name: Dragon's Loyal Carp Plushie
+  description: An adorable stuffed toy resembling the legendary rainbow carp. It seems to have a few claws marks etched on the side spelling "Dragon".
+  suffix: PersonalItem
+  components:
+  - type: PointLight
+    radius: 1.05 # Light to be 1/10th of PDA light.
+    energy: 2
