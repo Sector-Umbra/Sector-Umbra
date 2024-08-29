@@ -112,3 +112,21 @@
   - type: Sprite
     state: heart_plushie
     sprite: _Umbra/Objects/Fun/Toys/plushie_heart.rsi
+
+# Players: VividWisp - Character: Serendipity Bluewing
+- type: entity
+  parent: BasePlushie
+  id: SerenPlushie
+  name: seren plushie
+  description: A plushie depicting the anomaly spawning Serendipity Bluewing. If you listen closely you might hear an anomaly pulse.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_seren
+    sprite: _Umbra/Objects/Fun/Toys/plushie_seren.rsi
+#  - type: Clothing
+#    quickEquip: false
+#    sprite: _Umbra/Objects/Fun/Toys/plushie_seren.rsi
+#    equippedPrefix: seren
+#    slots:
+#    - HEAD
