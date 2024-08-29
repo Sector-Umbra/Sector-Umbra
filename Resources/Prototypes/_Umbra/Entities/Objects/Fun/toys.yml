@@ -118,7 +118,7 @@
   parent: PlushieRainbowCarp
   id: PlushieDragonCarp
   name: dragon's loyal carp plushie
-  description: An adorable stuffed toy resembling the legendary rainbow carp. It seems to have a few claws marks etched on the side spelling "Dragon".
+  description: An adorable stuffed toy resembling the legendary rainbow carp. It has various teeth and claw marks on it accompanied by stitches. The stitches spell out a word "Dragon".
   suffix: PersonalItem
   components:
   - type: PointLight
