@@ -117,7 +117,7 @@
 - type: entity
   parent: PlushieRainbowCarp
   id: PlushieDragonCarp
-  name: Dragon's Loyal Carp Plushie
+  name: dragon' loyal carp plushie
   description: An adorable stuffed toy resembling the legendary rainbow carp. It seems to have a few claws marks etched on the side spelling "Dragon".
   suffix: PersonalItem
   components:
