@@ -8,7 +8,11 @@
     },
     "states": [
       {
-        "name": "plushie_seren"
+        "name": "plushie_serendipity"
+      },
+      {
+        "name": "serendipity-equipped-HELMET",
+        "directions": 4
       }
     ]
   }

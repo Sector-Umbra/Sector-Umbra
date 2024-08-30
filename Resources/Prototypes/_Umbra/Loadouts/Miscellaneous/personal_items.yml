@@ -462,3 +462,18 @@
   storage:
     back:
     - ClothingOuterYarnaArmourCoat
+
+# Serendipity Bluewing's plushie
+- type: loadout
+  id: SerendipityPlushie
+  equipment: SerendipityPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Serendipity Bluewing
+
+- type: startingGear
+  id: SerendipityPlushie
+  storage:
+    back:
+    - SerendipityPlushie
