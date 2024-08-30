@@ -463,17 +463,17 @@
     back:
     - ClothingOuterYarnaArmourCoat
 
-# Serendipity Bluewing's plushie
+# Kai's plushie
 - type: loadout
-  id: SerendipityPlushie
-  equipment: SerendipityPlushie
+  id: KaiPlushie
+  equipment: KaiPlushie
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
-    - Serendipity Bluewing
+    - Kai
 
 - type: startingGear
-  id: SerendipityPlushie
+  id: KaiPlushie
   storage:
     back:
-    - SerendipityPlushie
+    - KaiPlushie

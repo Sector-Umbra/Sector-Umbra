@@ -113,20 +113,20 @@
     state: heart_plushie
     sprite: _Umbra/Objects/Fun/Toys/plushie_heart.rsi
 
-# Players: VividWisp - Character: Serendipity Bluewing
+# Players: Coolsurf6 - Character: Kai
 - type: entity
   parent: BasePlushie
-  id: SerendipityPlushie
-  name: serendipity plushie
-  description: A plushie depicting the anomaly spawning Serendipity Bluewing. If you listen closely you might hear an anomaly pulse.
+  id: KaiPlushie
+  name: kai plushie
+  description: A custom made lizard plushie belonging to Kai. No one knows where this came from or why it exists. Putting your ear to it, you can almost hear it say "Goober..."
   suffix: PersonalItem
   components:
   - type: Sprite
-    state: plushie_serendipity
-    sprite: _Umbra/Objects/Fun/Toys/plushie_serendipity.rsi
+    state: plushie_kai
+    sprite: _Umbra/Objects/Fun/Toys/plushie_kai.rsi
   - type: Clothing
     quickEquip: false
-    sprite: _Umbra/Objects/Fun/Toys/plushie_serendipity.rsi
-    equippedPrefix: serendipity
+    sprite: _Umbra/Objects/Fun/Toys/plushie_kai.rsi
+    equippedPrefix: kai
     slots:
     - HEAD

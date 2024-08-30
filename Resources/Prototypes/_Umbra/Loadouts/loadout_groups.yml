@@ -41,7 +41,7 @@
   - ClothingNeckHushPendant
   - Oceancoat
   - PlushieHeart
-  - SerendipityPlushie
+  - KaiPlushie
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -79,7 +79,7 @@
   - ClothingNeckHushPendant
   - Oceancoat
   - PlushieHeart
-  - SerendipityPlushie
+  - KaiPlushie
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -116,4 +116,4 @@
   - ClothingNeckHushPendant
   - Oceancoat
   - PlushieHeart
-  - SerendipityPlushie
+  - KaiPlushie
