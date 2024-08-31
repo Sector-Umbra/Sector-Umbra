@@ -1,0 +1,8 @@
+- type: entity
+  name: WT550
+  suffix: Empty
+  parent: WeaponSubMachineGunWt550
+  id: WeaponSubMachineGunWt550Empty
+  components:
+  - type: BallisticAmmoProvider
+    proto: null

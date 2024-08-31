@@ -1,0 +1,8 @@
+- type: entity
+  name: Lecter
+  suffix: Empty
+  parent: WeaponRifleLecter
+  id: WeaponRifleLecterEmpty
+  components:
+  - type: BallisticAmmoProvider
+    proto: null

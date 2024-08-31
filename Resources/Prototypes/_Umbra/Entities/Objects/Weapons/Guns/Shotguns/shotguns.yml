@@ -1,0 +1,17 @@
+- type: entity
+  name: Enforcer
+  suffix: Empty
+  parent: WeaponShotgunEnforcer
+  id: WeaponShotgunEnforcerEmpty
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+- type: entity
+  name: Kammerer [Empty]
+  suffix: Empty
+  parent: WeaponShotgunKammerer
+  id: WeaponShotgunKammererEmpty
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
