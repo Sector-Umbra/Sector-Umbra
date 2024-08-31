@@ -113,6 +113,30 @@
     state: heart_plushie
     sprite: _Umbra/Objects/Fun/Toys/plushie_heart.rsi
 
+# Player: Onenineone - Character: Esther Scarlet
+- type: entity
+  parent: PlushieMoth
+  id: PlushieEsther
+  name: esther plushie
+  description: A plushie depicting Esther Scarlet! It smells of a bad attitude and edginess... Looks grumpy as well!
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_esther
+    sprite: _Umbra/Objects/Fun/Toys/plushie_esther.rsi
+
+# Player: raindrops - Character: Nia Noctis
+- type: entity
+  parent: PlushieMoth
+  id: PlushieNia
+  name: nia plushie
+  description: A plushie depicting Nia Noctis! It's very fuzzy and soft. There is a very subtle pout on its face...
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_nia
+    sprite: _Umbra/Objects/Fun/Toys/plushie_nia.rsi
+
 # Players: Jacketed - Character: Defenestrates-The-Dragon
 - type: entity
   parent: PlushieRainbowCarp
