@@ -29,6 +29,7 @@
   - ClothingNeckWipesFriendMedal
   - FateseekersGemstone
   - ClothingUniformJumpsuitCarpSuit
+  - ClothingUniformJumpsuitSweatpants
   - ClothingNeckRyeTie
   - ClothingHeadHatRainbowFlowerJasmi
   - ClothingHeadBorgsBeret
@@ -41,7 +42,10 @@
   - ClothingNeckHushPendant
   - Oceancoat
   - PlushieHeart
+  - PlushieNia
+  - PlushieEsther
   - KaiPlushie
+
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -67,6 +71,7 @@
   - ClothingOuterYarnaArmourCoat
   - FateseekersGemstone
   - ClothingUniformJumpsuitCarpSuit
+  - ClothingUniformJumpsuitSweatpants
   - ClothingNeckRyeTie
   - ClothingHeadHatRainbowFlowerJasmi
   - ClothingHeadBorgsBeret
@@ -105,6 +110,7 @@
   - ClothingNeckWipesFriendMedal
   - FateseekersGemstone
   - ClothingUniformJumpsuitCarpSuit
+  - ClothingUniformJumpsuitSweatpants
   - ClothingNeckRyeTie
   - ClothingHeadHatRainbowFlowerJasmi
   - ClothingHeadBorgsBeret
