@@ -44,6 +44,7 @@
   - PlushieHeart
   - PlushieNia
   - PlushieEsther
+  - PlushieDragonCarp
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -82,6 +83,9 @@
   - ClothingNeckHushPendant
   - Oceancoat
   - PlushieHeart
+  - PlushieNia
+  - PlushieEsther
+  - PlushieDragonCarp
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -119,3 +123,6 @@
   - ClothingNeckHushPendant
   - Oceancoat
   - PlushieHeart
+  - PlushieNia
+  - PlushieEsther
+  - PlushieDragonCarp

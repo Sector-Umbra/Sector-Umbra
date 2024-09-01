@@ -507,3 +507,18 @@
   storage:
     back:
     - ClothingUniformJumpsuitSweatpants
+
+# Jacketed's dragon carp plushie
+- type: loadout
+  id: PlushieDragonCarp
+  equipment: PlushieDragonCarp
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Defenestrates-The-Dragon
+
+- type: startingGear
+  id: PlushieDragonCarp
+  storage:
+    back:
+    - PlushieDragonCarp
