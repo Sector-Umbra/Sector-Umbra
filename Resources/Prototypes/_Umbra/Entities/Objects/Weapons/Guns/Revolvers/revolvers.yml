@@ -7,5 +7,6 @@
   parent: WeaponRevolverInspector
   id: WeaponRevolverInspectorEmpty
   components:
-  - type: BallisticAmmoProvider
-    proto: null
+  - type: RevolverAmmoProvider
+      chambers: [ False, False, False, False, False, False ]
+      ammoSlots: [ null, null, null, null, null, null ]
