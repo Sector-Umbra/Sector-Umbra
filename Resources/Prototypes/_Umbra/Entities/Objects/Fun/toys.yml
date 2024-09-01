@@ -139,7 +139,7 @@
 
 # Players: Coolsurf6 - Character: Kai
 - type: entity
-  parent: BasePlushie
+  parent: PlushieLizard
   id: KaiPlushie
   name: kai plushie
   description: A custom made lizard plushie belonging to Kai. No one knows where this came from or why it exists. Putting your ear to it, you can almost hear it say "Goober..."
