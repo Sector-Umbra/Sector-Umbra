@@ -118,6 +118,21 @@
     back:
     - ClothingHeadsetErisAid
 
+# Esther's nia plushie
+- type: loadout
+  id: PlushieNia
+  equipment: PlushieNia
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Esther Scarlet
+
+- type: startingGear
+  id: PlushieNia
+  storage:
+    back:
+    - PlushieNia
+
 # Frosty winter coat
 - type: loadout
   id: FrostCoat
@@ -298,6 +313,21 @@
     back:
     - PlushieMaple
 
+# Nia's esther plushie
+- type: loadout
+  id: PlushieEsther
+  equipment: PlushieEsther
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Nia Noctis
+
+- type: startingGear
+  id: PlushieEsther
+  storage:
+    back:
+    - PlushieEsther
+
 # Oliver's oliver's plushie
 - type: loadout
   id: PlushieOliver
@@ -462,6 +492,36 @@
   storage:
     back:
     - ClothingOuterYarnaArmourCoat
+
+# Gar's ripped sweatpants
+- type: loadout
+  id: ClothingUniformJumpsuitSweatpants
+  equipment:  ClothingUniformJumpsuitSweatpants
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Gar-Tei
+
+- type: startingGear
+  id: ClothingUniformJumpsuitSweatpants
+  storage:
+    back:
+    - ClothingUniformJumpsuitSweatpants
+
+# Jacketed's dragon carp plushie
+- type: loadout
+  id: PlushieDragonCarp
+  equipment: PlushieDragonCarp
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Defenestrates-The-Dragon
+
+- type: startingGear
+  id: PlushieDragonCarp
+  storage:
+    back:
+    - PlushieDragonCarp
 
 # Serendipity Bluewing's plushie
 - type: loadout
