@@ -537,3 +537,18 @@
   storage:
     back:
     - SerendipityPlushie
+
+# Kai's plushie
+- type: loadout
+  id: KaiPlushie
+  equipment: KaiPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Kai
+
+- type: startingGear
+  id: KaiPlushie
+  storage:
+    back:
+    - KaiPlushie

@@ -46,6 +46,7 @@
   - PlushieEsther
   - PlushieDragonCarp
   - SerendipityPlushie
+  - KaiPlushie
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -88,6 +89,7 @@
   - PlushieEsther
   - PlushieDragonCarp
   - SerendipityPlushie
+  - KaiPlushie
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -129,3 +131,4 @@
   - PlushieEsther
   - PlushieDragonCarp
   - SerendipityPlushie
+  - KaiPlushie
