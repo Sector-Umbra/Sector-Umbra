@@ -148,3 +148,20 @@
   - type: PointLight
     radius: 1.05 # Light to be 1/10th of PDA light.
     energy: 2
+
+- type: entity
+  parent: PlushieMoth
+  id: SerendipityPlushie
+  name: serendipity plushie
+  description: A plushie depicting the anomaly spawning Serendipity Bluewing. If you listen closely you might hear an anomaly pulse.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_serendipity
+    sprite: _Umbra/Objects/Fun/Toys/plushie_serendipity.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_serendipity.rsi
+    equippedPrefix: serendipity
+    slots:
+    - HEAD
