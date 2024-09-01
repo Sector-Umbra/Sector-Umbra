@@ -44,8 +44,9 @@
   - PlushieHeart
   - PlushieNia
   - PlushieEsther
+  - PlushieDragonCarp
+  - SerendipityPlushie
   - KaiPlushie
-
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -84,7 +85,12 @@
   - ClothingNeckHushPendant
   - Oceancoat
   - PlushieHeart
+  - PlushieNia
+  - PlushieEsther
+  - PlushieDragonCarp
+  - SerendipityPlushie
   - KaiPlushie
+
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -122,4 +128,8 @@
   - ClothingNeckHushPendant
   - Oceancoat
   - PlushieHeart
+  - PlushieNia
+  - PlushieEsther
+  - PlushieDragonCarp
+  - SerendipityPlushie
   - KaiPlushie

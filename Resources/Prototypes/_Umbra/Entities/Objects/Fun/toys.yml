@@ -137,7 +137,36 @@
     state: plushie_nia
     sprite: _Umbra/Objects/Fun/Toys/plushie_nia.rsi
 
-# Players: Coolsurf6 - Character: Kai
+# Players: Jacketed - Character: Defenestrates-The-Dragon
+- type: entity
+  parent: PlushieRainbowCarp
+  id: PlushieDragonCarp
+  name: dragon's loyal carp plushie
+  description: An adorable stuffed toy resembling the legendary rainbow carp. It has various teeth and claw marks on it accompanied by stitches. The stitches spell out a word "Dragon".
+  suffix: PersonalItem
+  components:
+  - type: PointLight
+    radius: 1.05 # Light to be 1/10th of PDA light.
+    energy: 2
+
+- type: entity
+  parent: PlushieMoth
+  id: SerendipityPlushie
+  name: serendipity plushie
+  description: A plushie depicting the anomaly spawning Serendipity Bluewing. If you listen closely you might hear an anomaly pulse.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_serendipity
+    sprite: _Umbra/Objects/Fun/Toys/plushie_serendipity.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_serendipity.rsi
+    equippedPrefix: serendipity
+    slots:
+    - HEAD
+    
+    # Players: Coolsurf6 - Character: Kai
 - type: entity
   parent: PlushieLizard
   id: KaiPlushie
@@ -152,5 +181,3 @@
     quickEquip: false
     sprite: _Umbra/Objects/Fun/Toys/plushie_kai.rsi
     equippedPrefix: kai
-    slots:
-    - HEAD
