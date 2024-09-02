@@ -11,7 +11,7 @@
 - type: loadout
   id: PrisonerJumpsuit
   equipment:
-    jumpsuit: PrisonerJumpsuit
+    jumpsuit: ClothingUniformJumpsuitPrisoner
 
 - type: startingGear
   id: PrisonerJumpsuit
@@ -21,7 +21,7 @@
 - type: loadout
   id: PrisonerJumpskirt
   equipment:
-    jumpsuit: PrisonerJumpskirt
+    jumpsuit: ClothingUniformJumpskirtPrisoner
 
 - type: startingGear
   id: PrisonerJumpskirt

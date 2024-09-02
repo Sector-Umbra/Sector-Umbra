@@ -2,7 +2,7 @@
 - type: loadout
   id: SeniorOfficerJumpsuit
   equipment:
-    jumpsuit: SeniorOfficerJumpsuit
+    jumpsuit: ClothingUniformJumpsuitSeniorOfficer
 
 - type: startingGear
   id: SeniorOfficerJumpsuit
@@ -12,7 +12,7 @@
 - type: loadout
   id: SeniorOfficerJumpskirt
   equipment:
-    jumpsuit: SeniorOfficerJumpskirt
+    jumpsuit: ClothingUniformJumpskirtSeniorOfficer
 
 - type: startingGear
   id: SeniorOfficerJumpskirt

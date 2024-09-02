@@ -2,7 +2,7 @@
 - type: loadout
   id: SeniorEngineerJumpsuit
   equipment:
-    jumpsuit: SeniorEngineerJumpsuit
+    jumpsuit: ClothingUniformJumpsuitSeniorEngineer
 
 - type: startingGear
   id: SeniorEngineerJumpsuit
@@ -12,7 +12,7 @@
 - type: loadout
   id: SeniorEngineerJumpskirt
   equipment: 
-    jumpsuit: SeniorEngineerJumpskirt
+    jumpsuit: ClothingUniformJumpskirtSeniorEngineer
 
 - type: startingGear
   id: SeniorEngineerJumpskirt
