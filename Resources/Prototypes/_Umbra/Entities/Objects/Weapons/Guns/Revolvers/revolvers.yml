@@ -8,5 +8,4 @@
   id: WeaponRevolverInspectorEmpty
   components:
   - type: RevolverAmmoProvider
-      chambers: [ False, False, False, False, False, False ]
-      ammoSlots: [ null, null, null, null, null, null ]
+    proto: null

@@ -8,7 +8,7 @@
     proto: null
 
 - type: entity
-  name: Kammerer [Empty]
+  name: Kammerer
   suffix: Empty
   parent: WeaponShotgunKammerer
   id: WeaponShotgunKammererEmpty
