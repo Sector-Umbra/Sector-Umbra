@@ -29,6 +29,7 @@
   - ClothingNeckWipesFriendMedal
   - FateseekersGemstone
   - ClothingUniformJumpsuitCarpSuit
+  - ClothingUniformJumpsuitSweatpants
   - ClothingNeckRyeTie
   - ClothingHeadHatRainbowFlowerJasmi
   - ClothingHeadBorgsBeret
@@ -43,6 +44,9 @@
   - PlushieHeart
   - PlushieNia
   - PlushieEsther
+  - PlushieDragonCarp
+  - SerendipityPlushie
+  - KaiPlushie
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -68,6 +72,7 @@
   - ClothingOuterYarnaArmourCoat
   - FateseekersGemstone
   - ClothingUniformJumpsuitCarpSuit
+  - ClothingUniformJumpsuitSweatpants
   - ClothingNeckRyeTie
   - ClothingHeadHatRainbowFlowerJasmi
   - ClothingHeadBorgsBeret
@@ -80,6 +85,11 @@
   - ClothingNeckHushPendant
   - Oceancoat
   - PlushieHeart
+  - PlushieNia
+  - PlushieEsther
+  - PlushieDragonCarp
+  - SerendipityPlushie
+  - KaiPlushie
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -105,6 +115,7 @@
   - ClothingNeckWipesFriendMedal
   - FateseekersGemstone
   - ClothingUniformJumpsuitCarpSuit
+  - ClothingUniformJumpsuitSweatpants
   - ClothingNeckRyeTie
   - ClothingHeadHatRainbowFlowerJasmi
   - ClothingHeadBorgsBeret
@@ -116,3 +127,8 @@
   - ClothingNeckHushPendant
   - Oceancoat
   - PlushieHeart
+  - PlushieNia
+  - PlushieEsther
+  - PlushieDragonCarp
+  - SerendipityPlushie
+  - KaiPlushie
