@@ -525,7 +525,8 @@
 # Gar's ripped sweatpants
 - type: loadout
   id: ClothingUniformJumpsuitSweatpants
-  equipment:  ClothingUniformJumpsuitSweatpants
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSweatpants
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
