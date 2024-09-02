@@ -1,0 +1,26 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Made by Boaz1111 for SS14. Recolor and slight modification of the handheld crewmonitor sprite, taken from tgstation https://github.com/tgstation/tgstation/commit/ab4abf318f293a701754656dd4e9261eb70f8824#diff-9ab5c8a5e47ab7cfaeadd859a23e32b05de1fe839e99ea767fd7e340b6385d67",
+    "states": [
+        {
+            "name": "screen",
+            "directions": 1,
+            "delays": [
+                [
+                    1,
+                    1,
+                    1
+                ]
+            ]
+        },
+        {
+            "name": "icon",
+            "directions": 1
+        }
+    ]
+}
