@@ -186,7 +186,7 @@
 - type: entity
   parent: PlushieLizard
   id: GarTeiPlushie
-  name: gartei plushie
+  name: gar-tei plushie
   description: A custom made lizard plushie belonging to Gar-Tei. It carries the comforting scent of metal.
   suffix: PersonalItem
   components:
