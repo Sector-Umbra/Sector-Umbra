@@ -552,3 +552,18 @@
   storage:
     back:
     - KaiPlushie
+
+# Gar-Tei's plushie
+- type: loadout
+  id: GarTeiPlushie
+  equipment: GarTeiPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Gar-Tei
+
+- type: startingGear
+  id: GarTeiPlushie
+  storage:
+    back:
+    - GarTeiPlushie
