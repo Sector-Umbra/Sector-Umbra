@@ -15,555 +15,407 @@
 #Borgs' Beret
 - type: loadout
   id: ClothingHeadBorgsBeret
-  equipment: ClothingHeadBorgsBeret
+  storage:
+    back:
+    - ClothingHeadBorgsBeret
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Borgs-the-Brains
-
-- type: startingGear
-  id: ClothingHeadBorgsBeret
-  storage:
-    back:
-    - ClothingHeadBorgsBeret
 
 #Borgs' Scarf
 - type: loadout
   id: ClothingNeckBorgsScarf
-  equipment: ClothingNeckBorgsScarf
+  storage:
+    back:
+    - ClothingNeckBorgsScarf
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Borgs-the-Brains
 
-- type: startingGear
-  id: ClothingNeckBorgsScarf
-  storage:
-    back:
-    - ClothingNeckBorgsScarf
-
 # Chance's Carp Suit
 - type: loadout
   id: ClothingUniformJumpsuitCarpSuit
-  equipment:  ClothingUniformJumpsuitCarpSuit
+  storage:
+    back:
+    - ClothingUniformJumpsuitCarpSuit
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Chance Boulevard
 
-- type: startingGear
-  id: ClothingUniformJumpsuitCarpSuit
-  storage:
-    back:
-    - ClothingUniformJumpsuitCarpSuit
-
 # Deeja's artifact necklace
 - type: loadout
-  id: ClothingNeckArtifactNecklace
-  equipment: ClothingNeckArtifactNecklace
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Deeja-Wujeeta
-
-- type: startingGear
   id: ClothingNeckArtifactNecklace
   storage:
     back:
     - ClothingNeckArtifactNecklace
-
-# Deeja's Jasmi-Wujeeta plushie
-- type: loadout
-  id: PlushieJasmi
-  equipment: PlushieJasmi
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Deeja-Wujeeta
 
-- type: startingGear
+# Deeja's Jasmi-Wujeeta plushie
+- type: loadout
   id: PlushieJasmi
   storage:
     back:
     - PlushieJasmi
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Deeja-Wujeeta
 
 
 # Eris' Plushie
 - type: loadout
   id: PlushieEris
-  equipment: PlushieEris
+  storage:
+    back:
+    - PlushieEris
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Eris Rose
-
-- type: startingGear
-  id: PlushieEris
-  storage:
-    back:
-    - PlushieEris
 
 # Eris' Hearing-Aid
 - type: loadout
   id: ClothingHeadsetErisAid
-  equipment: ClothingHeadsetErisAid
+  storage:
+    back:
+    - ClothingHeadsetErisAid
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Eris Rose
 
-- type: startingGear
-  id: ClothingHeadsetErisAid
-  storage:
-    back:
-    - ClothingHeadsetErisAid
-
 # Esther's nia plushie
 - type: loadout
   id: PlushieNia
-  equipment: PlushieNia
+  storage:
+    back:
+    - PlushieNia
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Esther Scarlet
 
-- type: startingGear
-  id: PlushieNia
-  storage:
-    back:
-    - PlushieNia
-
 # Frosty winter coat
 - type: loadout
   id: FrostCoat
-  equipment: FrostCoat
+  storage:
+    back:
+    - FrostCoat
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Frostbite-Drago
 
-- type: startingGear
-  id: FrostCoat
-  storage:
-    back:
-    - FrostCoat
-
 # Fateseeker's gemstone
 - type: loadout
   id: FateseekersGemstone
-  equipment: FateseekersGemstone
+  storage:
+    back:
+    - FateseekersGemstone
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Fateseeker
 
-- type: startingGear
-  id: FateseekersGemstone
-  storage:
-    back:
-    - FateseekersGemstone
-
 # Hush's pendant
 - type: loadout
   id: ClothingNeckHushPendant
-  equipment: ClothingNeckHushPendant
+  storage:
+    back:
+    - ClothingNeckHushPendant
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Hush Pallister
 
-- type: startingGear
-  id: ClothingNeckHushPendant
-  storage:
-    back:
-    - ClothingNeckHushPendant
-
 # Jalopy's reinforced raincoat
 - type: loadout
   id: ClothingOuterCoatReinforcedRaincoat
-  equipment: ClothingOuterCoatReinforcedRaincoat
+  storage:
+    back:
+    - ClothingOuterCoatReinforcedRaincoat
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Jalopy Oldman
 
-- type: startingGear
-  id: ClothingOuterCoatReinforcedRaincoat
-  storage:
-    back:
-    - ClothingOuterCoatReinforcedRaincoat
-
 # Jasmi's hairflower
 - type: loadout
   id: ClothingHeadHatRainbowFlowerJasmi
-  equipment: ClothingHeadHatRainbowFlowerJasmi
+  storage:
+    back:
+    - ClothingHeadHatRainbowFlowerJasmi
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Jasmi-Wujeeta
 
-- type: startingGear
-  id: ClothingHeadHatRainbowFlowerJasmi
-  storage:
-    back:
-    - ClothingHeadHatRainbowFlowerJasmi
-
 # Johan's Codex
 - type: loadout
-  id: JohansCodex
-  equipment: JohansCodex
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character: 
-    - Johan Ullman
-
-- type: startingGear
   id: JohansCodex
   storage:
     back:
     - JohansCodex
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Johan Ullman
 
 # Jotty's Pet Rock
 - type: loadout
   id: PetRockBobby
-  equipment: PetRockBobby
+  storage:
+    back:
+    - PetRockBobby
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Joetta Beedell
 
-- type: startingGear
-  id: PetRockBobby
-  storage:
-    back:
-    - PetRockBobby
-
 # Jasmi's Deeja-Wujeeta plushie
 - type: loadout
   id: PlushieDeeja
-  equipment: PlushieDeeja
+  storage:
+    back:
+    - PlushieDeeja
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Jasmi-Wujeeta
 
-- type: startingGear
-  id: PlushieDeeja
-  storage:
-    back:
-    - PlushieDeeja
-
 # John Armstrong's Juniper Armstrong plushie
 - type: loadout
   id: PlushieJuniper
-  equipment: PlushieJuniper
+  storage:
+    back:
+    - PlushieJuniper
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - John Armstrong
 
-- type: startingGear
-  id: PlushieJuniper
-  storage:
-    back:
-    - PlushieJuniper
-
 # Loops' bell collar
 - type: loadout
   id: ClothingNeckLoopsBellCollar
-  equipment: ClothingNeckLoopsBellCollar
+  storage:
+    back:
+    - ClothingNeckLoopsBellCollar
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Loops-the-Horns
 
-- type: startingGear
-  id: ClothingNeckLoopsBellCollar
-  storage:
-    back:
-    - ClothingNeckLoopsBellCollar
-
 # Miles' flower braid
 - type: loadout
   id: ClothingHeadHatFlowerBraidGeorgia
-  equipment: ClothingHeadHatFlowerBraidGeorgia
+  storage:
+    back:
+    - ClothingHeadHatFlowerBraidGeorgia
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Georgia A Miles
 
-- type: startingGear
-  id: ClothingHeadHatFlowerBraidGeorgia
-  storage:
-    back:
-    - ClothingHeadHatFlowerBraidGeorgia
-
 # Nashira-Najma's maple moondancer plushie
 - type: loadout
   id: PlushieMaple
-  equipment: PlushieMaple
+  storage:
+    back:
+    - PlushieMaple
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Nashira-Najma
 
-- type: startingGear
-  id: PlushieMaple
-  storage:
-    back:
-    - PlushieMaple
-
 # Nia's esther plushie
 - type: loadout
   id: PlushieEsther
-  equipment: PlushieEsther
+  storage:
+    back:
+    - PlushieEsther
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Nia Noctis
 
-- type: startingGear
-  id: PlushieEsther
-  storage:
-    back:
-    - PlushieEsther
-
 # Oliver's oliver's plushie
 - type: loadout
   id: PlushieOliver
-  equipment: PlushieOliver
+  storage:
+    back:
+    - PlushieOliver
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Oliver Cambridge
 
-- type: startingGear
-  id: PlushieOliver
-  storage:
-    back:
-    - PlushieOliver
-
 # Nova's Jacket
 - type: loadout
   id: ClothingOuterGalaxyCoat
-  equipment: ClothingOuterGalaxyCoat
+  storage:
+    back:
+    - ClothingOuterGalaxyCoat
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Nova Gem
 
-- type: startingGear
-  id: ClothingOuterGalaxyCoat
-  storage:
-    back:
-    - ClothingOuterGalaxyCoat
-
 # Reading's reading glasses
 - type: loadout
   id: ClothingEyesReadingGlasses
-  equipment: ClothingEyesReadingGlasses
+  storage:
+    back:
+    - ClothingEyesReadingGlasses
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Really-Likes-Reading
 
-- type: startingGear
-  id: ClothingEyesReadingGlasses
-  storage:
-    back:
-    - ClothingEyesReadingGlasses
-
 # Rye's tie
 - type: loadout
   id: ClothingNeckRyeTie
-  equipment: ClothingNeckRyeTie
+  storage:
+    back:
+    - ClothingNeckRyeTie
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Ryeversi Venusta
 
-- type: startingGear
-  id: ClothingNeckRyeTie
-  storage:
-    back:
-    - ClothingNeckRyeTie
-
 # Sereketh's Ocean coat
 - type: loadout
   id: Oceancoat
-  equipment: Oceancoat
+  storage:
+    back:
+    - Oceancoat
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Sereketh Pallister II
 
-- type: startingGear
-  id: Oceancoat
-  storage:
-    back:
-    - Oceancoat
-
 # Smoke's Heart Plushie
 - type: loadout
   id: PlushieHeart
-  equipment: PlushieHeart
+  storage:
+    back:
+    - PlushieHeart
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Smoke Phillips
 
-- type: startingGear
-  id: PlushieHeart
-  storage:
-    back:
-    - PlushieHeart
-
 # Vesper's vesper plushie
 - type: loadout
   id: PlushieVesper
-  equipment: PlushieVesper
+  storage:
+    back:
+    - PlushieVesper
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Vesper
 
-- type: startingGear
-  id: PlushieVesper
-  storage:
-    back:
-    - PlushieVesper
-
 # Welds' synthetic chew fidget
 - type: loadout
-  id: ClothingNeckChewtoy
-  equipment: ClothingNeckChewtoy
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Welds-The-Pipes
-
-- type: startingGear
   id: ClothingNeckChewtoy
   storage:
     back:
     - ClothingNeckChewtoy
-
-# Welds' RIG
-- type: loadout
-  id: ClothingShoesMiscWeldsWalker
-  equipment: ClothingShoesMiscWeldsWalker
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Welds-The-Pipes
 
-- type: startingGear
+# Welds' RIG
+- type: loadout
   id: ClothingShoesMiscWeldsWalker
   storage:
     back:
     - ClothingShoesMiscWeldsWalker
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Welds-The-Pipes
 
 # Wipes' friend medal
 - type: loadout
   id: ClothingNeckWipesFriendMedal
-  equipment: ClothingNeckWipesFriendMedal
+  storage:
+    back:
+    - ClothingNeckWipesFriendMedal
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Wipes-the-Floor
 
-- type: startingGear
-  id: ClothingNeckWipesFriendMedal
-  storage:
-    back:
-    - ClothingNeckWipesFriendMedal
-
 # Yarna's armoured winter coat
 - type: loadout
   id: ClothingOuterYarnaArmourCoat
-  equipment: ClothingOuterYarnaArmourCoat
+  storage:
+    back:
+    - ClothingOuterYarnaArmourCoat
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Yarna Crimson
 
-- type: startingGear
-  id: ClothingOuterYarnaArmourCoat
-  storage:
-    back:
-    - ClothingOuterYarnaArmourCoat
-
 # Gar's ripped sweatpants
 - type: loadout
   id: ClothingUniformJumpsuitSweatpants
-  equipment:  ClothingUniformJumpsuitSweatpants
+  storage:
+    back:
+    - ClothingUniformJumpsuitSweatpants
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Gar-Tei
 
-- type: startingGear
-  id: ClothingUniformJumpsuitSweatpants
-  storage:
-    back:
-    - ClothingUniformJumpsuitSweatpants
-
 # Jacketed's dragon carp plushie
 - type: loadout
   id: PlushieDragonCarp
-  equipment: PlushieDragonCarp
+  storage:
+    back:
+    - PlushieDragonCarp
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Defenestrates-The-Dragon
 
-- type: startingGear
-  id: PlushieDragonCarp
-  storage:
-    back:
-    - PlushieDragonCarp
-
 # Serendipity Bluewing's plushie
 - type: loadout
   id: SerendipityPlushie
-  equipment: SerendipityPlushie
+  storage:
+    back:
+    - SerendipityPlushie
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Serendipity Bluewing
 
-- type: startingGear
-  id: SerendipityPlushie
-  storage:
-    back:
-    - SerendipityPlushie
-
 # Kai's plushie
 - type: loadout
   id: KaiPlushie
-  equipment: KaiPlushie
+  storage:
+    back:
+    - KaiPlushie
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Kai
 
-- type: startingGear
-  id: KaiPlushie
-  storage:
-    back:
-    - KaiPlushie
-
 # Gar-Tei's plushie
 - type: loadout
-  id: GarTeiPlushie
-  equipment: GarTeiPlushie
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Gar-Tei
-
-- type: startingGear
   id: GarTeiPlushie
   storage:
     back:
     - GarTeiPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Gar-Tei
