@@ -47,6 +47,7 @@
   - PlushieDragonCarp
   - SerendipityPlushie
   - KaiPlushie
+  - GarTeiPlushie
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -90,6 +91,7 @@
   - PlushieDragonCarp
   - SerendipityPlushie
   - KaiPlushie
+  - GarTeiPlushie
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -132,3 +134,4 @@
   - PlushieDragonCarp
   - SerendipityPlushie
   - KaiPlushie
+  - GarTeiPlushie

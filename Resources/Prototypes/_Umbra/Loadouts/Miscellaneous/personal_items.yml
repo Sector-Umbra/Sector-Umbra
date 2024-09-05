@@ -408,3 +408,14 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Kai
+
+# Gar-Tei's plushie
+- type: loadout
+  id: GarTeiPlushie
+  storage:
+    back:
+    - GarTeiPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Gar-Tei
