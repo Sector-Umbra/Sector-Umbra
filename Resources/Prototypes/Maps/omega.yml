@@ -2,7 +2,7 @@
   id: Omega
   mapName: 'Omega'
   mapPath: /Maps/omega.yml
-  minPlayers: 10
+  minPlayers: 7
   maxPlayers: 35
   stations:
     Omega:
@@ -42,9 +42,9 @@
             Psychologist: [ 1, 1 ] # Umbra
             #science
             ResearchDirector: [ 1, 1 ]
-            SeniorResearcher: [ 1, 1 ]        
+            SeniorResearcher: [ 1, 1 ]
             Scientist: [ 3, 3 ]
-            ResearchAssistant: [ 2, 2 ] 
+            ResearchAssistant: [ 2, 2 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
@@ -62,4 +62,6 @@
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
+            #silicon
+            # StationAi: [ 1, 1 ]
             Borg: [ 2, 2 ]
