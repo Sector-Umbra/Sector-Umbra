@@ -53,7 +53,6 @@ namespace Content.IntegrationTests.Tests
             "Cluster",
             "Omega",
             "Bagel",
-            "Origin",
             "CentComm",
             "Box",
             "Saltern",
