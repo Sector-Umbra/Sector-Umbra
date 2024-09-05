@@ -560,7 +560,7 @@
       state: shuttle
     - map: ["computerLayerKeys"]
       sprite: Structures/Machines/computers.rsi
-      state: generic_keys`
+      state: generic_keys
 
 #IFF Console
 - type: entity
