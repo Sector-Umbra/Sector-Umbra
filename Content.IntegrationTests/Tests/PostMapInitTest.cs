@@ -66,7 +66,7 @@ namespace Content.IntegrationTests.Tests
             "Train",
             "Oasis",
             "Cog",
-            "Xeno" // Umbra
+            "Xeno", // Umbra
             "Iris" // Umbra
         };
 
