@@ -1,6 +1,7 @@
 - type: loadout
   id: JumpsuitETUFlightsuit
-  equipment: JumpsuitETUFlightsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitETUFlightsuit
 
 - type: startingGear
   id: JumpsuitETUFlightsuit
@@ -9,7 +10,8 @@
 
 - type: loadout
   id: GlovesETUGauntlet
-  equipment: GlovesETUGauntlet
+  equipment: 
+    gloves: ClothingHandsGlovesETUGauntlet
 
 - type: startingGear
   id: GlovesETUGauntlet
@@ -18,7 +20,8 @@
 
 - type: loadout
   id: MaskGasETUSterile
-  equipment: MaskGasETUSterile
+  equipment: 
+    mask: ClothingMaskGasETUSterile
 
 - type: startingGear
   id: MaskGasETUSterile
@@ -27,7 +30,8 @@
 
 - type: loadout
   id: HeadHelmetETUPointman
-  equipment: HeadHelmetETUPointman
+  equipment:
+    head: ClothingHeadHelmetETUPointman
 
 - type: startingGear
   id: HeadHelmetETUPointman
@@ -36,7 +40,8 @@
 
 - type: loadout
   id: BeltHarnessETU
-  equipment: BeltHarnessETU
+  equipment:
+    outerClothing: ClothingBeltHarnessETU
 
 - type: startingGear
   id: BeltHarnessETU
@@ -45,7 +50,8 @@
 
 - type: loadout
   id: ShoesColorSlate
-  equipment: ShoesColorSlate
+  equipment:
+    shoes: ClothingShoesColorSlate
 
 - type: startingGear
   id: ShoesColorSlate
