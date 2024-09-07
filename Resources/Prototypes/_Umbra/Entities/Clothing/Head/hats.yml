@@ -14,7 +14,7 @@
   - type: entity
     parent: ClothingHeadBase
     id: ClothingHeadArdusBandana
-    name: Ardus' Praestilyn Bandana
+    name: Ardus Praestilyn Bandana
     description: Old bandana of Ardus. It has logo of Praestilyn Royal Army on front and a small freshly handwritten note that reminds that the bandana is not edible.
     suffix: PersonalItem
     components:
