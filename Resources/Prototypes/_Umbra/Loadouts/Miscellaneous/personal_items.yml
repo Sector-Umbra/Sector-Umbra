@@ -419,6 +419,7 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Gar-Tei
+    
 #Ardus' Bandana
 - type: loadout
   id: ClothingHeadArdusBandana
