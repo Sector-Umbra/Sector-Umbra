@@ -419,3 +419,13 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Gar-Tei
+#Ardus' Bandana
+- type: loadout
+  id: ClothingHeadArdusBandana
+  storage:
+    back:
+    - ClothingHeadArdusBandana
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Ardus Kaine
