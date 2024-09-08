@@ -3,7 +3,6 @@
   id: EstherRing
   name: Emerald Ring
   description: A golden ring with a beautiful emerald gem. With each move, it shines a green glow.
-  suffix: PersonalItem
   components:
     - type: Sprite
       sprite: _Umbra/Clothing/Hands/Rings/estherRing.rsi
