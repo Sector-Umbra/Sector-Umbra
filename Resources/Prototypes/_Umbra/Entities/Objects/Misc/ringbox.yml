@@ -6,7 +6,7 @@
   suffix: PersonalItem
   components:
     - type: Sprite
-      sprite: _Umbra/Objects/Misc/estherRingBox.rsi
+      sprite: _Umbra/Objects/Misc/esther_ring_box.rsi
     - type: GenericVisualizer
       visuals:
          enum.StorageVisuals.Open:

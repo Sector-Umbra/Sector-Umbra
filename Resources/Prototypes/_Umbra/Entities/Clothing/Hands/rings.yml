@@ -5,7 +5,7 @@
   description: A golden ring with a beautiful emerald gem. With each move, it shines a green glow.
   components:
     - type: Sprite
-      sprite: _Umbra/Clothing/Hands/Rings/estherRing.rsi
+      sprite: _Umbra/Clothing/Hands/Rings/esther_ring.rsi
       layers:
         - state: ring
           color: "#ffc833"
