@@ -20,7 +20,3 @@
       whitelist:
         tags:
           - EstherRing
-    - type: StorageFill
-      contents:
-        - id: EstherRing
-          prob: 1
