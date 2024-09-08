@@ -10,7 +10,7 @@
     sprite: _Umbra/Clothing/Head/Hats/borgsberet.rsi
   - type: Clothing
     sprite: _Umbra/Clothing/Head/Hats/borgsberet.rsi
-  # Player: Maestro2Kimpembe - Character: Ardus Kaine
+# Player: Maestro2Kimpembe - Character: Ardus Kaine
   - type: entity
     parent: ClothingHeadBase
     id: ClothingHeadArdusBandana
@@ -20,5 +20,5 @@
     components:
     - type: Sprite
       sprite: _Umbra/Clothing/Head/Hats/ardus-bandana.rsi
-      type: Clothing
+    - type: Clothing
       sprite: _Umbra/Clothing/Head/Hats/ardus-bandana.rsi
