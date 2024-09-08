@@ -2,11 +2,11 @@
   parent: RingBase
   id: EstherRing
   name: Emerald Ring
+  description: Will you.. marry me?
+  suffix: PersonalItem
   components:
     - type: Sprite
       sprite: _Umbra/Clothing/Hands/Rings/estherRing.rsi
-      description: Will you.. marry me?
-      suffix: PersonalItem
       layers:
         - state: ring
           color: "#ffc833"
