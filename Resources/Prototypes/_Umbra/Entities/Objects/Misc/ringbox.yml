@@ -9,7 +9,7 @@
       - state: ring-box-closed
       - state: ring-box-open
         map: [ "openLayer" ]
-        visible: false
+        visible: true
     - type: Appearance
     - type: Storage
       grid:
