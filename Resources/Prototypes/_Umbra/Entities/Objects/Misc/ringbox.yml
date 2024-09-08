@@ -1,7 +1,9 @@
 - type: entity
   parent: [ BoxBase, BaseBagOpenClose ]
   id: EstherRingBox
-  name: Esther's Ringbox
+  name: White 
+  description: A well-made white ringbox. It has no markings except for a few green and blue gradient lines along the seam.
+  suffix: PersonalItem
   components:
     - type: Sprite
       sprite: _Umbra/Objects/Misc/estherRingBox.rsi
@@ -15,3 +17,10 @@
     - type: Storage
       grid:
       - 0,0,0,0
+    - type: StorageFill
+      contents:
+        - id: EstherRing
+    - type: Storage
+      whitelist:
+        tags:
+          - EstherRing

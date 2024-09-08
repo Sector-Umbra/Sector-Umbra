@@ -2,7 +2,7 @@
   parent: RingBase
   id: EstherRing
   name: Emerald Ring
-  description: Will you.. marry me?
+  description: A golden ring with a beautiful emerald gem.
   suffix: PersonalItem
   components:
     - type: Sprite
