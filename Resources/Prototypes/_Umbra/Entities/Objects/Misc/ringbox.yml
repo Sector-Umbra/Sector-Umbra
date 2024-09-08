@@ -1,0 +1,16 @@
+- type: entity
+  parent: [ BoxBase, BaseBagOpenClose ]
+  id: RingBox
+  name: ring box
+  components:
+    - type: Sprite
+      sprite: Objects/Specific/Chapel/ringbox.rsi
+      layers:
+      - state: ring-box-closed
+      - state: ring-box-open
+        map: [ "openLayer" ]
+        visible: false
+    - type: Appearance
+    - type: Storage
+      grid:
+      - 0,0,0,0
