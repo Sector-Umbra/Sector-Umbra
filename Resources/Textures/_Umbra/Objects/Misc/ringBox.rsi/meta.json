@@ -8,10 +8,10 @@
     },
     "states": [
       {
-        "name": "ring-box-open"
+        "name": "icon"
       },
       {
-        "name": "ring-box-closed"
+        "name": "icon-open"
       }
     ]
   }
