@@ -17,10 +17,9 @@
     - type: Storage
       grid:
       - 0,0,0,0
-    - type: StorageFill
-      contents:
-        - id: EstherRing
-    - type: Storage
       whitelist:
         tags:
           - EstherRing
+    - type: StorageFill
+      contents:
+        - id: EstherRing
