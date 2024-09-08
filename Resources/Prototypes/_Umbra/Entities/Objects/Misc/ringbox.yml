@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ ClothingSlotBase ]
+  parent: [ BoxBase, BaseBagOpenClose ]
   id: EstherRingBox
   name: Esther's Ringbox
   components:
@@ -11,13 +11,7 @@
           base:
             True: { state: icon-open }
             False: { state: icon }
-    - type: ItemSlots
-      slots:
-        item:
-          name: Ring
-          insertSound: /Audio/Items/pistol_magin.ogg
-          ejectSound: /Audio/Items/pistol_magout.ogg
-          whitelist:
-            tags:
-            - EstherRing
     - type: Appearance
+    - type: Storage
+      grid:
+      - 0,0,0,0
