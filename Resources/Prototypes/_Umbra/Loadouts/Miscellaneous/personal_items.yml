@@ -101,6 +101,17 @@
     character:
     - Esther Scarlet
 
+# Esther's Ringbox
+- type: loadout
+  id: EstherRingBox
+  storage:
+    back:
+    - EstherRingBox
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Esther Scarlet
+
 # Frosty winter coat
 - type: loadout
   id: FrostCoat
