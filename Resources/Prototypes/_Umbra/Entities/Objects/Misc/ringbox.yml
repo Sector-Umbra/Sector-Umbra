@@ -2,7 +2,6 @@
   parent: [ BoxBase, BaseBagOpenClose ]
   id: EstherRingBox
   name: White Ringbox
-  abstract: true
   description: A well-made white ringbox. It has no markings except for a few green and blue gradient lines along the seam.
   suffix: PersonalItem
   components:
