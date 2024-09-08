@@ -1,0 +1,11 @@
+- type: entity
+  parent: RingBase
+  id: EstherRing
+  name: Emerald Ring
+  components:
+    - type: Sprite
+      sprite: _Umbra/Clothing/Hands/Rings/estherRing.rsi
+      layers:
+        - state: ring
+          color: "#ffc833"
+    - type: Appearance
