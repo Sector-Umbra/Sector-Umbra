@@ -5,11 +5,12 @@
   components:
     - type: Sprite
       sprite: _Umbra/Objects/Misc/ringBox.rsi
-      layers:
-      - state: ring-box-closed
-      - state: ring-box-open
-        map: [ "openLayer" ]
-        visible: true
+    - type: GenericVisualizer
+      visuals:
+         enum.StorageVisuals.Open:
+          base:
+            True: { state: icon-open }
+            False: { state: icon }
     - type: Appearance
     - type: Storage
       grid:
