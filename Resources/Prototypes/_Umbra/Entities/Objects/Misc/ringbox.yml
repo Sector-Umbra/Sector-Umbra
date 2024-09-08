@@ -1,17 +1,23 @@
 - type: entity
-  parent: [ BoxBase, BaseBagOpenClose ]
-  id: RingBox
-  name: ring box
+  parent: [ ClothingSlotBase ]
+  id: EstherRingBox
+  name: Esther's Ringbox
   components:
     - type: Sprite
-      sprite: _Umbra/Objects/Misc/ringBox.rsi
+      sprite: _Umbra/Objects/Misc/estherRingBox.rsi
     - type: GenericVisualizer
       visuals:
          enum.StorageVisuals.Open:
           base:
             True: { state: icon-open }
             False: { state: icon }
+    - type: ItemSlots
+      slots:
+        item:
+          name: Ring
+          insertSound: /Audio/Items/pistol_magin.ogg
+          ejectSound: /Audio/Items/pistol_magout.ogg
+          whitelist:
+            tags:
+            - EstherRing
     - type: Appearance
-    - type: Storage
-      grid:
-      - 0,0,0,0
