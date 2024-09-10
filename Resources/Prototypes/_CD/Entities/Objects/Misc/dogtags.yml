@@ -9,7 +9,7 @@
     layers:
     - state: dogtag
   - type: Item
-    size: small
+    size: Small
   - type: Clothing
     sprite: _CD/Objects/Misc/dogtags.rsi
     slots:
