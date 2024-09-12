@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ BoxBase, BaseBagOpenClose ]
+  parent: BoxBase
   id: EstherRingBox
   name: White Ringbox
   description: A well-made white ringbox. It has no markings except for a few green and blue gradient lines along the seam.
