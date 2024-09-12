@@ -43,6 +43,9 @@ figurines-hos-2 = What do you mean you 'accidently' shot the clown?
 figurines-hos-3 = Don't touch my energy shotgun. It's mine. I like it.
 
 figurines-warden-1 = Huh- wh? Sorry, I almost dozed off.
+figurines-warden-2 = So. Shall we try that again?
+figurines-warden-3 = All officers, sound off. Immediately.
+figurines-warden-4 = If I were to give you a gun, which I won't, you'd use it badly, which you won't cause I won't.
 
 figurines-detective-1 = The butler did it.
 figurines-detective-2 = Four cases, all cold.
