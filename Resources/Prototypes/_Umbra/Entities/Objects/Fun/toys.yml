@@ -181,3 +181,21 @@
     quickEquip: false
     sprite: _Umbra/Objects/Fun/Toys/plushie_kai.rsi
     equippedPrefix: kai
+
+    # Players: riverztyx - Character: Gar-Tei
+- type: entity
+  parent: PlushieLizard
+  id: GarTeiPlushie
+  name: gar-tei plushie
+  description: A custom made lizard plushie belonging to Gar-Tei. It carries the comforting scent of metal.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_gartei
+    sprite: _Umbra/Objects/Fun/Toys/plushie_gartei.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_gartei.rsi
+    equippedPrefix: gartei
+    slots:
+    - HEAD

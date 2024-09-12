@@ -1,7 +1,8 @@
 # Jumpsuit
 - type: loadout
   id: SeniorResearcherJumpsuit
-  equipment: SeniorResearcherJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSeniorResearcher
 
 - type: startingGear
   id: SeniorResearcherJumpsuit
@@ -10,7 +11,8 @@
 
 - type: loadout
   id: SeniorResearcherJumpskirt
-  equipment: SeniorResearcherJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtSeniorResearcher
 
 - type: startingGear
   id: SeniorResearcherJumpskirt
@@ -20,7 +22,8 @@
 # OuterClothing
 - type: loadout
   id: SeniorResearcherLabCoat
-  equipment: SeniorResearcherLabCoat
+  equipment:
+    outerClothing: ClothingOuterCoatLabSeniorResearcher
 
 - type: startingGear
   id: SeniorResearcherLabCoat

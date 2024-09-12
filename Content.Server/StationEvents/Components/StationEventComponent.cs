@@ -82,6 +82,12 @@ public sealed partial class StationEventComponent : Component
     [AutoPausedField]
     public TimeSpan? EndTime;
 
+    /// <summary>
+    /// If false, the event won't trigger during ongoing evacuation.
+    /// </summary>
+    [DataField]
+    public bool OccursDuringRoundEnd = true;
+
     /// Umbra
     /// <summary>
     /// Whether or not this event poses a potentially round-ending threat.

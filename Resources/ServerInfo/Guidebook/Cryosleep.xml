@@ -6,7 +6,7 @@ Cryosleep is an incredibly valuable tool for station crew, allowing them to leav
 While some stations come equipped with a Cryosleep Casket your most reliable way of finding them is by returning to Central Command via the Arrivals Shuttle.
 
 <Box>
-<GuideEntityEmbed Entity="MachineCryoSleepPod" Caption="Cryosleep Casket"/>
+<GuideEntityEmbed Entity="CryogenicSleepUnit" Caption="Cryosleep Casket"/>
 </Box>
 
 Upon returning to Central Command, the cryosleep chambers can easily be found by following the signs labeled "Cryo". Once there, you can insert yourself into a Cryosleep Casket, safely storing your body until your next shift.
