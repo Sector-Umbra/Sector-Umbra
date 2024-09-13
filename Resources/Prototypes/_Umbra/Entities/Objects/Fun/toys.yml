@@ -100,3 +100,102 @@
     equippedPrefix: juniper
     slots:
     - HEAD
+
+# Players: countrynerds - Character: Smoke Phillips
+- type: entity
+  parent: BasePlushie
+  id: PlushieHeart
+  name: smoke phillips' heart plushie
+  description: A well worn and well carried plushie depicting an anatomical heart on top of it's cartoon heart shape. A signature is embroided into it reading "Rebecca Phillips"
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: heart_plushie
+    sprite: _Umbra/Objects/Fun/Toys/plushie_heart.rsi
+  
+# Player: Onenineone - Character: Esther Scarlet
+- type: entity
+  parent: PlushieMoth
+  id: PlushieEsther
+  name: esther plushie
+  description: A plushie depicting Esther Scarlet! It smells of a bad attitude and edginess... Looks grumpy as well!
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_esther
+    sprite: _Umbra/Objects/Fun/Toys/plushie_esther.rsi
+
+# Player: raindrops - Character: Nia Noctis
+- type: entity
+  parent: PlushieMoth
+  id: PlushieNia
+  name: nia plushie
+  description: A plushie depicting Nia Noctis! It's very fuzzy and soft. There is a very subtle pout on its face...
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_nia
+    sprite: _Umbra/Objects/Fun/Toys/plushie_nia.rsi
+
+# Players: Jacketed - Character: Defenestrates-The-Dragon
+- type: entity
+  parent: PlushieRainbowCarp
+  id: PlushieDragonCarp
+  name: dragon's loyal carp plushie
+  description: An adorable stuffed toy resembling the legendary rainbow carp. It has various teeth and claw marks on it accompanied by stitches. The stitches spell out a word "Dragon".
+  suffix: PersonalItem
+  components:
+  - type: PointLight
+    radius: 1.05 # Light to be 1/10th of PDA light.
+    energy: 2
+
+- type: entity
+  parent: PlushieMoth
+  id: SerendipityPlushie
+  name: serendipity plushie
+  description: A plushie depicting the anomaly spawning Serendipity Bluewing. If you listen closely you might hear an anomaly pulse.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_serendipity
+    sprite: _Umbra/Objects/Fun/Toys/plushie_serendipity.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_serendipity.rsi
+    equippedPrefix: serendipity
+    slots:
+    - HEAD
+    
+    # Players: Coolsurf6 - Character: Kai
+- type: entity
+  parent: PlushieLizard
+  id: KaiPlushie
+  name: kai plushie
+  description: A custom made lizard plushie belonging to Kai. No one knows where this came from or why it exists. Putting your ear to it, you can almost hear it say "Goober..."
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_kai
+    sprite: _Umbra/Objects/Fun/Toys/plushie_kai.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_kai.rsi
+    equippedPrefix: kai
+
+    # Players: riverztyx - Character: Gar-Tei
+- type: entity
+  parent: PlushieLizard
+  id: GarTeiPlushie
+  name: gar-tei plushie
+  description: A custom made lizard plushie belonging to Gar-Tei. It carries the comforting scent of metal.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_gartei
+    sprite: _Umbra/Objects/Fun/Toys/plushie_gartei.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_gartei.rsi
+    equippedPrefix: gartei
+    slots:
+    - HEAD
