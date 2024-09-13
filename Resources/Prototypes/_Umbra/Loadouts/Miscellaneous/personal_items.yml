@@ -420,6 +420,17 @@
     character:
     - Gar-Tei
 
+# Michael's card
+- type: loadout
+  id: MichaelsCard
+  storage:
+    back:
+    - MichaelsCard
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Michael Hands
+
 #Ardus' Bandana
 - type: loadout
   id: ClothingHeadArdusBandana
@@ -430,8 +441,3 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Ardus Kaine
-- type: startingGear
-  id: ClothingHeadArdusBandana
-  storage:
-    back:
-    - ClothingHeadArdusBandana

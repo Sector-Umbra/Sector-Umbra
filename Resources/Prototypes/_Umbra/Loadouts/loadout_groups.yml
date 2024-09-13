@@ -49,6 +49,7 @@
   - SerendipityPlushie
   - KaiPlushie
   - GarTeiPlushie
+  - MichaelsCard
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -94,6 +95,7 @@
   - SerendipityPlushie
   - KaiPlushie
   - GarTeiPlushie
+  - MichaelsCard
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -138,3 +140,4 @@
   - SerendipityPlushie
   - KaiPlushie
   - GarTeiPlushie
+  - MichaelsCard
