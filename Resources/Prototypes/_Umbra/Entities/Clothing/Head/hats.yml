@@ -10,12 +10,13 @@
     sprite: _Umbra/Clothing/Head/Hats/borgsberet.rsi
   - type: Clothing
     sprite: _Umbra/Clothing/Head/Hats/borgsberet.rsi
+
 # Player: Maestro2Kimpembe - Character: Ardus Kaine
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadArdusBandana
   name: Ardus' Bandana
-  description: Ardus' old bandana. It has logo of Praestilyn Royal Army on front and a small freshly handwritten note "Not edible"
+  description: Ardus' old bandana. It has logo of Praestilyn Royal Army on front and a small freshly handwritten note "Not edible".
   suffix: PersonalItem
   components:
   - type: Sprite
