@@ -441,3 +441,25 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Ardus Kaine
+
+# Michael's ring
+- type: loadout
+  id: MichaelsRing
+  storage:
+    back:
+    - MichaelsRing
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Michael LaRue
+
+# Annie's ring
+- type: loadout
+  id: AnniesRing
+  storage:
+    back:
+    - AnniesRing
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Annie LaRue
