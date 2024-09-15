@@ -441,3 +441,15 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Ardus Kaine
+
+#Druger's Suit
+- type: loadout
+  id: ClothingUniformJumpsuitDrugeristic
+  storage:
+    back:
+    - ClothingUniformJumpsuitDrugeristic
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Druger Phillips Ruger Dug
+
