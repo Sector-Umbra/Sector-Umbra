@@ -12,6 +12,9 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 
+// CD: imports
+using Content.Shared.Labels.Components;
+
 namespace Content.Shared.Stacks
 {
     [UsedImplicitly]
@@ -114,6 +117,10 @@ namespace Content.Shared.Stacks
                 return false;
 
             if (string.IsNullOrEmpty(recipientStack.StackTypeId) || !recipientStack.StackTypeId.Equals(donorStack.StackTypeId))
+                return false;
+
+            // CD: Cannot merge stacks with labels
+            if (HasComp<LabelComponent>(donor) || HasComp<LabelComponent>(recipient))
                 return false;
 
             transferred = Math.Min(donorStack.Count, GetAvailableSpace(recipientStack));
@@ -333,6 +340,10 @@ namespace Content.Shared.Stacks
                 return false;
 
             if (insertStack.StackTypeId != targetStack.StackTypeId)
+                return false;
+
+            // CD: Don't merge labeled stacks
+            if (HasComp<LabelComponent>(insertEnt) || HasComp<LabelComponent>(targetEnt))
                 return false;
 
             var available = GetAvailableSpace(targetStack);

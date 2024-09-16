@@ -32,6 +32,7 @@
   - ClothingUniformJumpsuitSweatpants
   - ClothingNeckRyeTie
   - ClothingHeadHatRainbowFlowerJasmi
+  - ClothingHeadArdusBandana
   - ClothingHeadBorgsBeret
   - ClothingNeckBorgsScarf
   - ClothingOuterGalaxyCoat
@@ -48,6 +49,7 @@
   - SerendipityPlushie
   - KaiPlushie
   - GarTeiPlushie
+  - MichaelsCard
   - DutchiePlushie
 
 # Personal items specialised for Warden
@@ -77,6 +79,7 @@
   - ClothingUniformJumpsuitSweatpants
   - ClothingNeckRyeTie
   - ClothingHeadHatRainbowFlowerJasmi
+  - ClothingHeadArdusBandana
   - ClothingHeadBorgsBeret
   - ClothingNeckBorgsScarf
   - ClothingOuterGalaxyCoat
@@ -93,6 +96,7 @@
   - SerendipityPlushie
   - KaiPlushie
   - GarTeiPlushie
+  - MichaelsCard
   - DutchiePlushie
 
 # Personal items specialised for Detective
@@ -122,6 +126,7 @@
   - ClothingUniformJumpsuitSweatpants
   - ClothingNeckRyeTie
   - ClothingHeadHatRainbowFlowerJasmi
+  - ClothingHeadArdusBandana
   - ClothingHeadBorgsBeret
   - ClothingNeckBorgsScarf
   - ClothingOuterGalaxyCoat
@@ -137,4 +142,4 @@
   - SerendipityPlushie
   - KaiPlushie
   - GarTeiPlushie
-- - DutchiePlushie
+  - MichaelsCard
