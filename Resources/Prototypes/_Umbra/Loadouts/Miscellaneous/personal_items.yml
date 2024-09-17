@@ -463,3 +463,14 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Annie LaRue
+
+# Passes-The-Dutchie's plushie
+- type: loadout
+  id: DutchiePlushie
+  storage:
+    back:
+    - DutchiePlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Passes-The-Dutchie

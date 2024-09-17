@@ -199,3 +199,21 @@
     equippedPrefix: gartei
     slots:
     - HEAD
+
+    # Players: Ariphylor - Character: Passes-The-Dutchie
+- type: entity
+  parent: PlushieLizard
+  id: DutchiePlushie
+  name: passes-the-dutchie plushie
+  description: A squishy plush modeled after Passes-the-Dutchie. It has a faint aroma of berries.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_dutchie
+    sprite: _Umbra/Objects/Fun/Toys/plushie_dutchie.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_dutchie.rsi
+    equippedPrefix: dutchie
+    slots:
+    - HEAD

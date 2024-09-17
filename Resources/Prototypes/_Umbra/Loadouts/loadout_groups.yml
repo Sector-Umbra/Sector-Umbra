@@ -52,6 +52,8 @@
   - MichaelsCard
   - MichaelsRing
   - AnniesRing
+  - DutchiePlushie
+
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -100,6 +102,7 @@
   - MichaelsCard
   - MichaelsRing
   - AnniesRing
+  - DutchiePlushie
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -147,3 +150,4 @@
   - MichaelsCard
   - MichaelsRing
   - AnniesRing
+  - DutchiePlushie
