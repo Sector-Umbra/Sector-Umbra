@@ -913,6 +913,7 @@
   loadouts:
   - HeadofSecurityHead
   - HeadofSecurityBeret
+  - HeadofSecuritySheriffHat #CD
 
 - type: loadoutGroup
   id: HeadofSecurityJumpsuit
@@ -997,6 +998,7 @@
   loadouts:
   - SecurityBelt
   - SecurityWebbing
+  - SecurityPlateCarrier #CD
 
 - type: loadoutGroup
   id: SecurityOuterClothing
