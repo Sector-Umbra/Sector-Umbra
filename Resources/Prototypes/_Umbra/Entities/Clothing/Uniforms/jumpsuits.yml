@@ -32,6 +32,6 @@
   description: A flambuoyant purple suit in the personal style of famous zookeeper and activist Druger Phillips Ruger Dug. You swear that you might have seen it on TV.
   components:
   - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/drugersuit.rsi
+    sprite: _Umbra/Clothing/Uniforms/Jumpsuit/drugersuit.rsi
   - type: Clothing
-    sprite: Clothing/Uniforms/Jumpsuit/drugersuit.rsi
+    sprite: _Umbra/Clothing/Uniforms/Jumpsuit/drugersuit.rsi
