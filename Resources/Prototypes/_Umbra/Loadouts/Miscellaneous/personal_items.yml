@@ -442,6 +442,39 @@
     character:
     - Ardus Kaine
 
+# Michael's ring
+- type: loadout
+  id: MichaelsRing
+  storage:
+    back:
+    - MichaelsRing
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Michael LaRue
+
+# Annie's ring
+- type: loadout
+  id: AnniesRing
+  storage:
+    back:
+    - AnniesRing
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Annie LaRue
+
+# Passes-The-Dutchie's plushie
+- type: loadout
+  id: DutchiePlushie
+  storage:
+    back:
+    - DutchiePlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Passes-The-Dutchie
+
 #Druger's Suit
 - type: loadout
   id: ClothingUniformJumpsuitDrugeristic
@@ -452,4 +485,3 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Druger Phillips Ruger Dug
-

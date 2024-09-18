@@ -17,3 +17,8 @@
   id: EyesHudSecurity
   equipment:
     eyes: ClothingEyesHudSecurity
+
+- type: loadout
+  id: SecurityPlateCarrier
+  equipment:
+    belt: ClothingBeltSecurityPlateCarrier

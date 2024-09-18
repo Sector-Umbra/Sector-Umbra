@@ -50,8 +50,11 @@
   - KaiPlushie
   - GarTeiPlushie
   - MichaelsCard
+  - MichaelsRing
+  - AnniesRing
+  - DutchiePlushie
   - ClothingUniformJumpsuitDrugeristic
-
+ 
 # Personal items specialised for Warden
 - type: loadoutGroup
   id: PersonalItemsWarden
@@ -97,8 +100,11 @@
   - KaiPlushie
   - GarTeiPlushie
   - MichaelsCard
-  - ClothingUniformJumpsuitDrugeristic
+  - MichaelsRing
+  - AnniesRing
+  - DutchiePlushie
 
+  - ClothingUniformJumpsuitDrugeristic
 # Personal items specialised for Detective
 - type: loadoutGroup
   id: PersonalItemsDetective
@@ -143,4 +149,7 @@
   - KaiPlushie
   - GarTeiPlushie
   - MichaelsCard
+  - MichaelsRing
+  - AnniesRing
+  - DutchiePlushie
   - ClothingUniformJumpsuitDrugeristic
