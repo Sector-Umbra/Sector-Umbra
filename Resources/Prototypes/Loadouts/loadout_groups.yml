@@ -62,6 +62,14 @@
   - LoadoutSpeciesEVANitrogen
   - LoadoutSpeciesEVAOxygen
 
+- type: loadoutGroup
+  id: GroupPocketTankDouble
+  name: loadout-group-pocket-tank-double
+  hidden: true
+  loadouts:
+  - LoadoutSpeciesPocketDoubleNitrogen
+  - LoadoutSpeciesPocketDoubleOxygen
+
 # Command
 - type: loadoutGroup
   id: CaptainHead
@@ -971,6 +979,7 @@
   - SecurityHelmet
   - SecurityBeret
   - SecurityHat
+  - TrooperHat
 
 - type: loadoutGroup
   id: SecurityJumpsuit
@@ -983,6 +992,7 @@
   # CD: Separate Senior roles
   # - SeniorOfficerJumpsuit
   # - SeniorOfficerJumpskirt
+  - TrooperUniform
 
 - type: loadoutGroup
   id: SecurityBackpack
