@@ -104,7 +104,7 @@
       spawnerPrototype: SpawnPointNukeopsCommander
       startingGear: SyndicateCommanderGearFull
       roleLoadout:
-      - RoleSurvivalSyndicate
+      - RoleSurvivalNukie
       components:
       - type: NukeOperative
       - type: RandomMetadata
@@ -122,7 +122,7 @@
       spawnerPrototype: SpawnPointNukeopsMedic
       startingGear: SyndicateOperativeMedicFull
       roleLoadout:
-      - RoleSurvivalSyndicate
+      - RoleSurvivalNukie
       components:
       - type: NukeOperative
       - type: RandomMetadata
@@ -142,7 +142,7 @@
       playerRatio: 10
       startingGear: SyndicateOperativeGearFull
       roleLoadout:
-      - RoleSurvivalSyndicate
+      - RoleSurvivalNukie
       components:
       - type: NukeOperative
       - type: RandomMetadata
@@ -273,6 +273,11 @@
       #   tableId: BasicAntagEventsTable
       - !type:NestedSelector
         tableId: CargoGiftsTable
+      - !type:NestedSelector
+        tableId: CalmPestEventsTable
+      - !type:NestedSelector
+        tableId: SpicyPestEventsTable
+        
 
 - type: entityTable
   id: SpaceTrafficControlTable
@@ -306,7 +311,7 @@
   parent: BaseGameRule                  # we can remerge this with the other schedulers, but it will silently fail due to that limitation without a separate scheduler to balance atm.
   components:
   - type: BasicStationEventScheduler
-    minimumTimeUntilFirstEvent: 1800 # 20 mins -> Umbra: 30 minutes
+    minimumTimeUntilFirstEvent: 2700 # 45 mins #shows up like half way through shift.
     minMaxEventTiming:
       min: 1200 # 10 mins -> Umbra: 20 minutes
       max: 3600 # 30 mins -> Umbra: 60 minutes
