@@ -23,12 +23,13 @@
     - id: SpiderClownSpawn
     - id: SpiderSpawn
     - id: VentClog
+    - id: ClosetSkeleton # Umbra: Moved from BasicAntagEventsTable
 
 - type: entityTable
   id: BasicAntagEventsTable
   table: !type:AllSelector # we need to pass a list of rules, since rules have further restrictions to consider via StationEventComp
     children:
-    - id: ClosetSkeleton
+    # - id: ClosetSkeleton # Umbra: Moved to BasicCalmEventsTable
     - id: DragonSpawn
     - id: KingRatMigration
     - id: NinjaSpawn
@@ -146,7 +147,8 @@
   - type: StationEvent
     weight: 5
     duration: 1
-    minimumPlayers: 10
+    earliestStart: 30 # Umbra: Don't want skeletons earlier than half an hour into the shift.
+    reoccurrenceDelay: 60 # Umbra: Skeletons should be rare.
   - type: RandomEntityStorageSpawnRule
     prototype: MobSkeletonCloset
 
