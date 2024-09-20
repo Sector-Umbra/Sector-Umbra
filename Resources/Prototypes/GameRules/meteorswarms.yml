@@ -33,7 +33,7 @@
     - id: GameRuleMeteorSwarmMedium
     # - id: GameRuleMeteorSwarmLarge # Umbra/CD: Disable
     - id: GameRuleUristSwarm
-    - id: ImmovableRodSpawn
+    # - id: ImmovableRodSpawn # Umbra: Disable
 
 - type: weightedRandomEntity
   id: MeteorSpawnAsteroidWallTable
