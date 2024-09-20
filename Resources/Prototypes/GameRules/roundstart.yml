@@ -73,7 +73,7 @@
   parent: BaseGameRule
   id: BaseNukeopsRule
   components:
-  - type: RandomMetadata #this generates the random operation name cuz it's cool. 
+  - type: RandomMetadata #this generates the random operation name cuz it's cool.
     nameSegments:
     - operationPrefix
     - operationSuffix
@@ -269,8 +269,8 @@
     children:
       - !type:NestedSelector
         tableId: BasicCalmEventsTable
-      - !type:NestedSelector
-        tableId: BasicAntagEventsTable
+      # - !type:NestedSelector # Umbra: Disable.
+      #   tableId: BasicAntagEventsTable
       - !type:NestedSelector
         tableId: CargoGiftsTable
 
@@ -306,22 +306,22 @@
   parent: BaseGameRule                  # we can remerge this with the other schedulers, but it will silently fail due to that limitation without a separate scheduler to balance atm.
   components:
   - type: BasicStationEventScheduler
-    minimumTimeUntilFirstEvent: 1200 # 20 mins
+    minimumTimeUntilFirstEvent: 1800 # 20 mins -> Umbra: 30 minutes
     minMaxEventTiming:
-      min: 600 # 10 mins
-      max: 1800 # 30 mins
+      min: 1200 # 10 mins -> Umbra: 20 minutes
+      max: 3600 # 30 mins -> Umbra: 60 minutes
     scheduledGameRules: !type:NestedSelector
       tableId: SpaceTrafficControlTable
 
 - type: entity
-  id: SpaceTrafficControlFriendlyEventScheduler 
-  parent: BaseGameRule                  
+  id: SpaceTrafficControlFriendlyEventScheduler
+  parent: BaseGameRule
   components:
   - type: BasicStationEventScheduler
-    minimumTimeUntilFirstEvent: 1200 # 20 mins
+    minimumTimeUntilFirstEvent: 1800 # 20 mins -> Umbra: 30 minutes
     minMaxEventTiming:
-      min: 600 # 10 mins
-      max: 1800 # 30 mins
+      min: 1200 # 10 mins -> Umbra: 20 minutes
+      max: 3600 # 30 mins -> Umbra: 60 minutes
     scheduledGameRules: !type:NestedSelector
       tableId: UnknownShuttlesFriendlyTable
 
