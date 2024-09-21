@@ -606,6 +606,7 @@
   - QuartermasterTurtleneck
   - QuartermasterTurtleneckSkirt
   - QuartermasterFormalSuit
+  - QuartermasterForemansuit # CD
 
 - type: loadoutGroup
   id: QuartermasterNeck
@@ -622,6 +623,7 @@
   loadouts:
   - QuartermasterWintercoat
   - CargoBomber # CD
+  - ForemanCoat # CD
 
 - type: loadoutGroup
   id: QuartermasterShoes
@@ -643,9 +645,14 @@
   id: CargoTechnicianJumpsuit
   name: loadout-group-cargo-technician-jumpsuit
   loadouts:
-  - CargoTechnicianJumpsuit
-  - CargoTechnicianJumpskirt
+#  - CargoTechnicianJumpsuit
+#  - CargoTechnicianJumpskirt
   - CargoTechnicianPants # CD
+  - CargoTechnicianJumpsuitLight # CD
+  - CargoTechnicianJumpskirtLight # CD
+  - CargoTechnicianJumpsuitDark # CD
+  - CargoTechnicianJumpskirtDark # CD
+
 
 - type: loadoutGroup
   id: CargoTechnicianBackpack
@@ -669,6 +676,7 @@
   loadouts:
   - BlackShoes
   - CargoWinterBoots
+  - SteelWorkboots # CD
 
 - type: loadoutGroup
   id: SalvageSpecialistBackpack

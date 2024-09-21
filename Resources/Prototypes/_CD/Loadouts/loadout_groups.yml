@@ -53,6 +53,14 @@
   - PassengerPDA
   - OffDutyPDA
 
+# Cargo
+- type: loadoutGroup
+  id: SalvageSpecialistJumpsuit
+  name: loadout-group-salvage-specialist-jumpsuit
+  loadouts:
+  - SalvageSpecialistJumpsuit
+  - SalvageSpecialistJumpsuitOperator
+
 # Engineering
 - type: loadoutGroup
   id: SeniorEngineerJumpsuit
