@@ -429,7 +429,7 @@
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
-    - Michael Hands
+    - Michael LaRue
 
 #Ardus' Bandana
 - type: loadout
