@@ -253,7 +253,7 @@
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
-    - Oliver Cambridge
+    - Oliver LaRue
 
 # Nova's Jacket
 - type: loadout
