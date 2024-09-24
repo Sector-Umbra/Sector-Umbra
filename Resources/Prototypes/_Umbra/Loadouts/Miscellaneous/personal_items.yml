@@ -242,7 +242,7 @@
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
-    - Nia Noctis
+    - Nia Scarlet
 
 # Oliver's oliver's plushie
 - type: loadout
