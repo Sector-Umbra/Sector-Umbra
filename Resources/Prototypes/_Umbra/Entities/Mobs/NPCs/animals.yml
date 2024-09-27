@@ -3,7 +3,6 @@
 # TODO:
 # Make sure there is no weirdness from reparent to simple mob & code copy paste.
 # Make sure there are no extra components.
-# Reorder compondents to make sure its not ugly
 # Moving sprite.
 # Dead Sprite
 # Inhand sprite.
@@ -28,14 +27,14 @@
   #  slots:
   #  - HEAD
   - type: Appearance
-  - type: DamageStateVisuals # Make sprite or remove?
+  - type: DamageStateVisuals
     states:
       Alive:
-        Base: mothroach
+        Base: bunny
       Critical:
-        Base: mothroach_dead
+        Base: bunny_dead
       Dead:
-        Base: mothroach_dead
+        Base: bunny_dead
   - type: Fixtures
     fixtures:
       fix1:
@@ -66,7 +65,7 @@
       0: Alive
       40: Critical
       60: Dead
-  - type: MovementSpeedModifier #Check this.
+  - type: MovementSpeedModifier
     baseWalkSpeed : 2.5
     baseSprintSpeed : 4
   - type: Damageable
