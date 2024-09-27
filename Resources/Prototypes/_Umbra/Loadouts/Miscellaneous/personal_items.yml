@@ -211,17 +211,6 @@
     character:
     - Georgia A Miles
 
-# Nashira-Najma's maple moondancer plushie
-- type: loadout
-  id: PlushieMaple
-  storage:
-    back:
-    - PlushieMaple
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Nashira-Najma
-
 # Nia's esther plushie
 - type: loadout
   id: PlushieEsther

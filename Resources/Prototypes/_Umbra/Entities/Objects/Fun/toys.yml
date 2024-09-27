@@ -1,16 +1,4 @@
 ## Plushies
-# Player: Tych0 - Character: Nashira-Najma
-- type: entity
-  parent: PlushieMoth
-  id: PlushieMaple
-  name: maple moondancer plushie
-  description: A custom made moth plushie belonging to Nashira-Najma. Do not eat.
-  suffix: PersonalItem
-  components:
-  - type: Sprite
-    state: plushie_maple
-    sprite: _Umbra/Objects/Fun/Toys/plushie_maple_mooondancer.rsi
-
 # Player: PolarTundra - Character: Vesper
 - type: entity
   parent: PlushieMoth
