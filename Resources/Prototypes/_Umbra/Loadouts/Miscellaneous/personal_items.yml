@@ -233,17 +233,6 @@
     character:
     - Nova Gem
 
-# Reading's reading glasses
-- type: loadout
-  id: ClothingEyesReadingGlasses
-  storage:
-    back:
-    - ClothingEyesReadingGlasses
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Really-Likes-Reading
-
 # Rye's tie
 - type: loadout
   id: ClothingNeckRyeTie
