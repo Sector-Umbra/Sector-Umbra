@@ -299,17 +299,6 @@
     character:
     - Welds-The-Pipes
 
-# Wipes' friend medal
-- type: loadout
-  id: ClothingNeckWipesFriendMedal
-  storage:
-    back:
-    - ClothingNeckWipesFriendMedal
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Wipes-the-Floor
-
 # Yarna's armoured winter coat
 - type: loadout
   id: ClothingOuterYarnaArmourCoat
