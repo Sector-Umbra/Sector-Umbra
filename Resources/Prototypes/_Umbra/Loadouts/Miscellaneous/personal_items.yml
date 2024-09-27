@@ -242,7 +242,7 @@
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
-    - Nia Noctis
+    - Nia Scarlet
 
 # Oliver's oliver's plushie
 - type: loadout
@@ -253,7 +253,7 @@
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
-    - Oliver Cambridge
+    - Oliver LaRue
 
 # Nova's Jacket
 - type: loadout
@@ -429,7 +429,7 @@
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
-    - Michael Hands
+    - Michael LaRue
 
 #Ardus' Bandana
 - type: loadout
