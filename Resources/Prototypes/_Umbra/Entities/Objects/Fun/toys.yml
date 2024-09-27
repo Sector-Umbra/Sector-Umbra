@@ -11,7 +11,7 @@
     state: plushie_vesper
     sprite: _Umbra/Objects/Fun/Toys/plushie_vesper.rsi
 
-# Player: lemonrat - Character: Oliver Cambridge
+# Player: lemonrat - Character: Oliver LaRue
 - type: entity
   parent: PlushieLizard
   id: PlushieOliver
@@ -113,12 +113,12 @@
     state: plushie_esther
     sprite: _Umbra/Objects/Fun/Toys/plushie_esther.rsi
 
-# Player: raindrops - Character: Nia Noctis
+# Player: raindrops - Character: Nia Scarlet
 - type: entity
   parent: PlushieMoth
   id: PlushieNia
   name: nia plushie
-  description: A plushie depicting Nia Noctis! It's very fuzzy and soft. There is a very subtle pout on its face...
+  description: A plushie depicting Nia Scarlet! It's very fuzzy and soft. There is a very subtle pout on its face...
   suffix: PersonalItem
   components:
   - type: Sprite
@@ -185,5 +185,23 @@
     quickEquip: false
     sprite: _Umbra/Objects/Fun/Toys/plushie_gartei.rsi
     equippedPrefix: gartei
+    slots:
+    - HEAD
+
+    # Players: Ariphylor - Character: Passes-The-Dutchie
+- type: entity
+  parent: PlushieLizard
+  id: DutchiePlushie
+  name: passes-the-dutchie plushie
+  description: A squishy plush modeled after Passes-the-Dutchie. It has a faint aroma of berries.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_dutchie
+    sprite: _Umbra/Objects/Fun/Toys/plushie_dutchie.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_dutchie.rsi
+    equippedPrefix: dutchie
     slots:
     - HEAD

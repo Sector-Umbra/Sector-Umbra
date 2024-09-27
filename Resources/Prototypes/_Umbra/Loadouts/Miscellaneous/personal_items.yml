@@ -187,7 +187,7 @@
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
-    - Nia Noctis
+    - Nia Scarlet
 
 # Oliver's oliver's plushie
 - type: loadout
@@ -198,7 +198,7 @@
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
-    - Oliver Cambridge
+    - Oliver LaRue
 
 # Nova's Jacket
 - type: loadout
@@ -352,7 +352,7 @@
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
-    - Michael Hands
+    - Michael LaRue
 
 #Ardus' Bandana
 - type: loadout
@@ -364,3 +364,36 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Ardus Kaine
+
+# Michael's ring
+- type: loadout
+  id: MichaelsRing
+  storage:
+    back:
+    - MichaelsRing
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Michael LaRue
+
+# Annie's ring
+- type: loadout
+  id: AnniesRing
+  storage:
+    back:
+    - AnniesRing
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Annie LaRue
+
+# Passes-The-Dutchie's plushie
+- type: loadout
+  id: DutchiePlushie
+  storage:
+    back:
+    - DutchiePlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Passes-the-Dutchie
