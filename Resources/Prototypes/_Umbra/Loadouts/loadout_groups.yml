@@ -50,6 +50,10 @@
   - KaiPlushie
   - GarTeiPlushie
   - MichaelsCard
+  - MichaelsRing
+  - AnniesRing
+  - DutchiePlushie
+
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -96,6 +100,9 @@
   - KaiPlushie
   - GarTeiPlushie
   - MichaelsCard
+  - MichaelsRing
+  - AnniesRing
+  - DutchiePlushie
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -141,3 +148,6 @@
   - KaiPlushie
   - GarTeiPlushie
   - MichaelsCard
+  - MichaelsRing
+  - AnniesRing
+  - DutchiePlushie

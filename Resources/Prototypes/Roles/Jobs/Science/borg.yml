@@ -7,11 +7,12 @@
   requirements:
   - !type:RoleTimeRequirement
     role: JobBorg
-    time: 18000  # 5 hrs
+    time: 7200  # Umbra 5 hrs -> 2 hrs
   canBeAntag: false
   icon: JobIconStationAi
   supervisors: job-supervisors-rd
   jobEntity: StationAiBrain
+  applyTraits: false
   # CD: Skip records
   special:
     - !type:AddComponentSpecial
@@ -28,6 +29,7 @@
   icon: JobIconBorg
   supervisors: job-supervisors-rd
   jobEntity: PlayerBorgGeneric
+  applyTraits: false
   # CD: Skip records
   special:
     - !type:AddComponentSpecial

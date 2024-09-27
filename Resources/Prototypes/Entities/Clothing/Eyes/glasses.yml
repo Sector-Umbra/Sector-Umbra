@@ -100,7 +100,7 @@
   parent: ClothingEyesBase
   id: ClothingEyesGlassesJamjar
   name: jamjar glasses
-  description: What are you looking at?
+  description: What are you looking at? # Umbra
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/jamjar.rsi
@@ -188,7 +188,7 @@
   parent: [ClothingEyesBase, BaseCommandContraband]
   id: ClothingEyesGlassesCommand
   name: administration glasses
-  description: Upgraded sunglasses that provide flash immunity and show ID card status. 
+  description: Upgraded sunglasses that provide flash immunity and show ID card status.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/commandglasses.rsi
