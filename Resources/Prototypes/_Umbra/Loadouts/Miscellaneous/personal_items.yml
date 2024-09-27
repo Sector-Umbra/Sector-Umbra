@@ -200,17 +200,6 @@
     character:
     - John Armstrong
 
-# Loops' bell collar
-- type: loadout
-  id: ClothingNeckLoopsBellCollar
-  storage:
-    back:
-    - ClothingNeckLoopsBellCollar
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Loops-the-Horns
-
 # Miles' flower braid
 - type: loadout
   id: ClothingHeadHatFlowerBraidGeorgia
