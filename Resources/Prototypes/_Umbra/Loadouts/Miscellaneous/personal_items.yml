@@ -12,17 +12,6 @@
 # 5. Add the loadout to every applicable LOADOUT GROUP in loadout_groups.yml
 #    (in the parent folder of this file).
 
-#Borgs' Scarf
-- type: loadout
-  id: ClothingNeckBorgsScarf
-  storage:
-    back:
-    - ClothingNeckBorgsScarf
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Borgs-the-Brains
-
 # Chance's Carp Suit
 - type: loadout
   id: ClothingUniformJumpsuitCarpSuit
