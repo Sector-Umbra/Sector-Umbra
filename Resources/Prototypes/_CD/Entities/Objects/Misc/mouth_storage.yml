@@ -4,7 +4,7 @@
   description: The cheeks of an animal, capable of storing small objects.
   categories: [ HideSpawnMenu ]
   components:
-- type: Storage
+  - type: Storage
     clickInsert: false
     grid:
     - 0,0,1,1
