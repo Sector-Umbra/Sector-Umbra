@@ -200,17 +200,6 @@
     character:
     - John Armstrong
 
-# Miles' flower braid
-- type: loadout
-  id: ClothingHeadHatFlowerBraidGeorgia
-  storage:
-    back:
-    - ClothingHeadHatFlowerBraidGeorgia
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Georgia A Miles
-
 # Nia's esther plushie
 - type: loadout
   id: PlushieEsther
