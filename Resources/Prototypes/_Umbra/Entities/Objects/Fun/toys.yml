@@ -205,3 +205,21 @@
     equippedPrefix: dutchie
     slots:
     - HEAD
+
+    # Players: gruesomegray - Character: Buries-the-Hatchet
+- type: entity
+  parent: PlushieLizard
+  id: AmokPlushie
+  name: run-amok plushie
+  description: A lizard plushie made to look like Run-Amok. Its got a silly hat with bells on it.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_amok
+    sprite: _Umbra/Objects/Fun/Toys/plushie_amok.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_amok.rsi
+    equippedPrefix: amok
+    slots:
+    - HEAD

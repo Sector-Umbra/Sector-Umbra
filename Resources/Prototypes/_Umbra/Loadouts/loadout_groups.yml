@@ -47,7 +47,8 @@
   - AnniesRing
   - DutchiePlushie
   - ClothingUniformJumpsuitDrugeristic
- 
+  - AmokPlushie
+
 # Personal items specialised for Warden
 - type: loadoutGroup
   id: PersonalItemsWarden
@@ -89,8 +90,9 @@
   - MichaelsRing
   - AnniesRing
   - DutchiePlushie
-
   - ClothingUniformJumpsuitDrugeristic
+  - AmokPlushie
+
 # Personal items specialised for Detective
 - type: loadoutGroup
   id: PersonalItemsDetective
@@ -132,3 +134,4 @@
   - AnniesRing
   - DutchiePlushie
   - ClothingUniformJumpsuitDrugeristic
+  - AmokPlushie
