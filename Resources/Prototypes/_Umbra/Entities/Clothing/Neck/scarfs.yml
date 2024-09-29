@@ -10,3 +10,16 @@
     sprite: _Umbra/Clothing/Neck/Scarfs/borgsscarf.rsi
   - type: Clothing
     sprite: _Umbra/Clothing/Neck/Scarfs/borgsscarf.rsi
+
+# Player: Boaz1111 - Character: Johan Ullman
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckJohanScarf
+  name: Johan' NTRD Scarf
+  description: A scarf with the color of the NTRD, Nanotrasen's finest research division.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Neck/Scarfs/johanscarf.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Neck/Scarfs/johanscarf.rsi
