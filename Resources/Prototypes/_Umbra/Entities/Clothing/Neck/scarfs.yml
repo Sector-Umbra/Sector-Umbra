@@ -2,7 +2,7 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckJohanScarf
-  name: Johan' NTRD Scarf
+  name: Johan's NTRD Scarf
   description: A scarf with the colors of the NTRD, a collection of Nanotrasen's finest research divsions.
   suffix: PersonalItem
   components:

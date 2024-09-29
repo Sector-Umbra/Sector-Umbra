@@ -145,6 +145,17 @@
     character:
     - Johan Ullman
 
+# Johan's NTRD Scarf
+- type: loadout
+  id: ClothingNeckJohanScarf
+  storage:
+    back:
+    - ClothingNeckJohanScarf
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Johan Ullman
+
 # Jotty's Pet Rock
 - type: loadout
   id: PetRockBobby
