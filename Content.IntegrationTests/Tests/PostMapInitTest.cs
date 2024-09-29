@@ -66,7 +66,8 @@ namespace Content.IntegrationTests.Tests
             "Train",
             "Oasis",
             "Cog",
-            "Xeno"
+            "Xeno", // Umbra
+            "Iris" // Umbra
         };
 
         // UMBRA: We need to be able to mark non-upstream maps as not tested.
