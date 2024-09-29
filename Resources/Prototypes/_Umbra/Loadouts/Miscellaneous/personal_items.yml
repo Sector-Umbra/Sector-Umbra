@@ -396,7 +396,18 @@
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
-    - Passes-the-Dutchie
+    - Passes-The-Dutchie
+
+#Druger's Suit
+- type: loadout
+  id: ClothingUniformJumpsuitDrugeristic
+  storage:
+    back:
+    - ClothingUniformJumpsuitDrugeristic
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Druger Phillips Ruger Dug
 
 # Buries-the-Hatchet's plushie
 - type: loadout
