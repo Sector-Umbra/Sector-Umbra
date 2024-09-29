@@ -64,7 +64,11 @@
       "directions": 4
     },
     {
-      "name": "maple",
+      "name": "maple_primary",
+      "directions": 4
+    },
+    {
+      "name": "maple_secondary",
       "directions": 4
     },
     {
@@ -126,6 +130,14 @@
     {
       "name": "underwing_secondary",
       "directions": 4
+    },
+    {
+       "name": "membral_primary",
+       "directions": 4
+    },
+    {
+        "name": "membral_secondary",
+        "directions": 4
     }
   ]
 }

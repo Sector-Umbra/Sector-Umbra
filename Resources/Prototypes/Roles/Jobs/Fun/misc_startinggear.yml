@@ -1,6 +1,6 @@
 #Misc outfit startingGear definitions.
 
-#Skeleton Biker
+#Skeleton Biker - Just a skeleton now
 - type: startingGear
   id: SkeletonBiker
   equipment:
@@ -13,40 +13,9 @@
     shoes: ClothingShoesBootsJack
     id: PassengerPDA
     ears: ClothingHeadsetGrey
-    pocket1: VehicleSkeletonMotorcycle
-    pocket2: VehicleKeySkeletonMotorcycle
-
-#Deathsquad Outfit
-- type: startingGear
-  id: DeathSquadGear
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitDeathSquad
-    back: ClothingBackpackDeathSquad
-    mask: ClothingMaskGasDeathSquad
-    eyes: ClothingEyesHudSecurity
-    ears: ClothingHeadsetAltCentCom
-    gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitDeathsquad
-    suitstorage: AirTankFilled
-    shoes: ClothingShoesBootsMagAdv
-    id: DeathsquadPDA
-    pocket1: EnergySword
-    pocket2: EnergyShield
-    belt: ClothingBeltMilitaryWebbingMedFilled
   storage:
     back:
-    - BoxSurvivalEngineering
-    - WeaponPulseRifle
-    - WeaponPulsePistol
-    - WeaponRevolverMateba
-    - SpeedLoaderMagnumAP
-    - SpeedLoaderMagnumAP
-    - BoxFlashbang
-    - ToolDebug # spanish army knife
-    - WelderExperimental
-    - Hypospray
-    - DeathAcidifierImplanter # crew will try to steal their amazing hardsuits
-    - FreedomImplanter
+    - BoxSurvival
 
 # Syndicate Operative Outfit - Civilian
 - type: startingGear
@@ -70,7 +39,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitOperative
     head: ClothingHeadHelmetSwatSyndicate
-    mask: ClothingMaskGas
+    mask: ClothingMaskGasSyndicate
     outerClothing: ClothingOuterArmorBasic
     gloves: ClothingHandsGlovesCombat
     back: ClothingBackpack
@@ -83,9 +52,29 @@
 # Syndicate Footsoldier Gear
 - type: startingGear
   id: SyndicateFootsoldierGear
-  parent: SyndicateFootsoldierGearRuin
+  parent: SyndicateOperativeGearCivilian
   equipment:
-    ears: ClothingHeadsetAltSyndicate
+    jumpsuit: ClothingUniformJumpsuitOperative
+    head: ClothingHeadHelmetSwatSyndicate
+    eyes: ClothingEyesHudSyndicate
+    outerClothing: ClothingOuterArmorBasic
+    gloves: ClothingHandsGlovesCombat
+    back: ClothingBackpack
+    shoes: ClothingShoesBootsCombatFilled
+  storage:
+    back:
+    - BoxSurvivalSyndicate
+
+- type: startingGear
+  id: SyndicateFootsoldierTeamLeaderGear
+  parent: SyndicateFootsoldierGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSyndieFormal
+    head: ClothingHeadHatOutlawHat
+    outerClothing: ClothingOuterArmorBasicSlim
+    back: ClothingBackpackSatchel
+    pocket1: BaseUplinkRadio25TC
+    pocket2: EnergySword
 
 # Nanotrasen Paramilitary Unit Gear
 - type: startingGear
@@ -105,32 +94,6 @@
     - BoxSurvivalSecurity
     - Flash
     - MagazinePistol
-
-#CBURN Unit Gear - Full Kit
-- type: startingGear
-  id: CBURNGear
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitColorBrown
-    back: ClothingBackpackDuffelCBURN
-    mask: ClothingMaskGasERT
-    eyes: ClothingEyesGlassesSecurity
-    ears: ClothingHeadsetAltCentCom
-    gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitCBURN
-    shoes: ClothingShoesBootsCombatFilled
-    id: CBURNPDA
-    pocket1: RadioHandheld
-    pocket2: WeaponLaserGun
-    suitstorage: OxygenTankFilled
-    belt: ClothingBeltBandolier
-  storage:
-    back:
-    - BoxSurvivalEngineering
-    - WeaponShotgunDoubleBarreled
-    - BoxShotgunIncendiary
-    - GrenadeFlashBang
-    - PillAmbuzolPlus
-    - PillAmbuzol
 
 - type: startingGear
   id: BoxingKangarooGear
@@ -185,6 +148,7 @@
     - GasAnalyzer
     - trayScanner
     - AccessConfiguratorUniversal
+    - Multitool
 
 #Gladiator with spear
 - type: startingGear
@@ -209,7 +173,7 @@
 - type: startingGear
   id: BananaClown
   equipment:
-    id: ClownPDA
+    id: VisitorPDA
     back: ClothingBackpackClown
     shoes: ClothingShoesClownBanana
     jumpsuit: ClothingUniformJumpsuitClownBanana
@@ -223,162 +187,3 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitColorGrey
     shoes: ClothingShoesColorBlack
-
-#Clown Troupe
-- type: startingGear
-  id: ClownTroupe
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitClown
-    shoes: ClothingShoesClown
-    id: ClownPDA
-    back: ClothingBackpackClown
-    ears: ClothingHeadsetLongRange # CD: not station so long range
-    mask: ClothingMaskClown
-    pocket1: BikeHorn
-    pocket2: ClownRecorder
-
-#Lost Cargo Tech
-- type: startingGear
-  id: LostCargoTechGearSuit
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitCargo
-    shoes: ClothingShoesColorBlack
-    head: ClothingHeadHatCargosoft
-    id: CargoPDA
-    back: ClothingBackpackCargo
-    ears: ClothingHeadsetCargo
-    pocket1: AppraisalTool
-  # CD: Is nanotrasen, so they keep NT headsets but also get a hailing headset.
-  storage:
-    back:
-    - ClothingHeadsetLongRange
-  # End CD
-
-- type: startingGear
-  id: LostCargoTechGearCoat
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitCargo
-    shoes: ClothingShoesBootsWinterCargo
-    head: ClothingHeadHatCargosoft
-    id: CargoPDA
-    back: ClothingBackpackDuffelCargo
-    ears: ClothingHeadsetCargo
-    pocket1: AppraisalTool
-    outerClothing: ClothingOuterWinterCargo
-  # CD: Is nanotrasen, so they keep NT headsets but also get a hailing headset.
-  storage:
-    back:
-    - ClothingHeadsetLongRange
-  # End CD
-
-#Traveling Chef
-- type: startingGear
-  id: TravelingChef
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitChef
-    shoes: ClothingShoesColorWhite
-    id: ChefPDA
-    back: ClothingBackpackSatchel
-    ears: ClothingHeadsetLongRange # CD: not station so long range
-    belt: ClothingBeltChef
-
-#CMO Disaster Victim
-- type: startingGear
-  id: DisasterVictimCMO
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitCMO
-    shoes: ClothingShoesColorBrown
-    head: ClothingHeadMirror
-    neck: ClothingCloakCmo
-    id: CMOPDA
-    back: ClothingBackpackMedical
-    ears: ClothingHeadsetCMO
-    belt: ClothingBeltMedical
-    outerClothing: ClothingOuterCoatLabCmo
-  # CD: Is nanotrasen, so they keep NT headsets but also get a hailing headset.
-  storage:
-    back:
-    - ClothingHeadsetLongRange
-  # End CD
-
-- type: startingGear
-  id: DisasterVictimCMOAlt
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitCMOTurtle
-    shoes: ClothingShoesColorBrown
-    head: ClothingHeadHatBeretCmo
-    neck: ClothingNeckMantleCMO
-    id: CMOPDA
-    back: ClothingBackpackSatchelMedical
-    ears: ClothingHeadsetCMO
-    belt: ClothingBeltMedical
-    outerClothing: ClothingOuterCoatLabCmo
-  # CD: Is nanotrasen, so they keep NT headsets but also get a hailing headset.
-  storage:
-    back:
-    - ClothingHeadsetLongRange
-  # End CD
-
-#Captain Disaster Victim
-- type: startingGear
-  id: DisasterVictimCaptain
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitCaptain
-    shoes: ClothingShoesBootsLaceup
-    eyes: ClothingEyesGlassesSunglasses
-    gloves: ClothingHandsGlovesCaptain
-    head: ClothingHeadHatCaptain
-    neck: ClothingNeckCloakCap
-    id: CaptainPDA
-    back: ClothingBackpackCaptain
-    ears: ClothingHeadsetAltCommand
-    outerClothing: ClothingOuterArmorCaptainCarapace
-
-- type: startingGear
-  id: DisasterVictimCaptainAlt
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitCapFormal
-    shoes: ClothingShoesBootsLaceup
-    eyes: ClothingEyesGlassesSunglasses
-    gloves: ClothingHandsGlovesCaptain
-    head: ClothingHeadHatCapcap
-    neck: ClothingNeckMantleCap
-    id: CaptainPDA
-    back: ClothingBackpackSatchelCaptain
-    ears: ClothingHeadsetAltCommand
-    outerClothing: ClothingOuterArmorCaptainCarapace
-
-#RD Disaster Victim
-- type: startingGear
-  id: DisasterVictimRD
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitResearchDirector
-    shoes: ClothingShoesColorBrown
-    head: ClothingHeadHatBeretRND
-    neck: ClothingNeckCloakRd
-    id: RnDPDA
-    back: ClothingBackpackScience
-    ears: ClothingHeadsetRD
-    outerClothing: ClothingOuterCoatRD
-  # CD: Is nanotrasen, so they keep NT headsets but also get a hailing headset.
-  storage:
-    back:
-    - ClothingHeadsetLongRange
-  # End CD
-
-- type: startingGear
-  id: DisasterVictimRDAlt
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitResearchDirector
-    shoes: ClothingShoesColorBrown
-    head: ClothingHeadHatBeretRND
-    neck: ClothingNeckMantleRD
-    id: RnDPDA
-    back: ClothingBackpackSatchelScience
-    ears: ClothingHeadsetRD
-    outerClothing: ClothingOuterCoatRD
-  # CD: Is nanotrasen, so they keep NT headsets but also get a hailing headset.
-  storage:
-    back:
-    - ClothingHeadsetLongRange
-  # End CD

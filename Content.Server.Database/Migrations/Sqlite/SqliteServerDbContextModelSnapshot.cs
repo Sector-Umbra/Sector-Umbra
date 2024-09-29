@@ -553,6 +553,19 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.ToTable("cd_character_record_entries", (string)null);
                 });
 
+            modelBuilder.Entity("Content.Server.Database.Blacklist",
+                b =>
+                {
+                    b.Property<Guid>("UserId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("user_id");
+
+                    b.HasKey("UserId")
+                        .HasName("PK_blacklist");
+
+                    b.ToTable("blacklist", (string) null);
+                });
             modelBuilder.Entity("Content.Server.Database.BanTemplate", b =>
                 {
                     b.Property<int>("Id")

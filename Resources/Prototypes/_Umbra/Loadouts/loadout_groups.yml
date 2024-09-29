@@ -15,26 +15,39 @@
   loadouts:
   - ClothingNeckArtifactNecklace
   - FrostCoat
-  - ClothingNeckLoopsBellCollar
   - PlushieDeeja
   - PlushieJasmi
-  - PlushieMaple
+  - PlushieJuniper
   - PlushieVesper
   - PlushieOliver
-  - ClothingHeadHatFlowerBraidGeorgia
-  - ClothingEyesReadingGlasses
   - ClothingNeckChewtoy
   - ClothingShoesMiscWeldsWalker
-  - ClothingNeckWipesFriendMedal
   - FateseekersGemstone
   - ClothingUniformJumpsuitCarpSuit
+  - ClothingUniformJumpsuitSweatpants
   - ClothingNeckRyeTie
   - ClothingHeadHatRainbowFlowerJasmi
-  - ClothingHeadBorgsBeret
-  - ClothingNeckBorgsScarf
+  - ClothingHeadArdusBandana
   - ClothingOuterGalaxyCoat
   - PetRockBobby
-
+  - PlushieEris
+  - JohansCodex
+  - ClothingHeadsetErisAid
+  - ClothingNeckHushPendant
+  - Oceancoat
+  - PlushieHeart
+  - PlushieNia
+  - PlushieEsther
+  - PlushieDragonCarp
+  - SerendipityPlushie
+  - KaiPlushie
+  - GarTeiPlushie
+  - MichaelsCard
+  - MichaelsRing
+  - AnniesRing
+  - DutchiePlushie
+  - ClothingUniformJumpsuitDrugeristic
+  - AmokPlushie
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -45,27 +58,40 @@
   loadouts:
   - ClothingNeckArtifactNecklace
   - FrostCoat
-  - ClothingNeckLoopsBellCollar
   - PlushieDeeja
   - PlushieJasmi
-  - PlushieMaple
+  - PlushieJuniper
   - PlushieVesper
   - PlushieOliver
-  - ClothingHeadHatFlowerBraidGeorgia
-  - ClothingEyesReadingGlasses
   - ClothingNeckChewtoy
   - ClothingShoesMiscWeldsWalker
-  - ClothingNeckWipesFriendMedal
   - ClothingOuterYarnaArmourCoat
   - FateseekersGemstone
   - ClothingUniformJumpsuitCarpSuit
+  - ClothingUniformJumpsuitSweatpants
   - ClothingNeckRyeTie
   - ClothingHeadHatRainbowFlowerJasmi
-  - ClothingHeadBorgsBeret
-  - ClothingNeckBorgsScarf
+  - ClothingHeadArdusBandana
   - ClothingOuterGalaxyCoat
   - PetRockBobby
-
+  - PlushieEris
+  - JohansCodex
+  - ClothingHeadsetErisAid
+  - ClothingNeckHushPendant
+  - Oceancoat
+  - PlushieHeart
+  - PlushieNia
+  - PlushieEsther
+  - PlushieDragonCarp
+  - SerendipityPlushie
+  - KaiPlushie
+  - GarTeiPlushie
+  - MichaelsCard
+  - MichaelsRing
+  - AnniesRing
+  - DutchiePlushie
+  - ClothingUniformJumpsuitDrugeristic
+  - AmokPlushie
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -76,23 +102,36 @@
   loadouts:
   - ClothingNeckArtifactNecklace
   - FrostCoat
-  - ClothingNeckLoopsBellCollar
   - PlushieDeeja
   - PlushieJasmi
-  - PlushieMaple
+  - PlushieJuniper
   - PlushieVesper
   - PlushieOliver
-  - ClothingHeadHatFlowerBraidGeorgia
-  - ClothingEyesReadingGlasses
   - ClothingOuterCoatReinforcedRaincoat
   - ClothingNeckChewtoy
   - ClothingShoesMiscWeldsWalker
-  - ClothingNeckWipesFriendMedal
   - FateseekersGemstone
   - ClothingUniformJumpsuitCarpSuit
+  - ClothingUniformJumpsuitSweatpants
   - ClothingNeckRyeTie
   - ClothingHeadHatRainbowFlowerJasmi
-  - ClothingHeadBorgsBeret
-  - ClothingNeckBorgsScarf
+  - ClothingHeadArdusBandana
   - ClothingOuterGalaxyCoat
   - PetRockBobby
+  - PlushieEris
+  - ClothingHeadsetErisAid
+  - ClothingNeckHushPendant
+  - Oceancoat
+  - PlushieHeart
+  - PlushieNia
+  - PlushieEsther
+  - PlushieDragonCarp
+  - SerendipityPlushie
+  - KaiPlushie
+  - GarTeiPlushie
+  - MichaelsCard
+  - MichaelsRing
+  - AnniesRing
+  - DutchiePlushie
+  - ClothingUniformJumpsuitDrugeristic
+  - AmokPlushie
