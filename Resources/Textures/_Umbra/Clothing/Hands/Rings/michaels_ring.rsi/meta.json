@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Made by HexReject and AemonTillado for SS14.",
+    "states": [
+        {
+            "name": "michaels_ring"
+        }
+    ]
+}

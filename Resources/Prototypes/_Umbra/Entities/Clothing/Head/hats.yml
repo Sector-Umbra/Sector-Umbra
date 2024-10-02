@@ -1,12 +1,12 @@
-# Player: Tych0 - Character: Borgs-the-Brains
+# Player: Maestro2Kimpembe - Character: Ardus Kaine
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadBorgsBeret
-  name: Borgs' Beret
-  description: Borgs' personal beret. It has a preserved exotic flower and a carved artifact fragment sewn onto it.
+  id: ClothingHeadArdusBandana
+  name: Ardus' Bandana
+  description: Ardus' old bandana. It has logo of Praestilyn Royal Army on front and a small freshly handwritten note "Not edible".
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra/Clothing/Head/Hats/borgsberet.rsi
+    sprite: _Umbra/Clothing/Head/Hats/ardus-bandana.rsi
   - type: Clothing
-    sprite: _Umbra/Clothing/Head/Hats/borgsberet.rsi
+    sprite: _Umbra/Clothing/Head/Hats/ardus-bandana.rsi
