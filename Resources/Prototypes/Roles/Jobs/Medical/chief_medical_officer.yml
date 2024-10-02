@@ -7,7 +7,7 @@
   playTimeTracker: JobChiefMedicalOfficer
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 10800 #3 hrs
+      time: 21600 # 6 hrs
     - !type:AgeRequirement
       requiredAge: 21
   weight: 10
