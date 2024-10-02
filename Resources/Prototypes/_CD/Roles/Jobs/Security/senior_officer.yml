@@ -3,7 +3,7 @@
   name: job-name-senior-officer
   description: job-description-senior-officer
   playTimeTracker: JobSeniorOfficer
-     requirements:
+  requirements:
     - !type:OverallPlaytimeRequirement
       time: 10800 # 3 hrs Umbra
   startingGear: SeniorOfficerGear
