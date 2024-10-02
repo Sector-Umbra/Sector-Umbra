@@ -2,7 +2,7 @@
   id: HeadRev
   name: roles-antag-rev-head-name
   antagonist: true
-  setPreference: false # Umbra: Disable
+  setPreference: true
   objective: roles-antag-rev-head-objective
   guides: [ Revolutionaries ]
 
@@ -10,7 +10,7 @@
   id: Rev
   name: roles-antag-rev-name
   antagonist: true
-  setPreference: false # Umbra: Disable
+  setPreference: false
   objective: roles-antag-rev-objective
   guides: [ Revolutionaries ]
 

@@ -2,7 +2,7 @@
   id: Thief
   name: roles-antag-thief-name
   antagonist: true
-  setPreference: false # Umbra: Disable
+  setPreference: true 
   objective: roles-antag-thief-objective
   guides: [ Thieves ]
 
