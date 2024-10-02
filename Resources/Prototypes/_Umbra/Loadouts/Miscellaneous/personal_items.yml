@@ -430,3 +430,14 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Buries-the-Hatchet
+
+# Sky's plushie
+- type: loadout
+  id: PlushieSky
+  storage:
+    back:
+    - PlushieSky
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Sky Tomson
