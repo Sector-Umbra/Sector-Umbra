@@ -7,6 +7,14 @@
   loadouts:
   - PlushieLizard
   - PlushieSpaceLizard
+  - PlushieVox # CD
+  - PlushieArachind # CD
+  - PlushieDiona # CD
+  - PlushieHuman # CD
+  - PlushieMoth # CD
+  - PlushieSharkBlue # CD
+  - PlushieSharkPink # CD
+  - PlushieSharkGrey # CD: Putting these up here so they show up along the existing plushies.
   - Lighter
   - CigPackGreen
   - CigPackRed
@@ -25,6 +33,7 @@
   - ClothingNeckTransPin
   - ClothingNeckAutismPin
   - ClothingNeckGoldAutismPin
+  - CDDogtags # CD
 
 - type: loadoutGroup
   id: Glasses
@@ -60,6 +69,14 @@
   loadouts:
   - LoadoutSpeciesEVANitrogen
   - LoadoutSpeciesEVAOxygen
+
+- type: loadoutGroup
+  id: GroupPocketTankDouble
+  name: loadout-group-pocket-tank-double
+  hidden: true
+  loadouts:
+  - LoadoutSpeciesPocketDoubleNitrogen
+  - LoadoutSpeciesPocketDoubleOxygen
 
 # Command
 - type: loadoutGroup
@@ -488,7 +505,7 @@
   loadouts:
   - MimeSuspendersRed
   - MimeSuspendersBlack
-  
+
 - type: loadoutGroup
   id: SurvivalMime
   name: loadout-group-survival-mime
@@ -912,6 +929,7 @@
   loadouts:
   - HeadofSecurityHead
   - HeadofSecurityBeret
+  - HeadofSecuritySheriffHat #CD
 
 - type: loadoutGroup
   id: HeadofSecurityJumpsuit
@@ -969,6 +987,7 @@
   - SecurityHelmet
   - SecurityBeret
   - SecurityHat
+  - TrooperHat
 
 - type: loadoutGroup
   id: SecurityJumpsuit
@@ -981,6 +1000,7 @@
   # CD: Separate Senior roles
   # - SeniorOfficerJumpsuit
   # - SeniorOfficerJumpskirt
+  - TrooperUniform
 
 - type: loadoutGroup
   id: SecurityBackpack
@@ -996,6 +1016,7 @@
   loadouts:
   - SecurityBelt
   - SecurityWebbing
+  - SecurityPlateCarrier #CD
 
 - type: loadoutGroup
   id: SecurityOuterClothing

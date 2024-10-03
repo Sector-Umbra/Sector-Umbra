@@ -31,9 +31,9 @@
         tableId: MeteorSwarmDustEventsTable
     - id: GameRuleMeteorSwarmSmall
     - id: GameRuleMeteorSwarmMedium
-    - id: GameRuleMeteorSwarmLarge
+    # - id: GameRuleMeteorSwarmLarge # Umbra/CD: Disable
     - id: GameRuleUristSwarm
-    - id: ImmovableRodSpawn
+    # - id: ImmovableRodSpawn # Umbra: Disable
 
 - type: weightedRandomEntity
   id: MeteorSpawnAsteroidWallTable
@@ -57,12 +57,12 @@
   components:
   - type: GameRule
   - type: BasicStationEventScheduler
-    minimumTimeUntilFirstEvent: 300 # 5 min
+    minimumTimeUntilFirstEvent: 900 # 5 min -> Umbra: 15 minutes
     minMaxEventTiming:
-      min: 750 # 12.5 min
-      max: 930 # 17.5 min
+      min: 1800 # 12.5 min -> Umbra: 30 minutes
+      max: 7200 # 17.5 min -> Umbra: 120 minutes
     scheduledGameRules: !type:NestedSelector
-      tableId: BasicMeteorSwarmEventsTable
+      tableId: MeteorSwarmMildTable # Umbra: Changed from BasicMeteorSwarmEventsTable
 
 - type: entity
   parent: BaseGameRule
@@ -70,10 +70,10 @@
   components:
   - type: GameRule
   - type: BasicStationEventScheduler
-    minimumTimeUntilFirstEvent: 300 # 5 min 
+    minimumTimeUntilFirstEvent: 1200 # 20 min
     minMaxEventTiming:
-      min: 750 # 12.5 min
-      max: 930 # 17.5 min
+      min: 2700 # 12.5 min -> Umbra: 45 minutes
+      max: 10800 # 17.5 min -> Umbra: 180 minutes
     scheduledGameRules: !type:NestedSelector
       tableId: MeteorSwarmMildTable
 
@@ -109,8 +109,8 @@
     earliestStart: 2
     minimumPlayers: 0
   - type: MeteorSwarm
-    announcement: null
-    announcementSound: null
+    announcement: station-event-space-dust-minor-start-announcement # CD Change: custom announcement
+    announcementSound: /Audio/Announcements/attention.ogg
     nonDirectional: true
     meteors:
       MeteorSpaceDust: 1
@@ -129,7 +129,7 @@
     weight: 22
     minimumPlayers: 0
   - type: MeteorSwarm
-    announcement: station-event-space-dust-start-announcement
+    announcement: station-event-space-dust-moderate-start-announcement # CD Change: custom announcement
     announcementSound: /Audio/Announcements/attention.ogg
     nonDirectional: true
     meteors:
@@ -138,8 +138,9 @@
       min: 2
       max: 3
     meteorsPerWave:
-      min: 8
-      max: 12
+      # CD: Decrease count
+      min: 6
+      max: 10
 
 - type: entity
   parent: GameRuleMeteorSwarm
@@ -149,9 +150,11 @@
     weight: 18
     minimumPlayers: 15
   - type: MeteorSwarm
+    announcement: station-event-meteor-swarm-small-start-announcement # CD Change: custom announcement
     meteors:
-      MeteorSmall: 7
-      MeteorMedium: 3
+      # CD: Decrease count
+      MeteorSmall: 5
+      MeteorMedium: 2
 
 - type: entity
   parent: GameRuleMeteorSwarm
@@ -160,22 +163,25 @@
   - type: StationEvent
     weight: 10
   - type: MeteorSwarm
+    announcement: station-event-meteor-swarm-moderate-start-announcement # CD Change: custom announcement
     meteors:
-      MeteorSmall: 3
-      MeteorMedium: 6
+      # CD: Decrease count
+      MeteorSmall: 2
+      MeteorMedium: 3
       MeteorLarge: 1
 
-- type: entity
-  parent: GameRuleMeteorSwarm
-  id: GameRuleMeteorSwarmLarge
-  components:
-  - type: StationEvent
-    weight: 5
-  - type: MeteorSwarm
-    meteors:
-      MeteorSmall: 2
-      MeteorMedium: 4
-      MeteorLarge: 4
+# - type: entity
+#   parent: GameRuleMeteorSwarm
+#   id: GameRuleMeteorSwarmLarge
+#   components:
+#   - type: StationEvent
+#     weight: 2
+#   - type: MeteorSwarm
+#     announcement: station-event-meteor-swarm-heavy-start-announcement # CD Change: custom announcement
+#     meteors:
+#       MeteorSmall: 2
+#       MeteorMedium: 4
+#       MeteorLarge: 4
 
 - type: entity
   parent: GameRuleMeteorSwarm
@@ -211,26 +217,29 @@
   - type: ImmovableRodRule
     rodPrototypes:
     - id: ImmovableRodKeepTilesStill
-      prob: 0.95
+      prob: 0.94
       orGroup: rodProto
     - id: ImmovableRodMop
-      prob: 0.0072
+      prob: 0.0075
       orGroup: rodProto
     - id: ImmovableRodShark
-      prob: 0.0072
+      prob: 0.0075
       orGroup: rodProto
     - id: ImmovableRodClown
-      prob: 0.0072
+      prob: 0.0075
       orGroup: rodProto
     - id: ImmovableRodBanana
-      prob: 0.0072
+      prob: 0.0075
       orGroup: rodProto
     - id: ImmovableRodHammer
-      prob: 0.0072
+      prob: 0.0075
       orGroup: rodProto
     - id: ImmovableRodThrongler
-      prob: 0.0072
+      prob: 0.0075
       orGroup: rodProto
     - id: ImmovableRodGibstick
-      prob: 0.0072
+      prob: 0.0075
+      orGroup: rodProto
+    - id: ImmovableRodWeh
+      prob: 0.0075
       orGroup: rodProto

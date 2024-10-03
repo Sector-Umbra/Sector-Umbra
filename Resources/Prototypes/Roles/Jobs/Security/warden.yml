@@ -5,7 +5,7 @@
   playTimeTracker: JobWarden
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 3600 # 1 hr
+      time: 10800 # 3 hr
   startingGear: WardenGear
   icon: "JobIconWarden"
   requireAdminNotify: true
