@@ -14,7 +14,7 @@
   - Security
   - Brig
   - Maintenance
-#  - Service Umbra no service access
+  - Service
   - External
   special:
   - !type:AddImplantSpecial
