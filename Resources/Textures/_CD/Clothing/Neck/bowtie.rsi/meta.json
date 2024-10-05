@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "license": "CC-BY-SA-4.0",
+  "license": "CC-BY-SA-3.0",
   "copyright": "Sprites by Github KittenColony / Discord kittencolony (297865728374210561)",
   "size": {
     "x": 32,
@@ -8,19 +8,18 @@
   },
   "states": [
     {
-      "name": "icon"
+      "name": "red"
     },
     {
-      "name": "equipped-INNERCLOTHING",
+      "name": "red-equipped",
       "directions": 4
+	},
+	{
+      "name": "blue"
     },
     {
-      "name": "inhand-left",
+      "name": "blue-equipped",
       "directions": 4
-    },
-    {
-      "name": "inhand-right",
-      "directions": 4
-    }
+	}
   ]
 }
