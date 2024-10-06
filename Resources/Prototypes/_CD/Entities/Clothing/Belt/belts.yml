@@ -9,4 +9,16 @@
     state: icon
   - type: Clothing
     sprite: _CD/Clothing/Belt/halfapron.rsi
-    
+
+# Reverts the sprite changes in: https://github.com/space-wizards/space-station-14/pull/29441/files.
+# It is intentional that this does not provide armor until its possible for this item to block equipping armor.
+- type: entity
+  parent: ClothingBeltSecurity
+  id: ClothingBeltSecurityPlateCarrier
+  name: security plate carrier
+  description: Unique and versatile plate carrier, designed to hold security gear.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Belt/securityplatecarrier.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Belt/securityplatecarrier.rsi

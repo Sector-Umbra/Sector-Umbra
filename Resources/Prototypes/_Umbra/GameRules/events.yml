@@ -1,7 +1,7 @@
 - type: entity
   id: ImmovableRodSpawnFake
   parent: BaseGameRule
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: StationEvent
     startAnnouncement: station-event-immovable-rod-start-announcement

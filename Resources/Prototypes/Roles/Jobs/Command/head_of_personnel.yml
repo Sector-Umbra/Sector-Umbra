@@ -5,7 +5,7 @@
   playTimeTracker: JobHeadOfPersonnel
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 10800 # 3 hours
+      time: 21600 # 6 hrs
   weight: 20
   startingGear: HoPGear
   icon: "JobIconHeadOfPersonnel"
@@ -45,6 +45,7 @@
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
+
 - type: startingGear
   id: HoPGear
   equipment:
