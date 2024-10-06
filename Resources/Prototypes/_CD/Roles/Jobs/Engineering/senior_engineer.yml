@@ -3,6 +3,9 @@
   name: job-name-senior-engineer
   description: job-description-senior-engineer
   playTimeTracker: JobSeniorEngineer
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 10800 # 3 hrs Umbra
   startingGear: SeniorEngineerGear
   icon: "JobIconSeniorEngineer"
   supervisors: job-supervisors-ce

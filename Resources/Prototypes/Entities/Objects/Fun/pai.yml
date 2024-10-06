@@ -17,7 +17,7 @@
         type: InstrumentBoundUserInterface
         requireInputValidation: false
       enum.StationMapUiKey.Key:
-        type: UntrackedStationMapBoundUserInterface
+        type: StationMapBoundUserInterface
         requireInputValidation: false
   - type: Sprite
     sprite: Objects/Fun/pai.rsi
@@ -44,12 +44,14 @@
     stopSearchVerbPopup: pai-system-stopped-searching
   - type: Examiner
   - type: IntrinsicRadioReceiver
+  # UMBRA: Reverted commit 6459f71 -> Allow silicons without laws access to binary channel
   - type: IntrinsicRadioTransmitter
     channels:
     - Binary
+  # End Umbra
   - type: ActiveRadio
     channels:
-    - Binary
+    - Binary # Umbra: Allow silicons without laws access to binary channel
     - Common
   - type: DoAfter
   - type: Actions
@@ -75,7 +77,7 @@
   - type: StationMap
 
 - type: entity
-  parent: PersonalAI
+  parent: [ PersonalAI, BaseSyndicateContraband]
   id: SyndicatePersonalAI
   name: syndicate personal ai device
   description: Your Syndicate pal who's fun to be with!

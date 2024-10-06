@@ -1,12 +1,12 @@
-# Player: Tych0 - Character: Borgs-the-Brains
+# Player: Boaz1111 - Character: Johan Ullman
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckBorgsScarf
-  name: Borgs' Scarf
-  description: A purple striped scarf with artifact fragments sewn into it. Definitely safe. 
+  id: ClothingNeckJohanScarf
+  name: Johan's NTRD Scarf
+  description: A scarf with the colors of the NTRD, a collection of Nanotrasen's finest research divsions.
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra/Clothing/Neck/Scarfs/borgsscarf.rsi
+    sprite: _Umbra/Clothing/Neck/Scarfs/johanscarf.rsi
   - type: Clothing
-    sprite: _Umbra/Clothing/Neck/Scarfs/borgsscarf.rsi
+    sprite: _Umbra/Clothing/Neck/Scarfs/johanscarf.rsi

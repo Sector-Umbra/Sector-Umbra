@@ -5,7 +5,7 @@
   playTimeTracker: JobResearchDirector
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 10800 # 3 hrs
+      time: 21600 # 6 hrs
   weight: 10
   startingGear: ResearchDirectorGear
   icon: "JobIconResearchDirector"

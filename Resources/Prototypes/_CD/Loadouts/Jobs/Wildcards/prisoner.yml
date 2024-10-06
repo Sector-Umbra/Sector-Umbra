@@ -10,7 +10,8 @@
 # Jumpsuit
 - type: loadout
   id: PrisonerJumpsuit
-  equipment: PrisonerJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPrisoner
 
 - type: startingGear
   id: PrisonerJumpsuit
@@ -19,7 +20,8 @@
 
 - type: loadout
   id: PrisonerJumpskirt
-  equipment: PrisonerJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtPrisoner
 
 - type: startingGear
   id: PrisonerJumpskirt
@@ -28,7 +30,8 @@
 
 - type: loadout
   id: Emag
-  equipment: Emag
+  equipment: 
+    back: Emag
   effects:
   - !type:GroupLoadoutEffect
     proto: MasterPrisoner
