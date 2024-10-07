@@ -57,21 +57,6 @@
     back:
     - ClothingUniformJumpsuitCarpSuit
 
-# Dani's Tech Coat
-- type: loadout
-  id: ClothingOuterTechCoat
-  equipment: ClothingOuterTechCoat
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Daniella Rose
-
-- type: startingGear
-  id: ClothingOuterTechCoat
-  storage:
-    back:
-    - ClothingOuterTechCoat
-
 # Deeja's artifact necklace
 - type: loadout
   id: ClothingNeckArtifactNecklace
@@ -102,7 +87,6 @@
     back:
     - PlushieJasmi
 
-
 # Eris' Plushie
 - type: loadout
   id: PlushieEris
@@ -111,7 +95,6 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Eris Rose
-    - Daniella Rose
 
 - type: startingGear
   id: PlushieEris
@@ -294,16 +277,56 @@
     character:
     - Nia Scarlet
 
+- type: startingGear
+  id: ClothingNeckLoopsBellCollar
+  storage:
+    back:
+    - ClothingNeckLoopsBellCollar
+
+# Miles' flower braid
+- type: loadout
+  id: ClothingHeadHatFlowerBraidGeorgia
+  equipment: ClothingHeadHatFlowerBraidGeorgia
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Georgia A Miles
+
+- type: startingGear
+  id: ClothingHeadHatFlowerBraidGeorgia
+  storage:
+    back:
+    - ClothingHeadHatFlowerBraidGeorgia
+
+# Nashira-Najma's maple moondancer plushie
+- type: loadout
+  id: PlushieMaple
+  equipment: PlushieMaple
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Nashira-Najma
+
+- type: startingGear
+  id: PlushieMaple
+  storage:
+    back:
+    - PlushieMaple
+
 # Oliver's oliver's plushie
 - type: loadout
   id: PlushieOliver
-  storage:
-    back:
-    - PlushieOliver
+  equipment: PlushieOliver
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
     - Oliver LaRue
+
+- type: startingGear
+  id: PlushieOliver
+  storage:
+    back:
+    - PlushieOliver
 
 # Nova's Jacket
 - type: loadout
@@ -315,6 +338,21 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Nova Gem
+
+# Reading's reading glasses
+- type: loadout
+  id: ClothingEyesReadingGlasses
+  equipment: ClothingEyesReadingGlasses
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Really-Likes-Reading
+
+- type: startingGear
+  id: ClothingEyesReadingGlasses
+  storage:
+    back:
+    - ClothingEyesReadingGlasses
 
 # Rye's tie
 - type: loadout
@@ -359,6 +397,21 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Vesper
+
+# Welds' synthetic chew fidget
+- type: loadout
+  id: ClothingNeckChewtoy
+  equipment: ClothingNeckChewtoy
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Welds-The-Pipes
+
+- type: startingGear
+  id: ClothingNeckChewtoy
+  storage:
+    back:
+    - ClothingNeckChewtoy
 
 # Welds' synthetic chew fidget
 - type: loadout
