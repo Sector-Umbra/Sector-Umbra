@@ -16,7 +16,6 @@
           tags:
             - MagazinePistolSubMachineGunTopMounted
         whitelistFailPopup: gun-magazine-whitelist-fail
-        visible: False
       gun_chamber:
         name: Chamber
         priority: 1
