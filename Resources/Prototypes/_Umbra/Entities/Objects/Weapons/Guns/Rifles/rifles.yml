@@ -1,14 +1,14 @@
 - type: entity
   name: Lecter
-  suffix: Empty
+  suffix: Practice
   parent: WeaponRifleLecter
-  id: WeaponRifleLecterEmpty
+  id: WeaponRifleLecterPractice
   components:
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineRifleEmpty
+        startingItem: MagazineRiflePractice
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2

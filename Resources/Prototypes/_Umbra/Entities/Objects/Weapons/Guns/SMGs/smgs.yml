@@ -1,14 +1,14 @@
 - type: entity
   name: WT550
-  suffix: Empty
+  suffix: Practice
   parent: WeaponSubMachineGunWt550
-  id: WeaponSubMachineGunWt550Empty
+  id: WeaponSubMachineGunWt550Practice
   components:
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazinePistolSubMachineGunTopMountedEmpty
+        startingItem: MagazinePistolSubMachineGunTopMountedPractice
         insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
         priority: 2

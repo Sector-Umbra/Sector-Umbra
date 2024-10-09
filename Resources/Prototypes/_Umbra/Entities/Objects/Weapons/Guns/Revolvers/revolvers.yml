@@ -3,9 +3,9 @@
 
 - type: entity
   name: Inspector
-  suffix: Empty
+  suffix: Practice
   parent: WeaponRevolverInspector
-  id: WeaponRevolverInspectorEmpty
+  id: WeaponRevolverInspectorPractice
   components:
   - type: RevolverAmmoProvider
-    proto: null
+    proto: CartridgeMagnumPractice

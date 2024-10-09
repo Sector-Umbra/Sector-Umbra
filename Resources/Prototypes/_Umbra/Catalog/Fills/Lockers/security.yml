@@ -5,17 +5,17 @@
   components:
   - type: StorageFill
     contents:
-    - id: WeaponShotgunEnforcerEmpty
+    - id: WeaponShotgunEnforcerPractice
       amount: 3
-    - id: WeaponShotgunKammererEmpty
+    - id: WeaponShotgunKammererPractice
       amount: 3
-    - id: WeaponRifleLecterEmpty
+    - id: WeaponRifleLecterPractice
       amount: 3
     - id: WeaponDisablerPractice
       amount: 3
     - id: WeaponLaserCarbinePractice
       amount: 3
-    - id: WeaponRevolverInspectorEmpty
+    - id: WeaponRevolverInspectorPractice
       amount: 3
-    - id: WeaponSubMachineGunWt550Empty
+    - id: WeaponSubMachineGunWt550Practice
       amount: 3
