@@ -1,0 +1,51 @@
+    # Players: Akira - Character: Hisses-At-Inconveniences
+- type: entity
+  parent: ClothingOuterBase
+  id: HissesGoldenLocket
+  name: hisses' golden locket
+  description: Hisses Golden Locket is certainly needing a description!
+  suffix: PersonalItem
+  components:
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: _Umbra/Clothing/OuterClothing/Misc/hisses_golden_locket.rsi
+    layers:
+    - state: icon
+      map: [ "enum.ToggleVisuals.Layer" ]
+  - type: Clothing
+    quickequip: False
+    sprite: _Umbra/Clothing/OuterClothing/Misc/hisses_golden_locket.rsi
+# CAN BE USED TO SPAM THE ITEM AND MAKE NOISE
+# FIGURE SOMETHING OUT AFTER EEP
+#  - type: ToggleClothing
+#    action: ActionToggleHissesLocket
+  - type: ToggleVerb
+    text: "Toggle Locket"
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleVisuals.Toggled:
+        enum.ToggleVisuals.Layer:
+          True: {state: icon-on}
+          False: {state: icon}
+  - type: ItemToggle
+    soundActivate:
+      path: /Audio/Weapons/telescopicon.ogg
+      params:
+        volume: -5
+    soundDeactivate:
+      path: /Audio/Weapons/telescopicoff.ogg
+      params:
+        volume: -5
+  - type: UseDelay
+    delay: 0.5
+
+- type: entity
+  id: ActionToggleHissesLocket
+  name: Toggle Locket
+  description: Toggles the locket on and off.
+  components:
+  - type: InstantAction
+    itemIconStyle: BigItem
+    event: !type:ToggleActionEvent
