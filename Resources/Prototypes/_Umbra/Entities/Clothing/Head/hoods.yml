@@ -12,3 +12,17 @@
     sprite: _Umbra/Clothing/Head/novagalaxyhood.rsi
   - type: Clothing
     sprite: _Umbra/Clothing/Head/novagalaxyhood.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatCatEars3
+  categories: [ HideSpawnMenu ]
+  name: Daniella's cat ears
+  description: "A set of fuzzy cat ears! Looksies but no touchies!"
+  components:
+  - type: Tag
+    tags: [ ] # ignore "WhitelistChameleon" tag
+  - type: Sprite
+    sprite: _Umbra/Clothing/Head/techcoatears.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Head/techcoatears.rsi
