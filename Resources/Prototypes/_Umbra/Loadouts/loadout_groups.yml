@@ -51,6 +51,7 @@
   - AmokPlushie
   - PlushieSky
   - ClothingOuterTechCoat
+  - TakesPlushie
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -98,6 +99,7 @@
   - AmokPlushie
   - PlushieSky
   - ClothingOuterTechCoat
+  - TakesPlushie
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -145,3 +147,4 @@
   - AmokPlushie
   - PlushieSky
   - ClothingOuterTechCoat
+  - TakesPlushie
