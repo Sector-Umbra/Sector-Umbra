@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "panel.png, off.png, broken.png and normal-unshaded.png modified by luckyshotpictures from commit https://github.com/space-wizards/space-station-14/commit/5f9ba812caabcf674fb45e25e14ea15b6de07855",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "broken"
+    },
+    {
+      "name": "normal-unshaded",
+      "delays": [
+        [
+          5,
+          0.1,
+          0.6,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "off"
+    },
+    {
+      "name": "panel"
+    }
+  ]
+}

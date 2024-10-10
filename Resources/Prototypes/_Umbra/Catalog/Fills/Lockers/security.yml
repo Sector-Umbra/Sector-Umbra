@@ -1,0 +1,21 @@
+- type: entity
+  parent: GunSafe
+  id: GunSafePractice
+  name: practice weapon safe
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponShotgunEnforcerPractice
+      amount: 3
+    - id: WeaponShotgunKammererPractice
+      amount: 3
+    - id: WeaponRifleLecterPractice
+      amount: 3
+    - id: WeaponDisablerPractice
+      amount: 3
+    - id: WeaponLaserCarbinePractice
+      amount: 3
+    - id: WeaponRevolverInspectorPractice
+      amount: 3
+    - id: WeaponSubMachineGunWt550Practice
+      amount: 3

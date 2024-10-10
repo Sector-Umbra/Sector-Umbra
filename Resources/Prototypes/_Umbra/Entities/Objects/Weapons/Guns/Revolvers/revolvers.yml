@@ -1,1 +1,11 @@
 ﻿# I lost the fucking file, ill add it later :(
+# I am now abducting this file, too bad!!
+
+- type: entity
+  name: Inspector
+  suffix: Practice
+  parent: WeaponRevolverInspector
+  id: WeaponRevolverInspectorPractice
+  components:
+  - type: RevolverAmmoProvider
+    proto: CartridgeMagnumPractice
