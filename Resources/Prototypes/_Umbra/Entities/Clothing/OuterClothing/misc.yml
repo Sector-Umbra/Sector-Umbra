@@ -37,11 +37,13 @@
       path: /Audio/Weapons/Guns/MagIn/bullet_insert.ogg
       params:
         volume: -5
+  - type: UseDelay
+    delay: 0.5
 
 - type: entity
   id: ActionToggleHissesLocket
   name: Toggle Locket
-  description: Toggles the locket on and off.
+  description: Toggles the locket open and closed.
   components:
   - type: InstantAction
     itemIconStyle: BigItem
