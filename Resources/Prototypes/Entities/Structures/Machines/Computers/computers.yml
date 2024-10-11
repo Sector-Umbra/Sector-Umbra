@@ -344,8 +344,6 @@
         type: CharacterRecordConsoleBoundUserInterface
       enum.WiresUiKey.Key:
         type: WiresBoundUserInterface
-  - type: ActivatableUI
-    key: enum.CharacterRecordConsoleKey.Key
   - type: Sprite
     layers:
     - map: ["computerLayerBody"]
@@ -371,6 +369,8 @@
     - CriminalRecords
   - type: CharacterRecordConsole
     consoleType: Security
+  - type: ActivatableUI
+    key: enum.CharacterRecordConsoleKey.Key
 
 - type: entity
   parent: BaseComputerAiAccess
@@ -378,6 +378,15 @@
   name: employment records computer
   description: This can be used to check employment records.
   components:
+  - type: GeneralStationRecordConsole
+  - type: UserInterface
+    interfaces:
+        enum.CharacterRecordConsoleKey.Key:
+          type: CharacterRecordConsoleBoundUserInterface
+        enum.WiresUiKey.Key:
+          type: WiresBoundUserInterface
+  - type: ActivatableUI
+    key: enum.CharacterRecordConsoleKey.Key
   - type: PointLight
     radius: 1.5
     energy: 1.6
@@ -389,14 +398,6 @@
     - Forensics
   - type: CharacterRecordConsole
     consoleType: Employment
-  - type: UserInterface
-    interfaces:
-      enum.CharacterRecordConsoleKey.Key:
-        type: CharacterRecordConsoleBoundUserInterface
-      enum.WiresUiKey.Key:
-        type: WiresBoundUserInterface
-  - type: ActivatableUI
-    key: enum.CharacterRecordConsoleKey.Key
 
 - type: entity
   parent: BaseComputerAiAccess
