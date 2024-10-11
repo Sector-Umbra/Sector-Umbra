@@ -5,9 +5,11 @@
   description: job-description-station-ai
   playTimeTracker: JobStationAi
   requirements:
-  - !type:RoleTimeRequirement
-    role: JobBorg
-    time: 7200  # Umbra 5 hrs -> 2 hrs
+    - !type:DepartmentTimeRequirement
+      department: Command
+      time: 10800 # 3 hrs
+    - !type:OverallPlaytimeRequirement
+      time: 21600 # 6 hrs
   canBeAntag: false
   icon: JobIconStationAi
   supervisors: job-supervisors-rd

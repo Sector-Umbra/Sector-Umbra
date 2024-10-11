@@ -23,6 +23,17 @@
     character:
     - Chance Boulevard
 
+# Daniella Rose's Tech Coat
+- type: loadout
+  id: ClothingOuterTechCoat
+  storage:
+    back:
+    - ClothingOuterTechCoat
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Daniella Rose
+
 # Deeja's artifact necklace
 - type: loadout
   id: ClothingNeckArtifactNecklace
@@ -56,6 +67,7 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Eris Rose
+    - Daniella Rose
 
 # Eris' Hearing-Aid
 - type: loadout
@@ -140,6 +152,17 @@
   storage:
     back:
     - JohansCodex
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Johan Ullman
+
+# Johan's NTRD Scarf
+- type: loadout
+  id: ClothingNeckJohanScarf
+  storage:
+    back:
+    - ClothingNeckJohanScarf
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -419,3 +442,24 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Buries-the-Hatchet
+
+# Sky's plushie
+- type: loadout
+  id: PlushieSky
+  storage:
+    back:
+    - PlushieSky
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Sky Tomson
+  # Takes's Plushie
+- type: loadout
+  id: TakesPlushie
+  storage:
+    back:
+    - TakesPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Takes-Great-Risk  

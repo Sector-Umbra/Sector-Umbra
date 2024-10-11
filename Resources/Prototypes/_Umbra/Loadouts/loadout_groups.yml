@@ -32,6 +32,7 @@
   - PetRockBobby
   - PlushieEris
   - JohansCodex
+  - ClothingNeckJohanScarf
   - ClothingHeadsetErisAid
   - ClothingNeckHushPendant
   - Oceancoat
@@ -48,6 +49,9 @@
   - DutchiePlushie
   - ClothingUniformJumpsuitDrugeristic
   - AmokPlushie
+  - PlushieSky
+  - ClothingOuterTechCoat
+  - TakesPlushie
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -76,6 +80,7 @@
   - PetRockBobby
   - PlushieEris
   - JohansCodex
+  - ClothingNeckJohanScarf
   - ClothingHeadsetErisAid
   - ClothingNeckHushPendant
   - Oceancoat
@@ -92,6 +97,9 @@
   - DutchiePlushie
   - ClothingUniformJumpsuitDrugeristic
   - AmokPlushie
+  - PlushieSky
+  - ClothingOuterTechCoat
+  - TakesPlushie
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -119,6 +127,8 @@
   - ClothingOuterGalaxyCoat
   - PetRockBobby
   - PlushieEris
+  - JohansCodex
+  - ClothingNeckJohanScarf
   - ClothingHeadsetErisAid
   - ClothingNeckHushPendant
   - Oceancoat
@@ -135,3 +145,6 @@
   - DutchiePlushie
   - ClothingUniformJumpsuitDrugeristic
   - AmokPlushie
+  - PlushieSky
+  - ClothingOuterTechCoat
+  - TakesPlushie
