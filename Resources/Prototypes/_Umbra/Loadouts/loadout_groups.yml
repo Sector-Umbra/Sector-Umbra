@@ -50,6 +50,8 @@
   - ClothingUniformJumpsuitDrugeristic
   - AmokPlushie
   - PlushieSky
+  - ClothingOuterTechCoat
+  - TakesPlushie
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -96,6 +98,8 @@
   - ClothingUniformJumpsuitDrugeristic
   - AmokPlushie
   - PlushieSky
+  - ClothingOuterTechCoat
+  - TakesPlushie
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -142,6 +146,8 @@
   - ClothingUniformJumpsuitDrugeristic
   - AmokPlushie
   - PlushieSky
+   - ClothingOuterTechCoat
+  - TakesPlushie
 
 # Job Titles
 
