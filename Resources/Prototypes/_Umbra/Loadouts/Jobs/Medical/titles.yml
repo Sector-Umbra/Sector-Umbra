@@ -1,6 +1,7 @@
 - type: loadout
   id: MedicalPDA
-  equipment: MedicalPDA
+  equipment:
+    id: MedicalPDA
 
 - type: startingGear
   id: MedicalPDA
@@ -9,7 +10,8 @@
 
 - type: loadout
   id: NursePDA
-  equipment: NursePDA
+  equipment:
+    id: NursePDA
 
 - type: startingGear
   id: NursePDA

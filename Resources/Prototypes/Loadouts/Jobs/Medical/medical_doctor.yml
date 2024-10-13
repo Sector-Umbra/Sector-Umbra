@@ -89,7 +89,8 @@
 
 - type: loadout  # Umbra
   id: SkirtOfLife
-  equipment: SkirtOfLife
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtOfLife
 
 - type: startingGear
   id: SkirtOfLife
