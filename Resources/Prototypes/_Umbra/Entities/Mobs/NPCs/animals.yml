@@ -1,30 +1,14 @@
 # Bunny
 
-# TODO:
-# Make sure there is no weirdness from reparent to simple mob & code copy paste.
-# Make sure there are no extra components.
-# Dead Sprite
-# Inhand sprite.
-# Worn Sprite.
-# Make sure meta file is good.
-# Get someone to test more thouroughly.
 - type: entity
   name: bunny
   parent: SimpleMobBase
   id: MobBunny
   description: Tiny, fluffy, and full of attitude.
   components:
-  - type: Sprite
+  - type: Sprite # Something broken here
+    drawdepth: Mobs
     sprite: _Umbra/Mobs/Animals/bunny.rsi
-    layers:
-    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
-      state: bunny
-  #- type: Clothing # Make sprite or remove.
-  #  quickEquip: false
-  # sprite: Mobs/Animals/mothroach/mothroach.rsi
-  #  equippedPrefix: 0
-  #  slots:
-  #  - HEAD
   - type: Appearance
   - type: DamageStateVisuals
     states:
@@ -114,12 +98,6 @@
     damage:
       types:
         Piercing: 0
-  - type: Strippable #Kill?
-  - type: UserInterface #Kill?
-    interfaces:
-      enum.StrippingUiKey.Key:
-        type: StrippableBoundUserInterface
-  - type: InventorySlots # What?
   - type: Deathgasp
   - type: MobState
   - type: MobStateActions
@@ -131,7 +109,7 @@
   - type: NonSpreaderZombie  
   - type: NpcFactionMember
     factions:
-    - Mouse
+    - Passive
   - type: Tag
     tags:
     - Trash
