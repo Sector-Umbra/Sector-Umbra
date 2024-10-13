@@ -1,0 +1,17 @@
+- type: entity
+  name: Enforcer
+  suffix: Practice
+  parent: WeaponShotgunEnforcer
+  id: WeaponShotgunEnforcerPractice
+  components:
+  - type: BallisticAmmoProvider
+    proto: ShellShotgunPractice
+
+- type: entity
+  name: Kammerer
+  suffix: Practice
+  parent: WeaponShotgunKammerer
+  id: WeaponShotgunKammererPractice
+  components:
+  - type: BallisticAmmoProvider
+    proto: ShellShotgunPractice
