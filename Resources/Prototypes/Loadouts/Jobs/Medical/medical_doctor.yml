@@ -87,6 +87,16 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtMedicalDoctor
 
+- type: loadout  # Umbra
+  id: SkirtOfLife
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtOfLife
+
+- type: startingGear
+  id: SkirtOfLife
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtOfLife
+
 # - type: loadout (CD: Disabling senior clothing)
 #   id: SeniorPhysicianJumpsuit
 #   equipment: SeniorPhysicianJumpsuit
