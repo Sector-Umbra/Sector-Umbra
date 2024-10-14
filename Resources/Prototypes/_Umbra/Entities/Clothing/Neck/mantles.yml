@@ -1,0 +1,11 @@
+# Player: Jacketed - Character: Ko Karaki
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckKarakiMantle
+  name: karaki's nanoweave mantle
+  description: A lovely mantle that requires a description of immense power. Test
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Neck/Mantles/karakinanowevemantle.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Neck/Mantles/karakinanowevemantle.rsi
