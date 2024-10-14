@@ -6,18 +6,22 @@
   id: MobBunny
   description: Tiny, fluffy, and full of attitude.
   components:
-  - type: Sprite # Something broken here
+  - type: Sprite
     drawdepth: Mobs
-    sprite: _Umbra/Mobs/Animals/bunny.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: bat
+      sprite: _Umbra/Mobs/Animals/bunny.rsi
+      #sprite: Mobs/Animals/bat.rsi
   - type: Appearance
   - type: DamageStateVisuals
     states:
       Alive:
         Base: bunny
       Critical:
-        Base: bunny_dead
+        Base: bunny_dead #TODO: Critical Sprite
       Dead:
-        Base: bunny_dead
+        Base: bunny_dead #TODO: Dead Directional Sprite
   - type: Fixtures
     fixtures:
       fix1:
@@ -33,7 +37,7 @@
     size: Normal
   - type: CanEscapeInventory
   - type: Speech
-    speechVerb: Mouse
+    speechVerb: SmallMob
     speechSounds: Squeak
     allowedEmotes: ['Squeak']
   - type: Vocal
