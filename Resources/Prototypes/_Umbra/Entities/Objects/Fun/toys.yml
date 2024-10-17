@@ -118,7 +118,7 @@
   - type: Sprite
     state: heart_plushie
     sprite: _Umbra/Objects/Fun/Toys/plushie_heart.rsi
-  
+
 # Player: Onenineone - Character: Esther Scarlet
 - type: entity
   parent: PlushieMoth
@@ -171,7 +171,7 @@
     equippedPrefix: serendipity
     slots:
     - HEAD
-    
+
     # Players: Coolsurf6 - Character: Kai
 - type: entity
   parent: PlushieLizard
@@ -239,5 +239,77 @@
     quickEquip: false
     sprite: _Umbra/Objects/Fun/Toys/plushie_amok.rsi
     equippedPrefix: amok
+    slots:
+    - HEAD
+
+    # Players: Ariphylor - Character: Anxeeth-Duna
+- type: entity
+  parent: PlushieLizard
+  id: DunaPlushie
+  name: duna plushie
+  description: A lizard plushie made to look like Anxeeth-Duna.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_duna
+    sprite: _Umbra/Objects/Fun/Toys/plushie_duna.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_duna.rsi
+    equippedPrefix: duna
+    slots:
+    - HEAD
+
+    # Players: SpilTistic - Character: Only-Sees-Burgundy
+- type: entity
+  parent: PlushieSnake
+  id: BurgPlushie
+  name: burg plushie
+  description: A reptilian plushie made to look like Only-Sees-Burgundy. It has a few metal pieces resembling his piercings. It smells faintly of rum.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_burg
+    sprite: _Umbra/Objects/Fun/Toys/plushie_burg.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_burg.rsi
+    equippedPrefix: burg
+    slots:
+    - HEAD
+
+    # Players: Slugcta - Character: Hisses-At-Inconvenience
+- type: entity
+  parent: PlushieLizard
+  id: HissPlushie
+  name: hiss plushie
+  description: A reptilian plushie made to look like Hisses-At-Inconvenience. It's silky smooth and slightly warm to touch. You wonder if she even wanted this...
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_hiss
+    sprite: _Umbra/Objects/Fun/Toys/plushie_hiss.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_hiss.rsi
+    equippedPrefix: hiss
+    slots:
+    - HEAD
+
+    # Players: Jacketed - Character: Steals-The-Materials
+- type: entity
+  parent: PlushieLizard
+  id: MaterialsPlushie
+  name: materials plushie
+  description: A lizard plushie made to look like Steals-The-Materials.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_materials
+    sprite: _Umbra/Objects/Fun/Toys/plushie_materials.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_materials.rsi
+    equippedPrefix: materials
     slots:
     - HEAD
