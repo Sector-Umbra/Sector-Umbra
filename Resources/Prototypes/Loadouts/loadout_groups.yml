@@ -1160,6 +1160,7 @@
   loadouts:
   - MedicalDoctorJumpsuit
   - MedicalDoctorJumpskirt
+  - SkirtOfLife # Umbra
   # CD: Separate Senior roles
   # - SeniorPhysicianJumpsuit
   # - SeniorPhysicianJumpskirt
@@ -1192,11 +1193,10 @@
   - WhiteShoes
   - MedicalWinterBoots
 
-- type: loadoutGroup
-  id: MedicalDoctorPDA
-  name: loadout-group-medical-doctor-id
-  loadouts:
-  - MedicalDoctorPDA
+
+  # Umbra: Separate PDA loadout
+  # - MedicalDoctorTitles
+
   # CD: Separate Senior roles
   # - SeniorPhysicianPDA
 

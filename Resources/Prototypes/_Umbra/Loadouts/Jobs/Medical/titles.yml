@@ -1,0 +1,19 @@
+- type: loadout
+  id: MedicalPDA
+  equipment:
+    id: MedicalPDA
+
+- type: startingGear
+  id: MedicalPDA
+  equipment:
+    id: MedicalPDA
+
+- type: loadout
+  id: NursePDA
+  equipment:
+    id: NursePDA
+
+- type: startingGear
+  id: NursePDA
+  equipment:
+    id: NursePDA

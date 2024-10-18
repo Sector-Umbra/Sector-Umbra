@@ -148,3 +148,13 @@
   - PlushieSky
   - ClothingOuterTechCoat
   - TakesPlushie
+
+# Job Titles
+
+# Medical Job Titles
+- type: loadoutGroup
+  id: MedicalDoctorTitles
+  name: loadout-group-medical-id
+  loadouts:
+  - MedicalPDA
+  - NursePDA
