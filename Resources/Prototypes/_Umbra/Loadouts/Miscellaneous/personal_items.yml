@@ -462,4 +462,15 @@
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
-    - Takes-Great-Risk  
+    - Takes-Great-Risk
+
+# Hisses-At-Inconvenience's plushie
+- type: loadout
+  id: HissesPlushie
+  storage:
+    back:
+    - HissesPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Anxeeth-Duna
