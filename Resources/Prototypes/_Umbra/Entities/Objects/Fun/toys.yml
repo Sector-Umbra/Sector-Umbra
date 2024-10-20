@@ -260,8 +260,6 @@
     slots:
     - HEAD
 
-
-
     # Players: Ariphylor - Character: Anxeeth-Duna
 - type: entity
   parent: PlushieLizard
