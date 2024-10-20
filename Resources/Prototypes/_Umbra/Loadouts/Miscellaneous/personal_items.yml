@@ -462,4 +462,15 @@
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
-    - Takes-Great-Risk  
+    - Takes-Great-Risk
+
+# Only-Sees-Burgundy's plushie
+- type: loadout
+  id: BurgPlushie
+  storage:
+    back:
+    - BurgPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Only-Sees-Burgundy
