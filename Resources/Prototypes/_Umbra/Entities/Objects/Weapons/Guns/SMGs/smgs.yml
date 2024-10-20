@@ -1,0 +1,24 @@
+- type: entity
+  name: WT550
+  suffix: Practice
+  parent: WeaponSubMachineGunWt550
+  id: WeaponSubMachineGunWt550Practice
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistolSubMachineGunTopMountedPractice
+        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolSubMachineGunTopMounted
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgePistol

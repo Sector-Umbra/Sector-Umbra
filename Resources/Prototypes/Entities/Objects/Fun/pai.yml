@@ -44,12 +44,14 @@
     stopSearchVerbPopup: pai-system-stopped-searching
   - type: Examiner
   - type: IntrinsicRadioReceiver
+  # UMBRA: Reverted commit 6459f71 -> Allow silicons without laws access to binary channel
   - type: IntrinsicRadioTransmitter
     channels:
     - Binary
+  # End Umbra
   - type: ActiveRadio
     channels:
-    - Binary
+    - Binary # Umbra: Allow silicons without laws access to binary channel
     - Common
   - type: DoAfter
   - type: Actions
@@ -73,6 +75,10 @@
           Searching: { state: pai-searching-overlay }
           On: { state: pai-on-overlay }
   - type: StationMap
+  - type: ChangeVoiceInContainer
+    whitelist:
+      components:
+        - SecretStash
 
 - type: entity
   parent: [ PersonalAI, BaseSyndicateContraband]

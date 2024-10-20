@@ -5,6 +5,8 @@
   minLimit: 0
   maxLimit: 3
   loadouts:
+  - FlowerWreath
+  - Hairflower
   - PlushieLizard
   - PlushieSpaceLizard
   - PlushieVox # CD
@@ -26,6 +28,7 @@
   - ClothingNeckAromanticPin
   - ClothingNeckAsexualPin
   - ClothingNeckBisexualPin
+  - ClothingNeckGayPin
   - ClothingNeckIntersexPin
   - ClothingNeckLesbianPin
   - ClothingNeckNonBinaryPin
@@ -1072,6 +1075,7 @@
   loadouts:
   - DetectiveArmorVest
   - DetectiveCoat
+  - DetectiveCoatGrey
 
 - type: loadoutGroup
   id: SecurityCadetJumpsuit

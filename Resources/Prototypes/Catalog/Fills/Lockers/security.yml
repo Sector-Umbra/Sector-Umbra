@@ -137,6 +137,8 @@
       - id: HoloprojectorSecurity
       - id: BoxEvidenceMarkers
       - id: HandLabeler
+      #CD Additions
+      - id: BoxFolderDetectiveClipboard
 
 - type: entity
   id: ClosetBombFilled
