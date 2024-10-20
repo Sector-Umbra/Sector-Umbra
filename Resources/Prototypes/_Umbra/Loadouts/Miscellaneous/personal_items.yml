@@ -462,4 +462,15 @@
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
-    - Takes-Great-Risk  
+    - Takes-Great-Risk
+
+# Steals-The-Materials's plushie
+- type: loadout
+  id: MaterialsPlushie
+  storage:
+    back:
+    - MaterialsPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Steals-The-Materials

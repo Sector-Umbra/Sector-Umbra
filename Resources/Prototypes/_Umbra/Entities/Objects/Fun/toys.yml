@@ -118,7 +118,7 @@
   - type: Sprite
     state: heart_plushie
     sprite: _Umbra/Objects/Fun/Toys/plushie_heart.rsi
-  
+
 # Player: Onenineone - Character: Esther Scarlet
 - type: entity
   parent: PlushieMoth
@@ -171,7 +171,7 @@
     equippedPrefix: serendipity
     slots:
     - HEAD
-    
+
     # Players: Coolsurf6 - Character: Kai
 - type: entity
   parent: PlushieLizard
@@ -257,5 +257,23 @@
     quickEquip: false
     sprite: _Umbra/Objects/Fun/Toys/plushie_takes.rsi
     equippedPrefix: takes
+    slots:
+    - HEAD
+
+    # Players: Jacketed - Character: Steals-The-Materials
+- type: entity
+  parent: PlushieLizard
+  id: MaterialsPlushie
+  name: materials plushie
+  description: A custom made lizard plushie resembling Steals-The-Materials. Whilst it appears clean, the unmistakable odour of maintenance festers deep within the fabric. You can swear this plushie is staring into your soul. Something tells you not to trust this thing.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_materials
+    sprite: _Umbra/Objects/Fun/Toys/plushie_materials.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_materials.rsi
+    equippedPrefix: materials
     slots:
     - HEAD
