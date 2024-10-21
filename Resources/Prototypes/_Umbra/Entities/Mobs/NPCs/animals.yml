@@ -7,11 +7,11 @@
   description: Tiny, fluffy, and full of attitude.
   components:
   - type: Sprite
+    sprite: _Umbra/Mobs/Animals/bunny.rsi
     drawdepth: Mobs
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: bunny
-      sprite: _Umbra/Mobs/Animals/bunny.rsi
   - type: Appearance
   - type: DamageStateVisuals
     states:
