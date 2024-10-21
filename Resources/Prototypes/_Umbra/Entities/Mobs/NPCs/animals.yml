@@ -10,18 +10,17 @@
     drawdepth: Mobs
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
-      state: bat
+      state: bunny
       sprite: _Umbra/Mobs/Animals/bunny.rsi
-      #sprite: Mobs/Animals/bat.rsi
   - type: Appearance
   - type: DamageStateVisuals
     states:
       Alive:
         Base: bunny
       Critical:
-        Base: bunny_dead #TODO: Critical Sprite
+        Base: bunny_dead #TODO: Critical Specific Sprite
       Dead:
-        Base: bunny_dead #TODO: Dead Directional Sprite
+        Base: bunny_dead #TODO: Dead Directional Sprites
   - type: Fixtures
     fixtures:
       fix1:
