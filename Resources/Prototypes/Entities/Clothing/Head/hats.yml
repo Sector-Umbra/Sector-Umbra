@@ -25,18 +25,17 @@
     - HamsterWearable
     - WhitelistChameleon
 
+  # Umbra, no longer gives french accent. Changed description and name to reflect this. ID unchanged. 22-10-2024.
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatBeretFrench
-  name: french beret
-  description: A French beret, "vive la France".
+  name: black beret 
+  description: A black beret, an artists favorite headwear.
   components:
   - type: Sprite
     sprite: Clothing/Head/Hats/beret_french.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/beret_french.rsi
-  - type: AddAccentClothing
-    accent: FrenchAccent
   - type: Tag
     tags:
     - ClothMade
