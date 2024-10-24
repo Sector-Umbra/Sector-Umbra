@@ -462,4 +462,15 @@
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
-    - Takes-Great-Risk  
+    - Takes-Great-Risk
+
+  # June Mothe's Coat
+- type: loadout
+  id: ClothingOuterMotheCoat
+  storage:
+    back:
+    - ClothingOuterMotheCoat
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - June Mothe
