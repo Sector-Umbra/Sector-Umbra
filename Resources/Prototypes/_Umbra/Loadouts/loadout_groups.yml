@@ -52,6 +52,7 @@
   - PlushieSky
   - ClothingOuterTechCoat
   - TakesPlushie
+  - ClothingNeckKarakiMantle
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -100,6 +101,7 @@
   - PlushieSky
   - ClothingOuterTechCoat
   - TakesPlushie
+  - ClothingNeckKarakiMantle
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -148,3 +150,4 @@
   - PlushieSky
   - ClothingOuterTechCoat
   - TakesPlushie
+  - ClothingNeckKarakiMantle

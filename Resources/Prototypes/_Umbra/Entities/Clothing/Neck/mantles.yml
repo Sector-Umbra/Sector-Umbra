@@ -1,49 +1,33 @@
 # Player: Jacketed - Character: Ko Karaki
 - type: entity
-  parent: ClothingNeckBase
+  parent: [Clothing, BaseFoldable]
   id: ClothingNeckKarakiMantle
   name: karaki's nanoweave mantle
   description: A two piece cloak that can be folded up into a mantle.  Its made out of nanoweave in traditional colours, often worn by Avali across the Illuminate. The fabric is intricately weaved down to the atomic level, making it incredibly strong and durable. A necklace with a softly pulsing crystal is sown into fabric around the neck.
   components:
+  - type: Item
+    size: Small
   - type: Sprite
     sprite: _Umbra/Clothing/Neck/Mantles/karakinanowevemantle.rsi
     layers:
     - state: icon
-      map: [ "enum.ToggleVisuals.Layer" ]
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
   - type: Clothing
     sprite: _Umbra/Clothing/Neck/Mantles/karakinanowevemantle.rsi
-    layers:
-    - state: equipped-NECK
-      map: [ "enum.ToggleVisuals.Layer" ]
-  - type: ToggleClothing
-    action: ActionToggleKarakiMantle
-  - type: ToggleVerb
-    text: neck-toggle-mantle
+    quickEquip: true
+    slots:
+    - neck
   - type: Appearance
-  - type: GenericVisualizer
-    visuals:
-      enum.ToggleVisuals.Toggled:
-        enum.ToggleVisuals.Layer:
-          True: {state: icon-on, equipped-NECK-on}
-          False: {state: icon, equipped-NECK}
-  - type: ItemToggle
-    soundActivate:
-      path: /Audio/Weapons/Guns/MagIn/bullet_insert.ogg
-      params:
-        volume: -5
-    soundDeactivate:
-      path: /Audio/Weapons/Guns/MagIn/bullet_insert.ogg
-      params:
-        volume: -5
-  - type: UseDelay
-    delay: 2
-
-- type: entity
-  id: ActionToggleKarakiMantle
-  name: Fold Mantle
-  description: Folds the mantle to be shorter or longer.
-  components:
-  - type: InstantAction
-    itemIconStyle: BigItem
-    event: !type:ToggleActionEvent
-    useDelay: 2
+  - type: Foldable
+    canFoldInsideContainer: true
+    unfoldVerbText: fold-closed-verb
+    foldVerbText: fold-open-verb
+  - type: FoldableClothing
+    foldedEquippedPrefix: open
+    foldedHeldPrefix: open
+  - type: Tag
+    tags:
+    - WhitelistChameleon
