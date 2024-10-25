@@ -474,3 +474,47 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - June Mothe
+
+# Steals-The-Materials's plushie
+- type: loadout
+  id: MaterialsPlushie
+  storage:
+    back:
+    - MaterialsPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Steals-The-Materials
+
+# Hisses-At-Inconvenience's plushie
+- type: loadout
+  id: HissesPlushie
+  storage:
+    back:
+    - HissesPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Anxeeth-Duna
+
+# Only-Sees-Burgundy's plushie
+- type: loadout
+  id: BurgPlushie
+  storage:
+    back:
+    - BurgPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Only-Sees-Burgundy
+
+# Anxeeth-Duna's plushie
+- type: loadout
+  id: DunaPlushie
+  storage:
+    back:
+    - DunaPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Hisses-At-Inconvenience
