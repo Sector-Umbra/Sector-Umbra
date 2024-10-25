@@ -354,6 +354,7 @@
     slots:
     - HEAD
     - NECK
+  - type: Appearance
   - type: Foldable
     canFoldInsideContainer: true
     unfoldVerbText: fold-zip-verb
