@@ -331,3 +331,59 @@
     equippedPrefix: duna
     slots:
     - HEAD
+
+# Players: Nikovnik - Character: Mike Mumamwe
+- type: entity
+  parent: BasePlushie
+  id: PlushieTiha
+  name: tiha-tuga plushie
+  description: Tiha-Tuga's birthday gift to her father Mike Mumamwe. One of the few things that makes Mike keep on living.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Objects/Fun/Toys/plushie_tiha.rsi
+    state: icon
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_tiha.rsi
+    slots:
+    - HEAD
+  # - type: Foldable
+  #   canFoldInsideContainer: true
+  # - type: FoldableClothing
+  #   foldedEquippedPrefix: sleepy
+  #   foldedHeldPrefix: sleepy
+  # - type: EmitSoundOnUse
+  #   sound:
+  #     path: /Audio/Items/Toys/Tiha/hai.ogg
+  # - type: EmitSoundOnLand
+  #   sound:
+  #     path: /Audio/Items/Toys/Tiha/gasp.ogg
+  # - type: EmitSoundOnActivate
+  #   sound:
+  #     path: /Audio/Items/Toys/Tiha/hmf.ogg
+  # - type: EmitSoundOnTrigger
+  #   sound:
+  #     path: /Audio/Items/Toys/Tiha/hmf.ogg
+  # - type: Food
+  #   requiresSpecialDigestion: true
+  #   useSound:
+  #     path: /Audio/Items/Toys/Tiha/sad.ogg
+  # - type: MeleeWeapon
+  #   wideAnimationRotation: 180
+  #   soundHit:
+  #     path: /Audio/Items/Toys/Tiha/sad.ogg
+  # - type: Extractable
+  #   juiceSolution:
+  #     reagents:
+  #     - ReagentId: MuteToxin
+  #       Quantity: 30
+  # - type: SolutionContainerManager
+  #   solutions:
+  #     food:
+  #       maxVol: 20
+  #       reagents:
+  #       - ReagentId: Fiber
+  #         Quantity: 10
+  #       - ReagentId: MuteToxin
+  #         Quantity: 10

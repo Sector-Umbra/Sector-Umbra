@@ -1,0 +1,20 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Made by Nikovnik (github: nkokic), inspired by plushie_lizard.png from ://github.com/Sector-Umbra/Sector-Umbra/commit/ebebb3603acc9d801d5ae87ac948b1c287aa2116",
+    "size": {
+      "x": 32,
+      "y": 32
+    },
+    "states": [
+      {
+        "name": "icon"
+      },
+      {
+        "name": "equipped-HEAD",
+        "directions": 4
+      }
+
+    ]
+  }
+  
