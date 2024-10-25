@@ -453,7 +453,8 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Sky Tomson
-  # Takes's Plushie
+
+# Takes's Plushie
 - type: loadout
   id: TakesPlushie
   storage:
@@ -464,7 +465,7 @@
     character:
     - Takes-Great-Risk
 
-  # FP-SR M36's Artificer Uniform
+# FP-SR M36's Artificer Uniform
 - type: loadout
   id: ClothingUniformJumpsuitArtificer
   storage:
@@ -474,3 +475,47 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - FP-SR M36
+
+# Steals-The-Materials's plushie
+- type: loadout
+  id: MaterialsPlushie
+  storage:
+    back:
+    - MaterialsPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Steals-The-Materials
+
+# Hisses-At-Inconvenience's plushie
+- type: loadout
+  id: HissesPlushie
+  storage:
+    back:
+    - HissesPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Anxeeth-Duna
+
+# Only-Sees-Burgundy's plushie
+- type: loadout
+  id: BurgPlushie
+  storage:
+    back:
+    - BurgPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Only-Sees-Burgundy
+
+# Anxeeth-Duna's plushie
+- type: loadout
+  id: DunaPlushie
+  storage:
+    back:
+    - DunaPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Hisses-At-Inconvenience
