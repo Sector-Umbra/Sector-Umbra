@@ -91,7 +91,7 @@
   - type: Clothing
     sprite: _Umbra/Clothing/OuterClothing/Coats/mothe_coat.rsi
 
-# Player: June - Character: June Mothe
+# Player: TheUltimateJester - Character: Isathei Jokearith
 - type: entity
   parent: ClothingOuterStorageBase
   id: ClothingOuterIsatheiCoat
