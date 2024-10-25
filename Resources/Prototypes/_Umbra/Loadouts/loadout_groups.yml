@@ -52,6 +52,7 @@
   - PlushieSky
   - ClothingOuterTechCoat
   - TakesPlushie
+  - BurgPlushie
   - DunaPlushie
 
 # Personal items specialised for Warden
@@ -101,6 +102,7 @@
   - PlushieSky
   - ClothingOuterTechCoat
   - TakesPlushie
+  - BurgPlushie
   - DunaPlushie
 
 # Personal items specialised for Detective
@@ -150,4 +152,5 @@
   - PlushieSky
   - ClothingOuterTechCoat
   - TakesPlushie
+  - BurgPlushie
   - DunaPlushie

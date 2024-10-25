@@ -260,6 +260,24 @@
     slots:
     - HEAD
 
+    # Players: SpilTistic - Character: Only-Sees-Burgundy
+- type: entity
+  parent: PlushieSnake
+  id: BurgPlushie
+  name: burg plushie
+  description: A reptilian plushie made to look like Only-Sees-Burgundy. It has a few metal pieces resembling his piercings. It smells faintly of rum.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_burg
+    sprite: _Umbra/Objects/Fun/Toys/plushie_burg.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_burg.rsi
+    equippedPrefix: burg
+    slots:
+    - HEAD
+
     # Players: Ariphylor - Character: Anxeeth-Duna
 - type: entity
   parent: PlushieLizard

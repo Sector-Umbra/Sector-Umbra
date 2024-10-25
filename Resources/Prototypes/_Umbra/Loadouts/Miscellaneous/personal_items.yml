@@ -464,6 +464,17 @@
     character:
     - Takes-Great-Risk
 
+# Only-Sees-Burgundy's plushie
+- type: loadout
+  id: BurgPlushie
+  storage:
+    back:
+    - BurgPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Only-Sees-Burgundy
+
 # Anxeeth-Duna's plushie
 - type: loadout
   id: DunaPlushie
@@ -474,3 +485,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Hisses-At-Inconvenience
+
