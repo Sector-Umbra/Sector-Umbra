@@ -474,3 +474,15 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Only-Sees-Burgundy
+
+# Anxeeth-Duna's plushie
+- type: loadout
+  id: DunaPlushie
+  storage:
+    back:
+    - DunaPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Hisses-At-Inconvenience
+

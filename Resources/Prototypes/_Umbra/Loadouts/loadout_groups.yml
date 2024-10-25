@@ -53,6 +53,7 @@
   - ClothingOuterTechCoat
   - TakesPlushie
   - BurgPlushie
+  - DunaPlushie
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -102,6 +103,7 @@
   - ClothingOuterTechCoat
   - TakesPlushie
   - BurgPlushie
+  - DunaPlushie
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -151,3 +153,4 @@
   - ClothingOuterTechCoat
   - TakesPlushie
   - BurgPlushie
+  - DunaPlushie
