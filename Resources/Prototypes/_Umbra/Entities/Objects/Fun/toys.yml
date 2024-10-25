@@ -334,56 +334,64 @@
 
 # Players: Nikovnik - Character: Mike Mumamwe
 - type: entity
-  parent: BasePlushie
+  parent: [BasePlushie, BaseFoldable]
   id: PlushieTiha
   name: tiha-tuga plushie
-  description: Tiha-Tuga's birthday gift to her father Mike Mumamwe. One of the few things that makes Mike keep on living.
+  description: Tiha-Tuga's birthday gift to her father Mike Mumamwe. One of the few things what makes Mike keep on living.
   suffix: PersonalItem
   components:
   - type: Sprite
     sprite: _Umbra/Objects/Fun/Toys/plushie_tiha.rsi
-    state: icon
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: sleepy-icon
+      map: ["foldedLayer"]
+      visible: false
   - type: Clothing
     quickEquip: false
     sprite: _Umbra/Objects/Fun/Toys/plushie_tiha.rsi
     slots:
     - HEAD
-  # - type: Foldable
-  #   canFoldInsideContainer: true
-  # - type: FoldableClothing
-  #   foldedEquippedPrefix: sleepy
-  #   foldedHeldPrefix: sleepy
-  # - type: EmitSoundOnUse
-  #   sound:
-  #     path: /Audio/Items/Toys/Tiha/hai.ogg
-  # - type: EmitSoundOnLand
-  #   sound:
-  #     path: /Audio/Items/Toys/Tiha/gasp.ogg
-  # - type: EmitSoundOnActivate
-  #   sound:
-  #     path: /Audio/Items/Toys/Tiha/hmf.ogg
-  # - type: EmitSoundOnTrigger
-  #   sound:
-  #     path: /Audio/Items/Toys/Tiha/hmf.ogg
-  # - type: Food
-  #   requiresSpecialDigestion: true
-  #   useSound:
-  #     path: /Audio/Items/Toys/Tiha/sad.ogg
-  # - type: MeleeWeapon
-  #   wideAnimationRotation: 180
-  #   soundHit:
-  #     path: /Audio/Items/Toys/Tiha/sad.ogg
-  # - type: Extractable
-  #   juiceSolution:
-  #     reagents:
-  #     - ReagentId: MuteToxin
-  #       Quantity: 30
-  # - type: SolutionContainerManager
-  #   solutions:
-  #     food:
-  #       maxVol: 20
-  #       reagents:
-  #       - ReagentId: Fiber
-  #         Quantity: 10
-  #       - ReagentId: MuteToxin
-  #         Quantity: 10
+    - NECK
+  - type: Foldable
+    canFoldInsideContainer: true
+    unfoldVerbText: fold-zip-verb
+    foldVerbText: fold-unzip-verb
+  - type: FoldableClothing
+    foldedEquippedPrefix: sleepy
+    foldedHeldPrefix: sleepy
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_Umbra/Items/Toys/Tiha/hai.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Umbra/Items/Toys/Tiha/gasp.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/_Umbra/Items/Toys/Tiha/hmf.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/_Umbra/Items/Toys/Tiha/hmf.ogg
+  - type: Food
+    requiresSpecialDigestion: true
+    useSound:
+      path: /Audio/_Umbra/Items/Toys/Tiha/sad.ogg
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    soundHit:
+      path: /Audio/_Umbra/Items/Toys/Tiha/sad.ogg
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: MuteToxin
+        Quantity: 30
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 10
+        - ReagentId: MuteToxin
+          Quantity: 10
