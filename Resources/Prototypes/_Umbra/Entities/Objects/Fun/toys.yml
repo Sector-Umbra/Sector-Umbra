@@ -118,7 +118,7 @@
   - type: Sprite
     state: heart_plushie
     sprite: _Umbra/Objects/Fun/Toys/plushie_heart.rsi
-  
+
 # Player: Onenineone - Character: Esther Scarlet
 - type: entity
   parent: PlushieMoth
@@ -171,7 +171,7 @@
     equippedPrefix: serendipity
     slots:
     - HEAD
-    
+
     # Players: Coolsurf6 - Character: Kai
 - type: entity
   parent: PlushieLizard
@@ -257,5 +257,23 @@
     quickEquip: false
     sprite: _Umbra/Objects/Fun/Toys/plushie_takes.rsi
     equippedPrefix: takes
+    slots:
+    - HEAD
+
+    # Players: Ariphylor - Character: Anxeeth-Duna
+- type: entity
+  parent: PlushieLizard
+  id: DunaPlushie
+  name: duna plushie
+  description: A lizard plushie made to look like Anxeeth-Duna.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_duna
+    sprite: _Umbra/Objects/Fun/Toys/plushie_duna.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_duna.rsi
+    equippedPrefix: duna
     slots:
     - HEAD
