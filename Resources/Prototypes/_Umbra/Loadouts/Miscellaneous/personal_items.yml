@@ -464,6 +464,17 @@
     character:
     - Takes-Great-Risk
 
+  # June Mothe's Coat
+- type: loadout
+  id: ClothingOuterMotheCoat
+  storage:
+    back:
+    - ClothingOuterMotheCoat
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - June Mothe
+
 # Steals-The-Materials's plushie
 - type: loadout
   id: MaterialsPlushie
