@@ -90,3 +90,15 @@
     sprite: _Umbra/Clothing/OuterClothing/Coats/mothe_coat.rsi
   - type: Clothing
     sprite: _Umbra/Clothing/OuterClothing/Coats/mothe_coat.rsi
+
+# Player: June - Character: June Mothe
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterIsatheiCoat
+  name: isathei's valexian windbreaker
+  description: A gift from his brother Ardicuris, it sports luxury silver linings with a gold sword emblazoned on the back. The jacket is of high quality.
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/OuterClothing/Coats/isathei_coat.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/OuterClothing/Coats/isathei_coat.rsi

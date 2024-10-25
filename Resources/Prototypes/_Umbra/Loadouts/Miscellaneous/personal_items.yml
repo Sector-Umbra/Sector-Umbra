@@ -518,3 +518,14 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Hisses-At-Inconvenience
+
+# Isathei's Valexian Windbreaker
+- type: loadout
+  id: ClothingOuterIsatheiCoat
+  storage:
+    back:
+    - ClothingOuterIsatheiCoat
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Isathei Jokearith
