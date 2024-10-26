@@ -335,9 +335,9 @@
 # Players: Nikovnik - Character: Mike Mumamwe
 - type: entity
   parent: [BasePlushie, BaseFoldable]
-  id: PlushieTiha
+  id: TihaPlushie
   name: tiha-tuga plushie
-  description: Tiha-Tuga's birthday gift to her father Mike Mumamwe. One of the few things what makes Mike keep on living.
+  description: Plushie of crying brass serpent tailored by one of the sweet space slavic grandmas. Anyone who gazes at this plushie will be cured of their crippling sadness. That is if they choose to believe so.
   suffix: PersonalItem
   components:
   - type: Sprite
@@ -367,13 +367,16 @@
       path: /Audio/_Umbra/Items/Toys/Tiha/hai.ogg
   - type: EmitSoundOnLand
     sound:
-      path: /Audio/_Umbra/Items/Toys/Tiha/gasp.ogg
+      path: /Audio/_Umbra/Items/Toys/Tiha/hai.ogg
   - type: EmitSoundOnActivate
     sound:
       path: /Audio/_Umbra/Items/Toys/Tiha/hmf.ogg
   - type: EmitSoundOnTrigger
     sound:
       path: /Audio/_Umbra/Items/Toys/Tiha/hmf.ogg
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/_Umbra/Items/Toys/Tiha/gasp.ogg
   - type: Food
     requiresSpecialDigestion: true
     useSound:

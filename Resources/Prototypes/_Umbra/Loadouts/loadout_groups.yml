@@ -58,6 +58,7 @@
   - HissesPlushie
   - BurgPlushie
   - DunaPlushie
+  - TihaPlushie
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -112,6 +113,7 @@
   - HissesPlushie
   - BurgPlushie
   - DunaPlushie
+  - TihaPlushie
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -166,3 +168,4 @@
   - HissesPlushie
   - BurgPlushie
   - DunaPlushie
+  - TihaPlushie
