@@ -531,3 +531,14 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Hisses-At-Inconvenience
+
+# Hisses' Golden Locket
+- type: loadout
+  id: HissesGoldenLocket
+  storage:
+    back:
+    - HissesGoldenLocket
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Hisses-At-Inconvenience
