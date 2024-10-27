@@ -531,3 +531,14 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Hisses-At-Inconvenience
+
+# Karaki's Mantle
+- type: loadout
+  id: ClothingNeckKarakiMantle
+  storage:
+    back:
+    - ClothingNeckKarakiMantle
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Ko Karaki
