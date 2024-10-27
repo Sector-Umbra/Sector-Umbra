@@ -367,7 +367,7 @@
       path: /Audio/_Umbra/Items/Toys/Tiha/hai.ogg
   - type: EmitSoundOnLand
     sound:
-      path: /Audio/_Umbra/Items/Toys/Tiha/hai.ogg
+      path: /Audio/_Umbra/Items/Toys/Tiha/hmf.ogg
   - type: EmitSoundOnActivate
     sound:
       path: /Audio/_Umbra/Items/Toys/Tiha/hmf.ogg
