@@ -453,7 +453,8 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Sky Tomson
-  # Takes's Plushie
+
+# Takes's Plushie
 - type: loadout
   id: TakesPlushie
   storage:
@@ -464,7 +465,19 @@
     character:
     - Takes-Great-Risk
 
-  # June Mothe's Coat
+# FP-SR M36's Artificer Uniform
+- type: loadout
+  id: ClothingUniformJumpsuitArtificer
+  storage:
+    back:
+    - ClothingUniformJumpsuitArtificer
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - FP-SR M36
+
+
+# June Mothe's Coat
 - type: loadout
   id: ClothingOuterMotheCoat
   storage:
@@ -529,3 +542,14 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Isathei Jokearith
+
+# Karaki's Mantle
+- type: loadout
+  id: ClothingNeckKarakiMantle
+  storage:
+    back:
+    - ClothingNeckKarakiMantle
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Ko Karaki
