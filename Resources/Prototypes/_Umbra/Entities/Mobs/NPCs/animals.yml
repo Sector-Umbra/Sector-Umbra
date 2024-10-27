@@ -110,6 +110,8 @@
       - ActionCritFakeDeath
       - ActionCritLastWords
   - type: NonSpreaderZombie  
+  - type: StaticPrice
+    price: 50
   - type: NpcFactionMember
     factions:
     - Passive
