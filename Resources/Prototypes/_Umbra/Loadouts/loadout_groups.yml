@@ -59,6 +59,8 @@
   - BurgPlushie
   - DunaPlushie
   - HissesGoldenLocket
+  - ClothingOuterIsatheiCoat
+  - ClothingNeckKarakiMantle
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -114,6 +116,8 @@
   - BurgPlushie
   - DunaPlushie
   - HissesGoldenLocket
+  - ClothingOuterIsatheiCoat
+  - ClothingNeckKarakiMantle
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -169,3 +173,5 @@
   - BurgPlushie
   - DunaPlushie
   - HissesGoldenLocket
+  - ClothingOuterIsatheiCoat
+  - ClothingNeckKarakiMantle
