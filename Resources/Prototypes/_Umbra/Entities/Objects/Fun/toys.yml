@@ -334,7 +334,7 @@
 
 # Players: Nikovnik - Character: Mike Mumamwe
 - type: entity
-  parent: [BasePlushie, BaseFoldable]
+  parent: [PlushieLizard, BaseFoldable]
   id: TihaPlushie
   name: tiha-tuga plushie
   description: Plushie of crying brass serpent tailored by one of the sweet space slavic grandmas. Anyone who gazes at this plushie will be cured of their crippling sadness. That is if they choose to believe so.
@@ -381,6 +381,9 @@
     requiresSpecialDigestion: true
     useSound:
       path: /Audio/_Umbra/Items/Toys/Tiha/sad.ogg
+  - type: FlavorProfile
+    flavors:
+      - sadness
   - type: MeleeWeapon
     wideAnimationRotation: 180
     soundHit:
@@ -399,3 +402,4 @@
           Quantity: 10
         - ReagentId: Saline
           Quantity: 10
+
