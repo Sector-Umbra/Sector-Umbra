@@ -388,7 +388,7 @@
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: MuteToxin
+      - ReagentId: Saline
         Quantity: 30
   - type: SolutionContainerManager
     solutions:
@@ -397,5 +397,5 @@
         reagents:
         - ReagentId: Fiber
           Quantity: 10
-        - ReagentId: MuteToxin
+        - ReagentId: Saline
           Quantity: 10
