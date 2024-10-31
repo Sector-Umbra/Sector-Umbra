@@ -532,6 +532,7 @@
     character:
     - Hisses-At-Inconvenience
 
+
 # Tiha-Tuga's plushie
 - type: loadout
   id: TihaPlushie
@@ -542,3 +543,36 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Tiha-Tuga
+
+# Hisses' Golden Locket
+- type: loadout
+  id: HissesGoldenLocket
+  storage:
+    back:
+    - HissesGoldenLocket
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Hisses-At-Inconvenience
+
+# Isathei's Valexian Windbreaker
+- type: loadout
+  id: ClothingOuterIsatheiCoat
+  storage:
+    back:
+    - ClothingOuterIsatheiCoat
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Isathei Jokearith
+
+# Karaki's Mantle
+- type: loadout
+  id: ClothingNeckKarakiMantle
+  storage:
+    back:
+    - ClothingNeckKarakiMantle
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Ko Karaki
