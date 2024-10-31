@@ -1,0 +1,123 @@
+# Bunny
+
+- type: entity
+  name: bunny
+  parent: SimpleMobBase
+  id: MobBunny
+  description: Tiny, fluffy, and full of attitude.
+  components:
+  - type: Sprite
+    sprite: _Umbra/Mobs/Animals/bunny.rsi
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: bunny
+  - type: Appearance
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: bunny
+      Critical:
+        Base: bunny_dead #TODO: Critical Specific Sprite
+      Dead:
+        Base: bunny_dead #TODO: Dead Directional Sprites
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.2
+        density: 120
+        mask:
+        - SmallMobMask
+        layer:
+        - SmallMobLayer
+  - type: Item 
+    size: Normal
+  - type: CanEscapeInventory
+  - type: Speech
+    speechVerb: SmallMob
+    speechSounds: Squeak
+    allowedEmotes: ['Squeak']
+  - type: Vocal
+    sounds:
+      Male: Mouse
+      Female: Mouse
+      Unsexed: Mouse
+  - type: ReplacementAccent
+    accent: mouse
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      40: Critical
+      60: Dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2.5
+    baseSprintSpeed : 4
+  - type: Damageable
+    damageContainer: Biological
+  - type: Butcherable
+    spawned:
+    - id: FoodMeat
+      amount: 1
+  - type: Extractable
+    grindableSolutionName: food
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 3
+  - type: Bloodstream
+    bloodReagent: Blood
+    bloodMaxVolume: 50
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 60
+      behaviors:
+      - !type:GibBehavior { }
+  - type: FireVisuals
+    sprite: Mobs/Effects/onfire.rsi
+    normalState: Mouse_burning
+  - type: Body
+    prototype: Mouse
+  - type: GhostTakeoverAvailable
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: ghost-role-information-bunny-name
+    description: ghost-role-information-bunny-description
+    rules: ghost-role-information-freeagent-rules  
+  - type: CombatMode
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    angle: 0
+    animation: WeaponArcBite
+    damage:
+      types:
+        Piercing: 0
+  - type: Deathgasp
+  - type: MobState
+  - type: MobStateActions
+    actions:
+      Critical:
+      - ActionCritSuccumb
+      - ActionCritFakeDeath
+      - ActionCritLastWords
+  - type: NonSpreaderZombie  
+  - type: StaticPrice
+    price: 50
+  - type: NpcFactionMember
+    factions:
+    - Passive
+  - type: Tag
+    tags:
+    - Trash
+    - CannotSuicide
+    - VimPilot
+    - Meat
