@@ -315,7 +315,8 @@ public sealed partial class SleepingSystem : EntitySystem
     /// </summary>
     public void OnEmoteAttempt(Entity<SleepingComponent> ent, ref EmoteAttemptEvent args)
     {
-        args.Cancel();
+        // UMBRA: Permit emotes while sleeping.
+        // args.Cancel();
     }
 }
 
