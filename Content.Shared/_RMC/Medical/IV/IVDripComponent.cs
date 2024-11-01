@@ -60,7 +60,7 @@ public sealed partial class IVDripComponent : Component
     [DataField, AutoNetworkedField]
     public ProtoId<EmotePrototype> RipEmote = "Scream";
 
-    [DataField, AutoNetworkedField]
+    //[DataField, AutoNetworkedField]
 
     // public Dictionary<EntProtoId<SkillDefinitionComponent>, int> SkillRequired = new() { ["RMCSkillSurgery"] = 1 };
 }

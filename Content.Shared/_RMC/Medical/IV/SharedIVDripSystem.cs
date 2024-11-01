@@ -50,7 +50,7 @@ public abstract class SharedIVDripSystem : EntitySystem
         SubscribeLocalEvent<IVDripComponent, ExaminedEvent>(OnIVExamine);
 
         // TODO RMC14 check for BloodstreamComponent instead of MarineComponent
-        SubscribeLocalEvent<MarineComponent, CanDropTargetEvent>(OnMarineCanDropTarget);
+        //SubscribeLocalEvent<MarineComponent, CanDropTargetEvent>(OnMarineCanDropTarget);
 
         SubscribeLocalEvent<BloodPackComponent, MapInitEvent>(OnBloodPackMapInit);
         SubscribeLocalEvent<BloodPackComponent, AfterAutoHandleStateEvent>(OnBloodPackAfterState);
@@ -85,21 +85,21 @@ public abstract class SharedIVDripSystem : EntitySystem
     private void OnIVDripCanDropDragged(Entity<IVDripComponent> iv, ref CanDropDraggedEvent args)
     {
         // TODO RMC14 check for BloodstreamComponent instead of MarineComponent
-        if (!HasComp<MarineComponent>(args.Target) || !InRange(iv, args.Target, iv.Comp.Range))
-            return;
+        //if (!HasComp<MarineComponent>(args.Target) || !InRange(iv, args.Target, iv.Comp.Range))
+        //    return;
         args.Handled = true;
         args.CanDrop = true;
     }
 
     // TODO RMC14 check for BloodstreamComponent instead of MarineComponent
-    private void OnMarineCanDropTarget(Entity<MarineComponent> marine, ref CanDropTargetEvent args)
+    /*     private void OnMarineCanDropTarget(Entity<MarineComponent> marine, ref CanDropTargetEvent args)
     {
         var iv = args.Dragged;
         if (!TryComp(iv, out IVDripComponent? ivComp) || !InRange(iv, marine, ivComp.Range))
             return;
         args.Handled = true;
         args.CanDrop = true;
-    }
+    } */
 
     private void OnIVDripDragDropDragged(Entity<IVDripComponent> iv, ref DragDropDraggedEvent args)
     {
@@ -180,8 +180,8 @@ public abstract class SharedIVDripSystem : EntitySystem
             return;
 
         // TODO RMC14 check for BloodstreamComponent instead of MarineComponent
-        if (!InRange(pack, target, pack.Comp.Range) || !HasComp<MarineComponent>(target))
-            return;
+        /*         if (!InRange(pack, target, pack.Comp.Range) || !HasComp<MarineComponent>(target))
+            return; */
 
         args.Handled = true;
 
