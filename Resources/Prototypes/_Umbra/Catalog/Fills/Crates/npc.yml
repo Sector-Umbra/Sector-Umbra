@@ -1,0 +1,11 @@
+# Bunny
+- type: entity
+  id: CrateNPCMBunny
+  parent: CrateLivestock
+  name: crate of bunnies
+  description: A crate containing three bunnies.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MobBunny
+        amount: 3

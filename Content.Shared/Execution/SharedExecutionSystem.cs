@@ -209,11 +209,15 @@ public sealed class SharedExecutionSystem : EntitySystem
 
         if (attacker == victim)
         {
-            var suicideEvent = new SuicideEvent(victim);
-            RaiseLocalEvent(victim, suicideEvent);
-
-            var suicideGhostEvent = new SuicideGhostEvent(victim);
-            RaiseLocalEvent(victim, suicideGhostEvent);
+            // UMBRA: Instead of raising the suicide event on self-execution: Trigger the standard execution instead. Uses InternalSelf and ExternalSelf for the execution messages.
+            // var suicideEvent = new SuicideEvent(victim);
+            // RaiseLocalEvent(victim, suicideEvent);
+            // var suicideGhostEvent = new SuicideGhostEvent(victim);
+            // RaiseLocalEvent(victim, suicideGhostEvent);
+            
+            _melee.AttemptLightAttack(attacker, weapon, meleeWeaponComp, victim);
+            _execution.ShowExecutionInternalPopup(entity.Comp.InternalSelfExecutionMessage, attacker, victim, entity);
+            _execution.ShowExecutionExternalPopup(entity.Comp.ExternalSelfExecutionMessage, attacker, victim, entity);
         }
         else
         {

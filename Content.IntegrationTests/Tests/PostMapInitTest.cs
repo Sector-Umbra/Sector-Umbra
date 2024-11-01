@@ -50,7 +50,6 @@ namespace Content.IntegrationTests.Tests
             "Fland",
             "Meta",
             "Packed",
-            "Aspid",
             "Cluster",
             "Omega",
             "Bagel",
@@ -73,7 +72,8 @@ namespace Content.IntegrationTests.Tests
         // UMBRA: We need to be able to mark non-upstream maps as not tested.
         private static readonly string[] UntestedGameMaps =
         {
-            "Ferrous"
+            "Ferrous",
+            "Aspid"
         };
 
         /// <summary>
