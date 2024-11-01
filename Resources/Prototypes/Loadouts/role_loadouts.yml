@@ -372,7 +372,7 @@
   - Trinkets
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
-  - PersonalItemsJobAgnostic # Umbra
+  - PersonalItemsHeadOfSecurity # Umbra
 
 - type: roleLoadout
   id: JobWarden

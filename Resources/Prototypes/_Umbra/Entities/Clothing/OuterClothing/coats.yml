@@ -11,7 +11,7 @@
   - type: Clothing
     sprite: _Umbra/Clothing/OuterClothing/Coats/yarnaarmouredcoat.rsi
 
-# Player: SlamBamActionMan - Character: Jalopy Oldman
+# Player: SlamBamActionman - Character: Jalopy Oldman
 - type: entity
   parent: ClothingOuterCoatDetectiveLoadout
   id: ClothingOuterCoatReinforcedRaincoat
@@ -23,6 +23,20 @@
     sprite: _Umbra/Clothing/OuterClothing/Coats/reinforced_raincoat.rsi
   - type: Clothing
     sprite: _Umbra/Clothing/OuterClothing/Coats/reinforced_raincoat.rsi
+
+
+# Player: SlamBamActionman - Character: Jalopy Oldman
+- type: entity
+  parent: ClothingOuterCoatHoSTrench
+  id: ClothingOuterCoatHoSReinforcedRaincoat
+  name: composite raincoat
+  description: An old sailor's raincoat. There's some modern flexible composite material sewn into the lining, upgrading it to comply with NanoTrasen Command standards.
+  suffix: PersonalItem, Head of Security
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/OuterClothing/Coats/hos_raincoat.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/OuterClothing/Coats/hos_raincoat.rsi
 
 
 # Player: Sphiral - Character: Nova Gem
