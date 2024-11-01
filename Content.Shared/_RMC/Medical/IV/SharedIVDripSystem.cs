@@ -1,6 +1,4 @@
 using System.Linq;
-using Content.Shared._RMC14.Marines;
-using Content.Shared._RMC14.Marines.Skills;
 using Content.Shared.Chat.Prototypes;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Damage;
@@ -26,7 +24,7 @@ public abstract class SharedIVDripSystem : EntitySystem
     [Dependency] private readonly DamageableSystem _damageable = default!;
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private readonly INetManager _net = default!;
-    [Dependency] private readonly SkillsSystem _skills = default!;
+    //[Dependency] private readonly SkillsSystem _skills = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly SharedSolutionContainerSystem _solutionContainer = default!;
@@ -194,11 +192,11 @@ public abstract class SharedIVDripSystem : EntitySystem
             return;
         }
 
-        if (!_skills.HasAllSkills(user, pack.Comp.SkillRequired))
+        /*         if (!_skills.HasAllSkills(user, pack.Comp.SkillRequired))
         {
             _popup.PopupClient(Loc.GetString("cm-iv-attach-no-skill"), user, user);
             return;
-        }
+        } */
 
         if (user == target)
         {
@@ -286,11 +284,11 @@ public abstract class SharedIVDripSystem : EntitySystem
         if (!InRange(iv, to, iv.Comp.Range))
             return;
 
-        if (!_skills.HasAllSkills(user, iv.Comp.SkillRequired))
+        /*         if (!_skills.HasAllSkills(user, iv.Comp.SkillRequired))
         {
             _popup.PopupClient(Loc.GetString("cm-iv-attach-no-skill"), user, user);
             return;
-        }
+        } */
 
         iv.Comp.AttachedTo = to;
         Dirty(iv);
@@ -303,11 +301,11 @@ public abstract class SharedIVDripSystem : EntitySystem
         if (iv.Comp.AttachedTo is not { } target)
             return;
 
-        if (user != null && !_skills.HasAllSkills(user.Value, iv.Comp.SkillRequired))
+        /*         if (user != null && !_skills.HasAllSkills(user.Value, iv.Comp.SkillRequired))
         {
             _popup.PopupClient(Loc.GetString("cm-iv-detach-no-skill"), user.Value, user.Value);
             return;
-        }
+        } */
 
         iv.Comp.AttachedTo = default;
         Dirty(iv);
@@ -323,11 +321,11 @@ public abstract class SharedIVDripSystem : EntitySystem
         if (!InRange(pack, to, pack.Comp.Range))
             return;
 
-        if (!_skills.HasAllSkills(user, pack.Comp.SkillRequired))
+        /*         if (!_skills.HasAllSkills(user, pack.Comp.SkillRequired))
         {
             _popup.PopupClient(Loc.GetString("cm-iv-attach-no-skill"), user, user);
             return;
-        }
+        } */
 
         pack.Comp.AttachedTo = to;
         Dirty(pack);
@@ -340,11 +338,11 @@ public abstract class SharedIVDripSystem : EntitySystem
         if (pack.Comp.AttachedTo is not { } target)
             return;
 
-        if (user != null && !_skills.HasAllSkills(user.Value, pack.Comp.SkillRequired))
+        /*         if (user != null && !_skills.HasAllSkills(user.Value, pack.Comp.SkillRequired))
         {
             _popup.PopupClient(Loc.GetString("cm-iv-detach-no-skill"), user.Value, user.Value);
             return;
-        }
+        } */
 
         pack.Comp.AttachedTo = default;
         Dirty(pack);

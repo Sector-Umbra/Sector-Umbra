@@ -1,4 +1,4 @@
-﻿using Content.Shared._RMC14.Marines.Skills;
+﻿//using Content.Shared._RMC14.Marines.Skills;
 using Content.Shared.Chat.Prototypes;
 using Content.Shared.Damage;
 using Content.Shared.FixedPoint;
@@ -61,7 +61,8 @@ public sealed partial class IVDripComponent : Component
     public ProtoId<EmotePrototype> RipEmote = "Scream";
 
     [DataField, AutoNetworkedField]
-    public Dictionary<EntProtoId<SkillDefinitionComponent>, int> SkillRequired = new() { ["RMCSkillSurgery"] = 1 };
+
+    // public Dictionary<EntProtoId<SkillDefinitionComponent>, int> SkillRequired = new() { ["RMCSkillSurgery"] = 1 };
 }
 
 [Serializable, NetSerializable]
