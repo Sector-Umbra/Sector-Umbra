@@ -36,6 +36,7 @@
     - id: RevenantSpawn
     - id: SleeperAgents
     - id: ZombieOutbreak
+    - id: LoneOpsSpawn
 
 - type: entity
   id: BaseStationEvent
@@ -343,7 +344,7 @@
       path: /Audio/Announcements/attention.ogg
     earliestStart: 20
     minimumPlayers: 15
-    weight: 5
+    weight: 2 # CD: Nerf from 5 to 2
     duration: 60
   - type: VentCrittersRule
     entries:
@@ -364,7 +365,7 @@
       path: /Audio/Announcements/attention.ogg
     earliestStart: 20
     minimumPlayers: 15
-    weight: 5
+    weight: 1 # CD: Nerf from 5 to 1
     duration: 60
   - type: VentCrittersRule
     entries:
@@ -385,7 +386,7 @@
       path: /Audio/Announcements/attention.ogg
     earliestStart: 20
     minimumPlayers: 15
-    weight: 5
+    weight: 2 # CD: Nerf from 5 to 2
     duration: 60
   - type: VentCrittersRule
     entries:
@@ -456,7 +457,7 @@
     roundEndingThreat: true # Umbra
   - type: RuleGrids
   - type: LoadMapRule
-    preloadedGrid: ShuttleStriker
+    mapPath: /Maps/Shuttles/ShuttleEvent/striker.yml
   - type: NukeopsRule
     roundEndBehavior: Nothing
   - type: AntagSelection
