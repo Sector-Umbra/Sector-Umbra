@@ -1,5 +1,5 @@
 - type: entity
-  parent: CMBaseStructureCorrodible
+  parent: BaseStructure #Fix
   id: CMIV
   name: iv
   description: Allows you to inject blood into a patient or extract blood from them to do a blood transfusion.
@@ -51,10 +51,6 @@
   - type: ContainerContainer
     containers:
       pack: !type:ContainerSlot {}
-  - type: InteractedBlacklist
-    blacklist:
-      components:
-      - Xeno
 
 - type: entity
   parent: BaseItem
@@ -87,23 +83,16 @@
     solution: pack
   - type: InjectableSolution
     solution: pack
-  - type: Damageable
+  - type: Damageable # TODO?
     damageContainer: Inorganic
     damageModifierSet: Glass
-  - type: DamageOnHighSpeedImpact
+  - type: DamageOnHighSpeedImpact # TODO
     minimumSpeed: 2
     damage:
       types:
         Blunt: 5
   - type: StaticPrice
     price: 30
-  - type: Tag
-    tags:
-      - CMBloodPack
-  - type: InteractedBlacklist
-    blacklist:
-      components:
-      - Xeno
 
 - type: entity
   parent: CMBloodPack
