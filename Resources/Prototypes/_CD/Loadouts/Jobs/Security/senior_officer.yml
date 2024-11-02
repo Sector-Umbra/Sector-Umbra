@@ -21,7 +21,8 @@
 
 - type: loadout
   id: SeniorOfficerCasualsuit
-  equipment: SeniorOfficerCasualsuit
+  equipment:
+    jumpsuit: ClothingUniformHoSSeniorCasual
 
 - type: startingGear
   id: SeniorOfficerCasualsuit
@@ -30,7 +31,8 @@
 
 - type: loadout
   id: SeniorOfficerCasualskirt
-  equipment: SeniorOfficerCasualskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtHoSSeniorCasual
 
 - type: startingGear
   id: SeniorOfficerCasualskirt
@@ -41,7 +43,8 @@
 
 - type: loadout
   id: SecurityVeteranBeret
-  equipment: SecurityVeteranBeret
+  equipment:
+    head: ClothingHeadHatBeretSecurityVet
 
 - type: startingGear
   id: SecurityVeteranBeret

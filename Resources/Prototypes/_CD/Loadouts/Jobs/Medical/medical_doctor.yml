@@ -1,6 +1,7 @@
 - type: loadout
   id: MedicalCasualsuit
-  equipment: MedicalCasualsuit 
+  equipment:
+    jumpsuit: ClothingUniformDoctorCasual 
 
 - type: startingGear
   id: MedicalCasualsuit

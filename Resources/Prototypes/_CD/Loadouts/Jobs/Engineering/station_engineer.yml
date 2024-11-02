@@ -1,6 +1,7 @@
 - type: loadout
   id: StationEngineerCasualsuit
-  equipment: StationEngineerCasualsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitEngineeringCasual
 
 - type: startingGear
   id: StationEngineerCasualsuit

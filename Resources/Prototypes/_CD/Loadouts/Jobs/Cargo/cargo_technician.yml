@@ -1,6 +1,7 @@
 - type: loadout
   id: CargoTechnicianPants
-  equipment: CargoTechnicianPants
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCargoPants
 
 - type: startingGear
   id: CargoTechnicianPants
@@ -9,7 +10,8 @@
 
 - type: loadout
   id: CargoBomber
-  equipment: CargoBomber
+  equipment:
+    outerClothing: ClothingOuterCoatCargoBomber
 
 - type: startingGear
   id: CargoBomber

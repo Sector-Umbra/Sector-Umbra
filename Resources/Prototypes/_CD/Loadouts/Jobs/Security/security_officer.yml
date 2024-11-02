@@ -25,7 +25,8 @@
 
 - type: loadout
   id: SecurityCasualsuit
-  equipment: SecurityCasualsuit
+  equipment:
+    jumpsuit: ClothingUniformSecurtyCasual
 
 - type: startingGear
   id: SecurityCasualsuit
@@ -34,7 +35,8 @@
 
 - type: loadout
   id: SecurityCasualskirt
-  equipment: SecurityCasualskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtSecurtyCasual
 
 - type: startingGear
   id: SecurityCasualskirt

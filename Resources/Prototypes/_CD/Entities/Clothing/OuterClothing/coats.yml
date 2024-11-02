@@ -10,30 +10,6 @@
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Coats/cowboyduster.rsi
 
-# Military Coat
-- type: entity
-  parent: ClothingOuterStorageBase
-  id: ClothingOuterCoatMilitaryCoat
-  name: military jacket
-  description: A canvas jacket styled after classical American military garb. Feels sturdy, yet comfortable.
-  components:
-  - type: Sprite
-    sprite: _CD/Clothing/OuterClothing/Coats/miljacket.rsi
-  - type: Clothing
-    sprite: _CD/Clothing/OuterClothing/Coats/miljacket.rsi
-
-# Harmony Jacket
-- type: entity
-  parent: ClothingOuterStorageBase
-  id: ClothingOuterCoatHarmony
-  name: harmony jacket
-  description: A black leather coat designed by the small Harmony company.
-  components:
-  - type: Sprite
-    sprite: _CD/Clothing/OuterClothing/Coats/harmonyjacket.rsi
-  - type: Clothing
-    sprite: _CD/Clothing/OuterClothing/Coats/harmonyjacket.rsi
-
 # Europan Coats
 - type: entity
   parent: ClothingOuterWinterCoat
@@ -46,7 +22,8 @@
   - type: Clothing
     sprite: _CD/Clothing/OuterClothing/Coats/Europa/veterancoat.rsi
   - type: TemperatureProtection
-    coefficient: 0.1
+    heatingCoefficient: 0.1
+    coolingCoefficient: 0.1
   - type: Armor
     modifiers:
       coefficients:

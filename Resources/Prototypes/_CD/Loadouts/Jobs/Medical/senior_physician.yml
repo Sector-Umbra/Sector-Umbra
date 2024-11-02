@@ -32,13 +32,13 @@
     
 - type: loadout
   id: SeniorPhysicianFormalsuit
-  equipment: SeniorPhysicianFormalsuit
+  equipment:
+    jumpsuit: ClothingUniformPhysicianCasual
 
 - type: startingGear
   id: SeniorPhysicianFormalsuit
   equipment:
     jumpsuit: ClothingUniformPhysicianCasual
-
 
 # OuterClothing
 - type: loadout 

@@ -10,7 +10,8 @@
 
 - type: loadout
   id: ParamedicCasualsuit
-  equipment: ParamedicCasualsuit
+  equipment:
+    jumpsuit: ClothingUniformParamedicCasual
 
 - type: startingGear
   id: ParamedicCasualsuit
@@ -19,7 +20,8 @@
 
 - type: loadout
   id: ParamedicCasualskirt
-  equipment: ParamedicCasualskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtParamedicCasual
 
 - type: startingGear
   id: ParamedicCasualskirt
@@ -78,7 +80,8 @@
 
 - type: loadout
   id: BlueHighvisBomber
-  equipment: BlueHighvisBomber
+  equipment: 
+    jumpsuit: ClothingOuterCoatBlueHiVis
 
 - type: startingGear
   id: BlueHighvisBomber
