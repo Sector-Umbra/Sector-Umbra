@@ -81,9 +81,9 @@
 - type: loadout
   id: BlueHighvisBomber
   equipment: 
-    jumpsuit: ClothingOuterCoatBlueHiVis
+    outerClothing: ClothingOuterCoatBlueHiVis
 
 - type: startingGear
   id: BlueHighvisBomber
   equipment:
-    jumpsuit: ClothingOuterCoatBlueHiVis
+    outerClothing: ClothingOuterCoatBlueHiVis
