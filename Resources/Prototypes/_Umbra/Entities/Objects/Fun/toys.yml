@@ -332,7 +332,7 @@
     slots:
     - HEAD
 
-# Players: Nikovnik - Character: Mike Mumamwe
+# Players: Nikovnik - Character: Tiha-Tuga
 - type: entity
   parent: [PlushieLizard, BaseFoldable]
   id: TihaPlushie
