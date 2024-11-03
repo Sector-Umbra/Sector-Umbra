@@ -337,7 +337,7 @@
   parent: [PlushieLizard, BaseFoldable]
   id: TihaPlushie
   name: tiha-tuga plushie
-  description: Plushie of crying brass serpent tailored by one of the sweet space slavic grandmas. Anyone who gazes at this plushie will be cured of their crippling sadness. That is if they choose to believe so.
+  description: Plushie of crying brass serpent tailored by the most skilled and sweet space slavic grandmas. Anyone who gazes at this plushie will be cured of their crippling sadness. That is if they choose to believe so.
   suffix: PersonalItem
   components:
   - type: Sprite
@@ -357,8 +357,8 @@
   - type: Appearance
   - type: Foldable
     canFoldInsideContainer: true
-    unfoldVerbText: fold-zip-verb
-    foldVerbText: fold-unzip-verb
+    unfoldVerbText: open-eyes-verb
+    foldVerbText: close-eyes-verb
   - type: FoldableClothing
     foldedEquippedPrefix: sleepy
     foldedHeldPrefix: sleepy
@@ -380,14 +380,14 @@
   - type: Food
     requiresSpecialDigestion: true
     useSound:
-      path: /Audio/_Umbra/Items/Toys/Tiha/sad.ogg
+      path: /Audio/_Umbra/Items/Toys/Tiha/eaten_sad.ogg
   - type: FlavorProfile
     flavors:
       - sadness
   - type: MeleeWeapon
     wideAnimationRotation: 180
     soundHit:
-      path: /Audio/_Umbra/Items/Toys/Tiha/sad.ogg
+      path: /Audio/_Umbra/Items/Toys/Tiha/hit_sad.ogg
   - type: Extractable
     juiceSolution:
       reagents:
