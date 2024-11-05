@@ -52,6 +52,15 @@
   - PlushieSky
   - ClothingOuterTechCoat
   - TakesPlushie
+  - ClothingUniformJumpsuitArtificer
+  - ClothingOuterMotheCoat
+  - MaterialsPlushie
+  - HissesPlushie
+  - BurgPlushie
+  - DunaPlushie
+  - HissesGoldenLocket
+  - ClothingOuterIsatheiCoat
+  - ClothingNeckKarakiMantle
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -100,6 +109,15 @@
   - PlushieSky
   - ClothingOuterTechCoat
   - TakesPlushie
+  - ClothingUniformJumpsuitArtificer
+  - ClothingOuterMotheCoat
+  - MaterialsPlushie
+  - HissesPlushie
+  - BurgPlushie
+  - DunaPlushie
+  - HissesGoldenLocket
+  - ClothingOuterIsatheiCoat
+  - ClothingNeckKarakiMantle
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -148,3 +166,12 @@
   - PlushieSky
   - ClothingOuterTechCoat
   - TakesPlushie
+  - ClothingUniformJumpsuitArtificer
+  - ClothingOuterMotheCoat
+  - MaterialsPlushie
+  - HissesPlushie
+  - BurgPlushie
+  - DunaPlushie
+  - HissesGoldenLocket
+  - ClothingOuterIsatheiCoat
+  - ClothingNeckKarakiMantle
