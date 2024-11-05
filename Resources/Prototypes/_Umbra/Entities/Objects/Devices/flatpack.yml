@@ -1,0 +1,12 @@
+#IV Stand
+- type: entity
+  parent: BaseFlatpack
+  id: IVstandflatpack
+  name: iv flatpack
+  description: A flatpack used for constructing a iv drip.
+  components:
+  - type: Sprite
+    layers:
+    - state: unhooked #
+  - type: Flatpack
+    entity: CMIV
