@@ -91,15 +91,6 @@
   - type: ReplacementAccent
     accent: liar
 
-- type: trait
-  id: illeism
-  name: trait-illeism-name
-  description: trait-illeism-desc
-  category: SpeechTraits
-  cost: 1
-  components:
-  - type: IlleismAccent
-
 # 2 Cost
 
 - type: trait
