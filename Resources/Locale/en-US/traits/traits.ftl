@@ -62,3 +62,6 @@ trait-french-desc = Your accent seems to have a certain «je ne sais quoi».
 
 trait-spanish-name = Spanish accent
 trait-spanish-desc = Hola señor, donde esta la biblioteca.
+
+trait-illeism-name = Illeism
+trait-illeism-desc = You seem to only be able to refer to yourself by name.
