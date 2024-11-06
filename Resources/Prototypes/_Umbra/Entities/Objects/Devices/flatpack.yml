@@ -6,7 +6,8 @@
   description: A flatpack used for constructing a iv drip.
   components:
   - type: Sprite
+    sprite: _RMC/Structures/Machines/Medical/iv_drip.rsi
     layers:
-    - state: unhooked #
+    - state: unhooked
   - type: Flatpack
     entity: CMIV
