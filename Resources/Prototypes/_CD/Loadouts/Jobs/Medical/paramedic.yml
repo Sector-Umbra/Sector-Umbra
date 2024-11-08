@@ -9,6 +9,26 @@
     jumpsuit: ClothingUniformJumpsuitETUFlightsuit
 
 - type: loadout
+  id: ParamedicCasualsuit
+  equipment:
+    jumpsuit: ClothingUniformParamedicCasual
+
+- type: startingGear
+  id: ParamedicCasualsuit
+  equipment:
+    jumpsuit: ClothingUniformParamedicCasual
+
+- type: loadout
+  id: ParamedicCasualskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtParamedicCasual
+
+- type: startingGear
+  id: ParamedicCasualskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtParamedicCasual
+
+- type: loadout
   id: GlovesETUGauntlet
   equipment: 
     gloves: ClothingHandsGlovesETUGauntlet
@@ -57,3 +77,13 @@
   id: ShoesColorSlate
   equipment:
     shoes: ClothingShoesColorSlate
+
+- type: loadout
+  id: BlueHighvisBomber
+  equipment: 
+    outerClothing: ClothingOuterCoatBlueHiVis
+
+- type: startingGear
+  id: BlueHighvisBomber
+  equipment:
+    outerClothing: ClothingOuterCoatBlueHiVis
