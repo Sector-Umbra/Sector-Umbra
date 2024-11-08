@@ -349,6 +349,7 @@
       map: ["foldedLayer"]
       visible: false
   - type: Clothing
+    equippedPrefix: tiha
     quickEquip: false
     sprite: _Umbra/Objects/Fun/Toys/plushie_tiha.rsi
     slots:
