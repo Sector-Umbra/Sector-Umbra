@@ -334,7 +334,7 @@
 
 # Players: Nikovnik - Character: Tiha-Tuga
 - type: entity
-  parent: [PlushieLizard, BaseFoldable]
+  parent: [PlushieLizard, Clothing, BaseFoldable]
   id: TihaPlushie
   name: tiha-tuga plushie
   description: Plushie of crying brass serpent tailored by the most skilled and sweet space slavic grandmas. Anyone who gazes at this plushie will be cured of their crippling sadness. That is if they choose to believe so.
@@ -349,7 +349,6 @@
       map: ["foldedLayer"]
       visible: false
   - type: Clothing
-    equippedPrefix: tiha
     quickEquip: false
     sprite: _Umbra/Objects/Fun/Toys/plushie_tiha.rsi
     slots:
