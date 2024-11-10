@@ -61,6 +61,7 @@
   - HissesGoldenLocket
   - ClothingOuterIsatheiCoat
   - ClothingNeckKarakiMantle
+  - SerendipityGuitarInstrument
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -118,6 +119,7 @@
   - HissesGoldenLocket
   - ClothingOuterIsatheiCoat
   - ClothingNeckKarakiMantle
+  - SerendipityGuitarInstrument
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -175,6 +177,7 @@
   - HissesGoldenLocket
   - ClothingOuterIsatheiCoat
   - ClothingNeckKarakiMantle
+  - SerendipityGuitarInstrument
 
 - type: loadoutGroup
   id: PersonalItemsHeadOfSecurity
@@ -231,3 +234,4 @@
   - ClothingOuterIsatheiCoat
   - ClothingNeckKarakiMantle
   - ClothingOuterCoatHoSReinforcedRaincoat
+  - SerendipityGuitarInstrument
