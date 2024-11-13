@@ -48,7 +48,7 @@
 - type: startingGear
   id: HoPGear
   equipment:
-    shoes: ClothingShoesColorBrown
+    # shoes: ClothingShoesColorBrown | CD, removed due to loadout addtion.
     id: HoPPDA
     gloves: ClothingHandsGlovesHop
     ears: ClothingHeadsetAltCommand
