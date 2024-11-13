@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseHandheldInstrument
+  parent: AcousticGuitarInstrument
   id: SerendipityGuitarInstrument
   name: serendipity bluewing guitar
   description: A vividly blue guitar of high quality. The name Ace Bluewing is etched on the inside of the guitar.
@@ -16,3 +16,8 @@
     - back
     - suitStorage
     sprite: _Umbra/Objects/Fun/Instruments/serenguitar.rsi
+  - type: SwappableInstrument
+    instrumentList:
+      "Nylon": {24: 0}
+      "Steel": {25: 0}
+      "Jazz": {26: 0}
