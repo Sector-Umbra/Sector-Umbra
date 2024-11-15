@@ -56,10 +56,11 @@
     back: ClothingBackpackDuffelGenetics
 
 # OuterClothing
-- type: loadout
-  id: ModernLabCoat
-  equipment:
-    outerClothing: ClothingOuterCoatStylishLab
+# UMBRA: Don't have this.
+#- type: loadout
+#  id: ModernLabCoat
+#  equipment:
+#    outerClothing: ClothingOuterCoatStylishLab
 
 - type: loadout
   id: ViroWintercoat
@@ -71,10 +72,11 @@
   equipment:
     outerClothing: ClothingOuterCoatLabViro
 
-- type: loadout
-  id: ModernViroCoat
-  equipment:
-    outerClothing: ClothingOuterCoatLabStylishViro
+# UMBRA: Don't have this.
+#- type: loadout
+#  id: ModernViroCoat
+#  equipment:
+#    outerClothing: ClothingOuterCoatLabStylishViro
 
 - type: loadout
   id: GeneWintercoat
