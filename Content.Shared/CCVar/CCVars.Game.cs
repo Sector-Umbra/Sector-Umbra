@@ -319,7 +319,7 @@ public sealed partial class CCVars
         ///     If true, contraband severity can be viewed in the examine menu
         /// </summary>
         public static readonly CVarDef<bool> ContrabandExamine =
-            CVarDef.Create("game.contraband_examine", true, CVar.SERVER | CVar.REPLICATED);
+            CVarDef.Create("game.contraband_examine", false, CVar.SERVER | CVar.REPLICATED);
 
         /// <summary>
         ///     Size of the lookup area for adding entities to the context menu
@@ -332,5 +332,12 @@ public sealed partial class CCVars
         /// </summary>
         public static readonly CVarDef<bool> GameHostnameInTitlebar =
             CVarDef.Create("game.hostname_in_titlebar", true, CVar.SERVER | CVar.REPLICATED);
+
+        /// CD
+        /// <summary>
+        /// Respawn time, how long the player has to wait in seconds after death.
+        /// </summary>
+        public static readonly CVarDef<float> RespawnTime =
+            CVarDef.Create("game.respawn_time", 300.0f, CVar.SERVER | CVar.REPLICATED);
 
 }
