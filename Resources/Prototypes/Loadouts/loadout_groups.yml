@@ -1223,7 +1223,7 @@
   # CD: Separate Senior roles
   # - SeniorPhysicianLabCoat
   - ViroCoat # CD
-  - ModernViroCoat # CD
+  # - ModernViroCoat # CD - Umbra: Don't have this.
   - ViroWintercoat # CD
   - GeneCoat # CD
   - GeneWintercoat # CD
