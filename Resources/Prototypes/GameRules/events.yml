@@ -31,7 +31,7 @@
     children:
     # - id: ClosetSkeleton # Umbra: Moved to BasicCalmEventsTable
     - id: DragonSpawn
-    - id: KingRatMigration
+  #  - id: KingRatMigration # Umbra: Disabled
     - id: NinjaSpawn
     - id: RevenantSpawn
     - id: SleeperAgents
