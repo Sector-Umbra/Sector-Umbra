@@ -576,7 +576,7 @@
     character:
     - Ko Karaki
 
-# John Morwood's Milityary Cross
+# John Morwood's Military Cross
 - type: loadout
   id: ClothingNeckMilitaryCross
   storage:
