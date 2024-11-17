@@ -543,6 +543,18 @@
     character:
     - Hisses-At-Inconvenience
 
+
+# Tiha-Tuga's plushie
+- type: loadout
+  id: TihaPlushie
+  storage:
+    back:
+    - TihaPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Tiha-Tuga
+
 # Hisses' Golden Locket
 - type: loadout
   id: HissesGoldenLocket
