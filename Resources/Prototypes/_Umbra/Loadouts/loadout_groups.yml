@@ -58,6 +58,7 @@
   - HissesPlushie
   - BurgPlushie
   - DunaPlushie
+  - TihaPlushie
   - HissesGoldenLocket
   - ClothingOuterIsatheiCoat
   - ClothingNeckKarakiMantle
@@ -115,6 +116,7 @@
   - HissesPlushie
   - BurgPlushie
   - DunaPlushie
+  - TihaPlushie
   - HissesGoldenLocket
   - ClothingOuterIsatheiCoat
   - ClothingNeckKarakiMantle
@@ -172,6 +174,63 @@
   - HissesPlushie
   - BurgPlushie
   - DunaPlushie
+  - TihaPlushie
   - HissesGoldenLocket
   - ClothingOuterIsatheiCoat
   - ClothingNeckKarakiMantle
+
+- type: loadoutGroup
+  id: PersonalItemsHeadOfSecurity
+  name: loadout-group-personal-items
+  minLimit: 0
+  maxLimit: 2
+  loadouts:
+  - ClothingNeckArtifactNecklace
+  - FrostCoat
+  - PlushieDeeja
+  - PlushieJasmi
+  - PlushieJuniper
+  - PlushieVesper
+  - PlushieOliver
+  - ClothingNeckChewtoy
+  - ClothingShoesMiscWeldsWalker
+  - FateseekersGemstone
+  - ClothingUniformJumpsuitCarpSuit
+  - ClothingUniformJumpsuitSweatpants
+  - ClothingNeckRyeTie
+  - ClothingHeadHatRainbowFlowerJasmi
+  - ClothingHeadArdusBandana
+  - ClothingOuterGalaxyCoat
+  - PetRockBobby
+  - PlushieEris
+  - JohansCodex
+  - ClothingNeckJohanScarf
+  - ClothingHeadsetErisAid
+  - ClothingNeckHushPendant
+  - Oceancoat
+  - PlushieHeart
+  - PlushieNia
+  - PlushieEsther
+  - PlushieDragonCarp
+  - SerendipityPlushie
+  - KaiPlushie
+  - GarTeiPlushie
+  - MichaelsCard
+  - MichaelsRing
+  - AnniesRing
+  - DutchiePlushie
+  - ClothingUniformJumpsuitDrugeristic
+  - AmokPlushie
+  - PlushieSky
+  - ClothingOuterTechCoat
+  - TakesPlushie
+  - ClothingUniformJumpsuitArtificer
+  - ClothingOuterMotheCoat
+  - MaterialsPlushie
+  - HissesPlushie
+  - BurgPlushie
+  - DunaPlushie
+  - HissesGoldenLocket
+  - ClothingOuterIsatheiCoat
+  - ClothingNeckKarakiMantle
+  - ClothingOuterCoatHoSReinforcedRaincoat

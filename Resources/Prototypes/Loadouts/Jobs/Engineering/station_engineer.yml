@@ -62,6 +62,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitEngineeringHazard
 
+
 # - type: loadout (CD removed senior clothing in favor of senior roles)
 #   id: SeniorEngineerJumpsuit
 #   equipment: SeniorEngineerJumpsuit

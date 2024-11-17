@@ -52,7 +52,7 @@
   id: JobSeniorOfficer
   groups:
   - GroupTankHarness
-  - SecurityHead
+  - SeniorOfficerHead
   - SeniorOfficerJumpsuit
   - SecurityBackpack
   - SecurityOuterClothing

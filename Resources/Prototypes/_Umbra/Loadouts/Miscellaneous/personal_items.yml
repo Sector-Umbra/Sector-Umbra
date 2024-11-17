@@ -135,6 +135,17 @@
     character:
     - Jalopy Oldman
 
+# Jalopy's reinforced raincoat
+- type: loadout
+  id: ClothingOuterCoatHoSReinforcedRaincoat
+  storage:
+    back:
+    - ClothingOuterCoatHoSReinforcedRaincoat
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Jalopy Oldman
+
 # Jasmi's hairflower
 - type: loadout
   id: ClothingHeadHatRainbowFlowerJasmi
@@ -532,6 +543,18 @@
     character:
     - Hisses-At-Inconvenience
 
+
+# Tiha-Tuga's plushie
+- type: loadout
+  id: TihaPlushie
+  storage:
+    back:
+    - TihaPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Tiha-Tuga
+
 # Hisses' Golden Locket
 - type: loadout
   id: HissesGoldenLocket
@@ -543,7 +566,7 @@
     character:
     - Hisses-At-Inconvenience
 
-# Isathei's Valexian Windbreaker
+# Isathei Arsicaris's Valexian Windbreaker
 - type: loadout
   id: ClothingOuterIsatheiCoat
   storage:
@@ -552,7 +575,7 @@
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
-    - Isathei Jokearith
+    - Isathei Arsicaris
 
 # Karaki's Mantle
 - type: loadout
