@@ -1,21 +1,21 @@
 - type: entity
   parent: AcousticGuitarInstrument
-  id: SerendipityGuitarInstrument
-  name: serendipity bluewing guitar
-  description: A vividly blue guitar of high quality. The name Ace Bluewing is etched on the inside of the guitar.
+  id: AttacusGuitarInstrument
+  name: Attacus Fischer's guitar
+  description: A seemingly normal red guitar. However, its value is indescribable. It has the initials 'A.F' etched within the guitar's material. If you're the one holding this, you're important to the owner.
   components:
   - type: Sprite
-    sprite: _Umbra/Objects/Fun/Instruments/serenguitar.rsi
+    sprite: _Umbra/Objects/Fun/Instruments/attacusguitar.rsi
     state: icon
   - type: Item
-    sprite: _Umbra/Objects/Fun/Instruments/serenguitar.rsi
+    sprite: _Umbra/Objects/Fun/Instruments/attacusguitar.rsi
     size: Normal
   - type: Clothing
     quickEquip: false
     slots:
     - back
     - suitStorage
-    sprite: _Umbra/Objects/Fun/Instruments/serenguitar.rsi
+    sprite: _Umbra/Objects/Fun/Instruments/attacusguitar.rsi
   - type: SwappableInstrument
     instrumentList:
       "Nylon": {24: 0}
