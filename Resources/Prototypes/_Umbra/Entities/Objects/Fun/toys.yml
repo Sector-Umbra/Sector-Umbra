@@ -408,13 +408,13 @@
   parent: PlushieLizard
   id: GravesPlushie
   name: walks-the-grooves plushie
-  description: TODO Desc
+  description: Description for this UTTER goober...
   suffix: PersonalItem
   components:
   - type: Sprite
-    state: plushie_kai
+    state: plushie_graves
     sprite: _Umbra/Objects/Fun/Toys/plushie_graves.rsi
   - type: Clothing
     quickEquip: false
     sprite: _Umbra/Objects/Fun/Toys/plushie_graves.rsi
-    equippedPrefix: kai
+    equippedPrefix: graves
