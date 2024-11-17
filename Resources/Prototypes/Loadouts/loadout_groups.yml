@@ -7,6 +7,7 @@
   loadouts:
   - FlowerWreath
   - Hairflower
+  - Headphones
   - PlushieLizard
   - PlushieSpaceLizard
   - PlushieVox # CD
@@ -50,10 +51,12 @@
   - TowelColorPurple
   - TowelColorRed
   - TowelColorSilver
-  - TowelColorLightBlue
   - TowelColorWhite
   - TowelColorYellow
   - CDDogtags # CD
+  # - LunchboxBlue # CD - Umbra: Not merged
+  # - LunchboxYellow # CD - Umbra: Not merged
+  - Cane # CD
 
 - type: loadoutGroup
   id: Glasses
@@ -626,6 +629,8 @@
   loadouts:
   - BrownShoes
   - CargoWinterBoots
+  - LeatherShoes # CD
+  - LaceupShoes # CD
 
 - type: loadoutGroup
   id: CargoTechnicianHead
@@ -656,8 +661,8 @@
   minLimit: 0
   loadouts:
   - CargoTechnicianWintercoat
-  - CargoBomber # CD  
-  
+  - CargoBomber # CD
+
 - type: loadoutGroup
   id: CargoTechnicianShoes
   name: loadout-group-cargo-technician-shoes
@@ -726,6 +731,9 @@
   loadouts:
   - BrownShoes
   - EngineeringWinterBoots
+  - WorkBoots # CD
+  - LeatherShoes # CD
+  - LaceupShoes # CD
 
 - type: loadoutGroup
   id: TechnicalAssistantJumpsuit
@@ -863,6 +871,8 @@
   loadouts:
   - BrownShoes
   - ScienceWinterBoots
+  - LeatherShoes # CD
+  - LaceupShoes # CD
 
 - type: loadoutGroup
   id: ScientistHead
@@ -1168,6 +1178,8 @@
   loadouts:
   - BrownShoes
   - MedicalWinterBoots
+  - LeatherShoes # CD
+  - LaceupShoes # CD
 
 - type: loadoutGroup
   id: MedicalDoctorHead
@@ -1196,6 +1208,10 @@
   - MedicalBlueScrubs
   - MedicalGreenScrubs
   - MedicalPurpleScrubs
+  - ViroJumpsuit # CD
+  - ViroJumpskirt # CD
+  - GeneJumpsuit # CD
+  - GeneJumpskirt # CD
 
 - type: loadoutGroup
   id: MedicalDoctorOuterClothing
@@ -1206,6 +1222,11 @@
   - MedicalDoctorWintercoat
   # CD: Separate Senior roles
   # - SeniorPhysicianLabCoat
+  - ViroCoat # CD
+  # - ModernViroCoat # CD - Umbra: Don't have this.
+  - ViroWintercoat # CD
+  - GeneCoat # CD
+  - GeneWintercoat # CD
 
 - type: loadoutGroup
   id: MedicalBackpack
