@@ -1,7 +1,7 @@
 - type: entity
   parent: AcousticGuitarInstrument
   id: SerendipityGuitarInstrument
-  name: serendipity bluewing guitar
+  name: Ace Bluewing's guitar
   description: A vividly blue guitar of high quality. The name Ace Bluewing is etched on the inside of the guitar.
   components:
   - type: Sprite
