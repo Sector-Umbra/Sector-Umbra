@@ -403,3 +403,18 @@
         - ReagentId: Saline
           Quantity: 10
 
+    # Players: luckyshotpictures - Character: Walks-The-Graves
+- type: entity
+  parent: PlushieLizard
+  id: GravesPlushie
+  name: walks-the-grooves plushie
+  description: TODO Desc
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_kai
+    sprite: _Umbra/Objects/Fun/Toys/plushie_graves.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_graves.rsi
+    equippedPrefix: kai
