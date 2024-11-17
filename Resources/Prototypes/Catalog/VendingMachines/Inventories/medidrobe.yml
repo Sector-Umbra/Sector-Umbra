@@ -6,6 +6,8 @@
     ClothingBackpackSatchelMedical: 4
     ClothingUniformJumpsuitMedicalDoctor: 4
     ClothingUniformJumpskirtMedicalDoctor: 4
+    ClothingUniformDoctorCasual: 4 # CD
+    ClothingUniformMedicalTechnician: 4 # CD
     ClothingBeltMedical: 4
     ClothingUniformDoctorCasual: 4 # CD
     ClothingHeadHatBeretMedic: 4
@@ -27,3 +29,4 @@
     ClothingShoesBootsWinterMed: 2
   contrabandInventory:
     ClothingUniformJumpskirtOfLife: 1
+    ClothingUniformJumpsuitMaintSurgeon: 1 # CD
