@@ -587,3 +587,14 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Ko Karaki
+
+# Aphelio plushie
+- type: loadout
+  id: AphelioPlushie
+  storage:
+    back:
+    - AphelioPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Aphelio Kuiper
