@@ -566,7 +566,7 @@
     character:
     - Hisses-At-Inconvenience
 
-# Isathei's Valexian Windbreaker
+# Isathei Arsicaris's Valexian Windbreaker
 - type: loadout
   id: ClothingOuterIsatheiCoat
   storage:
@@ -575,7 +575,7 @@
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
-    - Isathei Jokearith
+    - Isathei Arsicaris
 
 # Karaki's Mantle
 - type: loadout
