@@ -5,7 +5,7 @@
   minPlayers: 20
   maxPlayers: 50
   stations:
-    Cluster:
+    ClusterPrime:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationEmergencyShuttle
