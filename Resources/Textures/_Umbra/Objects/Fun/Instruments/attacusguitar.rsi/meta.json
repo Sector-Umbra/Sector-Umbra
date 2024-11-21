@@ -5,7 +5,7 @@
     "y": 32
   },
   "license": "CC-BY-SA-3.0",
-  "copyright": "https://github.com/vgstation-coders/vgstation13 at 8d9c91e19cb52713c7f7f1804c2b6f7203f8d331, equipped backpack by ;3#1161",
+  "copyright": "wielded-inhand-right/left, inhand-right/left, icon, and equipped-SUITSTORAGE/BACKPACK modified by VividWisp from commit: https://github.com/space-wizards/space-station-14/commit/ae41d03ec6158e72450c9c045875a11e14fabd74.",
   "states": [
     {
       "name": "icon"
