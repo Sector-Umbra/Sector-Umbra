@@ -587,3 +587,14 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Ko Karaki
+
+# Finds-The-Treasure's Hat
+- type: loadout
+  id: ClothingHeadFindsHat
+  storage:
+    back:
+    - ClothingHeadFindsHat
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Finds-The-Treasure

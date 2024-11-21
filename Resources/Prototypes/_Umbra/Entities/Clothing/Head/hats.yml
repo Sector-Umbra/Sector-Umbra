@@ -10,3 +10,16 @@
     sprite: _Umbra/Clothing/Head/Hats/ardus-bandana.rsi
   - type: Clothing
     sprite: _Umbra/Clothing/Head/Hats/ardus-bandana.rsi
+
+    # Player: juneszalkowska - Character: Finds-The-Treasure
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadFindsHat
+  name: Finds-The-Treasure's Hat #TODO
+  description: Description for this lovely hat! #TODO
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Head/Hats/findshat.rsi #RENAME
+  - type: Clothing
+    sprite: _Umbra/Clothing/Head/Hats/findshat.rsi #RENAME
