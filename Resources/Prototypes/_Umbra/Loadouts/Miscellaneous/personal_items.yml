@@ -587,3 +587,14 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Ko Karaki
+
+# John Morwood's Military Cross
+- type: loadout
+  id: ClothingNeckMilitaryCross
+  storage:
+    back:
+    - ClothingNeckMilitaryCross
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - John Morwood
