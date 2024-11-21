@@ -407,8 +407,8 @@
 - type: entity
   parent: PlushieLizard
   id: FindsPlushie
-  name: finds-the-treasure plushie
-  description: A lizard plushie made to look like Finds-The-Treasure.
+  name: finds-the-plushie
+  description: A dark pink lizard plushie, adorned with pastel pink stripes. It wears an adorable hat that makes it feel taller than it actually is. It reminds you of Finds-The-Treasure.
   suffix: PersonalItem
   components:
   - type: Sprite
