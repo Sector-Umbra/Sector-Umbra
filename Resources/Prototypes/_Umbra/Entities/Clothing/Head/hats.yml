@@ -15,11 +15,11 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadFindsHat
-  name: Finds-The-Treasure's Hat #TODO
-  description: Description for this lovely hat! #TODO
+  name: Kasa-Liurz’s Hat
+  description: A rakish pirate tricorn adorned with beautiful feathers.
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra/Clothing/Head/Hats/findshat.rsi #RENAME
+    sprite: _Umbra/Clothing/Head/Hats/findshat.rsi
   - type: Clothing
-    sprite: _Umbra/Clothing/Head/Hats/findshat.rsi #RENAME
+    sprite: _Umbra/Clothing/Head/Hats/findshat.rsi

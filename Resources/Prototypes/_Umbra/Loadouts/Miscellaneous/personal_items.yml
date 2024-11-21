@@ -588,7 +588,7 @@
     character:
     - Ko Karaki
 
-# Finds-The-Treasure's Hat
+# Kasa-Liurz’s Hat
 - type: loadout
   id: ClothingHeadFindsHat
   storage:
