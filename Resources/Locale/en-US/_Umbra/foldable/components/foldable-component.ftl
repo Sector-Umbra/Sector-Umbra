@@ -3,3 +3,5 @@ fold-closed-verb = Fold closed
 
 close-eyes-verb = Close eyes
 open-eyes-verb = Open eyes
+
+pull-tail-verb = Pull Tail
