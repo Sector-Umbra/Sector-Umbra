@@ -1,4 +1,4 @@
-<p align="center"> <img alt="Space Station 14" width="880" height="300" src="https://raw.githubusercontent.com/space-wizards/asset-dump/de329a7898bb716b9d5ba9a0cd07f38e61f1ed05/github-logo.svg" /></p>
+<p align="center"> <img alt="Sector Umbra Logo" height="150" src="https://raw.githubusercontent.com/Sector-Umbra/Sector-Umbra/refs/heads/master/Resources/Textures/Logo/logo.png" /></p>
 
 Sector Umbra is a fork of Space Station 14, a remake of SS13 that runs on [Robust Toolbox](https://github.com/space-wizards/RobustToolbox).
 
