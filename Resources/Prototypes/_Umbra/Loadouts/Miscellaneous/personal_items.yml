@@ -487,7 +487,6 @@
     character:
     - FP-SR M36
 
-
 # June Mothe's Coat
 - type: loadout
   id: ClothingOuterMotheCoat
@@ -587,6 +586,17 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Ko Karaki
+
+# Attacus Fischer's Guitar
+- type: loadout
+  id: AttacusGuitarInstrument
+  storage:
+    back:
+    - AttacusGuitarInstrument
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Attacus Fischer
 
 # John Morwood's Military Cross
 - type: loadout
