@@ -1,3 +1,5 @@
+--- SECTION A: Default license for direct code contributions made past 2024-11-22 ---
+
 MIT License
 
 Copyright (c) 2023-2024 Sector Umbra
@@ -20,7 +22,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
----
+--- SECTION B: Other licenses used in explicit mentions via contributions of other forks ---
 
 MIT License
 
