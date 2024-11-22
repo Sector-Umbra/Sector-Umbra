@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Dart111 modified OldPlushieSpaceLizard icon from PlushieSpaceLizard, head and inhand sprites made by Nikovnik (github: nkokic)",
+    "copyright": "Dart111 modified OldPlushieSpaceLizard icon.png from plushie_spacelizard.png https://github.com/Sector-Umbra/Sector-Umbra/commit/07520696fb06e8732741ddffb78215619a2e040e, equipped-HELMET.png, inhand-left.png and inhand-right.png sprites by Nikovnik (github: nkokic) modified from lizard-equipped-HELMET.png https://github.com/space-wizards/space-station-14/pull/30400/commits/eaa585e62c1731429f8030ec3969758b08049866",
     "size": {
       "x": 32,
       "y": 32
