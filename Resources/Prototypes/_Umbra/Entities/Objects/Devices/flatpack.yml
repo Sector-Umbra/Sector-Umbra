@@ -1,0 +1,13 @@
+#IV Stand
+- type: entity
+  parent: BaseFlatpack
+  id: IVstandflatpack
+  name: iv flatpack
+  description: A flatpack used for constructing an iv drip.
+  components:
+  - type: Sprite
+    sprite: _RMC/Structures/Machines/Medical/iv_drip.rsi
+    layers:
+    - state: flatpack
+  - type: Flatpack
+    entity: CMIV

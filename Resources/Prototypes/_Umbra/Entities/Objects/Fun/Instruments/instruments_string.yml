@@ -1,0 +1,49 @@
+    # Players: VividWisp - Character: Serendipity Bluewing
+- type: entity
+  parent: AcousticGuitarInstrument
+  id: SerendipityGuitarInstrument
+  name: Ace Bluewing's guitar
+  description: A vividly blue guitar of high quality. The name Ace Bluewing is etched on the inside of the guitar.
+  components:
+  - type: Sprite
+    sprite: _Umbra/Objects/Fun/Instruments/serenguitar.rsi
+    state: icon
+  - type: Item
+    sprite: _Umbra/Objects/Fun/Instruments/serenguitar.rsi
+    size: Normal
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
+    - suitStorage
+    sprite: _Umbra/Objects/Fun/Instruments/serenguitar.rsi
+  - type: SwappableInstrument
+    instrumentList:
+      "Nylon": {24: 0}
+      "Steel": {25: 0}
+      "Jazz": {26: 0}
+ 
+    # Players: JustLeoHonestly - Character: Attacus Fischer
+- type: entity
+  parent: AcousticGuitarInstrument
+  id: AttacusGuitarInstrument
+  name: Attacus Fischer's guitar
+  description: A seemingly ordinary red guitar. The neck of the guitar has some paint chipped off, yet it still remains in good condition. The initials 'A.F.' are etched into its surface, carved through the paint and material.
+  components:
+  - type: Sprite
+    sprite: _Umbra/Objects/Fun/Instruments/attacusguitar.rsi
+    state: icon
+  - type: Item
+    sprite: _Umbra/Objects/Fun/Instruments/attacusguitar.rsi
+    size: Normal
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
+    - suitStorage
+    sprite: _Umbra/Objects/Fun/Instruments/attacusguitar.rsi
+  - type: SwappableInstrument
+    instrumentList:
+      "Nylon": {24: 0}
+      "Steel": {25: 0}
+      "Jazz": {26: 0}

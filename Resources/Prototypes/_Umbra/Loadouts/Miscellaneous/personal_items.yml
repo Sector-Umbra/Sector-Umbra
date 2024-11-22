@@ -487,7 +487,6 @@
     character:
     - FP-SR M36
 
-
 # June Mothe's Coat
 - type: loadout
   id: ClothingOuterMotheCoat
@@ -598,3 +597,58 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Finds-The-Treasure
+
+# Aphelio plushie
+- type: loadout
+  id: AphelioPlushie
+  storage:
+    back:
+    - AphelioPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Aphelio Kuiper
+
+# Walks-The-Graves's plushie
+- type: loadout
+  id: GravesPlushie
+  storage:
+    back:
+    - GravesPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Walks-The-Graves
+
+# Serendipity Bluewing's Guitar
+- type: loadout
+  id: SerendipityGuitarInstrument
+  storage:
+    back:
+    - SerendipityGuitarInstrument
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Serendipity Bluewing
+
+# Attacus Fischer's Guitar
+- type: loadout
+  id: AttacusGuitarInstrument
+  storage:
+    back:
+    - AttacusGuitarInstrument
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Attacus Fischer
+
+# John Morwood's Military Cross
+- type: loadout
+  id: ClothingNeckMilitaryCross
+  storage:
+    back:
+    - ClothingNeckMilitaryCross
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - John Morwood
