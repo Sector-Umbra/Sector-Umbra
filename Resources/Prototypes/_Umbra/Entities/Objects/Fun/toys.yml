@@ -408,7 +408,7 @@
   parent: [BasePlushie, Clothing, BaseFoldable]
   id: GravesPlushie
   name: walks-the-grooves plushie
-  description: Description for this UTTER goober...
+  description: A plushie with a calming smile and determined eyes, it eases anxiety with its gaze. Smelling of sand and gunpowder, it brings a sense of quiet strength.
   suffix: PersonalItem
   components:
   - type: Sprite
