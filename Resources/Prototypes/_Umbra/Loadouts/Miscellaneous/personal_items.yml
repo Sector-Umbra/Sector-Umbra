@@ -587,6 +587,17 @@
     character:
     - Ko Karaki
 
+# Darting's old space lizard plushie
+- type: loadout
+  id: OldPlushieSpaceLizard
+  storage:
+    back:
+    - OldPlushieSpaceLizard
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Darting Groth
+
 # Kasa-Liurz’s Hat
 - type: loadout
   id: ClothingHeadFindsHat
