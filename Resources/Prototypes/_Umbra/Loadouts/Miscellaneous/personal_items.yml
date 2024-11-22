@@ -587,6 +587,17 @@
     character:
     - Ko Karaki
 
+# Serendipity Bluewing's Guitar
+- type: loadout
+  id: SerendipityGuitarInstrument
+  storage:
+    back:
+    - SerendipityGuitarInstrument
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Serendipity Bluewing
+
 # Attacus Fischer's Guitar
 - type: loadout
   id: AttacusGuitarInstrument
