@@ -487,7 +487,6 @@
     character:
     - FP-SR M36
 
-
 # June Mothe's Coat
 - type: loadout
   id: ClothingOuterMotheCoat
@@ -566,7 +565,7 @@
     character:
     - Hisses-At-Inconvenience
 
-# Isathei's Valexian Windbreaker
+# Isathei Arsicaris's Valexian Windbreaker
 - type: loadout
   id: ClothingOuterIsatheiCoat
   storage:
@@ -575,7 +574,7 @@
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
-    - Isathei Jokearith
+    - Isathei Arsicaris
 
 # Karaki's Mantle
 - type: loadout
@@ -598,3 +597,69 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Finds-The-Treasure
+
+# Finds-The-Treasure Plushie
+- type: loadout
+  id: FindsPlushie
+  storage:
+    back:
+    - FindsPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Finds-The-Treasure
+
+# Aphelio plushie
+- type: loadout
+  id: AphelioPlushie
+  storage:
+    back:
+    - AphelioPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Aphelio Kuiper
+
+# Walks-The-Graves's plushie
+- type: loadout
+  id: GravesPlushie
+  storage:
+    back:
+    - GravesPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Walks-The-Graves
+
+# Serendipity Bluewing's Guitar
+- type: loadout
+  id: SerendipityGuitarInstrument
+  storage:
+    back:
+    - SerendipityGuitarInstrument
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Serendipity Bluewing
+
+# Attacus Fischer's Guitar
+- type: loadout
+  id: AttacusGuitarInstrument
+  storage:
+    back:
+    - AttacusGuitarInstrument
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Attacus Fischer
+
+# John Morwood's Military Cross
+- type: loadout
+  id: ClothingNeckMilitaryCross
+  storage:
+    back:
+    - ClothingNeckMilitaryCross
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - John Morwood
