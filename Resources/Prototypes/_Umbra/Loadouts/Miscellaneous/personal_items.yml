@@ -487,7 +487,6 @@
     character:
     - FP-SR M36
 
-
 # June Mothe's Coat
 - type: loadout
   id: ClothingOuterMotheCoat
@@ -566,7 +565,7 @@
     character:
     - Hisses-At-Inconvenience
 
-# Isathei's Valexian Windbreaker
+# Isathei Arsicaris's Valexian Windbreaker
 - type: loadout
   id: ClothingOuterIsatheiCoat
   storage:
@@ -575,7 +574,7 @@
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
-    - Isathei Jokearith
+    - Isathei Arsicaris
 
 # Karaki's Mantle
 - type: loadout
@@ -598,3 +597,14 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Attacus Fischer
+
+# John Morwood's Military Cross
+- type: loadout
+  id: ClothingNeckMilitaryCross
+  storage:
+    back:
+    - ClothingNeckMilitaryCross
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - John Morwood
