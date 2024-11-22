@@ -587,6 +587,17 @@
     character:
     - Ko Karaki
 
+# Walks-The-Graves's plushie
+- type: loadout
+  id: GravesPlushie
+  storage:
+    back:
+    - GravesPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Walks-The-Graves
+
 # Serendipity Bluewing's Guitar
 - type: loadout
   id: SerendipityGuitarInstrument
