@@ -103027,13 +103027,6 @@ entities:
     - type: Transform
       pos: -43.483948,28.790129
       parent: 1
-- proto: PillCanisterTricordrazine
-  entities:
-  - uid: 19348
-    components:
-    - type: Transform
-      pos: -43.25444,28.637197
-      parent: 1
 - proto: PlaqueAtmos
   entities:
   - uid: 8546
