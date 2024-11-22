@@ -1,0 +1,15 @@
+    # Players: jmp723 - Character: John Morwood
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckMilitaryCross
+  name: military cross
+  description: A cross with a beautiful ribbon attaching it. Earnt for an act or acts of exemplary gallantry during active operations against the enemy on land for His Majesty's British Armed Forces. Has some mild dents from years of love.
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Neck/Medals/johnmilitarycrossmedal.rsi
+    scale: 0.75, 0.75
+  - type: Clothing
+    sprite: _Umbra/Clothing/Neck/Medals/johnmilitarycrossmedal.rsi
+  - type: Tag
+    tags:
+      - Medal
