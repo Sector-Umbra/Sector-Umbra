@@ -587,6 +587,17 @@
     character:
     - Ko Karaki
 
+# Kasa-Liurz’s Hat
+- type: loadout
+  id: ClothingHeadFindsHat
+  storage:
+    back:
+    - ClothingHeadFindsHat
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Finds-The-Treasure
+
 # Finds-The-Treasure Plushie
 - type: loadout
   id: FindsPlushie
