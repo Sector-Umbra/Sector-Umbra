@@ -587,6 +587,17 @@
     character:
     - Ko Karaki
 
+# Finds-The-Treasure Plushie
+- type: loadout
+  id: FindsPlushie
+  storage:
+    back:
+    - FindsPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Finds-The-Treasure
+
 # Aphelio plushie
 - type: loadout
   id: AphelioPlushie
