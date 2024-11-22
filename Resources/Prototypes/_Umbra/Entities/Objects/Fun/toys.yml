@@ -420,3 +420,74 @@
     equippedPrefix: aphelio
     slots:
     - HEAD
+
+    # Players: luckyshotpictures - Character: Walks-The-Graves
+- type: entity
+  parent: [BasePlushie, Clothing, BaseFoldable]
+  id: GravesPlushie
+  name: walks-the-grooves plushie
+  description: A plushie with a calming smile and determined eyes, it eases anxiety with its gaze. Smelling of sand and gunpowder, it brings a sense of quiet strength.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Objects/Fun/Toys/plushie_graves.rsi
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: frowny-icon
+      map: ["foldedLayer"]
+      visible: false
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_graves.rsi
+    slots:
+    - HEAD
+    - NECK
+  - type: Appearance
+  - type: Foldable
+    canFoldInsideContainer: true
+    unfoldVerbText: pull-tail-verb
+    foldVerbText: pull-tail-verb
+  - type: FoldableClothing
+    foldedEquippedPrefix: frowny
+    foldedHeldPrefix: frowny
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_Umbra/Items/Toys/Graves/heyo.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Umbra/Items/Toys/Graves/grunt.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/_Umbra/Items/Toys/Graves/grunt.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/_Umbra/Items/Toys/Graves/grunt.ogg
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/_Umbra/Items/Toys/Graves/collision_grunt.ogg
+  - type: Food
+    requiresSpecialDigestion: true
+    useSound:
+      path: /Audio/_Umbra/Items/Toys/Graves/eaten_scream.ogg
+  - type: FlavorProfile
+    flavors:
+      - gunpowder
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    soundHit:
+      path: /Audio/_Umbra/Items/Toys/Graves/hit_grunt.ogg
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: JuiceThatMakesYouWeh # Possibly different reagents
+        Quantity: 30
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 10
+        - ReagentId: JuiceThatMakesYouWeh # Possibly different reagents
+          Quantity: 10
