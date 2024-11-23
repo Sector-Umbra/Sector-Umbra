@@ -789,7 +789,8 @@
     pocket1: Ointment
     pocket2: Brutepack
   inhand:
-  - Bloodpack
+  # - Bloodpack #Umbra: Replaced by RMC blood.
+  - CMBloodPackFull
   - Gauze
 
 - type: startingGear
@@ -806,7 +807,8 @@
     pocket1: Ointment
     pocket2: Brutepack
   inhand:
-  - Bloodpack
+  #- Bloodpack #Umbra: Replaced by RMC Blood.
+  - CMBloodPackFull
   - Gauze
 
 - type: startingGear

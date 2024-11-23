@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseStructure #Fix
+  parent: BaseStructure
   id: CMIV
   name: iv
   description: Allows you to inject blood into a patient or extract blood from them to do a blood transfusion.
@@ -54,7 +54,7 @@
 
 - type: entity
   parent: BaseItem
-  id: CMBloodPack # TODO RMC14 blood types
+  id: CMBloodPack
   name: empty blood pack
   description: A blood pack. Contains fluids, typically used for transfusions.
   suffix: CM, empty
@@ -83,10 +83,10 @@
     solution: pack
   - type: InjectableSolution
     solution: pack
-  - type: Damageable # TODO?
+  - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Glass
-  - type: DamageOnHighSpeedImpact # TODO
+  - type: DamageOnHighSpeedImpact
     minimumSpeed: 2
     damage:
       types:
@@ -96,7 +96,7 @@
 
 - type: entity
   parent: CMBloodPack
-  id: CMBloodPackFull # TODO RMC14 blood types
+  id: CMBloodPackFull
   name: blood pack
   suffix: CM, Full
   components:
@@ -107,3 +107,100 @@
         reagents:
         - ReagentId: Blood
           Quantity: 300
+
+# Umbra Blood Pack Types
+# Lingering
+- type: entity
+  parent: CMBloodPack
+  id: CMBloodpack10Lingering
+  suffix: 1, Lingering
+  components:
+  - type: Stack
+    lingering: true
+
+#Sap
+- type: entity
+  parent: CMBloodPack
+  id: CMBloodPackFullSap
+  name: blood pack
+  description: A blood pack. Contains fluids, typically used for transfusions. This one contains sap, used for Diona.
+  suffix: CM, Full, Sap
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pack:
+        maxVol: 300
+        reagents:
+        - ReagentId: Sap
+          Quantity: 300
+
+#Anaerobic
+- type: entity
+  parent: CMBloodPack
+  id: CMBloodPackFullAnaerobic
+  name: blood pack
+  description: A blood pack. Contains fluids, typically used for transfusions. This one was filled with Ammonia, used for Vox and Avali.
+  suffix: CM, Full, Anaerobic/Ammonia
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pack:
+        maxVol: 300
+        reagents:
+        - ReagentId: AmmoniaBlood
+          Quantity: 300
+
+#Blue Blood
+- type: entity
+  parent: CMBloodPack
+  id: CMBloodPackFullHemocyanin
+  name: blood pack
+  description: A blood pack. Contains fluids, typically used for transfusions. This one was filled with Hemocyanin, used for Arachnids.
+  suffix: CM, Full, Hemocyanin/Blue
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pack:
+        maxVol: 300
+        reagents:
+        - ReagentId: CopperBlood
+          Quantity: 300
+
+#Insect Blood
+- type: entity
+  parent: CMBloodPack
+  id: CMBloodPackFullInsect
+  name: blood pack
+  description: A blood pack. Contains fluids, typically used for transfusions. This one was filled with insect blood, used for moths.
+  suffix: CM, Full, Insect/Moth
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pack:
+        maxVol: 300
+        reagents:
+        - ReagentId: InsectBlood
+          Quantity: 300
+
+#Synthetic Blood
+- type: entity
+  parent: CMBloodPack
+  id: CMBloodPackFullSynthetic
+  name: blood pack
+  description: A blood pack. Contains fluids, typically used for transfusions. This one was filled with a type of coolant, used for synths.
+  suffix: CM, Full, Syntetic
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pack:
+        maxVol: 300
+        reagents:
+        - ReagentId: SynthBlood
+          Quantity: 300
+
+#TODO
+#Add 3 of each specialty blood to vendors.
+#Test borg lingering bloodpacks
+#Test the random bag fills.
+  #If needed, make them only be an ammount of 1.
+#Guidebook entry on how the bloodpacks and IV stands work.

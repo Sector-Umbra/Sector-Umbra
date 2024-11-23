@@ -83,8 +83,9 @@
     contents:
       - id: MedicatedSuture
       - id: RegenerativeMesh
-      - id: Bloodpack
-        amount: 2
+      #- id: Bloodpack #Umbra: Replaced by RMC blood.
+      #  amount: 2
+      - id: CMBloodPackFull
 
 - type: entity
   id: MedkitCombatFilled

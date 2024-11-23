@@ -12,7 +12,8 @@
         amount: 2
       - id: Ointment
         amount: 2
-      - id: Bloodpack
+      #- id: Bloodpack #Umbra: Replaced by RMC blood.
+      - id: CMBloodPackFull
         amount: 2
       - id: Gauze
 
@@ -31,8 +32,9 @@
         amount: 2
       - id: Ointment
         amount: 2
-      - id: Bloodpack
-        amount: 2
+      #- id: Bloodpack # Umbra: Replaced by RMC blood.
+      #  amount: 2
+      - id: CMBloodPackFull
       - id: Gauze
 
 
