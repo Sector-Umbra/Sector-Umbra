@@ -663,3 +663,15 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - John Morwood
+
+# Caden Keener's Big Collar Coat
+- type: loadout
+  id: CadenCollarCoat
+  storage:
+    back:
+    - CadenCollarCoat
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Caden Keener
+
