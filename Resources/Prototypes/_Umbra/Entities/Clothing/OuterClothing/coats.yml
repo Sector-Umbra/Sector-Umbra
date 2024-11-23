@@ -116,3 +116,16 @@
     sprite: _Umbra/Clothing/OuterClothing/Coats/isathei_coat.rsi
   - type: Clothing
     sprite: _Umbra/Clothing/OuterClothing/Coats/isathei_coat.rsi
+
+# Player: wzzker21 - Character: Caden Keener
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: CadenCollarCoat
+  name: Big Collar Black Coat
+  description: Custom-made tailored black coat with a custom collar. Crafted from an ultra-lightweight yet durable fabric.
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/OuterClothing/Coats/cadencollarcoat.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/OuterClothing/Coats/cadencollarcoat.rsi
+
