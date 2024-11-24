@@ -11,18 +11,6 @@
     ClothingNeckScarfStripedPurple: 3
     ClothingOuterCoatTrench: 6
     ClothingOuterWinterCoat: 6
-    #Sector Umbra Below
-    ClothingOuterWinterColorBlack: 6
-    ClothingOuterWinterColorPurple: 6
-    ClothingOuterWinterColorRed: 6
-    ClothingOuterWinterColorBlue: 6
-    ClothingOuterWinterColorBrown: 6
-    ClothingOuterWinterColorGray: 6
-    ClothingOuterWinterColorGreen: 6
-    ClothingOuterWinterColorLightBrown: 6
-    ClothingOuterWinterColorOrange: 6
-    ClothingOuterWinterColorWhite: 6
-    ClothingOuterWinterColorYellow: 6
     ClothingShoesBootsWinter: 6
     ClothingOuterFlannelRed: 2
     ClothingOuterFlannelBlue: 2
@@ -30,7 +18,6 @@
     ClothingOuterCoatBomber: 3
     ClothingHeadHatSantahat: 2
     ClothingHeadHatXmasCrown: 2
-    #Sector Umbra Above
     #CD Clothing Below
     ClothingNeckScarfStripedLightOrange: 3
     ClothingNeckScarfStripedPink: 3
@@ -44,6 +31,17 @@
     ClothingNeckScarfStripedNonBinary: 3
     ClothingNeckScarfStripedRainbow: 3
     ClothingNeckScarfStripedTrans: 3
+    ClothingOuterWinterColorBlack: 6
+    ClothingOuterWinterColorPurple: 6
+    ClothingOuterWinterColorRed: 6
+    ClothingOuterWinterColorBlue: 6
+    ClothingOuterWinterColorBrown: 6
+    ClothingOuterWinterColorGray: 6
+    ClothingOuterWinterColorGreen: 6
+    ClothingOuterWinterColorLightBrown: 6
+    ClothingOuterWinterColorOrange: 6
+    ClothingOuterWinterColorWhite: 6
+    ClothingOuterWinterColorYellow: 6
 
   emaggedInventory:
     ClothingNeckScarfStripedSyndieGreen: 3

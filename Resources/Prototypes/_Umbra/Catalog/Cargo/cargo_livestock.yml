@@ -1,0 +1,10 @@
+# Bunny
+- type: cargoProduct
+  id: UmbraLivestockBunny
+  icon:
+    sprite: _Umbra/Mobs/Animals/bunny.rsi
+    state: icon
+  product: CrateNPCMBunny
+  cost: 4500
+  category: cargoproduct-category-name-livestock
+  group: market

@@ -1,0 +1,7 @@
+- type: entity
+  id: MagazinePistolSubMachineGunTopMountedPractice
+  name: WT550 magazine (.35 auto top-mounted practice)
+  parent: MagazinePistolSubMachineGunTopMounted
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePistolPractice

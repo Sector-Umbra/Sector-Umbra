@@ -1,0 +1,39 @@
+- type: antag
+  id: ConsentSyndicateAgent
+  name: consent-syndicate-agent
+  objective: consent-syndicate-agent-desc
+  antagonist: true
+  setPreference: true
+  visiblePreference: true
+
+- type: antag
+  id: ConsentGetKillTargets
+  name: consent-get-kill-target
+  objective: consent-get-kill-target-desc
+  antagonist: true
+  setPreference: true
+  visiblePreference: true
+
+- type: antag
+  id: ConsentSyndicateThief
+  name: consent-syndicate-thief
+  objective: consent-syndicate-thief-desc
+  antagonist: true
+  setPreference: true
+  visiblePreference: true
+
+- type: antag
+  id: ConsentThiefPersonalGain
+  name: consent-thief-personal-gain
+  objective: consent-thief-personal-gain-desc
+  antagonist: true
+  setPreference: true
+  visiblePreference: true
+
+- type: antag
+  id: ConsentBeKillTarget
+  name: consent-be-kill-target
+  objective: consent-be-kill-target-desc
+  antagonist: true
+  setPreference: true
+  visiblePreference: true

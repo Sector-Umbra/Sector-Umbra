@@ -22,9 +22,11 @@
     - AnomalyFlora
     - AnomalyShadow
     - AnomalyTech
-    rareChance: 0.05 # These should be suitably rare and anomalies spawn all the time
-    rarePrototypes:
-    - RandomAnomalyInjectorSpawner
+    # UMBRA: Disabled due to issue https://github.com/Sector-Umbra/Sector-Umbra/issues/159 . Do not re-enable without Game Master Team approval.
+    # rareChance: 0.05 # These should be suitably rare and anomalies spawn all the time # Sector Umbra
+    # rarePrototypes:
+    # - RandomAnomalyInjectorSpawner
+    # END UMBRA
     offset: 0.15 # not to put it higher. The anomaly sychnronizer looks for anomalies within this radius, and if the radius is higher, the anomaly can be attracted from a neighboring tile.
 
 - type: entity

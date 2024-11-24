@@ -17636,44 +17636,6 @@ entities:
     - type: Transform
       pos: -16.5,13.5
       parent: 2
-- proto: BaseAdvancedPen
-  entities:
-  - uid: 28844
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -78.10708,-8.366468
-      parent: 2
-  - uid: 28845
-    components:
-    - type: Transform
-      pos: -78.10708,-8.5448885
-      parent: 2
-  - uid: 28846
-    components:
-    - type: Transform
-      pos: -76.69456,9.0918255
-      parent: 2
-  - uid: 28847
-    components:
-    - type: Transform
-      pos: -76.65628,8.913406
-      parent: 2
-  - uid: 28848
-    components:
-    - type: Transform
-      pos: -84.051765,9.537874
-      parent: 2
-  - uid: 28849
-    components:
-    - type: Transform
-      pos: -36.91661,7.5370255
-      parent: 2
-  - uid: 28850
-    components:
-    - type: Transform
-      pos: -37.031433,7.3076286
-      parent: 2
 - proto: BaseComputer
   entities:
   - uid: 826
@@ -127560,7 +127522,7 @@ entities:
     - type: Paper
       content: >2-
 
-        If disposals ... be shut ... buttons on wall ... keep safe ... emergency shut ... 
+        If disposals ... be shut ... buttons on wall ... keep safe ... emergency shut ...
 
 
         [italic] This note seems to be barley readable, its covered in grime and muck.
@@ -128151,7 +128113,7 @@ entities:
         Lift your hands toward the sun
 
 
-        Toward the sun 
+        Toward the sun
 
         It's the moment to fight
 

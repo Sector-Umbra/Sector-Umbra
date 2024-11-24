@@ -59,6 +59,24 @@
     slots:
     - HEAD
 
+# Players: Sky - Character: Sky Tomson
+- type: entity
+  parent: PlushieLizard
+  id: PlushieSky
+  name: sky tomson plushie
+  description: A custom made lizard plushie belonging to Sky Tomson. Don't eat it.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_sky
+    sprite: _Umbra/Objects/Fun/Toys/plushie_sky.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_sky.rsi
+    equippedPrefix: sky
+    slots:
+    - HEAD
+
 # Players: AjexRose - Character: Eris Rose
 - type: entity
   parent: PlushieSlime
@@ -100,7 +118,7 @@
   - type: Sprite
     state: heart_plushie
     sprite: _Umbra/Objects/Fun/Toys/plushie_heart.rsi
-  
+
 # Player: Onenineone - Character: Esther Scarlet
 - type: entity
   parent: PlushieMoth
@@ -153,7 +171,7 @@
     equippedPrefix: serendipity
     slots:
     - HEAD
-    
+
     # Players: Coolsurf6 - Character: Kai
 - type: entity
   parent: PlushieLizard
@@ -223,3 +241,288 @@
     equippedPrefix: amok
     slots:
     - HEAD
+
+   # Players: Maestro2Kimpembe - Character: Takes-Great-Risk
+- type: entity
+  parent: PlushieLizard
+  id: TakesPlushie
+  name: Takes's Plushie
+  description: Little Takes-Great-Risk in a plush version. Smells like a bamboo and lilac.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_takes
+    sprite: _Umbra/Objects/Fun/Toys/plushie_takes.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_takes.rsi
+    equippedPrefix: takes
+    slots:
+    - HEAD
+
+    # Players: Jacketed - Character: Steals-The-Materials
+- type: entity
+  parent: PlushieLizard
+  id: MaterialsPlushie
+  name: materials plushie
+  description: A custom made lizard plushie resembling Steals-The-Materials. Whilst it appears clean, the unmistakable odour of maintenance festers deep within the fabric. You can swear this plushie is staring into your soul. Something tells you not to trust this thing.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_materials
+    sprite: _Umbra/Objects/Fun/Toys/plushie_materials.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_materials.rsi
+    equippedPrefix: materials
+    slots:
+    - HEAD
+
+    # Players: Slugcta - Character: Hisses-At-Inconvenience
+- type: entity
+  parent: PlushieLizard
+  id: HissesPlushie
+  name: hisses plushie
+  description: A reptilian plushie made to look like Hisses-At-Inconvenience. It's silky smooth and slightly warm to touch. You wonder if she even wanted this...
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_hisses
+    sprite: _Umbra/Objects/Fun/Toys/plushie_hisses.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_hisses.rsi
+    equippedPrefix: hisses
+    slots:
+    - HEAD
+
+    # Players: SpilTistic - Character: Only-Sees-Burgundy
+- type: entity
+  parent: PlushieSnake
+  id: BurgPlushie
+  name: burg plushie
+  description: A reptilian plushie made to look like Only-Sees-Burgundy. It has a few metal pieces resembling his piercings. It smells faintly of rum.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_burg
+    sprite: _Umbra/Objects/Fun/Toys/plushie_burg.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_burg.rsi
+    equippedPrefix: burg
+    slots:
+    - HEAD
+
+    # Players: Ariphylor - Character: Anxeeth-Duna
+- type: entity
+  parent: PlushieLizard
+  id: DunaPlushie
+  name: duna plushie
+  description: A lizard plushie made to look like Anxeeth-Duna.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_duna
+    sprite: _Umbra/Objects/Fun/Toys/plushie_duna.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_duna.rsi
+    equippedPrefix: duna
+    slots:
+    - HEAD
+
+# Players: Nikovnik - Character: Tiha-Tuga
+- type: entity
+  parent: [BasePlushie, Clothing, BaseFoldable]
+  id: TihaPlushie
+  name: tiha-tuga plushie
+  description: Plushie of crying brass serpent tailored by the most skilled and sweet space slavic grandmas. Anyone who gazes at this plushie will be cured of their crippling sadness. That is if they choose to believe so.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Objects/Fun/Toys/plushie_tiha.rsi
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: sleepy-icon
+      map: ["foldedLayer"]
+      visible: false
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_tiha.rsi
+    slots:
+    - HEAD
+    - NECK
+  - type: Appearance
+  - type: Foldable
+    canFoldInsideContainer: true
+    unfoldVerbText: open-eyes-verb
+    foldVerbText: close-eyes-verb
+  - type: FoldableClothing
+    foldedEquippedPrefix: sleepy
+    foldedHeldPrefix: sleepy
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_Umbra/Items/Toys/Tiha/hai.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Umbra/Items/Toys/Tiha/hmf.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/_Umbra/Items/Toys/Tiha/hmf.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/_Umbra/Items/Toys/Tiha/hmf.ogg
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/_Umbra/Items/Toys/Tiha/gasp.ogg
+  - type: Food
+    requiresSpecialDigestion: true
+    useSound:
+      path: /Audio/_Umbra/Items/Toys/Tiha/eaten_sad.ogg
+  - type: FlavorProfile
+    flavors:
+      - sadness
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    soundHit:
+      path: /Audio/_Umbra/Items/Toys/Tiha/hit_sad.ogg
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Saline
+        Quantity: 30
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 10
+        - ReagentId: Saline
+          Quantity: 10
+
+    # Players: Dart111 - Character: Darting Groth
+- type: entity
+  parent: PlushieSpaceLizard
+  id: OldPlushieSpaceLizard
+  name: old space lizard plushie
+  description: A well loved space lizard plushie, it smells faintly of space cleaner and feels lucky
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: icon
+    sprite: _Umbra/Objects/Fun/Toys/plushie_old_space_lizard.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_old_space_lizard.rsi
+    slots:
+    - HEAD
+
+    # Players: juneszalkowska - Character: Finds-The-Treasure
+- type: entity
+  parent: PlushieLizard
+  id: FindsPlushie
+  name: finds-the-plushie
+  description: A dark pink lizard plushie, adorned with pastel pink stripes. It wears an adorable hat that makes it feel taller than it actually is. It reminds you of Finds-The-Treasure.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_finds
+    sprite: _Umbra/Objects/Fun/Toys/plushie_finds.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_finds.rsi
+    equippedPrefix: finds
+    slots:
+    - HEAD
+
+  # Players: Maestro2Kimpembe - Character: Aphelio Kuiper
+- type: entity
+  parent: PlushieMoth
+  id: AphelioPlushie
+  name: aphelio plushie
+  description: Aphelio in plush form. Still smells of Praestilyn's beer somehow.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_aphelio
+    sprite: _Umbra/Objects/Fun/Toys/plushie_aphelio.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_aphelio.rsi
+    equippedPrefix: aphelio
+    slots:
+    - HEAD
+
+    # Players: luckyshotpictures - Character: Walks-The-Graves
+- type: entity
+  parent: [BasePlushie, Clothing, BaseFoldable]
+  id: GravesPlushie
+  name: walks-the-grooves plushie
+  description: A plushie with a calming smile and determined eyes, it eases anxiety with its gaze. Smelling of sand and gunpowder, it brings a sense of quiet strength.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Objects/Fun/Toys/plushie_graves.rsi
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: frowny-icon
+      map: ["foldedLayer"]
+      visible: false
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_graves.rsi
+    slots:
+    - HEAD
+    - NECK
+  - type: Appearance
+  - type: Foldable
+    canFoldInsideContainer: true
+    unfoldVerbText: pull-tail-verb
+    foldVerbText: pull-tail-verb
+  - type: FoldableClothing
+    foldedEquippedPrefix: frowny
+    foldedHeldPrefix: frowny
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_Umbra/Items/Toys/Graves/heyo.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Umbra/Items/Toys/Graves/grunt.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/_Umbra/Items/Toys/Graves/grunt.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/_Umbra/Items/Toys/Graves/grunt.ogg
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/_Umbra/Items/Toys/Graves/collision_grunt.ogg
+  - type: Food
+    requiresSpecialDigestion: true
+    useSound:
+      path: /Audio/_Umbra/Items/Toys/Graves/eaten_scream.ogg
+  - type: FlavorProfile
+    flavors:
+      - gunpowder
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    soundHit:
+      path: /Audio/_Umbra/Items/Toys/Graves/hit_grunt.ogg
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: JuiceThatMakesYouWeh # Possibly different reagents
+        Quantity: 30
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 10
+        - ReagentId: JuiceThatMakesYouWeh # Possibly different reagents
+          Quantity: 10
