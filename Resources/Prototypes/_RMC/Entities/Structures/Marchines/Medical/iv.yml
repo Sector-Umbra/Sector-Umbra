@@ -93,6 +93,9 @@
         Blunt: 5
   - type: StaticPrice
     price: 30
+  - type: GuideHelp
+    guides:
+    - Rmcmedical
 
 - type: entity
   parent: CMBloodPack
@@ -113,18 +116,18 @@
 - type: entity
   parent: CMBloodPack
   id: CMBloodpack10Lingering
-  suffix: 1, Lingering
+  suffix: Lingering
   components:
   - type: Stack
     lingering: true
 
-#Sap
+# Sap
 - type: entity
   parent: CMBloodPack
   id: CMBloodPackFullSap
   name: blood pack
   description: A blood pack. Contains fluids, typically used for transfusions. This one contains sap, used for Diona.
-  suffix: CM, Full, Sap
+  suffix: Full, Sap
   components:
   - type: SolutionContainerManager
     solutions:
@@ -134,13 +137,13 @@
         - ReagentId: Sap
           Quantity: 300
 
-#Anaerobic
+# Anaerobic
 - type: entity
   parent: CMBloodPack
   id: CMBloodPackFullAnaerobic
   name: blood pack
   description: A blood pack. Contains fluids, typically used for transfusions. This one was filled with Ammonia, used for Vox and Avali.
-  suffix: CM, Full, Anaerobic/Ammonia
+  suffix: Full, Anaerobic/Ammonia
   components:
   - type: SolutionContainerManager
     solutions:
@@ -150,13 +153,13 @@
         - ReagentId: AmmoniaBlood
           Quantity: 300
 
-#Blue Blood
+# Blue Blood
 - type: entity
   parent: CMBloodPack
   id: CMBloodPackFullHemocyanin
   name: blood pack
   description: A blood pack. Contains fluids, typically used for transfusions. This one was filled with Hemocyanin, used for Arachnids.
-  suffix: CM, Full, Hemocyanin/Blue
+  suffix: Full, Hemocyanin/Blue
   components:
   - type: SolutionContainerManager
     solutions:
@@ -166,13 +169,13 @@
         - ReagentId: CopperBlood
           Quantity: 300
 
-#Insect Blood
+# Insect Blood
 - type: entity
   parent: CMBloodPack
   id: CMBloodPackFullInsect
   name: blood pack
   description: A blood pack. Contains fluids, typically used for transfusions. This one was filled with insect blood, used for moths.
-  suffix: CM, Full, Insect/Moth
+  suffix: Full, Insect/Moth
   components:
   - type: SolutionContainerManager
     solutions:
@@ -182,13 +185,13 @@
         - ReagentId: InsectBlood
           Quantity: 300
 
-#Synthetic Blood
+# Synthetic Blood
 - type: entity
   parent: CMBloodPack
   id: CMBloodPackFullSynthetic
   name: blood pack
   description: A blood pack. Contains fluids, typically used for transfusions. This one was filled with a type of coolant, used for synths.
-  suffix: CM, Full, Syntetic
+  suffix: Full, Syntetic
   components:
   - type: SolutionContainerManager
     solutions:
@@ -198,10 +201,25 @@
         - ReagentId: SynthBlood
           Quantity: 300
 
+# Slime Blood
+- type: entity
+  parent: CMBloodPack
+  id: CMBloodPackFullSlime
+  name: blood pack
+  description: A blood pack. Contains fluids, typically used for transfusions. This one was filled with a type of slime, used for slime people.
+  suffix: Full, Slime
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pack:
+        maxVol: 300
+        reagents:
+        - ReagentId: Slime
+          Quantity: 300
+
 #TODO
 #Add 3 of each specialty blood to vendors.
-#Test borg lingering bloodpacks
+#Test borg lingering bloodpacks - Broken
 #Test the random bag fills.
   #If needed, make them only be an ammount of 1.
-#Guidebook entry on how the bloodpacks and IV stands work.
-  # Add the "help" button to the IV stands and blood bags.
+# Write the guidebook entry for how IV stands and Guidebooks work
