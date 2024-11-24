@@ -853,7 +853,7 @@
 - type: entity
   parent: [ BaseCentcommContraband, ClothingOuterHardsuitBase ]
   id: ClothingOuterHardsuitDeathsquad
-  name: internal affairs hardsuit
+  name: internal affairs hardsuit # Umbra change
   description: An advanced hardsuit favored by commandos for use in special operations.
   components:
   - type: Sprite
