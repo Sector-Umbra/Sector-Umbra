@@ -1,5 +1,6 @@
 <Document>
-  # Overview
+  TODO
+  Color Coding Certain Important Things
 
   ## Blood Bags
 
@@ -7,15 +8,31 @@
     <GuideEntityEmbed Entity="CMBloodPack" Caption="Standard Blood Bag"/>
   </Box>
 
+  What blood bags do
+  Blood bags store 300U
+  List of blood variants and what species they coorospond to
+  Blood bags can inject any chemical they store.
+
   ## IV Stands
 
   <Box>
     <GuideEntityEmbed Entity="CMIV" State="Unhooked" Caption="Standard IV Stand"/>
   </Box>
 
-  Adapted to live in cold envinronments, their bodies are capable of handling extremely cold temperatures. Their temperature range is
-  [color=#12ABE8] approximately -50C to -35C[/color]. Additionally, due to their traditionally smaller stature [color=#ffa500]
-  they are 5% less dense than the average species[/color] meaning they are slightly more susceptible to being shoved over
-  and its more difficult for them to pull objects.
+  IV Stand Flatpacks
+  IV Stand Injecting
+  In order to make proper use of IV Stands, you must first
+  
+  Toggle Inject Button
+
+  While an Iv is injected inside of a pateint, it is possible for the IV needle itself to rip out of a patient's arm. This occurs when an IV stand or Patient move to far away from one another.
+  
+  IV Stands are also capable of drawing from a patient. This will slowly drain the patient of their bloodstream's content and fill the IV Stand's bloodbag.
+
+  ## Summary
+
+  - Blood bags are able to store 300 Units of any reagent.
+  - When used on a patient blood bags will slowly inject a patient with their contained reagents, including mixtures.
+  - Empty blood bags can be filled using any injector (Ex: Syringes/Hyposprays) or IV Stands.
 
 </Document>

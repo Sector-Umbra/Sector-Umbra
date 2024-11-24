@@ -1,1 +1,1 @@
-guidebook-name-rmcmedical = Placeholder
+guidebook-name-rmcmedical = IV Stands and Blood Packs
