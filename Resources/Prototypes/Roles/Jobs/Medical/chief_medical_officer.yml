@@ -7,13 +7,10 @@
   playTimeTracker: JobChiefMedicalOfficer
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 10800 #3 hrs
-    - !type:AgeRequirement
-      requiredAge: 21
+      time: 21600 # 6 hrs
   weight: 10
   startingGear: CMOGear
   icon: "JobIconChiefMedicalOfficer"
-  requireAdminNotify: true
   supervisors: job-supervisors-captain
   canBeAntag: false
   access:

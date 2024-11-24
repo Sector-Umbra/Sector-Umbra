@@ -1,0 +1,11 @@
+- type: vendingMachineInventory
+  id: AmmoVendInventoryPractice
+  startingInventory:
+    MagazineBoxMagnumPractice: 10
+    MagazineBoxPistolPractice: 10
+    MagazineBoxRiflePractice: 10
+    BoxShotgunPractice: 10
+
+    MagazineRiflePractice: 6
+    MagazinePistolSubMachineGunTopMountedPractice: 6
+    MagazinePistolPractice: 6

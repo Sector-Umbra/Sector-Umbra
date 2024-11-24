@@ -57,7 +57,7 @@
   components:
   - type: GameRule
   - type: BasicStationEventScheduler
-    minimumTimeUntilFirstEvent: 900 # 5 min -> Umbra: 15 minutes
+    minimumTimeUntilFirstEvent: 900 # 10 min -> Umbra: 15 minutes
     minMaxEventTiming:
       min: 1800 # 12.5 min -> Umbra: 30 minutes
       max: 7200 # 17.5 min -> Umbra: 120 minutes
@@ -70,7 +70,7 @@
   components:
   - type: GameRule
   - type: BasicStationEventScheduler
-    minimumTimeUntilFirstEvent: 1200 # 20 min
+    minimumTimeUntilFirstEvent: 1200 # 10 min -> Umbra: 20 minutes
     minMaxEventTiming:
       min: 2700 # 12.5 min -> Umbra: 45 minutes
       max: 10800 # 17.5 min -> Umbra: 180 minutes

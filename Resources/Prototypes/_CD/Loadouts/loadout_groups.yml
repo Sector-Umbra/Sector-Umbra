@@ -1,3 +1,13 @@
+# Command
+- type: loadoutGroup
+  id: FormalShoes
+  name: loadout-group-formal-shoes
+  loadouts:
+  - LeatherShoes
+  - LaceupShoes
+  - BrownShoes
+  - BlackShoes
+
 # Civilian
 - type: loadoutGroup
   id: PrivateInvestigatorOuterClothing
@@ -52,6 +62,7 @@
   - SeniorEngineerJumpskirt
   - StationEngineerJumpsuit
   - StationEngineerJumpskirt
+  - StationEngineerCasualsuit
   - StationEngineerHazardsuit
 
 # Science
@@ -86,12 +97,25 @@
   - RoboticistPDA
 
 # Security
+
+- type: loadoutGroup
+  id: SeniorOfficerHead
+  name: loadout-group-security-head
+  minLimit: 0
+  loadouts:
+  - SecurityHelmet
+  - SecurityVeteranBeret
+  - SecurityBeret
+  - SecurityHat
+
 - type: loadoutGroup
   id: SeniorOfficerJumpsuit
   name: loadout-group-senior-officer-jumpsuit
   loadouts:
   - SeniorOfficerJumpsuit
   - SeniorOfficerJumpskirt
+  - SeniorOfficerCasualsuit
+  - SeniorOfficerCasualskirt
   - SecurityJumpsuit
   - SecurityJumpskirt
   - SecurityJumpsuitGrey
@@ -123,6 +147,7 @@
   loadouts:
   - SeniorPhysicianJumpsuit
   - SeniorPhysicianJumpskirt
+  - SeniorPhysicianFormalsuit
   - MedicalDoctorJumpsuit
   - MedicalDoctorJumpskirt
   - MedicalBlueScrubs
@@ -137,6 +162,20 @@
   - SeniorPhysicianLabCoat
   - RegularLabCoat
   - MedicalDoctorWintercoat
+
+- type: loadoutGroup
+  id: MedicalSpecializationBackpack
+  name: loadout-group-medical-doctor-backpack
+  loadouts:
+  - MedicalDoctorBackpack
+  - MedicalDoctorSatchel
+  - MedicalDoctorDuffel
+  - ViroBackpack
+  - ViroSatchel
+  - ViroDuffel
+  - GeneBackpack
+  - GeneSatchel
+  - GeneDuffel
 
 - type: loadoutGroup
   id: ParamedicGloves

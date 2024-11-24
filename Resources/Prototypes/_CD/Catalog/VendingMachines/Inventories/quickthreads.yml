@@ -40,6 +40,12 @@
     ClothingOuterCoatInspector: 2
     ClothingOuterCoatJensen: 3
     ClothingOuterCoatCowboyDuster: 2
+    ClothingOuterCoatEuropanVet: 2
+    ClothingOuterCoatEuropanCoalition: 2
+    ClothingOuterCoatEuropanSeparatist: 2
+    ClothingOuterCoatYellowHiVis: 3
+    ClothingOuterCoatOrangeHiVis: 3
+    ClothingOuterCoatBlueHiVis: 3
     ClothingBeltHalfApron: 2
     ClothingOuterVest: 2
     ClothingShoesChef: 2
@@ -68,5 +74,24 @@
     ClothingNeckTieDet: 2
     ClothingNeckTieRed: 2
     ClothingEyesGlassesCheapSunglasses: 2 # Umbra: Replace regular sunglasses with cheap ones; 2024-05-01.
+    ClothingNeckCloakWinterOrange: 2
+    ClothingNeckCloakIlluminated: 2
+    ClothingEyesGlassesSunglasses: 2
     ClothingEyesGlassesAviator: 4
     BoxPridePins: 2
+    ClothingUniformJumpskirtBlackElegantDress: 4
+    ClothingUniformJumpskirtRedElegantDress: 4
+    ClothingUniformJumpskirtGreenElegantDress: 4
+    ClothingUniformJumpskirtBlueElegantDress: 4
+    ClothingUniformJumpskirtPurpleElegantDress: 4
+    ClothingUniformJumpskirtPurpleTurtleneckDress: 4
+    ClothingUniformJumpskirtRedTurtleneckDress: 4
+    ClothingUniformJumpskirtGreenTurtleneckDress: 4 
+    ClothingUniformJumpskirtBlueTurtleneckDress: 4 
+    ClothingUniformJumpskirtYellowTurtleneckDress: 4 
+    ClothingUniformJumpskirtYellowOldDress: 4
+    ClothingUniformJumpskirtCyanStripedDress: 4
+    ClothingUniformJumpskirtRedStripedDress: 4
+    ClothingUniformJumpskirtGreenStripedDress: 4
+    ClothingUniformJumpskirtPinkStripedDress: 4
+    ClothingUniformJumpskirtOrangeStripedDress: 4

@@ -7,6 +7,7 @@
   - CaptainJumpsuit
   - CaptainBackpack
   - CaptainOuterClothing
+  - FormalShoes # CD
   - Survival
   - Trinkets
   - PersonalItemsJobAgnostic # Umbra
@@ -21,6 +22,7 @@
   - HoPJumpsuit
   - HoPBackpack
   - HoPOuterClothing
+  - FormalShoes # CD
   - Glasses
   - Survival
   - Trinkets
@@ -59,6 +61,7 @@
   - BartenderJumpsuit
   - CommonBackpack
   - BartenderOuterClothing
+  - FormalShoes # CD
   - Glasses
   - Survival
   - Trinkets
@@ -71,6 +74,7 @@
   - GroupTankHarness
   - BartenderJumpsuit
   - CommonBackpack
+  - FormalShoes # CD
   - Glasses
   - Survival
   - Trinkets
@@ -98,6 +102,7 @@
   - GroupTankHarness
   - LibrarianJumpsuit
   - CommonBackpack
+  - FormalShoes # CD
   - Glasses
   - Survival
   - Trinkets
@@ -111,6 +116,7 @@
   - LawyerNeck
   - LawyerJumpsuit
   - CommonBackpack
+  - FormalShoes # CD
   - Glasses
   - Survival
   - Trinkets
@@ -199,6 +205,7 @@
   - MusicianJumpsuit
   - CommonBackpack
   - MusicianOuterClothing
+  - FormalShoes # CD
   - Glasses
   - Survival
   - Trinkets
@@ -372,7 +379,7 @@
   - Trinkets
   - SecurityStar
   - GroupSpeciesBreathToolSecurity
-  - PersonalItemsJobAgnostic # Umbra
+  - PersonalItemsHeadOfSecurity # Umbra
 
 - type: roleLoadout
   id: JobWarden
@@ -462,7 +469,7 @@
   - MedicalMask
   - MedicalDoctorJumpsuit
   - MedicalGloves
-  - MedicalBackpack
+  - MedicalSpecializationBackpack # CD change from MedicalBackpack
   - MedicalDoctorOuterClothing
   - MedicalShoes
   - MedicalDoctorPDA
@@ -548,6 +555,7 @@
   - GroupTankHarness
   - PsychologistJumpsuit
   - MedicalBackpack
+  - FormalShoes # CD
   - Glasses
   - Survival
   - Trinkets

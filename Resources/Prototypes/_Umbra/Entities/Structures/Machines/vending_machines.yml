@@ -12,3 +12,22 @@
     normalState: normal-unshaded
     ejectState: eject-unshaded
     ejectDelay: 1.8
+
+- type: entity
+  parent: VendingMachineAmmo
+  id: VendingMachineAmmoPractice
+  name: practice liberation station
+  description: An overwhelming amount of ancient patriotism washes over you just by looking at the machine. It seems this version has been neutered to only supply practice ammo.
+  components:
+  - type: VendingMachine
+    pack: AmmoVendInventoryPractice
+  - type: Sprite
+    sprite: _Umbra/Structures/Machines/VendingMachines/ammo.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
