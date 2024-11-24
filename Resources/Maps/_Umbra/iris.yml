@@ -10147,6 +10147,51 @@ entities:
     - type: Transform
       pos: -37.5,8.5
       parent: 2
+  - uid: 28848
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 82.5,51.5
+      parent: 2
+    - type: DeviceList
+      devices:
+      - 28845
+      - 28846
+      - 28707
+      - 28847
+      - 25897
+      - 26048
+      - 26049
+      - 25564
+      - 25532
+      - 24307
+      - 23318
+      - 28844
+      - 28973
+      - 28972
+      - 28850
+      - 28849
+  - uid: 28974
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 92.5,50.5
+      parent: 2
+    - type: DeviceList
+      devices:
+      - 28975
+      - 28976
+      - 28977
+      - 26055
+      - 26054
+      - 26053
+      - 26052
+      - 26051
+      - 26050
+      - 25539
+      - 25540
+      - 26037
+      - 26036
 - proto: AirAlarmVox
   entities:
   - uid: 6920
@@ -13766,6 +13811,42 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 17032
+  - uid: 28707
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 79.5,52.5
+      parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 28848
+  - uid: 28844
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 87.5,62.5
+      parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 28848
+  - uid: 28975
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 93.5,56.5
+      parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 28974
+  - uid: 28976
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 93.5,53.5
+      parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 28974
 - proto: AirSensorVox
   entities:
   - uid: 8288
@@ -13899,8 +13980,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 2.5,4.5
       parent: 2
-    - type: Apc
-      hasAccess: True
   - uid: 663
     components:
     - type: MetaData
@@ -13937,8 +14016,6 @@ entities:
     - type: Transform
       pos: 33.5,19.5
       parent: 2
-    - type: Apc
-      hasAccess: True
   - uid: 668
     components:
     - type: MetaData
@@ -14037,8 +14114,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 23.5,28.5
       parent: 2
-    - type: Apc
-      hasAccess: True
   - uid: 685
     components:
     - type: MetaData
@@ -18897,13 +18972,6 @@ entities:
       parent: 2
     - type: SpamEmitSound
       enabled: False
-- proto: Bloodpack
-  entities:
-  - uid: 988
-    components:
-    - type: Transform
-      pos: 25.351624,-23.241985
-      parent: 2
 - proto: BodyBag
   entities:
   - uid: 989
@@ -63732,6 +63800,13 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 48.4328,76.72922
       parent: 2
+- proto: CMBloodPackFull
+  entities:
+  - uid: 988
+    components:
+    - type: Transform
+      pos: 25.351624,-23.241985
+      parent: 2
 - proto: Cobweb1
   entities:
   - uid: 8644
@@ -78287,11 +78362,17 @@ entities:
     - type: Transform
       pos: 86.5,55.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 28974
   - uid: 26037
     components:
     - type: Transform
       pos: 86.5,54.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 28974
   - uid: 26038
     components:
     - type: Transform
@@ -78351,6 +78432,15 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -68.5,5.5
       parent: 2
+  - uid: 28977
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 97.5,50.5
+      parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 28974
 - proto: FirelockEdge
   entities:
   - uid: 463
@@ -78510,48 +78600,72 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 70.5,53.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 28848
   - uid: 26049
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 70.5,54.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 28848
   - uid: 26050
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 97.5,59.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 28974
   - uid: 26051
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 97.5,58.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 28974
   - uid: 26052
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 97.5,57.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 28974
   - uid: 26053
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 97.5,53.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 28974
   - uid: 26054
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 97.5,52.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 28974
   - uid: 26055
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 97.5,51.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 28974
   - uid: 26056
     components:
     - type: Transform
@@ -78612,6 +78726,66 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -93.5,4.5
       parent: 2
+  - uid: 28845
+    components:
+    - type: Transform
+      pos: 84.5,51.5
+      parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 28848
+  - uid: 28846
+    components:
+    - type: Transform
+      pos: 80.5,52.5
+      parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 28848
+  - uid: 28847
+    components:
+    - type: Transform
+      pos: 76.5,52.5
+      parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 28848
+  - uid: 28849
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 81.5,63.5
+      parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 28848
+  - uid: 28850
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 83.5,63.5
+      parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 28848
+  - uid: 28972
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 87.5,63.5
+      parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 28848
+  - uid: 28973
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 88.5,62.5
+      parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 28848
 - proto: FirelockElectronics
   entities:
   - uid: 10520
@@ -111653,6 +111827,9 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 83.5,57.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 28848
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 24019
@@ -111707,6 +111884,9 @@ entities:
       rot: 3.141592653589793 rad
       pos: 88.5,53.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 28974
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 25564
@@ -111715,6 +111895,9 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 77.5,62.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 28848
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 25565
@@ -113482,6 +113665,9 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 84.5,58.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 28848
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 25502
@@ -113543,6 +113729,9 @@ entities:
       rot: 3.141592653589793 rad
       pos: 75.5,62.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 28848
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 25540
@@ -113550,6 +113739,9 @@ entities:
     - type: Transform
       pos: 88.5,56.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 28974
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 25614
@@ -113582,6 +113774,9 @@ entities:
       rot: 3.141592653589793 rad
       pos: 74.5,53.5
       parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 28848
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 26074
@@ -123652,7 +123847,7 @@ entities:
       pos: 10.5,62.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -507831.88
+      secondsUntilStateChange: -510082.72
       state: Opening
 - proto: HospitalCurtainsOpen
   entities:
@@ -123697,7 +123892,7 @@ entities:
       pos: 12.5,0.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -752359.8
+      secondsUntilStateChange: -754610.6
       state: Closing
   - uid: 15469
     components:
@@ -124139,7 +124334,7 @@ entities:
       pos: -16.5,-42.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -600165.2
+      secondsUntilStateChange: -602416
       state: Opening
 - proto: InflatableDoorStack
   entities:
@@ -127266,13 +127461,6 @@ entities:
     - type: Transform
       pos: -4.4909153,60.7177
       parent: 2
-- proto: OverlordCircuitBoard
-  entities:
-  - uid: 28707
-    components:
-    - type: Transform
-      pos: -83.4963,-9.446152
-      parent: 2
 - proto: OxygenCanister
   entities:
   - uid: 8631
@@ -129252,14 +129440,6 @@ entities:
     - type: InputMover
     - type: MobMover
     - type: MovementSpeedModifier
-    - type: Speech
-      suffixSpeechVerbs:
-        chat-speech-verb-suffix-exclamation-strong: DefaultExclamationStrong
-        chat-speech-verb-suffix-exclamation: DefaultExclamation
-        chat-speech-verb-suffix-question: DefaultQuestion
-        chat-speech-verb-suffix-stutter: DefaultStutter
-        chat-speech-verb-suffix-mumble: DefaultMumble
-      allowedEmotes: []
     - type: Emoting
     - type: Examiner
     - type: Eye
