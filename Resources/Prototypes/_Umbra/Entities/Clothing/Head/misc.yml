@@ -2,8 +2,8 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatRainbowFlowerJasmi
-  name: Jasmi's Rainbow Hairflower
-  description: Jasmi's custom hairflower, with petals colored in a rainbow pattern. 
+  name: Jasmi's rainbow hairflower
+  description: Jasmi's custom hairflower, with petals colored in a rainbow pattern.
   suffix: PersonalItem
   components:
   - type: Sprite
