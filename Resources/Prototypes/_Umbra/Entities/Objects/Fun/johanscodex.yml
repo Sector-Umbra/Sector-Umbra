@@ -1,6 +1,6 @@
 # Player: Boaz1111 - Character: Johan Ullman
 - type: entity
-  name: Johan's Codex
+  name: Johan's codex
   parent: BaseItem
   id: JohansCodex
   description: Johan's Personal Data Storage Device. Made originally for research, now used to store a complete data archive.

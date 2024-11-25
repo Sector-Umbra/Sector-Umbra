@@ -2,7 +2,7 @@
 - type: entity
   parent: [Clothing, BaseFoldable]
   id: ClothingNeckKarakiMantle
-  name: karaki's nanoweave mantle
+  name: Karaki's nanoweave mantle
   description: A two piece cloak that can be folded up into a mantle.  Its made out of nanoweave in traditional colours, often worn by Avali across the Illuminate. The fabric is intricately weaved down to the atomic level, making it incredibly strong and durable. A necklace with a softly pulsing crystal is sown into fabric around the neck.
   suffix: PersonalItem
   components:

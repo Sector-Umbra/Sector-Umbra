@@ -1,6 +1,6 @@
 # Player: AemonTillado - Character: Michael LaRue
 - type: entity
-  name: michael's card
+  name: Michael's card
   parent: BookBase
   id: MichaelsCard
   description: A faded and torn paper card, lovingly repaired with strips of tape.

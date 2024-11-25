@@ -1,6 +1,6 @@
 # Player: Frostbitey - Character: Fateseeker
 - type: entity
-  name: Fateseeker's Mysterious Gemstone
+  name: Fateseeker's mysterious gemstone
   parent: BaseItem
   id: FateseekersGemstone
   description: "A mysterious gemstone, shining and glowing. It looks quite worn off."

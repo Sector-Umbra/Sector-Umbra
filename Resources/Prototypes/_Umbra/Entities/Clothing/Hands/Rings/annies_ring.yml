@@ -2,7 +2,7 @@
 - type: entity
   parent: RingBase
   id: AnniesRing
-  name: annie's ring
+  name: Annie's ring
   description: A rose-gold wedding band, set with a large cut onyx beside an adornment of iridescent opal. An inscription reads - "You are, and will forever be, my hero."
   suffix: PersonalItem
   components:

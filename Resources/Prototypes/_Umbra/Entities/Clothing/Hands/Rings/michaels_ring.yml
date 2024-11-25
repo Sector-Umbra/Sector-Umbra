@@ -2,7 +2,7 @@
 - type: entity
   parent: RingBase
   id: MichaelsRing
-  name: michael's ring
+  name: Michael's ring
   description: A white-gold wedding band, set with howlite and several blue zircons in pattern reminiscent of a silver flower. An inscription reads - "Be mine to guard this light from all eclipse."
   suffix: PersonalItem
   components:
