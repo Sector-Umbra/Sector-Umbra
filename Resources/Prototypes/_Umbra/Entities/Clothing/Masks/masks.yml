@@ -3,8 +3,8 @@
   parent: ClothingMaskBase
   id: ClothingNeckChewtoy
   name: Welds' synthetic chew fidget
-  suffix: PersonalItem
   description: A sheet of some unknown material with self-healing properties. You can't taste anything when chewing it.
+  suffix: PersonalItem
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Mask/chewtoy.rsi

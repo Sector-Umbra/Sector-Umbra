@@ -3,8 +3,8 @@
   parent: ClothingNeckBase
   id: ClothingNeckArtifactNecklace
   name: Deeja's Artifact Necklace
-  suffix: PersonalItem
   description: An extremely well crafted, handmade necklace. It has an engraving on it - "A gift for the most talented scientist and my best friend."
+  suffix: PersonalItem
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Neck/artifactnecklace.rsi
@@ -14,7 +14,7 @@
     currentNodeId: 271828
     pointsPerNode: 0 # Instead of 6500 points. Purely Cosmetic
     nodeTree:
-    - nodeData: {} 
+    - nodeData: {}
       effect: EffectGoodFeeling # So well crafted that when you look at it you feel happiness
       triggered: False
       trigger: TriggerExamine
@@ -29,8 +29,8 @@
   parent: ClothingNeckBase
   id: ClothingNeckHushPendant
   name: Hush's pendant
-  suffix: PersonalItem
   description: A silver-gold necklace with an inscription on it, it states "Leap of faith, do you doubt?"
+  suffix: PersonalItem
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Neck/Misc/hushpendant.rsi

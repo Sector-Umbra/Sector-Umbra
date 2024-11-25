@@ -99,6 +99,7 @@
   id: ClothingOuterMotheCoat
   name: Mothe's coat
   description: An old surplus cloak meant to protect from rain and high winds. Despite all the visible repairs and mends, it looks like it's seen better days. Places where insignia would go have dark blue pieces of cloth sewn over them.
+  suffix: PersonalItem
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/OuterClothing/Coats/mothe_coat.rsi
@@ -111,6 +112,7 @@
   id: ClothingOuterIsatheiCoat
   name: Isathei's valexian windbreaker
   description: A gift from his brother Ardicuris, it sports luxury silver linings with a gold sword emblazoned on the back. The jacket is of high quality.
+  suffix: PersonalItem
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/OuterClothing/Coats/isathei_coat.rsi

@@ -1,10 +1,11 @@
-
+# Player: Sphiral - Character: Nova Gem
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatCatEars2
   categories: [ HideSpawnMenu ]
   name: Nova's cat ears
   description: "They seem to be twitching to every little sound around them... how odd."
+  suffix: PersonalItem
   components:
   - type: Tag
     tags: [] # ignore "WhitelistChameleon" tag
@@ -13,12 +14,14 @@
   - type: Clothing
     sprite: _Umbra/Clothing/Head/novagalaxyhood.rsi
 
+# Player: AjexRose - Character: Daniella Rose
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatCatEars3
   categories: [ HideSpawnMenu ]
   name: Daniella's cat ears
   description: "A set of fuzzy cat ears! Looksies but no touchies!"
+  suffix: PersonalItem
   components:
   - type: Tag
     tags: [ ] # ignore "WhitelistChameleon" tag
