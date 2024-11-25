@@ -2,7 +2,7 @@
 - type: entity
   parent: ClothingOuterWinterCoat
   id: FrostCoat
-  name: Frosty Winter Coat
+  name: frosty winter coat
   description: A delicate, precisely made winter coat with a small label that says "Frostbite-Drago", it seems to be covered in a light layer of frost.
   suffix: PersonalItem
   components:
@@ -15,7 +15,7 @@
 - type: entity
   parent: ClothingOuterWinterCoat
   id: Oceancoat
-  name: Ocean Winter Coat
+  name: ocean winter coat
   description: A simple, ocean themed winter coat. It has two little lightning bolts coming out of the coat's fluff.
   suffix: PersonalItem
   components:

@@ -4,7 +4,7 @@
   id: ClothingOuterYarnaArmourCoat
   name: Yarna's armoured winter coat
   description: A elegant winter coat made with high-quality fibers, featuring two golden shoulder guards, there is a small label that reads "Yarna-Crimson".
-  suffix: PersonalItem, Warden
+  suffix: PersonalItem
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/OuterClothing/Coats/yarnaarmouredcoat.rsi
@@ -17,7 +17,7 @@
   id: ClothingOuterCoatReinforcedRaincoat
   name: reinforced raincoat
   description: An old coat, padded with kevlar on the inside. "Every once in a while I think about gettin a new coat, but there's no rush on that. There's still plenty of wear in this fella!"
-  suffix: PersonalItem, Detective
+  suffix: PersonalItem
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/OuterClothing/Coats/reinforced_raincoat.rsi
@@ -31,7 +31,7 @@
   id: ClothingOuterCoatHoSReinforcedRaincoat
   name: composite raincoat
   description: An old sailor's raincoat. There's some modern flexible composite material sewn into the lining, upgrading it to comply with NanoTrasen Command standards.
-  suffix: PersonalItem, Head of Security
+  suffix: PersonalItem
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/OuterClothing/Coats/hos_raincoat.rsi
@@ -43,7 +43,7 @@
 - type: entity
   parent: ClothingOuterStorageBase
   id: ClothingOuterGalaxyCoat
-  name: Tailored Galaxy Coat
+  name: tailored galaxy coat
   description: A custom-tailored, colorful coat covered with the sights of the universe itself. There's a tag denoting the name "Nova Gem" on the inside.
   suffix: PersonalItem
   components:
@@ -64,7 +64,7 @@
 - type: entity
   parent: ClothingOuterStorageBase
   id: ClothingOuterTechCoat
-  name: Tech Coat
+  name: tech coat
   description: An expensive gift suited for any DIY robotics, this coat upon further inspection is made not with fabric, but some thin, soft, metallic polymer. It's not that strong given the tear though."
   suffix: PersonalItem
   components:
@@ -97,7 +97,7 @@
 - type: entity
   parent: ClothingOuterStorageBase
   id: ClothingOuterMotheCoat
-  name: mothe's coat
+  name: Mothe's coat
   description: An old surplus cloak meant to protect from rain and high winds. Despite all the visible repairs and mends, it looks like it's seen better days. Places where insignia would go have dark blue pieces of cloth sewn over them.
   components:
   - type: Sprite

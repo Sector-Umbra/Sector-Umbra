@@ -12,10 +12,10 @@
     sprite: _Umbra/Clothing/Neck/artifactnecklace.rsi
   - type: Artifact
     currentNodeId: 271828
-    pointsPerNode: 0 #Instead of 6500 points. Purely Cosmetic
+    pointsPerNode: 0 # Instead of 6500 points. Purely Cosmetic
     nodeTree:
     - nodeData: {} 
-      effect: EffectGoodFeeling #So well crafted that when you look at it you feel happiness
+      effect: EffectGoodFeeling # So well crafted that when you look at it you feel happiness
       triggered: False
       trigger: TriggerExamine
       discovered: True

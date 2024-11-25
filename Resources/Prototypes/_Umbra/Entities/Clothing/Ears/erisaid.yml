@@ -1,4 +1,5 @@
-﻿- type: entity
+﻿# Player: AjexRose - Character: Eris Rose
+- type: entity
   parent: ClothingHeadset
   id: ClothingHeadsetErisAid
   name: Eris' Hearing Aid

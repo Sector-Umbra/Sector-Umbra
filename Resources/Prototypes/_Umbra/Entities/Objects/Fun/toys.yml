@@ -23,7 +23,7 @@
     state: plushie_oliver
     sprite: _Umbra/Objects/Fun/Toys/plushie_oliver.rsi
 
-# Players: foob - Character: Jasmi-Wujeeta
+# Player: foob - Character: Jasmi-Wujeeta
 - type: entity
   parent: PlushieLizard
   id: PlushieDeeja
@@ -41,7 +41,7 @@
     slots:
     - HEAD
 
-# Players: Deeja - Character: Deeja-Wujeeta
+# Player: Deeja - Character: Deeja-Wujeeta
 - type: entity
   parent: PlushieLizard
   id: PlushieJasmi
@@ -59,7 +59,7 @@
     slots:
     - HEAD
 
-# Players: Sky - Character: Sky Tomson
+# Player: Sky - Character: Sky Tomson
 - type: entity
   parent: PlushieLizard
   id: PlushieSky
@@ -77,7 +77,7 @@
     slots:
     - HEAD
 
-# Players: AjexRose - Character: Eris Rose
+# Player: AjexRose - Character: Eris Rose
 - type: entity
   parent: PlushieSlime
   id: PlushieEris
@@ -89,7 +89,7 @@
     state: plushie_eris
     sprite: _Umbra/Objects/Fun/Toys/plushie_eris.rsi
 
-# Players: MrGreen - Character: John Armstrong
+# Player: MrGreen - Character: John Armstrong
 - type: entity
   parent: PlushieLizard
   id: PlushieJuniper
@@ -107,7 +107,7 @@
     slots:
     - HEAD
 
-# Players: countrynerds - Character: Smoke Phillips
+# Player: countrynerds - Character: Smoke Phillips
 - type: entity
   parent: BasePlushie
   id: PlushieHeart
@@ -143,11 +143,11 @@
     state: plushie_nia
     sprite: _Umbra/Objects/Fun/Toys/plushie_nia.rsi
 
-# Players: Jacketed - Character: Defenestrates-The-Dragon
+# Player: Jacketed - Character: Defenestrates-The-Dragon
 - type: entity
   parent: PlushieRainbowCarp
   id: PlushieDragonCarp
-  name: dragon's loyal carp plushie
+  name: Dragon's loyal carp plushie
   description: An adorable stuffed toy resembling the legendary rainbow carp. It has various teeth and claw marks on it accompanied by stitches. The stitches spell out a word "Dragon".
   suffix: PersonalItem
   components:
@@ -172,7 +172,7 @@
     slots:
     - HEAD
 
-    # Players: Coolsurf6 - Character: Kai
+# Player: Coolsurf6 - Character: Kai
 - type: entity
   parent: PlushieLizard
   id: KaiPlushie
@@ -188,7 +188,7 @@
     sprite: _Umbra/Objects/Fun/Toys/plushie_kai.rsi
     equippedPrefix: kai
 
-    # Players: riverztyx - Character: Gar-Tei
+# Player: riverztyx - Character: Gar-Tei
 - type: entity
   parent: PlushieLizard
   id: GarTeiPlushie
@@ -206,7 +206,7 @@
     slots:
     - HEAD
 
-    # Players: Ariphylor - Character: Passes-The-Dutchie
+# Player: Ariphylor - Character: Passes-The-Dutchie
 - type: entity
   parent: PlushieLizard
   id: DutchiePlushie
@@ -224,7 +224,7 @@
     slots:
     - HEAD
 
-    # Players: gruesomegray - Character: Buries-the-Hatchet
+# Player: gruesomegray - Character: Buries-the-Hatchet
 - type: entity
   parent: PlushieLizard
   id: AmokPlushie
@@ -242,11 +242,11 @@
     slots:
     - HEAD
 
-   # Players: Maestro2Kimpembe - Character: Takes-Great-Risk
+# Player: Maestro2Kimpembe - Character: Takes-Great-Risk
 - type: entity
   parent: PlushieLizard
   id: TakesPlushie
-  name: Takes's Plushie
+  name: takes plushie
   description: Little Takes-Great-Risk in a plush version. Smells like a bamboo and lilac.
   suffix: PersonalItem
   components:
@@ -260,7 +260,7 @@
     slots:
     - HEAD
 
-    # Players: Jacketed - Character: Steals-The-Materials
+# Player: Jacketed - Character: Steals-The-Materials
 - type: entity
   parent: PlushieLizard
   id: MaterialsPlushie
@@ -278,7 +278,7 @@
     slots:
     - HEAD
 
-    # Players: Slugcta - Character: Hisses-At-Inconvenience
+# Player: Slugcta - Character: Hisses-At-Inconvenience
 - type: entity
   parent: PlushieLizard
   id: HissesPlushie
@@ -296,7 +296,7 @@
     slots:
     - HEAD
 
-    # Players: SpilTistic - Character: Only-Sees-Burgundy
+# Player: SpilTistic - Character: Only-Sees-Burgundy
 - type: entity
   parent: PlushieSnake
   id: BurgPlushie
@@ -314,7 +314,7 @@
     slots:
     - HEAD
 
-    # Players: Ariphylor - Character: Anxeeth-Duna
+# Player: Ariphylor - Character: Anxeeth-Duna
 - type: entity
   parent: PlushieLizard
   id: DunaPlushie
@@ -332,7 +332,7 @@
     slots:
     - HEAD
 
-# Players: Nikovnik - Character: Tiha-Tuga
+# Player: Nikovnik - Character: Tiha-Tuga
 - type: entity
   parent: [BasePlushie, Clothing, BaseFoldable]
   id: TihaPlushie
@@ -403,7 +403,7 @@
         - ReagentId: Saline
           Quantity: 10
 
-    # Players: Dart111 - Character: Darting Groth
+# Player: Dart111 - Character: Darting Groth
 - type: entity
   parent: PlushieSpaceLizard
   id: OldPlushieSpaceLizard
@@ -420,7 +420,7 @@
     slots:
     - HEAD
 
-    # Players: juneszalkowska - Character: Finds-The-Treasure
+# Player: juneszalkowska - Character: Finds-The-Treasure
 - type: entity
   parent: PlushieLizard
   id: FindsPlushie
@@ -438,7 +438,7 @@
     slots:
     - HEAD
 
-  # Players: Maestro2Kimpembe - Character: Aphelio Kuiper
+# Player: Maestro2Kimpembe - Character: Aphelio Kuiper
 - type: entity
   parent: PlushieMoth
   id: AphelioPlushie
@@ -456,7 +456,7 @@
     slots:
     - HEAD
 
-    # Players: luckyshotpictures - Character: Walks-The-Graves
+# Player: luckyshotpictures - Character: Walks-The-Graves
 - type: entity
   parent: [BasePlushie, Clothing, BaseFoldable]
   id: GravesPlushie
@@ -515,7 +515,7 @@
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: JuiceThatMakesYouWeh # Possibly different reagents
+      - ReagentId: JuiceThatMakesYouWeh
         Quantity: 30
   - type: SolutionContainerManager
     solutions:
@@ -524,5 +524,5 @@
         reagents:
         - ReagentId: Fiber
           Quantity: 10
-        - ReagentId: JuiceThatMakesYouWeh # Possibly different reagents
+        - ReagentId: JuiceThatMakesYouWeh
           Quantity: 10

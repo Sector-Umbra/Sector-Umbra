@@ -11,7 +11,7 @@
   - type: Clothing
     sprite: _Umbra/Clothing/Head/Hats/ardus-bandana.rsi
 
-    # Player: juneszalkowska - Character: Finds-The-Treasure
+# Player: juneszalkowska - Character: Finds-The-Treasure
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadFindsHat

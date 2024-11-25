@@ -2,7 +2,7 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitCarpSuit
-  name: Carp Suit
+  name: carp suit
   description: Nothing beats a custom-made suit. Just don't ask where the carp leather came from...
   suffix: PersonalItem
   components:
@@ -30,6 +30,7 @@
   id: ClothingUniformJumpsuitDrugeristic
   name: drugeristic suit
   description: A flambuoyant purple suit in the personal style of famous zookeeper and activist Druger Phillips Ruger Dug. You swear that you might have seen it on TV.
+  suffix: PersonalItem
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Jumpsuit/drugersuit.rsi
@@ -42,6 +43,7 @@
   id: ClothingUniformJumpsuitArtificer
   name: artificer suit
   description: A brown, short sleeved turtleneck accompanied by a front pouch and big pockets. It wears a golden armband on the right arm, depicting a small, light gold shield with a white banner over it. It looks cared of.
+  suffix: PersonalItem
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Jumpsuit/artificer_uniform.rsi
