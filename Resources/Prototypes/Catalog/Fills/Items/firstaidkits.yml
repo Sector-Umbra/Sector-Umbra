@@ -86,6 +86,7 @@
       #- id: Bloodpack #Umbra: Replaced by RMC blood.
       #  amount: 2
       - id: CMBloodPackFull
+        amount: 2
 
 - type: entity
   id: MedkitCombatFilled

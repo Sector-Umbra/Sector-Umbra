@@ -93,6 +93,9 @@
         Blunt: 5
   - type: StaticPrice
     price: 30
+  - type: Tag
+    tags:
+    - Bloodpack
   - type: GuideHelp
     guides:
     - Rmcmedical
@@ -115,7 +118,7 @@
 # Lingering
 - type: entity
   parent: CMBloodPack
-  id: CMBloodpack10Lingering
+  id: CMBloodpackLingering
   suffix: Lingering
   components:
   - type: Stack
@@ -220,7 +223,5 @@
 #TODO
 #Add 3 of each specialty blood to vendors.
 #Test borg lingering bloodpacks - Broken
-#Test the random bag fills.
-  #If needed, make them only be an ammount of 1.
 # Crafting recipies for blood? (In Discussion)
 # Write the guidebook entry for how IV stands and Guidebooks work

@@ -385,7 +385,7 @@
     - Ointment10Lingering
     - Gauze10Lingering
     #- Bloodpack10Lingering #Umbra: Replaced by RMC Blood.
-    - CMBloodpack10Lingering
+    - CMBloodpackLingering
     - Syringe
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: treatment-module }
