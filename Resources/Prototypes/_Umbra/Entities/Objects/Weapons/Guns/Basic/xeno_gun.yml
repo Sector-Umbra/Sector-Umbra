@@ -1,0 +1,13 @@
+- type: entity
+  name: xeno gun
+  id: WeaponXenoGun
+  parent: [WeaponXenoGunBase, BaseCargoContraband]
+  description: acid lol
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Basic/kinetic_accelerator.rsi
+    layers:
+    - state: icon
+    - state: animation-icon
+      visible: false
+      map: [ "empty-icon" ]
