@@ -1,0 +1,368 @@
+# Player: OverwatchVoice - Character: Yarna Crimson
+- type: entity
+  parent: ClothingOuterCoatWarden
+  id: ClothingOuterYarnaArmourCoat
+  name: Yarna's armoured winter coat
+  description: A elegant winter coat made with high-quality fibers, featuring two golden shoulder guards, there is a small label that reads "Yarna-Crimson".
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/OuterClothing/Coats/yarnaarmouredcoat.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/OuterClothing/Coats/yarnaarmouredcoat.rsi
+
+# Player: SlamBamActionman - Character: Jalopy Oldman
+- type: entity
+  parent: ClothingOuterCoatDetectiveLoadout
+  id: ClothingOuterCoatReinforcedRaincoat
+  name: reinforced raincoat
+  description: An old coat, padded with kevlar on the inside. "Every once in a while I think about gettin a new coat, but there's no rush on that. There's still plenty of wear in this fella!"
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/OuterClothing/Coats/reinforced_raincoat.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/OuterClothing/Coats/reinforced_raincoat.rsi
+
+
+# Player: SlamBamActionman - Character: Jalopy Oldman
+- type: entity
+  parent: ClothingOuterCoatHoSTrench
+  id: ClothingOuterCoatHoSReinforcedRaincoat
+  name: composite raincoat
+  description: An old sailor's raincoat. There's some modern flexible composite material sewn into the lining, upgrading it to comply with NanoTrasen Command standards.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/OuterClothing/Coats/hos_raincoat.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/OuterClothing/Coats/hos_raincoat.rsi
+
+
+# Player: Sphiral - Character: Nova Gem
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterGalaxyCoat
+  name: tailored galaxy coat
+  description: A custom-tailored, colorful coat covered with the sights of the universe itself. There's a tag denoting the name "Nova Gem" on the inside.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/OuterClothing/Coats/galaxycoat.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/OuterClothing/Coats/galaxycoat.rsi
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+      storagebase: !type:Container
+        ents: []
+  - type: ToggleableClothing
+    clothingPrototype: PersonalItemNovaCatEars
+    slot: head
+
+# Player: AjexRose - Character: Daniella Rose
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterTechCoat
+  name: tech coat
+  description: An expensive gift suited for any DIY robotics, this coat upon further inspection is made not with fabric, but some thin, soft, metallic polymer. It's not that strong given the tear though."
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/OuterClothing/Coats/techcoat.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/OuterClothing/Coats/techcoat.rsi
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+      storagebase: !type:Container
+        ents: []
+  - type: ToggleableClothing
+    clothingPrototype: PersonalItemDaniellaCatEars
+    slot: head
+
+# Player: June - Character: June Mothe
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterMotheCoat
+  name: Mothe's coat
+  description: An old surplus cloak meant to protect from rain and high winds. Despite all the visible repairs and mends, it looks like it's seen better days. Places where insignia would go have dark blue pieces of cloth sewn over them.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/OuterClothing/Coats/mothe_coat.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/OuterClothing/Coats/mothe_coat.rsi
+
+# Player: TheUltimateJester - Character: Isathei Arsicaris
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterIsatheiCoat
+  name: Isathei's valexian windbreaker
+  description: A gift from his brother Ardicuris, it sports luxury silver linings with a gold sword emblazoned on the back. The jacket is of high quality.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/OuterClothing/Coats/isathei_coat.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/OuterClothing/Coats/isathei_coat.rsi
+
+# Player: KittenColony - Character: Welds-The-Pipes
+- type: entity
+  parent: ClothingMaskBase
+  id: PersonalItemWeldsChewtoy
+  name: Welds' synthetic chew fidget
+  description: A sheet of some unknown material with self-healing properties. You can't taste anything when chewing it.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Mask/chewtoy.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Mask/chewtoy.rsi
+
+# Player: Jacketed - Character: Ko Karaki
+- type: entity
+  parent: [Clothing, BaseFoldable]
+  id: PersonalItemKarakiMantle
+  name: Karaki's nanoweave mantle
+  description: A two piece cloak that can be folded up into a mantle.  Its made out of nanoweave in traditional colours, often worn by Avali across the Illuminate. The fabric is intricately weaved down to the atomic level, making it incredibly strong and durable. A necklace with a softly pulsing crystal is sown into fabric around the neck.
+  suffix: PersonalItem
+  components:
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: _Umbra/Clothing/Neck/Mantles/karakinanowevemantle.rsi
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-open
+      map: ["foldedLayer"]
+      visible: false
+  - type: Clothing
+    sprite: _Umbra/Clothing/Neck/Mantles/karakinanowevemantle.rsi
+    quickEquip: true
+    slots:
+    - neck
+  - type: Appearance
+  - type: Foldable
+    canFoldInsideContainer: true
+    unfoldVerbText: fold-closed-verb
+    foldVerbText: fold-open-verb
+  - type: FoldableClothing
+    foldedEquippedPrefix: open
+    foldedHeldPrefix: open
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+
+# Player: Maestro2Kimpembe - Character: Ardus Kaine
+- type: entity
+  parent: ClothingHeadBase
+  id: PersonalItemArdusBandana
+  name: Ardus' Bandana
+  description: Ardus' old bandana. It has logo of Praestilyn Royal Army on front and a small freshly handwritten note "Not edible".
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Head/Hats/ardus-bandana.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Head/Hats/ardus-bandana.rsi
+
+# Player: juneszalkowska - Character: Finds-The-Treasure
+- type: entity
+  parent: ClothingHeadBase
+  id: PersonalItemFindsHat
+  name: Kasa-Liurz’s Hat
+  description: A rakish pirate tricorn adorned with beautiful feathers.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Head/Hats/findshat.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Head/Hats/findshat.rsi
+
+# Player: AemonTillado - Character: Michael LaRue
+- type: entity
+  parent: RingBase
+  id: PersonalItemMichaelRing
+  name: Michael's ring
+  description: A white-gold wedding band, set with howlite and several blue zircons in pattern reminiscent of a silver flower. An inscription reads - "Be mine to guard this light from all eclipse."
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Hands/Rings/michaels_ring.rsi
+    layers:
+    - state: michaels_ring
+  - type: Item
+    size: Tiny
+    sprite: _Umbra/Clothing/Hands/Rings/michaels_ring.rsi
+
+# Player: HexReject - Character: Annie LaRue
+- type: entity
+  parent: RingBase
+  id: PersonalItemAnnieRing
+  name: Annie's ring
+  description: A rose-gold wedding band, set with a large cut onyx beside an adornment of iridescent opal. An inscription reads - "You are, and will forever be, my hero."
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Hands/Rings/annies_ring.rsi
+    layers:
+    - state: annies_ring
+  - type: Item
+    size: Tiny
+    sprite: _Umbra/Clothing/Hands/Rings/annies_ring.rsi
+
+# Player: Sphiral - Character: Nova Gem
+- type: entity
+  parent: ClothingHeadBase
+  id: PersonalItemNovaCatEars
+  categories: [ HideSpawnMenu ]
+  name: Nova's cat ears
+  description: "They seem to be twitching to every little sound around them... how odd."
+  suffix: PersonalItem
+  components:
+  - type: Tag
+    tags: [] # ignore "WhitelistChameleon" tag
+  - type: Sprite
+    sprite: _Umbra/Clothing/Head/novagalaxyhood.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Head/novagalaxyhood.rsi
+
+# Player: AjexRose - Character: Daniella Rose
+- type: entity
+  parent: ClothingHeadBase
+  id: PersonalItemDaniellaCatEars
+  categories: [ HideSpawnMenu ]
+  name: Daniella's cat ears
+  description: "A set of fuzzy cat ears! Looksies but no touchies!"
+  suffix: PersonalItem
+  components:
+  - type: Tag
+    tags: [ ] # ignore "WhitelistChameleon" tag
+  - type: Sprite
+    sprite: _Umbra/Clothing/Head/techcoatears.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Head/techcoatears.rsi
+
+# Player: AjexRose - Character: Eris Rose
+- type: entity
+  parent: ClothingHeadset
+  id: PersonalItemErisHearingAid
+  name: Eris' Hearing Aid
+  description: A modified hearing aid built for workplace communication, and a unique grip for slime skin. It has a logo for Arcadia Industries on the antenna.
+  suffix: PersonalItem
+  components:
+  - type: Clothing
+    slots:
+    - ears
+    sprite: _Umbra/Clothing/Ears/Headsets/arcindhearaids.rsi
+  - type: Sprite
+    sprite: _Umbra/Clothing/Ears/Headsets/arcindhearaids.rsi
+
+# Player: Frostbitey - Character: Frostbite-Drago
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: FrostCoat
+  name: frosty winter coat
+  description: A delicate, precisely made winter coat with a small label that says "Frostbite-Drago", it seems to be covered in a light layer of frost.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/OuterClothing/WinterCoats/frostcoat.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/OuterClothing/WinterCoats/frostcoat.rsi
+
+# Player: PIGEONPEAS - Character: Sereketh Pallister II
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: Oceancoat
+  name: ocean winter coat
+  description: A simple, ocean themed winter coat. It has two little lightning bolts coming out of the coat's fluff.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/OuterClothing/WinterCoats/oceancoat.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/OuterClothing/WinterCoats/oceancoat.rsi
+
+# Player: Skarlet - Character: Chance Boulevard
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCarpSuit
+  name: carp suit
+  description: Nothing beats a custom-made suit. Just don't ask where the carp leather came from...
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Uniforms/Jumpsuit/carpsuit.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Uniforms/Jumpsuit/carpsuit.rsi
+
+# Player: Riverztyx - Character: Gar-Tei
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSweatpants
+  name: ripped sweatpants
+  description: A pair of navy sweatpants. The knees are worn out, like they were ripped up by claws.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Uniforms/Jumpsuit/garpants.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Uniforms/Jumpsuit/garpants.rsi
+
+# Player: Xolotl - Character: Druger Phillips Ruger Dug
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitDrugeristic
+  name: drugeristic suit
+  description: A flambuoyant purple suit in the personal style of famous zookeeper and activist Druger Phillips Ruger Dug. You swear that you might have seen it on TV.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Uniforms/Jumpsuit/drugersuit.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Uniforms/Jumpsuit/drugersuit.rsi
+
+# Player: Akira - Character: FP-SR M36
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitArtificer
+  name: artificer suit
+  description: A brown, short sleeved turtleneck accompanied by a front pouch and big pockets. It wears a golden armband on the right arm, depicting a small, light gold shield with a white banner over it. It looks cared of.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Uniforms/Jumpsuit/artificer_uniform.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Uniforms/Jumpsuit/artificer_uniform.rsi
+
+# Player: Boaz1111 - Character: Johan Ullman
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckJohanScarf
+  name: Johan's NTRD Scarf
+  description: A scarf with the colors of the NTRD, a collection of Nanotrasen's finest research divsions.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Neck/Scarfs/johanscarf.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Neck/Scarfs/johanscarf.rsi
+
+# Player: mryikes - Character: Ryeversi Venusta
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckRyeTie
+  name: out of fashion tie
+  description: It reminds you of ties you'd find near back-alley dumpsters and disposal chutes. Theres a slighty faded name tag on the back reading "Ryeversi".
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Neck/Ties/RyeTie.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Neck/Ties/RyeTie.rsi
+  - type: Tag
+    tags:
+    - ClothMade
