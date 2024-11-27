@@ -34,5 +34,6 @@
   - Blood bags are able to store 300 Units of any reagent.
   - When used on a patient blood bags will slowly inject a patient with their contained reagents, including mixtures.
   - Empty blood bags can be filled using any injector (Ex: Syringes/Hyposprays) or IV Stands.
+  - IV Stands can draw or inject from a patient.
 
 </Document>

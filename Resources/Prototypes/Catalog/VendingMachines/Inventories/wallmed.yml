@@ -5,6 +5,12 @@
     Ointment: 3
     #Bloodpack: 5 #Umbra: Replaced by RMC Blood Patch.
     CMBloodPackFull: 5 #Umbra
+    CMBloodPackFullSap: 3 #Umbra
+    CMBloodPackFullAnaerobic: 3 #Umbra
+    CMBloodPackFullHemocyanin: 3 #Umbra
+    CMBloodPackFullInsect: 3 #Umbra
+    CMBloodPackFullSlime: 3 #Umbra
+    CMBloodPackFullSynthetic: 3 #Umbra
     CMBloodPack: 5 #Umbra: Few free empty bags for medical to fill.
     EpinephrineChemistryBottle: 3
     Syringe: 3

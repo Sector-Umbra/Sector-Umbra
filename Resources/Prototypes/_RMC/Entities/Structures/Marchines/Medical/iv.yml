@@ -75,7 +75,7 @@
   - type: SolutionContainerManager
     solutions:
       pack:
-        maxVol: 300
+        maxVol: 120
   - type: SolutionTransfer
     canChangeTransferAmount: true
   - type: Appearance
@@ -109,10 +109,10 @@
   - type: SolutionContainerManager
     solutions:
       pack:
-        maxVol: 300
+        maxVol: 120
         reagents:
         - ReagentId: Blood
-          Quantity: 300
+          Quantity: 120
 
 # Umbra Blood Pack Types
 # Lingering
@@ -122,6 +122,8 @@
   suffix: Lingering
   components:
   - type: Stack
+    stackType: Fulton
+    count: 1
     lingering: true
 
 # Sap
@@ -135,10 +137,10 @@
   - type: SolutionContainerManager
     solutions:
       pack:
-        maxVol: 300
+        maxVol: 120
         reagents:
         - ReagentId: Sap
-          Quantity: 300
+          Quantity: 120
 
 # Anaerobic
 - type: entity
@@ -151,10 +153,10 @@
   - type: SolutionContainerManager
     solutions:
       pack:
-        maxVol: 300
+        maxVol: 120
         reagents:
         - ReagentId: AmmoniaBlood
-          Quantity: 300
+          Quantity: 120
 
 # Blue Blood
 - type: entity
@@ -167,10 +169,10 @@
   - type: SolutionContainerManager
     solutions:
       pack:
-        maxVol: 300
+        maxVol: 120
         reagents:
         - ReagentId: CopperBlood
-          Quantity: 300
+          Quantity: 120
 
 # Insect Blood
 - type: entity
@@ -183,10 +185,10 @@
   - type: SolutionContainerManager
     solutions:
       pack:
-        maxVol: 300
+        maxVol: 120
         reagents:
         - ReagentId: InsectBlood
-          Quantity: 300
+          Quantity: 120
 
 # Synthetic Blood
 - type: entity
@@ -194,15 +196,15 @@
   id: CMBloodPackFullSynthetic
   name: blood pack
   description: A blood pack. Contains fluids, typically used for transfusions. This one was filled with a type of coolant, used for synths.
-  suffix: Full, Syntetic
+  suffix: Full, Synthetic
   components:
   - type: SolutionContainerManager
     solutions:
       pack:
-        maxVol: 300
+        maxVol: 120
         reagents:
         - ReagentId: SynthBlood
-          Quantity: 300
+          Quantity: 120
 
 # Slime Blood
 - type: entity
@@ -215,13 +217,13 @@
   - type: SolutionContainerManager
     solutions:
       pack:
-        maxVol: 300
+        maxVol: 120
         reagents:
         - ReagentId: Slime
-          Quantity: 300
+          Quantity: 120
 
 #TODO
-#Add 3 of each specialty blood to vendors.
-#Test borg lingering bloodpacks - Broken
 # Crafting recipies for blood? (In Discussion)
 # Write the guidebook entry for how IV stands and Guidebooks work
+# Make sure IVs can inject any reagents from bloodbags so I'm not a liar (Also so our different bloodtypes matter.)- Alex
+# Find the component that I missed in the port over preventing injecting into random entities.
