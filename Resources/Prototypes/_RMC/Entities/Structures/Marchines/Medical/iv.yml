@@ -55,7 +55,7 @@
 - type: entity
   parent: BaseItem
   id: CMBloodPack
-  name: empty blood pack
+  name: blood pack
   description: A blood pack. Contains fluids, typically used for transfusions.
   suffix: CM, empty
   components:
@@ -99,6 +99,8 @@
   - type: GuideHelp
     guides:
     - Rmcmedical
+  - type: Label
+    currentLabel: cm-blood-pack-empty
 
 - type: entity
   parent: CMBloodPack
@@ -113,6 +115,8 @@
         reagents:
         - ReagentId: Blood
           Quantity: 120
+  - type: Label
+    currentLabel: cm-blood-pack-reagent-redblood
 
 # Umbra Blood Pack Types
 # Lingering
@@ -141,6 +145,8 @@
         reagents:
         - ReagentId: Sap
           Quantity: 120
+  - type: Label
+    currentLabel: cm-blood-pack-reagent-sapblood
 
 # Anaerobic
 - type: entity
@@ -157,6 +163,8 @@
         reagents:
         - ReagentId: AmmoniaBlood
           Quantity: 120
+  - type: Label
+    currentLabel: cm-blood-pack-reagent-ammoniablood
 
 # Blue Blood
 - type: entity
@@ -173,6 +181,8 @@
         reagents:
         - ReagentId: CopperBlood
           Quantity: 120
+  - type: Label
+    currentLabel: cm-blood-pack-reagent-copperblood
 
 # Insect Blood
 - type: entity
@@ -189,6 +199,8 @@
         reagents:
         - ReagentId: InsectBlood
           Quantity: 120
+  - type: Label
+    currentLabel: cm-blood-pack-reagent-insectblood
 
 # Synthetic Blood
 - type: entity
@@ -205,6 +217,8 @@
         reagents:
         - ReagentId: SynthBlood
           Quantity: 120
+  - type: Label
+    currentLabel: cm-blood-pack-reagent-synthblood
 
 # Slime Blood
 - type: entity
@@ -221,6 +235,8 @@
         reagents:
         - ReagentId: Slime
           Quantity: 120
+  - type: Label
+    currentLabel: cm-blood-pack-reagent-slimeblood
 
 #TODO
 # Crafting recipies for blood? (In Discussion)

@@ -24,3 +24,12 @@ cm-blood-pack-cannot-self = You cannot connect this to yourself.
 cm-blood-pack-poke-self = You poke {$target} with {$pack}.
 cm-blood-pack-poke-others = {$user} pokes {$target} with {$pack}.
 cm-blood-pack-contains = It contains: [color=#BB0000FF]{$units} units[/color] of liquid.
+
+cm-blood-pack-empty = Empty
+cm-blood-pack-reagent-redblood = Blood
+cm-blood-pack-reagent-sapblood = Sap
+cm-blood-pack-reagent-ammoniablood = Ammonia
+cm-blood-pack-reagent-copperblood = Hemocyanin
+cm-blood-pack-reagent-insectblood = Insect
+cm-blood-pack-reagent-synthblood = Coolant
+cm-blood-pack-reagent-slimeblood = Slime
