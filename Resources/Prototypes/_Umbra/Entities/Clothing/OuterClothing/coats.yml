@@ -57,7 +57,7 @@
       storagebase: !type:Container
         ents: []
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHatCatEars2
+    clothingPrototype: PersonalItemNovaCatEars
     slot: head
 
 # Player: AjexRose - Character: Daniella Rose
@@ -78,7 +78,7 @@
       storagebase: !type:Container
         ents: []
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHatCatEars3
+    clothingPrototype: PersonalItemDaniellaCatEars
     slot: head
 
 # Inspector's coat, removed by upstream, re-added in _Umbra namespace

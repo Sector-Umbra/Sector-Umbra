@@ -1,7 +1,7 @@
 ﻿# Player: AjexRose - Character: Eris Rose
 - type: entity
   parent: ClothingHeadset
-  id: ClothingHeadsetErisAid
+  id: PersonalItemErisHearingAid
   name: Eris' Hearing Aid
   description: A modified hearing aid built for workplace communication, and a unique grip for slime skin. It has a logo for Arcadia Industries on the antenna.
   suffix: PersonalItem

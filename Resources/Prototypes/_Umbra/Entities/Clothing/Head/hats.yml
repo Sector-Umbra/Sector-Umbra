@@ -1,7 +1,7 @@
 # Player: Maestro2Kimpembe - Character: Ardus Kaine
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadArdusBandana
+  id: PersonalItemArdusBandana
   name: Ardus' Bandana
   description: Ardus' old bandana. It has logo of Praestilyn Royal Army on front and a small freshly handwritten note "Not edible".
   suffix: PersonalItem
@@ -14,7 +14,7 @@
 # Player: juneszalkowska - Character: Finds-The-Treasure
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadFindsHat
+  id: PersonalItemFindsHat
   name: Kasa-Liurz’s Hat
   description: A rakish pirate tricorn adorned with beautiful feathers.
   suffix: PersonalItem

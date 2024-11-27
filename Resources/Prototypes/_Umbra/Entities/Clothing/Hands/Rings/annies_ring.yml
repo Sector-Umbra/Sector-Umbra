@@ -1,7 +1,7 @@
 # Player: HexReject - Character: Annie LaRue
 - type: entity
   parent: RingBase
-  id: AnniesRing
+  id: PersonalItemAnnieRing
   name: Annie's ring
   description: A rose-gold wedding band, set with a large cut onyx beside an adornment of iridescent opal. An inscription reads - "You are, and will forever be, my hero."
   suffix: PersonalItem

@@ -1,7 +1,7 @@
 # Player: Sphiral - Character: Nova Gem
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatCatEars2
+  id: PersonalItemNovaCatEars
   categories: [ HideSpawnMenu ]
   name: Nova's cat ears
   description: "They seem to be twitching to every little sound around them... how odd."
@@ -17,7 +17,7 @@
 # Player: AjexRose - Character: Daniella Rose
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatCatEars3
+  id: PersonalItemDaniellaCatEars
   categories: [ HideSpawnMenu ]
   name: Daniella's cat ears
   description: "A set of fuzzy cat ears! Looksies but no touchies!"
