@@ -4,7 +4,10 @@
     HandheldHealthAnalyzer: 3
     Brutepack: 5
     Ointment: 5
-    Bloodpack: 5
+    #Bloodpack: 5 #Umbra: Replaced by RMC Blood Patch.
+    CMBloodPackFull: 5 #Umbra
+    CMBloodPack: 5 #Umbra: Few free empty bags for medical to fill.
+    IVstandflatpack: 3 #Umbra
     EpinephrineChemistryBottle: 3
     Syringe: 5
     BoxBottle: 3

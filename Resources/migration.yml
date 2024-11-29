@@ -491,3 +491,9 @@ LeftLegBorgJanitor: LeftLegBorg
 RightLegBorgJanitor: RightLegBorg
 HeadBorgJanitor: LightHeadBorg
 TorsoBorgJanitor: TorsoBorg
+
+# Umbra - RMC Blood Rework
+Bloodpack: CMBloodPackFull
+
+# Umbra - Revert CD Cryo
+LockerLostAndFound: LockerRepresentative

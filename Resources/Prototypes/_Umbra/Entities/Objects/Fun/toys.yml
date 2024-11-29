@@ -403,6 +403,41 @@
         - ReagentId: Saline
           Quantity: 10
 
+    # Players: Dart111 - Character: Darting Groth
+- type: entity
+  parent: PlushieSpaceLizard
+  id: OldPlushieSpaceLizard
+  name: old space lizard plushie
+  description: A well loved space lizard plushie, it smells faintly of space cleaner and feels lucky
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: icon
+    sprite: _Umbra/Objects/Fun/Toys/plushie_old_space_lizard.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_old_space_lizard.rsi
+    slots:
+    - HEAD
+
+    # Players: juneszalkowska - Character: Finds-The-Treasure
+- type: entity
+  parent: PlushieLizard
+  id: FindsPlushie
+  name: finds-the-plushie
+  description: A dark pink lizard plushie, adorned with pastel pink stripes. It wears an adorable hat that makes it feel taller than it actually is. It reminds you of Finds-The-Treasure.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_finds
+    sprite: _Umbra/Objects/Fun/Toys/plushie_finds.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_finds.rsi
+    equippedPrefix: finds
+    slots:
+    - HEAD
+
   # Players: Maestro2Kimpembe - Character: Aphelio Kuiper
 - type: entity
   parent: PlushieMoth

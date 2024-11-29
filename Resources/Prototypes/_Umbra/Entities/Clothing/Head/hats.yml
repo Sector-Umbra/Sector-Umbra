@@ -10,3 +10,16 @@
     sprite: _Umbra/Clothing/Head/Hats/ardus-bandana.rsi
   - type: Clothing
     sprite: _Umbra/Clothing/Head/Hats/ardus-bandana.rsi
+
+    # Player: juneszalkowska - Character: Finds-The-Treasure
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadFindsHat
+  name: Kasa-Liurz’s Hat
+  description: A rakish pirate tricorn adorned with beautiful feathers.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Head/Hats/findshat.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Head/Hats/findshat.rsi
