@@ -9,12 +9,15 @@ using Content.Server._CD.Traits;
 using Content.Server.Chat.Managers;
 using Content.Shared.Chat;
 using Robust.Shared.Player;
+using Robust.Shared.Random;
 
 namespace Content.Server.StationEvents.Events;
 
 public sealed class IonStormRule : StationEventSystem<IonStormRuleComponent>
 {
     [Dependency] private readonly IonStormSystem _ionStorm = default!;
+
+    [Dependency] private readonly IChatManager _chatManager = default!; // Used for CD's System
 
     protected override void Started(EntityUid uid, IonStormRuleComponent comp, GameRuleComponent gameRule, GameRuleStartedEvent args)
     {
