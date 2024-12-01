@@ -102,17 +102,6 @@
     character:
     - Frostbite-Drago
 
-# Fateseeker's gemstone
-- type: loadout
-  id: FateseekersGemstone
-  storage:
-    back:
-    - FateseekersGemstone
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Fateseeker
-
 # Hush's pendant
 - type: loadout
   id: ClothingNeckHushPendant
@@ -157,17 +146,6 @@
     character:
     - Jasmi-Wujeeta
 
-# Johan's Codex
-- type: loadout
-  id: JohansCodex
-  storage:
-    back:
-    - JohansCodex
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Johan Ullman
-
 # Johan's NTRD Scarf
 - type: loadout
   id: ClothingNeckJohanScarf
@@ -178,17 +156,6 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Johan Ullman
-
-# Jotty's Pet Rock
-- type: loadout
-  id: PetRockBobby
-  storage:
-    back:
-    - PetRockBobby
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Joetta Beedell
 
 # Jasmi's Deeja-Wujeeta plushie
 - type: loadout
@@ -642,27 +609,7 @@
     character:
     - Walks-The-Graves
 
-# Serendipity Bluewing's Guitar
-- type: loadout
-  id: SerendipityGuitarInstrument
-  storage:
-    back:
-    - SerendipityGuitarInstrument
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Serendipity Bluewing
 
-# Attacus Fischer's Guitar
-- type: loadout
-  id: AttacusGuitarInstrument
-  storage:
-    back:
-    - AttacusGuitarInstrument
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Attacus Fischer
 
 # John Morwood's Military Cross
 - type: loadout

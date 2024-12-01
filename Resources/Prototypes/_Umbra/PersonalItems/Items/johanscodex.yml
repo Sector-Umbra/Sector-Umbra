@@ -1,0 +1,24 @@
+# Player: Boaz1111 - Character: Johan Ullman
+- type: entity
+  name: Johan's codex
+  parent: BaseItem
+  id: PersonalItemJohanCodex
+  description: Johan's Personal Data Storage Device. Made originally for research, now used to store a complete data archive.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Objects/Fun/johanscodex.rsi
+    state: screen
+  - type: Item
+    size: Small
+    sprite: _Umbra/Objects/Fun/johanscodex.rsi
+
+- type: loadout
+  id: PersonalItemJohanCodex
+  storage:
+    back:
+    - PersonalItemJohanCodex
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Johan Ullman
