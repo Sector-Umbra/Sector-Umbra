@@ -2,7 +2,7 @@
 # Player: PolarTundra - Character: Vesper
 - type: entity
   parent: PlushieMoth
-  id: PlushieVesper
+  id: PersonalItemVesperPlushie
   name: vesper plushie
   description: A custom made moth plushie belonging to Vesper. Do not eat. It will scream.
   suffix: PersonalItem
@@ -14,7 +14,7 @@
 # Player: lemonrat - Character: Oliver LaRue
 - type: entity
   parent: PlushieLizard
-  id: PlushieOliver
+  id: PersonalItemOliverPlushie
   name: oliver's plushie
   description: The plushie Oliver's Dad gave to him when they first met.
   suffix: PersonalItem
@@ -26,7 +26,7 @@
 # Player: foob - Character: Jasmi-Wujeeta
 - type: entity
   parent: PlushieLizard
-  id: PlushieDeeja
+  id: PersonalItemDeejaPlushie
   name: deeja-wujeeta plushie
   description: A custom made lizard plushie belonging to Jasmi-Wujeeta so she can always have her sister by her side. Do not eat.
   suffix: PersonalItem
@@ -44,7 +44,7 @@
 # Player: Deeja - Character: Deeja-Wujeeta
 - type: entity
   parent: PlushieLizard
-  id: PlushieJasmi
+  id: PersonalItemJasmiPlushie
   name: jasmi-wujeeta plushie
   description: A custom made lizard plushie belonging to Deeja-Wujeeta so she can always have her sister by her side. Do not eat.
   suffix: PersonalItem
@@ -62,7 +62,7 @@
 # Player: Sky - Character: Sky Tomson
 - type: entity
   parent: PlushieLizard
-  id: PlushieSky
+  id: PersonalItemSkyPlushie
   name: sky tomson plushie
   description: A custom made lizard plushie belonging to Sky Tomson. Don't eat it.
   suffix: PersonalItem
@@ -80,7 +80,7 @@
 # Player: AjexRose - Character: Eris Rose
 - type: entity
   parent: PlushieSlime
-  id: PlushieEris
+  id: PersonalItemErisPlushie
   name: eris rose plushie
   description: A plushie made in the image of Eris Rose, made by the loving hands of the residents of Orphina Station. Throught different dimensions and different adventures, dont forget the people you love. Dont forget home.
   suffix: PersonalItem
@@ -92,7 +92,7 @@
 # Player: MrGreen - Character: John Armstrong
 - type: entity
   parent: PlushieLizard
-  id: PlushieJuniper
+  id: PersonalItemJuniperPlushie
   name: juniper armstrong plushie
   description: A custom made lizard plushie belonging to John Armstrong, gifted by his son Juniper Armstrong. Do not eat.
   suffix: PersonalItem
@@ -110,7 +110,7 @@
 # Player: countrynerds - Character: Smoke Phillips
 - type: entity
   parent: BasePlushie
-  id: PlushieHeart
+  id: PersonalItemSmokeHeartPlushie
   name: smoke phillips' heart plushie
   description: A well worn and well carried plushie depicting an anatomical heart on top of it's cartoon heart shape. A signature is embroided into it reading "Rebecca Phillips"
   suffix: PersonalItem
@@ -122,7 +122,7 @@
 # Player: Onenineone - Character: Esther Scarlet
 - type: entity
   parent: PlushieMoth
-  id: PlushieEsther
+  id: PersonalItemEstherPlushie
   name: esther plushie
   description: A plushie depicting Esther Scarlet! It smells of a bad attitude and edginess... Looks grumpy as well!
   suffix: PersonalItem
@@ -134,7 +134,7 @@
 # Player: raindrops - Character: Nia Scarlet
 - type: entity
   parent: PlushieMoth
-  id: PlushieNia
+  id: PersonalItemNiaPlushie
   name: nia plushie
   description: A plushie depicting Nia Scarlet! It's very fuzzy and soft. There is a very subtle pout on its face...
   suffix: PersonalItem
@@ -146,7 +146,7 @@
 # Player: Jacketed - Character: Defenestrates-The-Dragon
 - type: entity
   parent: PlushieRainbowCarp
-  id: PlushieDragonCarp
+  id: PersonalItemDragonCarpPlushie
   name: Dragon's loyal carp plushie
   description: An adorable stuffed toy resembling the legendary rainbow carp. It has various teeth and claw marks on it accompanied by stitches. The stitches spell out a word "Dragon".
   suffix: PersonalItem
@@ -157,7 +157,7 @@
 
 - type: entity
   parent: PlushieMoth
-  id: SerendipityPlushie
+  id: PersonalItemSerendipityPlushie
   name: serendipity plushie
   description: A plushie depicting the anomaly spawning Serendipity Bluewing. If you listen closely you might hear an anomaly pulse.
   suffix: PersonalItem
@@ -175,7 +175,7 @@
 # Player: Coolsurf6 - Character: Kai
 - type: entity
   parent: PlushieLizard
-  id: KaiPlushie
+  id: PersonalItemKaiPlushie
   name: kai plushie
   description: A custom made lizard plushie belonging to Kai. No one knows where this came from or why it exists. Putting your ear to it, you can almost hear it say "Goober..."
   suffix: PersonalItem
@@ -191,7 +191,7 @@
 # Player: riverztyx - Character: Gar-Tei
 - type: entity
   parent: PlushieLizard
-  id: GarTeiPlushie
+  id: PersonalItemGarPlushie
   name: gar-tei plushie
   description: A custom made lizard plushie belonging to Gar-Tei. It carries the comforting scent of metal.
   suffix: PersonalItem
@@ -209,7 +209,7 @@
 # Player: Ariphylor - Character: Passes-The-Dutchie
 - type: entity
   parent: PlushieLizard
-  id: DutchiePlushie
+  id: PersonalItemDutchiePlushie
   name: passes-the-dutchie plushie
   description: A squishy plush modeled after Passes-the-Dutchie. It has a faint aroma of berries.
   suffix: PersonalItem
@@ -227,7 +227,7 @@
 # Player: gruesomegray - Character: Buries-the-Hatchet
 - type: entity
   parent: PlushieLizard
-  id: AmokPlushie
+  id: PersonalItemAmokPlushie
   name: run-amok plushie
   description: A lizard plushie made to look like Run-Amok. Its got a silly hat with bells on it.
   suffix: PersonalItem
@@ -245,7 +245,7 @@
 # Player: Maestro2Kimpembe - Character: Takes-Great-Risk
 - type: entity
   parent: PlushieLizard
-  id: TakesPlushie
+  id: PersonalItemTakesPlushie
   name: takes plushie
   description: Little Takes-Great-Risk in a plush version. Smells like a bamboo and lilac.
   suffix: PersonalItem
@@ -263,7 +263,7 @@
 # Player: Jacketed - Character: Steals-The-Materials
 - type: entity
   parent: PlushieLizard
-  id: MaterialsPlushie
+  id: PersonalItemMaterialsPlushie
   name: materials plushie
   description: A custom made lizard plushie resembling Steals-The-Materials. Whilst it appears clean, the unmistakable odour of maintenance festers deep within the fabric. You can swear this plushie is staring into your soul. Something tells you not to trust this thing.
   suffix: PersonalItem
@@ -281,7 +281,7 @@
 # Player: Slugcta - Character: Hisses-At-Inconvenience
 - type: entity
   parent: PlushieLizard
-  id: HissesPlushie
+  id: PersonalItemHissesPlushie
   name: hisses plushie
   description: A reptilian plushie made to look like Hisses-At-Inconvenience. It's silky smooth and slightly warm to touch. You wonder if she even wanted this...
   suffix: PersonalItem
@@ -299,7 +299,7 @@
 # Player: SpilTistic - Character: Only-Sees-Burgundy
 - type: entity
   parent: PlushieSnake
-  id: BurgPlushie
+  id: PersonalItemBurgPlushie
   name: burg plushie
   description: A reptilian plushie made to look like Only-Sees-Burgundy. It has a few metal pieces resembling his piercings. It smells faintly of rum.
   suffix: PersonalItem
@@ -317,7 +317,7 @@
 # Player: Ariphylor - Character: Anxeeth-Duna
 - type: entity
   parent: PlushieLizard
-  id: DunaPlushie
+  id: PersonalItemDunaPlushie
   name: duna plushie
   description: A lizard plushie made to look like Anxeeth-Duna.
   suffix: PersonalItem
@@ -335,7 +335,7 @@
 # Player: Nikovnik - Character: Tiha-Tuga
 - type: entity
   parent: [BasePlushie, Clothing, BaseFoldable]
-  id: TihaPlushie
+  id: PersonalItemTihaPlushie
   name: tiha-tuga plushie
   description: Plushie of crying brass serpent tailored by the most skilled and sweet space slavic grandmas. Anyone who gazes at this plushie will be cured of their crippling sadness. That is if they choose to believe so.
   suffix: PersonalItem
@@ -406,7 +406,7 @@
 # Player: Dart111 - Character: Darting Groth
 - type: entity
   parent: PlushieSpaceLizard
-  id: OldPlushieSpaceLizard
+  id: PersonalItemDartingPlushie
   name: old space lizard plushie
   description: A well loved space lizard plushie, it smells faintly of space cleaner and feels lucky
   suffix: PersonalItem
@@ -423,7 +423,7 @@
 # Player: juneszalkowska - Character: Finds-The-Treasure
 - type: entity
   parent: PlushieLizard
-  id: FindsPlushie
+  id: PersonalItemFindsPlushie
   name: finds-the-plushie
   description: A dark pink lizard plushie, adorned with pastel pink stripes. It wears an adorable hat that makes it feel taller than it actually is. It reminds you of Finds-The-Treasure.
   suffix: PersonalItem
@@ -441,7 +441,7 @@
 # Player: Maestro2Kimpembe - Character: Aphelio Kuiper
 - type: entity
   parent: PlushieMoth
-  id: AphelioPlushie
+  id: PersonalItemAphelioPlushie
   name: aphelio plushie
   description: Aphelio in plush form. Still smells of Praestilyn's beer somehow.
   suffix: PersonalItem
@@ -459,7 +459,7 @@
 # Player: luckyshotpictures - Character: Walks-The-Graves
 - type: entity
   parent: [BasePlushie, Clothing, BaseFoldable]
-  id: GravesPlushie
+  id: PersonalItemGravesPlushie
   name: walks-the-grooves plushie
   description: A plushie with a calming smile and determined eyes, it eases anxiety with its gaze. Smelling of sand and gunpowder, it brings a sense of quiet strength.
   suffix: PersonalItem
