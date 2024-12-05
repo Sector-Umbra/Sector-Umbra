@@ -1,0 +1,22 @@
+# Player: Akira - Character: FP-SR M36
+- type: entity
+  parent: ClothingUniformBase
+  id: PersonalItemFPSRArtificerJumpsuit
+  name: artificer suit
+  description: A brown, short sleeved turtleneck accompanied by a front pouch and big pockets. It wears a golden armband on the right arm, depicting a small, light gold shield with a white banner over it. It looks cared of.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Uniforms/Jumpsuit/artificer_uniform.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Uniforms/Jumpsuit/artificer_uniform.rsi
+
+- type: loadout
+  id: PersonalItemFPSRArtificerJumpsuit
+  storage:
+    back:
+    - PersonalItemFPSRArtificerJumpsuit
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - FP-SR M36

@@ -13,29 +13,29 @@
   minLimit: 0
   maxLimit: 2
   loadouts:
-  - ClothingNeckArtifactNecklace
-  - FrostCoat
+  - PersonalItemDeejaArtifactNecklace
+  - PersonalItemFrostbiteCoat
   - PersonalItemDeejaPlushie
   - PersonalItemJasmiPlushie
   - PersonalItemJuniperPlushie
   - PersonalItemVesperPlushie
   - PersonalItemOliverPlushie
   - PersonalItemWeldsChewtoy
-  - ClothingShoesMiscWeldsWalker
+  - PersonalItemWeldsWalker
   - PersonalItemFateseekerGemstone
-  - ClothingUniformJumpsuitCarpSuit
-  - ClothingUniformJumpsuitSweatpants
-  - ClothingNeckRyeTie
-  - ClothingHeadHatRainbowFlowerJasmi
-  - ClothingHeadArdusBandana
-  - ClothingOuterGalaxyCoat
+  - PersonalItemChanceCarpSuit
+  - PersonalItemGarSweatPants
+  - PersonalItemRyeversiTie
+  - PersonalItemJasmiRainbowFlower
+  - PersonalItemArdusBandana
+  - PersonalItemNovaGalaxyCoat
   - PersonalItemJoettaBobby
   - PersonalItemErisPlushie
   - PersonalItemJohanCodex
-  - ClothingNeckJohanScarf
-  - ClothingHeadsetErisAid
-  - ClothingNeckHushPendant
-  - Oceancoat
+  - PersonalItemJohanScarf
+  - PersonalItemErisHearingAid
+  - PersonalItemHushPendant
+  - PersonalItemSerekethOceanCoat
   - PersonalItemSmokeHeartPlushie
   - PersonalItemNiaPlushie
   - PersonalItemEstherPlushie
@@ -44,32 +44,32 @@
   - PersonalItemKaiPlushie
   - PersonalItemGarPlushie
   - PersonalItemMichaelCard
-  - MichaelsRing
-  - AnniesRing
+  - PersonalItemMichaelRing
+  - PersonalItemAnnieRing
   - PersonalItemDutchiePlushie
-  - ClothingUniformJumpsuitDrugeristic
-  - PersonalItemPersonalItemAmokPlushie
+  - PersonalItemDrugerSuit
+  - PersonalItemAmokPlushie
   - PersonalItemSkyPlushie
-  - ClothingOuterTechCoat
+  - PersonalItemDaniellaTechCoat
   - PersonalItemTakesPlushie
-  - ClothingUniformJumpsuitArtificer
-  - ClothingOuterMotheCoat
+  - PersonalItemFPSRArtificerJumpsuit
+  - PersonalItemMotheCoat
   - PersonalItemMaterialsPlushie
   - PersonalItemHissesPlushie
   - PersonalItemBurgPlushie
   - PersonalItemDunaPlushie
   - PersonalItemTihaPlushie
   - PersonalItemGravesPlushie
-  - HissesGoldenLocket
-  - ClothingOuterIsatheiCoat
-  - ClothingNeckKarakiMantle
+  - PersonalItemHissesGoldenLocket
+  - PersonalItemIsatheiCoat
+  - PersonalItemKarakiMantle
   - PersonalItemDartingPlushie
-  - ClothingHeadFindsHat
+  - PersonalItemFindsHat
   - PersonalItemFindsPlushie
   - PersonalItemAphelioPlushie
   - PersonalItemSerendipityGuitar
   - PersonalItemAttacusGuitar
-  - ClothingNeckMilitaryCross
+  - PersonalItemJohnMilitaryCross
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -78,30 +78,30 @@
   minLimit: 0
   maxLimit: 2
   loadouts:
-  - ClothingNeckArtifactNecklace
-  - FrostCoat
+  - PersonalItemDeejaArtifactNecklace
+  - PersonalItemFrostbiteCoat
   - PersonalItemDeejaPlushie
   - PersonalItemJasmiPlushie
   - PersonalItemJuniperPlushie
   - PersonalItemVesperPlushie
   - PersonalItemOliverPlushie
   - PersonalItemWeldsChewtoy
-  - ClothingShoesMiscWeldsWalker
-  - ClothingOuterYarnaArmourCoat
+  - PersonalItemWeldsWalker
+  - PersonalItemYarnaArmourCoat
   - PersonalItemFateseekerGemstone
-  - ClothingUniformJumpsuitCarpSuit
-  - ClothingUniformJumpsuitSweatpants
-  - ClothingNeckRyeTie
-  - ClothingHeadHatRainbowFlowerJasmi
-  - ClothingHeadArdusBandana
-  - ClothingOuterGalaxyCoat
+  - PersonalItemChanceCarpSuit
+  - PersonalItemGarSweatPants
+  - PersonalItemRyeversiTie
+  - PersonalItemJasmiRainbowFlower
+  - PersonalItemArdusBandana
+  - PersonalItemNovaGalaxyCoat
   - PersonalItemJoettaBobby
   - PersonalItemErisPlushie
   - PersonalItemJohanCodex
-  - ClothingNeckJohanScarf
-  - ClothingHeadsetErisAid
-  - ClothingNeckHushPendant
-  - Oceancoat
+  - PersonalItemJohanScarf
+  - PersonalItemErisHearingAid
+  - PersonalItemHushPendant
+  - PersonalItemSerekethOceanCoat
   - PersonalItemSmokeHeartPlushie
   - PersonalItemNiaPlushie
   - PersonalItemEstherPlushie
@@ -110,32 +110,32 @@
   - PersonalItemKaiPlushie
   - PersonalItemGarPlushie
   - PersonalItemMichaelCard
-  - MichaelsRing
-  - AnniesRing
+  - PersonalItemMichaelRing
+  - PersonalItemAnnieRing
   - PersonalItemDutchiePlushie
-  - ClothingUniformJumpsuitDrugeristic
+  - PersonalItemDrugerSuit
   - PersonalItemAmokPlushie
   - PersonalItemSkyPlushie
-  - ClothingOuterTechCoat
+  - PersonalItemDaniellaTechCoat
   - PersonalItemTakesPlushie
-  - ClothingUniformJumpsuitArtificer
-  - ClothingOuterMotheCoat
+  - PersonalItemFPSRArtificerJumpsuit
+  - PersonalItemMotheCoat
   - PersonalItemMaterialsPlushie
   - PersonalItemHissesPlushie
   - PersonalItemBurgPlushie
   - PersonalItemDunaPlushie
   - PersonalItemTihaPlushie
   - PersonalItemGravesPlushie
-  - HissesGoldenLocket
-  - ClothingOuterIsatheiCoat
-  - ClothingNeckKarakiMantle
+  - PersonalItemHissesGoldenLocket
+  - PersonalItemIsatheiCoat
+  - PersonalItemKarakiMantle
   - PersonalItemDartingPlushie
-  - ClothingHeadFindsHat
+  - PersonalItemFindsHat
   - PersonalItemFindsPlushie
   - PersonalItemAphelioPlushie
   - PersonalItemSerendipityGuitar
   - PersonalItemAttacusGuitar
-  - ClothingNeckMilitaryCross
+  - PersonalItemJohnMilitaryCross
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -144,30 +144,30 @@
   minLimit: 0
   maxLimit: 2
   loadouts:
-  - ClothingNeckArtifactNecklace
-  - FrostCoat
+  - PersonalItemDeejaArtifactNecklace
+  - PersonalItemFrostbiteCoat
   - PersonalItemDeejaPlushie
   - PersonalItemJasmiPlushie
   - PersonalItemJuniperPlushie
   - PersonalItemVesperPlushie
   - PersonalItemOliverPlushie
-  - ClothingOuterCoatReinforcedRaincoat
+  - PersonalItemJalopyDetectiveRaincoat
   - PersonalItemWeldsChewtoy
-  - ClothingShoesMiscWeldsWalker
+  - PersonalItemWeldsWalker
   - PersonalItemFateseekerGemstone
-  - ClothingUniformJumpsuitCarpSuit
-  - ClothingUniformJumpsuitSweatpants
-  - ClothingNeckRyeTie
-  - ClothingHeadHatRainbowFlowerJasmi
-  - ClothingHeadArdusBandana
-  - ClothingOuterGalaxyCoat
+  - PersonalItemChanceCarpSuit
+  - PersonalItemGarSweatPants
+  - PersonalItemRyeversiTie
+  - PersonalItemJasmiRainbowFlower
+  - PersonalItemArdusBandana
+  - PersonalItemNovaGalaxyCoat
   - PersonalItemJoettaBobby
   - PersonalItemErisPlushie
   - PersonalItemJohanCodex
-  - ClothingNeckJohanScarf
-  - ClothingHeadsetErisAid
-  - ClothingNeckHushPendant
-  - Oceancoat
+  - PersonalItemJohanScarf
+  - PersonalItemErisHearingAid
+  - PersonalItemHushPendant
+  - PersonalItemSerekethOceanCoat
   - PersonalItemSmokeHeartPlushie
   - PersonalItemNiaPlushie
   - PersonalItemEstherPlushie
@@ -176,32 +176,32 @@
   - PersonalItemKaiPlushie
   - PersonalItemGarPlushie
   - PersonalItemMichaelCard
-  - MichaelsRing
-  - AnniesRing
+  - PersonalItemMichaelRing
+  - PersonalItemAnnieRing
   - PersonalItemDutchiePlushie
-  - ClothingUniformJumpsuitDrugeristic
+  - PersonalItemDrugerSuit
   - PersonalItemAmokPlushie
   - PersonalItemSkyPlushie
-  - ClothingOuterTechCoat
+  - PersonalItemDaniellaTechCoat
   - PersonalItemTakesPlushie
-  - ClothingUniformJumpsuitArtificer
-  - ClothingOuterMotheCoat
+  - PersonalItemFPSRArtificerJumpsuit
+  - PersonalItemMotheCoat
   - PersonalItemMaterialsPlushie
   - PersonalItemHissesPlushie
   - PersonalItemBurgPlushie
   - PersonalItemDunaPlushie
   - PersonalItemTihaPlushie
   - PersonalItemGravesPlushie
-  - HissesGoldenLocket
-  - ClothingOuterIsatheiCoat
-  - ClothingNeckKarakiMantle
+  - PersonalItemHissesGoldenLocket
+  - PersonalItemIsatheiCoat
+  - PersonalItemKarakiMantle
   - PersonalItemDartingPlushie
-  - ClothingHeadFindsHat
+  - PersonalItemFindsHat
   - PersonalItemFindsPlushie
   - PersonalItemAphelioPlushie
   - PersonalItemSerendipityGuitar
   - PersonalItemAttacusGuitar
-  - ClothingNeckMilitaryCross
+  - PersonalItemJohnMilitaryCross
 
 - type: loadoutGroup
   id: PersonalItemsHeadOfSecurity
@@ -209,29 +209,29 @@
   minLimit: 0
   maxLimit: 2
   loadouts:
-  - ClothingNeckArtifactNecklace
-  - FrostCoat
+  - PersonalItemDeejaArtifactNecklace
+  - PersonalItemFrostbiteCoat
   - PersonalItemDeejaPlushie
   - PersonalItemJasmiPlushie
   - PersonalItemJuniperPlushie
   - PersonalItemVesperPlushie
   - PersonalItemOliverPlushie
   - PersonalItemWeldsChewtoy
-  - ClothingShoesMiscWeldsWalker
+  - PersonalItemWeldsWalker
   - PersonalItemFateseekerGemstone
-  - ClothingUniformJumpsuitCarpSuit
-  - ClothingUniformJumpsuitSweatpants
-  - ClothingNeckRyeTie
-  - ClothingHeadHatRainbowFlowerJasmi
-  - ClothingHeadArdusBandana
-  - ClothingOuterGalaxyCoat
+  - PersonalItemChanceCarpSuit
+  - PersonalItemGarSweatPants
+  - PersonalItemRyeversiTie
+  - PersonalItemJasmiRainbowFlower
+  - PersonalItemArdusBandana
+  - PersonalItemNovaGalaxyCoat
   - PersonalItemJoettaBobby
   - PersonalItemErisPlushie
   - PersonalItemJohanCodex
-  - ClothingNeckJohanScarf
-  - ClothingHeadsetErisAid
-  - ClothingNeckHushPendant
-  - Oceancoat
+  - PersonalItemJohanScarf
+  - PersonalItemErisHearingAid
+  - PersonalItemHushPendant
+  - PersonalItemSerekethOceanCoat
   - PersonalItemSmokeHeartPlushie
   - PersonalItemNiaPlushie
   - PersonalItemEstherPlushie
@@ -240,30 +240,30 @@
   - PersonalItemKaiPlushie
   - PersonalItemGarPlushie
   - PersonalItemMichaelCard
-  - MichaelsRing
-  - AnniesRing
+  - PersonalItemMichaelRing
+  - PersonalItemAnnieRing
   - PersonalItemDutchiePlushie
-  - ClothingUniformJumpsuitDrugeristic
+  - PersonalItemDrugerSuit
   - PersonalItemAmokPlushie
   - PersonalItemSkyPlushie
-  - ClothingOuterTechCoat
+  - PersonalItemDaniellaTechCoat
   - PersonalItemTakesPlushie
-  - ClothingUniformJumpsuitArtificer
-  - ClothingOuterMotheCoat
+  - PersonalItemFPSRArtificerJumpsuit
+  - PersonalItemMotheCoat
   - PersonalItemMaterialsPlushie
   - PersonalItemHissesPlushie
   - PersonalItemBurgPlushie
   - PersonalItemDunaPlushie
   - PersonalItemTihaPlushie
   - PersonalItemGravesPlushie
-  - HissesGoldenLocket
-  - ClothingOuterIsatheiCoat
-  - ClothingNeckKarakiMantle
-  - ClothingOuterCoatHoSReinforcedRaincoat
+  - PersonalItemHissesGoldenLocket
+  - PersonalItemIsatheiCoat
+  - PersonalItemKarakiMantle
+  - PersonalItemJalopyHoSRaincoat
   - PersonalItemDartingPlushie
-  - ClothingHeadFindsHat
+  - PersonalItemFindsHat
   - PersonalItemFindsPlushie
   - PersonalItemAphelioPlushie
   - PersonalItemSerendipityGuitar
   - PersonalItemAttacusGuitar
-  - ClothingNeckMilitaryCross
+  - PersonalItemJohnMilitaryCross

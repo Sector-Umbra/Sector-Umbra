@@ -1,0 +1,22 @@
+# Player: TheUltimateJester - Character: Isathei Arsicaris
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: PersonalItemIsatheiCoat
+  name: Isathei's valexian windbreaker
+  description: A gift from his brother Ardicuris, it sports luxury silver linings with a gold sword emblazoned on the back. The jacket is of high quality.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/OuterClothing/Coats/isathei_coat.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/OuterClothing/Coats/isathei_coat.rsi
+
+- type: loadout
+  id: PersonalItemIsatheiCoat
+  storage:
+    back:
+    - PersonalItemIsatheiCoat
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Isathei Arsicaris
