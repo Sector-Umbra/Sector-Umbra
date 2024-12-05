@@ -120,8 +120,9 @@ public sealed class BloodstreamSystem : EntitySystem
             if (!_solutionContainerSystem.ResolveSolution(uid, bloodstream.BloodSolutionName, ref bloodstream.BloodSolution, out var bloodSolution))
                 continue;
 
+            var bloodPercentage = GetBloodLevelPercentage(uid, bloodstream);
             // Adds blood to their blood level if it is below the maximum; Blood regeneration. Must be alive.
-            if (bloodSolution.Volume < bloodSolution.MaxVolume && !_mobStateSystem.IsDead(uid))
+            if (bloodPercentage < 1 && !_mobStateSystem.IsDead(uid))
             {
                 TryModifyBloodLevel(uid, bloodstream.BloodRefreshAmount, bloodstream);
             }
@@ -137,11 +138,11 @@ public sealed class BloodstreamSystem : EntitySystem
             }
 
             // deal bloodloss damage if their blood level is below a threshold.
-            var bloodPercentage = GetBloodLevelPercentage(uid, bloodstream);
             if (bloodPercentage < bloodstream.BloodlossThreshold && !_mobStateSystem.IsDead(uid))
             {
                 // bloodloss damage is based on the base value, and modified by how low your blood level is.
-                var amt = bloodstream.BloodlossDamage / (0.1f + bloodPercentage);
+                var amt = bloodstream.BloodlossDamage * (1 - bloodPercentage) * 10;
+                // var amt = bloodstream.BloodlossDamage / (0.1f + bloodPercentage); // OLD CODE: delete before PR
 
                 _damageableSystem.TryChangeDamage(uid, amt,
                     ignoreResistances: false, interruptsDoAfters: false);
@@ -157,6 +158,16 @@ public sealed class BloodstreamSystem : EntitySystem
 
                 // storing the drunk and stutter time so we can remove it independently from other effects additions
                 bloodstream.StatusTime += bloodstream.UpdateInterval * 2;
+            }
+            else if (bloodPercentage > bloodstream.HypertensionThreshold && !_mobStateSystem.IsDead(uid))
+            {
+                // hypertension damage is based on the base value, and modified by how high your blood level is
+                var amt = bloodstream.BloodlossDamage * (bloodPercentage - 1) * 10; // DOTO: change back to HypertensionDamage
+
+                _damageableSystem.TryChangeDamage(uid, amt,
+                    ignoreResistances: false, interruptsDoAfters: false);
+
+                // TODO: Look up hypertension symptoms
             }
             else if (!_mobStateSystem.IsDead(uid))
             {
@@ -189,7 +200,7 @@ public sealed class BloodstreamSystem : EntitySystem
             return;
 
         chemicalSolution.MaxVolume = entity.Comp.ChemicalMaxVolume;
-        bloodSolution.MaxVolume = entity.Comp.BloodMaxVolume;
+        bloodSolution.MaxVolume = entity.Comp.BloodMaxVolume * 2;
         tempSolution.MaxVolume = entity.Comp.BleedPuddleThreshold * 4; // give some leeway, for chemstream as well
 
         // Ensure blood that should have DNA has it; must be run here, in case DnaComponent has not yet been initialized
@@ -345,7 +356,7 @@ public sealed class BloodstreamSystem : EntitySystem
             return 0.0f;
         }
 
-        return bloodSolution.FillFraction;
+        return bloodSolution.FillFraction * 2;
     }
 
     public void SetBloodLossThreshold(EntityUid uid, float threshold, BloodstreamComponent? comp = null)
