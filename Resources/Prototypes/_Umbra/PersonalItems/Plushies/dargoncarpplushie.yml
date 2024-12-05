@@ -1,0 +1,21 @@
+# Player: Jacketed - Character: Defenestrates-The-Dragon
+- type: entity
+  parent: PlushieRainbowCarp
+  id: PersonalItemDragonCarpPlushie
+  name: Dragon's loyal carp plushie
+  description: An adorable stuffed toy resembling the legendary rainbow carp. It has various teeth and claw marks on it accompanied by stitches. The stitches spell out a word "Dragon".
+  suffix: PersonalItem
+  components:
+  - type: PointLight
+    radius: 1.05 # Light to be 1/10th of PDA light.
+    energy: 2
+
+- type: loadout
+  id: PersonalItemDragonCarpPlushie
+  storage:
+    back:
+    - PersonalItemDragonCarpPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Defenestrates-The-Dragon

@@ -157,10 +157,10 @@
 
 # Welds' synthetic chew fidget
 - type: loadout
-  id: ClothingNeckChewtoy
+  id: PersonalItemWeldsChewtoy
   storage:
     back:
-    - ClothingNeckChewtoy
+    - PersonalItemWeldsChewtoy
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -199,49 +199,13 @@
     character:
     - Gar-Tei
 
-# Jacketed's dragon carp plushie
-- type: loadout
-  id: PlushieDragonCarp
-  storage:
-    back:
-    - PlushieDragonCarp
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Defenestrates-The-Dragon
 
-# Serendipity Bluewing's plushie
-- type: loadout
-  id: SerendipityPlushie
-  storage:
-    back:
-    - SerendipityPlushie
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Serendipity Bluewing
 
-# Kai's plushie
-- type: loadout
-  id: KaiPlushie
-  storage:
-    back:
-    - KaiPlushie
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Kai
 
-# Gar-Tei's plushie
-- type: loadout
-  id: GarTeiPlushie
-  storage:
-    back:
-    - GarTeiPlushie
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Gar-Tei
+
+
+
+
 
 # Michael's card
 - type: loadout
@@ -256,10 +220,10 @@
 
 #Ardus' Bandana
 - type: loadout
-  id: ClothingHeadArdusBandana
+  id: PersonalItemArdusBandana
   storage:
     back:
-    - ClothingHeadArdusBandana
+    - PersonalItemArdusBandana
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
@@ -287,16 +251,7 @@
     character:
     - Annie LaRue
 
-# Passes-The-Dutchie's plushie
-- type: loadout
-  id: DutchiePlushie
-  storage:
-    back:
-    - DutchiePlushie
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Passes-The-Dutchie
+
 
 #Druger's Suit
 - type: loadout
@@ -311,16 +266,7 @@
 
 
 
-# Takes's Plushie
-- type: loadout
-  id: TakesPlushie
-  storage:
-    back:
-    - TakesPlushie
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Takes-Great-Risk
+
 
 # FP-SR M36's Artificer Uniform
 - type: loadout
@@ -344,61 +290,16 @@
     character:
     - June Mothe
 
-# Steals-The-Materials's plushie
-- type: loadout
-  id: MaterialsPlushie
-  storage:
-    back:
-    - MaterialsPlushie
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Steals-The-Materials
-
-# Hisses-At-Inconvenience's plushie
-- type: loadout
-  id: HissesPlushie
-  storage:
-    back:
-    - HissesPlushie
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Anxeeth-Duna
-
-# Only-Sees-Burgundy's plushie
-- type: loadout
-  id: BurgPlushie
-  storage:
-    back:
-    - BurgPlushie
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Only-Sees-Burgundy
-
-# Anxeeth-Duna's plushie
-- type: loadout
-  id: DunaPlushie
-  storage:
-    back:
-    - DunaPlushie
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Hisses-At-Inconvenience
 
 
-# Tiha-Tuga's plushie
-- type: loadout
-  id: TihaPlushie
-  storage:
-    back:
-    - TihaPlushie
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Tiha-Tuga
+
+
+
+
+
+
+
+
 
 # Hisses' Golden Locket
 - type: loadout
@@ -433,16 +334,7 @@
     character:
     - Ko Karaki
 
-# Darting's old space lizard plushie
-- type: loadout
-  id: OldPlushieSpaceLizard
-  storage:
-    back:
-    - OldPlushieSpaceLizard
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Darting Groth
+
 
 # Kasa-Liurz’s Hat
 - type: loadout
@@ -455,38 +347,11 @@
     character:
     - Finds-The-Treasure
 
-# Finds-The-Treasure Plushie
-- type: loadout
-  id: FindsPlushie
-  storage:
-    back:
-    - FindsPlushie
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Finds-The-Treasure
 
-# Aphelio plushie
-- type: loadout
-  id: AphelioPlushie
-  storage:
-    back:
-    - AphelioPlushie
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Aphelio Kuiper
 
-# Walks-The-Graves's plushie
-- type: loadout
-  id: GravesPlushie
-  storage:
-    back:
-    - GravesPlushie
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Walks-The-Graves
+
+
+
 
 
 

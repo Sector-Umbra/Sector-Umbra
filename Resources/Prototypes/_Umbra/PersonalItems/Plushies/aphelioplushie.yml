@@ -1,0 +1,27 @@
+# Player: Maestro2Kimpembe - Character: Aphelio Kuiper
+- type: entity
+  parent: PlushieMoth
+  id: PersonalItemAphelioPlushie
+  name: aphelio plushie
+  description: Aphelio in plush form. Still smells of Praestilyn's beer somehow.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_aphelio
+    sprite: _Umbra/Objects/Fun/Toys/plushie_aphelio.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_aphelio.rsi
+    equippedPrefix: aphelio
+    slots:
+    - HEAD
+
+- type: loadout
+  id: PersonalItemAphelioPlushie
+  storage:
+    back:
+    - PersonalItemAphelioPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Aphelio Kuiper

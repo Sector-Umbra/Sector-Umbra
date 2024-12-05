@@ -1,0 +1,27 @@
+# Player: SpilTistic - Character: Only-Sees-Burgundy
+- type: entity
+  parent: PlushieSnake
+  id: PersonalItemBurgPlushie
+  name: burg plushie
+  description: A reptilian plushie made to look like Only-Sees-Burgundy. It has a few metal pieces resembling his piercings. It smells faintly of rum.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_burg
+    sprite: _Umbra/Objects/Fun/Toys/plushie_burg.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_burg.rsi
+    equippedPrefix: burg
+    slots:
+    - HEAD
+
+- type: loadout
+  id: PersonalItemBurgPlushie
+  storage:
+    back:
+    - PersonalItemBurgPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Only-Sees-Burgundy

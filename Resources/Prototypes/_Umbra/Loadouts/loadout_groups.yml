@@ -20,7 +20,7 @@
   - PersonalItemJuniperPlushie
   - PersonalItemVesperPlushie
   - PersonalItemOliverPlushie
-  - ClothingNeckChewtoy
+  - PersonalItemWeldsChewtoy
   - ClothingShoesMiscWeldsWalker
   - PersonalItemFateseekerGemstone
   - ClothingUniformJumpsuitCarpSuit
@@ -39,33 +39,34 @@
   - PersonalItemSmokeHeartPlushie
   - PersonalItemNiaPlushie
   - PersonalItemEstherPlushie
-  - PlushieDragonCarp
-  - SerendipityPlushie
-  - KaiPlushie
-  - GarTeiPlushie
+  - PersonalItemDragonCarpPlushie
+  - PersonalItemSerendipityPlushie
+  - PersonalItemKaiPlushie
+  - PersonalItemGarPlushie
   - PersonalItemMichaelCard
   - MichaelsRing
   - AnniesRing
-  - DutchiePlushie
+  - PersonalItemDutchiePlushie
   - ClothingUniformJumpsuitDrugeristic
   - PersonalItemPersonalItemAmokPlushie
   - PersonalItemSkyPlushie
   - ClothingOuterTechCoat
-  - TakesPlushie
+  - PersonalItemTakesPlushie
   - ClothingUniformJumpsuitArtificer
   - ClothingOuterMotheCoat
-  - MaterialsPlushie
-  - HissesPlushie
-  - BurgPlushie
-  - DunaPlushie
-  - TihaPlushie
+  - PersonalItemMaterialsPlushie
+  - PersonalItemHissesPlushie
+  - PersonalItemBurgPlushie
+  - PersonalItemDunaPlushie
+  - PersonalItemTihaPlushie
+  - PersonalItemGravesPlushie
   - HissesGoldenLocket
   - ClothingOuterIsatheiCoat
   - ClothingNeckKarakiMantle
-  - OldPlushieSpaceLizard
+  - PersonalItemDartingPlushie
   - ClothingHeadFindsHat
-  - FindsPlushie
-  - AphelioPlushie
+  - PersonalItemFindsPlushie
+  - PersonalItemAphelioPlushie
   - PersonalItemSerendipityGuitar
   - PersonalItemAttacusGuitar
   - ClothingNeckMilitaryCross
@@ -84,7 +85,7 @@
   - PersonalItemJuniperPlushie
   - PersonalItemVesperPlushie
   - PersonalItemOliverPlushie
-  - ClothingNeckChewtoy
+  - PersonalItemWeldsChewtoy
   - ClothingShoesMiscWeldsWalker
   - ClothingOuterYarnaArmourCoat
   - PersonalItemFateseekerGemstone
@@ -104,33 +105,34 @@
   - PersonalItemSmokeHeartPlushie
   - PersonalItemNiaPlushie
   - PersonalItemEstherPlushie
-  - PlushieDragonCarp
-  - SerendipityPlushie
-  - KaiPlushie
-  - GarTeiPlushie
+  - PersonalItemDragonCarpPlushie
+  - PersonalItemSerendipityPlushie
+  - PersonalItemKaiPlushie
+  - PersonalItemGarPlushie
   - PersonalItemMichaelCard
   - MichaelsRing
   - AnniesRing
-  - DutchiePlushie
+  - PersonalItemDutchiePlushie
   - ClothingUniformJumpsuitDrugeristic
   - PersonalItemAmokPlushie
   - PersonalItemSkyPlushie
   - ClothingOuterTechCoat
-  - TakesPlushie
+  - PersonalItemTakesPlushie
   - ClothingUniformJumpsuitArtificer
   - ClothingOuterMotheCoat
-  - MaterialsPlushie
-  - HissesPlushie
-  - BurgPlushie
-  - DunaPlushie
-  - TihaPlushie
+  - PersonalItemMaterialsPlushie
+  - PersonalItemHissesPlushie
+  - PersonalItemBurgPlushie
+  - PersonalItemDunaPlushie
+  - PersonalItemTihaPlushie
+  - PersonalItemGravesPlushie
   - HissesGoldenLocket
   - ClothingOuterIsatheiCoat
   - ClothingNeckKarakiMantle
-  - OldPlushieSpaceLizard
+  - PersonalItemDartingPlushie
   - ClothingHeadFindsHat
-  - FindsPlushie
-  - AphelioPlushie
+  - PersonalItemFindsPlushie
+  - PersonalItemAphelioPlushie
   - PersonalItemSerendipityGuitar
   - PersonalItemAttacusGuitar
   - ClothingNeckMilitaryCross
@@ -150,7 +152,7 @@
   - PersonalItemVesperPlushie
   - PersonalItemOliverPlushie
   - ClothingOuterCoatReinforcedRaincoat
-  - ClothingNeckChewtoy
+  - PersonalItemWeldsChewtoy
   - ClothingShoesMiscWeldsWalker
   - PersonalItemFateseekerGemstone
   - ClothingUniformJumpsuitCarpSuit
@@ -169,33 +171,34 @@
   - PersonalItemSmokeHeartPlushie
   - PersonalItemNiaPlushie
   - PersonalItemEstherPlushie
-  - PlushieDragonCarp
-  - SerendipityPlushie
-  - KaiPlushie
-  - GarTeiPlushie
+  - PersonalItemDragonCarpPlushie
+  - PersonalItemSerendipityPlushie
+  - PersonalItemKaiPlushie
+  - PersonalItemGarPlushie
   - PersonalItemMichaelCard
   - MichaelsRing
   - AnniesRing
-  - DutchiePlushie
+  - PersonalItemDutchiePlushie
   - ClothingUniformJumpsuitDrugeristic
   - PersonalItemAmokPlushie
   - PersonalItemSkyPlushie
   - ClothingOuterTechCoat
-  - TakesPlushie
+  - PersonalItemTakesPlushie
   - ClothingUniformJumpsuitArtificer
   - ClothingOuterMotheCoat
-  - MaterialsPlushie
-  - HissesPlushie
-  - BurgPlushie
-  - DunaPlushie
-  - TihaPlushie
+  - PersonalItemMaterialsPlushie
+  - PersonalItemHissesPlushie
+  - PersonalItemBurgPlushie
+  - PersonalItemDunaPlushie
+  - PersonalItemTihaPlushie
+  - PersonalItemGravesPlushie
   - HissesGoldenLocket
   - ClothingOuterIsatheiCoat
   - ClothingNeckKarakiMantle
-  - OldPlushieSpaceLizard
+  - PersonalItemDartingPlushie
   - ClothingHeadFindsHat
-  - FindsPlushie
-  - AphelioPlushie
+  - PersonalItemFindsPlushie
+  - PersonalItemAphelioPlushie
   - PersonalItemSerendipityGuitar
   - PersonalItemAttacusGuitar
   - ClothingNeckMilitaryCross
@@ -213,7 +216,7 @@
   - PersonalItemJuniperPlushie
   - PersonalItemVesperPlushie
   - PersonalItemOliverPlushie
-  - ClothingNeckChewtoy
+  - PersonalItemWeldsChewtoy
   - ClothingShoesMiscWeldsWalker
   - PersonalItemFateseekerGemstone
   - ClothingUniformJumpsuitCarpSuit
@@ -232,33 +235,35 @@
   - PersonalItemSmokeHeartPlushie
   - PersonalItemNiaPlushie
   - PersonalItemEstherPlushie
-  - PlushieDragonCarp
-  - SerendipityPlushie
-  - KaiPlushie
-  - GarTeiPlushie
+  - PersonalItemDragonCarpPlushie
+  - PersonalItemSerendipityPlushie
+  - PersonalItemKaiPlushie
+  - PersonalItemGarPlushie
   - PersonalItemMichaelCard
   - MichaelsRing
   - AnniesRing
-  - DutchiePlushie
+  - PersonalItemDutchiePlushie
   - ClothingUniformJumpsuitDrugeristic
   - PersonalItemAmokPlushie
   - PersonalItemSkyPlushie
   - ClothingOuterTechCoat
-  - TakesPlushie
+  - PersonalItemTakesPlushie
   - ClothingUniformJumpsuitArtificer
   - ClothingOuterMotheCoat
-  - MaterialsPlushie
-  - HissesPlushie
-  - BurgPlushie
-  - DunaPlushie
+  - PersonalItemMaterialsPlushie
+  - PersonalItemHissesPlushie
+  - PersonalItemBurgPlushie
+  - PersonalItemDunaPlushie
+  - PersonalItemTihaPlushie
+  - PersonalItemGravesPlushie
   - HissesGoldenLocket
   - ClothingOuterIsatheiCoat
   - ClothingNeckKarakiMantle
   - ClothingOuterCoatHoSReinforcedRaincoat
-  - OldPlushieSpaceLizard
+  - PersonalItemDartingPlushie
   - ClothingHeadFindsHat
-  - FindsPlushie
-  - AphelioPlushie
+  - PersonalItemFindsPlushie
+  - PersonalItemAphelioPlushie
   - PersonalItemSerendipityGuitar
   - PersonalItemAttacusGuitar
   - ClothingNeckMilitaryCross
