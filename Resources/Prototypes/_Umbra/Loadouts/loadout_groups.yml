@@ -18,20 +18,20 @@
   - PlushieDeeja
   - PlushieJasmi
   - PlushieJuniper
-  - PlushieVesper
+  - PersonalItemVesperPlushie
   - PlushieOliver
   - ClothingNeckChewtoy
   - ClothingShoesMiscWeldsWalker
-  - FateseekersGemstone
+  - PersonalItemFateseekerGemstone
   - ClothingUniformJumpsuitCarpSuit
   - ClothingUniformJumpsuitSweatpants
   - ClothingNeckRyeTie
   - ClothingHeadHatRainbowFlowerJasmi
   - ClothingHeadArdusBandana
   - ClothingOuterGalaxyCoat
-  - PetRockBobby
+  - PersonalItemJoettaBobby
   - PlushieEris
-  - JohansCodex
+  - PersonalItemJohanCodex
   - ClothingNeckJohanScarf
   - ClothingHeadsetErisAid
   - ClothingNeckHushPendant
@@ -43,7 +43,7 @@
   - SerendipityPlushie
   - KaiPlushie
   - GarTeiPlushie
-  - MichaelsCard
+  - PersonalItemMichaelCard
   - MichaelsRing
   - AnniesRing
   - DutchiePlushie
@@ -66,8 +66,8 @@
   - ClothingHeadFindsHat
   - FindsPlushie
   - AphelioPlushie
-  - SerendipityGuitarInstrument
-  - AttacusGuitarInstrument
+  - PersonalItemSerendipityGuitar
+  - PersonalItemAttacusGuitar
   - ClothingNeckMilitaryCross
 
 # Personal items specialised for Warden
@@ -82,21 +82,21 @@
   - PlushieDeeja
   - PlushieJasmi
   - PlushieJuniper
-  - PlushieVesper
+  - PersonalItemVesperPlushie
   - PlushieOliver
   - ClothingNeckChewtoy
   - ClothingShoesMiscWeldsWalker
   - ClothingOuterYarnaArmourCoat
-  - FateseekersGemstone
+  - PersonalItemFateseekerGemstone
   - ClothingUniformJumpsuitCarpSuit
   - ClothingUniformJumpsuitSweatpants
   - ClothingNeckRyeTie
   - ClothingHeadHatRainbowFlowerJasmi
   - ClothingHeadArdusBandana
   - ClothingOuterGalaxyCoat
-  - PetRockBobby
+  - PersonalItemJoettaBobby
   - PlushieEris
-  - JohansCodex
+  - PersonalItemJohanCodex
   - ClothingNeckJohanScarf
   - ClothingHeadsetErisAid
   - ClothingNeckHushPendant
@@ -108,7 +108,7 @@
   - SerendipityPlushie
   - KaiPlushie
   - GarTeiPlushie
-  - MichaelsCard
+  - PersonalItemMichaelCard
   - MichaelsRing
   - AnniesRing
   - DutchiePlushie
@@ -131,8 +131,8 @@
   - ClothingHeadFindsHat
   - FindsPlushie
   - AphelioPlushie
-  - SerendipityGuitarInstrument
-  - AttacusGuitarInstrument
+  - PersonalItemSerendipityGuitar
+  - PersonalItemAttacusGuitar
   - ClothingNeckMilitaryCross
 
 # Personal items specialised for Detective
@@ -147,21 +147,21 @@
   - PlushieDeeja
   - PlushieJasmi
   - PlushieJuniper
-  - PlushieVesper
+  - PersonalItemVesperPlushie
   - PlushieOliver
   - ClothingOuterCoatReinforcedRaincoat
   - ClothingNeckChewtoy
   - ClothingShoesMiscWeldsWalker
-  - FateseekersGemstone
+  - PersonalItemFateseekerGemstone
   - ClothingUniformJumpsuitCarpSuit
   - ClothingUniformJumpsuitSweatpants
   - ClothingNeckRyeTie
   - ClothingHeadHatRainbowFlowerJasmi
   - ClothingHeadArdusBandana
   - ClothingOuterGalaxyCoat
-  - PetRockBobby
+  - PersonalItemJoettaBobby
   - PlushieEris
-  - JohansCodex
+  - PersonalItemJohanCodex
   - ClothingNeckJohanScarf
   - ClothingHeadsetErisAid
   - ClothingNeckHushPendant
@@ -173,7 +173,7 @@
   - SerendipityPlushie
   - KaiPlushie
   - GarTeiPlushie
-  - MichaelsCard
+  - PersonalItemMichaelCard
   - MichaelsRing
   - AnniesRing
   - DutchiePlushie
@@ -196,8 +196,8 @@
   - ClothingHeadFindsHat
   - FindsPlushie
   - AphelioPlushie
-  - SerendipityGuitarInstrument
-  - AttacusGuitarInstrument
+  - PersonalItemSerendipityGuitar
+  - PersonalItemAttacusGuitar
   - ClothingNeckMilitaryCross
 
 - type: loadoutGroup
@@ -211,20 +211,20 @@
   - PlushieDeeja
   - PlushieJasmi
   - PlushieJuniper
-  - PlushieVesper
+  - PersonalItemVesperPlushie
   - PlushieOliver
   - ClothingNeckChewtoy
   - ClothingShoesMiscWeldsWalker
-  - FateseekersGemstone
+  - PersonalItemFateseekerGemstone
   - ClothingUniformJumpsuitCarpSuit
   - ClothingUniformJumpsuitSweatpants
   - ClothingNeckRyeTie
   - ClothingHeadHatRainbowFlowerJasmi
   - ClothingHeadArdusBandana
   - ClothingOuterGalaxyCoat
-  - PetRockBobby
+  - PersonalItemJoettaBobby
   - PlushieEris
-  - JohansCodex
+  - PersonalItemJohanCodex
   - ClothingNeckJohanScarf
   - ClothingHeadsetErisAid
   - ClothingNeckHushPendant
@@ -236,7 +236,7 @@
   - SerendipityPlushie
   - KaiPlushie
   - GarTeiPlushie
-  - MichaelsCard
+  - PersonalItemMichaelCard
   - MichaelsRing
   - AnniesRing
   - DutchiePlushie
@@ -259,6 +259,6 @@
   - ClothingHeadFindsHat
   - FindsPlushie
   - AphelioPlushie
-  - SerendipityGuitarInstrument
-  - AttacusGuitarInstrument
+  - PersonalItemSerendipityGuitar
+  - PersonalItemAttacusGuitar
   - ClothingNeckMilitaryCross

@@ -1,16 +1,3 @@
-## Plushies
-# Player: PolarTundra - Character: Vesper
-- type: entity
-  parent: PlushieMoth
-  id: PersonalItemVesperPlushie
-  name: vesper plushie
-  description: A custom made moth plushie belonging to Vesper. Do not eat. It will scream.
-  suffix: PersonalItem
-  components:
-  - type: Sprite
-    state: plushie_vesper
-    sprite: _Umbra/Objects/Fun/Toys/plushie_vesper.rsi
-
 # Player: lemonrat - Character: Oliver LaRue
 - type: entity
   parent: PlushieLizard
@@ -223,8 +210,6 @@
     equippedPrefix: dutchie
     slots:
     - HEAD
-
-
 
 # Player: Maestro2Kimpembe - Character: Takes-Great-Risk
 - type: entity

@@ -245,17 +245,6 @@
     character:
     - Smoke Phillips
 
-# Vesper's vesper plushie
-- type: loadout
-  id: PlushieVesper
-  storage:
-    back:
-    - PlushieVesper
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Vesper
-
 # Welds' synthetic chew fidget
 - type: loadout
   id: ClothingNeckChewtoy
