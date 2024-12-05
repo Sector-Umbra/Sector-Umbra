@@ -19,7 +19,7 @@
   - Maintenance
   - Chemistry
   - ChiefMedicalOfficer
-  - Brig
+  # - Brig # Umbra - Removed
   - Cryogenics
   special:
   - !type:AddImplantSpecial
