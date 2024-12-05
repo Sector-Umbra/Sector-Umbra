@@ -1,0 +1,27 @@
+# Player: foob - Character: Jasmi-Wujeeta
+- type: entity
+  parent: PlushieLizard
+  id: PersonalItemDeejaPlushie
+  name: deeja-wujeeta plushie
+  description: A custom made lizard plushie belonging to Jasmi-Wujeeta so she can always have her sister by her side. Do not eat.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_deeja
+    sprite: _Umbra/Objects/Fun/Toys/plushie_deeja.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_deeja.rsi
+    equippedPrefix: deeja
+    slots:
+    - HEAD
+
+- type: loadout
+  id: PersonalItemDeejaPlushie
+  storage:
+    back:
+    - PersonalItemDeejaPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Jasmi-Wujeeta

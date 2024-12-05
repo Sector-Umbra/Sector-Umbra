@@ -15,11 +15,11 @@
   loadouts:
   - ClothingNeckArtifactNecklace
   - FrostCoat
-  - PlushieDeeja
-  - PlushieJasmi
-  - PlushieJuniper
+  - PersonalItemDeejaPlushie
+  - PersonalItemJasmiPlushie
+  - PersonalItemJuniperPlushie
   - PersonalItemVesperPlushie
-  - PlushieOliver
+  - PersonalItemOliverPlushie
   - ClothingNeckChewtoy
   - ClothingShoesMiscWeldsWalker
   - PersonalItemFateseekerGemstone
@@ -30,15 +30,15 @@
   - ClothingHeadArdusBandana
   - ClothingOuterGalaxyCoat
   - PersonalItemJoettaBobby
-  - PlushieEris
+  - PersonalItemErisPlushie
   - PersonalItemJohanCodex
   - ClothingNeckJohanScarf
   - ClothingHeadsetErisAid
   - ClothingNeckHushPendant
   - Oceancoat
-  - PlushieHeart
-  - PlushieNia
-  - PlushieEsther
+  - PersonalItemSmokeHeartPlushie
+  - PersonalItemNiaPlushie
+  - PersonalItemEstherPlushie
   - PlushieDragonCarp
   - SerendipityPlushie
   - KaiPlushie
@@ -48,8 +48,8 @@
   - AnniesRing
   - DutchiePlushie
   - ClothingUniformJumpsuitDrugeristic
-  - PersonalItemAmokPlushie
-  - PlushieSky
+  - PersonalItemPersonalItemAmokPlushie
+  - PersonalItemSkyPlushie
   - ClothingOuterTechCoat
   - TakesPlushie
   - ClothingUniformJumpsuitArtificer
@@ -79,11 +79,11 @@
   loadouts:
   - ClothingNeckArtifactNecklace
   - FrostCoat
-  - PlushieDeeja
-  - PlushieJasmi
-  - PlushieJuniper
+  - PersonalItemDeejaPlushie
+  - PersonalItemJasmiPlushie
+  - PersonalItemJuniperPlushie
   - PersonalItemVesperPlushie
-  - PlushieOliver
+  - PersonalItemOliverPlushie
   - ClothingNeckChewtoy
   - ClothingShoesMiscWeldsWalker
   - ClothingOuterYarnaArmourCoat
@@ -95,15 +95,15 @@
   - ClothingHeadArdusBandana
   - ClothingOuterGalaxyCoat
   - PersonalItemJoettaBobby
-  - PlushieEris
+  - PersonalItemErisPlushie
   - PersonalItemJohanCodex
   - ClothingNeckJohanScarf
   - ClothingHeadsetErisAid
   - ClothingNeckHushPendant
   - Oceancoat
-  - PlushieHeart
-  - PlushieNia
-  - PlushieEsther
+  - PersonalItemSmokeHeartPlushie
+  - PersonalItemNiaPlushie
+  - PersonalItemEstherPlushie
   - PlushieDragonCarp
   - SerendipityPlushie
   - KaiPlushie
@@ -113,8 +113,8 @@
   - AnniesRing
   - DutchiePlushie
   - ClothingUniformJumpsuitDrugeristic
-  - AmokPlushie
-  - PlushieSky
+  - PersonalItemAmokPlushie
+  - PersonalItemSkyPlushie
   - ClothingOuterTechCoat
   - TakesPlushie
   - ClothingUniformJumpsuitArtificer
@@ -144,11 +144,11 @@
   loadouts:
   - ClothingNeckArtifactNecklace
   - FrostCoat
-  - PlushieDeeja
-  - PlushieJasmi
-  - PlushieJuniper
+  - PersonalItemDeejaPlushie
+  - PersonalItemJasmiPlushie
+  - PersonalItemJuniperPlushie
   - PersonalItemVesperPlushie
-  - PlushieOliver
+  - PersonalItemOliverPlushie
   - ClothingOuterCoatReinforcedRaincoat
   - ClothingNeckChewtoy
   - ClothingShoesMiscWeldsWalker
@@ -160,15 +160,15 @@
   - ClothingHeadArdusBandana
   - ClothingOuterGalaxyCoat
   - PersonalItemJoettaBobby
-  - PlushieEris
+  - PersonalItemErisPlushie
   - PersonalItemJohanCodex
   - ClothingNeckJohanScarf
   - ClothingHeadsetErisAid
   - ClothingNeckHushPendant
   - Oceancoat
-  - PlushieHeart
-  - PlushieNia
-  - PlushieEsther
+  - PersonalItemSmokeHeartPlushie
+  - PersonalItemNiaPlushie
+  - PersonalItemEstherPlushie
   - PlushieDragonCarp
   - SerendipityPlushie
   - KaiPlushie
@@ -178,8 +178,8 @@
   - AnniesRing
   - DutchiePlushie
   - ClothingUniformJumpsuitDrugeristic
-  - AmokPlushie
-  - PlushieSky
+  - PersonalItemAmokPlushie
+  - PersonalItemSkyPlushie
   - ClothingOuterTechCoat
   - TakesPlushie
   - ClothingUniformJumpsuitArtificer
@@ -208,11 +208,11 @@
   loadouts:
   - ClothingNeckArtifactNecklace
   - FrostCoat
-  - PlushieDeeja
-  - PlushieJasmi
-  - PlushieJuniper
+  - PersonalItemDeejaPlushie
+  - PersonalItemJasmiPlushie
+  - PersonalItemJuniperPlushie
   - PersonalItemVesperPlushie
-  - PlushieOliver
+  - PersonalItemOliverPlushie
   - ClothingNeckChewtoy
   - ClothingShoesMiscWeldsWalker
   - PersonalItemFateseekerGemstone
@@ -223,15 +223,15 @@
   - ClothingHeadArdusBandana
   - ClothingOuterGalaxyCoat
   - PersonalItemJoettaBobby
-  - PlushieEris
+  - PersonalItemErisPlushie
   - PersonalItemJohanCodex
   - ClothingNeckJohanScarf
   - ClothingHeadsetErisAid
   - ClothingNeckHushPendant
   - Oceancoat
-  - PlushieHeart
-  - PlushieNia
-  - PlushieEsther
+  - PersonalItemSmokeHeartPlushie
+  - PersonalItemNiaPlushie
+  - PersonalItemEstherPlushie
   - PlushieDragonCarp
   - SerendipityPlushie
   - KaiPlushie
@@ -241,8 +241,8 @@
   - AnniesRing
   - DutchiePlushie
   - ClothingUniformJumpsuitDrugeristic
-  - AmokPlushie
-  - PlushieSky
+  - PersonalItemAmokPlushie
+  - PersonalItemSkyPlushie
   - ClothingOuterTechCoat
   - TakesPlushie
   - ClothingUniformJumpsuitArtificer

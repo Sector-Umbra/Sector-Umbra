@@ -1,0 +1,21 @@
+# Player: countrynerds - Character: Smoke Phillips
+- type: entity
+  parent: BasePlushie
+  id: PersonalItemSmokeHeartPlushie
+  name: smoke phillips' heart plushie
+  description: A well worn and well carried plushie depicting an anatomical heart on top of it's cartoon heart shape. A signature is embroided into it reading "Rebecca Phillips"
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: heart_plushie
+    sprite: _Umbra/Objects/Fun/Toys/plushie_heart.rsi
+
+- type: loadout
+  id: PersonalItemSmokeHeartPlushie
+  storage:
+    back:
+    - PersonalItemSmokeHeartPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Smoke Phillips

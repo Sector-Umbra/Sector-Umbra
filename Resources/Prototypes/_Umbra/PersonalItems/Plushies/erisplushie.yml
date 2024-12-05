@@ -1,0 +1,22 @@
+# Player: AjexRose - Character: Eris Rose
+- type: entity
+  parent: PlushieSlime
+  id: PersonalItemErisPlushie
+  name: eris rose plushie
+  description: A plushie made in the image of Eris Rose, made by the loving hands of the residents of Orphina Station. Throught different dimensions and different adventures, dont forget the people you love. Dont forget home.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_eris
+    sprite: _Umbra/Objects/Fun/Toys/plushie_eris.rsi
+
+- type: loadout
+  id: PersonalItemErisPlushie
+  storage:
+    back:
+    - PersonalItemErisPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Eris Rose
+    - Daniella Rose

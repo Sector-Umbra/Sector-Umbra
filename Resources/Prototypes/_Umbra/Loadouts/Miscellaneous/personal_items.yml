@@ -45,30 +45,6 @@
     character:
     - Deeja-Wujeeta
 
-# Deeja's Jasmi-Wujeeta plushie
-- type: loadout
-  id: PlushieJasmi
-  storage:
-    back:
-    - PlushieJasmi
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Deeja-Wujeeta
-
-
-# Eris' Plushie
-- type: loadout
-  id: PlushieEris
-  storage:
-    back:
-    - PlushieEris
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Eris Rose
-    - Daniella Rose
-
 # Eris' Hearing-Aid
 - type: loadout
   id: ClothingHeadsetErisAid
@@ -79,17 +55,6 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Eris Rose
-
-# Esther's nia plushie
-- type: loadout
-  id: PlushieNia
-  storage:
-    back:
-    - PlushieNia
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Esther Scarlet
 
 # Frosty winter coat
 - type: loadout
@@ -157,50 +122,6 @@
     character:
     - Johan Ullman
 
-# Jasmi's Deeja-Wujeeta plushie
-- type: loadout
-  id: PlushieDeeja
-  storage:
-    back:
-    - PlushieDeeja
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Jasmi-Wujeeta
-
-# John Armstrong's Juniper Armstrong plushie
-- type: loadout
-  id: PlushieJuniper
-  storage:
-    back:
-    - PlushieJuniper
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - John Armstrong
-
-# Nia's esther plushie
-- type: loadout
-  id: PlushieEsther
-  storage:
-    back:
-    - PlushieEsther
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Nia Scarlet
-
-# Oliver's oliver's plushie
-- type: loadout
-  id: PlushieOliver
-  storage:
-    back:
-    - PlushieOliver
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Oliver LaRue
-
 # Nova's Jacket
 - type: loadout
   id: ClothingOuterGalaxyCoat
@@ -233,17 +154,6 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Sereketh Pallister II
-
-# Smoke's Heart Plushie
-- type: loadout
-  id: PlushieHeart
-  storage:
-    back:
-    - PlushieHeart
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Smoke Phillips
 
 # Welds' synthetic chew fidget
 - type: loadout
@@ -399,16 +309,7 @@
     character:
     - Druger Phillips Ruger Dug
 
-# Sky's plushie
-- type: loadout
-  id: PlushieSky
-  storage:
-    back:
-    - PlushieSky
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Sky Tomson
+
 
 # Takes's Plushie
 - type: loadout

@@ -1,0 +1,21 @@
+# Player: raindrops - Character: Nia Scarlet
+- type: entity
+  parent: PlushieMoth
+  id: PersonalItemNiaPlushie
+  name: nia plushie
+  description: A plushie depicting Nia Scarlet! It's very fuzzy and soft. There is a very subtle pout on its face...
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_nia
+    sprite: _Umbra/Objects/Fun/Toys/plushie_nia.rsi
+
+- type: loadout
+  id: PersonalItemNiaPlushie
+  storage:
+    back:
+    - PersonalItemNiaPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Esther Scarlet
