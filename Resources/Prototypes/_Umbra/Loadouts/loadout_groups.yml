@@ -62,6 +62,13 @@
   - HissesGoldenLocket
   - ClothingOuterIsatheiCoat
   - ClothingNeckKarakiMantle
+  - OldPlushieSpaceLizard
+  - ClothingHeadFindsHat
+  - FindsPlushie
+  - AphelioPlushie
+  - SerendipityGuitarInstrument
+  - AttacusGuitarInstrument
+  - ClothingNeckMilitaryCross
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -120,6 +127,13 @@
   - HissesGoldenLocket
   - ClothingOuterIsatheiCoat
   - ClothingNeckKarakiMantle
+  - OldPlushieSpaceLizard
+  - ClothingHeadFindsHat
+  - FindsPlushie
+  - AphelioPlushie
+  - SerendipityGuitarInstrument
+  - AttacusGuitarInstrument
+  - ClothingNeckMilitaryCross
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -178,6 +192,13 @@
   - HissesGoldenLocket
   - ClothingOuterIsatheiCoat
   - ClothingNeckKarakiMantle
+  - OldPlushieSpaceLizard
+  - ClothingHeadFindsHat
+  - FindsPlushie
+  - AphelioPlushie
+  - SerendipityGuitarInstrument
+  - AttacusGuitarInstrument
+  - ClothingNeckMilitaryCross
 
 - type: loadoutGroup
   id: PersonalItemsHeadOfSecurity
@@ -234,3 +255,10 @@
   - ClothingOuterIsatheiCoat
   - ClothingNeckKarakiMantle
   - ClothingOuterCoatHoSReinforcedRaincoat
+  - OldPlushieSpaceLizard
+  - ClothingHeadFindsHat
+  - FindsPlushie
+  - AphelioPlushie
+  - SerendipityGuitarInstrument
+  - AttacusGuitarInstrument
+  - ClothingNeckMilitaryCross

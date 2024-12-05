@@ -491,3 +491,14 @@ LeftLegBorgJanitor: LeftLegBorg
 RightLegBorgJanitor: RightLegBorg
 HeadBorgJanitor: LightHeadBorg
 TorsoBorgJanitor: TorsoBorg
+
+# 2024-11-17
+PresentRandomAsh: PresentRandomCoal
+# 2024-11-19
+CrateCrewMonitoringBoards: CrateCrewMonitoring
+
+# Umbra - RMC Blood Rework
+Bloodpack: CMBloodPackFull
+
+# Umbra - Revert CD Cryo
+LockerLostAndFound: LockerRepresentative
