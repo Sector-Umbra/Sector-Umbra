@@ -233,11 +233,11 @@
   - type: Bloodstream
     bloodlossDamage:
       types:
-        Bloodloss: 0.5
-    # hypertensionDamage:
-    #   types:
-    #     Slash: 0.25
-    #     Asphyxiation: 0.25
+        Asphyxiation: 1
+    hypertensionDamage:
+      types:
+        Slash: 0.1
+        Asphyxiation: 1.90
     bloodlossHealDamage:
       types:
-        Bloodloss: -1
+        Asphyxiation: 0
