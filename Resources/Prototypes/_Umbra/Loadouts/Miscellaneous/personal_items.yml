@@ -410,17 +410,6 @@
     character:
     - Druger Phillips Ruger Dug
 
-# Buries-the-Hatchet's plushie
-- type: loadout
-  id: AmokPlushie
-  storage:
-    back:
-    - AmokPlushie
-  effects:
-  - !type:PersonalItemLoadoutEffect
-    character:
-    - Buries-the-Hatchet
-
 # Sky's plushie
 - type: loadout
   id: PlushieSky
