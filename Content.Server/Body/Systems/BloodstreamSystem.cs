@@ -324,11 +324,14 @@ public sealed class BloodstreamSystem : EntitySystem
     {
         TryModifyBleedAmount(entity.Owner, -entity.Comp.BleedAmount, entity.Comp);
 
-        if (_solutionContainerSystem.ResolveSolution(entity.Owner, entity.Comp.BloodSolutionName, ref entity.Comp.BloodSolution, out var bloodSolution))
-            TryModifyBloodLevel(entity.Owner, bloodSolution.AvailableVolume, entity.Comp);
-
         if (_solutionContainerSystem.ResolveSolution(entity.Owner, entity.Comp.ChemicalSolutionName, ref entity.Comp.ChemicalSolution))
             _solutionContainerSystem.RemoveAllSolution(entity.Comp.ChemicalSolution.Value);
+
+        if (_solutionContainerSystem.ResolveSolution(entity.Owner, entity.Comp.BloodSolutionName, ref entity.Comp.BloodSolution))
+            _solutionContainerSystem.RemoveAllSolution(entity.Comp.BloodSolution.Value);
+
+        if (_solutionContainerSystem.ResolveSolution(entity.Owner, entity.Comp.BloodSolutionName, ref entity.Comp.BloodSolution, out var bloodSolution))
+            TryModifyBloodLevel(entity.Owner, bloodSolution.MaxVolume / 2, entity.Comp);
     }
 
     /// <summary>
@@ -337,22 +340,22 @@ public sealed class BloodstreamSystem : EntitySystem
     public bool TryAddToChemicals(EntityUid uid, Solution solution, BloodstreamComponent? component = null)
     {
         return Resolve(uid, ref component, logMissing: false)
-            && _solutionContainerSystem.ResolveSolution(uid, component.ChemicalSolutionName, ref component.ChemicalSolution)
-            && _solutionContainerSystem.TryAddSolution(component.ChemicalSolution.Value, solution);
+            && _solutionContainerSystem.ResolveSolution(uid, component.BloodSolutionName, ref component.BloodSolution)
+            && _solutionContainerSystem.TryAddSolution(component.BloodSolution.Value, solution);
     }
 
     public bool FlushChemicals(EntityUid uid, string excludedReagentID, FixedPoint2 quantity, BloodstreamComponent? component = null)
     {
         if (!Resolve(uid, ref component, logMissing: false)
-            || !_solutionContainerSystem.ResolveSolution(uid, component.ChemicalSolutionName, ref component.ChemicalSolution, out var chemSolution))
+            || !_solutionContainerSystem.ResolveSolution(uid, component.BloodSolutionName, ref component.BloodSolution, out var bloodSolution))
             return false;
 
-        for (var i = chemSolution.Contents.Count - 1; i >= 0; i--)
+        for (var i = bloodSolution.Contents.Count - 1; i >= 0; i--)
         {
-            var (reagentId, _) = chemSolution.Contents[i];
+            var (reagentId, _) = bloodSolution.Contents[i];
             if (reagentId.Prototype != excludedReagentID)
             {
-                _solutionContainerSystem.RemoveReagent(component.ChemicalSolution.Value, reagentId, quantity);
+                _solutionContainerSystem.RemoveReagent(component.BloodSolution.Value, reagentId, quantity);
             }
         }
 
@@ -376,6 +379,14 @@ public sealed class BloodstreamSystem : EntitySystem
             return;
 
         comp.BloodlossThreshold = threshold;
+    }
+
+    public void SetHypertensionThreshold(EntityUid uid, float threshold, BloodstreamComponent? comp = null)
+    {
+        if (!Resolve(uid, ref comp))
+            return;
+
+        comp.HypertensionThreshold = threshold;
     }
 
     /// <summary>
