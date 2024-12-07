@@ -1,0 +1,22 @@
+# Player: juneszalkowska - Character: Finds-The-Treasure
+- type: entity
+  parent: ClothingHeadBase
+  id: PersonalItemFindsHat
+  name: Kasa-Liurz’s hat
+  description: A rakish pirate tricorn adorned with beautiful feathers.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Head/Hats/findshat.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Head/Hats/findshat.rsi
+
+- type: loadout
+  id: PersonalItemFindsHat
+  storage:
+    back:
+    - PersonalItemFindsHat
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Finds-The-Treasure

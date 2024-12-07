@@ -1,0 +1,27 @@
+# Player: Ariphylor - Character: Anxeeth-Duna
+- type: entity
+  parent: PlushieLizard
+  id: PersonalItemDunaPlushie
+  name: duna plushie
+  description: A lizard plushie made to look like Anxeeth-Duna.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_duna
+    sprite: _Umbra/Objects/Fun/Toys/plushie_duna.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_duna.rsi
+    equippedPrefix: duna
+    slots:
+    - HEAD
+
+- type: loadout
+  id: PersonalItemDunaPlushie
+  storage:
+    back:
+    - PersonalItemDunaPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Hisses-At-Inconvenience

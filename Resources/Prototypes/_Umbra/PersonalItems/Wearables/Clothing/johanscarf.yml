@@ -1,0 +1,22 @@
+# Player: Boaz1111 - Character: Johan Ullman
+- type: entity
+  parent: ClothingNeckBase
+  id: PersonalItemJohanScarf
+  name: Johan's NTRD scarf
+  description: A scarf with the colors of the NTRD, a collection of Nanotrasen's finest research divsions.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Neck/Scarfs/johanscarf.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Neck/Scarfs/johanscarf.rsi
+
+- type: loadout
+  id: PersonalItemJohanScarf
+  storage:
+    back:
+    - PersonalItemJohanScarf
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Johan Ullman

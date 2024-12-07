@@ -1,0 +1,15 @@
+# Player: Sphiral - Character: Nova Gem
+- type: entity
+  parent: ClothingHeadBase
+  id: PersonalItemNovaCatEars
+  categories: [ HideSpawnMenu ]
+  name: Nova's cat ears
+  description: "They seem to be twitching to every little sound around them... how odd."
+  suffix: PersonalItem
+  components:
+  - type: Tag
+    tags: [] # ignore "WhitelistChameleon" tag
+  - type: Sprite
+    sprite: _Umbra/Clothing/Head/novagalaxyhood.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Head/novagalaxyhood.rsi
