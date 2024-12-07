@@ -18,7 +18,7 @@
 
 - type: entity
   id: RandomHumanoidSpawnerDeathSquad
-  name: Death Squad Agent
+  name: Internal Affairs Agent # Umbra change
   suffix: ERTRole, Death Squad
   components:
     - type: Sprite

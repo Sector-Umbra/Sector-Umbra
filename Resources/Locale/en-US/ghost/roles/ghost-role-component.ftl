@@ -194,8 +194,8 @@ ghost-role-information-behonker-description = You are an antagonist, bring death
 ghost-role-information-hellspawn-name = Hellspawn
 ghost-role-information-hellspawn-description = Bring death to those who do not follow the great god Nar'Sie.
 
-ghost-role-information-Death-Squad-name = Death Squad Operative
-ghost-role-information-Death-Squad-description = One of Nanotrasen's top internal affairs agents. Await orders from CentComm or an official.
+ghost-role-information-Death-Squad-name = Internal Affairs Agent
+ghost-role-information-Death-Squad-description = One of Nanotrasen's top operatives for internal matters. Await orders from CentComm or an official.
 ghost-role-information-Death-Squad-rules = You are required to obey orders given by your superior, you are effectively their [color=#6495ed][bold]Familiar[/bold][/color].
 
 ghost-role-information-SyndiCat-name = SyndiCat
@@ -252,7 +252,7 @@ ghost-role-information-medical-description = You are a medical professional, but
 ghost-role-information-cargo-name = Cargo
 ghost-role-information-cargo-description = You are part of a logistics mission, but seem to have found yourself in a strange situation...
 
-ghost-role-information-engineering-name = Engineering 
+ghost-role-information-engineering-name = Engineering
 ghost-role-information-engineering-description = You are on an engineering job, but seem to have found yourself in a strange situation...
 
 ghost-role-information-science-name = Science
