@@ -9,9 +9,10 @@
   </Box>
 
   What blood bags do
-  Blood bags store 300U
+  Blood bags store 120U
   List of blood variants and what species they coorospond to
   Blood bags can inject any chemical they store.
+  Blood bags inject into a patient's blood stream, not chemical stream.
 
   ## IV Stands
 
@@ -29,11 +30,18 @@
   
   IV Stands are also capable of drawing from a patient. This will slowly drain the patient of their bloodstream's content and fill the IV Stand's bloodbag.
 
+  IV Stands inject into a patient's blood stream, not chemical stream.
+
   ## Summary
 
-  - Blood bags are able to store 300 Units of any reagent.
+  - Blood bags are able to store 120 Units of any reagent.
+  - Both IV Stands and Blood Bags inject into the blood stream, not the chemical stream
   - When used on a patient blood bags will slowly inject a patient with their contained reagents, including mixtures.
   - Empty blood bags can be filled using any injector (Ex: Syringes/Hyposprays) or IV Stands.
   - IV Stands can draw or inject from a patient.
 
+  Should include a table of types of blood to species, ex:
+  Red Blood: Humans, Vulpkanin
+  Sap Blood: Diona
+  
 </Document>
