@@ -857,7 +857,7 @@
   parent: PosterBase
   id: PosterLegitEnlist
   name: "Enlist"
-  description: "Tired of pushing papers? Enlist in the Nanotrasen Internal Affairs reserves today!"
+  description: "Tired of pushing papers? Enlist in the Nanotrasen Internal Affairs reserves today!" # Umbra change
   components:
   - type: Sprite
     state: poster29_legit
