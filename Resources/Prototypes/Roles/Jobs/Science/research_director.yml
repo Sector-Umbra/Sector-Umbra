@@ -16,7 +16,7 @@
   - Command
   - Maintenance
   - ResearchDirector
-  - Brig
+  # - Brig # Umbra - Removed
   - Cryogenics
   special:
   - !type:AddImplantSpecial

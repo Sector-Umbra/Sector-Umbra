@@ -19,8 +19,6 @@
     sprite: _Umbra/Clothing/OuterClothing/Misc/hisses_golden_locket.rsi
   - type: ToggleClothing
     action: ActionToggleHissesLocket
-  - type: ToggleVerb
-    text: outerwear-toggle-locket
   - type: Appearance
   - type: GenericVisualizer
     visuals:
