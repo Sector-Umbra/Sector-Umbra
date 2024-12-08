@@ -1270,6 +1270,7 @@
   - MedicalDoctorPDA
   # CD: Separate Senior roles
   # - SeniorPhysicianPDA
+  - NursePDA # Umbra Job Title
 
 - type: loadoutGroup
   id: MedicalGloves
