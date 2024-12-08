@@ -74,7 +74,7 @@
 
 # Industrial
 - type: entity
-  parent: ClothingUniformBase
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase] # CD foldable
   id: ClothingUniformJumpsuitCargoPants
   name: cargo cargoes
   description: A pair of khaki cargo pants, for cargo. Comes with a grey tee.
@@ -100,7 +100,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformSecurtyCasual
   name: casual security fatigues
-  description: A Red shirt with a black undershirt and pants. Comfortable while on patrol.
+  description: A red shirt with a black undershirt and pants. Comfortable while on patrol.
   components:
   - type: Sprite
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/security_casual.rsi
@@ -111,7 +111,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformHoSSeniorCasual
   name: casual senior fatigues
-  description: A Red shirt with a black undershirt and pants. Includes gold insignias denoting a respected member of Security.
+  description: A red shirt with a black undershirt and pants. Includes gold insignias denoting a respected member of Security.
   components:
   - type: Sprite
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/senior_security_casual.rsi
@@ -122,12 +122,23 @@
   parent: ClothingUniformBase
   id: ClothingUniformWardenCasual
   name: casual warden fatigues
-  description: A Red shirt with a black undershirt and pants. Includes silver insignias denoting a Warden, perfect for long shifts in the brig.
+  description: A red shirt with a black undershirt and pants. Includes silver insignias denoting a Warden, perfect for long shifts in the brig.
   components:
   - type: Sprite
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/warden_casual.rsi
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/warden_casual.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformDetectiveCasual
+  name: casual detective fatigues
+  description: A white shirt with a red collar and black pants. Comfortable, modern and stylish.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/detective_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/detective_casual.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -163,3 +174,141 @@
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/doctor_casual.rsi
 
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformChemistCasual
+  name: casual chemist outfit
+  description: A blue-white shirt with comfortable black slacks. There is an orange armband on the left sleeve with a matching collar.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/chemist_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/chemist_casual.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformPsychologistCasual
+  name: psychology professor outfit
+  description: A black turtleneck with comfortable brown pants akin to an early-modern professor, or a psychologist.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/psychologist_casual.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Casual/psychologist_casual.rsi
+    
+# Non-casual drip below
+
+# medical garments
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformCMOFormal
+  name: medical director suit
+  description: A blue shirt with black slacks. Worn by someone with clinical expectations.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/cmo_formal.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/cmo_formal.rsi
+
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformMedicalTechnician
+  name: medical technician jumpsuit
+  description: A sturdy feeling suit made for utility minded doctors.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/medical_technician.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/medical_technician.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitMaintSurgeon
+  name: rip-surgeon outfit
+  description: A messy blue shirt with rolled sleeves and black jeans, there is a padded pocket to hold surgical tools.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/maintsurgeon.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/maintsurgeon.rsi
+
+# cargo variants
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCargoLight
+  name: cargo tech jumpsuit
+  description: A sturdy jumpsuit, issued to members of the Cargo department.
+  suffix: light
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/cargotech_light.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/cargotech_light.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCargoDark
+  name: cargo tech jumpsuit
+  suffix: dark
+  description: A sturdy jumpsuit, issued to members of the Cargo department.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/cargotech_dark.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/cargotech_dark.rsi
+
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCargoOveralls
+  name: cargo overalls
+  description: A set of sturdy tan overalls worn by cargo techs wanting more coverage.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/cargo_overalls.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/cargo_overalls.rsi
+
+
+# QM foreman uniform
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitForeman
+  name: foreman uniform
+  description: A pair of tan cargo pants with a white dress shirt, comfortable enough for a foreman.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/foreman.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/foreman.rsi
+
+# Salvage Operator
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSalvageOperator
+  name: salvage operator jumpsuit
+  description: A heavy duty suit designed for salvage operations, feels heavier then the typical overalls.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/salvage_operator.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/salvage_operator.rsi
+
+# Suits
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase] # CD foldable
+  id: ClothingUniformJumpsuitSuitBlue
+  name: blue formal suit
+  description: A pair of blue dress pants with a white shirt, includes a waistcoat.
+  components:
+  - type: Sprite
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Suits/blue.rsi
+  - type: Clothing
+    sprite: _CD/Clothing/Uniforms/Jumpsuit/Suits/blue.rsi
