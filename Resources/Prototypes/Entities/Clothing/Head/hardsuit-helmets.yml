@@ -686,7 +686,7 @@
 - type: entity
   parent: [ BaseCentcommContraband, ClothingHeadHardsuitBase ]
   id: ClothingHeadHelmetHardsuitDeathsquad
-  name: deathsquad hardsuit helmet
+  name: internal affairs hardsuit helmet # Umbra change
   description: A robust helmet for special operations.
   components:
   - type: BreathMask
