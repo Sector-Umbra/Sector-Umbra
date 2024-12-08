@@ -195,7 +195,9 @@ ghost-role-information-hellspawn-name = Hellspawn
 ghost-role-information-hellspawn-description = Bring death to those who do not follow the great god Nar'Sie.
 
 ghost-role-information-Death-Squad-name = Internal Affairs Agent
+# Umbra change ^^^
 ghost-role-information-Death-Squad-description = One of Nanotrasen's top operatives for internal matters. Await orders from CentComm or an official.
+# Umbra change ^^^
 ghost-role-information-Death-Squad-rules = You are required to obey orders given by your superior, you are effectively their [color=#6495ed][bold]Familiar[/bold][/color].
 
 ghost-role-information-SyndiCat-name = SyndiCat

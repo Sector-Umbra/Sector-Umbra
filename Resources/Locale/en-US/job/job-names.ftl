@@ -23,6 +23,7 @@ job-name-serviceworker = Service Worker
 job-name-centcomoff = CentComm Official
 job-name-cburn = Centcomm Quarantine Officer
 job-name-deathsquad = Centcomm NTIA Agent
+# Umbra change ^^^
 job-name-reporter = Reporter
 job-name-musician = Musician
 job-name-librarian = Librarian

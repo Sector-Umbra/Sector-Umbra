@@ -4,6 +4,7 @@ advertisement-bruiseomat-3 = Did anyone buy an EMAG?
 advertisement-bruiseomat-4 = I wanna go back to my home station...
 advertisement-bruiseomat-5 = Beware of the Mime and Clown. BEWARE!
 advertisement-bruiseomat-6 = A nuke a day keeps the NTIA at bay!
+# Umbra change ^^^
 advertisement-bruiseomat-7 = You'll never be able to match MY mixing, Agent!
 advertisement-bruiseomat-8 = Thirsting for blood? I got you covered!
 advertisement-bruiseomat-9 = If they didn't want us to blow up the station, then why would they leave the disk so unsecured?
