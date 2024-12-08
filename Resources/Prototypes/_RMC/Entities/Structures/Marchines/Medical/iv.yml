@@ -243,6 +243,8 @@
 
 # TODO
 # Crafting recipies for blood? (In Discussion)
-# Write the guidebook entry for how IV stands and Guidebooks work
-# Make sure IVs can inject any reagents from bloodbags so I'm not a liar (Also so our different bloodtypes matter.)- Alex
-# Find the component that I missed in the port over preventing injecting into random entities.
+
+# Write a guidebook entry for both IV stands and Blood Packs
+# IVs and Bloodbags should inject into the chem stream, not blood stream.
+# Find the component to prevent bloodpacks/ivs from injecting into all entities.
+# Remove the IV and Blood Pack reagent whitelist.
