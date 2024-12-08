@@ -1211,6 +1211,7 @@
   - GreenSurgeryCap
   - PurpleSurgeryCap
   - NurseHat
+  - NurseHatAlt #Umbra
 
 - type: loadoutGroup
   id: MedicalDoctorJumpsuit
@@ -1229,6 +1230,7 @@
   - ViroJumpskirt # CD
   - GeneJumpsuit # CD
   - GeneJumpskirt # CD
+  - SkirtOfLife # Umbra
 
 - type: loadoutGroup
   id: MedicalDoctorOuterClothing
