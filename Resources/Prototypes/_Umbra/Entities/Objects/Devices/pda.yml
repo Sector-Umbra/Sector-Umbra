@@ -1,0 +1,18 @@
+#Alternate titles
+- type: entity
+  parent: BaseMedicalPDA
+  id: NursePDA
+  name: nurse PDA
+  description: A medical nurse's PDA.
+  components:
+  - type: Icon
+    sprite: _Umbra/Objects/Devices/pda.rsi
+    state: pda-nurse
+  - type: Pda
+    id: MedicalIDCard
+    state: pda-nurse
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentVColor: "#b52a46"
+  - type: RenameId
+    value: umbra-job-title-nurse
