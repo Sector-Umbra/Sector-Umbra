@@ -563,7 +563,7 @@
 - type: entity
   parent: IDCardStandard
   id: CentcomIDCardDeathsquad
-  name: death squad ID card
+  name: internal affairs ID card # Umbra change
   components:
   - type: Sprite
     layers:

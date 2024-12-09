@@ -433,8 +433,8 @@
 - type: entity
   parent: ClothingMaskGasERT
   id: ClothingMaskGasDeathSquad
-  name: death squad gas mask
-  description: A unique gas mask for the NT's most elite squad.
+  name: internal affairs gas mask # Umbra change
+  description: A unique gas mask for the NT's most elite agents. # Umbra change
   components:
   - type: Sprite
     sprite: Clothing/Mask/squadron.rsi
