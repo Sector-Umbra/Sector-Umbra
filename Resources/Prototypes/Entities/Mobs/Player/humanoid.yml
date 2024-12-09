@@ -19,7 +19,7 @@
 - type: entity
   id: RandomHumanoidSpawnerDeathSquad
   name: Internal Affairs Agent # Umbra change
-  suffix: ERTRole, Death Squad
+  suffix: ERTRole, Internal Affairs
   components:
     - type: Sprite
       sprite: Clothing/OuterClothing/Hardsuits/deathsquad.rsi
