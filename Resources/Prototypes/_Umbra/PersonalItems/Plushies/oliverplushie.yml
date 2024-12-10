@@ -8,7 +8,7 @@
   components:
   - type: Sprite
     state: plushie_oliver
-    sprite: _Umbra/Objects/Fun/Toys/plushie_oliver.rsi
+    sprite: _Umbra/PersonalItems/Plushies/oliverplushie.rsi
 
 - type: loadout
   id: PersonalItemOliverPlushie

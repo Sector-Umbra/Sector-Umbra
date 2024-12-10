@@ -1,7 +1,7 @@
 # Player: Jacketed - Character: Ko Karaki
 - type: entity
   parent: [Clothing, BaseFoldable]
-  id: PersonalItemKarakiMantle
+  id: PersonalItemKarakiNanoweaveMantle
   name: Karaki's nanoweave mantle
   description: A two piece cloak that can be folded up into a mantle.  Its made out of nanoweave in traditional colours, often worn by Avali across the Illuminate. The fabric is intricately weaved down to the atomic level, making it incredibly strong and durable. A necklace with a softly pulsing crystal is sown into fabric around the neck.
   suffix: PersonalItem
@@ -9,7 +9,7 @@
   - type: Item
     size: Small
   - type: Sprite
-    sprite: _Umbra/Clothing/Neck/Mantles/karakinanowevemantle.rsi
+    sprite: _Umbra/PersonalItems/Wearables/karakinanoweavemantle.rsi
     layers:
     - state: icon
       map: [ "unfoldedLayer" ]
@@ -17,7 +17,7 @@
       map: ["foldedLayer"]
       visible: false
   - type: Clothing
-    sprite: _Umbra/Clothing/Neck/Mantles/karakinanowevemantle.rsi
+    sprite: _Umbra/PersonalItems/Wearables/karakinanoweavemantle.rsi
     quickEquip: true
     slots:
     - neck
@@ -34,10 +34,10 @@
     - WhitelistChameleon
 
 - type: loadout
-  id: PersonalItemKarakiMantle
+  id: PersonalItemKarakiNanoweaveMantle
   storage:
     back:
-    - PersonalItemKarakiMantle
+    - PersonalItemKarakiNanoweaveMantle
   effects:
   - !type:PersonalItemLoadoutEffect
     character:

@@ -7,11 +7,11 @@
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra/Objects/Fun/johanscodex.rsi
+    sprite: _Umbra/PersonalItems/Items/johanscodex.rsi
     state: screen
   - type: Item
     size: Small
-    sprite: _Umbra/Objects/Fun/johanscodex.rsi
+    sprite: _Umbra/PersonalItems/Items/johanscodex.rsi
 
 - type: loadout
   id: PersonalItemJohanCodex

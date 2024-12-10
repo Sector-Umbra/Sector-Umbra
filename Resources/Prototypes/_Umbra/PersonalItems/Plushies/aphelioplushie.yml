@@ -8,10 +8,10 @@
   components:
   - type: Sprite
     state: plushie_aphelio
-    sprite: _Umbra/Objects/Fun/Toys/plushie_aphelio.rsi
+    sprite: _Umbra/PersonalItems/Plushies/aphelioplushie.rsi
   - type: Clothing
     quickEquip: false
-    sprite: _Umbra/Objects/Fun/Toys/plushie_aphelio.rsi
+    sprite: _Umbra/PersonalItems/Plushies/aphelioplushie.rsi
     equippedPrefix: aphelio
     slots:
     - HEAD

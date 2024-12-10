@@ -7,11 +7,11 @@
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra/Objects/Fun/bobby.rsi
+    sprite: _Umbra/PersonalItems/Items/joettabobby.rsi
     state: bobby
   - type: Item
     size: Small
-    sprite: _Umbra/Objects/Fun/bobby.rsi
+    sprite: _Umbra/PersonalItems/Items/joettabobby.rsi
 
 - type: loadout
   id: PersonalItemJoettaBobby

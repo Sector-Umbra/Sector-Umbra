@@ -8,10 +8,10 @@
   components:
   - type: Sprite
     state: plushie_takes
-    sprite: _Umbra/Objects/Fun/Toys/plushie_takes.rsi
+    sprite: _Umbra/PersonalItems/Plushies/takesplushie.rsi
   - type: Clothing
     quickEquip: false
-    sprite: _Umbra/Objects/Fun/Toys/plushie_takes.rsi
+    sprite: _Umbra/PersonalItems/Plushies/takesplushie.rsi
     equippedPrefix: takes
     slots:
     - HEAD

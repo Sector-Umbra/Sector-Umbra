@@ -7,9 +7,9 @@
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra/Clothing/Head/jasmi-rainbow-hairflower.rsi
+    sprite: _Umbra/PersonalItems/Wearables/jasmirainbowflower.rsi
   - type: Clothing
-    sprite:  _Umbra/Clothing/Head/jasmi-rainbow-hairflower.rsi
+    sprite:  _Umbra/PersonalItems/Wearables/jasmirainbowflower.rsi
     slots:
     - HEAD
   - type: Tag

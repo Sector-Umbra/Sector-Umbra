@@ -9,9 +9,9 @@
   - type: Clothing
     slots:
     - ears
-    sprite: _Umbra/Clothing/Ears/Headsets/arcindhearaids.rsi
+    sprite: _Umbra/PersonalItems/Wearables/erishearingaid.rsi
   - type: Sprite
-    sprite: _Umbra/Clothing/Ears/Headsets/arcindhearaids.rsi
+    sprite: _Umbra/PersonalItems/Wearables/erishearingaid.rsi
 
 # Eris' Hearing-Aid
 - type: loadout

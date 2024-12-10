@@ -8,10 +8,10 @@
   components:
   - type: Sprite
     state: plushie_dutchie
-    sprite: _Umbra/Objects/Fun/Toys/plushie_dutchie.rsi
+    sprite: _Umbra/PersonalItems/Plushies/dutchieplushie.rsi
   - type: Clothing
     quickEquip: false
-    sprite: _Umbra/Objects/Fun/Toys/plushie_dutchie.rsi
+    sprite: _Umbra/PersonalItems/Plushies/dutchieplushie.rsi
     equippedPrefix: dutchie
     slots:
     - HEAD

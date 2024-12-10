@@ -7,7 +7,7 @@
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra/Objects/Fun/Toys/plushie_tiha.rsi
+    sprite: _Umbra/PersonalItems/Plushies/tihaplushie.rsi
     layers:
     - state: icon
       map: [ "unfoldedLayer" ]
@@ -16,7 +16,7 @@
       visible: false
   - type: Clothing
     quickEquip: false
-    sprite: _Umbra/Objects/Fun/Toys/plushie_tiha.rsi
+    sprite: _Umbra/PersonalItems/Plushies/tihaplushie.rsi
     slots:
     - HEAD
     - NECK

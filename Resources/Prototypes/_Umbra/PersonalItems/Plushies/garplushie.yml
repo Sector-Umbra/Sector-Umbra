@@ -8,10 +8,10 @@
   components:
   - type: Sprite
     state: plushie_gartei
-    sprite: _Umbra/Objects/Fun/Toys/plushie_gartei.rsi
+    sprite: _Umbra/PersonalItems/Plushies/garplushie.rsi
   - type: Clothing
     quickEquip: false
-    sprite: _Umbra/Objects/Fun/Toys/plushie_gartei.rsi
+    sprite: _Umbra/PersonalItems/Plushies/garplushie.rsi
     equippedPrefix: gartei
     slots:
     - HEAD

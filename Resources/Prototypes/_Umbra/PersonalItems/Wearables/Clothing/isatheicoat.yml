@@ -7,9 +7,9 @@
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra/Clothing/OuterClothing/Coats/isathei_coat.rsi
+    sprite: _Umbra/PersonalItems/Wearables/isatheicoat.rsi
   - type: Clothing
-    sprite: _Umbra/Clothing/OuterClothing/Coats/isathei_coat.rsi
+    sprite: _Umbra/PersonalItems/Wearables/isatheicoat.rsi
 
 - type: loadout
   id: PersonalItemIsatheiCoat

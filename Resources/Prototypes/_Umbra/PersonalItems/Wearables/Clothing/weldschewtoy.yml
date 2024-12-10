@@ -7,9 +7,9 @@
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra/Clothing/Mask/chewtoy.rsi
+    sprite: _Umbra/PersonalItems/Wearables/weldschewtoy.rsi
   - type: Clothing
-    sprite: _Umbra/Clothing/Mask/chewtoy.rsi
+    sprite: _Umbra/PersonalItems/Wearables/weldschewtoy.rsi
 
 - type: loadout
   id: PersonalItemWeldsChewtoy

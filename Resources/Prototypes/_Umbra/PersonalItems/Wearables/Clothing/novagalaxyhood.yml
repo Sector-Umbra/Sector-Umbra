@@ -10,6 +10,6 @@
   - type: Tag
     tags: [] # ignore "WhitelistChameleon" tag
   - type: Sprite
-    sprite: _Umbra/Clothing/Head/novagalaxyhood.rsi
+    sprite: _Umbra/PersonalItems/Wearables/novacatears.rsi
   - type: Clothing
-    sprite: _Umbra/Clothing/Head/novagalaxyhood.rsi
+    sprite: _Umbra/PersonalItems/Wearables/novacatears.rsi

@@ -7,10 +7,10 @@
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra/Clothing/Neck/Medals/johnmilitarycrossmedal.rsi
+    sprite: _Umbra/PersonalItems/Wearables/johnmilitarycross.rsi
     scale: 0.75, 0.75
   - type: Clothing
-    sprite: _Umbra/Clothing/Neck/Medals/johnmilitarycrossmedal.rsi
+    sprite: _Umbra/PersonalItems/Wearables/johnmilitarycross.rsi
   - type: Tag
     tags:
     - Medal

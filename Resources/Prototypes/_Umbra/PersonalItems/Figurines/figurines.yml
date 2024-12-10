@@ -6,7 +6,7 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: _Umbra/Objects/Fun/figurines.rsi
+    sprite: _Umbra/PersonalItems/Figurines/figurines.rsi
   - type: PhysicalComposition
     materialComposition:
       Plastic: 100

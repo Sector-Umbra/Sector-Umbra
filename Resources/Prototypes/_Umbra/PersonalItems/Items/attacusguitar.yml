@@ -7,17 +7,17 @@
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra/Objects/Fun/Instruments/attacusguitar.rsi
+    sprite: _Umbra/PersonalItems/Items/attacusguitar.rsi
     state: icon
   - type: Item
-    sprite: _Umbra/Objects/Fun/Instruments/attacusguitar.rsi
+    sprite: _Umbra/PersonalItems/Items/attacusguitar.rsi
     size: Normal
   - type: Clothing
     quickEquip: false
     slots:
     - back
     - suitStorage
-    sprite: _Umbra/Objects/Fun/Instruments/attacusguitar.rsi
+    sprite: _Umbra/PersonalItems/Items/attacusguitar.rsi
   - type: SwappableInstrument
     instrumentList:
       "Nylon": {24: 0}

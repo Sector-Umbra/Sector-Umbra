@@ -8,10 +8,10 @@
   components:
   - type: Sprite
     state: plushie_amok
-    sprite: _Umbra/Objects/Fun/Toys/plushie_amok.rsi
+    sprite: _Umbra/PersonalItems/Plushies/amokplushie.rsi
   - type: Clothing
     quickEquip: false
-    sprite: _Umbra/Objects/Fun/Toys/plushie_amok.rsi
+    sprite: _Umbra/PersonalItems/Plushies/amokplushie.rsi
     equippedPrefix: amok
     slots:
     - HEAD

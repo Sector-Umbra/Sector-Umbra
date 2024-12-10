@@ -8,7 +8,7 @@
   components:
   - type: Sprite
     state: plushie_eris
-    sprite: _Umbra/Objects/Fun/Toys/plushie_eris.rsi
+    sprite: _Umbra/PersonalItems/Plushies/erisplushie.rsi
 
 - type: loadout
   id: PersonalItemErisPlushie

@@ -7,9 +7,9 @@
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra/Clothing/Neck/Misc/hushpendant.rsi
+    sprite: _Umbra/PersonalItems/Wearables/hushpendant.rsi
   - type: Clothing
-    sprite: _Umbra/Clothing/Neck/Misc/hushpendant.rsi
+    sprite: _Umbra/PersonalItems/Wearables/hushpendant.rsi
 
 - type: loadout
   id: PersonalItemHushPendant

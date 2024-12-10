@@ -7,9 +7,9 @@
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra/Clothing/OuterClothing/Coats/reinforced_raincoat.rsi
+    sprite: _Umbra/PersonalItems/Wearables/jalopydetectiveraincoat.rsi
   - type: Clothing
-    sprite: _Umbra/Clothing/OuterClothing/Coats/reinforced_raincoat.rsi
+    sprite: _Umbra/PersonalItems/Wearables/jalopydetectiveraincoat.rsi
 
 - type: loadout
   id: PersonalItemJalopyDetectiveRaincoat

@@ -7,12 +7,12 @@
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra/Clothing/Hands/Rings/michaels_ring.rsi
+    sprite: _Umbra/PersonalItems/Wearables/michaelring.rsi
     layers:
     - state: michaels_ring
   - type: Item
     size: Tiny
-    sprite: _Umbra/Clothing/Hands/Rings/michaels_ring.rsi
+    sprite: _Umbra/PersonalItems/Wearables/michaelring.rsi
 
 - type: loadout
   id: PersonalItemMichaelRing

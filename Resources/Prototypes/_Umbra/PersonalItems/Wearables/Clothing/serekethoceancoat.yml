@@ -7,9 +7,9 @@
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra/Clothing/OuterClothing/WinterCoats/oceancoat.rsi
+    sprite: _Umbra/PersonalItems/Wearables/serekethoceancoat.rsi
   - type: Clothing
-    sprite: _Umbra/Clothing/OuterClothing/WinterCoats/oceancoat.rsi
+    sprite: _Umbra/PersonalItems/Wearables/serekethoceancoat.rsi
 
 # Sereketh's Ocean coat
 - type: loadout

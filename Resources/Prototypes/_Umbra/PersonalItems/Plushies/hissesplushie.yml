@@ -8,10 +8,10 @@
   components:
   - type: Sprite
     state: plushie_hisses
-    sprite: _Umbra/Objects/Fun/Toys/plushie_hisses.rsi
+    sprite: _Umbra/PersonalItems/Plushies/hissesplushie.rsi
   - type: Clothing
     quickEquip: false
-    sprite: _Umbra/Objects/Fun/Toys/plushie_hisses.rsi
+    sprite: _Umbra/PersonalItems/Plushies/hissesplushie.rsi
     equippedPrefix: hisses
     slots:
     - HEAD

@@ -7,12 +7,12 @@
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra/Objects/Misc/Books/michaels_card.rsi
+    sprite: _Umbra/PersonalItems/Items/michaelcard.rsi
     layers:
     - state: michaels_card
   - type: Item
     size: Small
-    sprite: _Umbra/Objects/Misc/Books/michaels_card.rsi
+    sprite: _Umbra/PersonalItems/Items/michaelcard.rsi
   - type: Paper
     content: book-text-michaels-card
   - type: Food

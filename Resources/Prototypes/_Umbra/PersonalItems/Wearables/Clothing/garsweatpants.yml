@@ -7,9 +7,9 @@
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra/Clothing/Uniforms/Jumpsuit/garpants.rsi
+    sprite: _Umbra/PersonalItems/Wearables/garsweatpants.rsi
   - type: Clothing
-    sprite: _Umbra/Clothing/Uniforms/Jumpsuit/garpants.rsi
+    sprite: _Umbra/PersonalItems/Wearables/garsweatpants.rsi
 
 - type: loadout
   id: PersonalItemGarSweatPants

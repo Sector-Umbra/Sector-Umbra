@@ -7,9 +7,9 @@
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra/Clothing/Head/Hats/findshat.rsi
+    sprite: _Umbra/PersonalItems/Wearables/findshat.rsi
   - type: Clothing
-    sprite: _Umbra/Clothing/Head/Hats/findshat.rsi
+    sprite: _Umbra/PersonalItems/Wearables/findshat.rsi
 
 - type: loadout
   id: PersonalItemFindsHat

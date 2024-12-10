@@ -7,9 +7,9 @@
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra/Clothing/OuterClothing/Coats/galaxycoat.rsi
+    sprite: _Umbra/PersonalItems/Wearables/novagalaxycoat.rsi
   - type: Clothing
-    sprite: _Umbra/Clothing/OuterClothing/Coats/galaxycoat.rsi
+    sprite: _Umbra/PersonalItems/Wearables/novagalaxycoat.rsi
   - type: ContainerContainer
     containers:
       toggleable-clothing: !type:ContainerSlot {}

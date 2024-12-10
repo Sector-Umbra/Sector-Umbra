@@ -9,14 +9,14 @@
   - type: Item
     size: Small
   - type: Sprite
-    sprite: _Umbra/Clothing/OuterClothing/Misc/hisses_golden_locket.rsi
+    sprite: _Umbra/PersonalItems/Wearables/hissesgoldenlocket.rsi
     layers:
     - state: icon
       map: [ "enum.ToggleVisuals.Layer" ]
     scale: 0.5, 0.5
   - type: Clothing
     quickEquip: False
-    sprite: _Umbra/Clothing/OuterClothing/Misc/hisses_golden_locket.rsi
+    sprite: _Umbra/PersonalItems/Wearables/hissesgoldenlocket.rsi
   - type: ToggleClothing
     action: ActionToggleHissesLocket
   - type: Appearance

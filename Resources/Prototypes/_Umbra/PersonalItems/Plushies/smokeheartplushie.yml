@@ -8,7 +8,7 @@
   components:
   - type: Sprite
     state: heart_plushie
-    sprite: _Umbra/Objects/Fun/Toys/plushie_heart.rsi
+    sprite: _Umbra/PersonalItems/Plushies/smokeheartplushie.rsi
 
 - type: loadout
   id: PersonalItemSmokeHeartPlushie

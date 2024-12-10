@@ -8,10 +8,10 @@
   components:
   - type: Sprite
     state: icon
-    sprite: _Umbra/Objects/Fun/Toys/plushie_old_space_lizard.rsi
+    sprite: _Umbra/PersonalItems/Plushies/dartingplushie.rsi
   - type: Clothing
     quickEquip: false
-    sprite: _Umbra/Objects/Fun/Toys/plushie_old_space_lizard.rsi
+    sprite: _Umbra/PersonalItems/Plushies/dartingplushie.rsi
     slots:
     - HEAD
 

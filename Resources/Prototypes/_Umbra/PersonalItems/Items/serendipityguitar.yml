@@ -7,17 +7,17 @@
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra/Objects/Fun/Instruments/serenguitar.rsi
+    sprite: _Umbra/PersonalItems/Items/serenguitar.rsi
     state: icon
   - type: Item
-    sprite: _Umbra/Objects/Fun/Instruments/serenguitar.rsi
+    sprite: _Umbra/PersonalItems/Items/serenguitar.rsi
     size: Normal
   - type: Clothing
     quickEquip: false
     slots:
     - back
     - suitStorage
-    sprite: _Umbra/Objects/Fun/Instruments/serenguitar.rsi
+    sprite: _Umbra/PersonalItems/Items/serenguitar.rsi
   - type: SwappableInstrument
     instrumentList:
       "Nylon": {24: 0}

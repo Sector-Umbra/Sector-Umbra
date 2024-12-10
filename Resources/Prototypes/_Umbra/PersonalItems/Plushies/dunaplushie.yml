@@ -8,10 +8,10 @@
   components:
   - type: Sprite
     state: plushie_duna
-    sprite: _Umbra/Objects/Fun/Toys/plushie_duna.rsi
+    sprite: _Umbra/PersonalItems/Plushies/dunaplushie.rsi
   - type: Clothing
     quickEquip: false
-    sprite: _Umbra/Objects/Fun/Toys/plushie_duna.rsi
+    sprite: _Umbra/PersonalItems/Plushies/dunaplushie.rsi
     equippedPrefix: duna
     slots:
     - HEAD

@@ -7,9 +7,9 @@
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra/Clothing/Neck/Scarfs/johanscarf.rsi
+    sprite: _Umbra/PersonalItems/Wearables/johanscarf.rsi
   - type: Clothing
-    sprite: _Umbra/Clothing/Neck/Scarfs/johanscarf.rsi
+    sprite: _Umbra/PersonalItems/Wearables/johanscarf.rsi
 
 - type: loadout
   id: PersonalItemJohanScarf

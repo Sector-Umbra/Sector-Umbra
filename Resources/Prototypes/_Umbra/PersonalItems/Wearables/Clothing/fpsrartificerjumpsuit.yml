@@ -7,9 +7,9 @@
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra/Clothing/Uniforms/Jumpsuit/artificer_uniform.rsi
+    sprite: _Umbra/PersonalItems/Wearables/fpsrartificerjumpsuit.rsi
   - type: Clothing
-    sprite: _Umbra/Clothing/Uniforms/Jumpsuit/artificer_uniform.rsi
+    sprite: _Umbra/PersonalItems/Wearables/fpsrartificerjumpsuit.rsi
 
 - type: loadout
   id: PersonalItemFPSRArtificerJumpsuit

@@ -7,7 +7,7 @@
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra/Objects/Fun/Toys/plushie_graves.rsi
+    sprite: _Umbra/PersonalItems/Plushies/gravesplushie.rsi
     layers:
     - state: icon
       map: [ "unfoldedLayer" ]
@@ -16,7 +16,7 @@
       visible: false
   - type: Clothing
     quickEquip: false
-    sprite: _Umbra/Objects/Fun/Toys/plushie_graves.rsi
+    sprite: _Umbra/PersonalItems/Plushies/gravesplushie.rsi
     slots:
     - HEAD
     - NECK

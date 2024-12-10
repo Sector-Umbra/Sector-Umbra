@@ -8,10 +8,10 @@
   components:
   - type: Sprite
     state: plushie_serendipity
-    sprite: _Umbra/Objects/Fun/Toys/plushie_serendipity.rsi
+    sprite: _Umbra/PersonalItems/Plushies/serendipityplushie.rsi
   - type: Clothing
     quickEquip: false
-    sprite: _Umbra/Objects/Fun/Toys/plushie_serendipity.rsi
+    sprite: _Umbra/PersonalItems/Plushies/serendipityplushie.rsi
     equippedPrefix: serendipity
     slots:
     - HEAD

@@ -7,7 +7,7 @@
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra/Objects/Fun/fateseekersgemstone.rsi
+    sprite: _Umbra/PersonalItems/Items/fateseekergemstone.rsi
     layers:
     - state: icon
     - state: icon-active
@@ -22,7 +22,7 @@
           False: { visible: false }
   - type: Item
     size: Small
-    sprite: _Umbra/Objects/Fun/fateseekersgemstone.rsi
+    sprite: _Umbra/PersonalItems/Items/fateseekergemstone.rsi
   - type: ItemToggle
   - type: Appearance
   - type: UseDelay

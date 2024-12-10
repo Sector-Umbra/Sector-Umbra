@@ -8,10 +8,10 @@
   components:
   - type: Sprite
     state: plushie_materials
-    sprite: _Umbra/Objects/Fun/Toys/plushie_materials.rsi
+    sprite: _Umbra/PersonalItems/Plushies/materialsplushie.rsi
   - type: Clothing
     quickEquip: false
-    sprite: _Umbra/Objects/Fun/Toys/plushie_materials.rsi
+    sprite: _Umbra/PersonalItems/Plushies/materialsplushiev.rsi
     equippedPrefix: materials
     slots:
     - HEAD

@@ -7,9 +7,9 @@
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra/Clothing/Neck/artifactnecklace.rsi
+    sprite: _Umbra/PersonalItems/Wearables/deejaartifactnecklace.rsi
   - type: Clothing
-    sprite: _Umbra/Clothing/Neck/artifactnecklace.rsi
+    sprite: _Umbra/PersonalItems/Wearables/deejaartifactnecklace.rsi
   - type: Artifact
     currentNodeId: 271828
     pointsPerNode: 0 # Instead of 6500 points. Purely Cosmetic

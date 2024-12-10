@@ -7,9 +7,9 @@
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra/Clothing/Shoes/weldsbrace.rsi
+    sprite: _Umbra/PersonalItems/Wearables/weldswalker.rsi
   - type: Clothing
-    sprite: _Umbra/Clothing/Shoes/weldsbrace.rsi
+    sprite: _Umbra/PersonalItems/Wearables/weldswalker.rsi
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepHull

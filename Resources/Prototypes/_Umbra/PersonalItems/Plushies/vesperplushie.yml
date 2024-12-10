@@ -8,7 +8,7 @@
   components:
   - type: Sprite
     state: plushie_vesper
-    sprite: _Umbra/Objects/Fun/Toys/plushie_vesper.rsi
+    sprite: _Umbra/PersonalItems/Plushies/vesperplushie.rsi
 
 - type: loadout
   id: PersonalItemVesperPlushie

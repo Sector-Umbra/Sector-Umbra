@@ -8,13 +8,12 @@
   components:
   - type: Sprite
     state: plushie_kai
-    sprite: _Umbra/Objects/Fun/Toys/plushie_kai.rsi
+    sprite: _Umbra/PersonalItems/Plushies/kaiplushie.rsi
   - type: Clothing
     quickEquip: false
-    sprite: _Umbra/Objects/Fun/Toys/plushie_kai.rsi
+    sprite: _Umbra/PersonalItems/Plushies/kaiplushie.rsi
     equippedPrefix: kai
 
-# Kai's plushie
 - type: loadout
   id: PersonalItemKaiPlushie
   storage:

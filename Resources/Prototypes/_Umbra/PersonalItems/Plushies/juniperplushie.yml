@@ -8,10 +8,10 @@
   components:
   - type: Sprite
     state: plushie_juniper
-    sprite: _Umbra/Objects/Fun/Toys/plushie_juniper.rsi
+    sprite: _Umbra/PersonalItems/Plushies/juniperplushie.rsi
   - type: Clothing
     quickEquip: false
-    sprite: _Umbra/Objects/Fun/Toys/plushie_juniper.rsi
+    sprite: _Umbra/PersonalItems/Plushies/juniperplushie.rsi
     equippedPrefix: juniper
     slots:
     - HEAD

@@ -8,10 +8,10 @@
   components:
   - type: Sprite
     state: plushie_burg
-    sprite: _Umbra/Objects/Fun/Toys/plushie_burg.rsi
+    sprite: _Umbra/PersonalItems/Plushies/burgplushie.rsi
   - type: Clothing
     quickEquip: false
-    sprite: _Umbra/Objects/Fun/Toys/plushie_burg.rsi
+    sprite: _Umbra/PersonalItems/Plushies/burgplushie.rsi
     equippedPrefix: burg
     slots:
     - HEAD
