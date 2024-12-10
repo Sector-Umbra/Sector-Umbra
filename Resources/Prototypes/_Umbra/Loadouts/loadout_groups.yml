@@ -69,6 +69,8 @@
   - SerendipityGuitarInstrument
   - AttacusGuitarInstrument
   - ClothingNeckMilitaryCross
+  - CadenCollarCoat
+
 
 # Personal items specialised for Warden
 - type: loadoutGroup
@@ -134,6 +136,7 @@
   - SerendipityGuitarInstrument
   - AttacusGuitarInstrument
   - ClothingNeckMilitaryCross
+  - CadenCollarCoat
 
 # Personal items specialised for Detective
 - type: loadoutGroup
@@ -199,6 +202,7 @@
   - SerendipityGuitarInstrument
   - AttacusGuitarInstrument
   - ClothingNeckMilitaryCross
+  - CadenCollarCoat
 
 - type: loadoutGroup
   id: PersonalItemsHeadOfSecurity
@@ -262,3 +266,6 @@
   - SerendipityGuitarInstrument
   - AttacusGuitarInstrument
   - ClothingNeckMilitaryCross
+  - CadenCollarCoat
+
+
