@@ -260,7 +260,7 @@
 - type: entity
   parent: ClothingBackpackERTSecurity
   id: ClothingBackpackDeathSquad
-  name: death squad backpack
+  name: internal affairs backpack # Umbra change
   description: Holds the kit of CentComm's most feared agents.
   components:
     - type: Storage
