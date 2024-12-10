@@ -1,5 +1,0 @@
-- type: localizedDataset  # Umbra: Upstream uses localizedDataset now.
-  id: QuickThreadsAds
-  values:
-    prefix: advertisement-threads-
-    count: 5
