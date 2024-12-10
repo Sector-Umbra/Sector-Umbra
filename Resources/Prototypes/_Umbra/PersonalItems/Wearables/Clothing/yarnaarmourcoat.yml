@@ -1,0 +1,22 @@
+# Player: OverwatchVoice - Character: Yarna Crimson
+- type: entity
+  parent: ClothingOuterCoatWarden
+  id: PersonalItemYarnaArmourCoat
+  name: Yarna's armoured winter coat
+  description: A elegant winter coat made with high-quality fibers, featuring two golden shoulder guards, there is a small label that reads "Yarna-Crimson".
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/OuterClothing/Coats/yarnaarmouredcoat.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/OuterClothing/Coats/yarnaarmouredcoat.rsi
+
+- type: loadout
+  id: PersonalItemYarnaArmourCoat
+  storage:
+    back:
+    - PersonalItemYarnaArmourCoat
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Yarna Crimson

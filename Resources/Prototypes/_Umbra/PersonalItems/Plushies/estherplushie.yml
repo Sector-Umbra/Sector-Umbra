@@ -1,0 +1,21 @@
+# Player: Onenineone - Character: Esther Scarlet
+- type: entity
+  parent: PlushieMoth
+  id: PersonalItemEstherPlushie
+  name: esther plushie
+  description: A plushie depicting Esther Scarlet! It smells of a bad attitude and edginess... Looks grumpy as well!
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_esther
+    sprite: _Umbra/Objects/Fun/Toys/plushie_esther.rsi
+
+- type: loadout
+  id: PersonalItemEstherPlushie
+  storage:
+    back:
+    - PersonalItemEstherPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Nia Scarlet

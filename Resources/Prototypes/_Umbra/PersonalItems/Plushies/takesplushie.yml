@@ -1,0 +1,27 @@
+# Player: Maestro2Kimpembe - Character: Takes-Great-Risk
+- type: entity
+  parent: PlushieLizard
+  id: PersonalItemTakesPlushie
+  name: takes plushie
+  description: Little Takes-Great-Risk in a plush version. Smells like a bamboo and lilac.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_takes
+    sprite: _Umbra/Objects/Fun/Toys/plushie_takes.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/Objects/Fun/Toys/plushie_takes.rsi
+    equippedPrefix: takes
+    slots:
+    - HEAD
+
+- type: loadout
+  id: PersonalItemTakesPlushie
+  storage:
+    back:
+    - PersonalItemTakesPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Takes-Great-Risk
