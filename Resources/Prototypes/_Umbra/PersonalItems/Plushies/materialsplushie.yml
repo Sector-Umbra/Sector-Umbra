@@ -1,0 +1,27 @@
+# Player: Jacketed - Character: Steals-The-Materials
+- type: entity
+  parent: PlushieLizard
+  id: PersonalItemMaterialsPlushie
+  name: materials plushie
+  description: A custom made lizard plushie resembling Steals-The-Materials. Whilst it appears clean, the unmistakable odour of maintenance festers deep within the fabric. You can swear this plushie is staring into your soul. Something tells you not to trust this thing.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_materials
+    sprite: _Umbra/PersonalItems/Plushies/materialsplushie.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/PersonalItems/Plushies/materialsplushiev.rsi
+    equippedPrefix: materials
+    slots:
+    - HEAD
+
+- type: loadout
+  id: PersonalItemMaterialsPlushie
+  storage:
+    back:
+    - PersonalItemMaterialsPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Steals-The-Materials

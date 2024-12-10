@@ -1,0 +1,35 @@
+# Player: Deeja - Character: Deeja-Wujeeta
+- type: entity
+  parent: ClothingNeckBase
+  id: PersonalItemDeejaArtifactNecklace
+  name: Deeja's artifact necklace
+  description: An extremely well crafted, handmade necklace. It has an engraving on it - "A gift for the most talented scientist and my best friend."
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Wearables/deejaartifactnecklace.rsi
+  - type: Clothing
+    sprite: _Umbra/PersonalItems/Wearables/deejaartifactnecklace.rsi
+  - type: Artifact
+    currentNodeId: 271828
+    pointsPerNode: 0 # Instead of 6500 points. Purely Cosmetic
+    nodeTree:
+    - nodeData: {}
+      effect: EffectGoodFeeling # So well crafted that when you look at it you feel happiness
+      triggered: False
+      trigger: TriggerExamine
+      discovered: True
+      edges:
+      - 271828
+      depth: 0
+      id: 271828
+
+- type: loadout
+  id: PersonalItemDeejaArtifactNecklace
+  storage:
+    back:
+    - PersonalItemDeejaArtifactNecklace
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Deeja-Wujeeta

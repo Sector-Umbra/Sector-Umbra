@@ -1,0 +1,35 @@
+# Players: VividWisp - Character: Serendipity Bluewing
+- type: entity
+  parent: AcousticGuitarInstrument
+  id: PersonalItemSerendipityGuitar
+  name: Ace Bluewing's guitar
+  description: A vividly blue guitar of high quality. The name Ace Bluewing is etched on the inside of the guitar.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Items/serenguitar.rsi
+    state: icon
+  - type: Item
+    sprite: _Umbra/PersonalItems/Items/serenguitar.rsi
+    size: Normal
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
+    - suitStorage
+    sprite: _Umbra/PersonalItems/Items/serenguitar.rsi
+  - type: SwappableInstrument
+    instrumentList:
+      "Nylon": {24: 0}
+      "Steel": {25: 0}
+      "Jazz": {26: 0}
+
+- type: loadout
+  id: PersonalItemSerendipityGuitar
+  storage:
+    back:
+    - PersonalItemSerendipityGuitar
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Serendipity Bluewing

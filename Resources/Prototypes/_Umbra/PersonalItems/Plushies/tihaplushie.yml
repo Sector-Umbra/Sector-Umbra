@@ -1,0 +1,80 @@
+# Player: Nikovnik - Character: Tiha-Tuga
+- type: entity
+  parent: [BasePlushie, Clothing, BaseFoldable]
+  id: PersonalItemTihaPlushie
+  name: tiha-tuga plushie
+  description: Plushie of crying brass serpent tailored by the most skilled and sweet space slavic grandmas. Anyone who gazes at this plushie will be cured of their crippling sadness. That is if they choose to believe so.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Plushies/tihaplushie.rsi
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: sleepy-icon
+      map: ["foldedLayer"]
+      visible: false
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/PersonalItems/Plushies/tihaplushie.rsi
+    slots:
+    - HEAD
+    - NECK
+  - type: Appearance
+  - type: Foldable
+    canFoldInsideContainer: true
+    unfoldVerbText: open-eyes-verb
+    foldVerbText: close-eyes-verb
+  - type: FoldableClothing
+    foldedEquippedPrefix: sleepy
+    foldedHeldPrefix: sleepy
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_Umbra/Items/Toys/Tiha/hai.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Umbra/Items/Toys/Tiha/hmf.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/_Umbra/Items/Toys/Tiha/hmf.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/_Umbra/Items/Toys/Tiha/hmf.ogg
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/_Umbra/Items/Toys/Tiha/gasp.ogg
+  - type: Food
+    requiresSpecialDigestion: true
+    useSound:
+      path: /Audio/_Umbra/Items/Toys/Tiha/eaten_sad.ogg
+  - type: FlavorProfile
+    flavors:
+    - sadness
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    soundHit:
+      path: /Audio/_Umbra/Items/Toys/Tiha/hit_sad.ogg
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Saline
+        Quantity: 30
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 10
+        - ReagentId: Saline
+          Quantity: 10
+
+- type: loadout
+  id: PersonalItemTihaPlushie
+  storage:
+    back:
+    - PersonalItemTihaPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Tiha-Tuga

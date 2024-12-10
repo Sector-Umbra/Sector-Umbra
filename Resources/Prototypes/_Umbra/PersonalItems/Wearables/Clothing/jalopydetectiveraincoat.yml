@@ -1,0 +1,22 @@
+# Player: SlamBamActionman - Character: Jalopy Oldman
+- type: entity
+  parent: ClothingOuterCoatDetectiveLoadout
+  id: PersonalItemJalopyDetectiveRaincoat
+  name: reinforced raincoat
+  description: An old coat, padded with kevlar on the inside. "Every once in a while I think about gettin a new coat, but there's no rush on that. There's still plenty of wear in this fella!"
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Wearables/jalopydetectiveraincoat.rsi
+  - type: Clothing
+    sprite: _Umbra/PersonalItems/Wearables/jalopydetectiveraincoat.rsi
+
+- type: loadout
+  id: PersonalItemJalopyDetectiveRaincoat
+  storage:
+    back:
+    - PersonalItemJalopyDetectiveRaincoat
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Jalopy Oldman

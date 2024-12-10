@@ -1,0 +1,42 @@
+# Player: AemonTillado - Character: Michael LaRue
+- type: entity
+  name: Michael's card
+  parent: BookBase
+  id: PersonalItemMichaelCard
+  description: A faded and torn paper card, lovingly repaired with strips of tape.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Items/michaelcard.rsi
+    layers:
+    - state: michaels_card
+  - type: Item
+    size: Small
+    sprite: _Umbra/PersonalItems/Items/michaelcard.rsi
+  - type: Paper
+    content: book-text-michaels-card
+  - type: Food
+    solution: food
+    delay: 14 # Doubled time, it is thicker than paper and you really should think about what you are doing >:)
+    forceFeedDelay: 14
+  - type: FlavorProfile
+    flavors:
+    - paper
+  - type: BadFood
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 3
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 3
+
+- type: loadout
+  id: PersonalItemMichaelCard
+  storage:
+    back:
+    - PersonalItemMichaelCard
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Michael LaRue

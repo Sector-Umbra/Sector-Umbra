@@ -1,0 +1,25 @@
+# Player: AemonTillado - Character: Michael LaRue
+- type: entity
+  parent: RingBase
+  id: PersonalItemMichaelRing
+  name: Michael's ring
+  description: A white-gold wedding band, set with howlite and several blue zircons in pattern reminiscent of a silver flower. An inscription reads - "Be mine to guard this light from all eclipse."
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Wearables/michaelring.rsi
+    layers:
+    - state: michaels_ring
+  - type: Item
+    size: Tiny
+    sprite: _Umbra/PersonalItems/Wearables/michaelring.rsi
+
+- type: loadout
+  id: PersonalItemMichaelRing
+  storage:
+    back:
+    - PersonalItemMichaelRing
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Michael LaRue

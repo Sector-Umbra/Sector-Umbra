@@ -1,0 +1,22 @@
+# Player: Frostbitey - Character: Frostbite-Drago
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: PersonalItemFrostbiteCoat
+  name: frosty winter coat
+  description: A delicate, precisely made winter coat with a small label that says "Frostbite-Drago", it seems to be covered in a light layer of frost.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Wearables/frostbitecoat.rsi
+  - type: Clothing
+    sprite: _Umbra/PersonalItems/Wearables/frostbitecoat.rsi
+
+- type: loadout
+  id: PersonalItemFrostbiteCoat
+  storage:
+    back:
+    - PersonalItemFrostbiteCoat
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Frostbite-Drago

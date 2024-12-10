@@ -1,0 +1,22 @@
+# Player: KittenColony - Character: Welds-The-Pipes
+- type: entity
+  parent: ClothingMaskBase
+  id: PersonalItemWeldsChewtoy
+  name: Welds' synthetic chew fidget
+  description: A sheet of some unknown material with self-healing properties. You can't taste anything when chewing it.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Wearables/weldschewtoy.rsi
+  - type: Clothing
+    sprite: _Umbra/PersonalItems/Wearables/weldschewtoy.rsi
+
+- type: loadout
+  id: PersonalItemWeldsChewtoy
+  storage:
+    back:
+    - PersonalItemWeldsChewtoy
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Welds-The-Pipes

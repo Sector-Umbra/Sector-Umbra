@@ -1,0 +1,27 @@
+# Player: foob - Character: Jasmi-Glorb
+- type: entity
+  parent: ClothingHeadBase
+  id: PersonalItemJasmiRainbowFlower
+  name: Jasmi's rainbow hairflower
+  description: Jasmi's custom hairflower, with petals colored in a rainbow pattern.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Wearables/jasmirainbowflower.rsi
+  - type: Clothing
+    sprite:  _Umbra/PersonalItems/Wearables/jasmirainbowflower.rsi
+    slots:
+    - HEAD
+  - type: Tag
+    # Removes WhitelistChameleon and HamsterWearable
+    tags: []
+
+- type: loadout
+  id: PersonalItemJasmiRainbowFlower
+  storage:
+    back:
+    - PersonalItemJasmiRainbowFlower
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Jasmi-Wujeeta

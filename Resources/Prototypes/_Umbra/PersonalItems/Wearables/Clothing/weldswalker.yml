@@ -1,0 +1,25 @@
+# Player: KittenColony - Character: Welds-The-Pipes
+- type: entity
+  parent: ClothingShoesBase
+  id: PersonalItemWeldsWalker
+  name: Welds' R.I.G
+  description: Made from an ATMOS hardsuit and a pair of Magboots. You don't know how, but it has gyroscoptic capabilities. No wonder they're still here.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Wearables/weldswalker.rsi
+  - type: Clothing
+    sprite: _Umbra/PersonalItems/Wearables/weldswalker.rsi
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepHull
+
+- type: loadout
+  id: PersonalItemWeldsWalker
+  storage:
+    back:
+    - PersonalItemWeldsWalker
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Welds-The-Pipes

@@ -1,0 +1,27 @@
+# Player: MrGreen - Character: John Armstrong
+- type: entity
+  parent: PlushieLizard
+  id: PersonalItemJuniperPlushie
+  name: juniper armstrong plushie
+  description: A custom made lizard plushie belonging to John Armstrong, gifted by his son Juniper Armstrong. Do not eat.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_juniper
+    sprite: _Umbra/PersonalItems/Plushies/juniperplushie.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/PersonalItems/Plushies/juniperplushie.rsi
+    equippedPrefix: juniper
+    slots:
+    - HEAD
+
+- type: loadout
+  id: PersonalItemJuniperPlushie
+  storage:
+    back:
+    - PersonalItemJuniperPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - John Armstrong

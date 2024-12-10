@@ -1,0 +1,27 @@
+# Player: Sky - Character: Sky Tomson
+- type: entity
+  parent: PlushieLizard
+  id: PersonalItemSkyPlushie
+  name: sky tomson plushie
+  description: A custom made lizard plushie belonging to Sky Tomson. Don't eat it.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_sky
+    sprite: _Umbra/PersonalItems/Plushies/skyplushie.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/PersonalItems/Plushies/skyplushie.rsi
+    equippedPrefix: sky
+    slots:
+    - HEAD
+
+- type: loadout
+  id: PersonalItemSkyPlushie
+  storage:
+    back:
+    - PersonalItemSkyPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Sky Tomson
