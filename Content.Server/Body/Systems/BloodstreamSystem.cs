@@ -378,7 +378,7 @@ public sealed class BloodstreamSystem : EntitySystem
         comp.BloodlossThreshold = threshold;
     }
 
-    public void SethypervolemiaThreshold(EntityUid uid, float threshold, BloodstreamComponent? comp = null)
+    public void SetHypervolemiaThreshold(EntityUid uid, float threshold, BloodstreamComponent? comp = null)
     {
         if (!Resolve(uid, ref comp))
             return;
