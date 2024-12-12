@@ -70,7 +70,7 @@
           Quantity: 3
   - type: Bloodstream
     bloodReagent: Blood
-    bloodMaxVolume: 50
+    bloodReferenceVolume: 50
   - type: Destructible
     thresholds:
     - trigger:

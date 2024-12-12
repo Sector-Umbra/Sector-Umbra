@@ -140,11 +140,12 @@ namespace Content.Server.Body.Components
         public FixedPoint2 ChemicalMaxVolume = FixedPoint2.New(250);
 
         /// <summary>
-        ///     Max volume of internal blood storage,
+        ///     Normal volume of internal blood storage,
         ///     and starting level of blood.
+        ///     Maximum is double of normal volume.
         /// </summary>
         [DataField]
-        public FixedPoint2 BloodReferenceValue = FixedPoint2.New(300);
+        public FixedPoint2 BloodReferenceVolume = FixedPoint2.New(300);
 
         /// <summary>
         ///     Which reagent is considered this entities 'blood'?
