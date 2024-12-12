@@ -6,8 +6,6 @@
   </Box>
 
   Blood bags can store 120 Units of any reagent, but can only be manually filled through injectors (Ex: Syringes, Hypospray, IV Stands).
-  Blood bags will inject into the blood stream, not the chemical stream.
- - List of blood variants and what species they coorospond to
  - Blood bags can inject any chemical they store.
 
   ## IV Stands
@@ -23,24 +21,21 @@
     <GuideEntityEmbed Entity="CMIV" State="Unhooked" Caption="IV Stand"/>
   </Box>
 
-  - IV Stand Injecting
-  In order to make proper use of IV Stands, you must first
-  
-  - Toggle Inject Button
+  Once an IV Stand has been deplyoed, it will need a blood pack insterted into it before it can serve any use. IV Stands will take a blood bag wether it is filled or empty.
 
-  While an Iv is injected inside of a pateint, it is possible for the IV needle itself to rip out of a patient's arm. This occurs when an IV stand or Patient move to far away from one another.
-  
-  IV Stands are also capable of drawing from a patient. This will slowly drain the patient of their bloodstream's content and fill the IV Stand's bloodbag.
+  Most commonly, you will insert a filled pack. This will allow the IV stand to inject the contents of the blood pack into your patient's chemical stream, including mixtures.
 
-  IV Stands inject into a patient's blood stream, not chemical stream.
+  Alternatively, IV stands can store empty blood packs. By using the "Toggle Inject" verb, the IV stand will draw from the patient's blood stream. This will slowly drain the patient's bloodstream contents and fill the IV Stand's blood pack.
+
+  While an Iv is injected inside of a pateint, it is possible for the IV needle itself to rip out of a patient's arm. This occurs when an IV stand and/or Patient move to far away from one another.
 
   ## Summary
 
   - Blood bags are able to store 120 Units of any reagent.
-  - Both IV Stands and Blood Bags inject into the blood stream, not the chemical stream.
+  - Both IV Stands and Blood Bags inject into the chemical stream, but draw from the blood stream.
   - When used on a patient blood bags will slowly inject a patient with their contained reagents, including mixtures.
   - Empty blood bags can be filled using any injector (Ex: Syringes/Hyposprays) or IV Stands.
-  - IV Stands can draw or inject from a patient.
+  - IV Stands can draw or inject from a patient, these modes can be switched using the "Toggle Inject" verb.
   
   Below is a table for the different types of blood and what species they corrolate to:
   - [color=#7a8bf2]Ammonia Blood[/color]: Vox, Avali

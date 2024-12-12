@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using Content.Server.Body.Components;
 using Content.Server.Chat.Systems;
-using Content.Shared._RMC14.Medical.IV;
+using Content.Shared._RMC.Medical.IV;
 using Content.Shared.Chat.Prototypes;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.EntitySystems;
@@ -10,7 +10,7 @@ using Content.Shared.Damage;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 
-namespace Content.Server._RMC14.Medical.IV;
+namespace Content.Server._RMC.Medical.IV;
 
 public sealed class IVDripSystem : SharedIVDripSystem
 {

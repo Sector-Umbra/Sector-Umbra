@@ -10,13 +10,14 @@ using Content.Shared.Hands;
 using Content.Shared.Interaction;
 using Content.Shared.Popups;
 using Content.Shared.Verbs;
+using Content.Shared.Mind.Components;
 using Robust.Shared.Containers;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 
-namespace Content.Shared._RMC14.Medical.IV;
+namespace Content.Shared._RMC.Medical.IV;
 
 public abstract class SharedIVDripSystem : EntitySystem
 {
@@ -24,7 +25,6 @@ public abstract class SharedIVDripSystem : EntitySystem
     [Dependency] private readonly DamageableSystem _damageable = default!;
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private readonly INetManager _net = default!;
-    //[Dependency] private readonly SkillsSystem _skills = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly SharedSolutionContainerSystem _solutionContainer = default!;
@@ -48,9 +48,6 @@ public abstract class SharedIVDripSystem : EntitySystem
         SubscribeLocalEvent<IVDripComponent, InteractHandEvent>(OnIVInteractHand);
         SubscribeLocalEvent<IVDripComponent, GetVerbsEvent<InteractionVerb>>(OnIVVerbs);
         SubscribeLocalEvent<IVDripComponent, ExaminedEvent>(OnIVExamine);
-
-        // TODO RMC14 check for BloodstreamComponent instead of MarineComponent
-        //SubscribeLocalEvent<MarineComponent, CanDropTargetEvent>(OnMarineCanDropTarget);
 
         SubscribeLocalEvent<BloodPackComponent, MapInitEvent>(OnBloodPackMapInit);
         SubscribeLocalEvent<BloodPackComponent, AfterAutoHandleStateEvent>(OnBloodPackAfterState);
@@ -84,22 +81,9 @@ public abstract class SharedIVDripSystem : EntitySystem
 
     private void OnIVDripCanDropDragged(Entity<IVDripComponent> iv, ref CanDropDraggedEvent args)
     {
-        // TODO RMC14 check for BloodstreamComponent instead of MarineComponent
-        //if (!HasComp<MarineComponent>(args.Target) || !InRange(iv, args.Target, iv.Comp.Range))
-        //    return;
         args.Handled = true;
         args.CanDrop = true;
     }
-
-    // TODO RMC14 check for BloodstreamComponent instead of MarineComponent
-    /*     private void OnMarineCanDropTarget(Entity<MarineComponent> marine, ref CanDropTargetEvent args)
-    {
-        var iv = args.Dragged;
-        if (!TryComp(iv, out IVDripComponent? ivComp) || !InRange(iv, marine, ivComp.Range))
-            return;
-        args.Handled = true;
-        args.CanDrop = true;
-    } */
 
     private void OnIVDripDragDropDragged(Entity<IVDripComponent> iv, ref DragDropDraggedEvent args)
     {
@@ -179,9 +163,9 @@ public abstract class SharedIVDripSystem : EntitySystem
         if (args.Target is not { } target)
             return;
 
-        // TODO RMC14 check for BloodstreamComponent instead of MarineComponent
-        /*         if (!InRange(pack, target, pack.Comp.Range) || !HasComp<MarineComponent>(target))
-            return; */
+        // This should check for BloodstreamComponent but that isn't accessible to shared.
+        if (!InRange(pack, target, pack.Comp.Range) || !HasComp<MindContainerComponent>(target))
+            return;
 
         args.Handled = true;
 
@@ -191,12 +175,6 @@ public abstract class SharedIVDripSystem : EntitySystem
             DetachPack((pack, pack), user, false, true);
             return;
         }
-
-        /*         if (!_skills.HasAllSkills(user, pack.Comp.SkillRequired))
-        {
-            _popup.PopupClient(Loc.GetString("cm-iv-attach-no-skill"), user, user);
-            return;
-        } */
 
         if (user == target)
         {
@@ -284,12 +262,6 @@ public abstract class SharedIVDripSystem : EntitySystem
         if (!InRange(iv, to, iv.Comp.Range))
             return;
 
-        /*         if (!_skills.HasAllSkills(user, iv.Comp.SkillRequired))
-        {
-            _popup.PopupClient(Loc.GetString("cm-iv-attach-no-skill"), user, user);
-            return;
-        } */
-
         iv.Comp.AttachedTo = to;
         Dirty(iv);
 
@@ -300,12 +272,6 @@ public abstract class SharedIVDripSystem : EntitySystem
     {
         if (iv.Comp.AttachedTo is not { } target)
             return;
-
-        /*         if (user != null && !_skills.HasAllSkills(user.Value, iv.Comp.SkillRequired))
-        {
-            _popup.PopupClient(Loc.GetString("cm-iv-detach-no-skill"), user.Value, user.Value);
-            return;
-        } */
 
         iv.Comp.AttachedTo = default;
         Dirty(iv);
@@ -321,12 +287,6 @@ public abstract class SharedIVDripSystem : EntitySystem
         if (!InRange(pack, to, pack.Comp.Range))
             return;
 
-        /*         if (!_skills.HasAllSkills(user, pack.Comp.SkillRequired))
-        {
-            _popup.PopupClient(Loc.GetString("cm-iv-attach-no-skill"), user, user);
-            return;
-        } */
-
         pack.Comp.AttachedTo = to;
         Dirty(pack);
 
@@ -337,12 +297,6 @@ public abstract class SharedIVDripSystem : EntitySystem
     {
         if (pack.Comp.AttachedTo is not { } target)
             return;
-
-        /*         if (user != null && !_skills.HasAllSkills(user.Value, pack.Comp.SkillRequired))
-        {
-            _popup.PopupClient(Loc.GetString("cm-iv-detach-no-skill"), user.Value, user.Value);
-            return;
-        } */
 
         pack.Comp.AttachedTo = default;
         Dirty(pack);

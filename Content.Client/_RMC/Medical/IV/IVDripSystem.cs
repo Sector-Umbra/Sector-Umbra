@@ -1,8 +1,8 @@
-﻿using Content.Shared._RMC14.Medical.IV;
+﻿using Content.Shared._RMC.Medical.IV;
 using Content.Shared.Rounding;
 using Robust.Client.GameObjects;
 
-namespace Content.Client._RMC14.Medical.IV;
+namespace Content.Client._RMC.Medical.IV;
 
 public sealed class IVDripSystem : SharedIVDripSystem
 {
