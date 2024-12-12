@@ -77,9 +77,9 @@ namespace Content.Server.Body.Components
 
         /// <summary>
         ///     The base hypervolemia damage to be incurred if above <see cref="HypervolemiaThreshold"/>
-        ///     TODO: The default values are defined per mob/species in YML.
+        ///     The default values are defined per mob/species in YML.
         /// </summary>
-        [DataField(required: false)] // DOTO: return to true
+        [DataField(required: true)]
         public DamageSpecifier HypervolemiaDamage = new();
 
         /// <summary>

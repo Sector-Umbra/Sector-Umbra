@@ -142,7 +142,6 @@ public sealed class BloodstreamSystem : EntitySystem
             {
                 // bloodloss damage is based on the base value, and modified by how low your blood level is.
                 var amt = bloodstream.BloodlossDamage * (1 - bloodPercentage) * 10;
-                // var amt = bloodstream.BloodlossDamage / (0.1f + bloodPercentage); // OLD CODE: delete before PR
 
                 _damageableSystem.TryChangeDamage(uid, amt,
                     ignoreResistances: false, interruptsDoAfters: false);
@@ -174,8 +173,6 @@ public sealed class BloodstreamSystem : EntitySystem
                     uid,
                     (float)bloodstream.UpdateInterval.TotalSeconds * 2,
                     applySlur: true);
-
-                // TODO: Look up hypervolemia symptoms
 
                 // storing the drunk and stutter time so we can remove it independently from other effects additions
                 bloodstream.StatusTime += bloodstream.UpdateInterval * 2;
