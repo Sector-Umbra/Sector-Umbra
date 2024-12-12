@@ -240,4 +240,4 @@
         Asphyxiation: 1.90
     bloodlossHealDamage:
       types:
-        Asphyxiation: 0
+        Bloodloss: -1
