@@ -244,7 +244,6 @@
 # TODO
 # Crafting recipies for blood? (In Discussion)
 
-# Write a guidebook entry for both IV stands and Blood Packs
 # IVs and Bloodbags should inject into the chem stream, not blood stream.
 # Remove the IV and Blood Pack reagent whitelist.
   # In its place, IV and Bloodbag DRAW function should only pull a whitelist so they only draw species blood from people.
