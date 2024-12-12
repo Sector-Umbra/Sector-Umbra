@@ -6,7 +6,7 @@ This is the primary repository for Sector Umbra, other related repositories are 
 
 ## Links
 
-[Website](https://sector-umbra.net/) | [Wiki](https://wiki.sector-umbra.net/)
+[Website](https://sector-umbra.net/) | [Wiki](https://wiki.sector-umbra.net/) | [Latest Builds](https://sector-umbra.net/cdn/fork/sectorumbra/)
 
 ## Contributing
 
