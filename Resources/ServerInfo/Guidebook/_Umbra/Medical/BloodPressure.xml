@@ -1,15 +1,15 @@
 <Document>
 # Blood pressure
-It is important to maintain optimal blood pressure at all times. Normal healthy humanoid has around [color=cyan]300[/color] units of blood
-and scanners will read it as [color=cyan]100%[/color] of blood level.
+It is important to maintain optimal blood pressure at all times. [color=#59FF59]Normal[/color] healthy humanoid has around [color=#59FF59]300[/color] units of blood
+and scanners will read it as [color=#59FF59]100%[/color] of blood level.
 
-Blood level bellow [color=blue]90%[/color] ([color=blue]270[/color] units) is considered [color=blue]hypovolemia[/color]. 
+Blood level bellow [color=#5959FF]90%[/color] ([color=#5959FF]270[/color] units) is considered [color=#5959FF]hypovolemia[/color]. 
 
-Blood level above [color=red]110%[/color] ([color=red]330[/color] units) is considered [color=red]hypervolemia[/color].
+Blood level above [color=#FF5959]110%[/color] ([color=#FF5959]330[/color] units) is considered [color=#FF5959]hypervolemia[/color].
 
 
 ## Hypovolemia
-[color=blue]Low[/color] fluid volume presence in blood. Or simply just [color=blue]blood loss[/color].
+[color=#5959FF]Low[/color] fluid volume presence in blood. Or simply just [color=#5959FF]blood loss[/color].
 
 Causes:
 - Bleeding
@@ -29,7 +29,7 @@ Treatment:
 - Drinking big amount of water could also work as temporary solution.
 
 ## Hypervolemia
-[color=red]High[/color] fluid volume presence in blood.
+[color=#FF5959]High[/color] fluid volume presence in blood.
 
 Causes:
 - Unhealthy consumption of food and drinks
