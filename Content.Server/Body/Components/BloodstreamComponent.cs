@@ -66,7 +66,7 @@ namespace Content.Server.Body.Components
         ///     What percentage of current blood is necessary to avoid dealing hypertension damage?
         /// </summary>
         [DataField]
-        public float HypertensionThreshold = 1.1f;
+        public float HypervolemiaThreshold = 1.1f;
 
         /// <summary>
         ///     The base bloodloss damage to be incurred if below <see cref="BloodlossThreshold"/>
@@ -76,11 +76,11 @@ namespace Content.Server.Body.Components
         public DamageSpecifier BloodlossDamage = new();
 
         /// <summary>
-        ///     The base hypertension damage to be incurred if above <see cref="HypertensionThreshold"/>
+        ///     The base hypertension damage to be incurred if above <see cref="HypervolemiaThreshold"/>
         ///     TODO: The default values are defined per mob/species in YML.
         /// </summary>
         [DataField(required: false)] // DOTO: return to true
-        public DamageSpecifier HypertensionDamage = new();
+        public DamageSpecifier HypervolemiaDamage = new();
 
         /// <summary>
         ///     The base bloodloss damage to be healed if above <see cref="BloodlossThreshold"/>
@@ -144,7 +144,7 @@ namespace Content.Server.Body.Components
         ///     and starting level of blood.
         /// </summary>
         [DataField]
-        public FixedPoint2 BloodMaxVolume = FixedPoint2.New(300);
+        public FixedPoint2 BloodReferenceValue = FixedPoint2.New(300);
 
         /// <summary>
         ///     Which reagent is considered this entities 'blood'?

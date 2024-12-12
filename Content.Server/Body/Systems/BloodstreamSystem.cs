@@ -159,10 +159,10 @@ public sealed class BloodstreamSystem : EntitySystem
                 // storing the drunk and stutter time so we can remove it independently from other effects additions
                 bloodstream.StatusTime += bloodstream.UpdateInterval * 2;
             }
-            else if (bloodPercentage > bloodstream.HypertensionThreshold && !_mobStateSystem.IsDead(uid))
+            else if (bloodPercentage > bloodstream.HypervolemiaThreshold && !_mobStateSystem.IsDead(uid))
             {
                 // hypertension damage is based on the base value, and modified by how high your blood level is
-                var amt = bloodstream.HypertensionDamage * (bloodPercentage - 1) * 10;
+                var amt = bloodstream.HypervolemiaDamage * (bloodPercentage - 1) * 10;
 
                 _damageableSystem.TryChangeDamage(uid, amt,
                     ignoreResistances: false, interruptsDoAfters: false);
@@ -211,7 +211,7 @@ public sealed class BloodstreamSystem : EntitySystem
             return;
 
         chemicalSolution.MaxVolume = entity.Comp.ChemicalMaxVolume;
-        bloodSolution.MaxVolume = entity.Comp.BloodMaxVolume * 2;
+        bloodSolution.MaxVolume = entity.Comp.BloodReferenceValue * 2;
         tempSolution.MaxVolume = entity.Comp.BleedPuddleThreshold * 4; // give some leeway, for chemstream as well
 
         // Ensure blood that should have DNA has it; must be run here, in case DnaComponent has not yet been initialized
@@ -225,7 +225,7 @@ public sealed class BloodstreamSystem : EntitySystem
         }
 
         // Fill blood solution with BLOOD
-        bloodSolution.AddReagent(new ReagentId(entity.Comp.BloodReagent, GetEntityBloodData(entity.Owner)), entity.Comp.BloodMaxVolume - bloodSolution.Volume);
+        bloodSolution.AddReagent(new ReagentId(entity.Comp.BloodReagent, GetEntityBloodData(entity.Owner)), entity.Comp.BloodReferenceValue - bloodSolution.Volume);
     }
 
     private void OnDamageChanged(Entity<BloodstreamComponent> ent, ref DamageChangedEvent args)
@@ -386,7 +386,7 @@ public sealed class BloodstreamSystem : EntitySystem
         if (!Resolve(uid, ref comp))
             return;
 
-        comp.HypertensionThreshold = threshold;
+        comp.HypervolemiaThreshold = threshold;
     }
 
     /// <summary>
