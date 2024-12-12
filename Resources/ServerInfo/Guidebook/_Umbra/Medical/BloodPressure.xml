@@ -1,0 +1,51 @@
+<Document>
+# Blood pressure
+It is important to maintain optimal blood pressure at all times. Normal healthy humanoid has around [color=cyan]300[/color] units of blood
+and scanners will read it as [color=cyan]100%[/color] of blood level.
+
+Blood level bellow [color=blue]90%[/color] ([color=blue]270[/color] units) is considered [color=blue]hypovolemia[/color]. 
+
+Blood level above [color=red]110%[/color] ([color=red]330[/color] units) is considered [color=red]hypervolemia[/color].
+
+
+## Hypovolemia
+[color=blue]Low[/color] fluid volume presence in blood.
+
+Causes:
+- Bleeding
+- Blood transfusion
+- Toxins
+
+Symptoms:
+- Pale skin
+- Dizyness
+- Stuttering
+- Shortness of breath
+
+Treatment:
+- Applying correct blood packs via IV methods until patient is no longer pale or reading blood level above [color=blue]90%[/color].
+- Applying saline via IV.
+- Syringe injections instead IV is possible, but recomended.
+- Drinking big amount of water could also work as temporary solution.
+
+## Hypervolemia
+[color=red]High[/color] fluid volume presence in blood.
+
+Causes:
+- Unhealthy consumption of food and drinks
+- Administering chemical medication
+- Blood transfusion
+
+Symptoms:
+- Constant minor nose bleeds
+- Dizyness
+- Slurred speech
+- Shortness of breath
+
+Treatment:
+- Extract excess blood via IV and blood packs until patien feels no discomfort or reading blood level bellow [color=red]110%[/color].
+- Extract excess blood via syringe.
+- Apply charcoal medication
+- Inflicting bleeding wounds is NOT a valid treatment for hypervolemia.
+
+</Document>
