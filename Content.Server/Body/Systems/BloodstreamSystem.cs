@@ -180,7 +180,7 @@ public sealed class BloodstreamSystem : EntitySystem
             else if (!_mobStateSystem.IsDead(uid))
             {
                 // If they're healthy, we'll try and heal some bloodloss instead.
-                _damageableSystem.TryChangeDamage(                  // TODO: skip damage healing, healing migrated to respiration
+                _damageableSystem.TryChangeDamage(
                     uid,
                     bloodstream.BloodlossHealDamage * bloodPercentage,
                     ignoreResistances: true, interruptsDoAfters: false);
