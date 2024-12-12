@@ -63,7 +63,7 @@ namespace Content.Server.Body.Components
         public float BloodlossThreshold = 0.9f;
 
         /// <summary>
-        ///     What percentage of current blood is necessary to avoid dealing hypertension damage?
+        ///     What percentage of current blood is necessary to avoid dealing hypervolemia damage?
         /// </summary>
         [DataField]
         public float HypervolemiaThreshold = 1.1f;
@@ -76,7 +76,7 @@ namespace Content.Server.Body.Components
         public DamageSpecifier BloodlossDamage = new();
 
         /// <summary>
-        ///     The base hypertension damage to be incurred if above <see cref="HypervolemiaThreshold"/>
+        ///     The base hypervolemia damage to be incurred if above <see cref="HypervolemiaThreshold"/>
         ///     TODO: The default values are defined per mob/species in YML.
         /// </summary>
         [DataField(required: false)] // DOTO: return to true

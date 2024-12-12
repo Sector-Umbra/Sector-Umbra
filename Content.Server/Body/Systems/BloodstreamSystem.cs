@@ -161,13 +161,13 @@ public sealed class BloodstreamSystem : EntitySystem
             }
             else if (bloodPercentage > bloodstream.HypervolemiaThreshold && !_mobStateSystem.IsDead(uid))
             {
-                // hypertension damage is based on the base value, and modified by how high your blood level is
+                // hypervolemia damage is based on the base value, and modified by how high your blood level is
                 var amt = bloodstream.HypervolemiaDamage * (bloodPercentage - 1) * 10;
 
                 _damageableSystem.TryChangeDamage(uid, amt,
                     ignoreResistances: false, interruptsDoAfters: false);
 
-                // Apply dizziness as a symptom of hypertension.
+                // Apply dizziness as a symptom of hypervolemia.
                 // The effect is applied in a way that it will never be cleared without being healthy.
                 // Multiplying by 2 is arbitrary but works for this case, it just prevents the time from running out
                 _drunkSystem.TryApplyDrunkenness(
@@ -175,7 +175,7 @@ public sealed class BloodstreamSystem : EntitySystem
                     (float)bloodstream.UpdateInterval.TotalSeconds * 2,
                     applySlur: true);
 
-                // TODO: Look up hypertension symptoms
+                // TODO: Look up hypervolemia symptoms
 
                 // storing the drunk and stutter time so we can remove it independently from other effects additions
                 bloodstream.StatusTime += bloodstream.UpdateInterval * 2;
@@ -381,7 +381,7 @@ public sealed class BloodstreamSystem : EntitySystem
         comp.BloodlossThreshold = threshold;
     }
 
-    public void SetHypertensionThreshold(EntityUid uid, float threshold, BloodstreamComponent? comp = null)
+    public void SethypervolemiaThreshold(EntityUid uid, float threshold, BloodstreamComponent? comp = null)
     {
         if (!Resolve(uid, ref comp))
             return;

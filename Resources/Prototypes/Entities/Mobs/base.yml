@@ -234,7 +234,7 @@
     bloodlossDamage:
       types:
         Asphyxiation: 1
-    hypertensionDamage:
+    hypervolemiaDamage:
       types:
         Slash: 0.1
         Asphyxiation: 1.90

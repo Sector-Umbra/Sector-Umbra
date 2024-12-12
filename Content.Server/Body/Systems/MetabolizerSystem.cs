@@ -170,7 +170,7 @@ namespace Content.Server.Body.Systems
                 // skips the blood reagent from metabolising
                 if (TryComp<BloodstreamComponent>(solutionEntityUid.Value, out var bloodstream))
                 {
-                    // TODO: let blood reagent be metabolised if hypertension is present
+                    // TODO: let blood reagent be metabolised if hypervolemia is present
                     if (reagent.Prototype == bloodstream.BloodReagent.Id)
                         continue;
                 }
