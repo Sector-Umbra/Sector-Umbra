@@ -5,8 +5,9 @@
     <GuideEntityEmbed Entity="CMBloodPack" Caption="Standard Blood Bag"/>
   </Box>
 
-  Blood bags can store 120 Units of any reagent, but can only be manually filled through injectors (Ex: Syringes, Hypospray, IV Stands).
- - Blood bags can inject any chemical they store.
+  Blood bags can store [color=#a4885c]120 Units[/color] of any reagent, but can only be manually filled through injectors (Ex: Syringes, Hypospray, IV Stands).
+
+  Blood bags can inject any chemical they can store, this includes mixtures.
 
   ## IV Stands
 
@@ -23,15 +24,15 @@
 
   Once an IV Stand has been deplyoed, it will need a blood pack insterted into it before it can serve any use. IV Stands will take a blood bag wether it is filled or empty.
 
-  Most commonly, you will insert a filled pack. This will allow the IV stand to inject the contents of the blood pack into your patient's chemical stream, including mixtures.
-
+  Most commonly, a filled blood pack will be inserted. This will allow the IV stand to inject the contents of the blood pack into the patient's chemical stream, including types of mixtures.
+  
   Alternatively, IV stands can store empty blood packs. By using the "Toggle Inject" verb, the IV stand will draw from the patient's blood stream. This will slowly drain the patient's bloodstream contents and fill the IV Stand's blood pack.
 
-  While an Iv is injected inside of a pateint, it is possible for the IV needle itself to rip out of a patient's arm. This occurs when an IV stand and/or Patient move to far away from one another.
+  While an IV is injected inside of a pateint, it is possible for the IV needle itself to rip out of a patient's arm. This occurs when an IV stand and/or Patient move to far away from one another.
 
   ## Summary
 
-  - Blood bags are able to store 120 Units of any reagent.
+  - Blood bags are able to store [color=#a4885c]120 Units[/color] of any reagent.
   - Both IV Stands and Blood Bags inject into the chemical stream, but draw from the blood stream.
   - When used on a patient blood bags will slowly inject a patient with their contained reagents, including mixtures.
   - Empty blood bags can be filled using any injector (Ex: Syringes/Hyposprays) or IV Stands.
