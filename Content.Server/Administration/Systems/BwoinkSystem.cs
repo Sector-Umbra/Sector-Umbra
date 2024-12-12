@@ -351,7 +351,7 @@ namespace Content.Server.Administration.Systems
             {
                 // TODO: Ideally, CVar validation during setting should be better integrated
                 Log.Warning("Webhook URL does not appear to be valid. Using anyways...");
-                await GetWebhookData(url); // Frontier - Support for Custom URLS, we still want to see if theres Webhook data available
+                await GetWebhookData(url); // Umbra - Support for Custom URLS, we still want to see if theres Webhook data available
                 return;
             }
 
@@ -362,7 +362,7 @@ namespace Content.Server.Administration.Systems
             }
 
             // Fire and forget
-            await GetWebhookData(url); // Frontier - Support for Custom URLS
+            await GetWebhookData(url); // Umbra - Support for Custom URLS
         }
 
         private async Task<WebhookData?> GetWebhookData(string url)
@@ -478,7 +478,7 @@ namespace Content.Server.Administration.Systems
 
             var payload = GeneratePayload(existingEmbed.Description,
                 existingEmbed.Username,
-                userId.UserId, // Frontier, this is used to identify the players in the webhook
+                userId.UserId, // Umbra, this is used to identify the players in the webhook
                 existingEmbed.CharacterName);
 
             // If there is no existing embed, create a new one
@@ -565,7 +565,7 @@ namespace Content.Server.Administration.Systems
             _processingChannels.Remove(userId);
         }
 
-        private WebhookPayload GeneratePayload(string messages, string username, Guid userId, string? characterName = null) // Frontier: added Guid
+        private WebhookPayload GeneratePayload(string messages, string username, Guid userId, string? characterName = null) // Umbra: added Guid
         {
             // Add character name
             if (characterName != null)
@@ -591,7 +591,7 @@ namespace Content.Server.Administration.Systems
             return new WebhookPayload
             {
                 Username = username,
-                UserID = userId, // Frontier, this is used to identify the players in the webhook
+                UserID = userId, // Umbra, this is used to identify the players in the webhook
                 AvatarUrl = string.IsNullOrWhiteSpace(_avatarUrl) ? null : _avatarUrl,
                 Embeds = new List<WebhookEmbed>
                 {
@@ -629,7 +629,7 @@ namespace Content.Server.Administration.Systems
             }
         }
 
-        // Frontier: webhook text messages
+        // Umbra: webhook text messages
         public void OnWebhookBwoinkTextMessage(BwoinkTextMessage message, ServerApi.BwoinkActionBody body)
         {
             // Note for forks:
@@ -694,7 +694,7 @@ namespace Content.Server.Administration.Systems
             {
                 bwoinkText = $"[color=purple]{adminPrefix}{senderName}[/color]";
             }
-            else if (fromWebhook || senderAdmin is not null && senderAdmin.HasFlag(AdminFlags.Adminhelp)) // Frontier: anything sent via webhooks are from an admin.
+            else if (fromWebhook || senderAdmin is not null && senderAdmin.HasFlag(AdminFlags.Adminhelp)) // Umbra: anything sent via webhooks are from an admin.
             {
                 bwoinkText = $"[color=red]{adminPrefix}{senderName}[/color]";
             }
@@ -812,7 +812,7 @@ namespace Content.Server.Administration.Systems
                 RaiseNetworkEvent(starMuteMsg, senderChannel);
             }
         }
-        // End Frontier:
+        // End Umbra:
 
         private IList<INetChannel> GetNonAfkAdmins()
         {
@@ -849,7 +849,7 @@ namespace Content.Server.Administration.Systems
             if (!parameters.PlayedSound)
                 stringbuilder.Append(" **(S)**");
 
-            if (parameters.IsDiscord) // Frontier - Discord Indicator
+            if (parameters.IsDiscord) // Umbra - Discord Indicator
                 stringbuilder.Append(" **(DC)**");
 
             if (parameters.Icon == null)
@@ -915,7 +915,7 @@ namespace Content.Server.Administration.Systems
         public GameRunLevel RoundState { get; set; }
         public bool PlayedSound { get; set; }
         public bool NoReceivers { get; set; }
-        public bool IsDiscord { get; set; } // Frontier
+        public bool IsDiscord { get; set; } // Umbra
         public string? Icon { get; set; }
 
         public AHelpMessageParams(
@@ -925,7 +925,7 @@ namespace Content.Server.Administration.Systems
             string roundTime,
             GameRunLevel roundState,
             bool playedSound,
-            bool isDiscord = false, // Frontier
+            bool isDiscord = false, // Umbra
             bool noReceivers = false,
             string? icon = null)
         {
@@ -934,7 +934,7 @@ namespace Content.Server.Administration.Systems
             IsAdmin = isAdmin;
             RoundTime = roundTime;
             RoundState = roundState;
-            IsDiscord = isDiscord; // Frontier
+            IsDiscord = isDiscord; // Umbra
             PlayedSound = playedSound;
             NoReceivers = noReceivers;
             Icon = icon;

@@ -50,7 +50,7 @@ public sealed partial class ServerApi : IPostInjectInit
     [Dependency] private readonly IStatusHost _statusHost = default!;
     [Dependency] private readonly IConfigurationManager _config = default!;
     [Dependency] private readonly ISharedPlayerManager _playerManager = default!;
-    [Dependency] private readonly IAdminManager _adminManager = default!; // Frontier: ISharedAdminManager<IAdminManager>
+    [Dependency] private readonly IAdminManager _adminManager = default!; // Umbra: ISharedAdminManager<IAdminManager>
     [Dependency] private readonly IGameMapManager _gameMapManager = default!;
     [Dependency] private readonly IServerNetManager _netManager = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
@@ -84,7 +84,7 @@ public sealed partial class ServerApi : IPostInjectInit
         RegisterActorHandler(HttpMethod.Post, "/admin/actions/set_motd", ActionForceMotd);
         RegisterActorHandler(HttpMethod.Patch, "/admin/actions/panic_bunker", ActionPanicPunker);
 
-        RegisterHandler(HttpMethod.Post, "/admin/actions/send_bwoink", ActionSendBwoink); // Frontier - Discord Ahelp Reply
+        RegisterHandler(HttpMethod.Post, "/admin/actions/send_bwoink", ActionSendBwoink); // Umbra - Discord Ahelp Reply
     }
 
     public void Initialize()
@@ -400,7 +400,7 @@ public sealed partial class ServerApi : IPostInjectInit
     }
     #endregion
 
-    #region Frontier
+    #region Umbra
     // Creating a region here incase more actions are added in the future
 
     private async Task ActionSendBwoink(IStatusHandlerContext context)
