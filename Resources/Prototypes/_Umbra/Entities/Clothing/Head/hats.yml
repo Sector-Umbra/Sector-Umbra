@@ -23,3 +23,14 @@
     sprite: _Umbra/Clothing/Head/Hats/findshat.rsi
   - type: Clothing
     sprite: _Umbra/Clothing/Head/Hats/findshat.rsi
+
+# Alt Nurse Hat
+- type: entity
+  parent: ClothingHeadNurseHat
+  id: ClothingHeadNurseHatAlt
+  name: nurse hat
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Head/Hats/nursehatalt.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Head/Hats/nursehatalt.rsi
