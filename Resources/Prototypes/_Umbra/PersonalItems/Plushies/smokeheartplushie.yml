@@ -2,7 +2,7 @@
 - type: entity
   parent: BasePlushie
   id: PersonalItemSmokeHeartPlushie
-  name: smoke phillips' heart plushie
+  name: Smoke Phillips' heart plushie
   description: A well worn and well carried plushie depicting an anatomical heart on top of it's cartoon heart shape. A signature is embroided into it reading "Rebecca Phillips"
   suffix: PersonalItem
   components:
