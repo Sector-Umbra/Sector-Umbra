@@ -1,6 +1,6 @@
 # Players: luckyshotpictures - Character: Joetta Beedell
 - type: entity
-  name: Bobby
+  name: bobby
   parent: BaseItem
   id: PersonalItemJoettaBobby
   description: "Is Bobby!!"
