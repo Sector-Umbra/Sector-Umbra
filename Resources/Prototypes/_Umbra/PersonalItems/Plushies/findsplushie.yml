@@ -1,0 +1,27 @@
+# Player: juneszalkowska - Character: Finds-The-Treasure
+- type: entity
+  parent: PlushieLizard
+  id: PersonalItemFindsPlushie
+  name: finds-the-plushie
+  description: A dark pink lizard plushie, adorned with pastel pink stripes. It wears an adorable hat that makes it feel taller than it actually is. It reminds you of Finds-The-Treasure.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_finds
+    sprite: _Umbra/PersonalItems/Plushies/findsplushie.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/PersonalItems/Plushies/findsplushie.rsi
+    equippedPrefix: finds
+    slots:
+    - HEAD
+
+- type: loadout
+  id: PersonalItemFindsPlushie
+  storage:
+    back:
+    - PersonalItemFindsPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Finds-The-Treasure

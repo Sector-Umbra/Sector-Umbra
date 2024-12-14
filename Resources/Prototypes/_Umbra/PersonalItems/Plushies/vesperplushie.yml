@@ -1,0 +1,21 @@
+# Player: PolarTundra - Character: Vesper
+- type: entity
+  parent: PlushieMoth
+  id: PersonalItemVesperPlushie
+  name: vesper plushie
+  description: A custom made moth plushie belonging to Vesper. Do not eat. It will scream.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_vesper
+    sprite: _Umbra/PersonalItems/Plushies/vesperplushie.rsi
+
+- type: loadout
+  id: PersonalItemVesperPlushie
+  storage:
+    back:
+    - PersonalItemVesperPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Vesper

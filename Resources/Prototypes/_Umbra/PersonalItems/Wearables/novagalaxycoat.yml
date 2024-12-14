@@ -1,0 +1,30 @@
+# Player: Sphiral - Character: Nova Gem
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: PersonalItemNovaGalaxyCoat
+  name: tailored galaxy coat
+  description: A custom-tailored, colorful coat covered with the sights of the universe itself. There's a tag denoting the name "Nova Gem" on the inside.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Wearables/novagalaxycoat.rsi
+  - type: Clothing
+    sprite: _Umbra/PersonalItems/Wearables/novagalaxycoat.rsi
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+      storagebase: !type:Container
+        ents: []
+  - type: ToggleableClothing
+    clothingPrototype: PersonalItemNovaCatEars
+    slot: head
+
+- type: loadout
+  id: PersonalItemNovaGalaxyCoat
+  storage:
+    back:
+    - PersonalItemNovaGalaxyCoat
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Nova Gem
