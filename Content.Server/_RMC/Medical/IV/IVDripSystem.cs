@@ -80,8 +80,7 @@ public sealed class IVDripSystem : SharedIVDripSystem
                 if (attachedStream is { } bloodSolutionEnt &&
                     bloodSolutionEnt.Comp.Solution.Volume < bloodSolutionEnt.Comp.Solution.MaxVolume)
                 {
-                    // Don't transfer non-blood reagants
-                    Solution excludedSolution = packSol.SplitSolutionWithout(packSol.MaxVolume, packComponent.TransferableReagents);
+                    Solution excludedSolution = packSol.SplitSolutionWithout(packSol.MaxVolume);
                     _solutionContainer.TryTransferSolution(bloodSolutionEnt, packSol, ivComp.TransferAmount);
                     _solutionContainer.TryAddSolution(packSolEnt.Value, excludedSolution);
                     Dirty(packSolEnt.Value);
