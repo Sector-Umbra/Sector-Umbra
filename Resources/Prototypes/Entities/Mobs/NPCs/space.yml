@@ -39,7 +39,7 @@
     critThreshold: 150
   - type: MovementAlwaysTouching
   - type: Bloodstream
-    bloodReferenceVolume: 300
+    bloodReferenceVolume: 300 # Umbra: Metabolizing bloodstream and hypervolemia
     bloodReagent: Cryoxadone
   - type: CombatMode
   - type: Temperature
@@ -211,7 +211,7 @@
       amount: 1
       prob: 0.5
   - type: Bloodstream
-    bloodReferenceVolume: 250
+    bloodReferenceVolume: 250 # Umbra: Metabolizing bloodstream and hypervolemia
     bloodReagent: Cryoxadone
   - type: Fixtures
     fixtures:
@@ -314,7 +314,7 @@
           amount: 1
           prob: 0.3
     - type: Bloodstream
-      bloodReferenceVolume: 200
+      bloodReferenceVolume: 200 # Umbra: Metabolizing bloodstream and hypervolemia
       bloodReagent: Cryoxadone
     - type: Fixtures
       fixtures:
@@ -477,7 +477,7 @@
   - type: CombatMode
     combatToggleAction: ActionCombatModeToggleOff
   - type: Bloodstream
-    bloodReferenceVolume: 30
+    bloodReferenceVolume: 30  # Umbra: Metabolizing bloodstream and hypervolemia
     bloodReagent: Cryoxadone
   - type: CanEscapeInventory
   - type: MobPrice

@@ -167,6 +167,7 @@ namespace Content.Server.Body.Systems
                 if (reagents >= ent.Comp1.MaxReagentsProcessable)
                     return;
 
+                // Umbra: Metabolizing bloodstream and hypervolemia
                 // skips the blood reagent from metabolising
                 if (TryComp<BloodstreamComponent>(solutionEntityUid.Value, out var bloodstream))
                 {

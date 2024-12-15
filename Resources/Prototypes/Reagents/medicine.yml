@@ -657,7 +657,7 @@
         - !type:SatiateThirst
           factor: 6
         - !type:ModifyBloodLevel
-          amount: 1
+          amount: 1 # Umbra: Metabolizing bloodstream and hypervolemia
 
 - type: reagent
   id: Siderlac
@@ -1160,7 +1160,7 @@
         conditions:
         - !type:ReagentThreshold
           min: 12
-          
+
 - type: reagent
   id: Opporozidone #Name based of an altered version of the startreck chem "Opporozine"
   name: reagent-name-opporozidone

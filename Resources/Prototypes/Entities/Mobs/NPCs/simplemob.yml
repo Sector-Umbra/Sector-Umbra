@@ -109,7 +109,7 @@
     - Drowsiness
     - Adrenaline
   - type: Bloodstream
-    bloodReferenceVolume: 150
+    bloodReferenceVolume: 150 # Umbra: Metabolizing bloodstream and hypervolemia
   - type: MobPrice
     price: 150
   - type: FloatingVisuals

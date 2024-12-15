@@ -32,7 +32,7 @@ namespace Content.Server.Body.Components
         ///     What solution should this stomach push reagents into, on the body?
         /// </summary>
         [DataField]
-        public string BodySolutionName = BloodstreamComponent.DefaultBloodSolutionName;
+        public string BodySolutionName = BloodstreamComponent.DefaultBloodSolutionName; // Umbra: Metabolizing bloodstream and hypervolemia
 
         /// <summary>
         ///     Time between reagents being ingested and them being

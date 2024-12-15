@@ -113,7 +113,7 @@
     - type: Input
       context: "human"
     - type: Bloodstream
-      bloodReferenceVolume: 300
+      bloodReferenceVolume: 300 # Umbra: Metabolizing bloodstream and hypervolemia
       bloodReagent: Laughter
 
 - type: entity

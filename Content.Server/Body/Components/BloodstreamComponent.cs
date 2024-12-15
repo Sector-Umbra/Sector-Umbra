@@ -66,7 +66,7 @@ namespace Content.Server.Body.Components
         ///     What percentage of current blood is necessary to avoid dealing hypervolemia damage?
         /// </summary>
         [DataField]
-        public float HypervolemiaThreshold = 1.1f;
+        public float HypervolemiaThreshold = 1.1f; // Umbra: Metabolizing bloodstream and hypervolemia
 
         /// <summary>
         ///     The base bloodloss damage to be incurred if below <see cref="BloodlossThreshold"/>
@@ -80,7 +80,7 @@ namespace Content.Server.Body.Components
         ///     The default values are defined per mob/species in YML.
         /// </summary>
         [DataField(required: true)]
-        public DamageSpecifier HypervolemiaDamage = new();
+        public DamageSpecifier HypervolemiaDamage = new(); // Umbra: Metabolizing bloodstream and hypervolemia
 
         /// <summary>
         ///     The base bloodloss damage to be healed if above <see cref="BloodlossThreshold"/>
@@ -145,7 +145,7 @@ namespace Content.Server.Body.Components
         ///     Maximum is double of normal volume.
         /// </summary>
         [DataField]
-        public FixedPoint2 BloodReferenceVolume = FixedPoint2.New(300);
+        public FixedPoint2 BloodReferenceVolume = FixedPoint2.New(300); // Umbra: Metabolizing bloodstream and hypervolemia
 
         /// <summary>
         ///     Which reagent is considered this entities 'blood'?

@@ -120,9 +120,9 @@ public sealed class BloodstreamSystem : EntitySystem
             if (!_solutionContainerSystem.ResolveSolution(uid, bloodstream.BloodSolutionName, ref bloodstream.BloodSolution, out var bloodSolution))
                 continue;
 
-            var bloodPercentage = GetBloodLevelPercentage(uid, bloodstream);
+            var bloodPercentage = GetBloodLevelPercentage(uid, bloodstream); // Umbra: Metabolizing bloodstream and hypervolemia
             // Adds blood to their blood level if it is below the maximum; Blood regeneration. Must be alive.
-            if (bloodPercentage < 1 && !_mobStateSystem.IsDead(uid))
+            if (bloodPercentage < 1 && !_mobStateSystem.IsDead(uid))        // Umbra: Metabolizing bloodstream and hypervolemia
             {
                 TryModifyBloodLevel(uid, bloodstream.BloodRefreshAmount, bloodstream);
             }
@@ -141,7 +141,7 @@ public sealed class BloodstreamSystem : EntitySystem
             if (bloodPercentage < bloodstream.BloodlossThreshold && !_mobStateSystem.IsDead(uid))
             {
                 // bloodloss damage is based on the base value, and modified by how low your blood level is.
-                var amt = bloodstream.BloodlossDamage * (1 - bloodPercentage) * 10;
+                var amt = bloodstream.BloodlossDamage * (1 - bloodPercentage) * 10; // Umbra: Metabolizing bloodstream and hypervolemia
 
                 _damageableSystem.TryChangeDamage(uid, amt,
                     ignoreResistances: false, interruptsDoAfters: false);
@@ -158,7 +158,7 @@ public sealed class BloodstreamSystem : EntitySystem
                 // storing the drunk and stutter time so we can remove it independently from other effects additions
                 bloodstream.StatusTime += bloodstream.UpdateInterval * 2;
             }
-            else if (bloodPercentage > bloodstream.HypervolemiaThreshold && !_mobStateSystem.IsDead(uid))
+            else if (bloodPercentage > bloodstream.HypervolemiaThreshold && !_mobStateSystem.IsDead(uid)) // Umbra: Metabolizing bloodstream and hypervolemia
             {
                 // hypervolemia damage is based on the base value, and modified by how high your blood level is
                 var amt = bloodstream.HypervolemiaDamage * (bloodPercentage - 1) * 10;
@@ -208,7 +208,7 @@ public sealed class BloodstreamSystem : EntitySystem
             return;
 
         chemicalSolution.MaxVolume = entity.Comp.ChemicalMaxVolume;
-        bloodSolution.MaxVolume = entity.Comp.BloodReferenceVolume * 2;
+        bloodSolution.MaxVolume = entity.Comp.BloodReferenceVolume * 2; // Umbra: Metabolizing bloodstream and hypervolemia
         tempSolution.MaxVolume = entity.Comp.BleedPuddleThreshold * 4; // give some leeway, for chemstream as well
 
         // Ensure blood that should have DNA has it; must be run here, in case DnaComponent has not yet been initialized
@@ -222,7 +222,7 @@ public sealed class BloodstreamSystem : EntitySystem
         }
 
         // Fill blood solution with BLOOD
-        bloodSolution.AddReagent(new ReagentId(entity.Comp.BloodReagent, GetEntityBloodData(entity.Owner)), entity.Comp.BloodReferenceVolume - bloodSolution.Volume);
+        bloodSolution.AddReagent(new ReagentId(entity.Comp.BloodReagent, GetEntityBloodData(entity.Owner)), entity.Comp.BloodReferenceVolume - bloodSolution.Volume); // Umbra: Metabolizing bloodstream and hypervolemia
     }
 
     private void OnDamageChanged(Entity<BloodstreamComponent> ent, ref DamageChangedEvent args)
@@ -324,10 +324,10 @@ public sealed class BloodstreamSystem : EntitySystem
         if (_solutionContainerSystem.ResolveSolution(entity.Owner, entity.Comp.ChemicalSolutionName, ref entity.Comp.ChemicalSolution))
             _solutionContainerSystem.RemoveAllSolution(entity.Comp.ChemicalSolution.Value);
 
-        if (_solutionContainerSystem.ResolveSolution(entity.Owner, entity.Comp.BloodSolutionName, ref entity.Comp.BloodSolution))
+        if (_solutionContainerSystem.ResolveSolution(entity.Owner, entity.Comp.BloodSolutionName, ref entity.Comp.BloodSolution))   // Umbra: Metabolizing bloodstream and hypervolemia
             _solutionContainerSystem.RemoveAllSolution(entity.Comp.BloodSolution.Value);
 
-        if (_solutionContainerSystem.ResolveSolution(entity.Owner, entity.Comp.BloodSolutionName, ref entity.Comp.BloodSolution, out var bloodSolution))
+        if (_solutionContainerSystem.ResolveSolution(entity.Owner, entity.Comp.BloodSolutionName, ref entity.Comp.BloodSolution, out var bloodSolution))    // Umbra: Metabolizing bloodstream and hypervolemia
             TryModifyBloodLevel(entity.Owner, bloodSolution.MaxVolume / 2, entity.Comp);
     }
 
@@ -337,22 +337,22 @@ public sealed class BloodstreamSystem : EntitySystem
     public bool TryAddToChemicals(EntityUid uid, Solution solution, BloodstreamComponent? component = null)
     {
         return Resolve(uid, ref component, logMissing: false)
-            && _solutionContainerSystem.ResolveSolution(uid, component.BloodSolutionName, ref component.BloodSolution)
-            && _solutionContainerSystem.TryAddSolution(component.BloodSolution.Value, solution);
+            && _solutionContainerSystem.ResolveSolution(uid, component.BloodSolutionName, ref component.BloodSolution)  // Umbra: Metabolizing bloodstream and hypervolemia
+            && _solutionContainerSystem.TryAddSolution(component.BloodSolution.Value, solution);    // Umbra: Metabolizing bloodstream and hypervolemia
     }
 
     public bool FlushChemicals(EntityUid uid, string excludedReagentID, FixedPoint2 quantity, BloodstreamComponent? component = null)
     {
         if (!Resolve(uid, ref component, logMissing: false)
-            || !_solutionContainerSystem.ResolveSolution(uid, component.BloodSolutionName, ref component.BloodSolution, out var bloodSolution))
+            || !_solutionContainerSystem.ResolveSolution(uid, component.BloodSolutionName, ref component.BloodSolution, out var bloodSolution)) // Umbra: Metabolizing bloodstream and hypervolemia
             return false;
 
-        for (var i = bloodSolution.Contents.Count - 1; i >= 0; i--)
+        for (var i = bloodSolution.Contents.Count - 1; i >= 0; i--) // Umbra: Metabolizing bloodstream and hypervolemia
         {
-            var (reagentId, _) = bloodSolution.Contents[i];
-            if (reagentId.Prototype != excludedReagentID && reagentId.Prototype != component.BloodReagent)
+            var (reagentId, _) = bloodSolution.Contents[i]; // Umbra: Metabolizing bloodstream and hypervolemia
+            if (reagentId.Prototype != excludedReagentID && reagentId.Prototype != component.BloodReagent)  // Umbra: Metabolizing bloodstream and hypervolemia
             {
-                _solutionContainerSystem.RemoveReagent(component.BloodSolution.Value, reagentId, quantity);
+                _solutionContainerSystem.RemoveReagent(component.BloodSolution.Value, reagentId, quantity); // Umbra: Metabolizing bloodstream and hypervolemia
             }
         }
 
@@ -367,7 +367,7 @@ public sealed class BloodstreamSystem : EntitySystem
             return 0.0f;
         }
 
-        return bloodSolution.FillFraction * 2;
+        return bloodSolution.FillFraction * 2;  // Umbra: Metabolizing bloodstream and hypervolemia
     }
 
     public void SetBloodLossThreshold(EntityUid uid, float threshold, BloodstreamComponent? comp = null)
@@ -378,6 +378,7 @@ public sealed class BloodstreamSystem : EntitySystem
         comp.BloodlossThreshold = threshold;
     }
 
+    // Umbra: Metabolizing bloodstream and hypervolemia
     public void SetHypervolemiaThreshold(EntityUid uid, float threshold, BloodstreamComponent? comp = null)
     {
         if (!Resolve(uid, ref comp))

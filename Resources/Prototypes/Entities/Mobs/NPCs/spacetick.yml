@@ -56,7 +56,7 @@
     - id: FoodMeatXeno
       amount: 1
   - type: Bloodstream
-    bloodReferenceVolume: 50
+    bloodReferenceVolume: 50  # Umbra: Metabolizing bloodstream and hypervolemia
   - type: CombatMode
   - type: MeleeWeapon
     soundHit:

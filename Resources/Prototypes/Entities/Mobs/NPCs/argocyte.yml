@@ -1,6 +1,6 @@
 ﻿- type: entity
   save: false
-  parent: [ BaseSimpleMob, MobCombat, MobBloodstream ]
+  parent: [ BaseSimpleMob, MobCombat, MobBloodstream ]  # Umbra: Metabolizing bloodstream and hypervolemia
   id: BaseMobArgocyte
   suffix: AI
   description: A dangerous alien found on the wrong side of planets, known for their propensity for munching on ruins.
@@ -19,7 +19,7 @@
     accent: xeno
   - type: Bloodstream
     bloodReagent: FerrochromicAcid
-    bloodReferenceVolume: 75 #we don't want the map to become pools of blood
+    bloodReferenceVolume: 75 #we don't want the map to become pools of blood  # Umbra: Metabolizing bloodstream and hypervolemia
     bloodlossDamage:
       types:
         Bloodloss:

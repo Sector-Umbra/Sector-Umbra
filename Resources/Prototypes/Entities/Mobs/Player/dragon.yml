@@ -7,7 +7,7 @@
   abstract: true
   components:
   - type: Bloodstream
-    bloodReferenceVolume: 650
+    bloodReferenceVolume: 650 # Umbra: Metabolizing bloodstream and hypervolemia
   - type: GhostRole
     allowMovement: true
     allowSpeech: true
@@ -152,7 +152,7 @@
     - DoorBumpOpener
   - type: Puller
     needsHands: false
-    
+
 - type: entity
   parent: BaseMobDragon
   id: MobDragon
