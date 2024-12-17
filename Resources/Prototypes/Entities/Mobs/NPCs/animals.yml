@@ -3513,7 +3513,7 @@
     - id: FoodMeat
       amount: 4
   - type: Bloodstream
-    bloodMaxVolume: 300
+    bloodReferenceVolume: 300 # Umbra: Metabolizing bloodstream and hypervolemia
     # Horns though
   - type: MeleeWeapon
     damage:
