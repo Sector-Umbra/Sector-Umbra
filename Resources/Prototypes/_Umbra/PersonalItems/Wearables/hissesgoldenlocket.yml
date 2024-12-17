@@ -1,0 +1,59 @@
+# Players: Akira - Character: Hisses-At-Inconveniences
+- type: entity
+  parent: ClothingOuterBase
+  id: PersonalItemHissesGoldenLocket
+  name: Hisses' golden locket
+  description: A golden locket, attached by a golden chain. It has an engraved "T" in the middle of the lid, along with some gravings around it. Upon opening, you can see three characters in the foreground, standing infront of a bar counter. The person on the left side of the picture is a middle-aged reptile with light blue scales and short horns, showing a warm smile as he looks to the right, laying his hand on the character in the middle, while also gently grasping the arm of the 3rd figure. He's wearing a white shirt along with lightly ragged denim pants and a red scarf on his neck. The hooded reptilian on the right side looks towards the west with her eyes closed while her hand is resting at the shoulder of the figure on left. She's sharing a sort of similar warm smile as the other, while her grey scales absorb gentle orange-ish rays of light. She is wearing what appears to be some sort of robes with a red color, it's wrapped around her on some points, along with a red scarf. The small person in the middle isn't making any expressions - instead is glancing curiously at the figure on the right. They are wearing the same sort of robe as the other, except smaller. They are also wearing a red scarf. Their expression and light-grey colored scales remind you of someone..?
+  suffix: PersonalItem
+  components:
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Wearables/hissesgoldenlocket.rsi
+    layers:
+    - state: icon
+      map: [ "enum.ToggleVisuals.Layer" ]
+    scale: 0.5, 0.5
+  - type: Clothing
+    quickEquip: False
+    sprite: _Umbra/PersonalItems/Wearables/hissesgoldenlocket.rsi
+  - type: ToggleClothing
+    action: ActionToggleHissesLocket
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleVisuals.Toggled:
+        enum.ToggleVisuals.Layer:
+          True: {state: icon-on}
+          False: {state: icon}
+  - type: ItemToggle
+    soundActivate:
+      path: /Audio/Weapons/Guns/MagIn/bullet_insert.ogg
+      params:
+        volume: -5
+    soundDeactivate:
+      path: /Audio/Weapons/Guns/MagIn/bullet_insert.ogg
+      params:
+        volume: -5
+  - type: UseDelay
+    delay: 0.5
+
+- type: entity
+  id: ActionToggleHissesLocket
+  name: Toggle Locket
+  description: Toggles the locket open and closed.
+  components:
+  - type: InstantAction
+    itemIconStyle: BigItem
+    event: !type:ToggleActionEvent
+    useDelay: 0.5
+
+- type: loadout
+  id: PersonalItemHissesGoldenLocket
+  storage:
+    back:
+    - PersonalItemHissesGoldenLocket
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Hisses-At-Inconvenience

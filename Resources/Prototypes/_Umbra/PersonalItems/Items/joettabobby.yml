@@ -1,0 +1,24 @@
+# Players: luckyshotpictures - Character: Joetta Beedell
+- type: entity
+  name: bobby
+  parent: BaseItem
+  id: PersonalItemJoettaBobby
+  description: "Is Bobby!!"
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Items/joettabobby.rsi
+    state: bobby
+  - type: Item
+    size: Small
+    sprite: _Umbra/PersonalItems/Items/joettabobby.rsi
+
+- type: loadout
+  id: PersonalItemJoettaBobby
+  storage:
+    back:
+    - PersonalItemJoettaBobby
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Joetta Beedell
