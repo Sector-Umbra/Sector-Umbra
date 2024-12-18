@@ -1,9 +1,9 @@
 <Document>
 # Blood pressure
-It is important to maintain optimal blood pressure at all times. [color=#59FF59]Normal[/color] healthy humanoid has around [color=#59FF59]300[/color] units of blood
+It is important to maintain optimal blood pressure at all times. A [color=#59FF59]normal[/color] healthy humanoid has around [color=#59FF59]300[/color] units of blood
 and scanners will read it as [color=#59FF59]100%[/color] of blood level.
 
-Blood level bellow [color=#5959FF]90%[/color] ([color=#5959FF]270[/color] units) is considered [color=#5959FF]hypovolemia[/color]. 
+Blood level below [color=#5959FF]90%[/color] ([color=#5959FF]270[/color] units) is considered [color=#5959FF]hypovolemia[/color]. 
 
 Blood level above [color=#FF5959]110%[/color] ([color=#FF5959]330[/color] units) is considered [color=#FF5959]hypervolemia[/color].
 
@@ -18,7 +18,7 @@ Causes:
 
 Symptoms:
 - Pale skin
-- Dizyness
+- Dizziness
 - Stuttering
 - Shortness of breath
 
@@ -29,7 +29,7 @@ Treatment:
 - Drinking big amount of water could also work as temporary solution
 
 ## Hypervolemia
-[color=#FF5959]High[/color] fluid volume presence in blood.
+[color=#FF5959]High[/color] fluid volume presence in blood. Or simply just fluid [color=#FF5959]overload[/color].
 
 Causes:
 - Unhealthy consumption of food and drinks
@@ -38,14 +38,14 @@ Causes:
 
 Symptoms:
 - Constant minor nose bleeds
-- Dizzyness
+- Dizziness
 - Slurred speech
 - Shortness of breath
 
 Treatment:
 - Extract excess blood via IV and blood packs until patien feels no discomfort or blood level reading bellow [color=#FF5959]110%[/color]
 - Extract excess blood via syringe
-- Apply charcoal medication if known cause are chemicals
+- Apply charcoal medication if the known cause is chemicals
 - Inflicting bleeding wounds is NOT a valid treatment for hypervolemia
 
 </Document>
