@@ -4,6 +4,18 @@
   name: nurse PDA
   description: A medical nurse's PDA.
   components:
+  - type: Sprite
+    sprite: _Umbra/Objects/Devices/pda.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
   - type: Icon
     sprite: _Umbra/Objects/Devices/pda.rsi
     state: pda-nurse

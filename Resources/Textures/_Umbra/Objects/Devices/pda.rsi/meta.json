@@ -9,6 +9,12 @@
   "states": [
     {
       "name": "pda-nurse"
+    },
+    {
+      "name": "id_overlay"
+    },
+    {
+      "name": "light_overlay"
     }
   ]
 }
