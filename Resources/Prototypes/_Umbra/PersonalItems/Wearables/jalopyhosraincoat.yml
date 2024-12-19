@@ -20,3 +20,5 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Jalopy Oldman
+    jobs:
+    - JobHeadOfSecurity
