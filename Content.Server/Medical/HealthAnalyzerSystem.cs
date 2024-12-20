@@ -203,7 +203,7 @@ public sealed class HealthAnalyzerSystem : EntitySystem
             _solutionContainerSystem.ResolveSolution(target, bloodstream.BloodSolutionName,
                 ref bloodstream.BloodSolution, out var bloodSolution))
         {
-            bloodAmount = bloodSolution.FillFraction * 2;   // Umbra: Metabolizing bloodstream and hypervolemia
+            bloodAmount = bloodSolution.FillFraction * 2;   // Umbra: moves 100% to be at middle and 200% at maximum volume
             bleeding = bloodstream.BleedAmount > 0;
         }
 

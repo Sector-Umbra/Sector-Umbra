@@ -208,7 +208,7 @@ public sealed class BloodstreamSystem : EntitySystem
             return;
 
         chemicalSolution.MaxVolume = entity.Comp.ChemicalMaxVolume;
-        bloodSolution.MaxVolume = entity.Comp.BloodReferenceVolume * 2; // Umbra: Metabolizing bloodstream and hypervolemia
+        bloodSolution.MaxVolume = entity.Comp.BloodReferenceVolume * 2; // Umbra: enables possibility to have too much fluids
         tempSolution.MaxVolume = entity.Comp.BleedPuddleThreshold * 4; // give some leeway, for chemstream as well
 
         // Ensure blood that should have DNA has it; must be run here, in case DnaComponent has not yet been initialized
@@ -328,7 +328,7 @@ public sealed class BloodstreamSystem : EntitySystem
             _solutionContainerSystem.RemoveAllSolution(entity.Comp.BloodSolution.Value);
 
         if (_solutionContainerSystem.ResolveSolution(entity.Owner, entity.Comp.BloodSolutionName, ref entity.Comp.BloodSolution, out var bloodSolution))    // Umbra: Metabolizing bloodstream and hypervolemia
-            TryModifyBloodLevel(entity.Owner, bloodSolution.MaxVolume / 2, entity.Comp);
+            TryModifyBloodLevel(entity.Owner, entity.Comp.BloodReferenceVolume, entity.Comp);   // Umbra: Metabolizing bloodstream and hypervolemia
     }
 
     /// <summary>
@@ -367,7 +367,7 @@ public sealed class BloodstreamSystem : EntitySystem
             return 0.0f;
         }
 
-        return bloodSolution.FillFraction * 2;  // Umbra: Metabolizing bloodstream and hypervolemia
+        return bloodSolution.FillFraction * 2;  // Umbra: moves 100% to be at middle and 200% at maximum volume
     }
 
     public void SetBloodLossThreshold(EntityUid uid, float threshold, BloodstreamComponent? comp = null)
