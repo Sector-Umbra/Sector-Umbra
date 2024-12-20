@@ -10,5 +10,8 @@ consent-syndicate-thief-desc = Allows Game Masters to assign you as a minor 'emp
 consent-thief-personal-gain = Thief (Personal Gain)
 consent-thief-personal-gain-desc = Allows Game Masters to assign you as a thief for your own gains! (Also includes other companies.)
 
-consent-be-kill-target = Allow kill targets
+consent-be-kill-target = Allow Kill Target
 consent-be-kill-target-desc = Allows Game Masters to assign you as a kill target of an antagonist.
+
+consent-be-round-removal-target = Allow Round Removal Target
+consent-be-round-removal-target-desc = Allows Game Masters to assign you to be round removed as a target of an antagonist.
