@@ -11,7 +11,7 @@
     sprite: _Umbra/PersonalItems/Plushies/materialsplushie.rsi
   - type: Clothing
     quickEquip: false
-    sprite: _Umbra/PersonalItems/Plushies/materialsplushiev.rsi
+    sprite: _Umbra/PersonalItems/Plushies/materialsplushie.rsi
     equippedPrefix: materials
     slots:
     - HEAD
