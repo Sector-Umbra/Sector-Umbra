@@ -2,8 +2,8 @@
 - type: entity
   parent: AcousticGuitarInstrument
   id: PersonalItemSerendipityGuitar
-  name: Ace Bluewing's guitar
-  description: A vividly blue guitar of high quality. The name Ace Bluewing is etched on the inside of the guitar.
+  name: Serendipity Bluewing's guitar
+  description: A guitar of the highest quality that's vividly blue with a slight iridescent finish. It's platinated with many years of love and seems to be worn to fit a musicians hand perfectly with many stories to tell beneath its finish. The name "Ace Bluewing" is etched on the inside of the guitar.
   suffix: PersonalItem
   components:
   - type: Sprite
