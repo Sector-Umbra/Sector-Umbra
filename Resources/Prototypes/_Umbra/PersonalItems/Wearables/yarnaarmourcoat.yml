@@ -20,3 +20,5 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Yarna Crimson
+    jobs:
+    - JobWarden
