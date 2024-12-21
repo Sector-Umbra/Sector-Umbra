@@ -1,9 +1,11 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using System.Linq;
+using System.Diagnostics.CodeAnalysis;
 using Content.Server.Body.Components;
 using Content.Server.Chat.Systems;
 using Content.Shared._RMC.Medical.IV;
 using Content.Shared.Chat.Prototypes;
 using Content.Shared.Chemistry.Components;
+using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Damage;
@@ -75,20 +77,31 @@ public sealed class IVDripSystem : SharedIVDripSystem
             if (!TryGetBloodstream(attachedTo, out var streamSolEnt, out var streamSol, out var attachedStream))
                 continue;
 
-            if (ivComp.Injecting)
+            if (ivComp.Injecting == true)
             {
+                // Inject into an entity.
                 if (attachedStream is { } bloodSolutionEnt &&
                     bloodSolutionEnt.Comp.Solution.Volume < bloodSolutionEnt.Comp.Solution.MaxVolume)
                 {
                     Solution excludedSolution = packSol.SplitSolutionWithout(packSol.MaxVolume);
-                    _solutionContainer.TryTransferSolution(bloodSolutionEnt, packSol, ivComp.TransferAmount);
+                    _solutionContainer.TryTransferSolution(bloodSolutionEnt, packSol, ivComp.TransferAmount); // This is the line we'll change to make it inject into the chem stream.
                     _solutionContainer.TryAddSolution(packSolEnt.Value, excludedSolution);
                     Dirty(packSolEnt.Value);
                 }
             }
             else
             {
-                if (packSol.Volume < packSol.MaxVolume)
+                // Test to see if the target entity has a valid reagent to draw.
+                var canDraw = false;
+                foreach (ReagentQuantity reagent in streamSol.Contents) {
+                    if (packComponent.BloodstreamReagents.Contains(reagent.Reagent.Prototype)) {
+                        canDraw = true;
+                        break;
+                    }
+                }
+
+                // Draw from an entity.
+                if (packSol.Volume < packSol.MaxVolume && canDraw)
                 {
                     _solutionContainer.TryTransferSolution(packSolEnt.Value, streamSol, ivComp.TransferAmount);
                     Dirty(streamSolEnt.Value);
@@ -120,18 +133,29 @@ public sealed class IVDripSystem : SharedIVDripSystem
             if (!TryGetBloodstream(attachedTo, out var streamSolEnt, out var streamSol, out var attachedStream))
                 continue;
 
-            if (packComp.Injecting)
+            if (packComp.Injecting == true)
             {
+                // Inject into a entity.
                 if (attachedStream is { } bloodSolutionEnt &&
                     bloodSolutionEnt.Comp.Solution.Volume < bloodSolutionEnt.Comp.Solution.MaxVolume)
                 {
-                    _solutionContainer.TryTransferSolution(bloodSolutionEnt, packSol, packComp.TransferAmount);
+                    _solutionContainer.TryTransferSolution(bloodSolutionEnt, packSol, packComp.TransferAmount); // This is the line we'll change to make it inject into the chem stream.
                     Dirty(packSolEnt.Value);
                 }
             }
             else
             {
-                if (packSol.Volume < packSol.MaxVolume)
+                // Test to see if the target entity has a valid reagent to draw.
+                var canDraw = false;
+                foreach (ReagentQuantity reagent in streamSol.Contents) {
+                    if (packComp.BloodstreamReagents.Contains(reagent.Reagent.Prototype)) {
+                        canDraw = true;
+                        break;
+                    }
+                }
+
+                // Draw from a entity.
+                if (packSol.Volume < packSol.MaxVolume && canDraw)
                 {
                     _solutionContainer.TryTransferSolution(packSolEnt.Value, streamSol, packComp.TransferAmount);
                     Dirty(streamSolEnt.Value);

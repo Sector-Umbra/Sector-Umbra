@@ -53,6 +53,10 @@ public sealed partial class BloodPackComponent : Component
     [DataField, AutoNetworkedField]
     public ProtoId<EmotePrototype> RipEmote = "Scream";
 
+    // What reagents bloodpacks and IV stands can draw from the bloodstream.
+    // This should include all species blood.
+    [DataField, AutoNetworkedField]
+    public string[] BloodstreamReagents = ["Blood", "Sap", "AmmoniaBlood", "CopperBlood", "InsectBlood", "Slime", "SynthBlood"];
 }
 
 [Serializable, NetSerializable]
