@@ -1,6 +1,7 @@
 using System.Linq;
 using Content.Shared.Chat.Prototypes;
 using Content.Shared.Chemistry.EntitySystems;
+using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Damage;
 using Content.Shared.DoAfter;
 using Content.Shared.DragDrop;
@@ -8,6 +9,7 @@ using Content.Shared.Examine;
 using Content.Shared.FixedPoint;
 using Content.Shared.Hands;
 using Content.Shared.Interaction;
+using Content.Shared.Mind;
 using Content.Shared.Popups;
 using Content.Shared.Verbs;
 using Content.Shared.Mind.Components;
@@ -22,6 +24,7 @@ namespace Content.Shared._RMC.Medical.IV;
 public abstract class SharedIVDripSystem : EntitySystem
 {
     [Dependency] private readonly SharedContainerSystem _containers = default!;
+    [Dependency] private readonly ItemSlotsSystem _itemSlots = default!;
     [Dependency] private readonly DamageableSystem _damageable = default!;
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private readonly INetManager _net = default!;
@@ -259,13 +262,35 @@ public abstract class SharedIVDripSystem : EntitySystem
 
     private void AttachIV(Entity<IVDripComponent> iv, EntityUid user, EntityUid to)
     {
-        if (!InRange(iv, to, iv.Comp.Range))
+        if (!InRange(iv, to, iv.Comp.Range) || !HasComp<MindContainerComponent>(to))
             return;
 
         iv.Comp.AttachedTo = to;
+        UpdateBloodPackAttachment(iv);
         Dirty(iv);
 
         AttachFeedback(iv, user, to, iv.Comp.Injecting);
+    }
+
+    private void UpdateBloodPackAttachment(Entity<IVDripComponent> iv)
+    {
+        if (!TryComp(iv, out IVDripComponent? ivComp))
+            return;
+
+        if (_itemSlots.GetItemOrNull(iv, ivComp.Slot) is not { } pack)
+            return;
+
+        if (!TryComp(pack, out BloodPackComponent? packComp))
+            return;
+
+        if (iv.Comp.AttachedTo is { } target && packComp.AttachedTo is null)
+        {
+            AttachPack(new Entity<BloodPackComponent>(pack, packComp), iv, target);
+        }
+        else if (iv.Comp.AttachedTo is null & packComp.AttachedTo is not null)
+        {
+            DetachPack(new Entity<BloodPackComponent>(pack, packComp), iv, false, true);
+        }
     }
 
     protected void DetachIV(Entity<IVDripComponent> iv, EntityUid? user, bool rip, bool predict)
@@ -274,6 +299,7 @@ public abstract class SharedIVDripSystem : EntitySystem
             return;
 
         iv.Comp.AttachedTo = default;
+        UpdateBloodPackAttachment(iv);
         Dirty(iv);
 
         if (rip)
