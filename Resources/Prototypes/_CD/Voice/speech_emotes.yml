@@ -21,7 +21,7 @@
     - barked.
     - barked!
     - barking.
-    - bnark
+    - bnark # Umbra: Bnark and Bork Emote Triggers START
     - bnark.
     - bnark!
     - bnarks
@@ -40,7 +40,7 @@
     - borked
     - borked.
     - borked!
-    - borking.
+    - borking. # Umbra: Bnark and Bork Emote Triggers END
 
 - type: emote
   id: Snarl
