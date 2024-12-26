@@ -904,6 +904,8 @@
       - Hemostat
       - ClothingEyesGlassesChemical
       - WhiteCane
+      # - HandheldCrewMonitor # Umbra: Skip CD Handheld Crafting
+      - MedCrutchesForearm # CD
     dynamicRecipes:
       - ChemicalPayload
       - CryostasisBeaker

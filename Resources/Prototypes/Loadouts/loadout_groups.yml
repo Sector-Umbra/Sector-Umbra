@@ -58,6 +58,7 @@
   # - LunchboxBlue # CD - Umbra: Not merged
   # - LunchboxYellow # CD - Umbra: Not merged
   - Cane # CD
+  - MedCrutchesForearm # CD
 
 - type: loadoutGroup
   id: Glasses
