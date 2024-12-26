@@ -73,12 +73,15 @@ namespace Content.Server.Storage.EntitySystems
             var coords = Transform(args.User).Coordinates;
             var spawnEntities = GetSpawns(component.Items, _random);
             EntityUid? entityToPlaceInHands = null;
+            var spawned = new List<EntityUid>();
 
             foreach (var proto in spawnEntities)
             {
                 entityToPlaceInHands = Spawn(proto, coords);
+                spawned.Add(entityToPlaceInHands.Value);
                 _adminLogger.Add(LogType.EntitySpawn, LogImpact.Low, $"{ToPrettyString(args.User)} used {ToPrettyString(uid)} which spawned {ToPrettyString(entityToPlaceInHands.Value)}");
             }
+            RaiseLocalEvent(uid, new AfterItemsSpawnEvent(spawned.ToArray()));
 
             if (component.Sound != null)
             {
@@ -103,3 +106,5 @@ namespace Content.Server.Storage.EntitySystems
         }
     }
 }
+
+public readonly record struct AfterItemsSpawnEvent(EntityUid[] EntityUids);

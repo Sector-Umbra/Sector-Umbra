@@ -1,0 +1,66 @@
+﻿- type: entity
+  parent: [BaseItem]
+  id: TwinPointerBox
+  name: twinpointer box
+  description: A box containing a pair of twinpointers. For right when you left your right hand left.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Sprite
+    sprite: _Echo/Objects/Storage/boxes.rsi
+    state: box_twinpointer
+  - type: SpawnItemsOnUse
+    items:
+    - id: TwinPointerLeft
+    - id: TwinPointerRight
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+  - type: TwinPointer # this makes it link them on spawn
+
+# Echo: Add left half of Twinpointer
+- type: entity
+  name: twinpointer (left)
+  description: The left half of a pair of twinpointers. Great when you're never in the right.
+  id: TwinPointerLeft
+  parent: PinpointerBase
+  components:
+  - type: Sprite
+    noRot: True
+    sprite: _Echo/Objects/Devices/pinpointer.rsi
+    layers:
+    - state: twinpointer-left
+      map: ["enum.PinpointerLayers.Base"]
+    - state: pinonnull
+      map: ["enum.PinpointerLayers.Screen"]
+      shader: unshaded
+      visible: false
+  - type: Icon
+    sprite: _Echo/Objects/Devices/pinpointer.rsi
+    state: twinpointer-left
+  - type: Item
+    sprite: _Echo/Objects/Devices/pinpointer.rsi
+  - type: Pinpointer
+
+# Echo: Add left half of Twinpointer
+- type: entity
+  name: twinpointer (right)
+  description: The right half of a pair of twinpointers. Perfect when you have nothing left.
+  id: TwinPointerRight
+  parent: PinpointerBase
+  components:
+  - type: Sprite
+    noRot: True
+    sprite: _Echo/Objects/Devices/pinpointer.rsi
+    layers:
+    - state: twinpointer-right
+      map: ["enum.PinpointerLayers.Base"]
+    - state: pinonnull
+      map: ["enum.PinpointerLayers.Screen"]
+      shader: unshaded
+      visible: false
+  - type: Icon
+    sprite: _Echo/Objects/Devices/pinpointer.rsi
+    state: twinpointer-right
+  - type: Item
+    sprite: _Echo/Objects/Devices/pinpointer.rsi
+  - type: Pinpointer
