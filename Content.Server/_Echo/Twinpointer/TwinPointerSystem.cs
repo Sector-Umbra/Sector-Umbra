@@ -10,10 +10,10 @@ public sealed class TwinPointerSystem : SharedTwinPointerSystem
     public override void Initialize()
     {
         base.Initialize();
-        SubscribeLocalEvent<TwinPointerComponent, AfterItemsSpawnEvent>(Handler);
+        SubscribeLocalEvent<TwinPointerComponent, AfterItemsSpawnOnUseEvent>(Handler);
     }
 
-    private void Handler(EntityUid uid, TwinPointerComponent component, AfterItemsSpawnEvent args)
+    private void Handler(EntityUid uid, TwinPointerComponent component, AfterItemsSpawnOnUseEvent args)
     {
         var left = args.EntityUids[0];
         var right = args.EntityUids[1];
