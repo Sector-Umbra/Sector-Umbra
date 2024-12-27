@@ -1,5 +1,5 @@
 ﻿- type: entity
-  parent: [BaseItem]
+  parent: BaseItem
   id: TwinPointerBox
   name: twinpointer box
   description: A box containing a pair of twinpointers. For right when you left your right hand left.
@@ -41,7 +41,7 @@
     sprite: _Echo/Objects/Devices/pinpointer.rsi
   - type: Pinpointer
 
-# Echo: Add left half of Twinpointer
+# Echo: Add right half of Twinpointer
 - type: entity
   name: twinpointer (right)
   description: The right half of a pair of twinpointers. Perfect when you have nothing left.
