@@ -3,7 +3,7 @@
 namespace Content.Shared._Echo.Pinpointer;
 
 /// <summary>
-/// Displays a sprite on the item that points towards the target component.
+/// Echo: Used to identify TwinPointers and link them on spawn.
 /// </summary>
 [RegisterComponent, NetworkedComponent]
 [Access(typeof(SharedTwinPointerSystem))]
