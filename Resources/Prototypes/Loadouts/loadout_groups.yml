@@ -1210,7 +1210,7 @@
   - GreenSurgeryCap
   - PurpleSurgeryCap
   - NurseHat
-  - NurseHatAlt #Umbra
+  - NurseHatAlt # Umbra
 
 - type: loadoutGroup
   id: MedicalDoctorJumpsuit
