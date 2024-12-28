@@ -1210,6 +1210,7 @@
   - GreenSurgeryCap
   - PurpleSurgeryCap
   - NurseHat
+  - NurseHatAlt # Umbra
 
 - type: loadoutGroup
   id: MedicalDoctorJumpsuit
@@ -1228,6 +1229,7 @@
   - ViroJumpskirt # CD
   - GeneJumpsuit # CD
   - GeneJumpskirt # CD
+  - SkirtOfLife # Umbra
 
 - type: loadoutGroup
   id: MedicalDoctorOuterClothing
@@ -1267,6 +1269,7 @@
   - MedicalDoctorPDA
   # CD: Separate Senior roles
   # - SeniorPhysicianPDA
+  - NursePDA # Umbra Job Title
 
 - type: loadoutGroup
   id: MedicalGloves
