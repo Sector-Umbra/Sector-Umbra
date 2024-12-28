@@ -2,22 +2,22 @@
 - type: entity
   parent: AcousticGuitarInstrument
   id: PersonalItemSerendipityGuitar
-  name: Ace Bluewing's guitar
-  description: A vividly blue guitar of high quality. The name Ace Bluewing is etched on the inside of the guitar.
+  name: Serendipity Bluewing's guitar
+  description: A guitar of the highest quality that's vividly blue with a slight iridescent finish. It's platinated with many years of love and seems to be worn to fit a musicians hand perfectly with many stories to tell beneath its finish. The name "Ace Bluewing" is etched on the inside of the guitar.
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra/PersonalItems/Items/serenguitar.rsi
+    sprite: _Umbra/PersonalItems/Items/serendipityguitar.rsi
     state: icon
   - type: Item
-    sprite: _Umbra/PersonalItems/Items/serenguitar.rsi
+    sprite: _Umbra/PersonalItems/Items/serendipityguitar.rsi
     size: Normal
   - type: Clothing
     quickEquip: false
     slots:
     - back
     - suitStorage
-    sprite: _Umbra/PersonalItems/Items/serenguitar.rsi
+    sprite: _Umbra/PersonalItems/Items/serendipityguitar.rsi
   - type: SwappableInstrument
     instrumentList:
       "Nylon": {24: 0}
