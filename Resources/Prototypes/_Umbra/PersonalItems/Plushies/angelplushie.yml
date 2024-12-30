@@ -7,7 +7,7 @@
   suffix: PersonalItem
   components:
   - type: Sprite
-    state: plushie_angel
+    state: angel_plushie
     sprite: _Umbra/PersonalItems/Plushies/angelplushie.rsi
   - type: Clothing
     quickEquip: false

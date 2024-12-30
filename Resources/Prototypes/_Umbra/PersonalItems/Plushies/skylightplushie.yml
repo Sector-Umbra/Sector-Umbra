@@ -7,7 +7,7 @@
   suffix: PersonalItem
   components:
   - type: Sprite
-    state: plushie_skylight
+    state: skylight_plushie
     sprite: _Umbra/PersonalItems/Plushies/skylightplushie.rsi
   - type: Clothing
     quickEquip: false
