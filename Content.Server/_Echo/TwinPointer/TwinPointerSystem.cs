@@ -1,9 +1,9 @@
-﻿using Content.Shared._Echo.Pinpointer;
-using Content.Shared.Pinpointer;
+﻿using Content.Shared.Pinpointer;
+using TwinPointerComponent = Content.Shared._Echo.TwinPointer.TwinPointerComponent;
 
-namespace Content.Server._Echo.Twinpointer;
+namespace Content.Server._Echo.TwinPointer;
 
-public sealed class TwinPointerSystem : SharedTwinPointerSystem
+public sealed class TwinPointerSystem : EntitySystem
 {
     [Dependency] private readonly SharedPinpointerSystem _pinpointerSystem = default!;
 
