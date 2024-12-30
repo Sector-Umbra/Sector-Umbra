@@ -1,0 +1,27 @@
+# Player: Scorchiie - Character: Angel Nightwish
+- type: entity
+  parent: PlushieMoth
+  id: PersonalItemAngelPlushie
+  name: angel plushie
+  description: As fluffy as she is, only in a smaller and plush form. It smells of daisies and poppies.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_angel
+    sprite: _Umbra/PersonalItems/Plushies/angelplushie.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/PersonalItems/Plushies/angelplushie.rsi
+    equippedPrefix: angel
+    slots:
+    - HEAD
+
+- type: loadout
+  id: PersonalItemAngelPlushie
+  storage:
+    back:
+    - PersonalItemAngelPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Angel Nightwish
