@@ -7,9 +7,9 @@
   suffix: PersonalItem
   components:
   - type: Sprite
-    sprite: _Umbra/PersonalItems/Wearables/stbjumpskirt.rsi
+    sprite: _Umbra/PersonalItems/Wearables/buckshotjumpskirt.rsi
   - type: Clothing
-    sprite: _Umbra/PersonalItems/Wearables/stbjumpskirt.rsi
+    sprite: _Umbra/PersonalItems/Wearables/buckshotjumpskirt.rsi
 
 - type: loadout
   id: PersonalItemsBuckshotJumpskirt
