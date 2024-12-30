@@ -12,10 +12,10 @@
     sprite: _Umbra/PersonalItems/Wearables/buckshotjumpskirt.rsi
 
 - type: loadout
-  id: PersonalItemsBuckshotJumpskirt
+  id: PersonalItemBuckshotJumpskirt
   storage:
     back:
-    - PersonalItemsBuckshotJumpskirt
+    - PersonalItemBuckshotJumpskirt
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
