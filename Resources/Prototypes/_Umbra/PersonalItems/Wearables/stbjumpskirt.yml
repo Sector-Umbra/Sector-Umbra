@@ -1,0 +1,11 @@
+- type: loadout
+  id: PersonalItemsSTBJumpskirt
+  storage:
+    back:
+    - PersonalItemsSTBJumpskirt
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Steals-The-Buckshot
+    jobs:
+    - JobChiefEngineer
