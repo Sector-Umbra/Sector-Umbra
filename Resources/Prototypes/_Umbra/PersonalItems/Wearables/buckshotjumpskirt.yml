@@ -2,8 +2,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: PersonalItemBuckshotJumpskirt
-  name: Steals-The-Buckshots jumpskirt
-  description: A worn and noticably stained Chief Engineer jumpskirt with senior stripes 
+  name: Buckshots' jumpskirt
+  description: A worn and noticably stained Chief Engineer jumpskirt with senior stripes.
   suffix: PersonalItem
   components:
   - type: Sprite
