@@ -20,7 +20,7 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Steals-The-Buckshot
-    jobs:
-    - JobChiefEngineer
+#    jobs:
+#    - JobChiefEngineer
 
 
