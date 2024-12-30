@@ -1,7 +1,7 @@
 # Player: MissKay1994 - Character: Steals-The-Buckshot
 - type: entity
   parent: ClothingUniformBase
-  id: PersonalItemsBuckshotJumpskirt
+  id: PersonalItemBuckshotJumpskirt
   name: Steals-The-Buckshots jumpskirt
   description: A worn and noticably stained Chief Engineer jumpskirt with senior stripes 
   suffix: PersonalItem
