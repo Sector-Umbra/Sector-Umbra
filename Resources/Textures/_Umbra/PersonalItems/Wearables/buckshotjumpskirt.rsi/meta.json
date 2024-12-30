@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from TGstation: https://github.com/tgstation/tgstation/blob/c838ba21dae97db345e0113f99596decd1d66039/icons/mob/clothing/under/security.dmi. Modified and recolored by Nairodian (github) for SS14, monkey made by brainfood1183 (github) for ss14. Edited by MissKay1994 for Umbra",
+  "copyright": "icon, inhand-left, inhand-right, eqipped-INNERCLOTHING, equipped-INNERCLOTHING-monkey modified by misskay1994 (Discord) from Uniforms/ert_engineer.rsi/icon.png, inhand-left.png, inhand-right.png, eqipped-INNERCLOTHING.png, equipped-INNERCLOTHING-monkey.png commit: https://github.com/space-wizards/space-station-14/commit/fc180fefc10c0f723f96acba42f08dd9045b10e7",
   "size": {
     "x": 32,
     "y": 32
