@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "license": "CC-BY-SA-3.0",
+  "copyright": "icon, inhand-left, inhand-right modified by purpleskittleo (Discord) from bassguitar.rsi/icon.png, inhand-left.png, inhand-right.png from commit: https://github.com/space-wizards/space-station-14/commit/1470957e7e4dda5a313bbac7ad62c9fcd0641d85; equipped-SUITSTORAGE modified by purpleskittleo (Discord) from bassguitar.rsi/equipped-SUITSTORAGE.png from commit: https://github.com/space-wizards/space-station-14/commit/d3495fc51c811d6fbd8dbaa1a20bb1da77c8dbcd; equipped-BACKPACK modified by purpleskittleo (Discord) from bassguitar.rsi/equipped-BACKPACK.png from commit: https://github.com/space-wizards/space-station-14/commit/11c499039ad5e966dc547a539ff491c8d51abac0",
+  "states": [
+    {
+      "name": "icon"
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "equipped-BACKPACK",
+      "directions": 4
+    },
+    {
+      "name": "equipped-SUITSTORAGE",
+      "directions": 4
+    }
+  ]
+}
