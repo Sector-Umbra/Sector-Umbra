@@ -1,0 +1,22 @@
+# Player: IceStormtheDragon - Character: Tempestas Glacies
+- type: entity
+  parent: ClothingShoesBase
+  id: PersonalItemTempestasBalletHeels
+  name: Tempestas' ballet heels
+  description: A pair of custom made high heels, they look just about impossible to walk in with having a 6 inch tall high and a insanely high angle.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Wearables/tempestasballetheels.rsi
+  - type: Clothing
+    sprite: _Umbra/PersonalItems/Wearables/tempestasballetheels.rsi
+
+- type: loadout
+  id: PersonalItemTempestasBalletHeels
+  storage:
+    back:
+    - PersonalItemTempestasBalletHeels
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Tempestas Glacies

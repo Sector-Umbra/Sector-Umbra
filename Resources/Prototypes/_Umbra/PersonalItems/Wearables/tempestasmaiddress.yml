@@ -1,0 +1,22 @@
+# Player: IceStormtheDragon - Character: Tempestas Glacies
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: PersonalItemTempestasMaidDress
+  name: Tempestas' maid dress
+  description: A custom tailored maid dress, perfect for cleaning up messes both physically and bureaucratically, smells slightly of alcohol.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Wearables/tempestasmaiddress.rsi
+  - type: Clothing
+    sprite: _Umbra/PersonalItems/Wearables/tempestasmaiddress.rsi
+
+- type: loadout
+  id: PersonalItemTempestasMaidDress
+  storage:
+    back:
+    - PersonalItemTempestasMaidDress
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Tempestas Glacies
