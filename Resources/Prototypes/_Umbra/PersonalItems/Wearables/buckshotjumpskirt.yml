@@ -1,0 +1,26 @@
+# Player: MissKay1994 - Character: Steals-The-Buckshot
+- type: entity
+  parent: ClothingUniformBase
+  id: PersonalItemBuckshotJumpskirt
+  name: Buckshots' jumpskirt
+  description: A worn and noticably stained Chief Engineer jumpskirt with senior stripes.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Wearables/buckshotjumpskirt.rsi
+  - type: Clothing
+    sprite: _Umbra/PersonalItems/Wearables/buckshotjumpskirt.rsi
+
+- type: loadout
+  id: PersonalItemBuckshotJumpskirt
+  storage:
+    back:
+    - PersonalItemBuckshotJumpskirt
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Steals-The-Buckshot
+    jobs:
+    - JobChiefEngineer
+
+
