@@ -1,0 +1,24 @@
+# Players: Borfo - Character: Reet-Marsh
+- type: entity
+  parent: PanFluteInstrument
+  id: PersonalItemReetPanFlute
+  name: Reet-Marsh's pan flute
+  description: TODO
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Items/reetpanflute.rsi
+    state: icon
+  - type: Item
+    sprite: _Umbra/PersonalItems/Items/reetpanflute.rsi
+    size: Small
+
+- type: loadout
+  id: PersonalItemReetPanFlute
+  storage:
+    back:
+    - PersonalItemReetPanFlute
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Reet-Marsh
