@@ -3,7 +3,7 @@
   parent: PanFluteInstrument
   id: PersonalItemReetPanFlute
   name: Reet-Marsh's pan flute
-  description: TODO
+  description: A short pan flute made from unusually green reeds. It make you feel calm when played. A blue ribbon is attached to one of the pipes.
   suffix: PersonalItem
   components:
   - type: Sprite
