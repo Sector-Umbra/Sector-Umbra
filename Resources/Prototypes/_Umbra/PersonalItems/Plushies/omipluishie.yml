@@ -1,0 +1,27 @@
+# Player: MidnightFox - Character: Omi Actias
+- type: entity
+  parent: PlushieMoth
+  id: PersonalItemOmiPlushie
+  name: omi plushie
+  description: A smol, fluffy little comfort moff in the shape of Omi. Its eyes glow dimly in the dark."
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_omi
+    sprite: _Umbra/PersonalItems/Plushies/omiplushie.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/PersonalItems/Plushies/omiplushie.rsi
+    equippedPrefix: omi
+    slots:
+    - HEAD
+
+- type: loadout
+  id: PersonalItemOmiPlushie
+  storage:
+    back:
+    - PersonalItemOmiPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Omi Actias
