@@ -3,7 +3,7 @@
   parent: [Clothing, BaseFoldable]
   id: PersonalItemKarakiNanoweaveMantle
   name: Karaki's nanoweave mantle
-  description: A two piece cloak that can be folded up into a mantle.  Its made out of nanoweave in traditional colours, often worn by Avali across the Illuminate. The fabric is intricately weaved down to the atomic level, making it incredibly strong and durable. A necklace with a softly pulsing crystal is sown into fabric around the neck.
+  description: A multi piece cloak that can be folded up into a mantle.  Its made out of nanoweave in traditional colours, often worn by Avali across the Illuminate. The fabric is intricately weaved down to the atomic level, making it incredibly strong and durable. A large dream catcher with some sync crystals attached to it hang from the right shoulder. Wearing it feels like the embrace of a forgotten loved one.
   suffix: PersonalItem
   components:
   - type: Item
@@ -14,8 +14,7 @@
     - state: icon
       map: [ "unfoldedLayer" ]
     - state: icon-open
-      map: ["foldedLayer"]
-      visible: false
+      map: [ "unfoldedLayer" ]
   - type: Clothing
     sprite: _Umbra/PersonalItems/Wearables/karakinanoweavemantle.rsi
     quickEquip: true
@@ -28,7 +27,6 @@
     foldVerbText: fold-open-verb
   - type: FoldableClothing
     foldedEquippedPrefix: open
-    foldedHeldPrefix: open
   - type: Tag
     tags:
     - WhitelistChameleon
