@@ -1,0 +1,25 @@
+# Player: potayo - Character: Sparks-Of-Hope
+- type: entity
+  parent: PlushieLizard
+  id: PersonalItemSparksPlushie
+  name: sparks plushie
+  description: A small fluffy lizard plushie with metallic robot legs and an implant all across his spine. You want to throw it at someone very badly.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_sparks
+    sprite: _Umbra/PersonalItems/Plushies/sparksplushie.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/PersonalItems/Plushies/sparksplushie.rsi
+    equippedPrefix: sparks
+
+- type: loadout
+  id: PersonalItemSparksPlushie
+  storage:
+    back:
+    - PersonalItemSparksPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Sparks-Of-Hope
