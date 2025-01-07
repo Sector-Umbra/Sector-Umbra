@@ -14,7 +14,8 @@
     - state: icon
       map: [ "unfoldedLayer" ]
     - state: icon-open
-      map: [ "unfoldedLayer" ]
+      map: [ "foldedLayer" ]
+      visible: false
   - type: Clothing
     sprite: _Umbra/PersonalItems/Wearables/karakinanoweavemantle.rsi
     quickEquip: true
