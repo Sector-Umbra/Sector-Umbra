@@ -5,7 +5,6 @@ using Content.Server.Chat.Systems;
 using Content.Shared._RMC.Medical.IV;
 using Content.Shared.Chat.Prototypes;
 using Content.Shared.Chemistry.Components;
-using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Damage;
@@ -65,6 +64,9 @@ public sealed class IVDripSystem : SharedIVDripSystem
 
             if (!TryComp(pack, out BloodPackComponent? packComponent))
                 continue;
+
+            // Sync IV Stand Inject/Draw Status to Inserted Blood Pack
+            packComponent.Injecting = ivComp.Injecting;
 
             Dirty(ivId, ivComp);
             UpdateIVVisuals((ivId, ivComp));

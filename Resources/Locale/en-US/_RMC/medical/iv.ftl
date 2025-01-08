@@ -2,11 +2,9 @@
 cm-iv-attach-others-injecting = {$user} attaches {THE($iv)} to {$target}, injecting into {OBJECT($target)}.
 cm-iv-attach-self-drawing = You attach {THE($iv)} to {$target}, taking blood from {OBJECT($target)}.
 cm-iv-attach-others-drawing = {$user} attaches {THE($iv)} to {$target}, taking blood from {OBJECT($target)}.
-cm-iv-attach-no-skill = You don't know how to connect this!
 
 cm-iv-detach-self = You detach {THE($iv)} from {$target}.
 cm-iv-detach-others = {$user} detaches {THE($iv)} from {$target}.
-cm-iv-detach-no-skill = You don't know how to disconnect this!
 
 cm-iv-rip = The needle is ripped out of {$target}, doesn't that hurt?
 cm-iv-now-injecting = The IV drip is now injecting.

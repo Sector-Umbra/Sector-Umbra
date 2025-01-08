@@ -9,7 +9,6 @@ using Content.Shared.Examine;
 using Content.Shared.FixedPoint;
 using Content.Shared.Hands;
 using Content.Shared.Interaction;
-using Content.Shared.Mind;
 using Content.Shared.Popups;
 using Content.Shared.Verbs;
 using Content.Shared.Mind.Components;
@@ -316,7 +315,8 @@ public abstract class SharedIVDripSystem : EntitySystem
         pack.Comp.AttachedTo = to;
         Dirty(pack);
 
-        AttachFeedback(pack, user, to, pack.Comp.Injecting);
+        if (!HasComp<IVDripComponent>(user))
+            AttachFeedback(pack, user, to, pack.Comp.Injecting);
     }
 
     protected void DetachPack(Entity<BloodPackComponent> pack, EntityUid? user, bool rip, bool predict)
@@ -329,7 +329,7 @@ public abstract class SharedIVDripSystem : EntitySystem
 
         if (rip)
             DoRip(pack.Comp.RipDamage, target, user, pack.Comp.RipEmote, predict);
-        else
+        else if (!HasComp<IVDripComponent>(user))
             DoDetachFeedback(pack, target, user, predict);
     }
 
@@ -347,7 +347,10 @@ public abstract class SharedIVDripSystem : EntitySystem
 
     private void ToggleInject(EntityUid iv, ref bool injecting, EntityUid user)
     {
+        // Sync IV Stand Inject/Draw Status to Inserted Blood Pack
         injecting = !injecting;
+        if (TryComp(iv, out BloodPackComponent? pack))
+            pack.Injecting = injecting;
 
         var msg = injecting
             ? Loc.GetString("cm-iv-now-injecting")
