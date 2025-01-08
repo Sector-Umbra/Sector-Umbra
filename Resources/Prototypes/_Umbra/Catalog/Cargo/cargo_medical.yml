@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: MedicalEmergencyBlood
+  icon:
+    sprite: _RMC/Objects/Medical/blood_pack.rsi
+    state: bloodpack
+  product: CrateMedicalEmergencyBlood
+  cost: 5000
+  category: cargoproduct-category-name-medical
+  group: market
