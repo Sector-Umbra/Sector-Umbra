@@ -1,0 +1,9 @@
+- type: emoteSounds
+  id: Mantidae
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      path: /Audio/_Umbra/Voice/Mantidae/mantidae_scream.ogg
+    Laugh:
+      path: /Audio/_Umbra/Voice/Mantidae/mantidae_laugh.ogg
