@@ -21,7 +21,11 @@
     state: pda-nurse
   - type: Pda
     id: MedicalIDCard
-    state: pda-nurse
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+         !type:String
+         pda-nurse
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
     accentVColor: "#b52a46"
