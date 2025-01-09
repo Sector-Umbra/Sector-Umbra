@@ -1,0 +1,29 @@
+# Just random important things so it hopefully works
+
+- type: marking
+  id: MantidaeLeftAppendageDefault
+  bodyPart: LHand
+  markingCategory: Overlay
+  speciesRestriction: [Mantidae]
+  sprites:
+  - sprite: _Umbra/Mobs/Customization/Mantidae/mantidae.rsi
+    state: l_default
+
+- type: marking
+  id: MantidaeRightAppendageDefault
+  bodyPart: RHand
+  markingCategory: Overlay
+  speciesRestriction: [Mantidae]
+  sprites:
+  - sprite: _Umbra/Mobs/Customization/Mantidae/mantidae.rsi
+    state: r_default
+
+- type: marking
+  id: MantidaeAntennaeDefault
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Mantidae]
+  sprites:
+  - sprite: _Umbra/Mobs/Customization/Mantidae/mantidae.rsi
+    state: antennae_default
+

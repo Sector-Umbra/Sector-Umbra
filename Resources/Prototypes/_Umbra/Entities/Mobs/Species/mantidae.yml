@@ -1,0 +1,141 @@
+- type: entity
+  save: false
+  name: Urist Mc-Chitin
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobMantidae
+  abstract: true
+  components:
+  - type: HumanoidAppearance
+    species: Mantidae
+    hideLayersOnEquip:
+    - HeadTop
+    - HeadSide
+  - type: Hunger
+  - type: Thirst
+  - type: Tag
+    tags:
+    - CanPilot
+    - FootstepSound
+    - DoorBumpOpener
+    - AnomalyHost
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+      - id: FoodMeatSpider
+        amount: 5
+  - type: Temperature
+    heatDamageThreshold: 325
+    coldDamageThreshold: 285
+    currentTemperature: 310.15
+  - type: TemperatureSpeed # just took this from lizards lol
+    thresholds:
+      301: 0.8
+      295: 0.6
+      285: 0.4
+  # Damage (Self)
+  - type: Bloodstream
+    bloodReagent: InsectBlood
+  # Damage (Others)
+  - type: MeleeWeapon
+    soundHit:
+      collection: Punch
+    angle: 30
+    animation: WeaponArcFist
+    damage:
+      types:
+        Blunt: 7
+  # Visual & Audio
+  - type: DamageVisuals
+    damageOverlayGroups:
+      Brute:
+        sprite: Mobs/Effects/brute_damage.rsi
+        color: "#162581"
+      Burn:
+        sprite: Mobs/Effects/burn_damage.rsi
+  - type: Speech
+    speechVerb: Arachnid #Needs changing!
+    speechSounds: Mantidae #Needs changing!
+    allowedEmotes: ['Click', 'Chitter']
+  - type: Vocal
+    sounds:
+      Male: Mantidae 
+      Female: Mantidae  
+      Unsexed: Mantidae 
+  - type: TypingIndicator
+    proto: spider
+  - type: Sprite # I'd prefer if these maps were better. Insert map pun here.
+    layers:
+      - map: [ "enum.HumanoidVisualLayers.Chest" ]
+      - map: [ "enum.HumanoidVisualLayers.Head" ]
+      - map: [ "enum.HumanoidVisualLayers.Snout" ]
+      - map: [ "enum.HumanoidVisualLayers.Eyes" ]
+      - map: [ "enum.HumanoidVisualLayers.RArm" ]
+      - map: [ "enum.HumanoidVisualLayers.LArm" ]
+      - map: [ "enum.HumanoidVisualLayers.RLeg" ]
+      - map: [ "enum.HumanoidVisualLayers.LLeg" ]
+      - map: ["jumpsuit"]
+      - map: ["enum.HumanoidVisualLayers.LFoot"]
+      - map: ["enum.HumanoidVisualLayers.RFoot"]
+      - map: ["enum.HumanoidVisualLayers.LHand"]
+      - map: ["enum.HumanoidVisualLayers.RHand"]
+      - map: [ "gloves" ]
+      - map: [ "shoes" ]
+      - map: [ "ears" ]
+      - map: [ "outerClothing" ]
+      - map: [ "eyes" ]
+      - map: [ "belt" ]
+      - map: [ "id" ]
+      - map: [ "enum.HumanoidVisualLayers.Tail" ] 
+      - map: [ "neck" ]
+      - map: [ "back" ]
+      - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
+      - map: [ "enum.HumanoidVisualLayers.Hair" ] 
+      - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
+      - map: [ "enum.HumanoidVisualLayers.HeadTop" ]
+      - map: [ "mask" ]
+      - map: [ "head" ]
+      - map: [ "pocket1" ]
+      - map: [ "pocket2" ]
+      - map: ["enum.HumanoidVisualLayers.Handcuffs"]
+        color: "#ffffff"
+        sprite: Objects/Misc/handcuffs.rsi
+        state: body-overlay-2
+        visible: false
+      - map: [ "clownedon" ] # Dynamically generated
+        sprite: "Effects/creampie.rsi"
+        state: "creampie_arachnid"
+        visible: false
+  - type: Inventory
+    speciesId: Mantidae
+    displacements:
+      eyes:
+        sizeMaps:
+          32:
+            sprite: _Umbra/Mobs/Species/Mantidae/displacement.rsi
+            state: eyes
+      back:
+        sizeMaps:
+          32:
+            sprite: _Umbra/Mobs/Species/Mantidae/displacement.rsi
+            state: back
+      head:
+        sizeMaps:
+          32:
+            sprite: _Umbra/Mobs/Species/Mantidae/displacement.rsi
+            state: head
+      ears:
+        sizeMaps:
+          32:
+            sprite: _Umbra/Mobs/Species/Mantidae/displacement.rsi
+            state: ears
+
+- type: entity
+  parent: BaseSpeciesDummy
+  id: MobMantidaeDummy
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HumanoidAppearance
+    species: Mantidae
+
+
+#>88w88<
