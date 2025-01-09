@@ -43,7 +43,7 @@
     animation: WeaponArcFist
     damage:
       types:
-        Blunt: 8
+        Blunt: 7
   # Visual & Audio
   - type: DamageVisuals
     damageOverlayGroups:
