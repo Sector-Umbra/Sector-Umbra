@@ -1051,8 +1051,4 @@
   - type: ProjectileSpread
     proto: BulletDisablerSmg
     count: 3 #bit stronger than a disabler if you hit your shots you goober, still not a 2 hit stun though
-<<<<<<< HEAD
     spread: 9
-=======
-    spread: 9 
->>>>>>> 278d22c74bf566c129374f14aab24f98db07677b
