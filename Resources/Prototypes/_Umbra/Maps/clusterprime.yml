@@ -9,7 +9,7 @@
       stationProto: StandardNanotrasenStation
       components:
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Shuttles/emergency_cluster.yml
+          emergencyShuttlePath: /Maps/_Umbra/Shuttles/emergency_jeremiah.yml
         - type: StationNameSetup
           mapNameTemplate: '{0} Cluster Prime {1}'
           nameGenerator:
@@ -47,7 +47,6 @@
             SeniorResearcher: [ 1 , 1 ]
             Scientist: [ 3, 3 ]
             ResearchAssistant: [ 2, 4 ]
-            Borg: [ 2, 2 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
@@ -64,4 +63,6 @@
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
-            
+            #silicon
+            StationAi: [ 1, 1 ]
+            Borg: [ 2, 2 ]
