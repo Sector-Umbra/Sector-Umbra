@@ -359,6 +359,10 @@ public sealed class BloodstreamSystem : EntitySystem
         return true;
     }
 
+    // Umbra: Metabolizing bloodstream and hypervolemia
+    /// <summary>
+    ///     Gets a percentage in [0.0, 2.0] interval, where 1.0 is normal blood level.
+    /// </summary>
     public float GetBloodLevelPercentage(EntityUid uid, BloodstreamComponent? component = null)
     {
         if (!Resolve(uid, ref component)
@@ -367,7 +371,13 @@ public sealed class BloodstreamSystem : EntitySystem
             return 0.0f;
         }
 
-        return bloodSolution.FillFraction * 2;  // Umbra: moves 100% to be at middle and 200% at maximum volume
+        // Umbra: Metabolizing bloodstream and hypervolemia
+        if (component.BloodReferenceVolume == 0)
+        {
+            return 0.0f;
+        }
+
+        return bloodSolution.Volume.Float() / component.BloodReferenceVolume.Float();
     }
 
     public void SetBloodLossThreshold(EntityUid uid, float threshold, BloodstreamComponent? comp = null)

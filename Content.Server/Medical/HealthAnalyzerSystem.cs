@@ -1,4 +1,5 @@
 using Content.Server.Body.Components;
+using Content.Server.Body.Systems;  // Umbra: Metabolizing bloodstream and hypervolemia
 using Content.Server.Medical.Components;
 using Content.Server.PowerCell;
 using Content.Server.Temperature.Components;
@@ -32,6 +33,7 @@ public sealed class HealthAnalyzerSystem : EntitySystem
     [Dependency] private readonly UserInterfaceSystem _uiSystem = default!;
     [Dependency] private readonly TransformSystem _transformSystem = default!;
     [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
+    [Dependency] private readonly BloodstreamSystem _bloodstreamSystem = default!; // Umbra: Metabolizing bloodstream and hypervolemia
 
     public override void Initialize()
     {
@@ -203,7 +205,7 @@ public sealed class HealthAnalyzerSystem : EntitySystem
             _solutionContainerSystem.ResolveSolution(target, bloodstream.BloodSolutionName,
                 ref bloodstream.BloodSolution, out var bloodSolution))
         {
-            bloodAmount = bloodSolution.FillFraction * 2;   // Umbra: moves 100% to be at middle and 200% at maximum volume
+            bloodAmount = _bloodstreamSystem.GetBloodLevelPercentage(target, bloodstream);  // Umbra: Metabolizing bloodstream and hypervolemia
             bleeding = bloodstream.BleedAmount > 0;
         }
 
