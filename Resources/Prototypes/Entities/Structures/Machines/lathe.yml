@@ -475,7 +475,6 @@
       - SolarControlComputerCircuitboard
       - SolarTrackerElectronics
       - TurboItemRechargerCircuitboard
-      - PowerComputerCircuitboard
       - AutolatheHyperConvectionMachineCircuitboard
       - ProtolatheHyperConvectionMachineCircuitboard
       - CircuitImprinterHyperConvectionMachineCircuitboard
@@ -522,6 +521,7 @@
       - ReagentGrinderIndustrialMachineCircuitboard
       - JukeboxCircuitBoard
       - SMESAdvancedMachineCircuitboard
+      - HolopadMachineCircuitboard
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - ShuttleGunDusterCircuitboard
@@ -904,6 +904,8 @@
       - Hemostat
       - ClothingEyesGlassesChemical
       - WhiteCane
+      # - HandheldCrewMonitor # Umbra: Skip CD Handheld Crafting
+      - MedCrutchesForearm # CD
     dynamicRecipes:
       - ChemicalPayload
       - CryostasisBeaker
