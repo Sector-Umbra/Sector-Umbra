@@ -33,7 +33,7 @@ using Robust.Shared.Containers;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
-using Content.Server.Traits.Assorted;
+using Content.Server.Traits.Assorted; // Umbra: Unclonable Trait
 
 namespace Content.Server.Cloning
 {
