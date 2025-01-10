@@ -1,12 +1,9 @@
-# Red phone, but CentCom intercom
-# Note: the ID is hijacked from Resources/Prototypes/Entities/Objects/Fun/Instruments/instruments_misc.yml
-# New upstream ID: PhoneInstrumentUpstream
-# Child entites also have PhoneInstrumentUpstream parent: PhoneInstrumentSyndicate, BananaPhoneInstrument
+# Umbra: Red phone, but CentCom intercom from Harmony
 - type: entity
-  id: PhoneInstrument
-  parent: [BaseItem, BaseCommandContraband]
+  id: PhoneInstrumentCentcomm
+  parent: PhoneInstrument
   name: red phone
-  suffix: harmony intercom
+  suffix: intercom
   description: Should anything ever go wrong...
   components:
     - type: Sprite
