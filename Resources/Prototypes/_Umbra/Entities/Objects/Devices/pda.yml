@@ -1,0 +1,34 @@
+- type: entity
+  parent: BaseMedicalPDA
+  id: NursePDA
+  name: nurse PDA
+  description: A medical nurse's PDA.
+  components:
+  - type: Sprite
+    sprite: _Umbra/Objects/Devices/pda.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+      state: "pda-nurse"
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
+  - type: Icon
+    sprite: _Umbra/Objects/Devices/pda.rsi
+    state: pda-nurse
+  - type: Pda
+    id: MedicalIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+         !type:String
+         pda-nurse
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentVColor: "#b52a46"
+  - type: RenameId
+    value: umbra-job-title-nurse

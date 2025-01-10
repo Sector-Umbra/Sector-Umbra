@@ -8,6 +8,7 @@
     - outerClothing
   - type: Sprite
     state: icon
+  - type: AllowSuitStorage #Umbra Change
 
 - type: entity
   abstract: true

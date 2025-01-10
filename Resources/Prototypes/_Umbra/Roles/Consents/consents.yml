@@ -37,3 +37,11 @@
   antagonist: true
   setPreference: true
   visiblePreference: true
+
+- type: antag
+  id: ConsentBeRoundRemovalTarget
+  name: consent-be-round-removal-target
+  objective: consent-be-round-removal-target-desc
+  antagonist: true
+  setPreference: true
+  visiblePreference: true

@@ -1,0 +1,27 @@
+# Player: Slugcta - Character: Hisses-At-Inconvenience
+- type: entity
+  parent: PlushieLizard
+  id: PersonalItemHissesPlushie
+  name: hisses plushie
+  description: A reptilian plushie made to look like Hisses-At-Inconvenience. It's silky smooth and slightly warm to touch. You wonder if she even wanted this...
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_hisses
+    sprite: _Umbra/PersonalItems/Plushies/hissesplushie.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/PersonalItems/Plushies/hissesplushie.rsi
+    equippedPrefix: hisses
+    slots:
+    - HEAD
+
+- type: loadout
+  id: PersonalItemHissesPlushie
+  storage:
+    back:
+    - PersonalItemHissesPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Anxeeth-Duna

@@ -1,0 +1,22 @@
+# Player: Xolotl - Character: Druger Phillips Ruger Dug
+- type: entity
+  parent: ClothingUniformBase
+  id: PersonalItemDrugerSuit
+  name: drugeristic suit
+  description: A flambuoyant purple suit in the personal style of famous zookeeper and activist Druger Phillips Ruger Dug. You swear that you might have seen it on TV.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Wearables/drugersuit.rsi
+  - type: Clothing
+    sprite: _Umbra/PersonalItems/Wearables/drugersuit.rsi
+
+- type: loadout
+  id: PersonalItemDrugerSuit
+  storage:
+    back:
+    - PersonalItemDrugerSuit
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Druger Phillips Ruger Dug

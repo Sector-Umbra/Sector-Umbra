@@ -1,0 +1,23 @@
+# Player: wzzker21 - Character: Caden Keener
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: PersonalItemCadenCollarCoat
+  name: Big Collar Black Coat
+  description: Custom-made tailored black coat with a custom collar. Crafted from an ultra-lightweight yet durable fabric.
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/OuterClothing/Coats/cadencollarcoat.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/OuterClothing/Coats/cadencollarcoat.rsi
+
+- type: loadout
+  id: PersonalItemCadenCollarCoat
+  storage:
+    back:
+    - PersonalItemCadenCollarCoat
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Caden Keener
+    jobs:
+    - JobChiefEngineer

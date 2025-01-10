@@ -65,8 +65,12 @@ namespace Content.IntegrationTests.Tests
             "Train",
             "Oasis",
             "Cog",
+            "Gate",
+            "Amber",
+            "Loop",
             "Xeno", // Umbra
-            "Iris" // Umbra
+            "Iris", // Umbra
+			"ClusterPrime" //Umbra
         };
 
         // UMBRA: We need to be able to mark non-upstream maps as not tested.
@@ -259,6 +263,7 @@ namespace Content.IntegrationTests.Tests
                     // This is done inside gamemap test because loading the map takes ages and we already have it.
                     var comp = entManager.GetComponent<StationJobsComponent>(station);
                     var jobs = new HashSet<ProtoId<JobPrototype>>(comp.SetupAvailableJobs.Keys);
+
                     var spawnPoints = entManager.EntityQuery<SpawnPointComponent>()
                         .Where(x => x.SpawnType == SpawnPointType.Job && x.Job != null)
                         .Select(x => x.Job.Value);

@@ -1,0 +1,24 @@
+# Player: SlamBamActionman - Character: Jalopy Oldman
+- type: entity
+  parent: ClothingOuterCoatHoSTrench
+  id: PersonalItemJalopyHoSRaincoat
+  name: composite raincoat
+  description: An old sailor's raincoat. There's some modern flexible composite material sewn into the lining, upgrading it to comply with NanoTrasen Command standards.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Wearables/jalopyhosraincoat.rsi
+  - type: Clothing
+    sprite: _Umbra/PersonalItems/Wearables/jalopyhosraincoat.rsi
+
+- type: loadout
+  id: PersonalItemJalopyHoSRaincoat
+  storage:
+    back:
+    - PersonalItemJalopyHoSRaincoat
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Jalopy Oldman
+    jobs:
+    - JobHeadOfSecurity

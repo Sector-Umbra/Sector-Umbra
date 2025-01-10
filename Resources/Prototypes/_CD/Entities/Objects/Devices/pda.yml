@@ -6,7 +6,11 @@
   components:
   - type: Pda
     id: PrisonerIDCard
-    state: pda-clear
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-clear
   - type: Icon
     state: pda-clear
 
@@ -18,9 +22,92 @@
   components:
   - type: Pda
     id: PrivateInvestigatorIDCard
-    state: pda-privateinvestigator
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-privateinvestigator
   - type: Icon
     state: pda-privateinvestigator
+
+# Senior Roles
+- type: entity
+  parent: BasePDA
+  id: SeniorEngineerPDA
+  name: senior engineer PDA
+  description: Seems to have been taken apart and put back together several times.
+  components:
+  - type: Pda
+    id: SeniorEngineerIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-seniorengineer
+  - type: PdaBorderColor
+    borderColor: "#949137"
+    accentVColor: "#CD6900"
+  - type: Icon
+    state: pda-seniorengineer
+
+- type: entity
+  parent: BasePDA
+  id: SeniorResearcherPDA
+  name: senior researcher PDA
+  description: Looks like it's been through years of chemical burns and explosions.
+  components:
+  - type: Pda
+    id: SeniorResearcherIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-seniorresearcher
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentHColor: "#8900c9"
+    accentVColor: "#8900c9"
+  - type: Icon
+    state: pda-seniorresearcher
+
+- type: entity
+  parent: BaseMedicalPDA
+  id: SeniorPhysicianPDA
+  name: senior physician PDA
+  description: Smells faintly like iron and chemicals. Has a built-in health analyzer.
+  components:
+  - type: Pda
+    id: SeniorPhysicianIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-seniorphysician
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentHColor: "#447987"
+    accentVColor: "#B34200"
+  - type: Icon
+    state: pda-seniorphysician
+
+- type: entity
+  parent: [ BaseSecurityPDA, BasePDA ]
+  id: SeniorOfficerPDA
+  name: senior officer PDA
+  description: Beaten, battered and broken, but just barely useable.
+  components:
+  - type: Pda
+    id: SeniorOfficerIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-seniorofficer
+  - type: PdaBorderColor
+    borderColor: "#A32D26"
+    accentVColor: "#DFDFDF"
+  - type: Icon
+    state: pda-seniorofficer
 
 # Alternate Titles
 - type: entity
@@ -31,7 +118,11 @@
   components:
     - type: Pda
       id: ResearchIDCard
-      state: pda-roboticist
+    - type: Appearance
+      appearanceDataInit:
+       enum.PdaVisuals.PdaType:
+         !type:String
+         pda-roboticist
     - type: PdaBorderColor
       borderColor: "#f4f4f4"
       accentVColor: "#730402"
@@ -50,6 +141,7 @@
     sprite: _CD/Objects/Devices/pda.rsi
     layers:
     - map: [ "enum.PdaVisualLayers.Base" ]
+      state: "pda-offduty"
     - state: "light_overlay"
       map: [ "enum.PdaVisualLayers.Flashlight" ]
       shader: "unshaded"
@@ -63,14 +155,13 @@
     state: pda-offduty
   - type: Pda
     id: PassengerIDCard
-    state: pda-offduty
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-offduty
   - type: PdaBorderColor
     borderColor: "#717059"
     accentVColor: "#3a3a3a"
-  - type: Clothing
-    quickEquip: false
-    slots:
-    - idcard
-    - Belt
   - type: RenameId
     value: cd-job-title-offduty

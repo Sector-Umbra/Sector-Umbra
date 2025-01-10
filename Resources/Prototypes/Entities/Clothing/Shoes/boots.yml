@@ -73,7 +73,7 @@
     sprite: Clothing/Shoes/Boots/highheelboots.rsi
 
 - type: entity
-  parent: [ ClothingShoesMilitaryBase, BaseRestrictedContraband ]
+  parent: [ ClothingShoesMilitaryBase ]
   id: ClothingShoesBootsMerc
   name: mercenary boots
   description: Boots that have gone through many conflicts and that have proven their combat reliability.
@@ -110,9 +110,9 @@
   name: cargo winter boots
   components:
   - type: Sprite
-    sprite: Clothing/Shoes/Boots/winterbootscargo.rsi
+    sprite: _CD/Clothing/Shoes/Boots/winterbootscargo.rsi # CD drip 2
   - type: Clothing
-    sprite: Clothing/Shoes/Boots/winterbootscargo.rsi
+    sprite: _CD/Clothing/Shoes/Boots/winterbootscargo.rsi # CD drip 2
 
 - type: entity
   parent: ClothingShoesBaseWinterBoots
