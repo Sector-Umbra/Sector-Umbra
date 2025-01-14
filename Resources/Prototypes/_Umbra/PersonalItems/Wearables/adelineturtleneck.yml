@@ -3,7 +3,7 @@
   parent: ClothingUniformBase
   id: PersonalItemAdelineTurtleneck
   name: Adeline's turtleneck
-  description: A very nice description of the item that absolutely NEEDS TO BE REDONE
+  description: A comfortable black turtleneck! Tailored for fashion and comfort! It looks quite new.
   suffix: PersonalItem
   components:
     - type: Sprite
