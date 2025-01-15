@@ -95,7 +95,7 @@ public sealed class IVDripSystem : SharedIVDripSystem
 
             if (packComp.Injecting)
             {
-                // Inject into a entity.
+                // Inject into an entity.
                 if (attachedStream is { } bloodSolutionEnt &&
                     bloodSolutionEnt.Comp.Solution.Volume < bloodSolutionEnt.Comp.Solution.MaxVolume)
                 {
@@ -109,13 +109,14 @@ public sealed class IVDripSystem : SharedIVDripSystem
                 var canDraw = false;
                 foreach (var reagent in streamSol.Contents)
                 {
-                    if (packComp.BloodstreamReagents.Contains(reagent.Reagent.Prototype)) {
+                    if (packComp.BloodstreamReagents.Contains(reagent.Reagent.Prototype))
+                    {
                         canDraw = true;
                         break;
                     }
                 }
 
-                // Draw from a entity.
+                // Draw from an entity.
                 if (packSol.Volume < packSol.MaxVolume && canDraw)
                 {
                     _solutionContainer.TryTransferSolution(packSolEnt.Value, streamSol, packComp.TransferAmount);
