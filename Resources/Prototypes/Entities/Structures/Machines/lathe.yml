@@ -203,6 +203,8 @@
       - WetFloorSign
       - ClothingHeadHatCone
       - FreezerElectronics
+      - CassetteTape #CD Change
+      - TapeRecorder #CD Change
   - type: EmagLatheRecipes
     emagStaticRecipes:
       - BoxLethalshot

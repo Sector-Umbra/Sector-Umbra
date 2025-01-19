@@ -137,6 +137,9 @@
       - id: HandLabeler
       #CD Additions
       - id: BoxFolderDetectiveClipboard
+      - id: BoxTapeRecorder
+      - id: BookSOPSecurity
+        prob: 0.2
 
 - type: entity
   id: ClosetBombFilled
