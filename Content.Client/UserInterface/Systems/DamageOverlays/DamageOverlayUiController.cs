@@ -9,6 +9,7 @@ using Robust.Client.Player;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controllers;
 using Robust.Shared.Player;
+using Content.Shared.PainNumbness;
 
 namespace Content.Client.UserInterface.Systems.DamageOverlays;
 
@@ -94,7 +95,7 @@ public sealed class DamageOverlayUiController : UIController
         {
             case MobState.Alive:
             {
-                if (damageable.DamagePerGroup.TryGetValue("Brute", out var bruteDamage))
+                if (damageable.DamagePerGroup.TryGetValue("Brute", out var bruteDamage) && !EntityManager.HasComponent<PainNumbnessComponent>(entity))
                 {
                     _overlay.BruteLevel = FixedPoint2.Min(1f, bruteDamage / critThreshold).Float();
                 }

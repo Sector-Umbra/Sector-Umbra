@@ -1,5 +1,6 @@
 using System.Collections.Frozen;
 using System.Diagnostics.CodeAnalysis;
+using Content.Shared.PainNumbness;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
@@ -86,6 +87,11 @@ public abstract class AlertsSystem : EntitySystem
 
         if (!TryComp(euid, out AlertsComponent? alertsComponent))
             return;
+
+        if (HasComp<PainNumbnessComponent>(euid) && alertType == "HumanHealth")
+        {
+            severity = 0;
+        }
 
         if (TryGet(alertType, out var alert))
         {
