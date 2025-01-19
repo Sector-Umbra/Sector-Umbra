@@ -12,4 +12,6 @@ public sealed partial class CPRPerformerComponent : Component
     [DataField]
     public static int CPRDelay = 7;
 
+    [DataField]
+    public static int HealAmount = 10;
 }

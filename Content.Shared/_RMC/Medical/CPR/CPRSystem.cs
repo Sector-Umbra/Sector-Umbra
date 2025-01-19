@@ -27,12 +27,8 @@ public sealed class CPRSystem : EntitySystem
     [Dependency] private readonly SharedRottingSystem _rotting = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
 
-    // TODO Move this to a component (CPRPerformer)
     [ValidatePrototypeId<DamageTypePrototype>]
-    private const string HealType = "Asphyxiation";
-
-    private static readonly FixedPoint2 HealAmount = FixedPoint2.New(10);
-
+    public const string HealType = "Asphyxiation";
     public override void Initialize()
     {
         base.Initialize();
@@ -81,7 +77,7 @@ public sealed class CPRSystem : EntitySystem
             return;
         }
 
-        var heal = -FixedPoint2.Min(damage, HealAmount);
+        var heal = -FixedPoint2.Min(damage, CPRPerformerComponent.HealAmount);
         var healSpecifier = new DamageSpecifier();
         healSpecifier.DamageDict.Add(HealType, heal);
         _damageable.TryChangeDamage(target, healSpecifier, true);
