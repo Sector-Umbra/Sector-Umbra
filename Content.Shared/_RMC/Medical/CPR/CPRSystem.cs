@@ -71,9 +71,9 @@ public sealed class CPRSystem : EntitySystem
 
         args.Handled = true;
 
-        // TODO RMC14 make this not use rotting
+        // TODO Make this reverse something else that isn't rotting.
         if (_net.IsServer)
-            _rotting.ReduceAccumulator(target, TimeSpan.FromSeconds(7));
+            _rotting.ReduceAccumulator(target, TimeSpan.FromSeconds(CPRPerformerComponent.CPRDelay));
 
         if (!TryComp(target, out DamageableComponent? damageable) ||
             !damageable.Damage.DamageDict.TryGetValue(HealType, out damage))
@@ -90,8 +90,7 @@ public sealed class CPRSystem : EntitySystem
         if (_net.IsClient)
             return;
 
-        // TODO Move this value to a component
-        var selfPopup = Loc.GetString("cm-cpr-self-perform", ("target", target), ("seconds", 7));
+        var selfPopup = Loc.GetString("cm-cpr-self-perform", ("target", target), ("seconds", CPRPerformerComponent.CPRDelay));
         _popups.PopupEntity(selfPopup, target, performer);
 
         var othersPopup = Loc.GetString("cm-cpr-other-perform", ("performer", performer), ("target", target));
@@ -118,8 +117,7 @@ public sealed class CPRSystem : EntitySystem
         var target = ent.Owner;
         var performer = args.Performer;
 
-        // TODO Move this value to a component. (CPRPerformer)
-        if (ent.Comp.Last > _timing.CurTime - TimeSpan.FromSeconds(7))
+        if (ent.Comp.Last > _timing.CurTime - TimeSpan.FromSeconds(CPRPerformerComponent.CPRDelay))
         {
             args.Cancelled = true;
 

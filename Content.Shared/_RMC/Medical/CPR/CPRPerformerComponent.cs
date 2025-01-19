@@ -6,5 +6,10 @@ namespace Content.Shared._RMC.Medical.CPR;
 [Access(typeof(CPRSystem))]
 public sealed partial class CPRPerformerComponent : Component
 {
+    /// <summary>
+    /// Required time between CPR "cycles".
+    /// </summary>
+    [DataField]
+    public static int CPRDelay = 7;
 
 }
