@@ -145,13 +145,6 @@ public sealed class PaperSystem : EntitySystem
                 _uiSystem.OpenUi(entity.Owner, PaperUiKey.Key, args.User);
                 UpdateUserInterface(entity);
             }
-
-            var writeEvent = new PaperWriteEvent(entity, args.User);
-            RaiseLocalEvent(args.Used, ref writeEvent);
-
-            entity.Comp.Mode = PaperAction.Write;
-            _uiSystem.OpenUi(entity.Owner, PaperUiKey.Key, args.User);
-            UpdateUserInterface(entity);
             args.Handled = true;
             return;
         }
