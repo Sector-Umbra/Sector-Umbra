@@ -26,7 +26,6 @@ guide-entry-chef = Chef
 guide-entry-medical = Medical
 guide-entry-medicaldoctor = Medical Doctor
 guide-entry-chemist = Chemist
-guide-entry-medicine = Medicine
 guide-entry-brute = Advanced Brute Medication
 guide-entry-botanicals = Botanicals
 guide-entry-cloning = Cloning
