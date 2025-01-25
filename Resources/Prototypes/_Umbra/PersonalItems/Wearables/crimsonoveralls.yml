@@ -1,7 +1,7 @@
 # Player: crimsonjesterheart - Character: Crimson Luxuarias
 - type: entity
   parent: ClothingUniformBase
-  id: PersonalItemCrimsonLuxariasMachinistJumpsuit
+  id: PersonalItemCrimsonMachinistJumpsuit
   name: Crimson Luxuaria's machinist overalls
   description: A pair of black overalls complimented by a bluish-purple crop shirt, it has "SYNTH" in big gold letters
   suffix: PersonalItem
@@ -12,10 +12,10 @@
     sprite: _Umbra/PersonalItems/Wearables/crimsonoveralls.rsi
 
 - type: loadout
-  id: PersonalItemCrimsonLuxariasMachinistJumpsuit
+  id: PersonalItemCrimsonMachinistJumpsuit
   storage:
     back:
-    - PersonalItemCrimsonLuxariasMachinistJumpsuit
+    - PersonalItemCrimsonMachinistJumpsuit
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
