@@ -6,8 +6,8 @@
     ClothingBackpackDuffel: 5
     ClothingBackpackSatchel: 3
     ClothingBackpackSatchelLeather: 2
-    ClothingRandomSpawner: 8
-    ClothingOuterCoatRandom: 8 # CD
+    ClothingRandomSpawner: 16 # Umbra: Changed from 8 to 16
+    ClothingOuterCoatRandom: 16 # Umbra: Changed from 8 to 16, CD
     ClothingHeadHatBeret: 4
     ClothingHeadBandBlack: 2
     ClothingHeadBandBlue: 2
