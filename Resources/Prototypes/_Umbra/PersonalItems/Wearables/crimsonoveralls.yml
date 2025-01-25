@@ -3,7 +3,7 @@
   parent: ClothingUniformBase
   id: PersonalItemCrimsonMachinistJumpsuit
   name: Crimson Luxuaria's machinist overalls
-  description: A pair of black overalls complimented by a bluish-purple crop shirt, it has "SYNTH" in big gold letters
+  description: A pair of black overalls complimented by a bluish-purple crop shirt, it has "SYNTH" in big gold letters.
   suffix: PersonalItem
   components:
   - type: Sprite
