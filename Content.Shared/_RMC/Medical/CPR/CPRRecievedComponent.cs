@@ -10,7 +10,7 @@ namespace Content.Shared._RMC.Medical.CPR;
 /// </summary>
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 [Access(typeof(CPRSystem))]
-public sealed class CPRReceivedComponent : Component
+public sealed partial class CPRReceivedComponent : Component
 {
     [DataField, AutoNetworkedField]
     public TimeSpan Last;
