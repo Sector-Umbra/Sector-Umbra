@@ -4,6 +4,6 @@
     variation: 0.125
   sounds:
     Scream:
-      path: /Audio/_Umbra/Voice/Mantidae/mantidae_scream.ogg
+      path: /Audio/Voice/Arachnid/arachnid_scream.ogg
     Laugh:
-      path: /Audio/_Umbra/Voice/Mantidae/mantidae_laugh.ogg
+      path: /Audio/Voice/Arachnid/arachnid_laugh.ogg

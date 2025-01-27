@@ -11,7 +11,9 @@
     - HeadTop
     - HeadSide
   - type: Hunger
+    baseDecayRate: 0.5
   - type: Thirst
+    baseDecayRate: 0.5
   - type: Tag
     tags:
     - CanPilot
@@ -43,7 +45,8 @@
     animation: WeaponArcFist
     damage:
       types:
-        Blunt: 7
+        Blunt: 5
+        Slash: 2
   # Visual & Audio
   - type: DamageVisuals
     damageOverlayGroups:
@@ -53,14 +56,27 @@
       Burn:
         sprite: Mobs/Effects/burn_damage.rsi
   - type: Speech
-    speechVerb: Arachnid #Needs changing!
-    speechSounds: Mantidae #Needs changing!
+    speechVerb: Mantidae
+    speechSounds: Arachnid #Needs custom sounds
     allowedEmotes: ['Click', 'Chitter']
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 130
+        restitution: 0.0
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
   - type: Vocal
     sounds:
       Male: Mantidae 
       Female: Mantidae  
-      Unsexed: Mantidae 
+      Unsexed: Mantidae
+  - type: MantidaeAccent
   - type: TypingIndicator
     proto: spider
   - type: Sprite # I'd prefer if these maps were better. Insert map pun here.
@@ -103,7 +119,7 @@
         visible: false
       - map: [ "clownedon" ] # Dynamically generated
         sprite: "Effects/creampie.rsi"
-        state: "creampie_arachnid"
+        state: "creampie_arachnid" # change!!!
         visible: false
   - type: Inventory
     speciesId: Mantidae

@@ -1,0 +1,8 @@
+- type: speechVerb
+  id: Mantidae
+  name: chat-speech-verb-name-mantidae
+  speechVerbStrings:
+  - chat-speech-verb-scythed-1
+  - chat-speech-verb-scythed-2
+  - chat-speech-verb-scythed-3
+  - chat-speech-verb-reptilian-1

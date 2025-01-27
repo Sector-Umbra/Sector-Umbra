@@ -1,8 +1,0 @@
-- type: speechSounds
-  id: Mantidae
-  saySound:
-    path: /Audio/_Umbra/Voice/Talk/mantidae.ogg
-  exclaimSound:
-    path: /Audio/_Umbra/Voice/Talk/mantidae_exclaim.ogg
-  askSound:
-    path: /Audio/_Umbra/Voice/Talk/mantidae_ask.ogg
