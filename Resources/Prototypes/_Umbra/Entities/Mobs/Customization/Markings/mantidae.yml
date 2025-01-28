@@ -1,18 +1,18 @@
 # Just random important things so it hopefully works
 
 - type: marking
-  id: MantidaeLeftAppendageDefault
+  id: MantidaeLeftScytheDefault
   bodyPart: LHand
-  markingCategory: Overlay
+  markingCategory: Arms
   speciesRestriction: [Mantidae]
   sprites:
   - sprite: _Umbra/Mobs/Customization/Mantidae/mantidae.rsi
     state: l_default
 
 - type: marking
-  id: MantidaeRightAppendageDefault
+  id: MantidaeRightScytheDefault
   bodyPart: RHand
-  markingCategory: Overlay
+  markingCategory: Arms
   speciesRestriction: [Mantidae]
   sprites:
   - sprite: _Umbra/Mobs/Customization/Mantidae/mantidae.rsi

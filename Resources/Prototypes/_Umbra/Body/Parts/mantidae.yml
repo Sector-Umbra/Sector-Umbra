@@ -1,0 +1,118 @@
+- type: entity
+  id: PartMantidae
+  parent: [BaseItem, BasePart]
+  name: "mantidae body part"
+  abstract: true
+  components:
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 3
+      - ReagentId: Blood
+        Quantity: 10
+
+- type: entity
+  id: TorsoMantidae
+  name: "mantidae torso"
+  parent: [PartMantidae, BaseTorso]
+  components:
+  - type: Sprite
+    sprite: _Umbra\Mobs\Species\Mantidae\parts.rsi
+    state: "torso_m"
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 10
+      - ReagentId: Blood
+        Quantity: 20
+
+
+- type: entity
+  id: HeadMantidae
+  name: "mantidae head"
+  parent: [PartMantidae, BaseHead]
+  components:
+  - type: Sprite
+    sprite: _Umbra\Mobs\Species\Mantidae\parts.rsi
+    state: "head_m"
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 5
+      - ReagentId: Blood
+        Quantity: 10
+
+- type: entity
+  id: LeftArmMantidae
+  name: "left mantidae arm"
+  parent: [PartMantidae, BaseLeftArm]
+  components:
+  - type: Sprite
+    sprite: _Umbra\Mobs\Species\Mantidae\parts.rsi
+    state: "l_arm"
+
+- type: entity
+  id: RightArmMantidae
+  name: "right mantidae arm"
+  parent: [PartMantidae, BaseRightArm]
+  components:
+  - type: Sprite
+    sprite: _Umbra\Mobs\Species\Mantidae\parts.rsi
+    state: "r_arm"
+
+- type: entity
+  id: LeftHandMantidae
+  name: "left mantidae hand"
+  parent: [PartMantidae, BaseLeftHand]
+  components:
+  - type: Sprite
+    sprite: _Umbra\Mobs\Species\Mantidae\parts.rsi
+    state: "l_hand"
+
+- type: entity
+  id: RightHandMantidae
+  name: "right mantidae hand"
+  parent: [PartMantidae, BaseRightHand]
+  components:
+  - type: Sprite
+    sprite: _Umbra\Mobs\Species\Mantidae\parts.rsi
+    state: "r_hand"
+
+- type: entity
+  id: LeftLegMantidae
+  name: "left mantidae leg"
+  parent: [PartMantidae, BaseLeftLeg]
+  components:
+  - type: Sprite
+    sprite: _Umbra\Mobs\Species\Mantidae\parts.rsi
+    state: "l_leg"
+
+- type: entity
+  id: RightLegMantidae
+  name: "right mantidae leg"
+  parent: [PartMantidae, BaseRightLeg]
+  components:
+  - type: Sprite
+    sprite: _Umbra\Mobs\Species\Mantidae\parts.rsi
+    state: "r_leg"
+
+- type: entity
+  id: LeftFootMantidae
+  name: "left mantidae foot"
+  parent: [PartMantidae, BaseLeftFoot]
+  components:
+  - type: Sprite
+    sprite: _Umbra\Mobs\Species\Mantidae\parts.rsi
+    state: "l_foot"
+
+- type: entity
+  id: RightFootMantidae
+  name: "right mantidae foot"
+  parent: [PartMantidae, BaseRightFoot]
+  components:
+  - type: Sprite
+    sprite: _Umbra\Mobs\Species\Mantidae\parts.rsi
+    state: "r_foot"

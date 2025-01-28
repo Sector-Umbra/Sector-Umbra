@@ -1,5 +1,5 @@
 - type: entity
   save: false
-  name: Urist Mc-Chitin
+  name: Urist McChitin
   parent: BaseMobMantidae
   id: MobMantidae
