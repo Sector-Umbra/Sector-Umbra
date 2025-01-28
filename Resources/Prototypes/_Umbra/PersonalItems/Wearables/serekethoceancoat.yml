@@ -1,0 +1,23 @@
+# Player: PIGEONPEAS - Character: Sereketh Pallister II
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: PersonalItemSerekethOceanCoat
+  name: ocean winter coat
+  description: A simple, ocean themed winter coat. It has two little lightning bolts coming out of the coat's fluff.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Wearables/serekethoceancoat.rsi
+  - type: Clothing
+    sprite: _Umbra/PersonalItems/Wearables/serekethoceancoat.rsi
+
+# Sereketh's Ocean coat
+- type: loadout
+  id: PersonalItemSerekethOceanCoat
+  storage:
+    back:
+    - PersonalItemSerekethOceanCoat
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Sereketh Pallister II

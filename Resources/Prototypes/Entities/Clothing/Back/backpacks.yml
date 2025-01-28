@@ -170,7 +170,7 @@
   description: A robust backpack for stealing cargo's loot.
   components:
     - type: Sprite
-      sprite: Clothing/Back/Backpacks/cargo.rsi
+      sprite: _CD/Clothing/Back/Backpacks/cargo.rsi # CD drip 2
 
 - type: entity
   parent: ClothingBackpack
@@ -184,7 +184,7 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackMerc
-  name: merc bag
+  name: mercenary bag
   description: A backpack that has been in many dangerous places, a reliable combat backpack.
   components:
     - type: Sprite
@@ -260,7 +260,7 @@
 - type: entity
   parent: ClothingBackpackERTSecurity
   id: ClothingBackpackDeathSquad
-  name: death squad backpack
+  name: internal affairs backpack # Umbra change
   description: Holds the kit of CentComm's most feared agents.
   components:
     - type: Storage

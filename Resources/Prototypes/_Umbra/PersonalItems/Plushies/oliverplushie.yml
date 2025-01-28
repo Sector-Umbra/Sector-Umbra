@@ -1,0 +1,21 @@
+# Player: lemonrat - Character: Oliver LaRue
+- type: entity
+  parent: PlushieLizard
+  id: PersonalItemOliverPlushie
+  name: oliver's plushie
+  description: The plushie Oliver's Dad gave to him when they first met.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_oliver
+    sprite: _Umbra/PersonalItems/Plushies/oliverplushie.rsi
+
+- type: loadout
+  id: PersonalItemOliverPlushie
+  storage:
+    back:
+    - PersonalItemOliverPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Oliver LaRue

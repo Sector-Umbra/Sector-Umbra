@@ -1,0 +1,25 @@
+# Player: HexReject - Character: Annie LaRue
+- type: entity
+  parent: RingBase
+  id: PersonalItemAnnieRing
+  name: Annie's ring
+  description: A rose-gold wedding band, set with a large cut onyx beside an adornment of iridescent opal. An inscription reads - "You are, and will forever be, my hero."
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Wearables/anniering.rsi
+    layers:
+    - state: annies_ring
+  - type: Item
+    size: Tiny
+    sprite: _Umbra/PersonalItems/Wearables/anniering.rsi
+
+- type: loadout
+  id: PersonalItemAnnieRing
+  storage:
+    back:
+    - PersonalItemAnnieRing
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Annie LaRue

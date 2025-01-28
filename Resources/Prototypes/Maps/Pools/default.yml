@@ -3,17 +3,22 @@
   maps:
   - Aspid
   - Atlas
+  - Amber
   - Bagel
   - Box
-  - Cluster
+  - ClusterPrime # Umbra: Cluster Replacement
   - Cog
   - Core
+  - Elkridge
   - Fland
+  #- Gate
+  - Loop
   - Marathon
   - Meta
   - Oasis
   - Omega
   - Saltern
   - Packed
+  - Plasma
   #- Reach # Umbra: Derotated map.
   - Train
