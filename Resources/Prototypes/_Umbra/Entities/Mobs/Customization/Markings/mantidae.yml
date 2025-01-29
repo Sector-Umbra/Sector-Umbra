@@ -8,6 +8,11 @@
   sprites:
   - sprite: _Umbra/Mobs/Customization/Mantidae/mantidae.rsi
     state: l_default
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#51fd36"
 
 - type: marking
   id: MantidaeRightScytheDefault
@@ -17,6 +22,12 @@
   sprites:
   - sprite: _Umbra/Mobs/Customization/Mantidae/mantidae.rsi
     state: r_default
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#51fd36"
+        
 
 - type: marking
   id: MantidaeAntennaeDefault

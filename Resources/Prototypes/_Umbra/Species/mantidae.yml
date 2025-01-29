@@ -73,7 +73,7 @@
     Arms:
       points: 2
       required: true
-      defaultMarkings: [ MantidaeRightScytheDefault, MantidaeLeftScytheDefault ]
+      defaultMarkings: [ MantidaeLeftScytheDefault, MantidaeRightScytheDefault ]
 
 - type: humanoidBaseSprite
   id: MobMantidaeHead
