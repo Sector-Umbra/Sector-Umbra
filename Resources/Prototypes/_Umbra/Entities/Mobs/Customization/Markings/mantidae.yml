@@ -8,11 +8,6 @@
   sprites:
   - sprite: _Umbra/Mobs/Customization/Mantidae/mantidae.rsi
     state: l_default
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-        color: "#51fd36"
 
 - type: marking
   id: MantidaeRightScytheDefault
@@ -22,13 +17,25 @@
   sprites:
   - sprite: _Umbra/Mobs/Customization/Mantidae/mantidae.rsi
     state: r_default
-  coloring:
-    default:
-      type:
-        !type:SimpleColoring
-        color: "#51fd36"
-        
 
+- type: marking
+  id: MantidaeLeftScytheEmpty
+  bodyPart: LHand
+  markingCategory: Arms
+  speciesRestriction: [Mantidae]
+  sprites:
+  - sprite: _Umbra/Mobs/Customization/Mantidae/mantidae.rsi
+    state: l_empty
+
+- type: marking
+  id: MantidaeRightScytheEmpty
+  bodyPart: RHand
+  markingCategory: Arms
+  speciesRestriction: [Mantidae]
+  sprites:
+  - sprite: _Umbra/Mobs/Customization/Mantidae/mantidae.rsi
+    state: r_empty
+       
 - type: marking
   id: MantidaeAntennaeDefault
   bodyPart: HeadTop
@@ -37,4 +44,13 @@
   sprites:
   - sprite: _Umbra/Mobs/Customization/Mantidae/mantidae.rsi
     state: antennae_default
+
+- type: marking
+  id: MantidaeAntennaeAnt
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Mantidae]
+  sprites:
+  - sprite: _Umbra/Mobs/Customization/Mantidae/mantidae.rsi
+    state: antennae_ant
 

@@ -16,7 +16,19 @@
             "directions": 4
         },
         {
+            "name": "l_empty",
+            "directions": 4
+        },
+        {
+            "name": "r_empty",
+            "directions": 4
+        },
+        {
             "name": "antennae_default",
+            "directions": 4
+        },
+        {
+            "name": "antennae_ant",
             "directions": 4
         }
     ]
