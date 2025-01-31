@@ -10,7 +10,7 @@
     layers:
     - state: paper
   - type: Paper
-    content: book-text-emiko
+    content: book-text-emiko # Resources/Locale/en-US/_Umbra/personal-items/emiko-book.ftl
 
 - type: loadout
   id: PersonalItemEmikoBook
