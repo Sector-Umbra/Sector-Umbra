@@ -3,7 +3,7 @@
   parent: PlushieMoth
   id: PersonalItemAngelPlushie
   name: angel plushie
-  description: As fluffy as she is, only in a smaller and plush form. It smells of daisies and poppies.
+  description: Just as fluffy as, and almost as soft as, the real thing! You can almost hear it saying "Oh gosh, I'm sorry!",
   suffix: PersonalItem
   components:
   - type: Sprite
