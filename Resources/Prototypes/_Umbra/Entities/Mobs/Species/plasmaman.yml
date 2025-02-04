@@ -1,0 +1,36 @@
+- type: entity
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobPlasmaman
+  name: Urist McPlasmeme
+  abstract: true
+  components:
+  - type: Icon
+    sprite: _Umbra\Mobs\Species\Plasmaman\parts.rsi
+    state: full
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatHuman
+      amount: 5
+  - type: HumanoidAppearance
+    species: Plasmaman
+  - type: Inventory
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Human/displacement.rsi
+            state: jumpsuit-female
+
+- type: entity
+  parent: BaseSpeciesDummy
+  id: MobPlasmamanDummy
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Inventory
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Human/displacement.rsi
+            state: jumpsuit-female
