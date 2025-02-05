@@ -73,6 +73,10 @@
     {
       "name": "equipped-MASK-reptilian",
       "directions": 4
+    },
+    {
+      "name": "equipped-MASK-mantidae",
+      "directions": 4
     }
   ]
 }

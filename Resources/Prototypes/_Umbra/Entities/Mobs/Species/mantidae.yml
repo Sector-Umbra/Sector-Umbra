@@ -31,7 +31,7 @@
     heatDamageThreshold: 325
     coldDamageThreshold: 285
     currentTemperature: 310.15
-  - type: TemperatureSpeed # just took this from lizards lol
+  - type: TemperatureSpeed 
     thresholds:
       301: 0.8
       295: 0.6
@@ -111,8 +111,8 @@
         state: body-overlay-2
         visible: false
       - map: [ "clownedon" ] # Dynamically generated
-        sprite: "Effects/creampie.rsi"
-        state: "creampie_arachnid" # change!!!
+        sprite: "_Umbra/Effects/creampie.rsi"
+        state: "creampie_mantidae"
         visible: false
   - type: Inventory
     speciesId: mantidae
