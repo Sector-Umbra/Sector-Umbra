@@ -1,43 +1,25 @@
-using System.Text;
+using System.Text.RegularExpressions;
 using Content.Server.Speech.Components;
 
-namespace Content.Server.Speech.EntitySystems
+namespace Content.Server.Speech.EntitySystems;
+
+public sealed class MantidaeAccentSystem : EntitySystem
 {
-    public sealed class MantidaeAccentSystem : EntitySystem
+    public override void Initialize()
     {
-        public override void Initialize()
-        {
-            SubscribeLocalEvent<MantidaeAccentComponent, AccentGetEvent>(OnAccent);
-        }
+        base.Initialize();
+        SubscribeLocalEvent<MantidaeAccentComponent, AccentGetEvent>(OnAccent);
+    }
 
-        public string Accentuate(string message)
-        {
-            // Insert E before every S
-            message = InsertS(message);
-            return message;
-        }
+    private void OnAccent(EntityUid uid, MantidaeAccentComponent component, AccentGetEvent args)
+    {
+        var message = args.Message;
 
-        private string InsertS(string message)
-        {
-            // Replace every new Word that starts with s/S
-            var msg = message.Replace(" s", " x").Replace(" S", " X");
+        // mantis noises
+        message = Regex.Replace(message, "s+", "x");
+        // LOUD MANTIS NOISES!!
+        message = Regex.Replace(message, "S+", "X");
 
-            // Still need to check if the beginning of the message starts
-            if (msg.StartsWith("s", StringComparison.Ordinal))
-            {
-                return msg.Remove(0, 1).Insert(0, "x");
-            }
-            else if (msg.StartsWith("S", StringComparison.Ordinal))
-            {
-                return msg.Remove(0, 1).Insert(0, "X");
-            }
-
-            return msg;
-        }
-
-        private void OnAccent(EntityUid uid, MantidaeAccentComponent component, AccentGetEvent args)
-        {
-            args.Message = Accentuate(args.Message);
-        }
+        args.Message = message;
     }
 }
