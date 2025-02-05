@@ -9,10 +9,10 @@ public sealed class IgniteOnGasExposureSystem : EntitySystem
 
     public override void Initialize()
     {
-        SubscribeLocalEvent<IgniteOnGasExposureComponent, ComponentAdd>(IgniteOnGasExposurewawa);
+        SubscribeLocalEvent<IgniteOnGasExposureComponent, ComponentAdd>(IgniteOnGasExpose);
     }
 
-    private void IgniteOnGasExposurewawa(EntityUid uid, IgniteOnGasExposureComponent component,  ref ComponentAdd args)
+    private void IgniteOnGasExpose(EntityUid uid, IgniteOnGasExposureComponent component,  ref ComponentAdd args)
     {
         var air = _atmosphereSystem.GetContainingMixture(uid);
 
