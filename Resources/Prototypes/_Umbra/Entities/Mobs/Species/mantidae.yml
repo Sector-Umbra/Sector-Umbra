@@ -122,11 +122,6 @@
           32:
             sprite: _Umbra/Mobs/Species/Mantidae/displacement.rsi
             state: eyes
-      back:
-        sizeMaps:
-          32:
-            sprite: _Umbra/Mobs/Species/Mantidae/displacement.rsi
-            state: back
       head:
         sizeMaps:
           32:
@@ -168,11 +163,6 @@
           32:
             sprite: _Umbra/Mobs/Species/Mantidae/displacement.rsi
             state: head
-      back:
-        sizeMaps:
-          32:
-            sprite: _Umbra/Mobs/Species/Mantidae/displacement.rsi
-            state: back
       jumpsuit:
         sizeMaps:
           32:
