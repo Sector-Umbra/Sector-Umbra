@@ -196,7 +196,6 @@
       - SubstationMachineCircuitboard
       - WallmountSubstationElectronics
       - CellRechargerCircuitboard
-      - BorgChargerCircuitboard
       - WeaponCapacitorRechargerCircuitboard
       - HandheldStationMap
       - ClothingHeadHatWelding
@@ -353,6 +352,7 @@
       - FauxTileJungleAstroGrass
       - FauxTileAstroIce
       - FauxTileAstroSnow
+      - FauxTileAstroAsteroidSand
       - OreBagOfHolding
 #     - DeviceQuantumSpinInverter # Umbra change, commented out due to QSI bugs
   - type: EmagLatheRecipes
@@ -455,6 +455,7 @@
     - SpaceHeaterMachineCircuitBoard
     - CutterMachineCircuitboard
     - SalvageMagnetMachineCircuitboard
+    - BorgChargerCircuitboard
     dynamicRecipes:
       - ThermomachineFreezerMachineCircuitBoard
       - HellfireFreezerMachineCircuitBoard
