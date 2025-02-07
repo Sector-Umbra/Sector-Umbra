@@ -14,7 +14,7 @@
     size: Small
     sprite: _Umbra/PersonalItems/Items/michaelcard.rsi
   - type: Paper
-    content: book-text-michaels-card
+    content: book-text-michaels-card # Resources/Locale/en-US/_Umbra/personal-items/michaels-card.ftl
   - type: Food
     solution: food
     delay: 14 # Doubled time, it is thicker than paper and you really should think about what you are doing >:)

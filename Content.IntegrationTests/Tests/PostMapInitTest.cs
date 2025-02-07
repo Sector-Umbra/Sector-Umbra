@@ -69,9 +69,10 @@ namespace Content.IntegrationTests.Tests
             "Loop",
             "Plasma",
             "Elkridge",
+            "Convex",
             "Xeno", // Umbra
             "Iris", // Umbra
-			"ClusterPrime" //Umbra
+			"ClusterPrime", //Umbra
         };
 
         // UMBRA: We need to be able to mark non-upstream maps as not tested.

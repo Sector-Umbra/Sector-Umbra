@@ -60,6 +60,8 @@
   # - LunchboxYellow # CD - Umbra: Not merged
   - Cane # CD
   - MedCrutchesForearm # CD
+  - GoldRing # CD
+  - SilverRing # CD
 
 - type: loadoutGroup
   id: Glasses
@@ -1173,7 +1175,7 @@
   - ChiefMedicalOfficerTurtleneckJumpsuit
   - ChiefMedicalOfficerTurtleneckJumpskirt
   - ChiefMedicalOfficerFormalsuit # CD
-  
+
 - type: loadoutGroup
   id: ChiefMedicalOfficerOuterClothing
   name: loadout-group-chief-medical-officer-outerclothing
