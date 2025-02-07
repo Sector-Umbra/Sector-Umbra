@@ -2,12 +2,12 @@
   abstract: true
   parent: ClothingUniformBase
   id: ClothingUniformEnvirosuitBase
+  description: A uniform designed to protect its user from the environment.
 
 - type: entity  
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitAtmos
   name: atmos tech envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/atmos.rsi
@@ -18,7 +18,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitBitrunner
   name: bitrunner envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/bitrunner.rsi
@@ -29,7 +28,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitBotany
   name: botany envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/botany.rsi
@@ -40,7 +38,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitCaptain
   name: captain envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/captain.rsi
@@ -51,7 +48,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitCargo
   name: cargo envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/cargo.rsi
@@ -62,7 +58,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitCE
   name: chief engineer envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/ce.rsi
@@ -73,7 +68,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitChaplain
   name: chaplain envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/chap.rsi
@@ -84,7 +78,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitChef
   name: chef envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/chef.rsi
@@ -95,7 +88,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitChemist
   name: chemist envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/chemist.rsi
@@ -106,7 +98,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitClown
   name: clown envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/clown.rsi
@@ -117,7 +108,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitCMO
   name: chief medical officer envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/cmo.rsi
@@ -128,7 +118,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitCommander
   name: commander envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/commander.rsi
@@ -139,7 +128,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitCoroner
   name: coroner envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/coroner.rsi
@@ -150,7 +138,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitDoctor
   name: doctor envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/doctor.rsi
@@ -161,7 +148,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitEngineer
   name: engineer envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/engineer.rsi
@@ -172,7 +158,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitGeneric
   name: envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/generic.rsi
@@ -183,7 +168,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitGeneticist
   name: geneticist envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/geneticist.rsi
@@ -193,8 +177,7 @@
 - type: entity  
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitHoP
-  name: head of personal envirosuit
-  description: A uniform designed to protect its user from the environment.
+  name: head of personnel envirosuit
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/hop.rsi
@@ -205,7 +188,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitHoS
   name: head of security envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/hos.rsi
@@ -216,7 +198,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitIntern
   name: intern envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/intern.rsi
@@ -227,7 +208,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitJanitor
   name: janitor envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/janitor.rsi
@@ -238,7 +218,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitMime
   name: mime envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/mime.rsi
@@ -249,7 +228,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitOfficial
   name: official envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/official.rsi
@@ -260,7 +238,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitParamedic
   name: paramedic envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/paramedic.rsi
@@ -271,7 +248,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitPrisoner
   name: prisoner envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/prisoner.rsi
@@ -282,7 +258,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitPrototype
   name: prototype envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/prototype.rsi
@@ -293,7 +268,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitRD
   name: research director envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/rd.rsi
@@ -304,7 +278,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitRobo
   name: roboticist envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/robo.rsi
@@ -315,7 +288,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitSalvage
   name: salvage envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/salvage.rsi
@@ -326,7 +298,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitScientist
   name: scientist envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/scientist.rsi
@@ -337,7 +308,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitSecurity
   name: security envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/security.rsi
@@ -348,7 +318,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitSlacks
   name: slacks envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/slacks.rsi
@@ -359,7 +328,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitSyndie
   name: syndicate envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/syndie.rsi
@@ -370,7 +338,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitViro
   name: virology envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/viro.rsi
@@ -381,7 +348,6 @@
   parent: ClothingUniformEnvirosuitBase
   id: ClothingUniformEnvirosuitWarden
   name: warden envirosuit
-  description: A uniform designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/warden.rsi

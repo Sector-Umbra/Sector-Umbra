@@ -1,13 +1,14 @@
 - type: entity
+  abstract: true
   parent: ClothingHeadHelmetBase
   id: ClothingHeadEnvirosuitBase
+  description: A helmet designed to protect its user from the environment.
   abstract: true
 
 - type: entity
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitAtmos
   name: atmos tech envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/atmos.rsi
@@ -18,7 +19,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitBitrunner
   name: bitrunner envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/bitrunner.rsi
@@ -29,7 +29,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitBotany
   name: botany envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/botany.rsi
@@ -40,7 +39,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitCaptain
   name: captain envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/captain.rsi
@@ -51,7 +49,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitCargo
   name: cargo envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/cargo.rsi
@@ -62,7 +59,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitCE
   name: chief engineer envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/ce.rsi
@@ -73,7 +69,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitChap
   name: chaplain envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/chap.rsi
@@ -84,7 +79,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitChemist
   name: chemist envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/chemist.rsi
@@ -95,7 +89,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitClown
   name: clown envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/clown.rsi
@@ -106,7 +99,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitCMO
   name: chief medical officer envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/cmo.rsi
@@ -117,7 +109,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitCommander
   name: commander envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/commander.rsi
@@ -128,7 +119,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitCoroner.rsi
   name: coroner envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/coroner.rsi
@@ -139,7 +129,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitDoctor
   name: doctor envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/doctor.rsi
@@ -150,7 +139,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitEngineer
   name: engineer envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/engineer.rsi
@@ -161,7 +149,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitGene
   name: geneticist envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/gene.rsi
@@ -171,8 +158,7 @@
 - type: entity
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitGeneric
-  name: generic envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
+  name: envirosuit helmet
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/generic.rsi
@@ -182,8 +168,7 @@
 - type: entity
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitHop
-  name: head of personal envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
+  name: head of personnel envirosuit helmet
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/hop.rsi
@@ -194,7 +179,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitIntern
   name: intern envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/intern.rsi
@@ -205,7 +189,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitJanitor
   name: janitor envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/janitor.rsi
@@ -216,7 +199,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitMime
   name: mime envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/mime.rsi
@@ -227,7 +209,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitOfficial
   name: official envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/official.rsi
@@ -238,7 +219,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitParamedic
   name: paramedic envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/paramedic.rsi
@@ -249,7 +229,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitPrisoner
   name: prisoner envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/prisoner.rsi
@@ -260,7 +239,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitPrototype
   name: prototype envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/prototype.rsi
@@ -271,7 +249,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitRD
   name: research director envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/rd.rsi
@@ -282,7 +259,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitRobo
   name: roboticist envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/robo.rsi
@@ -293,7 +269,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitScientist
   name: scientist envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/scientist.rsi
@@ -304,7 +279,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitSecurity
   name: security envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/security.rsi
@@ -315,7 +289,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitSalvage
   name: salvage envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/salvage.rsi
@@ -326,7 +299,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitSyndie
   name: syndicate envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/syndie.rsi
@@ -337,7 +309,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitViro
   name: virology envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/viro.rsi
@@ -348,7 +319,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitWarden
   name: warden envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/warden.rsi
@@ -359,7 +329,6 @@
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitWhite
   name: white envirosuit helmet
-  description: A helmet designed to protect its user from the environment.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/white.rsi
