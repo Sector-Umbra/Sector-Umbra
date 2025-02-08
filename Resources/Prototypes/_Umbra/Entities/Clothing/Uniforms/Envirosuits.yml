@@ -3,6 +3,9 @@
   parent: ClothingUniformBase
   id: ClothingUniformEnvirosuitBase
   description: A uniform designed to protect its user from the environment.
+  components:
+  - type: SpontaneousCombustionProtection
+    protectionPercent: 0.60
 
 - type: entity  
   parent: ClothingUniformEnvirosuitBase

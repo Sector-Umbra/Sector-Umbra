@@ -3,7 +3,9 @@
   parent: ClothingHeadHelmetBase
   id: ClothingHeadEnvirosuitBase
   description: A helmet designed to protect its user from the environment.
-  abstract: true
+  components:
+  - type: SpontaneousCombustionProtection
+    protectionPercent: 0.25
 
 - type: entity
   parent: ClothingHeadEnvirosuitBase

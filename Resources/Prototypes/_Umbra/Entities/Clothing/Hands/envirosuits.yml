@@ -2,10 +2,12 @@
   abstract: true
   parent: ClothingHandsBase
   id: ClothingHandsEnvirosuitBase
-  description: Gloves designed to protect its user from the environment.1
+  description: Gloves designed to protect its user from the environment.
   components:
   - type: Fiber
     fiberMaterial: fibers-synthetic
+  - type: SpontaneousCombustionProtection
+    protectionPercent: 0.15
 
 - type: entity
   parent: ClothingHandsEnvirosuitBase
