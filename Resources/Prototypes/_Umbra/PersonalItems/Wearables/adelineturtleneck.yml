@@ -1,0 +1,22 @@
+# Player: tomasolstice - Character: Adeline Garland
+- type: entity
+  parent: ClothingUniformBase
+  id: PersonalItemAdelineTurtleneck
+  name: Adeline's turtleneck
+  description: A comfortable black turtleneck! Tailored for fashion and comfort! It looks quite new.
+  suffix: PersonalItem
+  components:
+    - type: Sprite
+      sprite: _Umbra/PersonalItems/Wearables/adelineturtleneck.rsi
+    - type: Clothing
+      sprite: _Umbra/PersonalItems/Wearables/adelineturtleneck.rsi
+
+- type: loadout
+  id: PersonalItemAdelineTurtleneck
+  storage:
+    back:
+      - PersonalItemAdelineTurtleneck
+  effects:
+    - !type:PersonalItemLoadoutEffect
+      character:
+        - Adeline Garland
