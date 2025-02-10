@@ -17,7 +17,6 @@ using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Prototypes;
 using Content.Shared.Station.Components;
-using FastAccessors;
 using Robust.Shared.Utility;
 using YamlDotNet.RepresentationModel;
 
@@ -68,9 +67,12 @@ namespace Content.IntegrationTests.Tests
             "Gate",
             "Amber",
             "Loop",
+            "Plasma",
+            "Elkridge",
+            "Convex",
             "Xeno", // Umbra
             "Iris", // Umbra
-			"ClusterPrime" //Umbra
+			"ClusterPrime", //Umbra
         };
 
         // UMBRA: We need to be able to mark non-upstream maps as not tested.

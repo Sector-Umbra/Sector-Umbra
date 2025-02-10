@@ -1,0 +1,23 @@
+# Player: TheUltimateJester - Character: Crimson Luxuaria
+- type: entity
+  parent: ClothingNeckBase
+  id: PersonalItemCrimsonMimicScarf
+  name: dark purple striped scarf
+  description: An incredibly soft dark purple scarf, with lighter purple stripes. It has shiny gold hanging from either end of it. It's warm to the touch, almost as if it's alive.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Wearables/crimsonmimicscarf.rsi
+  - type: Clothing
+    sprite: _Umbra/PersonalItems/Wearables/crimsonmimicscarf.rsi
+
+# Crimson's mimic scarf'
+- type: loadout
+  id: PersonalItemCrimsonMimicScarf
+  storage:
+    back:
+    - PersonalItemCrimsonMimicScarf
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Crimson Luxuaria

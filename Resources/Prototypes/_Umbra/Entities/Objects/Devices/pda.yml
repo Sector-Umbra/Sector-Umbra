@@ -8,6 +8,7 @@
     sprite: _Umbra/Objects/Devices/pda.rsi
     layers:
     - map: [ "enum.PdaVisualLayers.Base" ]
+      state: "pda-nurse"
     - state: "light_overlay"
       map: [ "enum.PdaVisualLayers.Flashlight" ]
       shader: "unshaded"
@@ -21,7 +22,11 @@
     state: pda-nurse
   - type: Pda
     id: MedicalIDCard
-    state: pda-nurse
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+         !type:String
+         pda-nurse
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
     accentVColor: "#b52a46"

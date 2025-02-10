@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Made by Ktyria for SS14. Recolor and modification of the book cover_base sprite, taken from https://github.com/space-wizards/space-station-14/commit/7464d8284c5e18effe277f861e734736ccc906ee",
+    "states": [
+        {
+            "name": "paper"
+        }
+    ]
+}

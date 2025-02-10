@@ -280,6 +280,7 @@
   - type: FireVisuals
     alternateState: Standing
   - type: LayEmote # CD Change, laying down emote
+  - type: CPRPerformer # Umbra Change, all species can provide CPR.
 
 - type: entity
   save: false
