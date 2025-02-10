@@ -1,0 +1,27 @@
+# Player: Scorchiie - Character: Angel Nightwish
+- type: entity
+  parent: PlushieMoth
+  id: PersonalItemSkylightPlushie
+  name: skylight plushie
+  description: Skylight Mirth in plush and marketable form, has a hint of cold vermouth.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: skylight_plushie
+    sprite: _Umbra/PersonalItems/Plushies/skylightplushie.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/PersonalItems/Plushies/skylightplushie.rsi
+    equippedPrefix: skylight
+    slots:
+    - HEAD
+
+- type: loadout
+  id: PersonalItemSkylightPlushie
+  storage:
+    back:
+    - PersonalItemSkylightPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Angel Nightwish

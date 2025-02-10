@@ -1,0 +1,30 @@
+# Players: purpleskittleo - Character: Melody Moon
+- type: entity
+  parent: BassGuitarInstrument
+  id: PersonalItemMelodyBass
+  name: Melody Moon's Five-String
+  description: An extraordinarily polished five-string bass. Reeks of transfeminine.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Items/melodybass.rsi
+    state: icon
+  - type: Item
+    sprite: _Umbra/PersonalItems/Items/melodybass.rsi
+    size: Normal
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
+    - suitStorage
+    sprite: _Umbra/PersonalItems/Items/melodybass.rsi
+
+- type: loadout
+  id: PersonalItemMelodyBass
+  storage:
+    back:
+    - PersonalItemMelodyBass
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Melody Moon
