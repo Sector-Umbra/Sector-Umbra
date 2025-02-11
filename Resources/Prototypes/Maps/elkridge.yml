@@ -2,7 +2,7 @@
   id: Elkridge
   mapName: 'Elkridge Depot'
   mapPath: /Maps/elkridge.yml
-  minPlayers: 7
+  minPlayers: 0 # Umbra
   maxPlayers: 35
   stations:
     Elkridge:
