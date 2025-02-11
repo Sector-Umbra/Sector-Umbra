@@ -20,6 +20,7 @@ public sealed class SpontaneousCombustionSystem : EntitySystem
     {
         SubscribeLocalEvent<SpontaneousCombustionProtectionComponent, GotEquippedEvent>(OnSpontaneousCombustionProtectionEquipped);
         SubscribeLocalEvent<SpontaneousCombustionProtectionComponent, GotUnequippedEvent>(OnSpontaneousCombustionProtectionUnequipped);
+        SubscribeLocalEvent<SpontaneousCombustionComponent, ComponentInit>(OnSpontaneousCombustionInitialize);
     }
     private void OnSpontaneousCombustionProtectionEquipped(EntityUid uid, SpontaneousCombustionProtectionComponent spontaneousCombustionProtection, GotEquippedEvent args)
     {
@@ -37,42 +38,47 @@ public sealed class SpontaneousCombustionSystem : EntitySystem
         }
     }
 
+    private void OnSpontaneousCombustionInitialize(EntityUid uid, SpontaneousCombustionComponent spontaneousCombustion, ComponentInit args)
+    {
+        UpdateResistance(uid);
+    }
+
 
     private void UpdateResistance(EntityUid uid)
     {
+        // Checks if the entity equiping the item has the spontaneous combustion component.
         if (!TryComp<SpontaneousCombustionComponent>(uid, out var combustion))
             return;
 
+        // Checks if the entity equiping the item has inventory components.
         if (!TryComp(uid, out InventoryComponent? inv) || !TryComp(uid, out ContainerManagerComponent? contMan))
             return;
 
-        float resistance = 1f;
+        // 100 resistance means the entity takes full fire stacks.
+        int resistance = 100;
 
         foreach (var slot in combustion.ProtectionSlots)
         {
-            if (!_inventorySystem.TryGetSlotEntity(uid, slot, out var equipment, inv, contMan) ||
-                !TryGetCombustionProtection(equipment.Value, out var itemResistance))
+            if (_inventorySystem.TryGetSlotEntity(uid, slot, out var equipment, inv, contMan) &&
+                TryGetCombustionProtection(equipment.Value, out var itemResistance))
             {
-                continue;
-            }
-
-            if (itemResistance.HasValue)
-            {
-                resistance = resistance - itemResistance.Value;
+                resistance -= itemResistance.Value;
             }
         }
-
-        combustion.CachedResistance = resistance;
+        // converts to a float and divides by 100.
+        combustion.CachedResistance = (resistance / 100f);
     }
 
-    private bool TryGetCombustionProtection(EntityUid uid, [NotNullWhen(true)] out float? resistance)
+    private bool TryGetCombustionProtection(EntityUid uid, [NotNullWhen(true)] out int? resistance)
     {
-        resistance = null;
-        if (!TryComp<SpontaneousCombustionProtectionComponent>(uid, out var component))
-            return false;
+        if (TryComp<SpontaneousCombustionProtectionComponent>(uid, out var component))
+        {
+            resistance = component.ProtectionPercent;
+            return true;
+        }
 
-        resistance = component.ProtectionPercent;
-        return true;
+        resistance = null;
+        return false;
     }
 
     public override void Update(float frameTime)
@@ -87,9 +93,16 @@ public sealed class SpontaneousCombustionSystem : EntitySystem
         var enumerator = EntityQueryEnumerator<SpontaneousCombustionComponent, FlammableComponent>();
         while (enumerator.MoveNext(out var uid, out var spontaneousCombustion, out var flammable))
         {
+            // Returns if the resistance is 0 (fully immune)
+            if (spontaneousCombustion.CachedResistance <= 0)
+            {
+                return;
+            }
+
             var air = _atmosphereSystem.GetContainingMixture(uid);
 
-            if (air != null && air.GetMoles(spontaneousCombustion.gas) >= spontaneousCombustion.MoleMinimum) ;
+            // Checks if air is not null and if the gas on the tile of the entity is above the mole minimum.
+            if (air != null && air.GetMoles(spontaneousCombustion.Gas) >= spontaneousCombustion.MoleMinimum)
             {
                 var stacks = spontaneousCombustion.FireStacks * spontaneousCombustion.CachedResistance;
 

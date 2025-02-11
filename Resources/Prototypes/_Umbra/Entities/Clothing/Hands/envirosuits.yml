@@ -7,7 +7,7 @@
   - type: Fiber
     fiberMaterial: fibers-synthetic
   - type: SpontaneousCombustionProtection
-    protectionPercent: 0.15
+    protectionPercent: 15
 
 - type: entity
   parent: ClothingHandsEnvirosuitBase
