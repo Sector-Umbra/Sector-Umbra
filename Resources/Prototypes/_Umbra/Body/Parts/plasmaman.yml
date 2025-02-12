@@ -10,6 +10,22 @@
     sprite: _Umbra\Mobs\Species\Plasmaman\parts.rsi
 
 - type: entity
+  id: OrganPlasmamanLungs
+  parent: OrganHumanLungs
+  description: "These strange lungs breath plasma. Avoid oxygen at all costs."
+  suffix: "plasma man"
+  components:
+  - type: Sprite
+    sprite: Mobs/Species/Human/organs.rsi
+  - type: Metabolizer
+    metabolizerTypes: [ Plasmaman ]
+  - type: Lung
+    alert: LowPlasma
+  - type: Item
+    size: Small
+    heldPrefix: lungs
+
+- type: entity
   parent: [ PartPlasmaman, BaseTorso ]
   id: TorsoPlasmaman
   name: plasmaman torso
