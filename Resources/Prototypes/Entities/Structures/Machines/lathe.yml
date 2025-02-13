@@ -196,7 +196,6 @@
       - SubstationMachineCircuitboard
       - WallmountSubstationElectronics
       - CellRechargerCircuitboard
-      - BorgChargerCircuitboard
       - WeaponCapacitorRechargerCircuitboard
       - HandheldStationMap
       - ClothingHeadHatWelding
@@ -205,6 +204,10 @@
       - FreezerElectronics
       - CassetteTape #CD Change
       - TapeRecorder #CD Change
+      - GoldRing # CD
+      - SilverRing # CD
+      - GoldRingDiamond # CD
+      - SilverRingDiamond # CD
   - type: EmagLatheRecipes
     emagStaticRecipes:
       - BoxLethalshot
@@ -353,6 +356,7 @@
       - FauxTileJungleAstroGrass
       - FauxTileAstroIce
       - FauxTileAstroSnow
+      - FauxTileAstroAsteroidSand
       - OreBagOfHolding
 #     - DeviceQuantumSpinInverter # Umbra change, commented out due to QSI bugs
   - type: EmagLatheRecipes
@@ -455,6 +459,7 @@
     - SpaceHeaterMachineCircuitBoard
     - CutterMachineCircuitboard
     - SalvageMagnetMachineCircuitboard
+    - BorgChargerCircuitboard
     dynamicRecipes:
       - ThermomachineFreezerMachineCircuitBoard
       - HellfireFreezerMachineCircuitBoard

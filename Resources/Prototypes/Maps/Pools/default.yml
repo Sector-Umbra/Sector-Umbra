@@ -8,6 +8,7 @@
   - Box
   - ClusterPrime # Umbra: Cluster Replacement
   - Cog
+  - Convex
   - Core
   - Elkridge
   - Fland
@@ -17,7 +18,7 @@
   - Meta
   - Oasis
   - Omega
-  - Saltern
+  #- Saltern # Umbra: Derotated map.
   - Packed
   - Plasma
   #- Reach # Umbra: Derotated map.
