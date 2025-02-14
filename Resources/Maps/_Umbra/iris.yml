@@ -132380,9 +132380,6 @@ entities:
     - type: Transform
       pos: 10.5,-9.5
       parent: 2
-    - type: DisposalUnit
-      recentlyEjected:
-      - invalid
     - type: MailingUnit
       tag: Mail
     - type: Configuration
