@@ -54,7 +54,7 @@
             type: Vox
         clear: true
         time: 5
-      - !type:HealthChange
+      - !type:HealthChange # Start Umbra
         conditions:
         - !type:OrganType
           type: Plasmaman
@@ -72,7 +72,7 @@
           - !type:OrganType
             type: Plasmaman
         clear: true
-        time: 5
+        time: 5 # End Umbra
 
 - type: reagent
   id: Plasma
@@ -94,7 +94,7 @@
         damage:
           types:
             Poison: 3
-        conditions:
+        conditions: # Start Umbra - following changes are for plasma man
         - !type:OrganType
           type: Human
       - !type:AdjustReagent
@@ -255,7 +255,7 @@
       - !type:Oxygenate
         conditions:
         - !type:OrganType
-          type: Plasmaman
+          type: Plasmaman # End Umbra
   reactiveEffects:
     Flammable:
       methods: [ Touch ]
