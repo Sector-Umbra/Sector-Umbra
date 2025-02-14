@@ -60141,35 +60141,6 @@ entities:
     - type: Transform
       pos: 18.362589,14.604195
       parent: 1
-    - type: GroupExamine
-      group:
-      - hoverMessage: ""
-        contextText: verb-examine-group-other
-        icon: /Textures/Interface/examine-star.png
-        components:
-        - Armor
-        - ClothingSpeedModifier
-        entries:
-        - message: This decreases your speed by [color=yellow]10%[/color].
-          priority: 0
-          component: ClothingSpeedModifier
-        - message: >-
-            It provides the following protection:
-
-            - [color=yellow]Blunt[/color] damage reduced by [color=lightblue]60%[/color].
-
-            - [color=yellow]Slash[/color] damage reduced by [color=lightblue]60%[/color].
-
-            - [color=yellow]Piercing[/color] damage reduced by [color=lightblue]30%[/color].
-
-            - [color=yellow]Heat[/color] damage reduced by [color=lightblue]10%[/color].
-
-            - [color=yellow]Caustic[/color] damage reduced by [color=lightblue]10%[/color].
-
-            - [color=orange]Explosion[/color] damage reduced by [color=lightblue]10%[/color].
-          priority: 0
-          component: Armor
-        title: null
 - proto: ClothingOuterBioCmo
   entities:
   - uid: 10154
