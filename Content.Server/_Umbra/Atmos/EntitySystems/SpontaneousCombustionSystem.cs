@@ -1,5 +1,5 @@
 using Content.Server.Atmos.Components;
-using Content.Shared.Damage;
+using Content.Shared.Atmos;
 using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
 using Robust.Shared.Containers;
@@ -93,16 +93,30 @@ public sealed class SpontaneousCombustionSystem : EntitySystem
         var enumerator = EntityQueryEnumerator<SpontaneousCombustionComponent, FlammableComponent>();
         while (enumerator.MoveNext(out var uid, out var spontaneousCombustion, out var flammable))
         {
-            // Returns if the resistance is 0 (fully immune)
+            // Returns if the resistance is 0 (fully immune).
             if (spontaneousCombustion.CachedResistance <= 0)
             {
                 return;
             }
 
+            // Puts the atmos mix of the entitys tile into a var.
             var air = _atmosphereSystem.GetContainingMixture(uid);
+            if (air == null)
+            {
+                return;
+            }
 
-            // Checks if air is not null and if the gas on the tile of the entity is above the mole minimum.
-            if (air != null && air.GetMoles(spontaneousCombustion.Gas) >= spontaneousCombustion.MoleMinimum)
+            // Turns the gas value from the SpontaneousCombustion component into an int.
+            if (!Enum.TryParse(spontaneousCombustion.Gas, out Gas gasInt))
+            {
+                return;
+            }
+
+            // Gets the mole count of the selected gas on the entitys tile.
+            var airMoles = air.GetMoles(gasInt);
+
+            // Checks if the mole count of the selected gas is less then the set mole minimum.
+            if (airMoles >= spontaneousCombustion.MoleMinimum)
             {
                 var stacks = spontaneousCombustion.FireStacks * spontaneousCombustion.CachedResistance;
 
