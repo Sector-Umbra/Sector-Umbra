@@ -2,7 +2,7 @@
   parent: ClothingShoesBase
   id: ClothingShoesSandals
   name: sandals
-  description: A pair of rubber flippers that improves swimming ability when worn.
+  description: A pair of fine adjustable leather sandals. Reptilians' top choice.
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Shoes/Misc/sandals.rsi
