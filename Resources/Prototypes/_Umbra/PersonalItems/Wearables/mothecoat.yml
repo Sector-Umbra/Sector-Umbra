@@ -1,6 +1,6 @@
 # Player: June - Character: June Mothe
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: ClothingOuterStorageFoldableBase
   id: PersonalItemMotheCoat
   name: Mothe's coat
   description: An old surplus cloak meant to protect from rain and high winds. Despite all the visible repairs and mends, it looks like it's seen better days. Places where insignia would go have dark blue pieces of cloth sewn over them.
@@ -10,6 +10,14 @@
     sprite: _Umbra/PersonalItems/Wearables/mothecoat.rsi
   - type: Clothing
     sprite: _Umbra/PersonalItems/Wearables/mothecoat.rsi
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot { }
+      storagebase: !type:Container
+        ents: [ ]
+  - type: ToggleableClothing
+    clothingPrototype: PersonalItemMotheHood
+    slot: head
 
 - type: loadout
   id: PersonalItemMotheCoat
