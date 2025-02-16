@@ -1,4 +1,4 @@
-namespace Content.Server._Umbra.Speech.Components;
+namespace Content.Server.Speech.Components;
 
 /// <summary>
 ///     Mantis noises.

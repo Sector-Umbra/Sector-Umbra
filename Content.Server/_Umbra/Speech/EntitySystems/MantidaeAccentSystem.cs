@@ -1,7 +1,7 @@
 using System.Text.RegularExpressions;
 using Content.Server.Speech.Components;
 
-namespace Content.Server._Umbra.Speech.EntitySystems;
+namespace Content.Server.Speech.EntitySystems;
 
 public sealed class MantidaeAccentSystem : EntitySystem
 {
