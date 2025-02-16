@@ -1,0 +1,27 @@
+# Player: Potayo - Character: Sparks-Of-Hope
+- type: entity
+  parent: PlushieLizard
+  id: PersonalItemHopePlushie
+  name: hope plushie
+  description: A lizard plushie made to look like Sparks-Of-Hope.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_hope
+    sprite: _Umbra/PersonalItems/Plushies/hopeplushie.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/PersonalItems/Plushies/hopeplushie.rsi
+    equippedPrefix: hope
+    slots:
+    - HEAD
+
+- type: loadout
+  id: PersonalItemHopePlushie
+  storage:
+    back:
+    - PersonalItemHopePlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Sparks-Of-Hope
