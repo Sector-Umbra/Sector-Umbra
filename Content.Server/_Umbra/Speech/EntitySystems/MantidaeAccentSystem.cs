@@ -15,9 +15,9 @@ public sealed class MantidaeAccentSystem : EntitySystem
     {
         var message = args.Message;
 
-        // mantis noises
+        // Replace s with x for messages.
         message = Regex.Replace(message, "s+", "x");
-        // LOUD MANTIS NOISES!!
+        // Same as above, but capital letters.
         message = Regex.Replace(message, "S+", "X");
 
         args.Message = message;
