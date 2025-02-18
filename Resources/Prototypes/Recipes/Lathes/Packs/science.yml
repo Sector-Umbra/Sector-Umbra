@@ -28,7 +28,7 @@
   - AnomalyLocatorWide
   - HoloprojectorField
   - SignallerAdvanced
-  - DeviceQuantumSpinInverter
+  #- DeviceQuantumSpinInverter # Umbra: Disabled Spin Inverter due to QSI bugs
 
 - type: latheRecipePack
   id: ScienceClothing
