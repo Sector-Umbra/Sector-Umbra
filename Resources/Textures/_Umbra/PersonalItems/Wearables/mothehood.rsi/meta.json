@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from TODO (Winter Coat) and modified by June (juneszalkowska).",
+    "copyright": "Taken from wizden at commit https://github.com/space-wizards/space-station-14/commit/7c7dfb48bba8791a3be15ea567f78033e1b9a974 and modified by June (juneszalkowska).",
     "size": {
       "x": 32,
       "y": 32
@@ -16,3 +16,4 @@
       }
     ]
   }
+
