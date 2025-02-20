@@ -77,6 +77,7 @@
   hidden: true
   loadouts:
   - LoadoutTankHarness
+  - LoadoutTankHarnessPlasma # Umbra
 
 - type: loadoutGroup
   id: Survival
@@ -87,6 +88,7 @@
   - EmergencyNitrogen
   - EmergencyOxygen
   - LoadoutSpeciesVoxNitrogen
+  - LoadoutSpeciesPlasmamanPlasma # Umbra
 
 - type: loadoutGroup
   id: GroupEVATank
@@ -485,6 +487,7 @@
   - EmergencyNitrogenClown
   - EmergencyOxygenClown
   - LoadoutSpeciesVoxNitrogen
+  - LoadoutSpeciesPlasmamanPlasma # Umbra
 
 - type: loadoutGroup
   id: MimeHead
@@ -541,6 +544,7 @@
   - EmergencyNitrogenMime
   - EmergencyOxygenMime
   - LoadoutSpeciesVoxNitrogen
+  - LoadoutSpeciesPlasmamanPlasma # Umbra
 
 - type: loadoutGroup
   id: MusicianJumpsuit
@@ -844,6 +848,7 @@
   - EmergencyNitrogenExtended
   - EmergencyOxygenExtended
   - LoadoutSpeciesVoxNitrogen
+  - LoadoutSpeciesPlasmamanPlasma # Umbra
 
 # Science
 - type: loadoutGroup
@@ -1147,6 +1152,7 @@
   - EmergencyNitrogenSecurity
   - EmergencyOxygenSecurity
   - LoadoutSpeciesVoxNitrogen
+  - LoadoutSpeciesPlasmamanPlasma # Umbra
 
 - type: loadoutGroup
   id: SecurityStar
@@ -1372,6 +1378,7 @@
   - EmergencyNitrogenMedical
   - EmergencyOxygenMedical
   - LoadoutSpeciesVoxNitrogen
+  - LoadoutSpeciesPlasmamanPlasma # Umbra
 
 # Wildcards
 - type: loadoutGroup
@@ -1415,6 +1422,7 @@
   - EmergencyNitrogenSyndicate
   - EmergencyOxygenSyndicate
   - LoadoutSpeciesVoxNitrogen
+  - LoadoutSpeciesPlasmamanPlasma # Umbra
 
 - type: loadoutGroup
   id: GroupSpeciesBreathTool
@@ -1424,6 +1432,7 @@
   hidden: true
   loadouts:
   - LoadoutSpeciesBreathTool
+  - LoadoutSpeciesBreathToolPlasma # Umbra
 
 - type: loadoutGroup
   id: GroupSpeciesBreathToolMedical
@@ -1433,6 +1442,7 @@
   hidden: true
   loadouts:
   - LoadoutSpeciesBreathToolMedical
+  - LoadoutSpeciesBreathToolMedicalPlasma # Umbra
 
 - type: loadoutGroup
   id: GroupSpeciesBreathToolSecurity
@@ -1442,3 +1452,4 @@
   hidden: true
   loadouts:
   - LoadoutSpeciesBreathToolSecurity
+  - LoadoutSpeciesBreathToolSecurityPlasma # Umbra

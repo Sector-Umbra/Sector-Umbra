@@ -29,8 +29,8 @@
 
 - type: entity
   parent: ClothingHeadEnvirosuitBase
-  id: ClothingHeadEnvirosuitBotany
-  name: botany envirosuit helmet
+  id: ClothingHeadEnvirosuitBotanist
+  name: botanist envirosuit helmet
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/botany.rsi
@@ -69,7 +69,7 @@
 
 - type: entity
   parent: ClothingHeadEnvirosuitBase
-  id: ClothingHeadEnvirosuitChap
+  id: ClothingHeadEnvirosuitChaplain
   name: chaplain envirosuit helmet
   components:
   - type: Sprite
@@ -169,13 +169,23 @@
 
 - type: entity
   parent: ClothingHeadEnvirosuitBase
-  id: ClothingHeadEnvirosuitHop
+  id: ClothingHeadEnvirosuitHoP
   name: head of personnel envirosuit helmet
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/hop.rsi
   - type: Clothing
     sprite: _Umbra/Clothing/Head/Envirosuit/hop.rsi
+
+- type: entity
+  parent: ClothingHeadEnvirosuitBase
+  id: ClothingHeadEnvirosuitHoS
+  name: head of security envirosuit helmet
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Head/Envirosuit/hos.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Head/Envirosuit/hos.rsi
 
 - type: entity
   parent: ClothingHeadEnvirosuitBase

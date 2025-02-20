@@ -2,6 +2,7 @@
 - type: roleLoadout
   id: JobCaptain
   groups:
+  - CaptainEnvirosuit # Umbra
   - CaptainHead
   - CaptainNeck
   - CaptainJumpsuit
@@ -16,6 +17,7 @@
 - type: roleLoadout
   id: JobHeadOfPersonnel
   groups:
+  - HoPEnvirosuit # Umbra
   - GroupTankHarness
   - HoPHead
   - HoPNeck
@@ -38,6 +40,7 @@
 - type: roleLoadout
   id: JobPassenger
   groups:
+  - GenericEnvirosuit # Umbra
   - GroupTankHarness
   - PassengerJumpsuit
   - CommonBackpack
@@ -56,6 +59,7 @@
 - type: roleLoadout
   id: JobBartender
   groups:
+  - SlacksEnvirosuit # Umbra
   - GroupTankHarness
   - BartenderHead
   - BartenderJumpsuit
@@ -71,6 +75,7 @@
 - type: roleLoadout
   id: JobServiceWorker
   groups:
+  - SlacksEnvirosuit # Umbra
   - GroupTankHarness
   - BartenderJumpsuit
   - CommonBackpack
@@ -84,6 +89,7 @@
 - type: roleLoadout
   id: JobChef
   groups:
+  - ChefEnvirosuit # Umbra
   - GroupTankHarness
   - ChefHead
   - ChefMask
@@ -99,6 +105,7 @@
 - type: roleLoadout
   id: JobLibrarian
   groups:
+  - SlacksEnvirosuit # Umbra
   - GroupTankHarness
   - LibrarianJumpsuit
   - CommonBackpack
@@ -112,6 +119,7 @@
 - type: roleLoadout
   id: JobLawyer
   groups:
+  - SlacksEnvirosuit # Umbra
   - GroupTankHarness
   - LawyerNeck
   - LawyerJumpsuit
@@ -126,6 +134,7 @@
 - type: roleLoadout
   id: JobChaplain
   groups:
+  - ChaplainEnvirosuit # Umbra
   - GroupTankHarness
   - ChaplainHead
   - ChaplainMask
@@ -142,6 +151,7 @@
 - type: roleLoadout
   id: JobJanitor
   groups:
+  - JanitorEnvirosuit # Umbra
   - GroupTankHarness
   - JanitorHead
   - JanitorJumpsuit
@@ -158,6 +168,7 @@
 - type: roleLoadout
   id: JobBotanist
   groups:
+  - BotanistEnvirosuit # Umbra
   - GroupTankHarness
   - BotanistHead
   - BotanistJumpsuit
@@ -172,6 +183,7 @@
 - type: roleLoadout
   id: JobClown
   groups:
+  - ClownEnvirosuit # Umbra
   - GroupTankHarness
   - ClownHead
   - ClownJumpsuit
@@ -186,6 +198,7 @@
 - type: roleLoadout
   id: JobMime
   groups:
+  - MimeEnvirosuit # Umbra
   - GroupTankHarness
   - MimeHead
   - MimeMask
@@ -201,6 +214,7 @@
 - type: roleLoadout
   id: JobMusician
   groups:
+  - SlacksEnvirosuit # Umbra
   - GroupTankHarness
   - MusicianJumpsuit
   - CommonBackpack
@@ -217,6 +231,7 @@
 - type: roleLoadout
   id: JobQuartermaster
   groups:
+  - CargoEnvirosuit # Umbra
   - GroupTankHarness
   - QuartermasterHead
   - QuartermasterNeck
@@ -233,6 +248,7 @@
 - type: roleLoadout
   id: JobCargoTechnician
   groups:
+  - CargoEnvirosuit # Umbra
   - GroupTankHarness
   - CargoTechnicianHead
   - CargoTechnicianJumpsuit
@@ -248,6 +264,7 @@
 - type: roleLoadout
   id: JobSalvageSpecialist
   groups:
+  - SalvageEnvirosuit # Umbra
   - GroupTankHarness
   - SalvageSpecialistJumpsuit # CD
   - SalvageSpecialistBackpack
@@ -263,6 +280,7 @@
 - type: roleLoadout
   id: JobChiefEngineer
   groups:
+  - CEEnvirosuit # Umbra
   - GroupTankHarness
   - ChiefEngineerHead
   - ChiefEngineerJumpsuit
@@ -278,6 +296,7 @@
 - type: roleLoadout
   id: JobTechnicalAssistant
   groups:
+  - EngineerEnvirosuit # Umbra
   - GroupTankHarness
   - TechnicalAssistantJumpsuit
   - StationEngineerBackpack
@@ -289,6 +308,7 @@
 - type: roleLoadout
   id: JobStationEngineer
   groups:
+  - EngineerEnvirosuit # Umbra
   - GroupTankHarness
   - StationEngineerHead
   - StationEngineerJumpsuit
@@ -304,6 +324,7 @@
 - type: roleLoadout
   id: JobAtmosphericTechnician
   groups:
+  - AtmosEnvirosuit # Umbra
   - GroupTankHarness
   - AtmosphericTechnicianJumpsuit
   - AtmosphericTechnicianBackpack
@@ -318,6 +339,7 @@
 - type: roleLoadout
   id: JobResearchDirector
   groups:
+  - RDEnvirosuit # Umbra
   - GroupTankHarness
   - ResearchDirectorHead
   - ResearchDirectorNeck
@@ -335,6 +357,7 @@
 - type: roleLoadout
   id: JobScientist
   groups:
+  - ScientistEnvirosuit # Umbra
   - GroupTankHarness
   - ScientistHead
   - ScientistNeck
@@ -355,6 +378,7 @@
 - type: roleLoadout
   id: JobResearchAssistant
   groups:
+  - ScientistEnvirosuit # Umbra
   - GroupTankHarness
   - ResearchAssistantJumpsuit
   - ScientistBackpack
@@ -368,6 +392,7 @@
 - type: roleLoadout
   id: JobHeadOfSecurity
   groups:
+  - HoSEnvirosuit # Umbra
   - HeadofSecurityHead
   - HeadofSecurityNeck
   - HeadofSecurityJumpsuit
@@ -385,6 +410,7 @@
 - type: roleLoadout
   id: JobWarden
   groups:
+  - WardenEnvirosuit # Umbra
   - WardenHead
   - WardenJumpsuit
   - SecurityBackpack
@@ -401,6 +427,7 @@
 - type: roleLoadout
   id: JobSecurityOfficer
   groups:
+  - SecurityEnvirosuit # Umbra
   - SecurityHead
   - SecurityJumpsuit
   - SecurityBackpack
@@ -418,6 +445,7 @@
 - type: roleLoadout
   id: JobDetective
   groups:
+  - DetectiveEnvirosuit # Umbra
   - DetectiveHead
   - DetectiveNeck
   - DetectiveJumpsuit
@@ -434,6 +462,7 @@
 - type: roleLoadout
   id: JobSecurityCadet
   groups:
+  - SecurityEnvirosuit # Umbra
   - SecurityCadetJumpsuit
   - SecurityBackpack
   - SurvivalSecurity
@@ -446,6 +475,7 @@
 - type: roleLoadout
   id: JobChiefMedicalOfficer
   groups:
+  - CMOEnvirosuit # Umbra
   - GroupTankHarness
   - ChiefMedicalOfficerHead
   - MedicalMask
@@ -464,6 +494,7 @@
 - type: roleLoadout
   id: JobMedicalDoctor
   groups:
+  - DoctorEnvirosuit # Umbra
   - GroupTankHarness
   - MedicalDoctorHead
   - MedicalMask
@@ -482,6 +513,7 @@
 - type: roleLoadout
   id: JobMedicalIntern
   groups:
+  - DoctorEnvirosuit # Umbra
   - GroupTankHarness
   - MedicalInternJumpsuit
   - MedicalBackpack
@@ -494,6 +526,7 @@
 - type: roleLoadout
   id: JobChemist
   groups:
+  - ChemistEnvirosuit # Umbra
   - GroupTankHarness
   - MedicalMask
   - ChemistJumpsuit
@@ -509,6 +542,7 @@
 - type: roleLoadout
   id: JobParamedic
   groups:
+  - ParamedicEnvirosuit # Umbra
   - GroupTankHarness
   - ParamedicHead
   # CD: ETU Gear
@@ -529,6 +563,7 @@
 - type: roleLoadout
   id: JobZookeeper
   groups:
+  - SlacksEnvirosuit # Umbra
   - GroupTankHarness
   - CommonBackpack
   - Glasses
@@ -540,6 +575,7 @@
 - type: roleLoadout
   id: JobReporter
   groups:
+  - SlacksEnvirosuit # Umbra
   - GroupTankHarness
   - ReporterJumpsuit
   - CommonBackpack
@@ -552,6 +588,7 @@
 - type: roleLoadout
   id: JobPsychologist
   groups:
+  - SlacksEnvirosuit # Umbra
   - GroupTankHarness
   - PsychologistJumpsuit
   - MedicalBackpack
@@ -565,6 +602,7 @@
 - type: roleLoadout
   id: JobBoxer
   groups:
+  - SlacksEnvirosuit # Umbra
   - GroupTankHarness
   - BoxerJumpsuit
   - BoxerGloves
@@ -581,12 +619,14 @@
 - type: roleLoadout
   id: RoleSurvivalVoxSupport
   groups:
+  - GenericEnvirosuit # Umbra
   - GroupSpeciesBreathTool
   - GroupTankHarness
 
 - type: roleLoadout
   id: RoleSurvivalStandard
   groups:
+  - GenericEnvirosuit # Umbra
   - Survival
   - GroupSpeciesBreathTool
   - GroupTankHarness
@@ -594,12 +634,14 @@
 - type: roleLoadout
   id: RoleSurvivalClown
   groups:
+  - ClownEnvirosuit # Umbra
   - SurvivalClown
   - GroupTankHarness
 
 - type: roleLoadout
   id: RoleSurvivalExtended
   groups:
+  - EngineerEnvirosuit # Umbra
   - SurvivalExtended
   - GroupSpeciesBreathTool
   - GroupTankHarness
@@ -607,6 +649,7 @@
 - type: roleLoadout
   id: RoleSurvivalMedical
   groups:
+  - DoctorEnvirosuit # Umbra
   - SurvivalMedical
   - GroupSpeciesBreathToolMedical
   - GroupTankHarness
@@ -614,6 +657,7 @@
 - type: roleLoadout
   id: RoleSurvivalSecurity
   groups:
+  - SecurityEnvirosuit # Umbra
   - SurvivalSecurity
   - GroupSpeciesBreathToolSecurity
   - GroupTankHarness
@@ -621,6 +665,7 @@
 - type: roleLoadout
   id: RoleSurvivalSyndicate
   groups:
+  - SyndicateEnvirosuit # Umbra
   - SurvivalSyndicate
   - GroupSpeciesBreathTool
   - GroupTankHarness
@@ -628,6 +673,7 @@
 - type: roleLoadout
   id: RoleSurvivalNukie
   groups:
+  - SyndicateEnvirosuit # Umbra
   - SurvivalSyndicate
   - GroupSpeciesBreathTool
   - GroupPocketTankDouble
@@ -635,5 +681,6 @@
 - type: roleLoadout
   id: RoleSurvivalEVA
   groups:
+  - GenericEnvirosuit # Umbra
   - GroupEVATank
   - SurvivalExtended

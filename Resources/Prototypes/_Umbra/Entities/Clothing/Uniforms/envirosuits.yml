@@ -29,8 +29,8 @@
 
 - type: entity  
   parent: ClothingUniformEnvirosuitBase
-  id: ClothingUniformEnvirosuitBotany
-  name: botany envirosuit
+  id: ClothingUniformEnvirosuitBotanist
+  name: botanist envirosuit
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/botany.rsi
