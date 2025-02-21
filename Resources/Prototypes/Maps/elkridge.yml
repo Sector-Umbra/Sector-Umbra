@@ -3,7 +3,7 @@
   mapName: 'Elkridge Depot'
   mapPath: /Maps/elkridge.yml
   minPlayers: 0 # Umbra
-  maxPlayers: 35
+  maxPlayers: 45
   stations:
     Elkridge:
       stationProto: StandardNanotrasenStation
@@ -40,7 +40,7 @@
             ChiefMedicalOfficer: [ 1, 1 ]
             SeniorPhysician: [ 1, 1 ] #CD role
             Chemist: [ 2, 2 ]
-            MedicalDoctor: [ 3, 3 ]
+            MedicalDoctor: [ 2, 3 ]
             MedicalIntern: [ 2, 2 ]
             Paramedic: [ 1, 1 ]
             Psychologist: [ 1, 1 ]
