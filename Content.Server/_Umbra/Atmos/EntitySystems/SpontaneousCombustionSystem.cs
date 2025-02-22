@@ -1,11 +1,13 @@
+using Content.Server._Umbra.Atmos.Components;
 using Content.Server.Atmos.Components;
+using Content.Server.Atmos.EntitySystems;
 using Content.Shared.Atmos;
 using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
 using Robust.Shared.Containers;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Content.Server.Atmos.EntitySystems;
+namespace Content.Server._Umbra.Atmos.EntitySystems;
 
 public sealed class SpontaneousCombustionSystem : EntitySystem
 {

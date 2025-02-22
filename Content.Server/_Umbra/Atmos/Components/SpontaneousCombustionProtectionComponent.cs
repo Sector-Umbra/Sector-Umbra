@@ -1,7 +1,6 @@
+using Content.Server._Umbra.Atmos.EntitySystems;
 
-using Content.Server.Atmos.EntitySystems;
-
-namespace Content.Server.Atmos.Components;
+namespace Content.Server._Umbra.Atmos.Components;
 
 [RegisterComponent]
 [Access(typeof(SpontaneousCombustionSystem))]

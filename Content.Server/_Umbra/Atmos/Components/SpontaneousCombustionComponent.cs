@@ -1,5 +1,4 @@
-
-namespace Content.Server.Atmos.Components;
+namespace Content.Server._Umbra.Atmos.Components;
 
 [RegisterComponent]
 public sealed partial class SpontaneousCombustionComponent : Component
