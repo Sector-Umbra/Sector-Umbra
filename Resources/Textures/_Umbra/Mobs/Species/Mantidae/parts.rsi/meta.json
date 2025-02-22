@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Most sprites necroa_, hands, arms, legs, and feet uses moth limbs as a base.",
+  "copyright": "Sprites by necroa_, hands, arms, legs, and feet uses https://github.com/tgstation/tgstation/commit/1d0eadcb126fc3581eed33490f4be2a88157af58 as a base.",
   "size": {
     "x": 32,
     "y": 32
