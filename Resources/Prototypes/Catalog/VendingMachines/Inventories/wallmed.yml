@@ -15,3 +15,5 @@
     IVstandflatpack: 1 #Umbra
     EpinephrineChemistryBottle: 3
     Syringe: 3
+  contrabandInventory:
+    PowerCellSmall: 2

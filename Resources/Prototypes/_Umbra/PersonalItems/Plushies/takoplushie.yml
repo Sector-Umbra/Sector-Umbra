@@ -1,0 +1,27 @@
+# Player: Tako - Character: Tako-Ja
+- type: entity
+  parent: PlushieLizard
+  id: PersonalItemTakoPlushie
+  name: tako plushie
+  description: A lizard plushie made to look like Tako-Ja, it smells faintly of roses.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_tako
+    sprite: _Umbra/PersonalItems/Plushies/takoplushie.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/PersonalItems/Plushies/takoplushie.rsi
+    equippedPrefix: tako
+    slots:
+    - HEAD
+
+- type: loadout
+  id: PersonalItemTakoPlushie
+  storage:
+    back:
+    - PersonalItemTakoPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Tako-Ja
