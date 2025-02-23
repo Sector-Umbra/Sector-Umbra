@@ -64,6 +64,8 @@
   - PersonalItemTihaPlushie
   - PersonalItemGravesPlushie
   - PersonalItemHissesGoldenLocket
+  - PersonalItemAngelPlushie
+  - PersonalItemSkylightPlushie
   - PersonalItemIsatheiCoat
   - PersonalItemKarakiNanoweaveMantle
   - PersonalItemDartingPlushie
@@ -73,6 +75,8 @@
   - PersonalItemSerendipityGuitar
   - PersonalItemAttacusGuitar
   - PersonalItemJohnMilitaryCross
+  - PersonalItemHopePlushie
+  - PersonalItemTakoPlushie
   - PersonalItemMelodyBass
   - PersonalItemBuckshotJumpskirt
   - PersonalItemTempestasBalletHeels
@@ -81,6 +85,8 @@
   - PersonalItemOmiPlushie
   - PersonalItemAdelineTurtleneck
   - PersonalItemCrimsonMachinistJumpsuit
+  - PersonalItemCrimsonMimicScarf
+  - PersonalItemEmikoBook
 
 - type: loadoutEffectGroup
   id: PlasmaBreather

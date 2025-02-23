@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Sprites drawn necroa_",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "l_default",
+            "directions": 4
+        },
+        {
+            "name": "r_default",
+            "directions": 4
+        },
+        {
+            "name": "l_empty",
+            "directions": 4
+        },
+        {
+            "name": "r_empty",
+            "directions": 4
+        },
+        {
+            "name": "antennae_default",
+            "directions": 4
+        },
+        {
+            "name": "antennae_ant",
+            "directions": 4
+        }
+    ]
+}

@@ -6,6 +6,7 @@ using Content.Shared.PDA;
 using Content.Shared.Roles;
 using Content.Shared.StationRecords;
 using Content.Shared._CD.Records;
+using Content.Shared.Forensics.Components;
 using Robust.Shared.Prototypes;
 using Content.Shared.GameTicking;
 

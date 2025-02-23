@@ -1,0 +1,27 @@
+# Player: Maestro2Kimpembe - Character: Skylight Mirth
+- type: entity
+  parent: PlushieMoth
+  id: PersonalItemAngelPlushie
+  name: angel plushie
+  description: Just as fluffy as, and almost as soft as, the real thing! You can almost hear it saying "Oh gosh, I'm sorry!",
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: angel_plushie
+    sprite: _Umbra/PersonalItems/Plushies/angelplushie.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/PersonalItems/Plushies/angelplushie.rsi
+    equippedPrefix: angel
+    slots:
+    - HEAD
+
+- type: loadout
+  id: PersonalItemAngelPlushie
+  storage:
+    back:
+    - PersonalItemAngelPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Skylight Mirth
