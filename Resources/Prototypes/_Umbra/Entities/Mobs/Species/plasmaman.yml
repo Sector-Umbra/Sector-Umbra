@@ -19,6 +19,21 @@
       amount: 5
   - type: HumanoidAppearance
     species: Plasmaman
+  - type: DamageVisuals
+    damageOverlayGroups:
+      Brute:
+        sprite: Mobs/Effects/brute_damage.rsi
+        color: "#555555AA"
+      Burn:
+        sprite: Mobs/Effects/burn_damage.rsi
+  - type: Speech
+    speechVerb: Skeleton
+  - type: Vocal
+    sounds:
+      Male: Skeleton
+      Female: Skeleton
+      Unsexed: Skeleton
+  - type: ZombieImmune
   - type: Inventory
     femaleDisplacements:
       jumpsuit:
