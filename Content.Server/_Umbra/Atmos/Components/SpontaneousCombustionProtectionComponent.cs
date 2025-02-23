@@ -7,7 +7,7 @@ namespace Content.Server._Umbra.Atmos.Components;
 public sealed partial class SpontaneousCombustionProtectionComponent : Component
 {
     /// <summary>
-    /// The reduction of fire added by spontanious combustion as a percent in an int where 100 = 100% firestacks prevented.
+    /// Reduces firestacks gained by a percentage.
     /// </summary>
     [DataField]
     public int ProtectionPercent = 75;

@@ -45,7 +45,6 @@ public sealed class SpontaneousCombustionSystem : EntitySystem
         UpdateResistance(uid);
     }
 
-
     private void UpdateResistance(EntityUid uid)
     {
         // Checks if the entity equiping the item has the spontaneous combustion component.
