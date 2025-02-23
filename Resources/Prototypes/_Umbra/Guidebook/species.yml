@@ -1,0 +1,4 @@
+- type: guideEntry
+  id: Mantidae
+  name: species-name-mantidae
+  text: "/ServerInfo/Guidebook/_Umbra/Mobs/Mantidae.xml"
