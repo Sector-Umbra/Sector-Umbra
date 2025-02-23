@@ -6,7 +6,7 @@
   sprites: MobPlasmamanSprites
   markingLimits: MobHumanMarkingLimits
   dollPrototype: MobPlasmamanDummy
-  skinColoration: Hues
+  skinColoration: TintedHues
   maleFirstNames: names_plasmaman_first
   femaleFirstNames: names_plasmaman_first
   lastNames: names_plasmaman_last
