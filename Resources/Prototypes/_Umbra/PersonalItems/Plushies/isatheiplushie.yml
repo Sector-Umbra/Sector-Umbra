@@ -1,0 +1,27 @@
+# Player: Maestro2Kimpembe - Character: Takes-Great-Risk
+- type: entity
+  parent: PlushieLizard
+  id: PersonalItemIsatheiPlushie
+  name: isathei plushie
+  description: Little Takes-Great-Risk in a plush version. Smells like a bamboo and lilac.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_isathei
+    sprite: _Umbra/PersonalItems/Plushies/isatheiplushie.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/PersonalItems/Plushies/isatheiplushie.rsi
+    equippedPrefix: isathei
+    slots:
+    - HEAD
+
+- type: loadout
+  id: PersonalItemIsatheiPlushie
+  storage:
+    back:
+    - PersonalItemIsatheiPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Isathei Arsicarsis
