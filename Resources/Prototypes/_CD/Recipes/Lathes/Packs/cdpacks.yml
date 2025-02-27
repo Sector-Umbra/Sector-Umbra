@@ -29,44 +29,44 @@
 - type: latheRecipePack
   id: CDUniformPrinterStatic
   recipes:
-  # CD Additions
-  - ClothingUniformJumpskirtHosFormal
-  - ClothingUniformJumpskirtHoSParadeMale
-  - ClothingUniformJumpsuitHoSBlue
-  - ClothingUniformJumpsuitHosFormal
-  - ClothingUniformJumpsuitHoSGrey
-  - ClothingUniformJumpsuitHoSParadeMale
-  - ClothingUniformJumpsuitCapFormal
-  - ClothingUniformJumpskirtCapFormalDress
-  - ClothingNeckCloakHop
-  - ClothingNeckCloakQm
-  - ClothingNeckCloakCe
-  - ClothingCloakCmo
-  - ClothingNeckCloakRd
-  - ClothingNeckCloakHos
-  - ClothingNeckCloakCapFormal
-  - ClothingNeckCloakCap
-  - ClothingHeadHatBeretEngineering
-  - ClothingHeadHatBeretCmo
-  - ClothingHeadHatBeretRND
-  - ClothingHeadHatBeretHoS
-  - ClothingHeadHatHoshat
-  - ClothingHeadHatHopcap
-  - ClothingHeadHatQMsoftFlipped
-  - ClothingHeadHatQMsoft
-  - ClothingHeadHatCaptain
-  - ClothingHeadHatCapcap
-  - PanCloak
-  - GayCloak
-  - LesbianCloak
-  - AroCloak
-  - BiCloak
-  - TransCloak
-  - IntersexCloak
-  # CD exclusives
-  - ClothingBeltHarnessETU
-  - ClothingHeadHelmetETUPointman
-  - ClothingMaskGasETUSterile
-  - ClothingHandsGlovesETUGauntlet
-  - ClothingUniformJumpsuitETUFlightsuit
-  - ClothingShoesColorSlate
+#   # CD Additions
+   - ClothingUniformJumpskirtHosFormal
+   - ClothingUniformJumpskirtHoSParadeMale
+   - ClothingUniformJumpsuitHoSBlue
+   - ClothingUniformJumpsuitHosFormal
+   - ClothingUniformJumpsuitHoSGrey
+   - ClothingUniformJumpsuitHoSParadeMale
+   - ClothingUniformJumpsuitCapFormal
+   - ClothingUniformJumpskirtCapFormalDress
+#   - ClothingNeckCloakHop # Umbra: Unprintable Cloaks
+#   - ClothingNeckCloakQm
+#   - ClothingNeckCloakCe
+#   - ClothingCloakCmo
+#   - ClothingNeckCloakRd
+#   - ClothingNeckCloakHos
+#   - ClothingNeckCloakCapFormal
+#   - ClothingNeckCloakCap
+   - ClothingHeadHatBeretEngineering
+   - ClothingHeadHatBeretCmo
+   - ClothingHeadHatBeretRND
+   - ClothingHeadHatBeretHoS
+   - ClothingHeadHatHoshat
+   - ClothingHeadHatHopcap
+#   - ClothingHeadHatQMsoftFlipped
+   - ClothingHeadHatQMsoft
+   - ClothingHeadHatCaptain
+   - ClothingHeadHatCapcap
+#   - PanCloak # Umbra: No recipes for these, found in the vendor
+#   - GayCloak
+#   - LesbianCloak
+#   - AroCloak
+#   - BiCloak
+#   - TransCloak
+#   - IntersexCloak
+   # CD exclusives
+   - ClothingBeltHarnessETU
+   - ClothingHeadHelmetETUPointman
+   - ClothingMaskGasETUSterile
+   - ClothingHandsGlovesETUGauntlet
+   - ClothingUniformJumpsuitETUFlightsuit
+   - ClothingShoesColorSlate
