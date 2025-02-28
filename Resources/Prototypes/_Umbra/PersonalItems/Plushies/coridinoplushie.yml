@@ -1,9 +1,9 @@
 # Player: cricket - Character: Corinne Coley
 - type: entity
   parent: PlushieLizard
-  id: PersonalItemCoriDinoPlushie
+  id: PersonalItemCorinneDinoPlushie
   name: off-brand lizard plushie
-  description: A.. lizard plushie? It appears to share the same template as its NT-approved counterpart. Despite its authenticity, it looks worn but well-loved.
+  description: A... lizard plushie? It appears to share the same template as its NT-approved counterpart. Despite its authenticity, it looks worn but well-loved.
   suffix: PersonalItem
   components:
   - type: Sprite
@@ -19,10 +19,10 @@
     - HEAD
 
 - type: loadout
-  id: PersonalItemCoriDinoPlushie
+  id: PersonalItemCorinneDinoPlushie
   storage:
     back:
-    - PersonalItemCoriDinoPlushie
+    - PersonalItemCorinneDinoPlushie
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
