@@ -3,7 +3,6 @@
   mapName: 'Convex'
   mapPath: /Maps/convex.yml
   minPlayers: 45 #CD change from 75 to 45
-  patchfile: /CDMapPatches/convex.yml #CD map patch
   stations:
     Convex:
       stationProto: StandardNanotrasenStation
