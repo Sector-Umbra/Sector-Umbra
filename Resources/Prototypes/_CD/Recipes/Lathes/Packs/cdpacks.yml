@@ -20,6 +20,7 @@
   recipes:
   # - HandheldCrewMonitor # Umbra: Removed to keep non-craftable
   - MedCrutchesForearm
+  - VehicleWheelchairFolded
 
 - type: latheRecipePack
   id: CDSecfabStatic
