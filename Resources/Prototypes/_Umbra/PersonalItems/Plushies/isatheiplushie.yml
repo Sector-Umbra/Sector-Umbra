@@ -1,9 +1,9 @@
-# Player: Maestro2Kimpembe - Character: Takes-Great-Risk
+# Player: crimsonjesterheart - Character: Isathei Arsicaris
 - type: entity
   parent: PlushieLizard
   id: PersonalItemIsatheiPlushie
   name: isathei plushie
-  description: Little Takes-Great-Risk in a plush version. Smells like a bamboo and lilac.
+  description: TODO
   suffix: PersonalItem
   components:
   - type: Sprite
@@ -24,4 +24,4 @@
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
-    - Isathei Arsicarsis
+    - Isathei Arsicaris
