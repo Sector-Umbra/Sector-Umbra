@@ -1,9 +1,9 @@
-- type: latheRecipePack
-  id: CDBoardsStatic
-  recipes:
-  - StationRecordsComputerCircuitboard
-  - MedicalRecordsComputerCircuitboard
-  - CriminalRecordsComputerCircuitboard
+#- type: latheRecipePack # Umbra: Removed due to no recipes on Umbra
+#  id: CDBoardsStatic
+#  recipes:
+#  - StationRecordsComputerCircuitboard
+#  - MedicalRecordsComputerCircuitboard
+#  - CriminalRecordsComputerCircuitboard
 
 - type: latheRecipePack
   id: CDAutolatheStatic
