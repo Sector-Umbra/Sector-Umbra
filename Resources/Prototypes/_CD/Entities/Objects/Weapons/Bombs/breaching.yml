@@ -11,7 +11,7 @@
     - state: icon
       map: ["base"]
   - type: Item
-    size: 30
+    size: Small
   - type: MultiHandedItem
   - type: Sticky
     stickDelay: 8
