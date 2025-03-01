@@ -3,7 +3,7 @@
   parent: PlushieLizard
   id: PersonalItemIsatheiPlushie
   name: isathei plushie
-  description: TODO
+  description: A synthetic plushie that resembles Isathei Arsicaris, it looks incredibly goofy.
   suffix: PersonalItem
   components:
   - type: Sprite
