@@ -3,7 +3,7 @@
   parent: PlushieLizard
   id: PersonalItemCooksPlushie
   name: cooks plushie
-  description: TODO
+  description: A bright orange plushie resembling the chemist, Cooks-the-Meth. It seemingly has a very expensive pair of chemistry goggles glued to it.
   suffix: PersonalItem
   components:
   - type: Sprite
