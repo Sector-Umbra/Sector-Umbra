@@ -15,11 +15,11 @@
           "directions": 4
         },
         {
-          "name": "inhand-left",
+          "name": "plushielizard-inhand-left",
           "directions": 4
         },
         {
-          "name": "inhand-right",
+          "name": "plushielizard-inhand-right",
           "directions": 4
         }
       ]
