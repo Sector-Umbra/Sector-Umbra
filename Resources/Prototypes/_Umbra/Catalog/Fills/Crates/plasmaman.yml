@@ -1,0 +1,16 @@
+- type: entity
+  id: CrateEmergencyEnvirosuitGeneric
+  parent: CrateGenericSteel
+  name: envirosuit crate
+  description: Contains two sets of plasma man envirosuits and two plasma tanks.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingHandsEnvirosuitGeneric
+      amount: 2
+    - id: ClothingUniformEnvirosuitGeneric
+      amount: 2
+    - id: ClothingHeadEnvirosuitGeneric
+      amount: 2
+    - id: PlasmaTankFilled
+      amount: 2
