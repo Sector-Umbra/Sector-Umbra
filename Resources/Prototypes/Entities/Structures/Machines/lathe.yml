@@ -130,6 +130,7 @@
     - ServiceStatic
     - PowerCellsStatic
     - ElectronicsStatic
+    - CDAutolatheStatic # CD Lathe Packs
   - type: EmagLatheRecipes
     emagStaticPacks:
     - SecurityAmmoStatic
@@ -393,6 +394,7 @@
     - SecurityPracticeStatic
     - SecurityAmmoStatic
     - SecurityWeaponsStatic
+    - CDSecfabStatic # CD Lathe Packs
     dynamicPacks:
     - SecurityEquipment
     - SecurityBoards
@@ -470,6 +472,7 @@
     - MedicalClothingStatic
     - EmptyMedkitsStatic
     - SurgeryStatic
+    - CDMedfabStatic # CD Lathe Packs
     dynamicPacks:
     - Chemistry
   - type: Machine
@@ -511,6 +514,7 @@
     - Scarves
     - Carpets
     - Bedsheets
+    - CDUniformPrinterStatic # CD Lathe Packs
   - type: EmagLatheRecipes
     emagStaticPacks:
     - ClothingCentComm
