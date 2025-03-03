@@ -97,20 +97,20 @@ public sealed class SpontaneousCombustionSystem : EntitySystem
             // Returns if the resistance is 0 (fully immune).
             if (spontaneousCombustion.CachedResistance <= 0)
             {
-                return;
+                continue;
             }
 
             // Puts the atmos mix of the entitys tile into a var.
             var air = _atmosphereSystem.GetContainingMixture(uid);
             if (air == null)
             {
-                return;
+                continue;
             }
 
             // Turns the gas value from the SpontaneousCombustion component into an int.
             if (!Enum.TryParse(spontaneousCombustion.Gas, out Gas gasInt))
             {
-                return;
+                continue;
             }
 
             // Gets the mole count of the selected gas on the entitys tile.
