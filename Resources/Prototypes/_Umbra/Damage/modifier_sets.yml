@@ -5,3 +5,16 @@
     Slash: 0.9
     Piercing: 0.9
     Blunt: 1.1
+
+- type: damageModifierSet
+  id: Plasmaman
+  coefficients:
+    Blunt: 1.2
+    Slash: 0.7
+    Piercing: 0.6
+    Cold: 0.2
+    Heat: 1.5
+    Poison: 0.0
+    Radiation: 0.0
+    Bloodloss: 0.5
+    Cellular: 0.0 # Plasma men dont have genes

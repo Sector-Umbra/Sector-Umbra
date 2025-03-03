@@ -19,6 +19,9 @@
       amount: 5
   - type: HumanoidAppearance
     species: Plasmaman
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Plasmaman
   - type: DamageVisuals
     damageOverlayGroups:
       Brute:
