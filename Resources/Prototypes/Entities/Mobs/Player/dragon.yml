@@ -7,7 +7,7 @@
   abstract: true
   components:
   - type: Bloodstream
-    bloodMaxVolume: 650
+    bloodReferenceVolume: 650 # Umbra: Metabolizing bloodstream and hypervolemia
   - type: GhostRole
     allowMovement: true
     allowSpeech: true
