@@ -37,11 +37,9 @@
   - PersonalItemJohanCodex
   - PersonalItemJohanScarf
   - PersonalItemErisHearingAid
-  - PersonalItemHushPendant
   - PersonalItemSerekethOceanCoat
   - PersonalItemSmokeHeartPlushie
   - PersonalItemNiaPlushie
-  - PersonalItemEstherPlushie
   - PersonalItemDragonCarpPlushie
   - PersonalItemSerendipityPlushie
   - PersonalItemKaiPlushie
@@ -87,6 +85,10 @@
   - PersonalItemCrimsonMachinistJumpsuit
   - PersonalItemCrimsonMimicScarf
   - PersonalItemEmikoBook
+  - PersonalItemCorinneDinoPlushie
+  - PersonalItemCooksPlushie
+  - PersonalItemIsatheiPlushie
+  - PersonalItemEvelynCollar
 
 - type: loadoutEffectGroup
   id: PlasmaBreather
