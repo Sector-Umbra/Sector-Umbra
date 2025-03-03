@@ -38,7 +38,7 @@
     sprite: _Umbra/Clothing/Head/Envirosuit/botany.rsi
 
 - type: entity
-  parent: ClothingHeadEnvirosuitBase
+  parent: [ClothingHeadEnvirosuitBase, BaseCommandContraband]
   id: ClothingHeadEnvirosuitCaptain
   name: captain envirosuit helmet
   components:
@@ -58,7 +58,7 @@
     sprite: _Umbra/Clothing/Head/Envirosuit/cargo.rsi
 
 - type: entity
-  parent: ClothingHeadEnvirosuitBase
+  parent: [ClothingHeadEnvirosuitBase, BaseCommandContraband]
   id: ClothingHeadEnvirosuitCE
   name: chief engineer envirosuit helmet
   components:
@@ -98,7 +98,7 @@
     sprite: _Umbra/Clothing/Head/Envirosuit/clown.rsi
 
 - type: entity
-  parent: ClothingHeadEnvirosuitBase
+  parent: [ClothingHeadEnvirosuitBase, BaseCommandContraband]
   id: ClothingHeadEnvirosuitCMO
   name: chief medical officer envirosuit helmet
   components:
@@ -108,7 +108,7 @@
     sprite: _Umbra/Clothing/Head/Envirosuit/cmo.rsi
 
 - type: entity
-  parent: ClothingHeadEnvirosuitBase
+  parent: [ClothingHeadEnvirosuitBase, BaseCentcommContraband]
   id: ClothingHeadEnvirosuitCommander
   name: commander envirosuit helmet
   components:
@@ -168,7 +168,7 @@
     sprite: _Umbra/Clothing/Head/Envirosuit/generic.rsi
 
 - type: entity
-  parent: ClothingHeadEnvirosuitBase
+  parent: [ClothingHeadEnvirosuitBase, BaseCommandContraband]
   id: ClothingHeadEnvirosuitHoP
   name: head of personnel envirosuit helmet
   components:
@@ -178,7 +178,7 @@
     sprite: _Umbra/Clothing/Head/Envirosuit/hop.rsi
 
 - type: entity
-  parent: ClothingHeadEnvirosuitBase
+  parent: [ClothingHeadEnvirosuitBase, BaseCommandContraband]
   id: ClothingHeadEnvirosuitHoS
   name: head of security envirosuit helmet
   components:
@@ -188,7 +188,7 @@
     sprite: _Umbra/Clothing/Head/Envirosuit/hos.rsi
 
 - type: entity
-  parent: ClothingHeadEnvirosuitBase
+  parent: [ClothingHeadEnvirosuitBase, BaseCentcommContraband]
   id: ClothingHeadEnvirosuitIntern
   name: intern envirosuit helmet
   components:
@@ -218,7 +218,7 @@
     sprite: _Umbra/Clothing/Head/Envirosuit/mime.rsi
 
 - type: entity
-  parent: ClothingHeadEnvirosuitBase
+  parent: [ClothingHeadEnvirosuitBase, BaseCentcommContraband]
   id: ClothingHeadEnvirosuitOfficial
   name: official envirosuit helmet
   components:
@@ -258,7 +258,7 @@
     sprite: _Umbra/Clothing/Head/Envirosuit/prototype.rsi
 
 - type: entity
-  parent: ClothingHeadEnvirosuitBase
+  parent: [ClothingHeadEnvirosuitBase, BaseCommandContraband]
   id: ClothingHeadEnvirosuitRD
   name: research director envirosuit helmet
   components:
@@ -288,7 +288,7 @@
     sprite: _Umbra/Clothing/Head/Envirosuit/scientist.rsi
 
 - type: entity
-  parent: ClothingHeadEnvirosuitBase
+  parent: [ClothingHeadEnvirosuitBase, BaseRestrictedContraband]
   id: ClothingHeadEnvirosuitSecurity
   name: security envirosuit helmet
   components:
@@ -308,7 +308,7 @@
     sprite: _Umbra/Clothing/Head/Envirosuit/salvage.rsi
 
 - type: entity
-  parent: ClothingHeadEnvirosuitBase
+  parent: [ClothingHeadEnvirosuitBase, BaseSyndicateContraband]
   id: ClothingHeadEnvirosuitSyndie
   name: syndicate envirosuit helmet
   components:
@@ -328,7 +328,7 @@
     sprite: _Umbra/Clothing/Head/Envirosuit/viro.rsi
 
 - type: entity
-  parent: ClothingHeadEnvirosuitBase
+  parent: [ClothingHeadEnvirosuitBase, BaseRestrictedContraband]
   id: ClothingHeadEnvirosuitWarden
   name: warden envirosuit helmet
   components:
