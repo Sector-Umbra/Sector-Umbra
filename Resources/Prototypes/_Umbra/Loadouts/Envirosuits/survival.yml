@@ -5,7 +5,7 @@
   - !type:GroupLoadoutEffect
     proto: EffectSpeciesPlasmaman
   equipment:
-    suitstorage: PlasmaTankFilled
+    suitstorage: PlasmamanTankFilled
 
 # Breath masks
 - type: loadout
