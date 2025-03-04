@@ -8,7 +8,7 @@
       connections:
       - torso
       organs:
-        brain: OrganHumanBrain
+        brain: OrganPlasmamanBrain
         eyes: OrganHumanEyes
     torso:
       part: TorsoPlasmaman
@@ -18,11 +18,11 @@
       - right_leg
       - left_leg
       organs:
-        heart: OrganHumanHeart
+        heart: OrganPlasmamanHeart
         lungs: OrganPlasmamanLungs
-        stomach: OrganHumanStomach
-        liver: OrganHumanLiver
-        kidneys: OrganHumanKidneys
+        stomach: OrganPlasmamanStomach
+        liver: OrganPlasmamanLiver
+        kidneys: OrganPlasmamanKidneys
     right_arm:
       part: RightArmPlasmaman
       connections:

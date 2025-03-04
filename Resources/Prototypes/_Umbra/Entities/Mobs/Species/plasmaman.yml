@@ -12,6 +12,8 @@
     requiredLegs: 2
     gibSound: /Audio/Effects/bone_rattle.ogg
   - type: SpontaneousCombustion
+  - type: Bloodstream
+    bloodReagent: Plasma
   - type: Butcherable
     butcheringType: Spike
     spawned:
