@@ -91,6 +91,7 @@
   loadouts:
   - EmergencyNitrogen
   - EmergencyOxygen
+  - EmergencyPlasma # Umbra
   - LoadoutSpeciesVoxNitrogen
   - LoadoutSpeciesPlasmamanPlasma # Umbra
 
@@ -490,6 +491,7 @@
   loadouts:
   - EmergencyNitrogenClown
   - EmergencyOxygenClown
+  - EmergencyPlasma # Umbra
   - LoadoutSpeciesVoxNitrogen
   - LoadoutSpeciesPlasmamanPlasma # Umbra
 
@@ -547,6 +549,7 @@
   loadouts:
   - EmergencyNitrogenMime
   - EmergencyOxygenMime
+  - EmergencyPlasma # Umbra
   - LoadoutSpeciesVoxNitrogen
   - LoadoutSpeciesPlasmamanPlasma # Umbra
 
@@ -851,6 +854,7 @@
   loadouts:
   - EmergencyNitrogenExtended
   - EmergencyOxygenExtended
+  - EmergencyPlasma # Umbra
   - LoadoutSpeciesVoxNitrogen
   - LoadoutSpeciesPlasmamanPlasma # Umbra
 
@@ -1155,6 +1159,7 @@
   loadouts:
   - EmergencyNitrogenSecurity
   - EmergencyOxygenSecurity
+  - EmergencyPlasmaSecurity # Umbra
   - LoadoutSpeciesVoxNitrogen
   - LoadoutSpeciesPlasmamanPlasma # Umbra
 
@@ -1381,6 +1386,7 @@
   loadouts:
   - EmergencyNitrogenMedical
   - EmergencyOxygenMedical
+  - EmergencyPlasmaMedical # Umbra
   - LoadoutSpeciesVoxNitrogen
   - LoadoutSpeciesPlasmamanPlasma # Umbra
 
@@ -1425,6 +1431,7 @@
   loadouts:
   - EmergencyNitrogenSyndicate
   - EmergencyOxygenSyndicate
+  - EmergencyPlasmaSyndicate # Umbra
   - LoadoutSpeciesVoxNitrogen
   - LoadoutSpeciesPlasmamanPlasma # Umbra
 

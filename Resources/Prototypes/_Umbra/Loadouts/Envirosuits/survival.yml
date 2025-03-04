@@ -40,3 +40,40 @@
     proto: EffectSpeciesPlasmaman
   equipment:
     outerClothing: ClothingOuterVestTank
+
+# Emergency box
+- type: loadout
+  id: EmergencyPlasma
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: PlasmaBreather
+  storage:
+    back:
+    - BoxSurvivalPlasma
+
+- type: loadout
+  id: EmergencyPlasmaSecurity
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: PlasmaBreather
+  storage:
+    back:
+    - BoxSurvivalSecurityPlasma
+
+- type: loadout
+  id: EmergencyPlasmaMedical
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: PlasmaBreather
+  storage:
+    back:
+    - BoxSurvivalMedicalPlasma
+
+- type: loadout
+  id: EmergencyPlasmaSyndicate
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: PlasmaBreather
+  storage:
+    back:
+    - BoxSurvivalPlasmaSyndicate
