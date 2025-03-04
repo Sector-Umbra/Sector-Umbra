@@ -238,7 +238,7 @@
   - type: Item
     sprite: Objects/Tanks/plasma.rsi
   - type: GasTank
-    outputPressure: 21.3 # Umbra
+    outputPressure: 101.3
   - type: Clothing
     sprite: Objects/Tanks/plasma.rsi
     slots:
