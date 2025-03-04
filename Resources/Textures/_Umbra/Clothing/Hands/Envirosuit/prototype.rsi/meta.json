@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "sprites from /TG/Station please add later",
+  "copyright": "Taken from https://github.com/tgstation/tgstation/commit/8c8afcaaa29fb5e6fc180515448cae1a66c6889a",
   "size": {
     "x": 32,
     "y": 32

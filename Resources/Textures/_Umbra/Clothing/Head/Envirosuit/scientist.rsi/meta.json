@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "from tg please link later",
+  "copyright": "Taken from https://github.com/tgstation/tgstation/commit/a6d06614fdf154cc9fe4061d2873be13554dd5de",
   "size": {
     "x": 32,
     "y": 32
