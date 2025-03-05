@@ -54,6 +54,12 @@ namespace Content.IntegrationTests.Tests
             "/Maps/Shuttles/ShuttleEvent/honki.yml", // Contains golden honker, clown's rubber stamp
             "/Maps/Shuttles/ShuttleEvent/instigator.yml", // Contains EXP-320g "Friendship"
             "/Maps/Shuttles/ShuttleEvent/syndie_evacpod.yml", // Contains syndicate rubber stamp
+            // Umbra Maps
+            "/Maps/cluster.yml", // Umbra: Contains mime's rubber stamp.
+            "/Maps/Misc/terminal.yml", // Umbra: Contains centcomm rubber stamp.
+            "/Maps/_Umbra/xeno.yml", // Umbra: Contains PTK-800
+            "/Maps/_Umbra/clusterprime.yml", // Umbra: Contains mime's rubber stamp.
+            "/Maps/_Umbra/Dungeon/geneticore.yml", // Umbra: Contains janitorial bomb suit closet
         };
 
         private static readonly string[] GameMaps =
