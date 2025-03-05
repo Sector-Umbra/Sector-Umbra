@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Sprites drawn necroa_",
+    "copyright": "antennae_ant, antennae_default, l_default, r_default, l_empty and r_empty drawn by necroa_, l_curved, r_curved, l_short, r_short, l_spiked, r_spiked, l_inverted and r_inverted drawn by Boaz1111 (github) based on l_default and r_default, antennae_dual and antennae_curved drawn by Boaz1111 (github) based on antennae_default.",
     "size": {
         "x": 32,
         "y": 32
@@ -13,6 +13,38 @@
         },
         {
             "name": "r_default",
+            "directions": 4
+        },
+        {
+            "name": "l_curved",
+            "directions": 4
+        },
+        {
+            "name": "r_curved",
+            "directions": 4
+        },
+        {
+            "name": "l_short",
+            "directions": 4
+        },
+        {
+            "name": "r_short",
+            "directions": 4
+        },
+        {
+            "name": "l_spiked",
+            "directions": 4
+        },
+        {
+            "name": "r_spiked",
+            "directions": 4
+        },
+        {
+            "name": "l_inverted",
+            "directions": 4
+        },
+        {
+            "name": "r_inverted",
             "directions": 4
         },
         {
@@ -29,6 +61,14 @@
         },
         {
             "name": "antennae_ant",
+            "directions": 4
+        },
+        {
+            "name": "antennae_dual",
+            "directions": 4
+        },
+        {
+            "name": "antennae_curved",
             "directions": 4
         }
     ]
