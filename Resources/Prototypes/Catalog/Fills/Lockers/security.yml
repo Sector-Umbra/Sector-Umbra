@@ -23,6 +23,10 @@
         amount: 2
       - id: RemoteSignaller
         amount: 2
+      #CD Addions
+      # - id: BookSOPSecurity # Umbra: Not using CDs SOP
+      #  prob: 0.2
+      - id: BreachingCharge
 
 - type: entity
   id: LockerWardenFilled
@@ -49,6 +53,10 @@
       - id: RemoteSignaller
         amount: 2
       - id: Binoculars
+      #CD Addions
+      # - id: BookSOPSecurity #Umbra: Not using CDs SOP
+      #   prob: 0.2
+      - id: BreachingCharge
 
 - type: entity
   id: LockerSecurityFilled
