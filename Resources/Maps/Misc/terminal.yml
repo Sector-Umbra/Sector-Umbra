@@ -49,8 +49,6 @@ entities:
     components:
     - type: MetaData
       name: NT-EM Terminal
-    - type: Transform
-      parent: invalid
     - type: MapGrid
       chunks:
         -1,-1:
