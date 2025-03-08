@@ -23,6 +23,32 @@
   equipment:
     gloves: ClothingHandsEnvirosuitGeneric
 
+# Head of Personal
+- type: loadout
+  id: HoPEnvirosuitJumpsuit
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: EffectSpeciesPlasmaman
+  equipment:
+    jumpsuit: ClothingUniformEnvirosuitHoP
+
+- type: loadout
+  id: HoPEnvirosuitHead
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: EffectSpeciesPlasmaman
+  equipment:
+    head: ClothingHeadEnvirosuitHoP
+
+- type: loadout
+  id: HoPEnvirosuitGloves
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: EffectSpeciesPlasmaman
+  equipment:
+    gloves: ClothingHandsEnvirosuitHoP
+
+
 # Slacks
 - type: loadout
   id: SlacksEnvirosuitJumpsuit
