@@ -10,7 +10,7 @@
 - type: entity
   parent: ClothingHeadEnvirosuitBase
   id: ClothingHeadEnvirosuitAtmos
-  name: atmos tech envirosuit helmet
+  name: atmospherics tech envirosuit helmet
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Envirosuit/atmos.rsi

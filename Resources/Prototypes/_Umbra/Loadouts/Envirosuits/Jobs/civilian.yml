@@ -23,7 +23,7 @@
   equipment:
     gloves: ClothingHandsEnvirosuitGeneric
 
-# Head of Personal
+# Head of Personnel
 - type: loadout
   id: HoPEnvirosuitJumpsuit
   effects:

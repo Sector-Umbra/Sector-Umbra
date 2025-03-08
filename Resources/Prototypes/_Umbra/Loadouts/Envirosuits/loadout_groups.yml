@@ -9,6 +9,7 @@
   - CaptainEnvirosuitHead
   - CaptainEnvirosuitGloves
 
+# Civilian
 - type: loadoutGroup
   id: HoPEnvirosuit
   name: loadout-group-hop-envirosuit
@@ -19,7 +20,6 @@
   - HoPEnvirosuitHead
   - HoPEnvirosuitGloves
 
-# Civilian
 - type: loadoutGroup
   id: GenericEnvirosuit
   name: loadout-group-generic-envirosuit

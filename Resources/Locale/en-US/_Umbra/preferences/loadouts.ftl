@@ -5,7 +5,7 @@ loadout-personalitem-joblocked = This item can only be used as {$job} (You are t
 
 # envirosuits
 loadout-group-captain-envirosuit = Captain envirosuit
-loadout-group-hop-envirosuit = Head of Personal envirosuit
+loadout-group-hop-envirosuit = Head of Personnel envirosuit
 loadout-group-generic-envirosuit = Generic envirosuit
 loadout-group-slacks-envirosuit = Slacks envirosuit
 loadout-group-chef-envirosuit = Chef envirosuit
