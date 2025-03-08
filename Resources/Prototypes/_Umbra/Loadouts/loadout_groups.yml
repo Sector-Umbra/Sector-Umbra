@@ -89,6 +89,7 @@
   - PersonalItemCooksPlushie
   - PersonalItemIsatheiPlushie
   - PersonalItemEvelynCollar
+  - PersonalItemVariisisButtonUp
 
 - type: loadoutEffectGroup
   id: PlasmaBreather
