@@ -38,7 +38,6 @@
       Male: Skeleton
       Female: Skeleton
       Unsexed: Skeleton
-  - type: ZombieImmune
   - type: Inventory
     femaleDisplacements:
       jumpsuit:
