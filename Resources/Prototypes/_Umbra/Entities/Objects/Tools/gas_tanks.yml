@@ -26,11 +26,11 @@
   - type: GasTank
     outputPressure: 30.4
   - type: Sprite
-    sprite: _Umbra\Objects\Tanks\emergency_plasmaman.rsi
+    sprite: _Umbra/Objects/Tanks/emergency_plasmaman.rsi
   - type: Item
-    sprite: _Umbra\Objects\Tanks\emergency_plasmaman.rsi
+    sprite: _Umbra/Objects/Tanks/emergency_plasmaman.rsi
   - type: Clothing
-    sprite: _Umbra\Objects\Tanks\emergency_plasmaman.rsi
+    sprite: _Umbra/Objects/Tanks/emergency_plasmaman.rsi
     slots:
     - Back
     - Belt

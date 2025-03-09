@@ -10,7 +10,7 @@
     - id: EmergencyMedipen
     - id: Flare
   - type: Sprite
-    sprite: _Umbra\Objects\Storage\boxes.rsi
+    sprite: _Umbra/Objects/Storage/boxes.rsi
     layers:
     - state: internals
     - state: plasmatank
@@ -29,7 +29,7 @@
     - id: EmergencyMedipen
     - id: Flare
   - type: Sprite
-    sprite: _Umbra\Objects\Storage\boxes.rsi
+    sprite: _Umbra/Objects/Storage/boxes.rsi
     layers:
     - state: internals
     - state: plasmatank
@@ -48,7 +48,7 @@
     - id: EmergencyMedipen
     - id: Flare
   - type: Sprite
-    sprite: _Umbra\Objects\Storage\boxes.rsi
+    sprite: _Umbra/Objects/Storage/boxes.rsi
     layers:
     - state: internals
     - state: plasmatank
@@ -67,7 +67,7 @@
     - id: EmergencyMedipen
     - id: Flare
   - type: Sprite
-    sprite: _Umbra\Objects\Storage\boxes.rsi
+    sprite: _Umbra/Objects/Storage/boxes.rsi
     layers:
     - state: internals
     - state: plasmatank

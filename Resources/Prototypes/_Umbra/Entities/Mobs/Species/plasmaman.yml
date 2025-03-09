@@ -5,7 +5,7 @@
   abstract: true
   components:
   - type: Icon
-    sprite: _Umbra\Mobs\Species\Plasmaman\parts.rsi
+    sprite: _Umbra/Mobs/Species/Plasmaman/parts.rsi
     state: full
   - type: Body
     prototype: Plasmaman

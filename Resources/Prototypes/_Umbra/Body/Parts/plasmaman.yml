@@ -5,7 +5,7 @@
   name: plasmaman body part
   components:
   - type: Sprite
-    sprite: _Umbra\Mobs\Species\Plasmaman\parts.rsi
+    sprite: _Umbra/Mobs/Species/Plasmaman/parts.rsi
 
 - type: entity
   parent: [ PartPlasmaman, BaseTorso ]

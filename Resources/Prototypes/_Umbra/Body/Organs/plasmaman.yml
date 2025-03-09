@@ -6,7 +6,7 @@
   suffix: "plasma man"
   components:
   - type: Sprite
-    sprite: _Umbra\Mobs\Species\Plasmaman\organs.rsi
+    sprite: _Umbra/Mobs/Species/Plasmaman/organs.rsi
     layers:
       - state: lungs
   - type: Metabolizer
@@ -20,7 +20,7 @@
   name: plasma man heart
   components:
   - type: Sprite
-    sprite: _Umbra\Mobs\Species\Plasmaman\organs.rsi
+    sprite: _Umbra/Mobs/Species/Plasmaman/organs.rsi
     layers:
       - state: heart-on
   - type: Metabolizer
@@ -32,7 +32,7 @@
   name: plasma man stomach
   components:
   - type: Sprite
-    sprite: _Umbra\Mobs\Species\Plasmaman\organs.rsi
+    sprite: _Umbra/Mobs/Species/Plasmaman/organs.rsi
     layers:
       - state: stomach
   - type: Metabolizer
@@ -45,7 +45,7 @@
   name: plasma man liver
   components:
   - type: Sprite
-    sprite: _Umbra\Mobs\Species\Plasmaman\organs.rsi
+    sprite: _Umbra/Mobs/Species/Plasmaman/organs.rsi
     layers:
       - state: liver
   - type: Metabolizer
@@ -57,7 +57,7 @@
   name: plasma man kidneys
   components:
   - type: Sprite
-    sprite: _Umbra\Mobs\Species\Plasmaman\organs.rsi
+    sprite: _Umbra/Mobs/Species/Plasmaman/organs.rsi
     layers:
       - state: kidney-l
       - state: kidney-r
@@ -70,7 +70,7 @@
   name: plasma man tongue
   components:
   - type: Sprite
-    sprite: _Umbra\Mobs\Species\Plasmaman\organs.rsi
+    sprite: _Umbra/Mobs/Species/Plasmaman/organs.rsi
     layers:
       - state: tongue
 
@@ -80,6 +80,6 @@
   name: plasma man brain
   components:
   - type: Sprite
-    sprite: _Umbra\Mobs\Species\Plasmaman\organs.rsi
+    sprite: _Umbra/Mobs/Species/Plasmaman/organs.rsi
     layers:
       - state: brain
