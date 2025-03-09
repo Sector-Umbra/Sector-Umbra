@@ -1,7 +1,7 @@
 - type: gameMap
   id: CentComm
   mapName: 'Central Command'
-  mapPath: /Maps/centcomm.yml
+  mapPath: /Maps/_Umbra/centcomm.yml # Umbra
   minPlayers: 10
   stations:
     centcomm:
