@@ -1,7 +1,8 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using System.Linq;
+using System.Diagnostics.CodeAnalysis;
 using Content.Server.Body.Components;
 using Content.Server.Chat.Systems;
-using Content.Shared._RMC14.Medical.IV;
+using Content.Shared._RMC.Medical.IV;
 using Content.Shared.Chat.Prototypes;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.EntitySystems;
@@ -10,7 +11,7 @@ using Content.Shared.Damage;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 
-namespace Content.Server._RMC14.Medical.IV;
+namespace Content.Server._RMC.Medical.IV;
 
 public sealed class IVDripSystem : SharedIVDripSystem
 {
@@ -58,43 +59,14 @@ public sealed class IVDripSystem : SharedIVDripSystem
             if (!InRange(ivId, attachedTo, ivComp.Range))
                 DetachIV((ivId, ivComp), null, true, false);
 
-            if (time < ivComp.TransferAt)
-                continue;
-
             if (_itemSlots.GetItemOrNull(ivId, ivComp.Slot) is not { } pack)
                 continue;
 
             if (!TryComp(pack, out BloodPackComponent? packComponent))
                 continue;
 
-            ivComp.TransferAt = time + ivComp.TransferDelay;
-
-            if (!_solutionContainer.TryGetSolution(pack, packComponent.Solution, out var packSolEnt, out var packSol))
-                continue;
-
-            if (!TryGetBloodstream(attachedTo, out var streamSolEnt, out var streamSol, out var attachedStream))
-                continue;
-
-            if (ivComp.Injecting)
-            {
-                if (attachedStream is { } bloodSolutionEnt &&
-                    bloodSolutionEnt.Comp.Solution.Volume < bloodSolutionEnt.Comp.Solution.MaxVolume)
-                {
-                    // Don't transfer non-blood reagants
-                    Solution excludedSolution = packSol.SplitSolutionWithout(packSol.MaxVolume, packComponent.TransferableReagents);
-                    _solutionContainer.TryTransferSolution(bloodSolutionEnt, packSol, ivComp.TransferAmount);
-                    _solutionContainer.TryAddSolution(packSolEnt.Value, excludedSolution);
-                    Dirty(packSolEnt.Value);
-                }
-            }
-            else
-            {
-                if (packSol.Volume < packSol.MaxVolume)
-                {
-                    _solutionContainer.TryTransferSolution(packSolEnt.Value, streamSol, ivComp.TransferAmount);
-                    Dirty(streamSolEnt.Value);
-                }
-            }
+            // Sync IV Stand Inject/Draw Status to Inserted Blood Pack
+            packComponent.Injecting = ivComp.Injecting;
 
             Dirty(ivId, ivComp);
             UpdateIVVisuals((ivId, ivComp));
@@ -123,16 +95,29 @@ public sealed class IVDripSystem : SharedIVDripSystem
 
             if (packComp.Injecting)
             {
+                // Inject into an entity.
                 if (attachedStream is { } bloodSolutionEnt &&
                     bloodSolutionEnt.Comp.Solution.Volume < bloodSolutionEnt.Comp.Solution.MaxVolume)
                 {
-                    _solutionContainer.TryTransferSolution(bloodSolutionEnt, packSol, packComp.TransferAmount);
+                    _solutionContainer.TryTransferSolution(bloodSolutionEnt, packSol, packComp.TransferAmount); // This is the line we'll change to make it inject into the chem stream.
                     Dirty(packSolEnt.Value);
                 }
             }
             else
             {
-                if (packSol.Volume < packSol.MaxVolume)
+                // Test to see if the target entity has a valid reagent to draw.
+                var canDraw = false;
+                foreach (var reagent in streamSol.Contents)
+                {
+                    if (packComp.BloodstreamReagents.Contains(reagent.Reagent.Prototype))
+                    {
+                        canDraw = true;
+                        break;
+                    }
+                }
+
+                // Draw from an entity.
+                if (packSol.Volume < packSol.MaxVolume && canDraw)
                 {
                     _solutionContainer.TryTransferSolution(packSolEnt.Value, streamSol, packComp.TransferAmount);
                     Dirty(streamSolEnt.Value);
