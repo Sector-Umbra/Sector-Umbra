@@ -1,0 +1,24 @@
+# Captain
+- type: loadout
+  id: CaptainEnvirosuitJumpsuit
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: EffectSpeciesPlasmaman
+  equipment:
+    jumpsuit: ClothingUniformEnvirosuitCaptain
+
+- type: loadout
+  id: CaptainEnvirosuitHead
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: EffectSpeciesPlasmaman
+  equipment:
+    head: ClothingHeadEnvirosuitCaptain
+
+- type: loadout
+  id: CaptainEnvirosuitGloves
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: EffectSpeciesPlasmaman
+  equipment:
+    gloves: ClothingHandsEnvirosuitBlack

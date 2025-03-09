@@ -17,6 +17,7 @@
   <GuideEntityEmbed Entity="MobAvali" Caption="Avali"/>
   <GuideEntityEmbed Entity="MobVulpkanin" Caption="Vulpkanin"/>
   <GuideEntityEmbed Entity="MobMantidae" Caption="Mantidae"/>
+  <GuideEntityEmbed Entity="MobPlasmaman" Caption="Plasma Man"/>
   </Box>
 
 </Document>
