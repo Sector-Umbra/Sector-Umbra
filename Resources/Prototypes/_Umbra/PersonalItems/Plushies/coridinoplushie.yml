@@ -1,0 +1,29 @@
+# Player: cricket - Character: Corinne Coley
+- type: entity
+  parent: PlushieLizard
+  id: PersonalItemCorinneDinoPlushie
+  name: off-brand lizard plushie
+  description: A... lizard plushie? It appears to share the same template as its NT-approved counterpart. Despite its authenticity, it looks worn but well-loved.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_dino
+    sprite: _Umbra/PersonalItems/Plushies/coridinoplushie.rsi
+  - type: Item
+    heldPrefix: plushiedino
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/PersonalItems/Plushies/coridinoplushie.rsi
+    equippedPrefix: dino
+    slots:
+    - HEAD
+
+- type: loadout
+  id: PersonalItemCorinneDinoPlushie
+  storage:
+    back:
+    - PersonalItemCorinneDinoPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Corinne Coley

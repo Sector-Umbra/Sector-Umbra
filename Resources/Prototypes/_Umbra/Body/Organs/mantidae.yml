@@ -1,6 +1,6 @@
 - type: entity
   id: OrganMantidaeStomach
-  parent: [OrganAnimalStomach, OrganHumanStomach]
+  parent: OrganAnimalStomach
   categories: [ HideSpawnMenu ]
   components:
   - type: Stomach
@@ -19,7 +19,7 @@
           Quantity: 5
   - type: Metabolizer
     maxReagents: 3
-    metabolizerTypes: [ Mantidae ]
+    metabolizerTypes: [ Animal ]
     removeEmpty: true
     groups:
       - id: Food
