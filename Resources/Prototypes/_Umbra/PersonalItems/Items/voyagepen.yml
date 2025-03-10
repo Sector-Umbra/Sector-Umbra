@@ -1,0 +1,25 @@
+# Player: TheChudster - Character: EN Voyage
+- type: entity
+  name: expeditionists pen
+  parent: Pen
+  id: PersonalItemVoyagePen
+  description: A well-kept looking pen. It has an engraving on the side which reads "In pace momento moriendum."
+  suffix: PersonalItem
+  components:
+   - type: Sprite
+     sprite: _Umbra/PersonalItems/Items/voyagepen.rsi
+     state: pen
+   - type: Item
+     sprite: _Umbra/PersonalItems/Items/voyagepen.rsi
+     heldPrefix: pen
+     size: Tiny
+
+- type: loadout
+  id: PersonalItemVoyagePen
+  storage:
+    back:
+    - PersonalItemVoyagePen
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - EN Voyage
