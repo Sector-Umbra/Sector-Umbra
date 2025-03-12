@@ -14,7 +14,7 @@
   - type: Item
     size: Small
   - type: TapeRecorder
-    RewindSpeed: 15
+    rewindSpeed: 15
   - type: ActiveListener
     range: 4
   - type: UseDelay
