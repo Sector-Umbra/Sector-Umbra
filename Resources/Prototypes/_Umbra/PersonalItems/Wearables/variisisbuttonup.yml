@@ -1,0 +1,22 @@
+# Player: crimsonjesterheart - Character: Variisis Kell
+- type: entity
+  parent: ClothingUniformBase
+  id: PersonalItemVariisisButtonUp
+  name: Varii's button-up
+  description: A button-up shirt accompanied by a pair of blue jeans, the shirt itself seems to have gold cracks all over it alongside a golden floral colour. It's reminiscent of pale gold eyes and Kintsugi.
+  suffix: PersonalItem
+  components:
+    - type: Sprite
+      sprite: _Umbra/PersonalItems/Wearables/variisisbuttonup.rsi
+    - type: Clothing
+      sprite: _Umbra/PersonalItems/Wearables/variisisbuttonup.rsi
+
+- type: loadout
+  id: PersonalItemVariisisButtonUp
+  storage:
+    back:
+      - PersonalItemVariisisButtonUp
+  effects:
+    - !type:PersonalItemLoadoutEffect
+      character:
+        - Variisis Kell

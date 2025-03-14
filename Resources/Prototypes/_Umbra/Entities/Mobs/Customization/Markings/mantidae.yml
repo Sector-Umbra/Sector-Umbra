@@ -1,0 +1,143 @@
+- type: marking
+  id: MantidaeLeftScytheDefault
+  bodyPart: LHand
+  markingCategory: Arms
+  speciesRestriction: [Mantidae]
+  sprites:
+  - sprite: _Umbra/Mobs/Customization/Mantidae/mantidae.rsi
+    state: l_default
+
+- type: marking
+  id: MantidaeRightScytheDefault
+  bodyPart: RHand
+  markingCategory: Arms
+  speciesRestriction: [Mantidae]
+  sprites:
+  - sprite: _Umbra/Mobs/Customization/Mantidae/mantidae.rsi
+    state: r_default
+
+- type: marking
+  id: MantidaeLeftScytheCurved
+  bodyPart: LHand
+  markingCategory: Arms
+  speciesRestriction: [Mantidae]
+  sprites:
+  - sprite: _Umbra/Mobs/Customization/Mantidae/mantidae.rsi
+    state: l_curved
+
+- type: marking
+  id: MantidaeRightScytheCurved
+  bodyPart: RHand
+  markingCategory: Arms
+  speciesRestriction: [Mantidae]
+  sprites:
+  - sprite: _Umbra/Mobs/Customization/Mantidae/mantidae.rsi
+    state: r_curved
+
+- type: marking
+  id: MantidaeLeftScytheShort
+  bodyPart: LHand
+  markingCategory: Arms
+  speciesRestriction: [Mantidae]
+  sprites:
+  - sprite: _Umbra/Mobs/Customization/Mantidae/mantidae.rsi
+    state: l_short
+
+- type: marking
+  id: MantidaeRightScytheShort
+  bodyPart: RHand
+  markingCategory: Arms
+  speciesRestriction: [Mantidae]
+  sprites:
+  - sprite: _Umbra/Mobs/Customization/Mantidae/mantidae.rsi
+    state: r_short
+
+- type: marking
+  id: MantidaeLeftScytheSpiked
+  bodyPart: LHand
+  markingCategory: Arms
+  speciesRestriction: [Mantidae]
+  sprites:
+  - sprite: _Umbra/Mobs/Customization/Mantidae/mantidae.rsi
+    state: l_spiked
+
+- type: marking
+  id: MantidaeRightScytheSpiked
+  bodyPart: RHand
+  markingCategory: Arms
+  speciesRestriction: [Mantidae]
+  sprites:
+  - sprite: _Umbra/Mobs/Customization/Mantidae/mantidae.rsi
+    state: r_spiked
+
+- type: marking
+  id: MantidaeLeftScytheInverted
+  bodyPart: LHand
+  markingCategory: Arms
+  speciesRestriction: [Mantidae]
+  sprites:
+    - sprite: _Umbra/Mobs/Customization/Mantidae/mantidae.rsi
+      state: l_inverted
+
+- type: marking
+  id: MantidaeRightScytheInverted
+  bodyPart: RHand
+  markingCategory: Arms
+  speciesRestriction: [Mantidae]
+  sprites:
+    - sprite: _Umbra/Mobs/Customization/Mantidae/mantidae.rsi
+      state: r_inverted
+
+- type: marking
+  id: MantidaeLeftScytheEmpty
+  bodyPart: LHand
+  markingCategory: Arms
+  speciesRestriction: [Mantidae]
+  sprites:
+  - sprite: _Umbra/Mobs/Customization/Mantidae/mantidae.rsi
+    state: l_empty
+
+- type: marking
+  id: MantidaeRightScytheEmpty
+  bodyPart: RHand
+  markingCategory: Arms
+  speciesRestriction: [Mantidae]
+  sprites:
+  - sprite: _Umbra/Mobs/Customization/Mantidae/mantidae.rsi
+    state: r_empty
+       
+- type: marking
+  id: MantidaeAntennaeDefault
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Mantidae]
+  sprites:
+  - sprite: _Umbra/Mobs/Customization/Mantidae/mantidae.rsi
+    state: antennae_default
+
+- type: marking
+  id: MantidaeAntennaeAnt
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Mantidae]
+  sprites:
+  - sprite: _Umbra/Mobs/Customization/Mantidae/mantidae.rsi
+    state: antennae_ant
+
+- type: marking
+  id: MantidaeAntennaeDual
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Mantidae]
+  sprites:
+    - sprite: _Umbra/Mobs/Customization/Mantidae/mantidae.rsi
+      state: antennae_dual
+
+- type: marking
+  id: MantidaeAntennaeCurved
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Mantidae]
+  sprites:
+    - sprite: _Umbra/Mobs/Customization/Mantidae/mantidae.rsi
+      state: antennae_curved
