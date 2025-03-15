@@ -1,0 +1,20 @@
+- type: entity
+  parent: ClothingNeckBellCollar
+  id: PersonalItemEvelynCollar
+  name: Evelyn's collar
+  description: A custom ordered collar, it has a trans colour scheme with a purple bone dog tag. On the inside there are some words stitched in which read, "With Love, Sofie."
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Wearables/evelyncollar.rsi
+  - type: Clothing
+    sprite: _Umbra/PersonalItems/Wearables/evelyncollar.rsi
+
+- type: loadout
+  id: PersonalItemEvelynCollar
+  storage:
+    back:
+    - PersonalItemEvelynCollar
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Evelyn Owlbane

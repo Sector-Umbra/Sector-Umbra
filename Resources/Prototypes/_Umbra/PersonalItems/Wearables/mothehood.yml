@@ -1,0 +1,15 @@
+# Player: June - Character: June Mothe
+- type: entity
+  parent: ClothingHeadBase
+  id: PersonalItemMotheHood
+  categories: [ HideSpawnMenu ]
+  name: Mothe's hood
+  description: ""
+  suffix: PersonalItem
+  components:
+  - type: Tag
+    tags: [] # ignore "WhitelistChameleon" tag
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Wearables/mothehood.rsi
+  - type: Clothing
+    sprite: _Umbra/PersonalItems/Wearables/mothehood.rsi

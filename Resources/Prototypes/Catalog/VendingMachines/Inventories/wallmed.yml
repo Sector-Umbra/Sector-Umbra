@@ -8,3 +8,5 @@
     CMBloodPack: 5 #Umbra: Few free empty bags for medical to fill.
     EpinephrineChemistryBottle: 3
     Syringe: 3
+  contrabandInventory:
+    PowerCellSmall: 2

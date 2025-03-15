@@ -1,6 +1,6 @@
 
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingHeadHelmetHardsuitMI14Anino
   name: anino hardsuit helmet
   description: A sleek facade that turns anyone into a living shadow. Yes, even the clown.
