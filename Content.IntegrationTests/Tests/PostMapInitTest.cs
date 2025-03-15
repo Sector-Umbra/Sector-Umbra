@@ -60,6 +60,7 @@ namespace Content.IntegrationTests.Tests
             "/Maps/_Umbra/xeno.yml", // Umbra: Contains PTK-800
             "/Maps/_Umbra/clusterprime.yml", // Umbra: Contains mime's rubber stamp.
             "/Maps/_Umbra/Dungeon/geneticore.yml", // Umbra: Contains janitorial bomb suit closet
+            "/Maps/_Umbra/centcomm.yml", // Umbra
         };
 
         private static readonly string[] GameMaps =
