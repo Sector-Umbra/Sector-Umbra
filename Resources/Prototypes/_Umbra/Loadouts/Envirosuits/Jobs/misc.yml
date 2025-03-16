@@ -1,6 +1,6 @@
-# Syndie
+# Syndicate
 - type: loadout
-  id: SyndieEnvirosuitJumpsuit
+  id: SyndicateEnvirosuitJumpsuit
   effects:
   - !type:GroupLoadoutEffect
     proto: EffectSpeciesPlasmaman
@@ -8,7 +8,7 @@
     jumpsuit: ClothingUniformEnvirosuitSyndie
 
 - type: loadout
-  id: SyndieEnvirosuitHead
+  id: SyndicateEnvirosuitHead
   effects:
   - !type:GroupLoadoutEffect
     proto: EffectSpeciesPlasmaman
