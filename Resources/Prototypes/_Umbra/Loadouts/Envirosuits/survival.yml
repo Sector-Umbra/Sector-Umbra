@@ -68,12 +68,3 @@
   storage:
     back:
     - BoxSurvivalMedicalPlasma
-
-- type: loadout
-  id: EmergencyPlasmaSyndicate
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: PlasmaBreather
-  storage:
-    back:
-    - BoxSurvivalPlasmaSyndicate

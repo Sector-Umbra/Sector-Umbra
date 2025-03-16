@@ -1432,7 +1432,7 @@
   loadouts:
   - EmergencyNitrogenSyndicate
   - EmergencyOxygenSyndicate
-  - EmergencyPlasmaSyndicate # Umbra
+  - EmergencyPlasma # Umbra
   - LoadoutSpeciesVoxNitrogen
   - LoadoutSpeciesPlasmamanPlasma # Umbra
 
