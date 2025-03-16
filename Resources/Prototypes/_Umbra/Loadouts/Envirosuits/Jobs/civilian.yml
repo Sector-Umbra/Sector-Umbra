@@ -77,14 +77,6 @@
 
 # Black
 - type: loadout
-  id: BlackEnvirosuitHead
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: EffectSpeciesPlasmaman
-  equipment:
-    head: ClothingHeadEnvirosuitBlack
-
-- type: loadout
   id: BlackEnvirosuitGloves
   effects:
   - !type:GroupLoadoutEffect
