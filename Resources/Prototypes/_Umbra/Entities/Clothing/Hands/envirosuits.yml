@@ -232,7 +232,7 @@
   - type: FingerprintMask
 
 - type: entity
-  parent: [ClothingHandsEnvirosuitBase, BaseRestrictedContraband]
+  parent: [ClothingHandsEnvirosuitBase, BaseSecurityContraband]
   id: ClothingHandsEnvirosuitForensic
   name: forensic envirosuit gloves
   components:
