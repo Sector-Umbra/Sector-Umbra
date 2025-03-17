@@ -290,6 +290,8 @@
     - HeadTop
     - HeadSide
   - type: BreathMask
+  - type: SpontaneousCombustionProtection # Umbra
+    protectionPercent: 25 # Umbra
 
 #Chitinous Helmet
 - type: entity
