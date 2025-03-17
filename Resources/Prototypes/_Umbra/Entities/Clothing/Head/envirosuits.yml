@@ -288,7 +288,7 @@
     sprite: _Umbra/Clothing/Head/Envirosuit/scientist.rsi
 
 - type: entity
-  parent: [ClothingHeadEnvirosuitBase, BaseRestrictedContraband]
+  parent: [ClothingHeadEnvirosuitBase, BaseSecurityContraband]
   id: ClothingHeadEnvirosuitSecurity
   name: security envirosuit helmet
   components:

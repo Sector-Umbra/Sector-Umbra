@@ -308,7 +308,7 @@
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/scientist.rsi
 
 - type: entity  
-  parent: [ClothingUniformEnvirosuitBase, BaseRestrictedContraband]
+  parent: [ClothingUniformEnvirosuitBase, BaseSecurityContraband]
   id: ClothingUniformEnvirosuitSecurity
   name: security envirosuit
   components:
@@ -348,7 +348,7 @@
     sprite: _Umbra/Clothing/Uniforms/Envirosuit/viro.rsi
 
 - type: entity  
-  parent: [ClothingUniformEnvirosuitBase, BaseRestrictedContraband]
+  parent: [ClothingUniformEnvirosuitBase, BaseSecurityContraband]
   id: ClothingUniformEnvirosuitWarden
   name: warden envirosuit
   components:
