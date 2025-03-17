@@ -328,7 +328,7 @@
     sprite: _Umbra/Clothing/Head/Envirosuit/viro.rsi
 
 - type: entity
-  parent: [ClothingHeadEnvirosuitBase, BaseRestrictedContraband]
+  parent: [ClothingHeadEnvirosuitBase, BaseSecurityContraband]
   id: ClothingHeadEnvirosuitWarden
   name: warden envirosuit helmet
   components:
