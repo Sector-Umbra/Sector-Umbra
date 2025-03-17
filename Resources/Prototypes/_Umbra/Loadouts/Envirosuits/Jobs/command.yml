@@ -14,11 +14,3 @@
     proto: EffectSpeciesPlasmaman
   equipment:
     head: ClothingHeadEnvirosuitCaptain
-
-- type: loadout
-  id: CaptainEnvirosuitGloves
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: EffectSpeciesPlasmaman
-  equipment:
-    gloves: ClothingHandsEnvirosuitBlack
