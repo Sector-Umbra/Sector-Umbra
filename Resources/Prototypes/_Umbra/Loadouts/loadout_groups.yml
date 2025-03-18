@@ -86,3 +86,17 @@
   - PersonalItemIsatheiPlushie
   - PersonalItemEvelynCollar
   - PersonalItemVariisisButtonUp
+
+- type: loadoutEffectGroup
+  id: PlasmaBreather
+  effects:
+  - !type:SpeciesLoadoutEffect
+    species:
+    - Plasmaman
+
+- type: loadoutEffectGroup
+  id: EffectSpeciesPlasmaman
+  effects:
+  - !type:SpeciesLoadoutEffect
+    species:
+    - Plasmaman
