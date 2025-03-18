@@ -1,0 +1,22 @@
+# Players: Slugcta - Character: FP-SR M36
+- type: entity
+  parent: ClothingHeadBase
+  id: PersonalItemFPSRVanguardsBeret
+  name: vanguard's beret
+  description: A brown beret allegedly belonging to IRMG's Vanguards. It bestows the wearer as a Vanguard of the IRMG. A golden shield insignia is placed at it's front, shining ever so slightly.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Wearables/fpsrvanguardsberet.rsi
+  - type: Clothing
+    sprite: _Umbra/PersonalItems/Wearables/fpsrvanguardsberet.rsi
+
+- type: loadout
+  id: PersonalItemFPSRVanguardsBeret
+  storage:
+    back:
+    - PersonalItemFPSRVanguardsBeret
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - FP-SR M36
