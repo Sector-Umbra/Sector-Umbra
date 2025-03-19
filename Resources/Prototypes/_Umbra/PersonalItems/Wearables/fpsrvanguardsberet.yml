@@ -3,7 +3,7 @@
   parent: ClothingHeadBase
   id: PersonalItemFPSRVanguardsBeret
   name: vanguard's beret
-  description: A brown beret allegedly belonging to IRMG's Vanguards. It bestows the wearer as a Vanguard of the IRMG. A golden shield insignia is placed at it's front, shining ever so slightly.
+  description: A deep brown beret. A golden shield insignia is placed at it's front, shining ever so slightly.
   suffix: PersonalItem
   components:
   - type: Sprite
