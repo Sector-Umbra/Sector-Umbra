@@ -4,6 +4,7 @@ using Content.Server.Speech;
 using Content.Server.Speech.EntitySystems;
 using Content.Server._Latestation.Speech.Components;
 using Robust.Shared.Random;
+using System.Linq;
 
 namespace Content.Server._Latestation.Speech.EntitySystems;
 
@@ -12,7 +13,6 @@ public sealed class ValleyGirlAccentSystem : EntitySystem
     //Words ending in -ing = in'. Bein', Darlin', etc.
     //Taken from mobster accent.
     private static readonly Regex RegexIng = new(@"(?<=\w\w)(in)g(?!\w)", RegexOptions.IgnoreCase);
-    private static readonly Regex RegexLastWord = new(@"(\S+)$");
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly ReplacementAccentSystem _replacement = default!;
 
@@ -26,21 +26,54 @@ public sealed class ValleyGirlAccentSystem : EntitySystem
     {
         var message = args.Message;
 
+        //The main word replacement is done through replacement accent system
         message = _replacement.ApplyReplacements(message, "valleygirl");
 
+        //the G in -ing words. Thinkin', darlin', etc.
         message = RegexIng.Replace(message, "$1'");
 
-        //Capitalizes the first letter.
-        message = message[0].ToString().ToUpper() + message.Remove(0, 1);
-
-        var suffix = "";
-        // Suffixes
-        if (_random.Prob(0.8f))
+        //Mid-sentence ", like, " for maximum suffering
+        if (_random.Prob(1f))
         {
-            var pick = _random.Next(1, 6);
-            suffix = Loc.GetString($"accent-valleygirl-suffix-{pick}");
+            var words = message.Split(' ').ToList();
+            if (words.Count() > 1)
+            {
+                var placement = _random.Next(1, words.Count());
+                words.Insert(placement, ", like");
+
+                //TODO: Make this in a better way, it's just a hack for now.
+                string stitched = "";
+                int i = 0;
+                foreach (string word in words)
+                {
+                    stitched += word;
+                    if (i != placement -1 && i != words.Count() - 1)
+                        stitched += " ";
+                    i++;
+                }
+                message = stitched;
+            }
         }
-        message += suffix;
+
+        // Like, Prefixes
+        if (_random.Prob(1f))
+        {
+            var pick = _random.Next(1, 2);
+            var prefix = Loc.GetString($"accent-valleygirl-prefix-{pick}");
+
+            //Lowercases the first word since the prefix takes priority.
+            message = message[0].ToString().ToLower() + message.Remove(0, 1);
+            message = prefix + " " + message;
+        }
+
+        // Suffixes, like totes.
+        if (_random.Prob(1f))
+        {
+            var pick = _random.Next(1, 5);
+            var suffix = Loc.GetString($"accent-valleygirl-suffix-{pick}");
+            message += suffix;
+        }
+
 
         args.Message = message;
     }
