@@ -1,0 +1,10 @@
+# 1 cost - using the same point rules as vanilla.
+
+- type: trait
+  id: ValleyGirl
+  name: trait-valley-name
+  description: trait-valley-desc
+  category: SpeechTraits
+  cost: 1
+  components:
+  - type: ValleyGirlAccent
