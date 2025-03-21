@@ -31,6 +31,9 @@
   - type: NpcFactionMember
     factions:
     - SimpleNeutral
+  - type: Access
+    tags:
+    - BasicSilicon
   - type: IntrinsicRadioReceiver
   # UMBRA: Reverted commit 6459f71 -> Allow silicons without laws access to binary channel
   - type: IntrinsicRadioTransmitter
