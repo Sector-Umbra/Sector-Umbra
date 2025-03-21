@@ -5,6 +5,7 @@ using Content.Server.Speech.EntitySystems;
 using Content.Server._Latestation.Speech.Components;
 using Robust.Shared.Random;
 using System.Linq;
+using System.Diagnostics;
 
 namespace Content.Server._Latestation.Speech.EntitySystems;
 
@@ -33,25 +34,16 @@ public sealed class ValleyGirlAccentSystem : EntitySystem
         message = RegexIng.Replace(message, "$1'");
 
         //Mid-sentence ", like, " for maximum suffering
-        if (_random.Prob(0.5))
+        if (_random.Prob(0.5f))
         {
             var words = message.Split(' ').ToList();
             if (words.Count() > 1)
             {
                 var placement = _random.Next(1, words.Count());
-                words.Insert(placement, ", like");
-
-                //TODO: Make this in a better way, it's just a hack for now.
-                string stitched = "";
-                int i = 0;
-                foreach (string word in words)
-                {
-                    stitched += word;
-                    if (i != placement - 1 && i != words.Count() - 1)
-                        stitched += " ";
-                    i++;
-                }
-                message = stitched;
+                words[placement - 1] += ',';
+                words.Insert(placement, "like");
+                string updatedMessage = string.Join(" ", words);
+                message = updatedMessage;
             }
         }
 
@@ -62,6 +54,7 @@ public sealed class ValleyGirlAccentSystem : EntitySystem
             var prefix = Loc.GetString($"accent-valleygirl-prefix-{pick}");
 
             //Lowercases the first word since the prefix takes priority.
+            //I don't care if the first word is "I " leave me alone
             message = message[0].ToString().ToLower() + message.Remove(0, 1);
             message = prefix + " " + message;
         }

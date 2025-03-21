@@ -20,3 +20,5 @@ accent-valleygirl-replaced-5 = of course
 accent-valleygirl-replacement-5 = 'course
 accent-valleygirl-replaced-6 = god
 accent-valleygirl-replacement-6 = gosh
+accent-valleygirl-replaced-7 = adorable
+accent-valleygirl-replacement-7 = adorbs
