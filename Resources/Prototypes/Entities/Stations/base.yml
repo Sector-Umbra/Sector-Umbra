@@ -92,6 +92,7 @@
   abstract: true
   components:
     - type: StationCentcomm
+      map: "/Maps/_Umbra/centcomm.yml" # Umbra: New Centcomm Map Override
 
 - type: entity
   id: BaseStationEvacuation
