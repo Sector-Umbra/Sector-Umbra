@@ -1,0 +1,49 @@
+<Document>
+  ## Blood Bags
+
+  <Box>
+    <GuideEntityEmbed Entity="CMBloodPack" Caption="Standard Blood Bag"/>
+  </Box>
+
+  Blood bags can store [color=#a4885c]120 Units[/color] of any reagent, but can only be manually filled through injectors (Ex: Syringes, Hypospray, IV Stands).
+
+  Blood bags can inject any chemical they can store, this includes mixtures.
+
+  ## IV Stands
+
+  <Box>
+    <GuideEntityEmbed Entity="VendingMachineMedical" State="normal-unshaded" Caption="Nanomed"/>
+    <GuideEntityEmbed Entity="IVstandflatpack" Caption="IV Stand Flatpack"/>
+  </Box>
+
+  IV Stand Flatpacks can be found in [color=#5b97bc]Nanomed[/color] vendors and function identically to any other flatpack, simply use a multitool on them to deploy the IV stand.
+  
+  <Box>
+    <GuideEntityEmbed Entity="CMIV" State="Unhooked" Caption="IV Stand"/>
+  </Box>
+
+  Once an IV Stand has been deplyoed, it will need a blood pack insterted into it before it can serve any use. IV Stands will take a blood bag wether it is filled or empty.
+
+  Most commonly, a filled blood pack will be inserted. This will allow the IV stand to inject the contents of the blood pack into the patient's chemical stream, including types of mixtures.
+  
+  Alternatively, IV stands can store empty blood packs. By using the "Toggle Inject" verb, the IV stand will draw from the patient's blood stream. This will slowly drain the patient's bloodstream contents and fill the IV Stand's blood pack.
+
+  While an IV is injected inside of a pateint, it is possible for the IV needle itself to rip out of a patient's arm. This occurs when an IV stand and/or Patient move to far away from one another.
+
+  ## Summary
+
+  - Blood bags are able to store [color=#a4885c]120 Units[/color] of any reagent.
+  - Both IV Stands and Blood Bags inject into the chemical stream, but draw from the blood stream.
+  - When used on a patient blood bags will slowly inject a patient with their contained reagents, including mixtures.
+  - Empty blood bags can be filled using any injector (Ex: Syringes/Hyposprays) or IV Stands.
+  - IV Stands can draw or inject from a patient, these modes can be switched using the "Toggle Inject" verb.
+  
+  Below is a table for the different types of blood and what species they corrolate to:
+  - [color=#7a8bf2]Ammonia Blood[/color]: Vox, Avali
+  - [color=#2135ab]Copper Blood[/color]: Arachnids
+  - [color=#808A51]Insect Blood[/color]: Moths
+  - [color=#ac1818]Red Blood[/color]: Humans, Dwarfs, Reptilians, Vulpkanins
+  - [color=#cd7314]Sap Blood[/color]: Dionae
+  - [color=#2cf274]Slime[/color]: Slimes
+  - [color=#00b8f5]Synthetic Blood[/color]: Any Synthetic Beings (Excluding Borgs and Station AI)
+</Document>
