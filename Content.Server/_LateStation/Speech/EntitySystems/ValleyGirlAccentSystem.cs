@@ -34,21 +34,21 @@ public sealed class ValleyGirlAccentSystem : EntitySystem
         message = RegexIng.Replace(message, "$1'");
 
         //Mid-sentence ", like, " for maximum suffering
-        if (_random.Prob(0.5f))
+        if (_random.Prob(0.6f))
         {
             var words = message.Split(' ').ToList();
             if (words.Count() > 1)
             {
                 var placement = _random.Next(1, words.Count());
                 words[placement - 1] += ',';
-                words.Insert(placement, "like");
+                words.Insert(placement, "like,");
                 string updatedMessage = string.Join(" ", words);
                 message = updatedMessage;
             }
         }
 
         // Like, Prefixes
-        if (_random.Prob(0.15f))
+        if (_random.Prob(0.25f))
         {
             var pick = _random.Next(1, 2);
             var prefix = Loc.GetString($"accent-valleygirl-prefix-{pick}");
@@ -60,7 +60,7 @@ public sealed class ValleyGirlAccentSystem : EntitySystem
         }
 
         // Suffixes, like totes.
-        if (_random.Prob(0.3f))
+        if (_random.Prob(0.4f))
         {
             var pick = _random.Next(1, 5);
             var suffix = Loc.GetString($"accent-valleygirl-suffix-{pick}");

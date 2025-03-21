@@ -2,8 +2,8 @@
 
 - type: trait
   id: ValleyGirl
-  name: trait-valley-name
-  description: trait-valley-desc
+  name: trait-valleygirl-name
+  description: trait-valleygirl-desc
   category: SpeechTraits
   cost: 1
   components:
