@@ -24,7 +24,7 @@
     - AnomalyTech
     #- AnomalySanta
     # UMBRA: Disabled due to issue https://github.com/Sector-Umbra/Sector-Umbra/issues/159 . Do not re-enable without Game Master Team approval.
-    # rareChance: 0.05 # These should be suitably rare and anomalies spawn all the time # Sector Umbra
+    # rareChance: 0.3 # These should be suitably rare and anomalies spawn all the time # Sector Umbra
     # rarePrototypes:
     # - RandomAnomalyInjectorSpawner
     # END UMBRA
@@ -42,7 +42,9 @@
   - type: RandomSpawner
     prototypes:
     - AnomalyRockIron
+    - AnomalyRockCoal
     - AnomalyRockSilver
+    - AnomalyRockGold
     - AnomalyRockQuartz
     - AnomalyRockUranium
     chance: 1
@@ -71,4 +73,3 @@
     - AnomalyTrapRock
     #- AnomalyTrapSanta
     chance: 1
-  
