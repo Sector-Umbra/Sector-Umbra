@@ -1,0 +1,12 @@
+# list by boazthebarometer
+- type: localizedDataset
+  id: NamesMantidaeFirst
+  values:
+    prefix: names-mantidae-first-dataset-
+    count: 76
+
+- type: localizedDataset
+  id: NamesMantidaeLast
+  values:
+    prefix: names-mantidae-last-dataset-
+    count: 80
