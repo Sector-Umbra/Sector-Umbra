@@ -80,7 +80,6 @@ namespace Content.IntegrationTests.Tests
             "Marathon",
             "MeteorArena",
             "Saltern",
-            "Atlas",
             "Reach",
             "Train",
             "Oasis",
