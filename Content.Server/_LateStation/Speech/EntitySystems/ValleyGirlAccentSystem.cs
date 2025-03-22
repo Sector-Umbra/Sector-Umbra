@@ -50,7 +50,7 @@ public sealed class ValleyGirlAccentSystem : EntitySystem
         // Like, Prefixes
         if (_random.Prob(0.25f))
         {
-            var pick = _random.Next(1, 2);
+            var pick = _random.Next(1, 3);
             var prefix = Loc.GetString($"accent-valleygirl-prefix-{pick}");
 
             //Lowercases the first word since the prefix takes priority.
