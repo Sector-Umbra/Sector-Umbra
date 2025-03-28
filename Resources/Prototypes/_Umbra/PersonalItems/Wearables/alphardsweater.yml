@@ -3,7 +3,7 @@
   parent: ClothingUniformBase
   id: PersonalItemAlphardSweater
   name: Alphard's Sweater
-  description: A red cashmere sweater. Though the dyes have long since faded, the thread remains well-maintained.
+  description: A red cashmere sweater. Though the dyes have long since faded, the thread remains maintained.
   suffix: PersonalItem
   components:
   - type: Sprite
