@@ -1,0 +1,40 @@
+# Player: SlamBamActionman - Character: Erikrax
+- type: entity
+  parent: PlushieVox
+  id: PersonalItemErikraxPlushie
+  name: erikrax plushie
+  description: Ear-splitting entertainment for all ages. For legal reasons, the stun baton can't be turned off.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_erikrax
+    sprite: _Umbra/PersonalItems/Plushies/erikraxplushie.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/PersonalItems/Plushies/erikraxplushie_64.rsi
+    equippedPrefix: erikrax
+    slots:
+    - HEAD
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 5
+        - ReagentId: Sugar
+          Quantity: 5
+  - type: UseDelay
+    delay: 0.75
+  - type: MeleeWeapon
+    attackRate: 1.5 # Sugar...
+
+- type: loadout
+  id: PersonalItemErikraxPlushie
+  storage:
+    back:
+    - PersonalItemErikraxPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Erikrax
