@@ -1,0 +1,23 @@
+
+- type: entity
+  id: CrateMedicalEmergencyBlood
+  parent: CrateMedical
+  name: blood supply crate
+  description: A crate filled with species blood.
+  components:
+  - type: StorageFill
+    contents:
+      - id: CMBloodPackFull
+        amount: 3
+      - id: CMBloodPackFullSap
+        amount: 3
+      - id: CMBloodPackFullAnaerobic
+        amount: 3
+      - id: CMBloodPackFullHemocyanin
+        amount: 3
+      - id: CMBloodPackFullInsect
+        amount: 3
+      - id: CMBloodPackFullSynthetic
+        amount: 2
+      - id: CMBloodPackFullSlime
+        amount: 3

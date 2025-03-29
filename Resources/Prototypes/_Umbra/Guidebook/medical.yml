@@ -1,0 +1,4 @@
+- type: guideEntry
+  id: Rmcmedical
+  name: guidebook-name-rmcmedical
+  text: "/ServerInfo/Guidebook/_Umbra/Rmcmedical.xml"
