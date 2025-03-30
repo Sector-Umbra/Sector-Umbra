@@ -1,0 +1,23 @@
+# Player: snowlili - Character: Katie Fae
+- type: entity
+  parent: ClothingHandsBase
+  id: PersonalItemKatieFae
+  name: Katie's band
+  description: A bright orange and blue band with the letters, SW, printed onto it.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Wearables/katiefaeband.rsi
+  - type: Clothing
+    quickEquip: True
+    sprite: _Umbra/PersonalItems/Wearables/katiefaeband.rsi
+
+- type: loadout
+  id: PersonalItemKatieFae
+  storage:
+    back:
+    - PersonalItemKatieFae
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Katie Fae
