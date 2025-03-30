@@ -2,7 +2,7 @@
 - type: entity
   parent: ClothingHandsBase
   id: PersonalItemKatieFae
-  name: Katie's band
+  name: Katie's wristband
   description: A bright orange and blue band with the letters, SW, printed onto it.
   suffix: PersonalItem
   components:
