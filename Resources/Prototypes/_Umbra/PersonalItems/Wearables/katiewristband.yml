@@ -8,7 +8,7 @@
   components:
   - type: Sprite
     sprite: _Umbra/PersonalItems/Wearables/katiewristband.rsi
-    scale: 0.75,0.75
+    scale: 0.75, 0.75
   - type: Clothing
     quickEquip: True
     sprite: _Umbra/PersonalItems/Wearables/katiewristband.rsi
