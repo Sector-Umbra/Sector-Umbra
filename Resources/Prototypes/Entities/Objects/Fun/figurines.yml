@@ -471,8 +471,8 @@
   components:
   - type: Sprite
     state: queen
-  # - type: SpeakOnTrigger # TODO add something
-  #   pack: FigurinesQueen
+  - type: SpeakOnTrigger
+    pack: FigurinesQueen
 
 - type: entity
   parent: BaseFigurine

@@ -170,12 +170,12 @@ figurines-cmo-6 = No, you're not getting my hypospray.
 
 figurines-chemist-1 = I still have like four other perscriptions to do.
 figurines-chemist-2 = I'd only make you that if I wanted to risk my job, which I do.
-figurines-chemist-2 = Get your pills!
-figurines-chemist-3 = We need to cook.
-figurines-chemist-4 = I am the one who knocks!
-figurines-chemist-5 = Say my name.
-figurines-chemist-6 = 99.8% purity.
-figurines-chemist-7 = Epinephrine? Didn't you say methamphetamine?
+figurines-chemist-3 = Get your pills!
+figurines-chemist-4 = We need to cook.
+figurines-chemist-5 = I am the one who knocks!
+figurines-chemist-6 = Say my name.
+figurines-chemist-7 = 99.8% purity.
+figurines-chemist-8 = Epinephrine? Didn't you say methamphetamine?
 
 figurines-paramedic-1 = Science exploded again, hold on.
 figurines-paramedic-2 = Another dead on arrival..
