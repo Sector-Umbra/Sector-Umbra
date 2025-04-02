@@ -1,7 +1,7 @@
 - type: entity
-  parent: BaseStructure #Fix
+  parent: BaseStructure
   id: CMIV
-  name: iv
+  name: iv stand
   description: Allows you to inject blood into a patient or extract blood from them to do a blood transfusion.
   suffix: IV, empty
   components:
@@ -51,11 +51,14 @@
   - type: ContainerContainer
     containers:
       pack: !type:ContainerSlot {}
+  - type: GuideHelp
+    guides:
+    - Rmcmedical
 
 - type: entity
   parent: BaseItem
-  id: CMBloodPack # TODO RMC14 blood types
-  name: empty blood pack
+  id: CMBloodPack
+  name: blood pack
   description: A blood pack. Contains fluids, typically used for transfusions.
   suffix: CM, empty
   components:
@@ -75,7 +78,7 @@
   - type: SolutionContainerManager
     solutions:
       pack:
-        maxVol: 300
+        maxVol: 120
   - type: SolutionTransfer
     canChangeTransferAmount: true
   - type: Appearance
@@ -83,27 +86,157 @@
     solution: pack
   - type: InjectableSolution
     solution: pack
-  - type: Damageable # TODO?
+  - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Glass
-  - type: DamageOnHighSpeedImpact # TODO
+  - type: DamageOnHighSpeedImpact
     minimumSpeed: 2
     damage:
       types:
         Blunt: 5
   - type: StaticPrice
     price: 30
+  - type: Tag
+    tags:
+    - Bloodpack
+  - type: GuideHelp
+    guides:
+    - Rmcmedical
+  - type: Label
+    currentLabel: cm-blood-pack-empty
 
 - type: entity
   parent: CMBloodPack
-  id: CMBloodPackFull # TODO RMC14 blood types
+  id: CMBloodPackFull
   name: blood pack
   suffix: CM, Full
   components:
   - type: SolutionContainerManager
     solutions:
       pack:
-        maxVol: 300
+        maxVol: 120
         reagents:
         - ReagentId: Blood
-          Quantity: 300
+          Quantity: 120
+  - type: Label
+    currentLabel: cm-blood-pack-reagent-redblood
+
+# Umbra Blood Pack Types
+# Lingering
+- type: entity
+  parent: CMBloodPack
+  id: CMBloodpackLingering
+  suffix: Lingering
+  components:
+  - type: Stack
+    stackType: Fulton
+    count: 1
+    lingering: true
+
+# Sap
+- type: entity
+  parent: CMBloodPack
+  id: CMBloodPackFullSap
+  name: blood pack
+  description: A blood pack. Contains fluids, typically used for transfusions. This one contains sap, used for Diona.
+  suffix: Full, Sap
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pack:
+        maxVol: 120
+        reagents:
+        - ReagentId: Sap
+          Quantity: 120
+  - type: Label
+    currentLabel: cm-blood-pack-reagent-sapblood
+
+# Anaerobic
+- type: entity
+  parent: CMBloodPack
+  id: CMBloodPackFullAnaerobic
+  name: blood pack
+  description: A blood pack. Contains fluids, typically used for transfusions. This one was filled with Ammonia, used for Vox and Avali.
+  suffix: Full, Anaerobic/Ammonia
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pack:
+        maxVol: 120
+        reagents:
+        - ReagentId: AmmoniaBlood
+          Quantity: 120
+  - type: Label
+    currentLabel: cm-blood-pack-reagent-ammoniablood
+
+# Blue Blood
+- type: entity
+  parent: CMBloodPack
+  id: CMBloodPackFullHemocyanin
+  name: blood pack
+  description: A blood pack. Contains fluids, typically used for transfusions. This one was filled with Hemocyanin, used for Arachnids.
+  suffix: Full, Hemocyanin/Blue
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pack:
+        maxVol: 120
+        reagents:
+        - ReagentId: CopperBlood
+          Quantity: 120
+  - type: Label
+    currentLabel: cm-blood-pack-reagent-copperblood
+
+# Insect Blood
+- type: entity
+  parent: CMBloodPack
+  id: CMBloodPackFullInsect
+  name: blood pack
+  description: A blood pack. Contains fluids, typically used for transfusions. This one was filled with insect blood, used for moths.
+  suffix: Full, Insect/Moth
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pack:
+        maxVol: 120
+        reagents:
+        - ReagentId: InsectBlood
+          Quantity: 120
+  - type: Label
+    currentLabel: cm-blood-pack-reagent-insectblood
+
+# Synthetic Blood
+- type: entity
+  parent: CMBloodPack
+  id: CMBloodPackFullSynthetic
+  name: blood pack
+  description: A blood pack. Contains fluids, typically used for transfusions. This one was filled with a type of coolant, used for synths.
+  suffix: Full, Synthetic
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pack:
+        maxVol: 120
+        reagents:
+        - ReagentId: SynthBlood
+          Quantity: 120
+  - type: Label
+    currentLabel: cm-blood-pack-reagent-synthblood
+
+# Slime Blood
+- type: entity
+  parent: CMBloodPack
+  id: CMBloodPackFullSlime
+  name: blood pack
+  description: A blood pack. Contains fluids, typically used for transfusions. This one was filled with a type of slime, used for slime people.
+  suffix: Full, Slime
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      pack:
+        maxVol: 120
+        reagents:
+        - ReagentId: Slime
+          Quantity: 120
+  - type: Label
+    currentLabel: cm-blood-pack-reagent-slimeblood
