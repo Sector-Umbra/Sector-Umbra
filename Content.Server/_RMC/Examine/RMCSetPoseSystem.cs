@@ -26,7 +26,7 @@ public sealed class RMCSetPoseSystem : SharedRMCSetPoseSystem
             {
                 if (pose.Length > 1000)
                     pose = pose[..999];
-                _adminLog.Add(LogType.RMCSetPose, $"{ToPrettyString(ent)} set their pose to {pose}");
+                _adminLog.Add(LogType.Verb, $"{ToPrettyString(ent)} set their pose to {pose}");
                 ent.Comp.Pose = pose;
                 Dirty(ent);
             }
