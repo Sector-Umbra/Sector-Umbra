@@ -1,0 +1,23 @@
+# Player: SqueakDrake - Character: Tee-Gam
+- type: entity
+  name: Tee-Gam's cmo trophy
+  parent: DrinkGoldenCup
+  id: PersonalItemTeeCMOTrophy
+  description: This trophy has been emblazoned with marker pen strokes of the Moth language and a glittery heart sticker, the only letters in common are "CMO". Inside the cup a small purple moth plush sits, with its head peaking out. The marker is fading in places were its been buffed, but someone clearly cares about this trophy a lot
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Items/teecmotrophy.rsi
+    scale: 0.75, 0.75
+  - type: Item
+    size: Small
+    sprite: _Umbra/PersonalItems/Items/teecmotrophy.rsi
+- type: loadout
+  id: PersonalItemTeeCMOTrophy
+  storage:
+    back:
+    - PersonalItemTeeCMOTrophy
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Tee-Gam
