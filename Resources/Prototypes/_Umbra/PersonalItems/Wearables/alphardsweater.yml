@@ -1,0 +1,22 @@
+# Player: Ktyria - Character: Emiko Sasaki
+- type: entity
+  parent: ClothingUniformBase
+  id: PersonalItemAlphardSweater
+  name: Alphard's Sweater
+  description: A red cashmere sweater. Though the dyes have long since faded, the thread remains maintained.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Wearables/alphardsweater.rsi
+  - type: Clothing
+    sprite: _Umbra/PersonalItems/Wearables/alphardsweater.rsi
+
+- type: loadout
+  id: PersonalItemAlphardSweater
+  storage:
+    back:
+    - PersonalItemAlphardSweater
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Emiko Sasaki
