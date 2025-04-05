@@ -14,7 +14,7 @@ public sealed partial class ContainerClaimHolderSystem : EntitySystem
 
     private void OnAttemptClaimContainer(EntityUid uid, ClaimableContainerComponent component, ref AttemptClaimContainer args)
     {
-        Log.Debug(uid + " IM FUCKING SCREAMING");
+        Log.Debug(uid + " IM FUCKING SCREAMING " + component.Owner);
 //        args.IdNumber = uid.
     }
 }

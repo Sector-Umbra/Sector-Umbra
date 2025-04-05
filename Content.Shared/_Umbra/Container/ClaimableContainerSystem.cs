@@ -1,3 +1,7 @@
+using System.Diagnostics;
+using Content.Shared.Access.Systems;
+using Content.Shared.Hands.EntitySystems;
+using Content.Shared.Inventory;
 using Content.Shared.Lock;
 
 
@@ -6,6 +10,10 @@ namespace Content.Shared._Umbra.Container;
 
 public sealed class ClaimableContainerSystem : EntitySystem
 {
+    [Dependency] private readonly AccessReaderSystem _accessReader = default!;
+    [Dependency] private readonly SharedHandsSystem _handsSystem = default!;
+    [Dependency] private readonly InventorySystem _inventorySystem = default!;
+
     /// <inheritdoc />
     public override void Initialize()
     {
@@ -17,13 +25,34 @@ public sealed class ClaimableContainerSystem : EntitySystem
 
     private void OnActivated(EntityUid uid, ClaimableContainerComponent component, ref LockToggledEvent args)
     {
-        // Locker has been either Locked, or Unlocked. Attempt to claim the locker with the persons ID.
-        Log.Debug("among us trap beat 100 hour edition (real)");
+        EntityUid user = (EntityUid)args.User!;
 
-        var ev = new AttemptClaimContainer();
-        RaiseLocalEvent(uid, ref ev, true);
+        foreach (var item in _handsSystem.EnumerateHeld(user))
+        {
+            if (user == null)
+            {
+                Log.Debug("User is Null, Something went wrong.");
+                return;
+            }
 
-        ev.IdNumber = component.IDClaim;
+            if (_accessReader.IsAllowed(user, uid))
+            {
+                Log.Debug(user + " " + uid + " claimed");
+            }
+        }
+
+//        // maybe its inside an inventory slot?
+//        if (_inventorySystem.TryGetSlotEntity(uid, "id", out var idUid))
+//        {
+//            items.Add(idUid.Value);
+//        }
+//
+//        return items.Any();
     }
+
+//    private void ClaimContainer(target)
+//    {
+//
+//    }
 }
 
