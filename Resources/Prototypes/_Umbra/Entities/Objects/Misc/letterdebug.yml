@@ -8,6 +8,7 @@
   parent: BaseDelivery
   id: LetterDeliveryDebug
   name: letter
+  suffix: PaperOnly
   components:
   - type: Sprite
     sprite: Objects/Specific/Cargo/mail.rsi
