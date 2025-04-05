@@ -1,0 +1,16 @@
+- type: entityTable
+  id: LetterDeliveryRewardsDebug
+  table: !type:AllSelector
+    children:
+    - id: Paper
+
+- type: entity
+  parent: LetterDelivery
+  id: LetterDeliveryDebug
+  name: letter
+  suffix: PaperOnly
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      delivery: !type:NestedSelector
+        tableId: LetterDeliveryRewardsDebug
