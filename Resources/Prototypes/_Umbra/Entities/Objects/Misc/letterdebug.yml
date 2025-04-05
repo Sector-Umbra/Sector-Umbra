@@ -1,0 +1,42 @@
+- type: entityTable
+  id: LetterDeliveryRewardsDebug
+  table: !type:AllSelector
+    children:
+    - id: Paper
+
+- type: entity
+  parent: BaseDelivery
+  id: LetterDeliveryDebug
+  name: letter
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Cargo/mail.rsi
+    layers:
+    - state: icon
+      map: [ "enum.DeliveryVisualLayers.Icon" ]
+    - state: trash
+      map: [ "enum.DeliveryVisualLayers.Trash" ]
+      visible: false
+    - state: postmark
+    - map: [ "enum.DeliveryVisualLayers.JobStamp" ]
+      offset: -0.125, -0.0625
+    - state: fragile
+      map: [ "enum.DeliveryVisualLayers.FragileStamp" ]
+      visible: false
+    - state: locked
+      map: [ "enum.DeliveryVisualLayers.Lock" ]
+    - state: priority
+      map: [ "enum.DeliveryVisualLayers.PriorityTape" ]
+      visible: false
+      shader: unshaded
+    - state: broken
+      map: [ "enum.DeliveryVisualLayers.Breakage" ]
+      visible: false
+  - type: Item
+    storedRotation: 90
+  - type: Delivery
+    spesoReward: 400
+  - type: EntityTableContainerFill
+    containers:
+      delivery: !type:NestedSelector
+        tableId: LetterDeliveryRewardsDebug
