@@ -2,7 +2,7 @@
 - type: entity
   parent: BaseToolSurgery
   id: PersonalItemDropsScalpel
-  name: Drops-The-Scalpel's scalpel
+  name: Drops-The-Scalpel's lucky scalpel
   description: What looks like an ordinary scalpel, albeit heavily used and damaged. The handle has a pink wrapping and the blade seems to not have been switched out in quite some time.
   suffix: PersonalItem
   components:
