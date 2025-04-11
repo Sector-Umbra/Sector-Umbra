@@ -1,4 +1,4 @@
-namespace Content.Server.Traits.Assorted;
+namespace Content.Server._Umbra.Traits.Assorted;
 
 /// <summary>
 /// This is used for the uncloneable trait.
@@ -6,5 +6,9 @@ namespace Content.Server.Traits.Assorted;
 [RegisterComponent]
 public sealed partial class UncloneableComponent : Component
 {
-
+    /// <summary>
+    /// Can this player be cloned using a cloning pod?
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public bool Cloneable = false;
 }

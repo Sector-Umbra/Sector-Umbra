@@ -2,14 +2,12 @@
   id: DefaultMapPool
   maps:
   - Aspid
-  - Atlas
   - Amber
   - Bagel
   - Box
   - ClusterPrime # Umbra: Cluster Replacement
-  - Cog
   - Convex
-  - Core
+  #- Core
   - Elkridge
   - Fland
   #- Gate

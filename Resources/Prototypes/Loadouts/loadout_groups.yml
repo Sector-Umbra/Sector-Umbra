@@ -27,8 +27,10 @@
   - CigarCase
   - CigarGold
   - ClothingNeckLGBTPin
+  - ClothingNeckAllyPin
   - ClothingNeckAromanticPin
   - ClothingNeckAsexualPin
+  - ClothingNeckAroacePin
   - ClothingNeckBisexualPin
   - ClothingNeckGayPin
   - ClothingNeckIntersexPin
@@ -36,6 +38,7 @@
   - ClothingNeckNonBinaryPin
   - ClothingNeckPansexualPin
   - ClothingNeckOmnisexualPin
+  - ClothingNeckGenderqueerPin
   - ClothingNeckTransPin
   - ClothingNeckAutismPin
   - ClothingNeckGoldAutismPin
@@ -90,6 +93,7 @@
   - EmergencyOxygen
   - LoadoutSpeciesVoxNitrogen
 
+# nitrogen or oxygen tank, depending on what your species needs
 - type: loadoutGroup
   id: GroupEVATank
   name: loadout-group-EVA-tank
@@ -97,6 +101,14 @@
   loadouts:
   - LoadoutSpeciesEVANitrogen
   - LoadoutSpeciesEVAOxygen
+
+# vox get a nitrogen tank, other species get nothing
+- type: loadoutGroup
+  id: GroupEVATankVox
+  name: loadout-group-vox-tank
+  hidden: true
+  loadouts:
+  - LoadoutSpeciesVoxNitrogen
 
 - type: loadoutGroup
   id: GroupPocketTankDouble
@@ -758,6 +770,7 @@
 - type: loadoutGroup
   id: StationEngineerHead
   name: loadout-group-station-engineer-head
+  minLimit: 0
   loadouts:
   - StationEngineerHardhatYellow
   - StationEngineerHardhatOrange

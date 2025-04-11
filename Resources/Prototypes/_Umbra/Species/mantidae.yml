@@ -1,0 +1,160 @@
+- type: species
+  id: Mantidae
+  name: species-name-mantidae
+  roundStart: true
+  prototype: MobMantidae
+  sprites: MobMantidaeSprites
+  defaultSkinTone: "#51fd36"
+  markingLimits: MobMantidaeMarkingLimits
+  dollPrototype: MobMantidaeDummy
+  skinColoration: Hues
+  maleFirstNames: NamesMantidaeFirst
+  femaleFirstNames: NamesMantidaeFirst
+  lastNames: NamesMantidaeLast
+
+- type: speciesBaseSprites
+  id: MobMantidaeSprites
+  sprites:
+    Head: MobMantidaeHead
+    Hair: MobHumanoidAnyMarking
+    Snout: MobHumanoidAnyMarking
+    Chest: MobMantidaeTorso
+    HeadTop: MobHumanoidAnyMarking
+    HeadSide: MobHumanoidAnyMarking
+    Tail: MobHumanoidAnyMarking
+    Eyes: MobMantidaeEyes
+    LArm: MobMantidaeLArm
+    RArm: MobMantidaeRArm
+    LHand: MobMantidaeLHand
+    RHand: MobMantidaeRHand
+    LLeg: MobMantidaeLLeg
+    RLeg: MobMantidaeRLeg
+    LFoot: MobMantidaeLFoot
+    RFoot: MobMantidaeRFoot
+
+- type: humanoidBaseSprite
+  id: MobMantidaeEyes
+  baseSprite:
+    sprite: _Umbra/Mobs/Species/Mantidae/parts.rsi
+    state: eyes
+
+- type: markingPoints
+  id: MobMantidaeMarkingLimits
+  onlyWhitelisted: true
+  points:
+    Hair:
+      points: 1
+      required: false
+    FacialHair:
+      points: 0
+      required: false
+    Tail:
+      points: 1
+      required: false
+    Snout:
+      points: 1
+      required: false
+    HeadTop:
+      points: 1
+      required: true
+      defaultMarkings: [ MantidaeAntennaeDefault ]
+    HeadSide:
+      points: 1
+      required: false
+    Head:
+      points: 3
+      required: false
+    Chest:
+      points: 2
+      required: false
+    Legs:
+      points: 6
+      required: false
+    Arms:
+      points: 2
+      required: true
+      defaultMarkings: [ MantidaeLeftScytheDefault, MantidaeRightScytheDefault ]
+
+- type: humanoidBaseSprite
+  id: MobMantidaeHead
+  baseSprite:
+    sprite: _Umbra/Mobs/Species/Mantidae/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobMantidaeHeadMale
+  baseSprite:
+    sprite: _Umbra/Mobs/Species/Mantidae/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobMantidaeHeadFemale
+  baseSprite:
+    sprite: _Umbra/Mobs/Species/Mantidae/parts.rsi
+    state: head_f
+
+- type: humanoidBaseSprite
+  id: MobMantidaeTorso
+  baseSprite:
+    sprite: _Umbra/Mobs/Species/Mantidae/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobMantidaeTorsoMale
+  baseSprite:
+    sprite: _Umbra/Mobs/Species/Mantidae/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobMantidaeTorsoFemale
+  baseSprite:
+    sprite: _Umbra/Mobs/Species/Mantidae/parts.rsi
+    state: torso_f
+
+- type: humanoidBaseSprite
+  id: MobMantidaeLLeg
+  baseSprite:
+    sprite: _Umbra/Mobs/Species/Mantidae/parts.rsi
+    state: l_leg
+
+- type: humanoidBaseSprite
+  id: MobMantidaeLHand
+  baseSprite:
+    sprite: _Umbra/Mobs/Species/Mantidae/parts.rsi
+    state: l_hand
+
+- type: humanoidBaseSprite
+  id: MobMantidaeLArm
+  baseSprite:
+    sprite: _Umbra/Mobs/Species/Mantidae/parts.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: MobMantidaeLFoot
+  baseSprite:
+    sprite: _Umbra/Mobs/Species/Mantidae/parts.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: MobMantidaeRLeg
+  baseSprite:
+    sprite: _Umbra/Mobs/Species/Mantidae/parts.rsi
+    state: r_leg
+
+- type: humanoidBaseSprite
+  id: MobMantidaeRHand
+  baseSprite:
+    sprite: _Umbra/Mobs/Species/Mantidae/parts.rsi
+    state: r_hand
+
+- type: humanoidBaseSprite
+  id: MobMantidaeRArm
+  baseSprite:
+    sprite: _Umbra/Mobs/Species/Mantidae/parts.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: MobMantidaeRFoot
+  baseSprite:
+    sprite: _Umbra/Mobs/Species/Mantidae/parts.rsi
+    state: r_foot

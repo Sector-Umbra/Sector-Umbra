@@ -6,5 +6,7 @@
     #Bloodpack: 5 #Umbra: Replaced by RMC Blood Patch.
     CMBloodPackFull: 5 #Umbra
     CMBloodPack: 5 #Umbra: Few free empty bags for medical to fill.
-    EpinephrineChemistryBottle: 3
+    ChemistryBottleEpinephrine: 3
     Syringe: 3
+  contrabandInventory:
+    PowerCellSmall: 2

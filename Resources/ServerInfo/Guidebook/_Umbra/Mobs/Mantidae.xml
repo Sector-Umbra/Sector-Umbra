@@ -1,0 +1,10 @@
+<Document>
+  # Mantidae
+
+  <Box>
+    <GuideEntityEmbed Entity="MobMantidae" Caption=""/>
+  </Box>
+
+  Mantidae are carnivorous and can only eat meat, however they can go longer without eating. Their hard exoskeleton gives them light resistance to slash and piercing, but vulnerability to blunt and cold damage. Their punches deal a slight amount of additional slashing damage.
+
+</Document>
