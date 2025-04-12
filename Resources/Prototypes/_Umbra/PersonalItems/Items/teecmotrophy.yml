@@ -3,7 +3,7 @@
   name: Tee-Gam's cmo trophy
   parent: DrinkGoldenCup
   id: PersonalItemTeeCMOTrophy
-  description: This trophy has been emblazoned with marker pen strokes of the Moth language and a glittery heart sticker, the only letters in common are "CMO". Inside the cup a small purple moth plush sits, with its head peaking out. The marker is fading in places were its been buffed, but someone clearly cares about this trophy a lot
+  description: This trophy has been emblazoned with marker pen strokes of the Moth language and a glittery heart sticker, the only letters in common are "CMO". Inside the cup a small purple moth plush sits, with its head peaking out. The marker is fading in places were its been buffed, but someone clearly cares about this trophy a lot.
   suffix: PersonalItem
   components:
   - type: Sprite
