@@ -26,7 +26,7 @@ public sealed class RMCSetPoseSystem : SharedRMCSetPoseSystem
             {
                 if (pose.Length > 1000)
                     pose = pose[..999];
-                _adminLog.Add(LogType.Verb, $"{ToPrettyString(ent)} set their pose to {pose}");
+                _adminLog.Add(LogType.Verb, $"{ToPrettyString(ent)} set their examine text to {pose}"); // Umbra: Rework to be "Set-Examine".
                 ent.Comp.Pose = pose;
                 Dirty(ent);
             }
