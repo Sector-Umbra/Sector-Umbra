@@ -829,6 +829,7 @@
   loadouts:
   - AtmosphericTechnicianJumpsuit
   - AtmosphericTechnicianJumpskirt
+  - AtmosphericTechnicianHazardsuit # CD
   - AtmosphericTechnicianJumpsuitCasual
 
 - type: loadoutGroup
