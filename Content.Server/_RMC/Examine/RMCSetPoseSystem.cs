@@ -24,9 +24,9 @@ public sealed class RMCSetPoseSystem : SharedRMCSetPoseSystem
         if (!TryComp<ActorComponent>(ent, out var actor))
             return;
 
-        var setPosePrompt = Loc.GetString("rmc-set-pose-dialog", ("ent", ent));
+        var setPosePrompt = Loc.GetString("set-examine-dialog", ("ent", ent));
 
-        _quickDialog.OpenDialog(actor.PlayerSession, Loc.GetString("rmc-set-pose-title"), setPosePrompt,
+        _quickDialog.OpenDialog(actor.PlayerSession, Loc.GetString("set-examine-title"), setPosePrompt,
             (string pose) =>
             {
                 ent.Comp.Pose = pose;

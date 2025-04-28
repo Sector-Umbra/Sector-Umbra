@@ -32,7 +32,7 @@ public abstract class SharedRMCSetPoseSystem : EntitySystem
 
         using (args.PushGroup(nameof(RMCSetPoseComponent)))
         {
-            var pose = Loc.GetString("rmc-set-pose-examined", ("ent", ent), ("pose", comp.Pose));
+            var pose = Loc.GetString("set-examine-examined", ("ent", ent), ("pose", comp.Pose));
             args.PushMarkup(pose, -5);
         }
     }

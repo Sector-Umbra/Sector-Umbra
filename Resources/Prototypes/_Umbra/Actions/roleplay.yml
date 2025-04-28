@@ -1,8 +1,8 @@
 # Set Examine
 - type: entity
   id: ActionSetExtraExamine
-  name: rmc-set-pose-title
-  description: rmc-set-pose-dialog
+  name: set-examine-title
+  description: set-examine-dialog
   categories: [ HideSpawnMenu ]
   components:
   - type: InstantAction
