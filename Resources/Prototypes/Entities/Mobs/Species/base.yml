@@ -283,7 +283,7 @@
     alternateState: Standing
   - type: LayEmote # CD Change, laying down emote
   - type: CPRPerformer # Umbra Change, all species can provide CPR.
-  - type: RMCSetPose # RMC Change, all species can set their pose through right clicking on themselves and selecting the "Set Pose" verb.
+  - type: RMCSetPose # Umbra Change, all species can set additional examine text. ## Rename this component and update it here too.
 
 - type: entity
   save: false

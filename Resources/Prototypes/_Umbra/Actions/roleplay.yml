@@ -1,0 +1,13 @@
+# Set Examine
+- type: entity
+  id: ActionSetExtraExamine
+  name: rmc-set-pose-title
+  description: rmc-set-pose-dialog
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: InstantAction
+    icon: { sprite: _CD/Mobs/Customization/Vulpkanin/tail_markings.rsi, state: tail-wag-icon } #Change
+    iconOn: { sprite: _CD/Mobs/Customization/Vulpkanin/tail_markings.rsi, state: tail-wag-icon } #Change
+    itemIconStyle: NoItem
+    useDelay: 3
+    event: !type:RMCSetPoseActionEvent
