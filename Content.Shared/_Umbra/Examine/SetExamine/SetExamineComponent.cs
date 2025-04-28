@@ -1,14 +1,14 @@
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 
-namespace Content.Shared._RMC.Examine.Pose;
+namespace Content.Shared._Umbra.Examine;
 
 /// <summary>
-/// Flavour text when this entity is examined. Can be set with an action.
+/// Flavour text when this entity is examined. Set with an action.
 /// </summary>
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
-[Access(typeof(SharedRMCSetPoseSystem))]
-public sealed partial class RMCSetPoseComponent : Component
+[Access(typeof(SharedSetExamineSystem))]
+public sealed partial class SetExamineComponent : Component
 {
     [DataField, AutoNetworkedField]
     public EntityUid? Action;
@@ -17,5 +17,5 @@ public sealed partial class RMCSetPoseComponent : Component
     public EntProtoId ActionPrototype = "ActionSetExtraExamine";
 
     [DataField, AutoNetworkedField]
-    public string Pose = string.Empty;
+    public string ExamineText = string.Empty;
 }

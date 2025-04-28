@@ -6,8 +6,11 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: InstantAction
-    icon: { sprite: _CD/Mobs/Customization/Vulpkanin/tail_markings.rsi, state: tail-wag-icon } #Change
-    iconOn: { sprite: _CD/Mobs/Customization/Vulpkanin/tail_markings.rsi, state: tail-wag-icon } #Change
     itemIconStyle: NoItem
     useDelay: 3
-    event: !type:RMCSetPoseActionEvent
+    event: !type:SetExamineActionEvent
+
+# TODO
+# The action needs an icon, but what?
+# This is technically outdated from the set-pose PR, so I should make sure everything is up to date.
+# Make sure its still predicted
