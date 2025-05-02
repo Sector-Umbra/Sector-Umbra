@@ -11,48 +11,78 @@
   parent: [ PartFeroxiBase, BaseTorso ]
   id: TorsoFeroxi
   name: feroxi torso
+  components:
+    - type: Sprite
+      state: "torso_m"
 
 - type: entity
   parent: [ PartFeroxiBase, BaseHead ]
   id: HeadFeroxi
   name: feroxi head
+  components:
+    - type: Sprite
+      state: "head_m"
 
 - type: entity
   parent: [ PartFeroxiBase, BaseLeftArm ]
   id: LeftArmFeroxi
   name: left feroxi arm
+  components:
+    - type: Sprite
+      state: "l_arm"
 
 - type: entity
   parent: [ PartFeroxiBase, BaseRightArm ]
   id: RightArmFeroxi
   name: right feroxi arm
+  components:
+    - type: Sprite
+      state: "r_arm"
 
 - type: entity
   parent: [ PartFeroxiBase, BaseLeftHand ]
   id: LeftHandFeroxi
   name: left feroxi hand
+  components:
+    - type: Sprite
+      state: "l_hand"
 
 - type: entity
   parent: [ PartFeroxiBase, BaseRightHand ]
   id: RightHandFeroxi
   name: right feroxi hand
+  components:
+    - type: Sprite
+      state: "r_hand"
 
 - type: entity
   parent: [ PartFeroxiBase, BaseLeftLeg ]
   id: LeftLegFeroxi
   name: left feroxi leg
+  components:
+    - type: Sprite
+      state: "l_leg"
 
 - type: entity
   parent: [ PartFeroxiBase, BaseRightLeg ]
   id: RightLegFeroxi
   name: right feroxi leg
+  components:
+    - type: Sprite
+      state: "r_leg"
 
 - type: entity
   parent: [ PartFeroxiBase, BaseLeftFoot ]
   id: LeftFootFeroxi
   name: left feroxi foot
+  components:
+    - type: Sprite
+      state: "l_foot"
 
 - type: entity
   parent: [ PartFeroxiBase, BaseRightFoot ]
   id: RightFootFeroxi
   name: right feroxi foot
+  components:
+    - type: Sprite
+      state: "r_foot"
