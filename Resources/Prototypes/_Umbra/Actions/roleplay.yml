@@ -6,11 +6,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: InstantAction
+    icon: { sprite: _Umbra/Interface/Actions/set-pose.rsi, state: eyeopen }
     itemIconStyle: NoItem
     useDelay: 3
     event: !type:SetExamineActionEvent
-
-# TODO
-# The action needs an icon, but what?
-# This is technically outdated from the set-pose PR, so I should make sure everything is up to date.
-# Make sure its still predicted
