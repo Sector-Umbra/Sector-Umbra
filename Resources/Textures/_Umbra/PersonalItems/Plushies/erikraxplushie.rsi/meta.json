@@ -1,0 +1,21 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "plushie_erikrax modified by SlamBamActionman from plushie_vox.png from commit: https://github.com/space-wizards/space-station-14/pull/4146/commits/11570f0c381b6d1c21e625158e4bad1326bfd119.",
+    "size": {
+      "x": 32,
+      "y": 32
+    },
+    "states": [
+      {
+        "name": "plushie_erikrax",
+        "delays": [
+          [
+            0.3,
+            0.1,
+            0.1
+          ]
+        ]
+      }
+    ]
+}

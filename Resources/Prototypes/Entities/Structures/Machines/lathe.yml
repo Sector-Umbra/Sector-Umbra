@@ -396,6 +396,8 @@
     - SecurityWeaponsStatic
     - CDSecfabStatic # CD Lathe Packs
     dynamicPacks:
+    - SalvageSecurityBoards
+    - SalvageSecurityWeapons
     - SecurityEquipment
     - SecurityBoards
     - SecurityExplosives

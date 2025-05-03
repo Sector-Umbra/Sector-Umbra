@@ -31,6 +31,9 @@
   - type: NpcFactionMember
     factions:
     - SimpleNeutral
+  - type: Access
+    tags:
+    - BasicSilicon
   - type: IntrinsicRadioReceiver
   # UMBRA: Reverted commit 6459f71 -> Allow silicons without laws access to binary channel
   - type: IntrinsicRadioTransmitter
@@ -69,6 +72,7 @@
     tags:
     - DoorBumpOpener
     - Bot
+    - Unimplantable
   - type: MobState
     allowedStates:
       - Alive
@@ -248,7 +252,7 @@
     description: ghost-role-information-honkbot-description
     rules: ghost-role-information-freeagent-rules
     mindRoles:
-    - MindRoleGhostRoleFreeAgent
+    - MindRoleGhostRoleFreeAgentHarmless
     raffle:
       settings: default
   - type: GhostTakeoverAvailable
@@ -282,7 +286,7 @@
     description: ghost-role-information-jonkbot-description
     rules: ghost-role-information-freeagent-rules
     mindRoles:
-    - MindRoleGhostRoleFreeAgent
+    - MindRoleGhostRoleFreeAgentHarmless
     raffle:
       settings: default
   - type: InteractionPopup
@@ -419,7 +423,7 @@
     description: ghost-role-information-mimebot-description
     rules: ghost-role-information-freeagent-rules
     mindRoles:
-    - MindRoleGhostRoleFreeAgent
+    - MindRoleGhostRoleFreeAgentHarmless
     raffle:
       settings: default
   - type: GhostTakeoverAvailable
@@ -491,6 +495,7 @@
     - DoorBumpOpener
     - FootstepSound
     - Bot
+    - Unimplantable
   - type: ActiveRadio
     channels:
     - Binary # Umbra: Allow silicons without laws access to binary channel

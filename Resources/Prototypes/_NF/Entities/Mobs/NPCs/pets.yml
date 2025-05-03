@@ -10,7 +10,8 @@
   - type: Loadout
     prototypes: [ MobClippyGear ]
   - type: RandomMetadata
-    nameSegments: [names_cat_clippy] # Its needed to fix the names since it was using the MobCatGhost list.
+    nameSegments:
+    - NamesCatClippy # Its needed to fix the names since it was using the MobCatGhost list.
   - type: AutoImplant
     implants:
     - MindShieldImplant

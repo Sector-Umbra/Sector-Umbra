@@ -8,9 +8,9 @@
   markingLimits: MobMantidaeMarkingLimits
   dollPrototype: MobMantidaeDummy
   skinColoration: Hues
-  maleFirstNames: names_mantidae_first
-  femaleFirstNames: names_mantidae_first
-  lastNames: names_mantidae_last
+  maleFirstNames: NamesMantidaeFirst
+  femaleFirstNames: NamesMantidaeFirst
+  lastNames: NamesMantidaeLast
 
 - type: speciesBaseSprites
   id: MobMantidaeSprites

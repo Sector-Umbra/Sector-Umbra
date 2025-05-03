@@ -24,13 +24,9 @@
   - PersonalItemJalopyHoSRaincoat
   - PersonalItemWeldsChewtoy
   - PersonalItemWeldsWalker
-  - PersonalItemYarnaArmouredCoat
   - PersonalItemFateseekerGemstone
   - PersonalItemChanceCarpSuit
   - PersonalItemGarSweatPants
-  - PersonalItemRyeversiTie
-  - PersonalItemJasmiRainbowFlower
-  - PersonalItemArdusBandana
   - PersonalItemNovaGalaxyCoat
   - PersonalItemJoettaBobby
   - PersonalItemErisPlushie
@@ -90,6 +86,12 @@
   - PersonalItemIsatheiPlushie
   - PersonalItemEvelynCollar
   - PersonalItemVariisisButtonUp
+  - PersonalItemVoyagePen
+  - PersonalItemErikraxPlushie
+  - PersonalItemFPSRVanguardsBeret
+  - PersonalItemAlphardSweater
+  - PersonalItemKatieWristBand
+  - PersonalItemTeeCMOTrophy
 
 - type: loadoutEffectGroup
   id: PlasmaBreather
