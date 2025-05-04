@@ -3,6 +3,14 @@
   name: job-name-cadet
   description: job-description-cadet
   playTimeTracker: JobSecurityCadet
+  # Umbra: Disable Wizden playtime requirements
+  #requirements:
+  #  - !type:OverallPlaytimeRequirement
+  #    time: 36000 #10 hrs
+  #  - !type:DepartmentTimeRequirement
+  #    department: Security
+  #    time: 18000 #5 hrs
+  #    inverted: true # stop playing intern if you're good at security!
   startingGear: SecurityCadetGear
   icon: "JobIconSecurityCadet"
   supervisors: job-supervisors-security

@@ -3,6 +3,11 @@
   name: job-name-security
   description: job-description-security
   playTimeTracker: JobSecurityOfficer
+  # Umbra: Disable Wizden playtime requirements
+  #requirements:
+  #  - !type:DepartmentTimeRequirement
+  #    department: Security
+  #    time: 9000 #2.5 hrs
   startingGear: SecurityOfficerGear
   icon: "JobIconSecurityOfficer"
   supervisors: job-supervisors-hos

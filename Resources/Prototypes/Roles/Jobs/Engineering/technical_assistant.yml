@@ -3,6 +3,14 @@
   name: job-name-technical-assistant
   description: job-description-technical-assistant
   playTimeTracker: JobTechnicalAssistant
+  # Umbra: Disable Wizden playtime requirements
+  #requirements:
+  #  - !type:OverallPlaytimeRequirement
+  #    time: 3600 #1 hr
+  #  - !type:DepartmentTimeRequirement
+  #    department: Engineering
+  #    time: 18000 #5 hrs
+  #    inverted: true # stop playing intern if you're good at engineering!
   startingGear: TechnicalAssistantGear
   icon: "JobIconTechnicalAssistant"
   supervisors: job-supervisors-engineering
