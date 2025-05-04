@@ -1,15 +1,16 @@
-- type: entity
-  parent: IDCardStandard
-  id: PrisonerIDCard
-  name: prisoner ID card
-  components:
-  - type: Sprite
-    layers:
-    - state: orange
-    - sprite: _CD/Objects/Misc/id_cards.rsi
-      state: prisoner
-  - type: PresetIdCard
-    job: Prisoner
+# Umbra: Disable CD Prisoner ID until they merge genpop so we can mirror their changes
+# - type: entity
+#   parent: IDCardStandard
+#   id: PrisonerIDCard
+#   name: prisoner ID card
+#   components:
+#   - type: Sprite
+#     layers:
+#     - state: orange
+#     - sprite: _CD/Objects/Misc/id_cards.rsi
+#       state: prisoner
+#   - type: PresetIdCard
+#     job: Prisoner
 
 - type: entity
   parent: IDCardStandard
