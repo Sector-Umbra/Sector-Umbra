@@ -3,6 +3,11 @@
   name: job-name-chemist
   description: job-description-chemist
   playTimeTracker: JobChemist
+  # Umbra: Disable Wizden playtime requirements
+  #requirements:
+  #  - !type:DepartmentTimeRequirement
+  #    department: Medical
+  #    time: 18000 #5 hrs
   startingGear: ChemistGear
   icon: "JobIconChemist"
   supervisors: job-supervisors-cmo

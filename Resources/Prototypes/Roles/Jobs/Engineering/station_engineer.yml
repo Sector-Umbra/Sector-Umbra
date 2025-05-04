@@ -3,6 +3,11 @@
   name: job-name-engineer
   description: job-description-engineer
   playTimeTracker: JobStationEngineer
+  # Umbra: Disable Wizden playtime requirements
+  #requirements:
+  #  - !type:DepartmentTimeRequirement
+  #   department: Engineering
+  #   time: 9000 #2.5 hrs
   startingGear: StationEngineerGear
   icon: "JobIconStationEngineer"
   supervisors: job-supervisors-ce

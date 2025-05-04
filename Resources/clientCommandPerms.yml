@@ -39,6 +39,8 @@
     - replay_set_time
     - replay_stop
     - replay_load
+    - saveconfig
+    - chatwindow
 
 - Flags: DEBUG
   Commands:
@@ -83,3 +85,7 @@
     - uploadfile
     - loadprototype
     - uploadfolder
+
+- Flags: ADMINCHAT
+  Commands:
+    - achatwindow

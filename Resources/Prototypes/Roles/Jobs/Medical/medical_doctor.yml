@@ -3,6 +3,11 @@
   name: job-name-doctor
   description: job-description-doctor
   playTimeTracker: JobMedicalDoctor
+  # Umbra: Disable Wizden playtime requirements
+  #requirements:
+  #  - !type:DepartmentTimeRequirement
+  #    department: Medical
+  #    time: 9000 #2.5 hrs
   startingGear: DoctorGear
   icon: "JobIconMedicalDoctor"
   supervisors: job-supervisors-cmo

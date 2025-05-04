@@ -3,6 +3,11 @@
   name: job-name-bartender
   description: job-description-bartender
   playTimeTracker: JobBartender
+  # Umbra: Disable Wizden Time Requirements
+  #requirements:
+  #  - !type:DepartmentTimeRequirement
+  #    department: Civilian
+  #    time: 1800 #0.5 hr
   startingGear: BartenderGear
   icon: "JobIconBartender"
   supervisors: job-supervisors-hop
