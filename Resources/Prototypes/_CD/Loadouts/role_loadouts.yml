@@ -2,6 +2,7 @@
 - type: roleLoadout
   id: JobPrivateInvestigator
   groups: #Using Detective groups is probably a bad idea, but it's easier this way.
+  - DetectiveEnvirosuit # Umbra
   - GroupTankHarness
   - DetectiveHead
   - DetectiveJumpsuit
@@ -19,6 +20,7 @@
 - type: roleLoadout
   id: JobSeniorEngineer
   groups:
+  - EngineerEnvirosuit # Umbra
   - GroupTankHarness
   - StationEngineerHead
   - SeniorEngineerJumpsuit
@@ -34,6 +36,7 @@
 - type: roleLoadout
   id: JobSeniorResearcher
   groups:
+  - ScientistEnvirosuit # Umbra
   - GroupTankHarness
   - ScientistHead
   - ScientistNeck
@@ -52,6 +55,7 @@
 - type: roleLoadout
   id: JobSeniorOfficer
   groups:
+  - SecurityEnvirosuit # Umbra
   - SeniorOfficerHead
   - SeniorOfficerJumpsuit
   - SecurityBackpack
@@ -68,6 +72,7 @@
 - type: roleLoadout
   id: JobSeniorPhysician
   groups:
+  - SlacksEnvirosuit # Umbra
   - GroupTankHarness
   - SeniorPhysicianHead
   - MedicalMask
@@ -86,6 +91,7 @@
 - type: roleLoadout
   id: JobPrisoner
   groups:
+  - PrisonerEnvirosuit # Umbra
   - GroupTankHarness
   - PrisonerJumpsuit
   - PrisonerFun
