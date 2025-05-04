@@ -5,7 +5,7 @@
   description: Clear, so you can make sure there's nothing being smuggled inside.
   components:
   - type: Pda
-    id: PrisonerIDCard #Umbra: Genpop ID Card
+    id: PermaPrisonerIDCard #Umbra: Rename CD Prisoner ID
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
