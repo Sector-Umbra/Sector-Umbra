@@ -62,13 +62,9 @@
             Musician: [ 1, 1 ]
             #Silicon (3)
             StationAi: [ 1, 1 ]
-<<<<<<< HEAD
-            Borg: [ 2, 2 ]
+            Borg: [ 2, 3 ]
             #cd/umbra
             SeniorEngineer: [ 1, 1 ]
             SeniorPhysician: [ 1, 1 ]
             SeniorResearcher: [ 1, 1 ]
             SeniorOfficer: [ 1, 1 ]
-=======
-            Borg: [ 2, 3 ]
->>>>>>> wd/stable
