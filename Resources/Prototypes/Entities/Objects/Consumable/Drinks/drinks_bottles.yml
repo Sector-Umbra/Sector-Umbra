@@ -630,6 +630,11 @@
   - type: Sprite
     sprite: Objects/Consumable/Drinks/colabottle.rsi
   - type: Sealable
+  # Moffstation - Begin (Survival Box Improvements)
+  - type: Tag
+    tags:
+    - SurvivalBoxInsertable
+  # Moffstation - End
 
 - type: entity
   parent: [DrinkBottleVisualsAll, DrinkBottlePlasticBaseFull]
