@@ -1,10 +1,8 @@
-# Moffstation - Begin (Survival Box Improvements)
-- type: Tag
-  id: SurvivalBoxInsertable
-# Moffstation - End
-
 - type: Tag
   id: SunglassesCheap
 
 - type: Tag
   id: MesonGoggles
+
+- type: Tag
+  id: SurvivalBoxInsertable
