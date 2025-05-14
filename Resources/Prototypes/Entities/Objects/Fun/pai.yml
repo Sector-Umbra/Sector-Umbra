@@ -98,6 +98,7 @@
     whitelist:
       components:
         - SecretStash
+        - WrappedParcel
 
 - type: entity
   parent: [ PersonalAI, BaseSyndicateContraband]
