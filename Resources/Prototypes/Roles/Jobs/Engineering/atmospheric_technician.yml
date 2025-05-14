@@ -3,6 +3,11 @@
   name: job-name-atmostech
   description: job-description-atmostech
   playTimeTracker: JobAtmosphericTechnician
+  # Umbra: Disable Wizden playtime requirements
+  #requirements:
+  #- !type:DepartmentTimeRequirement
+  #  department: Engineering
+  #  time: 9000 #2.5 hrs
   startingGear: AtmosphericTechnicianGear
   icon: "JobIconAtmosphericTechnician"
   supervisors: job-supervisors-ce

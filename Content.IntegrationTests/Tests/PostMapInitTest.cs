@@ -91,6 +91,7 @@ namespace Content.IntegrationTests.Tests
             "Elkridge",
             "Convex",
             "Relic",
+            "dm01-entryway",
             "Xeno", // Umbra
             "Iris", // Umbra
 			"ClusterPrime", //Umbra

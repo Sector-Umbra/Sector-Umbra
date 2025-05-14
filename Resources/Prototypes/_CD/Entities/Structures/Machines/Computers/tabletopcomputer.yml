@@ -357,7 +357,7 @@
 
 # Cargo Shuttle Computer
 - type: entity
-  parent: [ BaseStructureComputerTabletop, ComputerCargoShuttle ]
+  parent: [ BaseStructureComputerTabletop, ComputerShuttleCargo ]
   id: ComputerTabletopCargoShuttle
   categories: [ HideSpawnMenu ]
   components:

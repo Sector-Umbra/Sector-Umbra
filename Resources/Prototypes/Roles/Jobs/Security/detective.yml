@@ -3,6 +3,11 @@
   name: job-name-detective
   description: job-description-detective
   playTimeTracker: JobDetective
+  # Umbra: Disable Wizden playtime requirements
+  #requirements:
+  #- !type:RoleTimeRequirement
+  #  role: JobSecurityOfficer
+  #  time: 18000 #5 hrs
   startingGear: DetectiveGear
   icon: "JobIconDetective"
   supervisors: job-supervisors-hos

@@ -3,6 +3,11 @@
   name: job-name-paramedic
   description: job-description-paramedic
   playTimeTracker: JobParamedic
+  # Umbra: Disable Wizden playtime requirements
+  #requirements:
+  #- !type:DepartmentTimeRequirement
+  #  department: Medical
+  #  time: 9000 #2.5 hrs
   startingGear: ParamedicGear
   icon: "JobIconParamedic"
   supervisors: job-supervisors-cmo
