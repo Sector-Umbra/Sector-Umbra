@@ -10,19 +10,19 @@
     sprite: _Umbra/PersonalItems/Wearables/deejaartifactnecklace.rsi
   - type: Clothing
     sprite: _Umbra/PersonalItems/Wearables/deejaartifactnecklace.rsi
-  - type: Artifact
-    currentNodeId: 271828
-    pointsPerNode: 0 # Instead of 6500 points. Purely Cosmetic
-    nodeTree:
-    - nodeData: {}
-      effect: EffectGoodFeeling # So well crafted that when you look at it you feel happiness
-      triggered: False
-      trigger: TriggerExamine
-      discovered: True
-      edges:
-      - 271828
-      depth: 0
-      id: 271828
+#  - type: Artifact # Umbra: Stable Merge 04/05/25 changed artifact code drastically. Needs redoing by Deeja.
+#    currentNodeId: 271828
+#    pointsPerNode: 0 # Instead of 6500 points. Purely Cosmetic
+#    nodeTree:
+#    - nodeData: {}
+#      effect: EffectGoodFeeling # So well crafted that when you look at it you feel happiness
+#      triggered: False
+#      trigger: TriggerExamine
+#      discovered: True
+#      edges:
+#      - 271828
+#      depth: 0
+#      id: 271828
 
 - type: loadout
   id: PersonalItemDeejaArtifactNecklace
