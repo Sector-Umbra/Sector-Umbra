@@ -7,7 +7,6 @@
   loadouts:
   - CaptainEnvirosuitJumpsuit
   - CaptainEnvirosuitHead
-  - CaptainEnvirosuitGloves
 
 # Civilian
 - type: loadoutGroup
