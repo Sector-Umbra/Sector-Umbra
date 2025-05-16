@@ -7,9 +7,9 @@
   markingLimits: MobHumanMarkingLimits
   dollPrototype: MobPlasmamanDummy
   skinColoration: TintedHues
-  maleFirstNames: names_plasmaman_first
-  femaleFirstNames: names_plasmaman_first
-  lastNames: names_plasmaman_last
+  maleFirstNames: NamesPlasmamanFirst
+  femaleFirstNames: NamesPlasmamanFirst
+  lastNames: NamesPlasmamanLast
 
 - type: speciesBaseSprites
   id: MobPlasmamanSprites
