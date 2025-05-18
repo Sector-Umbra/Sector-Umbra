@@ -1,0 +1,58 @@
+﻿# Specification would be:
+#   Three new gamemodes: UmbraScheduled, UmbraUnscheduled, UmbraUnscheduledAntags,
+#   Modify the available list of game modes via the player vote to: UmbraUnscheduled, UmbraUnscheduledAntags,
+#   Make UmbraScheduled identical to SecretExtended for now.,
+#   Make UmbraUnscheduled identical to Extended for now.,
+#   Make UmbraUnscheduledAntags identical to Salamander's current preset for now.,
+#   Make the default game mode UmbraUnscheduled, other game modes to be accessed either via player vote or via admin using setgamepreset.
+
+- type: gamePreset
+  id: UmbraScheduled
+  name: secret-title
+  showInVote: false
+  description: secret-description
+  rules:
+    - BasicStationEventScheduler
+    - MeteorSwarmScheduler
+    - SpaceTrafficControlEventScheduler
+    - BasicRoundstartVariation
+
+- type: gamePreset
+  id: UmbraUnscheduled
+  name: umbra-unscheduled-title
+  showInVote: true
+  description: umbra-unscheduled-description
+  rules:
+  - BasicStationEventScheduler
+  - MeteorSwarmScheduler
+  - SpaceTrafficControlEventScheduler
+  - BasicRoundstartVariation
+
+- type: gamePreset
+  id: UmbraUnscheduledAntags
+  name: umbra-unscheduled-antags-title
+  showInVote: true
+  description: umbra-unscheduled-antags-description
+  rules:
+    - Secret
+
+# Used in the game.fallbackpreset cvar in case our presets don't load properly.
+- type: gamePreset
+  id: UmbraEmptyPreset
+  name: umbra-fallback-title
+  showInVote: false
+  description: umbra-fallback-description
+  rules: []
+
+# Secret weights used in UmbraUnscheduledAntags, moved from /Resources/Prototypes/secret_weights.yml for readability.
+- type: weightedRandom
+  id: Secret
+  weights:
+    Nukeops: 0.20
+    Traitor: 0.55
+    Zombie: 0 # Umbra, zombies disabled.
+    Survival: 0.10
+    Revolutionary: 0 # That too
+    Wizard: 0.05
+
+# For the tables used by the survival look in /Resources/Prototypes/GameRules/roundstart.yml under BasicGameRulesTable
