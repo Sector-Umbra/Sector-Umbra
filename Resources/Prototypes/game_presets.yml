@@ -1,1 +1,83 @@
-# Umbra, we removed all default presets look in /Resources/Prototypes/_Umbra/game_presets.yml
+# Umbra, we removed most default presets look in /Resources/Prototypes/_Umbra/game_presets.yml
+
+# All presets that are still here are for the unscheduled antag gamemode.
+
+- type: gamePreset
+  id: Nukeops
+  name: nukeops-title
+  description: nukeops-description
+  showInVote: false
+  rules:
+  - Nukeops
+  - DummyNonAntagChance
+  - SubGamemodesRule
+  - BasicStationEventScheduler
+  - MeteorSwarmScheduler
+  - SpaceTrafficControlEventScheduler
+  - BasicRoundstartVariation
+
+- type: gamePreset
+  id: Traitor
+  name: traitor-title
+  description: traitor-description
+  showInVote: false
+  rules:
+  - DummyNonAntagChance
+  - Traitor
+  - SubGamemodesRule
+  - BasicStationEventScheduler
+  - MeteorSwarmScheduler
+  - SpaceTrafficControlEventScheduler
+  - BasicRoundstartVariation
+
+- type: gamePreset
+  id: Zombie
+  name: zombie-title
+  description: zombie-description
+  showInVote: false
+  rules:
+  - Zombie
+  - BasicStationEventScheduler
+  - MeteorSwarmScheduler
+  - SpaceTrafficControlEventScheduler
+  - BasicRoundstartVariation
+
+- type: gamePreset
+  id: Survival
+  name: survival-title
+  showInVote: false
+  description: survival-description
+  rules:
+  - MeteorSwarmScheduler
+  - RampingStationEventScheduler
+  - SpaceTrafficControlEventScheduler
+  - SpaceTrafficControlFriendlyEventScheduler
+  - BasicRoundstartVariation
+
+- type: gamePreset
+  id: Revolutionary
+  name: rev-title
+  description: rev-description
+  showInVote: false
+  rules:
+  - DummyNonAntagChance
+  - Revolutionary
+  - SubGamemodesRule
+  - BasicStationEventScheduler
+  - MeteorSwarmScheduler
+  - SpaceTrafficControlEventScheduler
+  - BasicRoundstartVariation
+
+- type: gamePreset
+  id: Wizard
+  name: wizard-title
+  description: wizard-description
+  showInVote: false
+  rules:
+  - Wizard
+  - DummyNonAntagChance
+  - SubGamemodesRuleNoWizard #No Dual Wizards at the start, midround is fine
+  - BasicStationEventScheduler
+  - MeteorSwarmScheduler
+  - SpaceTrafficControlEventScheduler
+  - BasicRoundstartVariation

@@ -1,12 +1,4 @@
-﻿# Specification would be:
-#   Three new gamemodes: UmbraScheduled, UmbraUnscheduled, UmbraUnscheduledAntags,
-#   Modify the available list of game modes via the player vote to: UmbraUnscheduled, UmbraUnscheduledAntags,
-#   Make UmbraScheduled identical to SecretExtended for now.,
-#   Make UmbraUnscheduled identical to Extended for now.,
-#   Make UmbraUnscheduledAntags identical to Salamander's current preset for now.,
-#   Make the default game mode UmbraUnscheduled, other game modes to be accessed either via player vote or via admin using setgamepreset.
-
-- type: gamePreset
+﻿- type: gamePreset
   id: UmbraScheduled
   name: secret-title
   showInVote: false
