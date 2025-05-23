@@ -1,0 +1,22 @@
+# Player: Ktyria - Character: Calliope Rosewell
+- type: entity
+  parent: ClothingNeckBase
+  id: PersonalItemCalliopeMedal
+  name: Calliope's medal
+  description: A commemorative medal cast in gold, now tarnished. The words 'Valiant Fall' are etched into the back, their grooves worn smooth from being traced too many times to count.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Wearables/calliopemedal.rsi
+  - type: Clothing
+    sprite: _Umbra/PersonalItems/Wearables/calliopemedal.rsi
+
+- type: loadout
+  id: PersonalItemCalliopeMedal
+  storage:
+    back:
+    - PersonalItemCalliopeMedal
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Calliope Rosewell
