@@ -6,8 +6,17 @@
   description: job-description-cmo
   playTimeTracker: JobChiefMedicalOfficer
   requirements:
-    - !type:OverallPlaytimeRequirement
+    - !type:OverallPlaytimeRequirement # Umbra: Use Umbra Roletimers over Wizden.
       time: 21600 # 6 hrs
+    #- !type:RoleTimeRequirement
+    #  role: JobChemist
+    #  time: 9000 #2.5 hrs
+    #- !type:RoleTimeRequirement
+    #  role: JobMedicalDoctor
+    #  time: 18000 #5 hrs
+    #- !type:DepartmentTimeRequirement
+    #  department: Medical
+    #  time: 36000 #10 hrs
   weight: 10
   startingGear: CMOGear
   icon: "JobIconChiefMedicalOfficer"

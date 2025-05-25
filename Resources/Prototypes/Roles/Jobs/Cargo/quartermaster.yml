@@ -4,8 +4,17 @@
   description: job-description-qm
   playTimeTracker: JobQuartermaster
   requirements:
-    - !type:OverallPlaytimeRequirement
+    - !type:OverallPlaytimeRequirement # Umbra: Use Umbra Roletimers over Wizden.
       time: 21600 # 6 hrs
+    #- !type:RoleTimeRequirement
+    #  role: JobCargoTechnician
+    #  time: 18000 #5 hrs
+    #- !type:RoleTimeRequirement
+    #  role: JobSalvageSpecialist
+    #  time: 9000 #2.5 hrs
+    #- !type:DepartmentTimeRequirement
+    #  department: Cargo
+    #  time: 36000 #10 hours
   weight: 10
   startingGear: QuartermasterGear
   icon: "JobIconQuarterMaster"

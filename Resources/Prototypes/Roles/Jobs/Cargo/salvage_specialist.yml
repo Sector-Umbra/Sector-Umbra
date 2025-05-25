@@ -3,6 +3,10 @@
   name: job-name-salvagespec
   description: job-description-salvagespec
   playTimeTracker: JobSalvageSpecialist
+  #requirements: # Umbra: Use Umbra Roletimers over Wizden.
+  #  - !type:DepartmentTimeRequirement
+  #    department: Cargo
+  #    time: 9000 # 2.5 hrs
   icon: "JobIconShaftMiner"
   startingGear: SalvageSpecialistGear
   supervisors: job-supervisors-qm

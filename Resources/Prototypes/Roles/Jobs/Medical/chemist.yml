@@ -3,6 +3,10 @@
   name: job-name-chemist
   description: job-description-chemist
   playTimeTracker: JobChemist
+  #requirements: # Umbra: Use Umbra Roletimers over Wizden.
+  #  - !type:DepartmentTimeRequirement
+  #    department: Medical
+  #    time: 18000 #5 hrs
   startingGear: ChemistGear
   icon: "JobIconChemist"
   supervisors: job-supervisors-cmo

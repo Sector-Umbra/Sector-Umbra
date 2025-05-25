@@ -3,6 +3,10 @@
   name: job-name-bartender
   description: job-description-bartender
   playTimeTracker: JobBartender
+  #requirements: # Umbra: Use Umbra Roletimers over Wizden.
+  #  - !type:DepartmentTimeRequirement
+  #    department: Civilian
+  #    time: 1800 #0.5 hr
   startingGear: BartenderGear
   icon: "JobIconBartender"
   supervisors: job-supervisors-hop

@@ -1,15 +1,19 @@
 # No idea why it's in sci but we ball.
+# Why is this one file?
 - type: job
   id: StationAi
   name: job-name-station-ai
   description: job-description-station-ai
   playTimeTracker: JobStationAi
   requirements:
-    - !type:DepartmentTimeRequirement
+    - !type:DepartmentTimeRequirement # Umbra: Use Umbra Roletimers over Wizden.
       department: Command
       time: 10800 # 3 hrs
     - !type:OverallPlaytimeRequirement
       time: 21600 # 6 hrs
+  #- !type:RoleTimeRequirement
+  #  role: JobBorg
+  #  time: 18000  # 5 hrs
   canBeAntag: false
   icon: JobIconStationAi
   supervisors: job-supervisors-rd
@@ -28,6 +32,9 @@
   name: job-name-borg
   description: job-description-borg
   playTimeTracker: JobBorg
+  #requirements: # Umbra: Use Umbra Roletimers over Wizden.
+  #  - !type:OverallPlaytimeRequirement
+  #    time: 36000 # 10 hrs
   canBeAntag: false
   icon: JobIconBorg
   supervisors: job-supervisors-rd
