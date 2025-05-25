@@ -23,6 +23,14 @@
   objectType: Item
 
 - type: construction
+  id: taxibot
+  graph: TaxiBot
+  startNode: start
+  targetNode: bot
+  category: construction-category-utilities
+  objectType: Item
+
+- type: construction
   id: jonkbot
   graph: JonkBot
   startNode: start
