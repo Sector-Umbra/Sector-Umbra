@@ -4,8 +4,20 @@
   description: job-description-hos
   playTimeTracker: JobHeadOfSecurity
   requirements:
-    - !type:OverallPlaytimeRequirement
+    - !type:OverallPlaytimeRequirement # Umbra: Use Umbra Roletimers over Wizden.
       time: 21600 # 6 hrs
+    #- !type:RoleTimeRequirement
+    #  role: JobWarden
+    #  time: 3600 #1 hr
+    #- !type:RoleTimeRequirement
+    #  role: JobDetective
+    #  time: 3600 #1 hr, knowing how to use the tools is important
+    #- !type:RoleTimeRequirement
+    #  role: JobSecurityOfficer
+    #  time: 18000 #5 hrs
+    #- !type:DepartmentTimeRequirement
+    #  department: Security
+    #  time: 36000 # 10 hrs
   weight: 10
   startingGear: HoSGear
   icon: "JobIconHeadOfSecurity"
