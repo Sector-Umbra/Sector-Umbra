@@ -1,5 +1,5 @@
 - type: entity
-  name: dark techmaint floor
+  name: tiles-techmaint-floor-dark
   parent: FloorTileItemBase
   id: FloorTileItemTechmaintDark
   components:
@@ -18,7 +18,7 @@
 - type: entity
   id: FloorTileItemXeno
   parent: FloorTileItemBase
-  name: xeno floor
+  name: tiles-xeno-floor
   components:
   - type: Sprite
     sprite: _Umbra/Objects/Tiles/tile.rsi
