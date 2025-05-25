@@ -100,7 +100,7 @@ namespace Content.IntegrationTests.Tests
         private static readonly string[] UntestedGameMaps =
         {
             "Ferrous",
-            "Aspid"
+            // "Aspid" // Umbra: Derotate Aspid
         };
 
         /// <summary>
