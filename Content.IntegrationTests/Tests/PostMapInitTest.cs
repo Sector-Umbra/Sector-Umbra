@@ -76,11 +76,10 @@ namespace Content.IntegrationTests.Tests
             "Bagel",
             "CentComm",
             "Box",
-            // "Saltern", // Umbra: Derotated Map.
             "Core",
             "Marathon",
             "MeteorArena",
-            // "Saltern", // Umbra: Derotated Map.
+            "Saltern", // Umbra: Derotated Map, but must remain for tests.
             "Reach",
             // "Train", // Umbra: Derotated Map.
             "Oasis",
