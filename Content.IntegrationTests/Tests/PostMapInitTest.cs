@@ -71,18 +71,18 @@ namespace Content.IntegrationTests.Tests
             "Fland",
             "Meta",
             "Packed",
-            "Cluster",
+            // "Cluster", // Umbra: Derotated Map.
             "Omega",
             "Bagel",
             "CentComm",
             "Box",
-            "Saltern",
+            // "Saltern", // Umbra: Derotated Map.
             "Core",
             "Marathon",
             "MeteorArena",
-            "Saltern",
+            // "Saltern", // Umbra: Derotated Map.
             "Reach",
-            "Train",
+            // "Train", // Umbra: Derotated Map.
             "Oasis",
             "Gate",
             "Amber",
