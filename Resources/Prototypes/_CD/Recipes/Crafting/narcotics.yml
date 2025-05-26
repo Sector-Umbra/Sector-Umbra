@@ -4,7 +4,6 @@
   startNode: start
   targetNode: bakeWrapped
   category: construction-category-misc
-  description: "Wrap up a packet of Bake for export."
   objectType: Item
 
 - type: construction
