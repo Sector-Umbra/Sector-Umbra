@@ -44,4 +44,3 @@ station-ai-hologram-male = Male appearance
 station-ai-hologram-face = Disembodied head
 station-ai-hologram-cat = Cat form
 station-ai-hologram-dog = Corgi form
-station-ai-hologram-horror = Horror form

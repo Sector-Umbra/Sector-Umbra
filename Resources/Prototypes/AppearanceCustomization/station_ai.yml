@@ -11,7 +11,8 @@
   - StationAiIconDorf
   - StationAiIconHeartline
   - StationAiIconSmiley
-  - StationAiIconAlien # CD changes from here
+  # CD changes from here
+  - StationAiIconAlien
   - StationAiIconThinking
   - StationAiIconDatabase
   - StationAiIconFirewall
@@ -51,10 +52,6 @@
   - StationAiHologramFace
   - StationAiHologramCat
   - StationAiHologramDog
-  # CD changes from here
-  - StationAiHologramHorror
-
-  # end of CD changes
 
 # Iconography
 - type: stationAiCustomization
@@ -194,3 +191,12 @@
     Hologram:
       sprite: Mobs/Silicon/holograms.rsi
       state: ai_dog
+
+- type: stationAiCustomization
+  id: StationAiHologramHorror
+  name: station-ai-hologram-horror
+  previewKey: Hologram
+  layerData:
+    Hologram:
+      sprite: Mobs/Silicon/holograms.rsi
+      state: ai_horror
