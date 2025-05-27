@@ -11,6 +11,35 @@
   - StationAiIconDorf
   - StationAiIconHeartline
   - StationAiIconSmiley
+  - StationAiIconAlien # CD changes from here
+  - StationAiIconThinking
+  - StationAiIconDatabase
+  - StationAiIconFirewall
+  - StationAiIconFuzzy
+  - StationAiIconGentoo
+  - StationAiIconGlitchman
+  - StationAiIconGoon
+  - StationAiIconHades
+  - StationAiIconHelios
+  - StationAiIconHouse
+  - StationAiIconInverted
+  - StationAiIconMatrix
+  - StationAiIconMonochrome
+  - StationAiIconMurica
+  - StationAiIconNanoTrasen
+  - StationAiIconNotMalf
+  - StationAiIconPresident
+  - StationAiIconRainbow
+  - StationAiIconRed
+  - StationAiIconRedOctober
+  - StationAiIconStatic
+  - StationAiIconMeow
+  - StationAiIconText
+  - StationAiIconTooDeep
+  - StationAiIconTriumvirate
+  - StationAiIconWeird
+  - StationAiIconEvilDot
+  # end of CD changes
 
 - type: stationAiCustomizationGroup
   id: StationAiHolograms
@@ -22,6 +51,10 @@
   - StationAiHologramFace
   - StationAiHologramCat
   - StationAiHologramDog
+  # CD changes from here
+  - StationAiHologramHorror
+
+  # end of CD changes
 
 # Iconography
 - type: stationAiCustomization
@@ -161,3 +194,12 @@
     Hologram:
       sprite: Mobs/Silicon/holograms.rsi
       state: ai_dog
+
+- type: stationAiCustomization
+  id: StationAiHologramHorror
+  name: station-ai-hologram-horror
+  previewKey: Hologram
+  layerData:
+    Hologram:
+      sprite: Mobs/Silicon/holograms.rsi
+      state: ai_horror
