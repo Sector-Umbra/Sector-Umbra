@@ -192,3 +192,17 @@
   components:
   - type: Item
     size: Huge
+
+- type: entity
+  abstract: true
+  parent: ClothingOuterBase
+  id: AllowBodycamClothing
+  components:
+  - type: ItemSlots
+    slots:
+      item:
+        name: clothing-boots-sidearm
+        whitelist:
+          tags:
+            - Bodycam
+  
