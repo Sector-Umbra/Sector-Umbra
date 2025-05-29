@@ -1,0 +1,31 @@
+- type: entity
+  parent: BaseItem
+  id: Bodycam
+  name: body camera
+  description: hmmmyesbodycamera
+  components:
+  - type: Sprite
+    sprite: _Umbra/Objects/Devices/bodycam.rsi
+    state: icon
+  - type: DeviceNetwork
+    deviceNetId: Wired
+    receiveFrequencyId: SurveillanceCameraSecurity
+    transmitFrequencyId: SurveillanceCamera
+    prefix: BC-
+  - type: SurveillanceCamera
+    networkSet: true
+  - type: Eye
+  - type: StationAiVision
+  - type: Item
+    size: Large
+    shape:
+      - 0,0,2,2
+  - type: UserInterface
+    interfaces:
+      enum.SurveillanceCameraSetupUiKey.Camera:
+        type: SurveillanceCameraSetupBoundUi
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
+  - type: Tag
+    tags: 
+    - Bodycam

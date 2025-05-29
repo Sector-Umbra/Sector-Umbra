@@ -79,6 +79,9 @@
   id: BodyBag
 
 - type: Tag
+  id: Bodycam
+
+- type: Tag
   id: Book
 
 - type: Tag
