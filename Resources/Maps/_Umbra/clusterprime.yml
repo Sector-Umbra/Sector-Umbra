@@ -19429,7 +19429,7 @@ entities:
     - type: Transform
       pos: -62.5,-10.5
       parent: 1
-- proto: BorgModuleTreatment
+- proto: BorgModuleTopicals
   entities:
   - uid: 12938
     components:
