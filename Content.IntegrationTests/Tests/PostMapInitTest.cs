@@ -71,7 +71,6 @@ namespace Content.IntegrationTests.Tests
             "Fland",
             "Meta",
             "Packed",
-            // "Cluster", // Umbra: Derotated Map.
             "Omega",
             "Bagel",
             "CentComm",
@@ -93,7 +92,7 @@ namespace Content.IntegrationTests.Tests
             "dm01-entryway",
             "Xeno", // Umbra
             "Iris", // Umbra
-			"ClusterPrime", //Umbra
+            "Prime", //Umbra
         };
 
         // UMBRA: We need to be able to mark non-upstream maps as not tested.
