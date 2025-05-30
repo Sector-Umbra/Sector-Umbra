@@ -648,3 +648,6 @@ AirlockMaintIntLocked: AirlockMaintLocked
 # 2025-04-26
 ComputerCargoShuttle: ComputerShuttleCargo
 CargoShuttleComputerCircuitboard: CargoShuttleConsoleCircuitboard
+
+# 2025-05-30 - UMBRA
+SpawnPointPermaPrisoner: null  # Disable this spawnpoint from Harmony port
