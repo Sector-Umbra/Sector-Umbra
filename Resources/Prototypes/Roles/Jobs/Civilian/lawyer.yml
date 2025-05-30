@@ -3,6 +3,9 @@
   name: job-name-lawyer
   description: job-description-lawyer
   playTimeTracker: JobLawyer
+  #requirements: # Umbra: Use Umbra Roletimers over Wizden.
+  #  - !type:OverallPlaytimeRequirement
+  #    time: 9000 # 2.5 hrs
   startingGear: LawyerGear
   icon: "JobIconLawyer"
   supervisors: job-supervisors-hop
