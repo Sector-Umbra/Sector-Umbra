@@ -71,18 +71,17 @@ namespace Content.IntegrationTests.Tests
             "Fland",
             "Meta",
             "Packed",
-            "Cluster",
+            // "Cluster", // Umbra: Derotated Map.
             "Omega",
             "Bagel",
             "CentComm",
             "Box",
-            "Saltern",
             "Core",
             "Marathon",
             "MeteorArena",
-            "Saltern",
+            "Saltern", // Umbra: Derotated Map, but must remain for tests.
             "Reach",
-            "Train",
+            // "Train", // Umbra: Derotated Map.
             "Oasis",
             "Gate",
             "Amber",
@@ -101,7 +100,7 @@ namespace Content.IntegrationTests.Tests
         private static readonly string[] UntestedGameMaps =
         {
             "Ferrous",
-            "Aspid"
+            // "Aspid" // Umbra: Derotate Aspid
         };
 
         /// <summary>

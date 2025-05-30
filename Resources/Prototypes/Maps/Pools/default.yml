@@ -1,7 +1,7 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
-  - Aspid
+  #- Aspid # Umra: Derotated map.
   - Amber
   - Bagel
   - Box
@@ -20,4 +20,4 @@
   - Packed
   - Plasma
   #- Reach # Umbra: Derotated map.
-  - Train
+  #- Train # Umbra: Derotated map.
