@@ -191,12 +191,3 @@
     Hologram:
       sprite: Mobs/Silicon/holograms.rsi
       state: ai_dog
-
-- type: stationAiCustomization
-  id: StationAiHologramHorror
-  name: station-ai-hologram-horror
-  previewKey: Hologram
-  layerData:
-    Hologram:
-      sprite: Mobs/Silicon/holograms.rsi
-      state: ai_horror
