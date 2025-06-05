@@ -35,7 +35,6 @@
             max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-
 - type: loadout
   id: PersonalItemOnyxRing
   storage:
