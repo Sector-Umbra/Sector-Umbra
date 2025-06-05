@@ -1,0 +1,25 @@
+# Player: Onyx_The_Brave - Character: Onyx Hardt
+- type: entity
+  parent: RingBase
+  id: PersonalItemOnyxRing
+  name: Onyx's ring
+  description: A heavily worn and cracked brass ring.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Wearables/onyxring.rsi
+    layers:
+    - state: onyxring
+  - type: Item
+    size: Tiny
+    sprite: _Umbra/PersonalItems/Wearables/onyxring.rsi
+
+- type: loadout
+  id: PersonalItemOnyxRing
+  storage:
+    back:
+    - PersonalItemOnyxRing
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Onyx Hardt
