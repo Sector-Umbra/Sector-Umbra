@@ -13,8 +13,6 @@
   - type: Item
     size: Tiny
     sprite: _Umbra/PersonalItems/Wearables/onyxring.rsi
-    layers:
-    - state: onyxring
   - type: Damageable            #It's a fragile brass ring that is already partly broken. Why not give it the chance to shatter
     damageContainer: Inorganic
     damageModifierSet: Metallic
@@ -63,7 +61,6 @@
    - type: Item
      size: Tiny
      sprite: _Umbra/PersonalItems/Wearables/onyxring.rsi
-
    - type: ToolRefinable
      refineResult:
      - id: PersonalItemOnyxRing
