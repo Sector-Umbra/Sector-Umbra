@@ -35,6 +35,7 @@
             max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+
 - type: loadout
   id: PersonalItemOnyxRing
   storage:
@@ -45,9 +46,9 @@
     character:
     - Onyx Hardt
 
-# The result of Kate throwing a meteor at Onyx
+#The ring, but broken into pieces.
 - type: entity
-  parent: BaseItem #The time it took for me to find that this is a parent was... Too long
+  parent: BaseItem
   id: PersonalItemOnyxRingBroken
   name: Brass pieces
   description: A few pieces of brass. Putting them together looks like they could be made into the shape of a ring.
