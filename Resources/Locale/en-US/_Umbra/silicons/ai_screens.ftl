@@ -8,7 +8,6 @@ station-ai-icon-glitchman = Glitchman
 station-ai-icon-goon = The Goon
 station-ai-icon-hades = Hades
 station-ai-icon-helios = Helios
-station-ai-icon-house = The House
 station-ai-icon-inverted = Inverted
 station-ai-icon-matrix = Matrix
 station-ai-icon-monochrome = Monochrome

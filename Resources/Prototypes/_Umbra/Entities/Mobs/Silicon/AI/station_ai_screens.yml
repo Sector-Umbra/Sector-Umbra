@@ -120,18 +120,6 @@
 
 - type: stationAiCustomization
   parent: StationAiIconBase
-  id: StationAiIconHouse
-  name: station-ai-icon-house
-  layerData:
-    Occupied:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
-      state: ai_house
-    Dead:
-      sprite: _Umbra/Mobs/Silicon/AI/ai_screens.rsi
-      state: ai_house_dead
-
-- type: stationAiCustomization
-  parent: StationAiIconBase
   id: StationAiIconInverted
   name: station-ai-icon-inverted
   layerData:
