@@ -4,8 +4,14 @@
   description: job-description-rd
   playTimeTracker: JobResearchDirector
   requirements:
-    - !type:OverallPlaytimeRequirement
+    - !type:OverallPlaytimeRequirement # Umbra: Use Umbra Roletimers over Wizden.
       time: 21600 # 6 hrs
+  #- !type:RoleTimeRequirement
+  #  role: JobScientist
+  #  time: 18000 #5 hrs
+  #- !type:DepartmentTimeRequirement
+  #  department: Science
+  #  time: 36000 #10 hrs
   weight: 10
   startingGear: ResearchDirectorGear
   icon: "JobIconResearchDirector"

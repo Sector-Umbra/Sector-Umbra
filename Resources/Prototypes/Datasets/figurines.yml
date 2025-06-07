@@ -117,7 +117,7 @@
   id: FigurinesAtmosTech
   values:
     prefix: figurines-atmostech-
-    count: 8
+    count: 9 # Umbra 8 -> 9
 
 - type: localizedDataset
   id: FigurinesRD
@@ -141,7 +141,7 @@
   id: FigurinesChemist
   values:
     prefix: figurines-chemist-
-    count: 7
+    count: 8 # Umbra 7 -> 8
 
 - type: localizedDataset
   id: FigurinesParamedic

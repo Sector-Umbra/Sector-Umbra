@@ -1,0 +1,25 @@
+# Player: EilikoSkye - Character: Eiliko Skye
+- type: entity
+  parent: ClothingNeckBase
+  id: PersonalItemEilikosPendant
+  name: Eiliko's Avalonian Pendant 
+  description: Eilikos Pendant, Being made from Aerogel & Aeromer, this pendant weights almost noting, But contains valuable data to Eiliko.
+  suffix: PersonalItem
+  components:
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Wearables/eilikospendant.rsi
+    scale: 0.5, 0.5
+  - type: Clothing
+    sprite: _Umbra/PersonalItems/Wearables/eilikospendant.rsi
+
+- type: loadout
+  id: PersonalItemEilikosPendant
+  storage:
+    back:
+    - PersonalItemEilikosPendant
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Eiliko Skye
