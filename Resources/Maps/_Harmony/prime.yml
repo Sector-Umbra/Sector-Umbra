@@ -153220,13 +153220,6 @@ entities:
     - type: Transform
       pos: 3.8538828,21.641376
       parent: 1
-- proto: ToolboxJanitorialFilled
-  entities:
-  - uid: 28054
-    components:
-    - type: Transform
-      pos: 5.53223,-14.589691
-      parent: 1
 - proto: ToolboxMechanicalFilled
   entities:
   - uid: 3977
