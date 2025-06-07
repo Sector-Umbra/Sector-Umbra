@@ -59428,18 +59428,6 @@ entities:
     - type: Transform
       pos: -39.436028,-22.476269
       parent: 1
-- proto: CigaretteLipolicide
-  entities:
-  - uid: 24076
-    components:
-    - type: Transform
-      pos: -84.58655,-8.863012
-      parent: 1
-  - uid: 24077
-    components:
-    - type: Transform
-      pos: -84.52276,-8.786547
-      parent: 1
 - proto: CigarGold
   entities:
   - uid: 10658
