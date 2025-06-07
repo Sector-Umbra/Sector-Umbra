@@ -35,16 +35,3 @@
   showInVote: false
   description: umbra-fallback-description
   rules: []
-
-# Secret weights used in UmbraUnscheduledAntags, moved from /Resources/Prototypes/secret_weights.yml for readability.
-- type: weightedRandom
-  id: Secret
-  weights:
-    Nukeops: 0.20
-    Traitor: 0.55
-    Zombie: 0 # Umbra, zombies disabled.
-    Survival: 0.10
-    Revolutionary: 0 # That too
-    Wizard: 0.05
-
-# For the tables used by the survival look in /Resources/Prototypes/GameRules/roundstart.yml under BasicGameRulesTable
