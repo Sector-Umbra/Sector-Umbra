@@ -27,7 +27,7 @@
     - type: Food
       requiresSpecialDigestion: true
       useSound:
-        path: /audio/_CD/Voice/Avali/avali_scream.ogg
+        path: /Audio/_CD/Voice/Avali/avali_scream.ogg
     - type: MeleeWeapon
       wideAnimationRotation: 180
       soundHit:
