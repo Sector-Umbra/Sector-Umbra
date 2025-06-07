@@ -4,10 +4,25 @@
   description: job-description-captain
   playTimeTracker: JobCaptain
   requirements:
-    - !type:OverallPlaytimeRequirement
+    - !type:OverallPlaytimeRequirement # Umbra: Use Umbra Roletimers over Wizden.
       time: 21600 # 6 hrs
     - !type:AgeRequirement
       requiredAge: 21
+    #- !type:DepartmentTimeRequirement
+    #  department: Engineering
+    #  time: 14400 # 4 hours
+    #- !type:DepartmentTimeRequirement
+    #  department: Medical
+    #  time: 14400 # 4 hours
+    #- !type:DepartmentTimeRequirement
+    #  department: Science
+    #  time: 14400 # 4 hours
+    #- !type:DepartmentTimeRequirement
+    #  department: Security
+    #  time: 14400 # 4 hours
+    #- !type:DepartmentTimeRequirement
+    #  department: Command
+    #  time: 14400 # 4 hours
   weight: 20
   startingGear: CaptainGear
   icon: "JobIconCaptain"

@@ -1,12 +1,12 @@
 
 - type: stack
   id: FloorTileTechmaintDark
-  name: dark techmaint floor
+  name: tiles-techmaint-floor-dark
   spawn: FloorTileItemTechmaintDark
   maxCount: 30
 
 - type: stack
   id: FloorTileXeno
-  name: xeno floor
+  name: tiles-xeno-floor
   spawn: FloorTileItemXeno
   maxCount: 30
