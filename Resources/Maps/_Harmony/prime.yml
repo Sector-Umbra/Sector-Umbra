@@ -9434,7 +9434,6 @@ entities:
     - type: SpreaderGrid
     - type: GridPathfinding
     - type: NavMap
-    - type: ImplicitRoof
   - uid: 12281
     components:
     - type: MetaData
