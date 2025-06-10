@@ -71,18 +71,16 @@ namespace Content.IntegrationTests.Tests
             "Fland",
             "Meta",
             "Packed",
-            "Cluster",
             "Omega",
             "Bagel",
             "CentComm",
             "Box",
-            "Saltern",
             "Core",
             "Marathon",
             "MeteorArena",
-            "Saltern",
+            "Saltern", // Umbra: Derotated Map, but must remain for tests.
             "Reach",
-            "Train",
+            // "Train", // Umbra: Derotated Map.
             "Oasis",
             "Gate",
             "Amber",
@@ -94,14 +92,14 @@ namespace Content.IntegrationTests.Tests
             "dm01-entryway",
             "Xeno", // Umbra
             "Iris", // Umbra
-			"ClusterPrime", //Umbra
+            "Prime", //Umbra
         };
 
         // UMBRA: We need to be able to mark non-upstream maps as not tested.
         private static readonly string[] UntestedGameMaps =
         {
             "Ferrous",
-            "Aspid"
+            // "Aspid" // Umbra: Derotate Aspid
         };
 
         /// <summary>

@@ -1,20 +1,20 @@
 - type: gameMap
-  id: Aspid
-  mapName: 'NCS Aspid'
-  mapPath: /Maps/_CD/aspid.yml
+  id: Prime
+  mapName: Prime
+  mapPath: /Maps/_Harmony/prime.yml
   minPlayers: 25
-  maxPlayers: 45
+  maxPlayers: 50
   stations:
-    Aspid:
+    Prime:
       stationProto: StandardNanotrasenStation
       components:
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/_Harmony/Shuttles/emergency_jeremiah.yml
         - type: StationNameSetup
-          mapNameTemplate: '{0} NCS Aspid {1}'
+          mapNameTemplate: '{0} Orbital Prime {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
-        - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Shuttles/emergency_courser.yml
         - type: StationJobs
           availableJobs:
             #service
@@ -22,49 +22,49 @@
             HeadOfPersonnel: [ 1, 1 ]
             Bartender: [ 1, 2 ]
             Botanist: [ 2, 2 ]
-            Chef: [ 1, 2 ]
-            Janitor: [ 2, 2 ]
+            Chef: [ 2, 2 ]
+            Janitor: [ 1, 1 ]
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
-            Lawyer: [ 2, 2 ]
-            ServiceWorker: [ 2, 2 ]
+            Lawyer: [ 1, 1]
+            ServiceWorker: [ 1, 3 ]
             #engineering
             ChiefEngineer: [ 1, 1 ]
-            AtmosphericTechnician: [ 2, 2 ]
-            SeniorEngineer: [ 1, 1 ] #CD Role
-            StationEngineer: [ 2, 3 ]
-            TechnicalAssistant: [ 2, 2 ]
+            SeniorEngineer: [ 1, 1 ] # UMBRA
+            AtmosphericTechnician: [ 3, 3 ]
+            StationEngineer: [ 3, 4]
+            TechnicalAssistant: [ 2, 4 ]
             #medical
             ChiefMedicalOfficer: [ 1, 1 ]
-            SeniorPhysician: [ 1, 1 ] #CD Role
+            SeniorPhysician: [ 1, 1 ] # UMBRA
+            Chemist: [ 2, 2 ]
             Paramedic: [ 1, 1 ]
-            Chemist: [ 1, 2 ]
             MedicalDoctor: [ 3, 3 ]
-            MedicalIntern: [ 2, 2 ]
+            MedicalIntern: [ 2, 4 ]
             Psychologist: [ 1, 1 ]
             #science
             ResearchDirector: [ 1, 1 ]
-            SeniorResearcher: [ 1, 1 ] #CD Role
-            Scientist: [ 3, 4 ]
-            ResearchAssistant: [ 2, 2 ]
+            SeniorResearcher: [ 1, 1 ] # UMBRA
+            Scientist: [ 3, 3 ]
+            ResearchAssistant: [ 2, 4 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
+            SeniorOfficer: [ 1, 1 ] # UMBRA
             Warden: [ 1, 1 ]
-            SeniorOfficer: [ 1, 1 ] #CD Role
             Detective: [ 1, 1 ]
-            SecurityOfficer: [ 3, 3 ]
-            SecurityCadet: [ 2, 2 ]
+            SecurityOfficer: [ 3, 5 ]
+            SecurityCadet: [ 2, 4 ]
+            # PermaPrisoner: [ 1, 0 ] # HARMONY (Disabled on Umbra)
             #supply
             Quartermaster: [ 1, 1 ]
-            SalvageSpecialist: [ 3, 4 ]
-            CargoTechnician: [ 2, 3 ]
+            SalvageSpecialist: [ 3, 3 ]
+            CargoTechnician: [ 3, 3 ]
             #civillian
             Passenger: [ -1, -1 ]
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
+            Reporter: [ 1, 1]
             #silicon
             StationAi: [ 1, 1 ]
-            Borg: [ 2, 2 ]
-            #misc
-            Prisoner: [ 1, 1 ] #CD Role
+            Borg: [ 2, 3 ]
