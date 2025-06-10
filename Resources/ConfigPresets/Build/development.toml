@@ -39,5 +39,6 @@ preload_grids = false
 see_own_notes = true
 
 [ic]
-random_characters = true
+# Umbra, random characters to false.
+random_characters = false
 random_species_weights = ""
