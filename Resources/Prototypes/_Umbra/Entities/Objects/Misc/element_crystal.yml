@@ -1,0 +1,139 @@
+- type: entity
+  parent: BaseItem
+  id: AmenoCrystal
+  suffix: Anemo
+  name: mysterious crystal
+  description: You shouldn't be seeing this.
+  components:
+  - type: Icon
+    sprite: _Umbra/Objects/Misc/crystalshard.rsi
+    state: anemo_shard
+  - type: Sprite
+    sprite: _Umbra/Objects/Misc/crystalshard.rsi
+    state: anemo_shard
+  - type: PointLight
+    radius: 2
+    energy: 2
+    color: "#77EBEB"
+  - type: Item
+    size: Normal
+
+- type: entity
+  parent: BaseItem
+  id: CryoCrystal
+  suffix: Cryo
+  name: mysterious crystal
+  description: You shouldn't be seeing this.
+  components:
+  - type: Icon
+    sprite: _Umbra/Objects/Misc/crystalshard.rsi
+    state: cryo_shard
+  - type: Sprite
+    sprite: _Umbra/Objects/Misc/crystalshard.rsi
+    state: cryo_shard
+  - type: PointLight
+    radius: 2
+    energy: 2
+    color: "#98C4EB"
+  - type: Item
+    size: Normal
+
+- type: entity
+  parent: BaseItem
+  id: DendroCrystal
+  suffix: Dendro
+  name: mysterious crystal
+  description: You shouldn't be seeing this.
+  components:
+  - type: Icon
+    sprite: _Umbra/Objects/Misc/crystalshard.rsi
+    state: dendro_shard
+  - type: Sprite
+    sprite: _Umbra/Objects/Misc/crystalshard.rsi
+    state: dendro_shard
+  - type: PointLight
+    radius: 2
+    energy: 2
+    color: "#6DEB6B"
+  - type: Item
+    size: Normal
+
+- type: entity
+  parent: BaseItem
+  id: ElectroCrystal
+  suffix: Electro
+  name: mysterious crystal
+  description: You shouldn't be seeing this.
+  components:
+  - type: Icon
+    sprite: _Umbra/Objects/Misc/crystalshard.rsi
+    state: electro_shard
+  - type: Sprite
+    sprite: _Umbra/Objects/Misc/crystalshard.rsi
+    state: electro_shard
+  - type: PointLight
+    radius: 2
+    energy: 2
+    color: "#AE85FF"
+  - type: Item
+    size: Normal
+
+- type: entity
+  parent: BaseItem
+  id: GeoCrystal
+  suffix: Geo
+  name: mysterious crystal
+  description: You shouldn't be seeing this.
+  components:
+  - type: Icon
+    sprite: _Umbra/Objects/Misc/crystalshard.rsi
+    state: geo_shard
+  - type: Sprite
+    sprite: _Umbra/Objects/Misc/crystalshard.rsi
+    state: geo_shard
+  - type: PointLight
+    radius: 2
+    energy: 2
+    color: "#EBAB6B"
+  - type: Item
+    size: Normal
+
+- type: entity
+  parent: BaseItem
+  id: HydroCrystal
+  suffix: Hydro
+  name: mysterious crystal
+  description: You shouldn't be seeing this.
+  components:
+  - type: Icon
+    sprite: _Umbra/Objects/Misc/crystalshard.rsi
+    state: hydro_shard
+  - type: Sprite
+    sprite: _Umbra/Objects/Misc/crystalshard.rsi
+    state: hydro_shard
+  - type: PointLight
+    radius: 2
+    energy: 2
+    color: "#779DEB"
+  - type: Item
+    size: Normal
+
+- type: entity
+  parent: BaseItem
+  id: PyroCrystal
+  suffix: Pyro
+  name: mysterious crystal
+  description: You shouldn't be seeing this.
+  components:
+  - type: Icon
+    sprite: _Umbra/Objects/Misc/crystalshard.rsi
+    state: pyro_shard
+  - type: Sprite
+    sprite: _Umbra/Objects/Misc/crystalshard.rsi
+    state: pyro_shard
+  - type: PointLight
+    radius: 2
+    energy: 2
+    color: "#EE5659"
+  - type: Item
+    size: Normal
