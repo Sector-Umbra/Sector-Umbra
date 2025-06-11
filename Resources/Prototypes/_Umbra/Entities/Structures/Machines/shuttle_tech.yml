@@ -76,7 +76,7 @@
 - type: entity
   parent: BaseStructureDynamic
   id: DamagedWeaponSystem
-  name: damaged weapon damage system
+  name: damaged weapon control system
   description: A machine built to process all the math required for ship to ship combat. This one looks like it's been overheated beyond use.
   components:
   - type: Appearance

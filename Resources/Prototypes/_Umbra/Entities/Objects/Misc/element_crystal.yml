@@ -17,6 +17,15 @@
     color: "#77EBEB"
   - type: Item
     size: Normal
+#  - type: OnUseTimerTrigger
+#    delay: 3
+#  - type: DeleteOnTrigger
+#  - type: SpawnOnTrigger
+#    proto: ActionRepulse
+#  - type: Appearance
+#  - type: TimerTriggerVisuals
+#    primingSound:
+#      path: /Audio/Effects/countdown.ogg
 
 - type: entity
   parent: BaseItem

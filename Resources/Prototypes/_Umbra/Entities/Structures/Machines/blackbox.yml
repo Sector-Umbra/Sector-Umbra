@@ -83,7 +83,7 @@
   description: The heart of a blackbox. Hold's all the data. Most of it is encrypted, but theres some print outs also stored inside too.
   components:
   - type: Sprite
-    sprite: _Umbra/TempEvent/blackbox.rsi
+    sprite: _Umbra/Structures/Machines/blackbox.rsi
     state: blackbox_data_closed
   - type: Item
     size: Small
