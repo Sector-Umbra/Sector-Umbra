@@ -143,6 +143,7 @@
     sprite: Clothing/Eyes/Glasses/sunglasses.rsi
   - type: Tag
     tags:
+    - SunglassesCheap # Moffstation - Medical Sunglasses
     - HamsterWearable
     - PetWearable
     - WhitelistChameleon
