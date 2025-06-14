@@ -10,7 +10,10 @@
     - id: Ointment
       amount: !type:ConstantNumberSelector
         value: 2
-    - id: Bloodpack
+    #- id: Bloodpack #Umbra: Replaced by RMC blood.
+    #  amount: !type:ConstantNumberSelector
+    #    value: 2
+    - id: CMBloodPackFull
       amount: !type:ConstantNumberSelector
         value: 2
     - id: Gauze

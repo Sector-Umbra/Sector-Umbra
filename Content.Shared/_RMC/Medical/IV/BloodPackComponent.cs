@@ -1,4 +1,3 @@
-//using Content.Shared._RMC14.Marines.Skills;
 using Content.Shared.Chat.Prototypes;
 using Content.Shared.Damage;
 using Content.Shared.FixedPoint;
@@ -7,7 +6,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
-namespace Content.Shared._RMC14.Medical.IV;
+namespace Content.Shared._RMC.Medical.IV;
 
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState(true), AutoGenerateComponentPause]
 public sealed partial class BloodPackComponent : Component
@@ -54,12 +53,10 @@ public sealed partial class BloodPackComponent : Component
     [DataField, AutoNetworkedField]
     public ProtoId<EmotePrototype> RipEmote = "Scream";
 
-    //[DataField, AutoNetworkedField]
-    //public Dictionary<EntProtoId<SkillDefinitionComponent>, int> SkillRequired = new() { ["RMCSkillSurgery"] = 1 };
-
-    // TODO RMC-14 blood types
+    // What reagents bloodpacks and IV stands can draw from the bloodstream.
+    // This should include all species blood.
     [DataField, AutoNetworkedField]
-    public string[] TransferableReagents = ["Blood"];
+    public string[] BloodstreamReagents = ["Blood", "Sap", "AmmoniaBlood", "CopperBlood", "InsectBlood", "Slime", "SynthBlood"];
 }
 
 [Serializable, NetSerializable]

@@ -697,7 +697,9 @@
     - Gauze10Lingering
     - Brutepack10Lingering
     - Ointment10Lingering
-    - Bloodpack10Lingering
+    #- Bloodpack10Lingering #Umbra: Replaced by RMC Blood.
+    - CMBloodpackLingering
+    - Syringe
     - RegenerativeMeshLingering0
     - MedicatedSutureLingering0
   - type: BorgModuleIcon
