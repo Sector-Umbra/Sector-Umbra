@@ -315,7 +315,7 @@
         - ReagentId: Sugar
           Quantity: 8
         - ReagentId: Vitamin
-          Quantity: 17 
+          Quantity: 17
   - type: Tag
     tags:
     - Fruit

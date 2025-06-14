@@ -84,7 +84,7 @@
         orGroup: CigCarton2
       - id: CigCartonPurple # _CD
         prob: 0.33
-        orGroup: CigCarton3 
+        orGroup: CigCarton3
       - id: CigCartonCandy # _CD
         orGroup: CigCarton3
       - id: CigarGoldCase

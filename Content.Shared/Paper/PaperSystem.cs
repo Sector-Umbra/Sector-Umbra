@@ -51,7 +51,7 @@ public sealed class PaperSystem : EntitySystem
 
         // Umbra - Signing alt verb event listener.
         SubscribeLocalEvent<PaperComponent, GetVerbsEvent<AlternativeVerb>>(AddSignVerb);
-        
+
         _paperQuery = GetEntityQuery<PaperComponent>();
     }
 

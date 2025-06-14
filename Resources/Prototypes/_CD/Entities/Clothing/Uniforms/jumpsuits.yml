@@ -385,7 +385,7 @@
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Suits/blue.rsi
   - type: Clothing
     sprite: _CD/Clothing/Uniforms/Jumpsuit/Suits/blue.rsi
-    
+
 - type: entity
   parent: [ClothingUniformBase, ClothingUniformFoldableBase] # CD foldable
   id: ClothingUniformJumpsuitSuitRed
