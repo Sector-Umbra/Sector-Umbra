@@ -9457,35 +9457,6 @@ entities:
     - type: Transform
       pos: -29.377205,-44.51638
       parent: 1
-- proto: ActionToggleLight
-  entities:
-  - uid: 5749
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 5748
-    - type: InstantAction
-      originalIconColor: '#FFFFFFFF'
-      container: 5748
-  - uid: 10956
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 9733
-    - type: InstantAction
-      originalIconColor: '#FFFFFFFF'
-      container: 9733
-  - uid: 11021
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 12531
-    - type: InstantAction
-      originalIconColor: '#FFFFFFFF'
-      container: 12531
 - proto: AirAlarm
   entities:
   - uid: 46
@@ -76081,19 +76052,12 @@ entities:
       pos: -33.375244,18.577187
       parent: 1
     - type: HandheldLight
-      toggleActionEntity: 10956
     - type: ContainerContainer
       containers:
         cell_slot: !type:ContainerSlot
           showEnts: False
           occludes: True
           ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 10956
-    - type: ActionsContainer
   - uid: 13453
     components:
     - type: Transform
@@ -76177,19 +76141,12 @@ entities:
       pos: -21.527397,-28.588861
       parent: 1
     - type: HandheldLight
-      toggleActionEntity: 11021
     - type: ContainerContainer
       containers:
         cell_slot: !type:ContainerSlot
           showEnts: False
           occludes: True
           ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 11021
-    - type: ActionsContainer
   - uid: 16040
     components:
     - type: Transform
@@ -122655,21 +122612,14 @@ entities:
       pos: 29.519491,35.806583
       parent: 1
     - type: HandheldLight
-      toggleActionEntity: 5749
     - type: ContainerContainer
       containers:
         cell_slot: !type:ContainerSlot
           showEnts: False
           occludes: True
           ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 5749
     - type: Physics
       canCollide: True
-    - type: ActionsContainer
   - uid: 9635
     components:
     - type: Transform
