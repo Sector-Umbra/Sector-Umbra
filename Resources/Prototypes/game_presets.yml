@@ -76,7 +76,7 @@
   - extended
   - shittersafari
   name: extended-title
-  showInVote: true #2boring2vote - Umbra: Really not boring. Shush, original commenter.
+  showInVote: true #2boring2vote - Umbra True
   description: extended-description
   rules:
   - BasicStationEventScheduler
@@ -102,7 +102,7 @@
     - secret
     - sekrit
   name: secret-title
-  showInVote: true
+  showInVote: false # Umbra: False
   description: secret-description
   rules:
     - Secret
@@ -167,7 +167,7 @@
   name: death-match-title
   description: death-match-description
   maxPlayers: 15
-  showInVote: true
+  showInVote: false # Umbra False
   supportedMaps: DeathMatchMapPool
   rules:
     - DeathMatch31

@@ -1,0 +1,25 @@
+# Player: Onyx_The_Brave - Character: Lutla Hardt
+- type: entity
+  parent: RingBase
+  id: PersonalItemLutlaRing
+  name: Lutla's ring
+  description: A silver ring with an engraving etched into it. It's in a language that you don't seem to understand
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Wearables/lutlaring.rsi
+    layers:
+    - state: lutlaring
+  - type: Item
+    size: Tiny
+    sprite: _Umbra/PersonalItems/Wearables/lutlaring.rsi
+
+- type: loadout
+  id: PersonalItemLutlaRing
+  storage:
+    back:
+    - PersonalItemLutlaRing
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Lutla Hardt
