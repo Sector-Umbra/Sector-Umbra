@@ -1,14 +1,13 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
-  - Aspid
-  - Atlas
+  #- Aspid # Umra: Derotated map.
   - Amber
   - Bagel
   - Box
-  - ClusterPrime # Umbra: Cluster Replacement
+  - Prime # Umbra: Cluster Replacement
   - Convex
-  - Core
+  #- Core
   - Elkridge
   - Fland
   #- Gate
@@ -21,4 +20,4 @@
   - Packed
   - Plasma
   #- Reach # Umbra: Derotated map.
-  - Train
+  #- Train # Umbra: Derotated map.

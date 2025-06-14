@@ -13,7 +13,7 @@
     CMBloodPackFullSynthetic: 3 #Umbra
     CMBloodPack: 5 #Umbra: Few free empty bags for medical to fill.
     IVstandflatpack: 1 #Umbra
-    EpinephrineChemistryBottle: 3
+    ChemistryBottleEpinephrine: 3
     Syringe: 3
   contrabandInventory:
     PowerCellSmall: 2
