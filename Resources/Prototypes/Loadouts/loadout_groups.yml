@@ -1405,6 +1405,7 @@
   loadouts:
   - MedicalHud
   - MedicalEyePatchHud
+  - MedicalVisorHud #CD Addition
   - Glasses
   - GlassesJamjar
   - GlassesJensen

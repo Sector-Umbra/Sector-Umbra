@@ -6,7 +6,7 @@
 
 - type: loadout
   id: MedicalTechnician
-  equipment: 
+  equipment:
     jumpsuit: ClothingUniformMedicalTechnician
 
 - type: loadout
@@ -94,7 +94,19 @@
     outerClothing: ClothingOuterCoatLabGene
 
 # OuterClothing
-- type: loadout 
+- type: loadout
   id: ModernLabCoat
-  equipment: 
+  equipment:
     outerClothing: ClothingOuterCoatStylishLab
+
+# ID
+- type: loadout
+  id: MedicalInternPDA
+  equipment:
+    id: MedicalInternPDA
+
+# Eyewear
+- type: loadout
+  id: MedicalVisorHud
+  equipment:
+    eyes: ClothingEyesHudMedicalVisor
