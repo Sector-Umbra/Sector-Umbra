@@ -4,6 +4,7 @@
   id: PersonalItemJaytauBook
   name: Jaytau's book
   description: A very thick, slightly well-worn book detailing all sorts of philosophical debates titled 'An essay on the two main ontological propositions'. On the bottom, the authorship is attributed to one Jaytau Cometa. In the first page of the book, there is a signature that barely reads 'Jumper'.
+  suffix: PersonalItem
   components:
   - type: Sprite
     sprite: _Umbra/PersonalItems/Items/jaytaubook.rsi
