@@ -4,9 +4,3 @@
   name: tiles-techmaint-floor-dark
   spawn: FloorTileItemTechmaintDark
   maxCount: 30
-
-- type: stack
-  id: FloorTileXeno
-  name: tiles-xeno-floor
-  spawn: FloorTileItemXeno
-  maxCount: 30
