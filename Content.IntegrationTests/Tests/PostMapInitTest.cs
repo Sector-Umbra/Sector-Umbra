@@ -90,7 +90,6 @@ namespace Content.IntegrationTests.Tests
             "Convex",
             "Relic",
             "dm01-entryway",
-            "Xeno", // Umbra
             "Iris", // Umbra
             "Prime", //Umbra
         };
