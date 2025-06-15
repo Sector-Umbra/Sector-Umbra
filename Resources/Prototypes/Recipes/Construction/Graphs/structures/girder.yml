@@ -146,19 +146,6 @@
             - tool: Welding
               doAfter: 10
 
-    # Umbra: Xeno map
-    - node: wallChitin
-      entity: WallSolidChitin
-      edges:
-        - to: girder
-          completed:
-            - !type:GivePrototype
-              prototype: SheetSteel1
-              amount: 2
-          steps:
-            - tool: Welding
-              doAfter: 10
-
     - node: woodWall
       entity: WallWood
       edges:
@@ -372,63 +359,6 @@
                   data: 0
             - tool: Cutting
               doAfter: 1
-
-    # START OF UMBRA ADDITION
-
-    # Umbra: Xeno map
-    - node: reinforcedWallChitin
-      entity: WallReinforcedChitin
-      edges:
-        - to: reinforcedGirder
-          completed:
-            - !type:SpawnPrototype
-              prototype: SheetPlasteel1
-              amount: 2
-          steps:
-            - tool: Cutting
-              doAfter: 1
-              completed:
-                - !type:VisualizerDataInt
-                  key: "enum.ReinforcedWallVisuals.DeconstructionStage"
-                  data: 5
-            - tool: Screwing
-              doAfter: 1
-            - tool: Welding
-              doAfter: 5
-              completed:
-                - !type:VisualizerDataInt
-                  key: "enum.ReinforcedWallVisuals.DeconstructionStage"
-                  data: 4
-            - tool: Prying
-              doAfter: 1
-            - tool: Anchoring
-              doAfter: 1
-              completed:
-                - !type:VisualizerDataInt
-                  key: "enum.ReinforcedWallVisuals.DeconstructionStage"
-                  data: 3
-            - tool: Welding
-              doAfter: 10
-              completed:
-                - !type:VisualizerDataInt
-                  key: "enum.ReinforcedWallVisuals.DeconstructionStage"
-                  data: 2
-            - tool: Prying
-              doAfter: 1
-              completed:
-                - !type:VisualizerDataInt
-                  key: "enum.ReinforcedWallVisuals.DeconstructionStage"
-                  data: 1
-            - tool: Screwing
-              doAfter: 1
-              completed:
-                - !type:VisualizerDataInt
-                  key: "enum.ReinforcedWallVisuals.DeconstructionStage"
-                  data: 0
-            - tool: Cutting
-              doAfter: 1
-
-    # END OF UMBRA ADDITION
 
     - node: shuttleWall
       entity: WallShuttle
