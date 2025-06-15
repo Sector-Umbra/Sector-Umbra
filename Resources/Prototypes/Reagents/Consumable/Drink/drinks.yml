@@ -140,9 +140,7 @@
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: true
   footstepSound:
-    collection: FootstepSticky
-    params:
-      volume: 6
+    collection: FootstepSlime
 
 - type: reagent
   id: IcedCoffee
@@ -449,9 +447,19 @@
       effects:
       - !type:SatiateThirst
         factor: 4
-    Gas: # DeltaV - Feroxi get to breathe with this too!
+    Gas:
       effects:
-      - !type:Oxygenate
+      - !type:HealthChange
+        scaleByQuantity: true
+        ignoreResistances: true
+        conditions:
+        - !type:OrganType
+          type: Slime
+          shouldHave: true
+        damage:
+          types:
+            Heat: 3
+      - !type:Oxygenate # DeltaV - Feroxi get to breathe with this too!
         conditions:
         - !type:OrganType
           type: Feroxi
