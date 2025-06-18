@@ -3,7 +3,7 @@
   mapName: Prime
   mapPath: /Maps/_Harmony/prime.yml
   minPlayers: 25
-  maxPlayers: 50
+  maxPlayers: 60
   stations:
     Prime:
       stationProto: StandardNanotrasenStation
