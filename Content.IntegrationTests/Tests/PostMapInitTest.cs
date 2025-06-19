@@ -59,8 +59,7 @@ namespace Content.IntegrationTests.Tests
             "/Maps/cluster.yml", // Umbra: Contains mime's rubber stamp.
             "/Maps/Misc/terminal.yml", // Umbra: Contains centcomm rubber stamp.
             "/Maps/_Umbra/xeno.yml", // Umbra: Contains PTK-800
-            "/Maps/_Umbra/clusterprime.yml", // Umbra: Contains mime's rubber stamp.
-            "/Maps/_Umbra/Dungeon/geneticore.yml", // Umbra: Contains janitorial bomb suit closet
+            "/Maps/_Umbra/prime.yml", // Umbra: Contains mime's rubber stamp.
             "/Maps/_Umbra/centcomm.yml", // Umbra
         };
 
