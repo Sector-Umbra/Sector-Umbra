@@ -9415,14 +9415,6 @@ entities:
       parent: 10
     - type: InstantAction
       container: 10
-- proto: ActionStethoscope
-  entities:
-  - uid: 15
-    components:
-    - type: Transform
-      parent: 14
-    - type: EntityTargetAction
-      container: 14
   - uid: 21
     components:
     - type: Transform
@@ -65483,14 +65475,6 @@ entities:
     - type: Transform
       pos: 54.5197,21.571646
       parent: 2
-    - type: Stethoscope
-      actionEntity: 15
-    - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 15
   - uid: 8302
     components:
     - type: Transform

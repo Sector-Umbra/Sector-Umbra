@@ -5491,14 +5491,6 @@ entities:
     - type: RadiationGridResistance
     - type: BecomesStation
       id: Xeno
-- proto: ActionStethoscope
-  entities:
-  - uid: 6661
-    components:
-    - type: Transform
-      parent: 6660
-    - type: EntityTargetAction
-      container: 6660
 - proto: ActionToggleInternals
   entities:
   - uid: 7333
@@ -39687,14 +39679,6 @@ entities:
     - type: Transform
       pos: 5.5920773,-22.434753
       parent: 2
-    - type: Stethoscope
-      actionEntity: 6661
-    - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 6661
   - uid: 17800
     components:
     - type: Transform
