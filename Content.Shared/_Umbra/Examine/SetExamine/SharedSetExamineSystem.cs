@@ -20,7 +20,9 @@ public abstract class SharedSetExamineSystem : EntitySystem
     private void OnMapInit(Entity<SetExamineComponent> ent, ref MapInitEvent ev)
     {
         if (_actions.AddAction(ent, ref ent.Comp.Action, out var action, ent.Comp.ActionPrototype))
+#pragma warning disable RA0002
             action.EntityIcon = ent;
+#pragma warning restore RA0002
     }
 
     private void OnExamine(Entity<SetExamineComponent> ent, ref ExaminedEvent args)

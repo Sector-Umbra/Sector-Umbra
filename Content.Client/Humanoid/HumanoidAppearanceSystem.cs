@@ -7,6 +7,7 @@ using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.Inventory;
 using Content.Shared.Preferences;
 using Robust.Client.GameObjects;
+using Robust.Client.Console;
 using Robust.Shared.Configuration;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
@@ -17,6 +18,8 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
 {
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly MarkingManager _markingManager = default!;
+    [Dependency] private readonly IEntityManager _entityManager = default!;
+    [Dependency] private readonly IClientConsoleHost _consoleHost = default!;
     [Dependency] private readonly IConfigurationManager _configurationManager = default!;
     [Dependency] private readonly DisplacementMapSystem _displacement = default!;
     [Dependency] private readonly SpriteSystem _sprite = default!;
@@ -49,19 +52,15 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
         UpdateLayers(entity);
         ApplyMarkingSet(entity);
 
-        var humanoidApperance = entity.Comp1;
+        var component = entity.Comp1;
         var sprite = entity.Comp2;
 
-        sprite[_sprite.LayerMapReserve((entity.Owner, sprite), HumanoidVisualLayers.Eyes)].Color = humanoidAppearance.EyeColor;
-
-        // CD changes start here
-        var speciesPrototype = _prototypeManager.Index<SpeciesPrototype>(humanoidApperance.Species);
-        var height = Math.Clamp(MathF.Round(humanoidApperance.Height, 2), speciesPrototype.MinHeight, speciesPrototype.MaxHeight); // should NOT be locked, at all
+        var speciesPrototype = _prototypeManager.Index<SpeciesPrototype>(component.Species);
+        var height = Math.Clamp(MathF.Round(component.Height, 2), speciesPrototype.MinHeight, speciesPrototype.MaxHeight); // should NOT be locked, at all
 
         sprite.Scale = new Vector2(speciesPrototype.ScaleHeight ? height : 1f, height);
 
-        sprite[_sprite.LayerMapReserveBlank(HumanoidVisualLayers.Eyes)].Color = humanoidApperance.EyeColor;
-        // CD changes stop here
+        sprite[_sprite.LayerMapReserve((entity.Owner, sprite), HumanoidVisualLayers.Eyes)].Color = entity.Comp1.EyeColor;
     }
 
     private static bool IsHidden(HumanoidAppearanceComponent humanoid, HumanoidVisualLayers layer)

@@ -12,7 +12,7 @@
     sprite: _Umbra/PersonalItems/Wearables/hissesgoldenlocket.rsi
     layers:
     - state: icon
-      map: [ "enum.ToggleVisuals.Layer" ]
+      map: [ "enum.ToggleableVisuals.Layer" ]
     scale: 0.5, 0.5
   - type: Clothing
     quickEquip: False
@@ -22,8 +22,8 @@
   - type: Appearance
   - type: GenericVisualizer
     visuals:
-      enum.ToggleVisuals.Toggled:
-        enum.ToggleVisuals.Layer:
+      enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
           True: {state: icon-on}
           False: {state: icon}
   - type: ItemToggle
