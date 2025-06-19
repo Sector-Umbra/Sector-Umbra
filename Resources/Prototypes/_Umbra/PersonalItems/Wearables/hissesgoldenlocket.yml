@@ -43,10 +43,11 @@
   name: Toggle Locket
   description: Toggles the locket open and closed.
   components:
-  - type: InstantAction
+  - type: Action
     itemIconStyle: BigItem
-    event: !type:ToggleActionEvent
     useDelay: 0.5
+  - type: InstantAction
+    event: !type:ToggleActionEvent
 
 - type: loadout
   id: PersonalItemHissesGoldenLocket
