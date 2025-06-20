@@ -4,7 +4,7 @@
   showInVote: false
   description: secret-description
   rules:
-    - BasicStationEventScheduler
+    - BasicStationEventSchedulerCalm
     - MeteorSwarmScheduler
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
