@@ -42,3 +42,4 @@ see_own_notes = true
 # Umbra, random characters to false.
 random_characters = false
 random_species_weights = ""
+ssd_sleep_time = 3600
