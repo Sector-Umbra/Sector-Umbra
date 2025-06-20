@@ -9401,62 +9401,6 @@ entities:
     - type: Transform
       pos: 90.31667,58.502296
       parent: 2
-- proto: ActionBibleSummon
-  entities:
-  - uid: 8
-    components:
-    - type: Transform
-      parent: 7
-    - type: InstantAction
-      container: 7
-  - uid: 11
-    components:
-    - type: Transform
-      parent: 10
-    - type: InstantAction
-      container: 10
-  - uid: 21
-    components:
-    - type: Transform
-      parent: 20
-    - type: InstantAction
-      keywords: []
-      container: 20
-  - uid: 25
-    components:
-    - type: Transform
-      parent: 24
-    - type: InstantAction
-      keywords: []
-      container: 24
-  - uid: 28
-    components:
-    - type: Transform
-      parent: 27
-    - type: InstantAction
-      keywords: []
-      container: 27
-  - uid: 15801
-    components:
-    - type: Transform
-      parent: 17093
-    - type: InstantAction
-      keywords: []
-      container: 17093
-- proto: ActionToggleLight
-  entities:
-  - uid: 30
-    components:
-    - type: Transform
-      parent: 29
-    - type: InstantAction
-      container: 29
-  - uid: 32
-    components:
-    - type: Transform
-      parent: 31
-    - type: InstantAction
-      container: 31
 - proto: AirAlarm
   entities:
   - uid: 33
@@ -15814,14 +15758,6 @@ entities:
     - type: Transform
       pos: 13.509537,66.3512
       parent: 2
-    - type: GasTank
-      toggleActionEntity: 28
-    - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 28
 - proto: AltarConvertMaint
   entities:
   - uid: 656
@@ -20441,29 +20377,12 @@ entities:
     components:
     - type: Transform
       parent: 888
-    - type: Summonable
-      summonActionEntity: 8
-    - type: ContainerContainer
-      containers:
-        storagebase: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 9
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 8
     - type: Physics
       canCollide: False
-    - type: ActionsContainer
   - uid: 10
     components:
     - type: Transform
       parent: 888
-    - type: Summonable
-      summonActionEntity: 11
     - type: Storage
       storedItems:
         13:
@@ -20472,22 +20391,6 @@ entities:
         12:
           position: 0,1
           _rotation: South
-    - type: ContainerContainer
-      containers:
-        storagebase: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 13
-          - 12
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 11
-    - type: Physics
-      canCollide: False
-    - type: ActionsContainer
 - proto: BlastDoor
   entities:
   - uid: 937
@@ -130976,22 +130879,6 @@ entities:
     - type: Transform
       pos: 27.273829,-12.01
       parent: 2
-    - type: HandheldLight
-      toggleActionEntity: 30
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 30
-    - type: Physics
-      canCollide: True
-    - type: ActionsContainer
   - uid: 15588
     components:
     - type: Transform
@@ -131020,22 +130907,6 @@ entities:
     - type: Transform
       pos: -18.786259,33.734924
       parent: 2
-    - type: HandheldLight
-      toggleActionEntity: 32
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 32
-    - type: Physics
-      canCollide: True
-    - type: ActionsContainer
 - proto: LampGold
   entities:
   - uid: 8587
@@ -133456,17 +133327,6 @@ entities:
     components:
     - type: Transform
       parent: 23
-    - type: GasTank
-      toggleActionEntity: 25
-    - type: Physics
-      canCollide: False
-    - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 25
-    - type: InsideEntityStorage
   - uid: 15879
     components:
     - type: Transform
@@ -133526,14 +133386,6 @@ entities:
     - type: Transform
       pos: 64.37799,-9.341837
       parent: 2
-    - type: GasTank
-      toggleActionEntity: 15801
-    - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 15801
 - proto: NoticeBoard
   entities:
   - uid: 15889
@@ -133748,17 +133600,8 @@ entities:
     components:
     - type: Transform
       parent: 19
-    - type: GasTank
-      toggleActionEntity: 21
     - type: Physics
       canCollide: False
-    - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 21
-    - type: InsideEntityStorage
   - uid: 8552
     components:
     - type: Transform

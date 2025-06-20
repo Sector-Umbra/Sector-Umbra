@@ -5491,68 +5491,6 @@ entities:
     - type: RadiationGridResistance
     - type: BecomesStation
       id: Xeno
-- proto: ActionToggleInternals
-  entities:
-  - uid: 7333
-    components:
-    - type: Transform
-      parent: 5264
-    - type: InstantAction
-      container: 5264
-  - uid: 8006
-    components:
-    - type: Transform
-      parent: 5265
-    - type: InstantAction
-      container: 5265
-- proto: ActionToggleJetpack
-  entities:
-  - uid: 7315
-    components:
-    - type: Transform
-      parent: 5264
-    - type: InstantAction
-      container: 5264
-  - uid: 7882
-    components:
-    - type: Transform
-      parent: 5265
-    - type: InstantAction
-      container: 5265
-- proto: ActionToggleLight
-  entities:
-  - uid: 5672
-    components:
-    - type: Transform
-      parent: 5675
-    - type: InstantAction
-      container: 5675
-  - uid: 5847
-    components:
-    - type: Transform
-      parent: 5846
-    - type: InstantAction
-      container: 5846
-  - uid: 5849
-    components:
-    - type: Transform
-      parent: 5848
-    - type: InstantAction
-      container: 5848
-  - uid: 8005
-    components:
-    - type: Transform
-      parent: 8004
-    - type: InstantAction
-      container: 8004
-- proto: ActionToggleMagboots
-  entities:
-  - uid: 7134
-    components:
-    - type: Transform
-      parent: 5266
-    - type: InstantAction
-      container: 5266
 - proto: AirAlarm
   entities:
   - uid: 8767
@@ -39787,14 +39725,6 @@ entities:
     - type: Transform
       pos: 7.2908797,-17.258987
       parent: 2
-    - type: Magboots
-      toggleActionEntity: 7134
-    - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 7134
   - uid: 5267
     components:
     - type: Transform
@@ -53608,39 +53538,11 @@ entities:
     - type: Transform
       pos: -14.279882,-61.475616
       parent: 2
-    - type: HandheldLight
-      toggleActionEntity: 5847
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 5847
-    - type: ActionsContainer
   - uid: 5848
     components:
     - type: Transform
       pos: -14.576757,-61.1629
       parent: 2
-    - type: HandheldLight
-      toggleActionEntity: 5849
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 5849
-    - type: ActionsContainer
   - uid: 7183
     components:
     - type: Transform
@@ -53661,20 +53563,6 @@ entities:
     - type: Transform
       pos: 29.462065,-76.441826
       parent: 2
-    - type: HandheldLight
-      toggleActionEntity: 8005
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 8005
-    - type: ActionsContainer
   - uid: 15887
     components:
     - type: Transform
@@ -78402,33 +78290,11 @@ entities:
     - type: Transform
       pos: 7.630899,-17.596544
       parent: 2
-    - type: GasTank
-      toggleActionEntity: 7333
-    - type: Jetpack
-      toggleActionEntity: 7315
-    - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 7315
-          - 7333
   - uid: 5265
     components:
     - type: Transform
       pos: 7.3846297,-17.446617
       parent: 2
-    - type: GasTank
-      toggleActionEntity: 8006
-    - type: Jetpack
-      toggleActionEntity: 7882
-    - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 7882
-          - 8006
   - uid: 17540
     components:
     - type: Transform
@@ -78579,20 +78445,6 @@ entities:
     - type: Transform
       pos: -21.62836,-47.22827
       parent: 2
-    - type: HandheldLight
-      toggleActionEntity: 5672
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 5672
-    - type: ActionsContainer
 - proto: LargeBeaker
   entities:
   - uid: 7055
