@@ -1,11 +1,19 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
+<<<<<<< HEAD
 <<<<<<<< HEAD:Resources/Textures/_Umbra/Clothing/OuterClothing/Hardsuits/damaged_eris_hardsuit.rsi/meta.json
   "copyright": "Suit taken from tg station at https://github.com/tgstation/tgstation/commit/6b3f58d7de4d4e374282819a7001eaa9bde1676d., vox state by Flareguy, modified by AjexRose",
 ========
   "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commits/fc5cfab0818db326a623eee84cd45e0c601b0b34, modified by Github KittenColony / Discord kittencolony (297865728374210561)",
 >>>>>>>> master:Resources/Textures/_CD/Clothing/Uniforms/Jumpskirt/ce.rsi/meta.json
+=======
+<<<<<<<< HEAD:Resources/Textures/_CD/Clothing/Uniforms/Jumpskirt/ce.rsi/meta.json
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commits/fc5cfab0818db326a623eee84cd45e0c601b0b34, modified by Github KittenColony / Discord kittencolony (297865728374210561)",
+========
+  "copyright": "Suit taken from tg station at https://github.com/tgstation/tgstation/commit/6b3f58d7de4d4e374282819a7001eaa9bde1676d., vox state by Flareguy, modified by AjexRose",
+>>>>>>>> 7ab0cd7324e9dc89359e8637dde68a6ffca0aa01:Resources/Textures/_Umbra/Clothing/OuterClothing/Hardsuits/damaged_eris_hardsuit.rsi/meta.json
+>>>>>>> 7ab0cd7324e9dc89359e8637dde68a6ffca0aa01
   "size": {
     "x": 32,
     "y": 32
@@ -19,13 +27,22 @@
       "name": "icon"
     },
     {
+<<<<<<< HEAD
 <<<<<<<< HEAD:Resources/Textures/_Umbra/Clothing/OuterClothing/Hardsuits/damaged_eris_hardsuit.rsi/meta.json
 ========
+=======
+<<<<<<<< HEAD:Resources/Textures/_CD/Clothing/Uniforms/Jumpskirt/ce.rsi/meta.json
+>>>>>>> 7ab0cd7324e9dc89359e8637dde68a6ffca0aa01
       "name": "equipped-INNERCLOTHING",
       "directions": 4
     },
     {
+<<<<<<< HEAD
 >>>>>>>> master:Resources/Textures/_CD/Clothing/Uniforms/Jumpskirt/ce.rsi/meta.json
+=======
+========
+>>>>>>>> 7ab0cd7324e9dc89359e8637dde68a6ffca0aa01:Resources/Textures/_Umbra/Clothing/OuterClothing/Hardsuits/damaged_eris_hardsuit.rsi/meta.json
+>>>>>>> 7ab0cd7324e9dc89359e8637dde68a6ffca0aa01
       "name": "inhand-left",
       "directions": 4
     },
