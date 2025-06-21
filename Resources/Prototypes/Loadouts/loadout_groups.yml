@@ -15,6 +15,7 @@
   - PlushieDiona # CD
   - PlushieHuman # CD
   - PlushieMoth # CD
+  - PlushieAvali # Umbra
   - PlushieSharkBlue # CD
   - PlushieSharkPink # CD
   - PlushieSharkGrey # CD: Putting these up here so they show up along the existing plushies.
@@ -94,6 +95,7 @@
   - EmergencyNitrogen
   - EmergencyOxygen
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyWaterVapor # DeltaV
 
 # nitrogen or oxygen tank, depending on what your species needs
 - type: loadoutGroup
@@ -103,6 +105,7 @@
   loadouts:
   - LoadoutSpeciesEVANitrogen
   - LoadoutSpeciesEVAOxygen
+  - LoadoutSpeciesEVAWaterVapor # DeltaV
 
 # vox get a nitrogen tank, other species get nothing
 - type: loadoutGroup
@@ -119,6 +122,7 @@
   loadouts:
   - LoadoutSpeciesPocketDoubleNitrogen
   - LoadoutSpeciesPocketDoubleOxygen
+  - LoadoutSpeciesPocketDoubleWaterVapor # DeltaV
 
 # Command
 - type: loadoutGroup
@@ -209,6 +213,7 @@
   - GreyJumpskirt
   - AncientJumpsuit
   - RainbowJumpsuit
+  - RainbowJumpskirt
 
 - type: loadoutGroup
   id: PassengerFace
@@ -501,6 +506,7 @@
   - EmergencyNitrogenClown
   - EmergencyOxygenClown
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyWaterVaporClown # DeltaV
 
 - type: loadoutGroup
   id: MimeHead
@@ -556,7 +562,9 @@
   loadouts:
   - EmergencyNitrogenMime
   - EmergencyOxygenMime
+  - EmergencySpeciesMothMime
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyWaterVaporMime # DeltaV
 
 - type: loadoutGroup
   id: MusicianJumpsuit
@@ -734,6 +742,9 @@
   loadouts:
   - ChiefEngineerJumpsuit
   - ChiefEngineerJumpskirt
+  - ChiefEngineerJumpsuitModern # CD Drip 4
+  - ChiefEngineerJumpskirtModern # CD Drip 4
+  - ChiefEngineerJumpsuitFormal # CD Drip 4
   - ChiefEngineerTurtleneck
   - ChiefEngineerTurtleneckSkirt
 
@@ -751,6 +762,7 @@
   minLimit: 0
   loadouts:
   - ChiefEngineerWintercoat
+  - StationEngineerJacket # CD
 
 - type: loadoutGroup
   id: ChiefEngineerShoes
@@ -838,6 +850,7 @@
   minLimit: 0
   loadouts:
   - AtmosphericTechnicianWintercoat
+  - AtmosphericTechnicianOveralls # CD
 
 - type: loadoutGroup
   id: AtmosphericTechnicianBackpack
@@ -863,6 +876,7 @@
   - EmergencyNitrogenExtended
   - EmergencyOxygenExtended
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyWaterVaporExtended # DeltaV
 
 # Science
 - type: loadoutGroup
@@ -1166,6 +1180,7 @@
   - EmergencyNitrogenSecurity
   - EmergencyOxygenSecurity
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyWaterVaporSecurity # DeltaV
 
 - type: loadoutGroup
   id: SecurityStar
@@ -1403,6 +1418,7 @@
   - EmergencyNitrogenMedical
   - EmergencyOxygenMedical
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyWaterVaporMedical # DeltaV
 
 # Wildcards
 - type: loadoutGroup
@@ -1446,6 +1462,7 @@
   - EmergencyNitrogenSyndicate
   - EmergencyOxygenSyndicate
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyWaterVaporSyndicate # DeltaV
 
 - type: loadoutGroup
   id: GroupSpeciesBreathTool

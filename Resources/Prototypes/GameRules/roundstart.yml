@@ -368,8 +368,8 @@
     children:
       - !type:NestedSelector
         tableId: BasicCalmEventsTable
-      # - !type:NestedSelector # Umbra: Disable.
-      #   tableId: BasicAntagEventsTable
+      - !type:NestedSelector
+        tableId: BasicAntagEventsTable
       - !type:NestedSelector
         tableId: CargoGiftsTable
       - !type:NestedSelector
@@ -449,3 +449,11 @@
       prob: 0.90
     - id: SolarPanelDamageVariationPass
     - id: SolarPanelEmptyVariationPass
+    - id: BasicDecalDirtVariationPass
+    - id: BasicDecalGraffitiVariationPass
+    - id: BasicDecalBrunsVariationPass
+      prob: 0.50
+      orGroup: monospaceDecals
+    - id: BasicDecalDirtMonospaceVariationPass
+      prob: 0.50
+      orGroup: monospaceDecals

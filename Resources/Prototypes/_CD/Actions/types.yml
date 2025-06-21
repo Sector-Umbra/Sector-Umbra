@@ -5,9 +5,10 @@
   description: action-description-toggle-wagging
   categories: [ HideSpawnMenu ]
   components:
-    - type: InstantAction
+    - type: Action
       icon: { sprite: _CD/Mobs/Customization/Vulpkanin/tail_markings.rsi, state: tail-wag-icon }
       iconOn: { sprite: _CD/Mobs/Customization/Vulpkanin/tail_markings.rsi, state: tail-wag-icon }
       itemIconStyle: NoItem
       useDelay: 1 # Prevents Emote Spam
+    - type: InstantAction
       event: !type:ToggleActionEvent

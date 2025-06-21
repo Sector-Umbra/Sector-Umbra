@@ -1,0 +1,7 @@
+- type: metabolizerType
+  id: Feroxi
+  name: metabolizer-type-feroxi
+
+- type: metabolizerType
+  id: FeroxiDehydrated
+  name: metabolizer-type-feroxi-dehydrated
