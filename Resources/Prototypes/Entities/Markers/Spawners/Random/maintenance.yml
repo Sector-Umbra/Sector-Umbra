@@ -207,6 +207,10 @@
         children:
         - id: NitrogenTankFilled
         - id: DoubleEmergencyNitrogenTankFilled
+      - !type:GroupSelector # DeltaV - Random water vapor tanks spawn too
+        children:
+        - id: WaterVaporTankFilled
+        - id: DoubleEmergencyWaterVaporTankFilled
       - id: EmergencyFunnyOxygenTankFilled
         weight: 0.5
       - !type:GroupSelector
@@ -298,6 +302,7 @@
       - id: PetCarrier
       - id: DrinkMopwataBottleRandom
       - id: SpectralLocator
+      - id: WehpetInstrument  # CD: Rare maints loot can only be in upstream code, so that the weh-pet can actually spawn in maints lockers.
       - id: LidSalami
         weight: 0.05
 

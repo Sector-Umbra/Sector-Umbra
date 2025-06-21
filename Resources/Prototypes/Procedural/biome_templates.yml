@@ -480,8 +480,7 @@
     - !type:BiomeEntityLayer
       allowedTiles:
       - FloorChromite
-      # Umbra
-      threshold: 0.5
+      threshold: 0.2
       noise:
         seed: 3
         frequency: 0.1
@@ -490,8 +489,7 @@
         lacunarity: 2
         gain: 0.4
       entities:
-      # Umbra
-      - ShadowKudzuWeak
+      - FloorChromiteChasm
     - !type:BiomeDummyLayer
       id: Loot
     # Fill chromite
