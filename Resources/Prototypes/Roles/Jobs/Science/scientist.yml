@@ -3,6 +3,10 @@
   name: job-name-scientist
   description: job-description-scientist
   playTimeTracker: JobScientist
+  #requirements: # Umbra: Use Umbra Roletimers over Wizden.
+  #  - !type:DepartmentTimeRequirement
+  #    department: Science
+  #    time: 9000 #2.5 hrs
   startingGear: ScientistGear
   icon: "JobIconScientist"
   supervisors: job-supervisors-rd
@@ -17,3 +21,14 @@
   #storage:
     #back:
     #- Stuff
+
+- type: chameleonOutfit
+  id: ScientistChameleonOutfit
+  job: Scientist
+  equipment:
+    head: ClothingHeadBandSkull
+    eyes: ClothingEyesGlassesCheapSunglasses
+    mask: ClothingMaskGas
+    neck: ClothingNeckTieSci
+    outerClothing: ClothingOuterCoatRnd
+    gloves: ClothingHandsGlovesLatex

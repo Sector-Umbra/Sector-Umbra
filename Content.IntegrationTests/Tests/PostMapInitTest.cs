@@ -40,7 +40,7 @@ namespace Content.IntegrationTests.Tests
 
         private static readonly string[] Grids =
         {
-            "/Maps/centcomm.yml",
+            "/Maps/_Umbra/centcomm.yml",
             AdminTestArenaSystem.ArenaMapPath
         };
 
@@ -59,9 +59,7 @@ namespace Content.IntegrationTests.Tests
             "/Maps/cluster.yml", // Umbra: Contains mime's rubber stamp.
             "/Maps/Misc/terminal.yml", // Umbra: Contains centcomm rubber stamp.
             "/Maps/_Umbra/xeno.yml", // Umbra: Contains PTK-800
-            "/Maps/_Umbra/clusterprime.yml", // Umbra: Contains mime's rubber stamp.
-            "/Maps/_Umbra/Dungeon/geneticore.yml", // Umbra: Contains janitorial bomb suit closet
-            "/Maps/_Umbra/centcomm.yml", // Umbra
+            "/Maps/_Umbra/centcomm.yml" // Umbra
         };
 
         private static readonly string[] GameMaps =
@@ -71,18 +69,16 @@ namespace Content.IntegrationTests.Tests
             "Fland",
             "Meta",
             "Packed",
-            "Cluster",
             "Omega",
             "Bagel",
             "CentComm",
             "Box",
-            "Saltern",
             "Core",
             "Marathon",
             "MeteorArena",
-            "Saltern",
+            "Saltern", // Umbra: Derotated Map, but must remain for tests.
             "Reach",
-            "Train",
+            // "Train", // Umbra: Derotated Map.
             "Oasis",
             "Gate",
             "Amber",
@@ -91,16 +87,17 @@ namespace Content.IntegrationTests.Tests
             "Elkridge",
             "Convex",
             "Relic",
+            "dm01-entryway",
+            "Prime", // Harmony
             "Xeno", // Umbra
-            "Iris", // Umbra
-			"ClusterPrime", //Umbra
+            "Iris" // Umbra
         };
 
         // UMBRA: We need to be able to mark non-upstream maps as not tested.
         private static readonly string[] UntestedGameMaps =
         {
             "Ferrous",
-            "Aspid"
+            // "Aspid" // Umbra: Derotate Aspid
         };
 
         /// <summary>

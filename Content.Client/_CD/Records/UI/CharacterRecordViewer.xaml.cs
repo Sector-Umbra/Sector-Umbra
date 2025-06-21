@@ -27,6 +27,7 @@ public sealed partial class CharacterRecordViewer : FancyWindow
     public event Action<StationRecordFilterType, string?>? OnFiltersChanged;
 
     private bool _isPopulating;
+    private bool _filtersChanged;
     private StationRecordFilterType _filterType;
 
     private RecordConsoleType? _type;
@@ -147,11 +148,13 @@ public sealed partial class CharacterRecordViewer : FancyWindow
         RecordEntryViewType.AddItem(Loc.GetString("department-Security"));
         RecordEntryViewType.AddItem(Loc.GetString("department-Medical"));
         RecordEntryViewType.AddItem(Loc.GetString("humanoid-profile-editor-cd-records-employment"));
+        RecordEntryViewType.AddItem(Loc.GetString("humanoid-profile-editor-cd-records-admin"));
         RecordEntryViewType.OnItemSelected += args =>
         {
             if (args.Id == RecordEntryViewType.SelectedId)
                 return;
             RecordEntryViewType.SelectId(args.Id);
+            _filtersChanged = true;
             // This is a hack to get the server to send us another packet with the new entries
             OnFiltersChanged?.Invoke(_filterType, RecordFiltersValue.Text);
         };
@@ -308,8 +311,9 @@ public sealed partial class CharacterRecordViewer : FancyWindow
         RecordContainerStatus.Visible = false;
         RecordContainer.Visible = true;
 
-        // Do not needlessly reload the record if not needed. This is mainly done to prevent a bug in the admin record viewer.
-        if (state.SelectedIndex == _openRecordKey)
+        // Do not needlessly reload the record if not needed. This is mainly done to prevent a bug in the admin record viewer
+        // AND the admin record filter.
+        if (state.SelectedIndex == _openRecordKey && _filtersChanged == false)
             return;
         _openRecordKey = state.SelectedIndex;
 
@@ -352,12 +356,19 @@ public sealed partial class CharacterRecordViewer : FancyWindow
                 {
                 case RecordConsoleType.Employment:
                     SetEntries(cr.EmploymentEntries, true);
+                    _filtersChanged = false;
                     break;
                 case RecordConsoleType.Medical:
                     SetEntries(cr.MedicalEntries, true);
+                    _filtersChanged = false;
                     break;
                 case RecordConsoleType.Security:
                     SetEntries(cr.SecurityEntries, true);
+                    _filtersChanged = false;
+                    break;
+                case RecordConsoleType.Admin:
+                    SetEntries(cr.AdminEntries, true);
+                    _filtersChanged = false;
                     break;
                 }
                 break;

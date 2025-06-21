@@ -37,7 +37,7 @@
     - id: ParadoxCloneSpawn
     - id: RevenantSpawn
     - id: SleeperAgents
-    - id: ZombieOutbreak
+    # - id: ZombieOutbreak # Umbra Disabled.
     - id: LoneOpsSpawn
     - id: DerelictCyborgSpawn
     - id: WizardSpawn
@@ -533,8 +533,8 @@
     weight: 5.5
     minimumPlayers: 20
     reoccurrenceDelay: 30 # Umbra
-    duration: 1
     roundEndingThreat: true # Umbra
+    duration: null # LoneOpsSpawn needs an infinite duration so that it inherits the NukeOpsRule things of an actually appropriate end scrreen (not always "Neutral outcome!") and... ending the game if the station is nuked.
   - type: RuleGrids
   - type: LoadMapRule
     gridPath: /Maps/Shuttles/ShuttleEvent/striker.yml

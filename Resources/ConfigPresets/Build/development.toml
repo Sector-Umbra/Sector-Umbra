@@ -37,3 +37,9 @@ preload_grids = false
 
 [admin]
 see_own_notes = true
+
+[ic]
+# Umbra, random characters to false.
+random_characters = false
+random_species_weights = ""
+ssd_sleep_time = 3600

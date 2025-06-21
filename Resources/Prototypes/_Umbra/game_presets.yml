@@ -1,0 +1,37 @@
+﻿- type: gamePreset
+  id: UmbraScheduled
+  name: secret-title
+  showInVote: false
+  description: secret-description
+  rules:
+    - BasicStationEventSchedulerCalm
+    - MeteorSwarmScheduler
+    - SpaceTrafficControlEventScheduler
+    - BasicRoundstartVariation
+
+- type: gamePreset
+  id: UmbraUnscheduled
+  name: umbra-unscheduled-title
+  showInVote: true
+  description: umbra-unscheduled-description
+  rules:
+  - BasicStationEventScheduler
+  - MeteorSwarmScheduler
+  - SpaceTrafficControlEventScheduler
+  - BasicRoundstartVariation
+
+- type: gamePreset
+  id: UmbraUnscheduledAntags
+  name: umbra-unscheduled-antags-title
+  showInVote: true
+  description: umbra-unscheduled-antags-description
+  rules:
+    - Secret
+
+# Used in the game.fallbackpreset cvar in case our presets don't load properly.
+- type: gamePreset
+  id: UmbraEmptyPreset
+  name: umbra-fallback-title
+  showInVote: false
+  description: umbra-fallback-description
+  rules: []

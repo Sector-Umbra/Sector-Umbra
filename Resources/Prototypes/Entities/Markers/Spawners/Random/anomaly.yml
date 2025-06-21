@@ -32,6 +32,7 @@
 
 - type: entity
   id: RandomRockAnomalySpawner
+  name: random rock anomaly spawner
   parent: MarkerBase
   components:
   - type: Sprite
@@ -47,11 +48,13 @@
     - AnomalyRockGold
     - AnomalyRockQuartz
     - AnomalyRockUranium
+    - AnomalyRockBananium
     chance: 1
     offset: 0.15
 
 - type: entity
   id: RandomAnomalyInjectorSpawner
+  name: random anomaly injector spawner
   parent: MarkerBase
   components:
   - type: Sprite

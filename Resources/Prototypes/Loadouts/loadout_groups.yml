@@ -15,6 +15,7 @@
   - PlushieDiona # CD
   - PlushieHuman # CD
   - PlushieMoth # CD
+  - PlushieAvali # Umbra
   - PlushieSharkBlue # CD
   - PlushieSharkPink # CD
   - PlushieSharkGrey # CD: Putting these up here so they show up along the existing plushies.
@@ -37,8 +38,10 @@
   - ClothingNeckLesbianPin
   - ClothingNeckNonBinaryPin
   - ClothingNeckPansexualPin
+  - ClothingNeckPluralPin
   - ClothingNeckOmnisexualPin
   - ClothingNeckGenderqueerPin
+  - ClothingNeckGenderfluidPin
   - ClothingNeckTransPin
   - ClothingNeckAutismPin
   - ClothingNeckGoldAutismPin
@@ -94,6 +97,7 @@
   - EmergencyOxygen
   - EmergencyPlasma # Umbra
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyWaterVapor # DeltaV
   - LoadoutSpeciesPlasmamanPlasma # Umbra
 
 # nitrogen or oxygen tank, depending on what your species needs
@@ -104,6 +108,7 @@
   loadouts:
   - LoadoutSpeciesEVANitrogen
   - LoadoutSpeciesEVAOxygen
+  - LoadoutSpeciesEVAWaterVapor # DeltaV
 
 # vox get a nitrogen tank, other species get nothing
 - type: loadoutGroup
@@ -120,6 +125,7 @@
   loadouts:
   - LoadoutSpeciesPocketDoubleNitrogen
   - LoadoutSpeciesPocketDoubleOxygen
+  - LoadoutSpeciesPocketDoubleWaterVapor # DeltaV
 
 # Command
 - type: loadoutGroup
@@ -210,6 +216,7 @@
   - GreyJumpskirt
   - AncientJumpsuit
   - RainbowJumpsuit
+  - RainbowJumpskirt
 
 - type: loadoutGroup
   id: PassengerFace
@@ -503,6 +510,7 @@
   - EmergencyOxygenClown
   - EmergencyPlasma # Umbra
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyWaterVaporClown # DeltaV
   - LoadoutSpeciesPlasmamanPlasma # Umbra
 
 - type: loadoutGroup
@@ -559,8 +567,10 @@
   loadouts:
   - EmergencyNitrogenMime
   - EmergencyOxygenMime
-  - EmergencyPlasma # Umbra
+  - EmergencySpeciesMothMime
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyWaterVaporMime # DeltaV
+  - EmergencyPlasma # Umbra
   - LoadoutSpeciesPlasmamanPlasma # Umbra
 
 - type: loadoutGroup
@@ -739,6 +749,9 @@
   loadouts:
   - ChiefEngineerJumpsuit
   - ChiefEngineerJumpskirt
+  - ChiefEngineerJumpsuitModern # CD Drip 4
+  - ChiefEngineerJumpskirtModern # CD Drip 4
+  - ChiefEngineerJumpsuitFormal # CD Drip 4
   - ChiefEngineerTurtleneck
   - ChiefEngineerTurtleneckSkirt
 
@@ -756,6 +769,7 @@
   minLimit: 0
   loadouts:
   - ChiefEngineerWintercoat
+  - StationEngineerJacket # CD
 
 - type: loadoutGroup
   id: ChiefEngineerShoes
@@ -834,6 +848,7 @@
   loadouts:
   - AtmosphericTechnicianJumpsuit
   - AtmosphericTechnicianJumpskirt
+  - AtmosphericTechnicianHazardsuit # CD
   - AtmosphericTechnicianJumpsuitCasual
 
 - type: loadoutGroup
@@ -842,6 +857,7 @@
   minLimit: 0
   loadouts:
   - AtmosphericTechnicianWintercoat
+  - AtmosphericTechnicianOveralls # CD
 
 - type: loadoutGroup
   id: AtmosphericTechnicianBackpack
@@ -868,6 +884,7 @@
   - EmergencyOxygenExtended
   - EmergencyPlasma # Umbra
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyWaterVaporExtended # DeltaV
   - LoadoutSpeciesPlasmamanPlasma # Umbra
 
 # Science
@@ -1173,6 +1190,7 @@
   - EmergencyOxygenSecurity
   - EmergencyPlasmaSecurity # Umbra
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyWaterVaporSecurity # DeltaV
   - LoadoutSpeciesPlasmamanPlasma # Umbra
 
 - type: loadoutGroup
@@ -1386,9 +1404,21 @@
   name: loadout-group-paramedic-shoes
   loadouts:
   - BlueShoes
+  - WhiteShoes
   - MedicalWinterBoots
   # CD: ETU Loadout
   - ShoesColorSlate
+
+- type: loadoutGroup
+  id: MedicalEyewear
+  name: loadout-group-medical-glasses
+  minLimit: 0
+  loadouts:
+  - MedicalHud
+  - MedicalEyePatchHud
+  - Glasses
+  - GlassesJamjar
+  - GlassesJensen
 
 - type: loadoutGroup
   id: SurvivalMedical
@@ -1400,6 +1430,7 @@
   - EmergencyOxygenMedical
   - EmergencyPlasmaMedical # Umbra
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyWaterVaporMedical # DeltaV
   - LoadoutSpeciesPlasmamanPlasma # Umbra
 
 # Wildcards
@@ -1445,6 +1476,7 @@
   - EmergencyOxygenSyndicate
   - EmergencyPlasma # Umbra
   - LoadoutSpeciesVoxNitrogen
+  - EmergencyWaterVaporSyndicate # DeltaV
   - LoadoutSpeciesPlasmamanPlasma # Umbra
 
 - type: loadoutGroup

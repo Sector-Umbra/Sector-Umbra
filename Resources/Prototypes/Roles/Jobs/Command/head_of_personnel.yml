@@ -4,8 +4,23 @@
   description: job-description-hop
   playTimeTracker: JobHeadOfPersonnel
   requirements:
-    - !type:OverallPlaytimeRequirement
+    - !type:OverallPlaytimeRequirement # Umbra: Use Umbra Roletimers over Wizden.
       time: 21600 # 6 hrs
+    #- !type:DepartmentTimeRequirement
+    #  department: Engineering
+    #  time: 9000 # 2.5 hours
+    #- !type:DepartmentTimeRequirement
+    #  department: Medical
+    #  time: 9000 # 2.5 hours
+    #- !type:DepartmentTimeRequirement
+    #  department: Science
+    #  time: 9000 # 2.5 hrs
+    #- !type:DepartmentTimeRequirement
+    #  department: Security
+    #  time: 9000 # 2.5 hrs
+    #- !type:DepartmentTimeRequirement
+    #  department: Command
+    #  time: 9000 # 2.5 hours
   weight: 20
   startingGear: HoPGear
   icon: "JobIconHeadOfPersonnel"
@@ -56,3 +71,15 @@
   storage:
     back:
     - Flash
+
+- type: chameleonOutfit
+  id: HeadOfPersonnelChameleonOutfit
+  job: HeadOfPersonnel
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHatHopcap
+    eyes: ClothingEyesHudCommand
+    mask: ClothingMaskNeckGaiterRed
+    neck: ClothingNeckCloakHop
+    outerClothing: ClothingOuterWinterHoP
+

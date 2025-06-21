@@ -4,8 +4,14 @@
   description: job-description-warden
   playTimeTracker: JobWarden
   requirements:
-    - !type:OverallPlaytimeRequirement
+    - !type:OverallPlaytimeRequirement # Umbra: Use Umbra Roletimers over Wizden.
       time: 10800 # 3 hr
+    #- !type:RoleTimeRequirement
+    #  role: JobSecurityOfficer
+    #  time: 18000 #5 hrs
+    #- !type:DepartmentTimeRequirement
+    #  department: Security
+    #  time: 36000 #10 hrs
   weight: 5
   startingGear: WardenGear
   icon: "JobIconWarden"
@@ -35,3 +41,17 @@
     back:
     - Flash
     - MagazinePistol
+
+- type: chameleonOutfit
+  id: WardenChameleonOutfit
+  job: Warden
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHatWarden
+    mask: ClothingMaskGasSecurity
+    outerClothing: ClothingOuterCoatWarden
+    jumpsuit: ClothingUniformJumpsuitWarden
+    neck: Dinkystar
+    belt: ClothingBeltSecurity
+    gloves: ClothingHandsGlovesCombat
+    shoes: ClothingShoesBootsJack

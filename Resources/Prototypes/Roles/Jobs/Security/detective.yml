@@ -3,6 +3,10 @@
   name: job-name-detective
   description: job-description-detective
   playTimeTracker: JobDetective
+  #requirements: # Umbra: Use Umbra Roletimers over Wizden.
+  #- !type:RoleTimeRequirement
+  #  role: JobSecurityOfficer
+  #  time: 18000 #5 hrs
   startingGear: DetectiveGear
   icon: "JobIconDetective"
   supervisors: job-supervisors-hos
@@ -31,3 +35,13 @@
     - Flash
     - ForensicPad
     - ForensicScanner
+
+- type: chameleonOutfit
+  id: DetectiveChameleonOutfit
+  job: Detective
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHatFedoraBrown
+    mask: ClothingMaskGasSecurity
+    neck: ClothingNeckTieDet
+    gloves: ClothingHandsGlovesForensic
