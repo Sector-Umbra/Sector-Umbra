@@ -76,6 +76,9 @@
   - type: WallMount
     arc: 175
   - type: Storage
+    whitelist:
+      tags:
+      - ArcadiaHarddisk
     grid:
     - 0,0,3,1
     maxItemSize: Small
@@ -83,9 +86,6 @@
     interfaces:
       enum.StorageUiKey.Key:
         type: StorageBoundUserInterface
-    whitelist:
-      tags:
-      - ArcadiaHarddisk
   - type: Item
     size: Ginormous
 

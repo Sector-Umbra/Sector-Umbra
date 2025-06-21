@@ -33,11 +33,3 @@
         base:
           True: { state: closed }
           False: { state: open }
-  - type: StasisBed
-    baseMultiplier: 10.0
-  - type: AntiRotOnBuckle
-  - type: HealOnBuckle
-    damage:
-      types:
-        Poison: -0.001
-        Blunt: -0.001

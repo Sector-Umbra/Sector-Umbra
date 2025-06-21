@@ -15,8 +15,10 @@
     radius: 10
     softness: 1
   - type: RotatingLight
-  - type: UseDelay
-    delay: 1
+#  - type: UseDelay
+#    delay: 1
+#    bodyType: Static
+  - type: Physics
     bodyType: Static
   - type: Transform
     noRot: true

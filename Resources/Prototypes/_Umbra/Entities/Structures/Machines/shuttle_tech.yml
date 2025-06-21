@@ -12,8 +12,10 @@
     radius: 1.5
     energy: 1.6
     color: "#990000"
-  - type: UseDelay
-    delay: 1
+#  - type: UseDelay
+#    delay: 1
+#    bodyType: Static
+  - type: Physics
     bodyType: Static
   - type: Transform
     noRot: true

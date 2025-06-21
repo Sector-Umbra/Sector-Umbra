@@ -1,6 +1,6 @@
 - type: entity
   parent: BaseItem
-  id: AmenoCrystal
+  id: AnemoCrystal
   suffix: Anemo
   name: mysterious crystal
   description: A crystal of unknown origin or power. You can feel a nice breeze when holding this, even in space.
