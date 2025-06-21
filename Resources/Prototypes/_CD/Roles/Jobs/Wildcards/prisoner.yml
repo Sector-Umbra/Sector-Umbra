@@ -19,3 +19,7 @@
     shoes: ClothingShoesColorBlack
     id: PrisonerPDA
     ears: ClothingHeadsetGrey
+
+- type: chameleonOutfit
+  id: PrisonerChameleonOutfit
+  job: Prisoner

@@ -40,7 +40,7 @@ namespace Content.IntegrationTests.Tests
 
         private static readonly string[] Grids =
         {
-            "/Maps/centcomm.yml",
+            "/Maps/_Umbra/centcomm.yml",
             AdminTestArenaSystem.ArenaMapPath
         };
 
@@ -58,10 +58,7 @@ namespace Content.IntegrationTests.Tests
             // Umbra Maps
             "/Maps/cluster.yml", // Umbra: Contains mime's rubber stamp.
             "/Maps/Misc/terminal.yml", // Umbra: Contains centcomm rubber stamp.
-            "/Maps/_Umbra/xeno.yml", // Umbra: Contains PTK-800
-            "/Maps/_Umbra/clusterprime.yml", // Umbra: Contains mime's rubber stamp.
-            "/Maps/_Umbra/Dungeon/geneticore.yml", // Umbra: Contains janitorial bomb suit closet
-            "/Maps/_Umbra/centcomm.yml", // Umbra
+            "/Maps/_Umbra/centcomm.yml" // Umbra
         };
 
         private static readonly string[] GameMaps =
@@ -90,8 +87,8 @@ namespace Content.IntegrationTests.Tests
             "Convex",
             "Relic",
             "dm01-entryway",
-            "Iris", // Umbra
-            "Prime", //Umbra
+            "Prime", // Harmony
+            "Iris" // Umbra
         };
 
         // UMBRA: We need to be able to mark non-upstream maps as not tested.
