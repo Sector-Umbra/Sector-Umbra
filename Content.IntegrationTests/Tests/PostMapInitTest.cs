@@ -58,7 +58,6 @@ namespace Content.IntegrationTests.Tests
             // Umbra Maps
             "/Maps/cluster.yml", // Umbra: Contains mime's rubber stamp.
             "/Maps/Misc/terminal.yml", // Umbra: Contains centcomm rubber stamp.
-            "/Maps/_Umbra/xeno.yml", // Umbra: Contains PTK-800
             "/Maps/_Umbra/centcomm.yml" // Umbra
         };
 
@@ -89,7 +88,6 @@ namespace Content.IntegrationTests.Tests
             "Relic",
             "dm01-entryway",
             "Prime", // Harmony
-            "Xeno", // Umbra
             "Iris" // Umbra
         };
 
