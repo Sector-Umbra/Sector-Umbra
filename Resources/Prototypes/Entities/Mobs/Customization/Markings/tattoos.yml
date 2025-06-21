@@ -114,7 +114,7 @@
   id: TattooEyeRight
   bodyPart: Eyes
   markingCategory: Head
-  speciesRestriction: [Human, SlimePerson, Reptilian, Dwarf, Feroxi] # Delta V - Feroxi
+  speciesRestriction: [Human, SlimePerson, Reptilian, Dwarf, Rodentia, Vulpkanin, Feroxi] # CD: Add Vulps. # Delta V - Feroxi
   coloring:
     default:
       type:
@@ -128,7 +128,7 @@
   id: TattooEyeLeft
   bodyPart: Eyes
   markingCategory: Head
-  speciesRestriction: [Human, SlimePerson, Reptilian, Dwarf, Feroxi] # Delta V - Feroxi
+  speciesRestriction: [Human, SlimePerson, Reptilian, Dwarf, Rodentia, Vulpkanin, Feroxi] # CD: Add Vulps. # Delta V - Feroxi
   coloring:
     default:
       type:
