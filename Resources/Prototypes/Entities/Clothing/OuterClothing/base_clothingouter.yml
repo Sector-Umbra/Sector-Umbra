@@ -146,6 +146,8 @@
       flatReductions:
         Heat: 10 # the average lightbulb only does around four damage!
     slots: OUTERCLOTHING
+  - type: SpontaneousCombustionProtection # Umbra
+    protectionPercent: 75 # Umbra
 
 - type: entity
   abstract: true
@@ -175,6 +177,8 @@
       flatReductions:
         Heat: 10 # the average lightbulb only does around four damage!
     slots: OUTERCLOTHING
+  - type: SpontaneousCombustionProtection # Umbra
+    protectionPercent: 75 # Umbra
 
 - type: entity
   parent: ClothingOuterBase

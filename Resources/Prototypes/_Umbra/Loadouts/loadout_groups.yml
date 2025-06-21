@@ -94,3 +94,19 @@
   - PersonalItemLutlaRing
   - PersonalItemJaytauBook
   - PersonalItemMindokDrillHat
+
+# Plasmamen
+- type: loadoutEffectGroup
+  id: PlasmaBreather
+  effects:
+  - !type:SpeciesLoadoutEffect
+    species:
+    - Plasmaman
+
+# Plasmamen
+- type: loadoutEffectGroup
+  id: EffectSpeciesPlasmaman
+  effects:
+  - !type:SpeciesLoadoutEffect
+    species:
+    - Plasmaman
