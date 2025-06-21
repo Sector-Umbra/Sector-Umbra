@@ -29,6 +29,8 @@
     tags:
     - Kangaroo
     - WhitelistChameleon
+  - type: SpontaneousCombustionProtection # Umbra
+    protectionPercent: 15
 
 - type: entity
   parent: ClothingHandsGlovesBoxingRed
