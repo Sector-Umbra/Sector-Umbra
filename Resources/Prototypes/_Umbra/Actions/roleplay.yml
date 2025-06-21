@@ -9,5 +9,6 @@
     icon: { sprite: _Umbra/Interface/Actions/set-pose.rsi, state: eyeopen }
     itemIconStyle: NoItem
     useDelay: 3
+    checkCanInteract: false
   - type: InstantAction
     event: !type:SetExamineActionEvent
