@@ -5,8 +5,9 @@
   description: set-examine-dialog
   categories: [ HideSpawnMenu ]
   components:
-  - type: InstantAction
+  - type: Action
     icon: { sprite: _Umbra/Interface/Actions/set-pose.rsi, state: eyeopen }
     itemIconStyle: NoItem
     useDelay: 3
+  - type: InstantAction
     event: !type:SetExamineActionEvent
