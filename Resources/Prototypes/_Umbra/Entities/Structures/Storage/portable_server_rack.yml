@@ -82,6 +82,9 @@
     grid:
     - 0,0,3,1
     maxItemSize: Small
+  - type: ContainerContainer
+    containers:
+      item-container: !type:Container
   - type: UserInterface
     interfaces:
       enum.StorageUiKey.Key:

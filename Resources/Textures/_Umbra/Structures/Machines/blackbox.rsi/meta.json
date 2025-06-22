@@ -17,7 +17,7 @@
       "name": "blackbox_empty"
     },
     {
-      "name": "blackbox"
+      "name": "blackbox_blackboxdata"
     }
   ]
 }

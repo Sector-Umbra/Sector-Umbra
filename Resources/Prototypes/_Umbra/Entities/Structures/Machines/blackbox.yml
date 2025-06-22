@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseStructureDynamic
   id: BlackboxRecorder
-  name: damaged black box recorder type X4
+  name: black box recorder type X4
   description: A machine that used to track shuttle data in the event of a catastrophe
   components:
   - type: Appearance
@@ -15,6 +15,8 @@
     radius: 10
     softness: 1
   - type: RotatingLight
+  - type: Physics
+    bodyType: Static
   - type: Transform
     noRot: true
     anchored: True
@@ -72,6 +74,25 @@
         Blunt: 5
     soundHit:
       collection: MetalThud
+  - type: ItemSlots
+    slots:
+      blackbox_data_slot:
+        name: blackbox-slot-component-slot-name-blackboxdata
+        whitelist:
+          tags:
+          - BlackboxData
+  - type: ItemMapper
+    mapLayers:
+      blackbox_blackboxdata:
+        whitelist:
+          tags:
+          - BlackboxData
+    sprite: _Umbra/Structures/Machines/blackbox.rsi
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: [ ]
+      blackbox_data_slot: !type:ContainerSlot {}
 
 - type: entity
   parent: BoxBase
@@ -91,6 +112,9 @@
     whitelist:
       tags:
       - Document
+  - type: Tag
+    tags:
+    - BlackboxData
 
 - type: entity
   parent: BlackboxDataContainer
@@ -104,3 +128,6 @@
     - id: PaperWritten554Astronav
     - id: PaperWritten554Manifest
     - id: PaperWritten554HealthLogs
+
+- type: Tag
+  id: BlackboxData
