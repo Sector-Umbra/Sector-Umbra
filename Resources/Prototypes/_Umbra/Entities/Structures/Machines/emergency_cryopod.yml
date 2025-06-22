@@ -2,7 +2,7 @@
   parent: BaseStructure
   id: EmergencyCryoPod
   name: emergency cryo pod
-  description: A super-cooled container that keeps crew safe upon the onset of tragedy
+  description: A super-cooled container that keeps whomever is inside safe and sound, while the world around them goes to shit.
   components:
   - type: Sprite
     noRot: true

@@ -2,7 +2,7 @@
   parent: BaseStructureDynamic
   id: BrokenFTLDrive
   name: broken FTL drive
-  description: a machine built to handle all the math needed for guided and unguided FTL warping. It's internal systems have been destroyed, and it's fuel cell unstable.
+  description: A machine built to handle all the math needed for guided and unguided FTL warping. It's internal systems have been destroyed, and it's fuel cell unstable.
   components:
   - type: Appearance
   - type: Sprite

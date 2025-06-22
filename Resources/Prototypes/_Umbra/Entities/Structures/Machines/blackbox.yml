@@ -2,7 +2,7 @@
   parent: BaseStructureDynamic
   id: BlackboxRecorder
   name: black box recorder type X4
-  description: A machine that used to track shuttle data in the event of a catastrophe
+  description: A machine that used to catalogue and store data of whatever vessel or machine it's on.
   components:
   - type: Appearance
   - type: Sprite
