@@ -98,6 +98,10 @@
         showEnts: False
         occludes: True
         ents: [ ]
+      cluster-payload: !type:Container
+        showEnts: False
+        occludes: True
+        ents: [ ]
 
 - type: entity
   parent: BaseItem
