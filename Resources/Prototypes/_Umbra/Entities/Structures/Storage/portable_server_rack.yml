@@ -85,6 +85,13 @@
   - type: ContainerContainer
     containers:
       item-container: !type:Container
+        showEnts: False
+        occludes: True
+        ents: [ ]
+      storagebase: !type:Container
+        showEnts: False
+        occludes: True
+        ents: [ ]
   - type: UserInterface
     interfaces:
       enum.StorageUiKey.Key:

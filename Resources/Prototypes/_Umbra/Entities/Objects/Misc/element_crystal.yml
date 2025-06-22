@@ -269,6 +269,16 @@
       reagents:
       - ReagentId: Water
         Quantity: .5
+  - type: ContainerContainer
+    containers:
+      item-container: !type:Container
+        showEnts: False
+        occludes: True
+        ents: [ ]
+      storagebase: !type:Container
+        showEnts: False
+        occludes: True
+        ents: [ ]
 
 - type: entity
   parent: BaseItem
