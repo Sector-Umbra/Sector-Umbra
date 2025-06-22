@@ -26,7 +26,7 @@
         volume: -5
   - type: TwoStageTrigger
     triggerDelay: 11.14
-    components: #TODO: Add whatever component the air grenades use once merged with upstream.
+    components:
     - type: AmbientSound
       enabled: true
       volume: -5
@@ -39,7 +39,7 @@
       baseTangentialAcceleration: -1
       gravPulsePeriod: 0.03
     - type: SingularityDistortion
-      intensity: 0 #No distortion, since it's air.
+      intensity: 0
       falloffPower: 1.5
     - type: PointLight
       enabled: true
@@ -124,7 +124,7 @@
     size: Normal
   - type: SpawnItemsOnUse
     items:
-    - id: KudzuDendroFriendly #TODO: replace with EntityTable once supported for SpawnItemsOnUse component
+    - id: KudzuDendroFriendly
     sound:
       path: /Audio/Effects/glass_break1.ogg
 
@@ -313,7 +313,7 @@
     color: "#EE5659"
   - type: Item
     size: Normal
-  - type: SpawnItemsOnUse #TODO: find someway to make this similar to an impact grenade
+  - type: SpawnItemsOnUse
     items:
     - id: FireKudzuWeak
     sound:

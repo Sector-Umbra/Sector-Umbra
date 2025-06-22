@@ -40,8 +40,8 @@
 #Eris' Custom Hardsuit - Sector Umbra
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseCargoContraband]
-  id: ClothingOuterHardsuitCustomMaxim
-  name: custom maxim suit
+  id: ClothingOuterHardsuitDamagedCustomMaxim
+  name: damaged custom maxim suit
   suffix: "Eris-Damaged"
   description: A suit made of foriegn material, looks damaged, but still sturdy. On the shoulder plate there is a logo for Arcadia Industries, and a quote; "Fire. Heat. These forge strong gear. Determination. Love. These forge stronger people."
   components:
@@ -58,11 +58,11 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.6
-        Slash: 0.6
-        Piercing: 0.5
-        Heat: 0.4
-        Radiation: 0.1
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.65
+        Heat: 0.5
+        Radiation: 0.25
   - type: ExplosionResistance
     damageCoefficient: 0.3
   - type: TemperatureProtection

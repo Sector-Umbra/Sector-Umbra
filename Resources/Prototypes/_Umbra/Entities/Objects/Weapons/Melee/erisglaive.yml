@@ -1,7 +1,7 @@
 - type: entity
   parent: [ WeaponCrusher, BaseSecurityCargoContraband]
   id: WeaponCrusherCustomGlaive
-  name: custom glaive
+  name: damaged custom glaive
   suffix: "Eris"
   description: A custom replica of the NT patented crusher design, whatever made it unique has long since broken. The cracked hilt has a fractured logo of Arcadia Industries
   components:
@@ -22,7 +22,7 @@
   - type: LeechOnMarker
     leech:
       groups:
-        Brute: -25
+        Brute: -16 #since it's damaged, more then a crusher, less then a standard glaive.
   - type: MeleeWeapon
   - type: Tag
     tags:
