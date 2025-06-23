@@ -40,7 +40,7 @@
 #Eris' Custom Hardsuit - Sector Umbra
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseCargoContraband]
-  id: ClothingOuterHardsuitDamagedCustomMaxim
+  id: ClothingOuterHardsuitCustomMaxim
   name: damaged custom maxim suit
   suffix: "Eris-Damaged"
   description: A suit made of foriegn material, looks damaged, but still sturdy. On the shoulder plate there is a logo for Arcadia Industries, and a quote; "Fire. Heat. These forge strong gear. Determination. Love. These forge stronger people."
