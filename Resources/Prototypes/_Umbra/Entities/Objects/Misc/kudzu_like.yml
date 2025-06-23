@@ -24,6 +24,19 @@
     spreadChance: 0.3
   - type: Damageable
     damageModifierSet: FireKudzu
+  - type: Fixtures #is needed for IgniteOnCollide to work
+    fixtures:
+      ignition:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.4,0.4,0.4"
+        hard: false
+        mask:
+        - ItemMask
+        layer:
+        - SlipLayer
+  - type: IgniteOnCollide #for some reason the fire dies once being collided with
+    fireStacks: 1
   - type: Destructible
     thresholds:
     - trigger:
