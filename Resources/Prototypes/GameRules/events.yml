@@ -162,10 +162,10 @@
   id: DragonSpawn
   components:
   - type: StationEvent
-    weight: 0 # Umbra: 6.5 -> 0
+    weight: 6.5
     earliestStart: 40
     reoccurrenceDelay: 20
-    minimumPlayers: 20
+    minimumPlayers: 5 # Umbra - Will only show up in combat sims.
     duration: null
   - type: SpaceSpawnRule
     spawnDistance: 0

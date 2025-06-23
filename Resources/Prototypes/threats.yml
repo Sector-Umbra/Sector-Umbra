@@ -2,7 +2,7 @@
 - type: weightedRandom
   id: NinjaThreats
   weights:
-#    Dragon: 1 # Dragons are spiraling, so we don't want them.
+    Dragon: 1
     Revenant: 1
 
 - type: ninjaHackingThreat
