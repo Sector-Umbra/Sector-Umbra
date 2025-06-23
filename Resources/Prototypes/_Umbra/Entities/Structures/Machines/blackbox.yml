@@ -128,3 +128,6 @@
     - id: PaperWritten554Astronav
     - id: PaperWritten554Manifest
     - id: PaperWritten554HealthLogs
+
+- type: Tag
+  id: BlackboxData
