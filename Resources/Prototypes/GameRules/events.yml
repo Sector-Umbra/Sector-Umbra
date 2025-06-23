@@ -195,7 +195,7 @@
     duration: null
     earliestStart: 30
     reoccurrenceDelay: 20
-    minimumPlayers: 30
+    minimumPlayers: 5 # Umbra - Will only show up in combat sims.
   - type: SpaceSpawnRule
   - type: AntagLoadProfileRule
   - type: AntagObjectives
@@ -245,7 +245,7 @@
     duration: null
     earliestStart: 20
     reoccurrenceDelay: 20
-    minimumPlayers: 15
+    minimumPlayers: 5 # Umbra - Will only show up in combat sims.
   - type: ParadoxCloneRule
     objectiveBlacklist:
       tags:
@@ -280,7 +280,7 @@
     weight: 7.5
     duration: 1
     earliestStart: 45
-    minimumPlayers: 20
+    minimumPlayers: 5 # Umbra - Will only show up in combat sims.
   - type: RandomSpawnRule
     prototype: MobRevenant
 
@@ -293,7 +293,7 @@
     duration: 1
     earliestStart: 30
     reoccurrenceDelay: 60
-    minimumPlayers: 10
+    minimumPlayers: 5 # Umbra - Will only show up in combat sims.
   - type: AntagSelection
     agentName: wizard-round-end-name
     definitions:
@@ -531,7 +531,7 @@
   - type: StationEvent
     earliestStart: 35
     weight: 5.5
-    minimumPlayers: 20
+    minimumPlayers: 5 # Umbra - Will only show up in combat sims.
     reoccurrenceDelay: 30 # Umbra
     roundEndingThreat: true # Umbra
     duration: null # LoneOpsSpawn needs an infinite duration so that it inherits the NukeOpsRule things of an actually appropriate end scrreen (not always "Neutral outcome!") and... ending the game if the station is nuked.
@@ -569,7 +569,7 @@
   - type: StationEvent
     earliestStart: 30
     weight: 8
-    minimumPlayers: 15
+    minimumPlayers: 5 # Umbra - Will only show up in combat sims.
     maxOccurrences: 1 # can only happen once per round
     startAnnouncement: station-event-communication-interception
     startAudio:
@@ -670,7 +670,7 @@
   - type: StationEvent
     weight: 5
     earliestStart: 15
-    reoccurrenceDelay: 20
+    reoccurrenceDelay: 5 # Umbra - Will only show up in combat sims.
     minimumPlayers: 4
     duration: null
   - type: SpaceSpawnRule
