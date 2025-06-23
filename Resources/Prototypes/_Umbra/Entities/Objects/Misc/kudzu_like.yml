@@ -14,7 +14,7 @@
   name: magical fire
   suffix: Weak, Pyro Crystal
   description: It's fire, but it doesn't seem to set you on fire. Still hurts though... you should probably grab a fire extingusher.
-  components: #TODO: figure out a way to set fire on contact without the entity being a tile
+  components:
   - type: Appearance
   - type: Sprite
     sprite: _Umbra/Objects/Misc/fire.rsi
