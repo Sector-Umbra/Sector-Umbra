@@ -1,3 +1,4 @@
+<<<<<<< ErisEventItems
 ﻿- type: Tag
   id: MantidaeFood
 
@@ -6,3 +7,7 @@
 
 - type: Tag
   id: ArcadiaHarddisk
+=======
+- type: Tag
+  id: MantidaeFood
+>>>>>>> master

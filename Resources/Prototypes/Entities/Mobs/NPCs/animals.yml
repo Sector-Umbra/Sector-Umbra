@@ -415,6 +415,7 @@
     tags:
     - Trash
     - VimPilot
+    - MantidaeFood
   - type: Destructible
     thresholds:
     - trigger:
