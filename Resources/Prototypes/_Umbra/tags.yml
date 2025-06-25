@@ -1,4 +1,7 @@
 ﻿- type: Tag
+  id: MantidaeFood
+
+- type: Tag
   id: BlackboxData
 
 - type: Tag
