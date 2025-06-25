@@ -1,5 +1,6 @@
 # Set Examine
 - type: entity
+  parent: BaseMentalAction
   id: ActionSetExtraExamine
   name: set-examine-title
   description: set-examine-dialog
