@@ -15,7 +15,7 @@
   showInVote: true
   description: umbra-unscheduled-description
   rules:
-  - BasicStationEventScheduler
+  - BasicStationEventSchedulerCalm
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
