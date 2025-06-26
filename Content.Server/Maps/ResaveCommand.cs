@@ -20,7 +20,7 @@ public sealed class ResaveCommand : LocalizedCommands
     [Dependency] private readonly IResourceManager _res = default!;
     [Dependency] private readonly ILogManager _log = default!;
 
-    public override string Command => "resave";
+    public override string Command => "mapresave";
 
     public override void Execute(IConsoleShell shell, string argStr, string[] args)
     {
