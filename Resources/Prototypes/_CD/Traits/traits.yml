@@ -2,7 +2,6 @@
   id: Synthetic
   name: trait-synth-name
   description: trait-synth-desc
-  category: Quirks
   components:
     - type: Synth
 
@@ -25,11 +24,3 @@
   components:
   - type: LightweightDrunk
     boozeStrengthMultiplier: 0.5
-
-- type: trait
-  id: HideFromRoundEndScreen
-  name: cd-trait-hide-from-round-end-screen-name
-  description: cd-trait-hide-from-round-end-screen-desc
-  category: Meta
-  components:
-  - type: HideFromRoundEndScreen
