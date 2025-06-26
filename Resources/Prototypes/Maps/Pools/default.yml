@@ -1,23 +1,16 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
-  #- Aspid # Umra: Derotated map.
-  - Amber
-  - Bagel
-  - Box
-  - Prime # Umbra: Cluster Replacement
-  - Convex
-  #- Core
-  - Elkridge
-  - Fland
-  #- Gate
-  - Loop
-  - Marathon
-  - Meta
-  - Oasis
-  - Omega
-  #- Saltern # Umbra: Derotated map.
-  - Packed
-  - Plasma
-  #- Reach # Umbra: Derotated map.
-  #- Train # Umbra: Derotated map.
+    - Amber
+    - Bagel
+    - Box
+    - Convex
+    - Elkridge
+    - Fland
+    - Marathon
+    - Oasis
+    - Packed
+    - Plasma
+    - Prime # Harmony
+    - Reach
+    - Exo
