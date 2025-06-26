@@ -3,11 +3,6 @@
   equipment:
     eyes: ClothingEyesGlassesSecurity
 
-- type: startingGear
-  id: EyesGlassesSecurity
-  equipment:
-    eyes: ClothingEyesGlassesSecurity
-
 - type: loadout
   id: EyesHudSecurity
   equipment:
