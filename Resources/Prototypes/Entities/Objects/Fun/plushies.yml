@@ -1140,7 +1140,7 @@
   - type: Food
     requiresSpecialDigestion: true
     useSound:
-      path: /Audio/Voice/Moth/moth_chitter.ogg
+      path: /Audio/Voice/Moth/moth_scream.ogg # Umbra: moth_chitter -> moth_scream
   - type: FoodSequenceElement
     entries:
       CottonBurger: MothPlushie
