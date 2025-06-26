@@ -76,7 +76,7 @@
   - extended
   - shittersafari
   name: extended-title
-  showInVote: true #2boring2vote - Umbra True
+  showInVote: false #2boring2vote - Umbra: Not too boring, but we use UmbraScheduled now. This can still roll midround antags, unlike UmbraScheduled.
   description: extended-description
   rules:
   - BasicStationEventScheduler
