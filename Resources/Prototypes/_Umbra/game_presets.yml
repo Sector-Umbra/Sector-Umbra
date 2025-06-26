@@ -4,7 +4,7 @@
   showInVote: false
   description: secret-description
   rules:
-    - BasicStationEventScheduler
+    - BasicStationEventSchedulerCalm
     - MeteorSwarmScheduler
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
@@ -15,7 +15,7 @@
   showInVote: true
   description: umbra-unscheduled-description
   rules:
-  - BasicStationEventScheduler
+  - BasicStationEventSchedulerCalm
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
