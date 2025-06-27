@@ -1,0 +1,79 @@
+- type: entity
+  parent: BaseStructureDynamic
+  id: BrokenFTLDrive
+  name: broken FTL drive
+  description: A machine built to handle all the math needed for guided and unguided FTL warping. It's internal systems have been destroyed, and it's fuel cell unstable.
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Umbra/Structures/Machines/damaged_flt_drive.rsi
+    snapCardinals: true
+    layers:
+    - state: damaged_ftl_drive
+    - state: damaged_ftl_drive_unlit
+      shader: unshaded
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#990000"
+  - type: Physics
+    bodyType: Static
+  - type: Transform
+    noRot: true
+    anchored: True
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+        density: 200
+  - type: Anchorable
+    delay: 10
+  - type: InteractionOutline
+  - type: Destructible
+    thresholds:
+    - trigger: # Excess damage, don't spawn entities
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Breakage"]
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: DamageOnHighSpeedImpact
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      collection: MetalThud
+  - type: RadiationSource
+    intensity: 1

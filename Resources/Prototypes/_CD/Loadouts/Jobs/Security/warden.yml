@@ -1,19 +1,9 @@
 - type: loadout
   id: WardenCasualsuit
-  equipment: 
-    jumpsuit: ClothingUniformWardenCasual
-
-- type: startingGear
-  id: WardenCasualsuit
   equipment:
     jumpsuit: ClothingUniformWardenCasual
 
 - type: loadout
-  id: WardenCasualskirt
-  equipment:
-    jumpsuit: ClothingUniformJumpskirtWardenCasual
-
-- type: startingGear
   id: WardenCasualskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtWardenCasual

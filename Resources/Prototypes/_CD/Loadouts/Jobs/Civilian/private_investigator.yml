@@ -4,27 +4,12 @@
   equipment:
     outerClothing: ClothingOuterCoatJensen
 
-- type: startingGear
-  id: JensonCoat
-  equipment:
-    outerClothing: ClothingOuterCoatJensen
-
 - type: loadout
   id: InspectorCoat
   equipment:
     outerClothing: ClothingOuterCoatInspector
 
-- type: startingGear
-  id: InspectorCoat
-  equipment:
-    outerClothing: ClothingOuterCoatInspector
-
 - type: loadout
-  id: TrenchCoat
-  equipment:
-    outerClothing: ClothingOuterCoatTrench
-
-- type: startingGear
   id: TrenchCoat
   equipment:
     outerClothing: ClothingOuterCoatTrench
@@ -35,38 +20,18 @@
   equipment:
     gloves: ClothingHandsGlovesColorBlack
 
-- type: startingGear
-  id: BlackGloves
-  equipment:
-    gloves: ClothingHandsGlovesColorBlack
-
 # Shoes
 - type: loadout
   id: Jackboots
   equipment:
     shoes: ClothingShoesBootsJack
 
-- type: startingGear
-  id: Jackboots
-  equipment:
-    shoes: ClothingShoesBootsJack
-
 - type: loadout
   id: LaceupShoes
   equipment:
     shoes: ClothingShoesBootsLaceup
 
-- type: startingGear
-  id: LaceupShoes
-  equipment:
-    shoes: ClothingShoesBootsLaceup
-
 - type: loadout
-  id: LeatherShoes
-  equipment:
-    shoes: ClothingShoesLeather
-
-- type: startingGear
   id: LeatherShoes
   equipment:
     shoes: ClothingShoesLeather
@@ -74,20 +39,10 @@
 # Glasses
 - type: loadout
   id: Sunglasses
-  equipment: 
-    eyes: ClothingEyesGlassesSunglasses
-
-- type: startingGear
-  id: Sunglasses
   equipment:
     eyes: ClothingEyesGlassesSunglasses
 
 - type: loadout
-  id: Aviators
-  equipment:
-    eyes: ClothingEyesGlassesAviator
-
-- type: startingGear
   id: Aviators
   equipment:
     eyes: ClothingEyesGlassesAviator

@@ -1,0 +1,35 @@
+- type: entity
+  parent: BaseStructure
+  id: EmergencyCryoPod
+  name: emergency cryo pod
+  description: A super-cooled container that keeps whomever is inside safe and sound, while the world around them goes to shit.
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _Umbra/Structures/Machines/cryopod.rsi
+    layers:
+    - state: closed
+      map: ["base"]
+  - type: InteractionOutline
+  - type: Physics
+    canCollide: false
+  - type: DragInsertContainer
+    containerId: storage
+    entryDelay: 2
+  - type: ExitContainerOnMove
+    containerId: storage
+  - type: PointLight
+    color: Cyan
+    radius: 1.5
+    energy: 0.5
+    castShadows: false
+  - type: ContainerContainer
+    containers:
+      storage: !type:ContainerSlot
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.CryostorageVisuals.Full:
+        base:
+          True: { state: closed }
+          False: { state: open }
