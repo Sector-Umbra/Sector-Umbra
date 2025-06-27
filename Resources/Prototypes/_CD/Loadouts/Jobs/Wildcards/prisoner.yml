@@ -20,7 +20,7 @@
 
 - type: loadout
   id: Emag
-  equipment: 
+  equipment:
     back: Emag
   effects:
   - !type:GroupLoadoutEffect

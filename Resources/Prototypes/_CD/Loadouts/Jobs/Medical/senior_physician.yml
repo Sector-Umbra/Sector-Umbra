@@ -14,19 +14,19 @@
   id: SeniorPhysicianJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtSeniorPhysician
-    
+
 - type: loadout
   id: SeniorPhysicianFormalsuit
   equipment:
     jumpsuit: ClothingUniformPhysicianCasual
 
 # OuterClothing
-- type: loadout 
+- type: loadout
   id: SeniorPhysicianLabCoat
   equipment:
     outerClothing: ClothingOuterCoatLabSeniorPhysician
 
-- type: loadout 
+- type: loadout
   id: SeniorPhysicianModernLabCoat
-  equipment: 
+  equipment:
     outerClothing: ClothingOuterCoatLabStylishSeniorPhysician

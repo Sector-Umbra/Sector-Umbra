@@ -1,6 +1,6 @@
 - type: loadout
   id: WardenCasualsuit
-  equipment: 
+  equipment:
     jumpsuit: ClothingUniformWardenCasual
 
 - type: loadout
