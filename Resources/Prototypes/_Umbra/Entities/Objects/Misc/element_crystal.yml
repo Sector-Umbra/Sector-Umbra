@@ -1,0 +1,320 @@
+- type: entity
+  parent: BaseItem
+  id: AnemoCrystal
+  suffix: Anemo
+  name: mysterious crystal
+  description: A crystal of unknown origin or power. You can feel a nice breeze when holding this, even in space.
+  components:
+  - type: Icon
+    sprite: _Umbra/Objects/Misc/crystalshard.rsi
+    state: anemo_shard
+  - type: Sprite
+    sprite: _Umbra/Objects/Misc/crystalshard.rsi
+    state: anemo_shard
+  - type: PointLight
+    radius: 2
+    energy: 2
+    color: "#77EBEB"
+  - type: Item
+    size: Normal
+  - type: OnUseTimerTrigger
+    delay: 3
+    beepInterval: 1
+    beepSound:
+      path: /Audio/Machines/anomaly_generate.ogg
+      params:
+        volume: -5
+  - type: TwoStageTrigger
+    triggerDelay: 11.14
+    components:
+    - type: AmbientSound
+      enabled: true
+      volume: -5
+      range: 14
+      sound:
+        path: /Audio/Ambience/Objects/gas_pump.ogg
+    - type: GravityWell
+      maxRange: 3
+      baseRadialAcceleration: -5
+      baseTangentialAcceleration: -1
+      gravPulsePeriod: 0.03
+    - type: SingularityDistortion
+      intensity: 0
+      falloffPower: 1.5
+    - type: PointLight
+      enabled: true
+      color: "#77EBEB"
+      energy: 8
+      radius: 6
+      softness: 1
+      offset: "0, 0"
+    - type: SoundOnTrigger
+      sound:
+        path: /Audio/Effects/glass_break1.ogg
+        params:
+          volume: 15
+    - type: DeleteOnTrigger
+
+- type: entity
+  parent: BaseItem
+  id: CryoCrystal
+  suffix: Cryo
+  name: mysterious crystal
+  description: A crystal of unknown origin or power. This one feels cold to the touch.
+  components:
+  - type: Icon
+    sprite: _Umbra/Objects/Misc/crystalshard.rsi
+    state: cryo_shard
+  - type: Sprite
+    sprite: _Umbra/Objects/Misc/crystalshard.rsi
+    state: cryo_shard
+  - type: PointLight
+    radius: 2
+    energy: 2
+    color: "#98C4EB"
+  - type: Item
+    size: Normal
+  - type: OnUseTimerTrigger
+    delay: 3
+    beepInterval: 1
+    beepSound:
+      path: /Audio/Machines/anomaly_generate.ogg
+      params:
+        volume: -5
+  - type: ProjectileGrenade
+    fillPrototype: ProjectileCryoIcicle
+    capacity: 10
+  - type: EmitSoundOnTrigger
+    sound:
+      path: "/Audio/Effects/glass_break1.ogg"
+  - type: DeleteOnTrigger
+  - type: ContainerContainer
+    containers:
+      item-container: !type:Container
+        showEnts: False
+        occludes: True
+        ents: [ ]
+      storagebase: !type:Container
+        showEnts: False
+        occludes: True
+        ents: [ ]
+      cluster-payload: !type:Container
+        showEnts: False
+        occludes: True
+        ents: [ ]
+
+- type: entity
+  parent: BaseItem
+  id: DendroCrystal
+  suffix: Dendro
+  name: mysterious crystal
+  description: A crystal of unknown origin or power. Smells like a topical forest.
+  components:
+  - type: Icon
+    sprite: _Umbra/Objects/Misc/crystalshard.rsi
+    state: dendro_shard
+  - type: Sprite
+    sprite: _Umbra/Objects/Misc/crystalshard.rsi
+    state: dendro_shard
+  - type: PointLight
+    radius: 2
+    energy: 2
+    color: "#6DEB6B"
+  - type: Item
+    size: Normal
+  - type: SpawnItemsOnUse
+    items:
+    - id: KudzuDendroFriendly
+    sound:
+      path: /Audio/Effects/glass_break1.ogg
+
+- type: entity
+  parent: BaseItem
+  id: ElectroCrystal
+  suffix: Electro
+  name: mysterious crystal
+  description: A crystal of unknown origin or power. You can feel an electrical current through this one.
+  components:
+  - type: Icon
+    sprite: _Umbra/Objects/Misc/crystalshard.rsi
+    state: electro_shard
+  - type: Sprite
+    sprite: _Umbra/Objects/Misc/crystalshard.rsi
+    state: electro_shard
+  - type: PointLight
+    radius: 2
+    energy: 2
+    color: "#AE85FF"
+  - type: Item
+    size: Normal
+  - type: PowerCell
+  - type: Tag
+    tags:
+    - PowerCell
+  - type: Battery # hyper high-cap value
+    maxCharge: 1800
+    startingCharge: 1800
+    pricePerJoule: 0.15
+
+- type: entity
+  parent: BaseItem
+  id: GeoCrystal
+  suffix: Geo
+  name: mysterious crystal
+  description: A crystal of unknown origin or power. This one has flecks of gold, silver, and iron inside.
+  components:
+  - type: Icon
+    sprite: _Umbra/Objects/Misc/crystalshard.rsi
+    state: geo_shard
+  - type: Sprite
+    sprite: _Umbra/Objects/Misc/crystalshard.rsi
+    state: geo_shard
+  - type: PointLight
+    radius: 2
+    energy: 2
+    color: "#EBAB6B"
+  - type: Item
+    size: Normal
+  - type: SpawnItemsOnUse
+    items:
+#Common
+    - id: GoldOre1
+      prob: 0.5
+    - id: PlasmaOre1
+      prob: 0.5
+    - id: SilverOre1
+      prob: 0.5
+    - id: SpaceQuartz1
+      prob: 0.5
+    - id: SteelOre1
+      prob: 0.5
+    - id: UraniumOre1
+      prob: 0.5
+#Rare
+    - id: BananiumOre1
+      prob: 0.1
+    - id: DiamondOre1
+      prob: 0.1
+    - id: GoldOre
+      prob: 0.1
+    - id: PlasmaOre
+      prob: 0.1
+    - id: SilverOre
+      prob: 0.1
+    - id: SpaceQuartz
+      prob: 0.1
+    - id: SteelOre
+      prob: 0.1
+    - id: UraniumOre
+      prob: 0.1
+#Exotic
+    - id: BananiumOre
+      prob: 0.05
+    - id: DiamondOre
+      prob: 0.05
+    - id: AnemoCrystal
+      prob: 0.05
+    - id: CryoCrystal
+      prob: 0.05
+    - id: DendroCrystal
+      prob: 0.05
+    - id: ElectroCrystal
+      prob: 0.05
+    - id: GeoCrystal
+      prob: 0.05
+    - id: HydroCrystal
+      prob: 0.05
+    - id: PyroCrystal
+      prob: 0.05
+    sound:
+      path: /Audio/Effects/glass_break1.ogg
+
+
+- type: entity
+  parent: BaseItem
+  id: HydroCrystal
+  suffix: Hydro
+  name: mysterious crystal
+  description: A crystal of unknown origin or power. This one has water sloshing around inside.
+  components:
+  - type: Icon
+    sprite: _Umbra/Objects/Misc/crystalshard.rsi
+    state: hydro_shard
+  - type: Sprite
+    sprite: _Umbra/Objects/Misc/crystalshard.rsi
+    state: hydro_shard
+  - type: PointLight
+    radius: 2
+    energy: 2
+    color: "#779DEB"
+  - type: Item
+    size: Normal
+  - type: Drink
+    solution: beaker
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 50
+  - type: MixableSolution
+    solution: beaker
+  - type: FitsInDispenser
+    solution: beaker
+  - type: RefillableSolution
+    solution: beaker
+  - type: DrainableSolution
+    solution: beaker
+  - type: ExaminableSolution
+    solution: beaker
+  - type: DrawableSolution
+    solution: beaker
+  - type: InjectableSolution
+    solution: beaker
+  - type: SolutionTransfer
+    canChangeTransferAmount: true
+  - type: SolutionItemStatus
+    solution: beaker
+  - type: UserInterface
+    interfaces:
+      enum.TransferAmountUiKey.Key:
+        type: TransferAmountBoundUserInterface
+  - type: SolutionRegeneration
+    solution: beaker
+    generated:
+      reagents:
+      - ReagentId: Water
+        Quantity: .5
+  - type: ContainerContainer
+    containers:
+      item-container: !type:Container
+        showEnts: False
+        occludes: True
+        ents: [ ]
+      storagebase: !type:Container
+        showEnts: False
+        occludes: True
+        ents: [ ]
+
+- type: entity
+  parent: BaseItem
+  id: PyroCrystal
+  suffix: Pyro
+  name: mysterious crystal
+  description: A crystal of unknown origin or power. This one seems warm to the touch.
+  components:
+  - type: Icon
+    sprite: _Umbra/Objects/Misc/crystalshard.rsi
+    state: pyro_shard
+  - type: Sprite
+    sprite: _Umbra/Objects/Misc/crystalshard.rsi
+    state: pyro_shard
+  - type: PointLight
+    radius: 2
+    energy: 2
+    color: "#EE5659"
+  - type: Item
+    size: Normal
+  - type: SpawnItemsOnUse
+    items:
+    - id: FireKudzuWeak
+    sound:
+      path: /Audio/Effects/glass_break1.ogg

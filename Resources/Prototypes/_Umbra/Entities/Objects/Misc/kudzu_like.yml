@@ -1,0 +1,75 @@
+- type: entity
+  parent: KudzuFlowerFriendly
+  id: KudzuDendroFriendly
+  name: dendrol carpet
+  suffix: Friendly, Dendro Crystal
+  description: A colorful carpet of flowers sprawling in every direction. You're not sure whether to take it down or leave it up.
+  components:
+  - type: Kudzu
+    spreadChance: 0.1
+
+- type: entity
+  parent: WeakKudzu
+  id: FireKudzuWeak
+  name: magical fire
+  suffix: Weak, Pyro Crystal
+  description: It's fire, but it doesn't seem to set you on fire. Still hurts though... you should probably grab a fire extingusher.
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Umbra/Objects/Misc/fire.rsi
+    shader: unshaded
+  - type: Kudzu
+    spriteVariants: 1
+    spreadChance: 0.3
+  - type: Damageable
+    damageModifierSet: FireKudzu
+  - type: Fixtures #is needed for IgniteOnCollide to work
+    fixtures:
+      ignition:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.4,0.4,0.4"
+        hard: false
+        mask:
+        - ItemMask
+        layer:
+        - SlipLayer
+  - type: IgniteOnCollide #for some reason the fire dies once being collided with
+    fireStacks: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: DamageContacts
+    damage:
+      types:
+        Heat: 4
+  - type: Reactive
+    groups:
+      Flammable: [ Touch ]
+      Extinguish: [ Touch ]
+    reactions:
+    - reagents: [ Water ]
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        scaleByQuantity: true
+        damage:
+          types:
+            Cold: 2
+  - type: PointLight
+    radius: 3
+    energy: 1
+    color: "#FF4913"
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 0.6
+    sprintSpeedModifier: 0.6
+  - type: Barotrauma
+    damage:
+      types:
+        Cold: 1 #per second, fire cannot exist without air

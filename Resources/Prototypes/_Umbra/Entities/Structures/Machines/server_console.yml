@@ -1,0 +1,96 @@
+- type: entity
+  parent: BaseStructureDynamic
+  id: ServerConsole
+  name: server console
+  description: A machine built to look through the data of the adjacent server rack, make it comprehensible to sophonts. Unfortunately theres a password.
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Umbra/Structures/Machines/server_console.rsi
+    snapCardinals: true
+    layers:
+    - state: server_console
+    - state: server_console_unlit
+      shader: unshaded
+  - type: PointLight
+    radius: 1.5
+    energy: 3
+    color: "#FFFFFF"
+  - type: Physics
+    bodyType: Static
+  - type: Transform
+    noRot: true
+    anchored: True
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+        density: 200
+  - type: Anchorable
+    delay: 10
+  - type: InteractionOutline
+  - type: Destructible
+    thresholds:
+    - trigger: # Excess damage, don't spawn entities
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Breakage"]
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: DamageOnHighSpeedImpact
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      collection: MetalThud
+
+- type: entity
+  parent: ServerConsole
+  id: ServerConsoleBroken
+  name: broken server console
+  description: A machine built to look through the data of the adjacent server rack, make it comprehensible to sophonts. Unfortunately the wires are cut, the boards are fried, and the screen is cracked.
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Umbra/Structures/Machines/server_console.rsi
+    snapCardinals: true
+    layers:
+    - state: server_console_broken
+    - state: server_console_broken_unlit
+      shader: unshaded
+  - type: PointLight
+    radius: 1.5
+    energy: 5
+    color: "#0000AA"

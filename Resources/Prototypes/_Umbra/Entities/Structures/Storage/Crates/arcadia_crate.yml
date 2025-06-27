@@ -1,0 +1,10 @@
+- type: entity
+  parent: CrateBaseSecure
+  id: CrateArcadia
+  name: damaged cargo crate
+  description: A heavily reinforced crate, with proper security locks, temperature resistant material, and a high tech lock system... too bad for whoever made this, they forgot to make it EMP proof.
+  components:
+  - type: Icon
+    sprite: _Umbra/Structures/Storage/Crates/arcadia_crate.rsi
+  - type: Sprite
+    sprite: _Umbra/Structures/Storage/Crates/arcadia_crate.rsi

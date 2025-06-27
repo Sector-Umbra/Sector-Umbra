@@ -1,0 +1,23 @@
+- type: entity
+  id: PaperWritten554Astronav
+  suffix: "Sprinter-554 Astronav Logs"
+  parent: Paper
+  components:
+  - type: Paper
+    content: book-text-astronav-logs
+
+- type: entity
+  id: PaperWritten554HealthLogs
+  suffix: "Sprinter-554 Crew Monitoring Logs"
+  parent: Paper
+  components:
+  - type: Paper
+    content: book-text-crew-health-logs
+
+- type: entity
+  id: PaperWritten554Manifest
+  suffix: "Sprinter-554|ARV-Moros Manifest"
+  parent: Paper
+  components:
+  - type: Paper
+    content: book-text-manifest
