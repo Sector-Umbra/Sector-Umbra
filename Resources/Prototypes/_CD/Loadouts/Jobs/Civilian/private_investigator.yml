@@ -39,7 +39,7 @@
 # Glasses
 - type: loadout
   id: Sunglasses
-  equipment: 
+  equipment:
     eyes: ClothingEyesGlassesSunglasses
 
 - type: loadout
