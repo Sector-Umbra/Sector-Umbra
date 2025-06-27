@@ -48,8 +48,6 @@ namespace Content.IntegrationTests.Tests
         {
             "/Maps/centcomm.yml",
             "/Maps/bagel.yml", // Contains mime's rubber stamp --> Either fix this, remove the category, or remove this comment if intentional.
-            "/Maps/gate.yml", // Contains positronic brain and LSE-1200c "Perforator"
-            "/Maps/meta.yml", // Contains warden's rubber stamp
             "/Maps/reach.yml", // Contains handheld crew monitor
             "/Maps/Shuttles/ShuttleEvent/cruiser.yml", // Contains LSE-1200c "Perforator"
             "/Maps/Shuttles/ShuttleEvent/honki.yml", // Contains golden honker, clown's rubber stamp
@@ -58,7 +56,6 @@ namespace Content.IntegrationTests.Tests
             // Umbra Maps
             "/Maps/cluster.yml", // Umbra: Contains mime's rubber stamp.
             "/Maps/Misc/terminal.yml", // Umbra: Contains centcomm rubber stamp.
-            "/Maps/_Umbra/xeno.yml", // Umbra: Contains PTK-800
             "/Maps/_Umbra/centcomm.yml" // Umbra
         };
 
@@ -67,29 +64,23 @@ namespace Content.IntegrationTests.Tests
             "Dev",
             "TestTeg",
             "Fland",
-            "Meta",
             "Packed",
-            "Omega",
             "Bagel",
             "CentComm",
             "Box",
-            "Core",
             "Marathon",
             "MeteorArena",
-            "Saltern", // Umbra: Derotated Map, but must remain for tests.
+            "Saltern",
             "Reach",
-            // "Train", // Umbra: Derotated Map.
             "Oasis",
-            "Gate",
             "Amber",
-            "Loop",
             "Plasma",
             "Elkridge",
-            "Convex",
             "Relic",
             "dm01-entryway",
+            "Exo",
+            "dm01-entryway",
             "Prime", // Harmony
-            "Xeno", // Umbra
             "Iris" // Umbra
         };
 
@@ -97,7 +88,6 @@ namespace Content.IntegrationTests.Tests
         private static readonly string[] UntestedGameMaps =
         {
             "Ferrous",
-            // "Aspid" // Umbra: Derotate Aspid
         };
 
         /// <summary>
