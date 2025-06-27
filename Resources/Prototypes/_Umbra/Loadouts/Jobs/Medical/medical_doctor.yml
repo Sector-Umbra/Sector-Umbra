@@ -4,18 +4,8 @@
   equipment:
     head: ClothingHeadNurseHatAlt
 
-- type: startingGear
-  id: NurseHatAlt
-  equipment:
-    head: ClothingHeadNurseHatAlt
-
 # Jumpsuits
 - type: loadout
-  id: SkirtOfLife
-  equipment:
-    jumpsuit: ClothingUniformJumpskirtOfLife
-
-- type: startingGear
   id: SkirtOfLife
   equipment:
     jumpsuit: ClothingUniformJumpskirtOfLife

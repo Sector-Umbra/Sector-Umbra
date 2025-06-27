@@ -8,11 +8,6 @@
   equipment:
     eyes: ClothingEyesHudSecurity
 
-- type: startingGear
-  id: EyesHudSecurity
-  equipment:
-    eyes: ClothingEyesHudSecurity
-
 - type: loadout
   id: SecurityPlateCarrier
   equipment:
@@ -23,17 +18,7 @@
   equipment:
     jumpsuit: ClothingUniformSecurtyCasual
 
-- type: startingGear
-  id: SecurityCasualsuit
-  equipment:
-    jumpsuit: ClothingUniformSecurtyCasual
-
 - type: loadout
-  id: SecurityCasualskirt
-  equipment:
-    jumpsuit: ClothingUniformJumpskirtSecurtyCasual
-
-- type: startingGear
   id: SecurityCasualskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtSecurtyCasual
