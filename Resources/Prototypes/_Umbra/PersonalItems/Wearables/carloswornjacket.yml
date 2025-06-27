@@ -3,7 +3,7 @@
   parent: ClothingOuterStorageBase
   id: PersonalItemCarlosWornJacket
   name: well worn jacket
-  description: A well worn, dark green, padded jacket adorned with medals from a long defunct military. A blue, white, and red flag on one shoulder. Looks to have once been stained with something. On the inside, where a tag would've once laid, now hosts golden stitching that reads "In aeternum vives, Numquam vere morieris". On the end of the right sleeve it is significantly worn down by scratch marks, As if claws had repeatedly grabbed onto it.
+  description: A well worn, dark green, padded jacket adorned with medals from a long defunct military. A blue, white, and red flag on one shoulder. Looks to have once been stained with something. On the inside, where a tag would've once laid, now hosts golden stitching that reads "In aeternum vives, Numquam vere morieris". On the end of the right sleeve it is significantly worn down by scratch marks, as if claws had repeatedly grabbed onto it.
   suffix: PersonalItem
   components:
     - type: Sprite
