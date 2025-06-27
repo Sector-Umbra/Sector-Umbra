@@ -3,11 +3,6 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitEngineeringCasual
 
-- type: startingGear
-  id: StationEngineerCasualsuit
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitEngineeringCasual
-
 - type: loadout
   id: StationEngineerPants
   equipment:
