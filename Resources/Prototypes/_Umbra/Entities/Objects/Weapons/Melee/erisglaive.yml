@@ -1,0 +1,29 @@
+- type: entity
+  parent: [ WeaponCrusher, BaseSecurityCargoContraband]
+  id: WeaponCrusherCustomGlaive
+  name: damaged custom glaive
+  suffix: "Eris"
+  description: A custom replica of the NT patented crusher design, whatever made it unique has long since broken. The cracked hilt has a fractured logo of Arcadia Industries
+  components:
+  - type: Sprite
+    sprite: _Umbra/Objects/Weapons/Melee/damaged_eris_glaive.rsi
+    state: icon
+  - type: Item
+    size: Huge
+    sprite: _Umbra/Objects/Weapons/Melee/damaged_glaive_inhand.rsi
+  - type: Clothing
+    sprite: _Umbra/Objects/Weapons/Melee/damaged_eris_glaive.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: UseDelay
+    delay: 1.5
+  - type: LeechOnMarker
+    leech:
+      groups:
+        Brute: -16 #since it's damaged, more then a crusher, less then a standard glaive.
+  - type: MeleeWeapon
+  - type: Tag
+    tags:
+    - Pickaxe
