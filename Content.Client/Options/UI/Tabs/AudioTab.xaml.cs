@@ -48,6 +48,12 @@ public sealed partial class AudioTab : Control
             SliderVolumeLobby,
             scale: ContentAudioSystem.LobbyMultiplier);
 
+        // RMC14 - Cassette Players
+        Control.AddOptionPercentSlider(
+            RMCCVars.VolumeGainCassettes,
+            SliderVolumeCassettes,
+            scale: 0.12f);
+
         Control.AddOptionPercentSlider(
             CCVars.InterfaceVolume,
             SliderVolumeInterface,

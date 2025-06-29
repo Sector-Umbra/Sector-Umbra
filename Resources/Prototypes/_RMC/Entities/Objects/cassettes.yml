@@ -1,0 +1,72 @@
+﻿- type: entity
+  parent: BaseItem
+  id: RMCCassettePlayer
+  name: cassette player
+  description: A cassette player that first hit the market over 100 years ago. Crazy how these never went out of style. # Todo: This date needs to change to be older.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Devices/cassette_player.rsi
+    state: walkman
+  - type: Item
+    size: Small
+  - type: Clothing
+    slots:
+    - ears
+  - type: CassettePlayer
+  - type: ClothingLimit
+    slot: All
+    id: RMCCassettePlayer
+
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: RMCCassetteTapeBase
+  name: cassette
+  description: A plastic cassette tape.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Devices/cassette_player.rsi
+    state: cassette_blue
+  - type: Item
+    size: Small
+  - type: CassetteTape
+
+- type: entity
+  parent: RMCCassetteTapeBase
+  id: RMCCassetteTapeCustom
+  name: custom cassette
+  components:
+  - type: Sprite
+    state: cassette_rising_sun
+  - type: Item
+    size: Small
+  - type: CassetteTape
+    songs: []
+    custom: true
+
+# Qwertyquerty
+- type: entity
+  parent: RMCCassetteTapeBase
+  id: RMCCassetteTapeQwertyquerty
+  name: Qwertyquerty cassette
+  description: A plastic cassette tape.
+  components:
+  - type: Sprite
+    state: cassette_orange
+  - type: CassetteTape
+    songs:
+    - /Audio/Jukebox/constellations.ogg
+    - /Audio/Jukebox/drifting.ogg
+    - /Audio/Jukebox/starlight.ogg
+
+# PigeonBeans
+- type: entity
+  parent: RMCCassetteTapeBase
+  id: RMCCassetteTapePigeonBeans
+  name: PigeonBeans cassette
+  components:
+  - type: Sprite
+    state: cassette_red_stripe
+  - type: CassetteTape
+    songs:
+    - /Audio/Jukebox/sunset.ogg

@@ -1,0 +1,57 @@
+﻿# TODO
+# Guidebook Entry to put on Cassette Players/Tapes (Add to the base of the tapes and the player so the "?" shows up.)
+# Rename all of the entities to not include RMC (Make sure this is reflected in the CS side aswell).
+# Need to add the custom cassette + player to loadouts, the library vendor, and the quickthreads
+# Create Umbra Cassettes (Do this last?)
+  # We can port the RMC Cassettes but I don't know how fitting those actually are.
+# CS Check
+  # RMCStorageEjectHandItemEvent doesn't exist. Causing a build error. I don't think we need this? We can probably use one that exists with wizden.
+  # Probably good to go through and add summaries to comps and some of the functions.
+# Maybe instead of the actions we make them verbs on the cassette? Probably make a poll.
+# There are so many sprites for this, I wouldn't mind trimming them down. Discuss?
+  # Maybe resprite?
+
+# On RMC, this file path is: Resources/Prototypes/_RMC14/Actions/Marines/marine_cassette_actions.yml
+- type: entity
+  abstract: true
+  parent: ActionMarineBase # Base
+  id: RMCActionCassetteBase
+  components:
+  - type: InstantAction
+    useDelay: 0.5
+
+- type: entity
+  parent: RMCActionCassetteBase
+  id: RMCActionCassettePlayPause
+  name: Play/Pause
+  description: Starts or stops playing music.
+  components:
+  - type: InstantAction
+    icon:
+      sprite: _RMC14/Actions/cassette_player.rsi
+      state: walkman_playpause
+    event: !type:CassettePlayPauseActionEvent
+
+- type: entity
+  parent: RMCActionCassetteBase
+  id: RMCActionCassetteNext
+  name: Next song
+  description: Moves to the next track.
+  components:
+  - type: InstantAction
+    icon:
+      sprite: _RMC14/Actions/cassette_player.rsi
+      state: walkman_next
+    event: !type:CassetteNextActionEvent
+
+- type: entity
+  parent: RMCActionCassetteBase
+  id: RMCActionCassetteRestart
+  name: Restart song
+  description: Restarts the current track.
+  components:
+  - type: InstantAction
+    icon:
+      sprite: _RMC14/Actions/cassette_player.rsi
+      state: walkman_restart
+    event: !type:CassetteRestartActionEvent
