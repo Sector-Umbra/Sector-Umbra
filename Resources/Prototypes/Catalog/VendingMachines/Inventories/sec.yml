@@ -1,4 +1,4 @@
-    - type: vendingMachineInventory
+- type: vendingMachineInventory
   id: SecTechInventory
   startingInventory:
     SecurityWhistle: 5
