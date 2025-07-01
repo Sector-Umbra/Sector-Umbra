@@ -1103,7 +1103,7 @@
   loadouts:
   - SecurityBelt
   - SecurityWebbing
-#  - SecurityPlateCarrier #CD - Commented out - Umbra - See issue #388
+#  - SecurityPlateCarrier #CD Item # Umbra - Commented out. See issue #388
 
 - type: loadoutGroup
   id: SecurityOuterClothing
