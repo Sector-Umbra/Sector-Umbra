@@ -19,6 +19,8 @@
     Hair: MobHumanoidAnyMarking
     FacialHair: MobHumanoidAnyMarking
     Snout: MobHumanoidAnyMarking
+    UndergarmentTop: MobHumanoidAnyMarking
+    UndergarmentBottom: MobHumanoidAnyMarking
     Chest: MobVulpkaninTorso
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
@@ -63,7 +65,7 @@
       required: true
       defaultMarkings: [ VulpEar ]
     Overlay:
-      points: 2
+      points: 6
       required: false
 
 - type: humanoidBaseSprite

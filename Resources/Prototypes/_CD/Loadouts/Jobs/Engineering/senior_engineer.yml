@@ -4,17 +4,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitSeniorEngineer
 
-- type: startingGear
-  id: SeniorEngineerJumpsuit
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitSeniorEngineer
-
 - type: loadout
-  id: SeniorEngineerJumpskirt
-  equipment:
-    jumpsuit: ClothingUniformJumpskirtSeniorEngineer
-
-- type: startingGear
   id: SeniorEngineerJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtSeniorEngineer

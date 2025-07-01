@@ -29,6 +29,8 @@
     tags:
     - Kangaroo
     - WhitelistChameleon
+  - type: SpontaneousCombustionProtection # Umbra
+    protectionPercent: 15
 
 - type: entity
   parent: ClothingHandsGlovesBoxingRed
@@ -108,6 +110,8 @@
     fiberMaterial: fibers-durathread
     fiberColor: fibers-regal-blue
   - type: FingerprintMask
+  - type: SpontaneousCombustionProtection # Umbra
+    protectionPercent: 15 # Umbra
 
 - type: entity
   parent: ClothingHandsBase
@@ -417,7 +421,7 @@
       enum.MeleeSpeechUiKey.Key:
         type: MeleeSpeechBoundUserInterface
   - type: StaticPrice
-    price: 0
+    price: 2500
   - type: Tag
     tags:
     - Kangaroo
@@ -555,6 +559,8 @@
     tags:
     - WhitelistChameleon
     - Kangaroo
+  - type: StaticPrice
+    price: 2000
 
 - type: entity
   name: stun knuckle dusters

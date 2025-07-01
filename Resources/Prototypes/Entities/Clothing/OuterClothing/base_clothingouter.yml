@@ -116,7 +116,7 @@
     heatingCoefficient: 0.01
     coolingCoefficient: 0.01
   - type: ClothingSpeedModifier
-    walkModifier: 0.4
+    walkModifier: 0.6
     sprintModifier: 0.6
   - type: HeldSpeedModifier
   - type: Item
@@ -146,6 +146,8 @@
       flatReductions:
         Heat: 10 # the average lightbulb only does around four damage!
     slots: OUTERCLOTHING
+  - type: SpontaneousCombustionProtection # Umbra
+    protectionPercent: 75 # Umbra
 
 - type: entity
   abstract: true
@@ -175,6 +177,8 @@
       flatReductions:
         Heat: 10 # the average lightbulb only does around four damage!
     slots: OUTERCLOTHING
+  - type: SpontaneousCombustionProtection # Umbra
+    protectionPercent: 75 # Umbra
 
 - type: entity
   parent: ClothingOuterBase

@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "made by AjexRose (Github)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "anemo_shard"
+    },
+    {
+      "name": "cryo_shard"
+    },
+    {
+      "name": "crystalshard_base"
+    },
+    {
+      "name": "dendro_shard"
+    },
+    {
+      "name": "electro_shard"
+    },
+    {
+      "name": "geo_shard"
+    },
+    {
+      "name": "hydro_shard"
+    },
+    {
+      "name": "pyro_shard"
+    }
+  ]
+}

@@ -1,8 +1,0 @@
-
-- type: decal
-  id: FullOverlay
-  tags: ["station", "overlay"]
-  defaultCustomColor: true
-  sprite:
-    sprite: _Umbra/Decals/Overlays/greyscale.rsi
-    state: full

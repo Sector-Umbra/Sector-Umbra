@@ -5,3 +5,31 @@
     Slash: 0.9
     Piercing: 0.9
     Blunt: 1.1
+
+# Umbra: Plasmamen
+- type: damageModifierSet
+  id: Plasmaman
+  coefficients:
+    Blunt: 1.2
+    Slash: 0.7
+    Piercing: 0.6
+    Cold: 0.2
+    Heat: 1.5
+    Poison: 0.0
+    Radiation: 0.0
+
+# Umbra damageMod - Eris' event set
+- type: damageModifierSet
+  id: FireKudzu #fire, you know it, I know it. Bad at cold, water, and the lack of oxygen.
+  coefficients:
+    #cant punch, shoot, or slash at fire
+    Blunt: 0.0
+    Slash: 0.0
+    Piercing: 0.0
+    Heat: 0.0
+    Cold: 2.0 #Water beats fire, water colder then fire, BOOM
+    Shock: 0.0
+    Poison: 0.0
+    Radiation: 0.0
+    Cellular: 0.0
+    Caustic: 0.0

@@ -1,9 +1,4 @@
 - type: loadout
   id: NursePDA
-  equipment: 
-    id: NursePDA
-
-- type: startingGear
-  id: NursePDA
   equipment:
     id: NursePDA
