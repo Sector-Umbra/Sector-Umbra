@@ -14,24 +14,26 @@
       visible: false
       shader: unshaded
       map: ["enum.ToggleableVisuals.Layer"]
+  - type: Item
+    size: Small
+    sprite: _Umbra/PersonalItems/Items/fateseekergemstone.rsi
+  - type: ItemToggle
+  - type: UseDelay
+    delay: 1
+  - type: PointLight
+    enabled: false
+    radius: 1.05 # Light to be 1/10th of PDA light.
+    energy: 2
+    color: "#475ed1"
+    netsync: false
+  - type: Appearance
+  - type: ItemTogglePointLight
   - type: GenericVisualizer
     visuals:
       enum.ToggleableVisuals.Enabled:
         enum.ToggleableVisuals.Layer:
           True: { visible: true }
           False: { visible: false }
-  - type: Item
-    size: Small
-    sprite: _Umbra/PersonalItems/Items/fateseekergemstone.rsi
-  - type: ItemToggle
-  - type: Appearance
-  - type: UseDelay
-    delay: 2.5
-  - type: PointLight ##<-- I am not sure if this violates any rules, but please contact and remove this feature if needed.
-    enabled: false
-    radius: 1.3
-    color: "#475ed1"
-    netsync: false
   ##- type: EmitSoundOnUse
   ##  sound: /Audio/_Umbra/Items/Fun/fateseekersgemstoneuse.ogg  [[FOR FUTURE]]
 
