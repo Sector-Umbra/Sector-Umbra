@@ -9,6 +9,8 @@
   - type: Sprite
     state: plushie_gartei
     sprite: _Umbra/PersonalItems/Plushies/garplushie.rsi
+  - type: Item
+    sprite: _Umbra/PersonalItems/Plushies/garplushie.rsi
   - type: Clothing
     quickEquip: false
     sprite: _Umbra/PersonalItems/Plushies/garplushie.rsi

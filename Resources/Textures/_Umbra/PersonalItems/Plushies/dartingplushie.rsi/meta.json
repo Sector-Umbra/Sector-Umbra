@@ -15,11 +15,11 @@
         "directions": 4
       },
       {
-        "name": "inhand-left",
+        "name": "spacelizard-inhand-left",
         "directions": 4
       },
       {
-        "name": "inhand-right",
+        "name": "spacelizard-inhand-right",
         "directions": 4
       }
     ]

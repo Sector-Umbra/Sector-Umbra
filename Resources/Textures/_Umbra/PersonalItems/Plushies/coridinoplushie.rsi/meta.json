@@ -15,11 +15,11 @@
         "directions": 4
       },
       {
-        "name": "plushiedino-inhand-left",
+        "name": "inhand-left",
         "directions": 4
       },
       {
-        "name": "plushiedino-inhand-right",
+        "name": "inhand-right",
         "directions": 4
       }
     ]

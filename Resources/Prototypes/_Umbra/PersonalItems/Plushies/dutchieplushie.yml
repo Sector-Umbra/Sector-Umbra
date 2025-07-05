@@ -9,6 +9,8 @@
   - type: Sprite
     state: plushie_dutchie
     sprite: _Umbra/PersonalItems/Plushies/dutchieplushie.rsi
+  - type: Item
+    sprite: _Umbra/PersonalItems/Plushies/dutchieplushie.rsi
   - type: Clothing
     quickEquip: false
     sprite: _Umbra/PersonalItems/Plushies/dutchieplushie.rsi

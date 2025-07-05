@@ -10,7 +10,7 @@
     state: plushie_dino
     sprite: _Umbra/PersonalItems/Plushies/coridinoplushie.rsi
   - type: Item
-    heldPrefix: plushiedino
+    sprite: _Umbra/PersonalItems/Plushies/coridinoplushie.rsi
   - type: Clothing
     quickEquip: false
     sprite: _Umbra/PersonalItems/Plushies/coridinoplushie.rsi

@@ -9,6 +9,8 @@
   - type: Sprite
     state: plushie_cooks
     sprite: _Umbra/PersonalItems/Plushies/cooksplushie.rsi
+  - type: Item
+    sprite: _Umbra/PersonalItems/Plushies/cooksplushie.rsi
   - type: Clothing
     quickEquip: false
     sprite: _Umbra/PersonalItems/Plushies/cooksplushie.rsi
