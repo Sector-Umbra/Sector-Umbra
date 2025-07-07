@@ -1,0 +1,4 @@
+- type: guideEntry # Should eventually make a big "Umbra Content" guidebook category.
+  id: Cassette
+  name: Cassette Players # Locale string this
+  text: "/ServerInfo/Guidebook/_Umbra/Cassette.xml"

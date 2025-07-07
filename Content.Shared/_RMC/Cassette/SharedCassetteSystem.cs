@@ -41,7 +41,7 @@ public abstract class SharedCassetteSystem : EntitySystem
         SubscribeLocalEvent<CassettePlayerComponent, CassetteNextActionEvent>(OnPlayerNext);
         SubscribeLocalEvent<CassettePlayerComponent, CassetteRestartActionEvent>(OnPlayerRestart);
         SubscribeLocalEvent<CassettePlayerComponent, InteractUsingEvent>(OnPlayerInteractUsing);
-        SubscribeLocalEvent<CassettePlayerComponent, RMCStorageEjectHandItemEvent>(OnPlayerEjectHand);
+        // SubscribeLocalEvent<CassettePlayerComponent, RMCStorageEjectHandItemEvent>(OnPlayerEjectHand);
         SubscribeLocalEvent<CassettePlayerComponent, GetEquipmentVisualsEvent>(OnPlayerGetEquipmentVisuals, after: [typeof(ClothingSystem)]);
         SubscribeLocalEvent<CassettePlayerComponent, GotUnequippedEvent>(OnPlayerUnequipped);
         SubscribeLocalEvent<CassettePlayerComponent, ExaminedEvent>(OnPlayerExamined);
@@ -212,7 +212,7 @@ public abstract class SharedCassetteSystem : EntitySystem
         _audio.PlayLocal(ent.Comp.InsertEjectSound, ent, args.User);
     }
 
-    private void OnPlayerEjectHand(Entity<CassettePlayerComponent> ent, ref RMCStorageEjectHandItemEvent args) // RMCStorageEjectHandItemEvent doesn't exist. Probably need to make our own.
+/*     private void OnPlayerEjectHand(Entity<CassettePlayerComponent> ent, ref RMCStorageEjectHandItemEvent args) // RMCStorageEjectHandItemEvent doesn't exist. Probably need to make our own.
     {
         if (args.Handled)
             return;
@@ -222,7 +222,7 @@ public abstract class SharedCassetteSystem : EntitySystem
 
         if (EjectTape(ent, args.User))
             args.Handled = true;
-    }
+    } */
 
     private void OnPlayerGetEquipmentVisuals(Entity<CassettePlayerComponent> ent, ref GetEquipmentVisualsEvent args)
     {

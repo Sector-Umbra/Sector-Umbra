@@ -1,0 +1,11 @@
+<Document>
+  # Cassettes & Cassette Players
+
+  <Box>
+    <GuideEntityEmbed Entity="RMCCassettePlayer" Caption="Cassette Player"/>
+    <GuideEntityEmbed Entity="RMCCassetteTapeCustom" Caption="Cassette Tape"/>
+  </Box>
+
+  Not to be confused with tape recorders,
+
+</Document>

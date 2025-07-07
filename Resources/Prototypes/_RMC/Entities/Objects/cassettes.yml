@@ -2,34 +2,38 @@
   parent: BaseItem
   id: RMCCassettePlayer
   name: cassette player
-  description: A cassette player that first hit the market over 100 years ago. Crazy how these never went out of style. # Todo: This date needs to change to be older.
+  description: A cassette player that first hit the market over 250 years ago. Crazy how these never went out of style.
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Devices/cassette_player.rsi
+    sprite: _RMC/Objects/Devices/cassette_player.rsi
     state: walkman
   - type: Item
     size: Small
-  - type: Clothing
+  - type: Clothing # TODO: This needs to change since only one ear slot, compared to RMC's two. But *where*.
     slots:
     - ears
   - type: CassettePlayer
-  - type: ClothingLimit
-    slot: All
-    id: RMCCassettePlayer
+  - type: GuideHelp
+    guides:
+    - Cassette
 
 - type: entity
   abstract: true
   parent: BaseItem
   id: RMCCassetteTapeBase
+  categories: [ HideSpawnMenu ]
   name: cassette
   description: A plastic cassette tape.
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Devices/cassette_player.rsi
+    sprite: _RMC/Objects/Devices/cassette_player.rsi
     state: cassette_blue
   - type: Item
     size: Small
   - type: CassetteTape
+  - type: GuideHelp
+    guides:
+    - Cassette
 
 - type: entity
   parent: RMCCassetteTapeBase

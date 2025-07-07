@@ -51,10 +51,10 @@ public sealed partial class CassettePlayerComponent : Component
     public int Tape;
 
     [DataField, AutoNetworkedField]
-    public SoundSpecifier PlayPauseSound = new SoundPathSpecifier("/Audio/_RMC14/Machines/click.ogg"); // Change
+    public SoundSpecifier PlayPauseSound = new SoundPathSpecifier("/Audio/Machines/button.ogg");
 
     [DataField, AutoNetworkedField]
-    public SoundSpecifier InsertEjectSound = new SoundPathSpecifier("/Audio/_RMC14/Weapons/handcuffs.ogg"); // Change
+    public SoundSpecifier InsertEjectSound = new SoundPathSpecifier("/Audio/Machines/screwdriverclose.ogg");
 
     [DataField, AutoNetworkedField]
     public SpriteSpecifier.Rsi WornSprite = new(new ResPath("_RMC/Objects/Devices/cassette_player.rsi"), "mob_overlay");
