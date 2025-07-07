@@ -9,6 +9,8 @@
   - type: Sprite
     state: icon
     sprite: _Umbra/PersonalItems/Plushies/dartingplushie.rsi
+  - type: Item
+    sprite: _Umbra/PersonalItems/Plushies/dartingplushie.rsi
   - type: Clothing
     quickEquip: false
     sprite: _Umbra/PersonalItems/Plushies/dartingplushie.rsi
