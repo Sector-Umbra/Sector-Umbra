@@ -1,4 +1,5 @@
 using System.Linq;
+using Content.Shared._Moffstation.Paper.Components; // Moffstation
 using Content.Shared.Administration.Logs;
 using Content.Shared.UserInterface;
 using Content.Shared.Database;
@@ -7,7 +8,7 @@ using Content.Shared.Interaction;
 using Content.Shared.Random.Helpers;
 using Content.Shared.Popups;
 using Content.Shared.Tag;
-using Content.Shared.Verbs; // Umbra - Pen signing
+using Content.Shared.Verbs; // Moffstation
 using Robust.Shared.Player;
 using Robust.Shared.Audio.Systems;
 using static Content.Shared.Paper.PaperComponent;
@@ -18,6 +19,8 @@ namespace Content.Shared.Paper;
 
 public sealed class PaperSystem : EntitySystem
 {
+    private static readonly Color SignatureColor = Color.FromHex("#333333");    // Moffstation - Signature color
+
     [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
     [Dependency] private readonly IPrototypeManager _protoMan = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
@@ -49,8 +52,7 @@ public sealed class PaperSystem : EntitySystem
 
         SubscribeLocalEvent<ActivateOnPaperOpenedComponent, PaperWriteEvent>(OnPaperWrite);
 
-        // Umbra - Signing alt verb event listener.
-        SubscribeLocalEvent<PaperComponent, GetVerbsEvent<AlternativeVerb>>(AddSignVerb);
+        SubscribeLocalEvent<PaperComponent, GetVerbsEvent<AlternativeVerb>>(AddSignVerb); // Umbra - Signing alt verb event listener.
 
         _paperQuery = GetEntityQuery<PaperComponent>();
     }
@@ -103,35 +105,14 @@ public sealed class PaperSystem : EntitySystem
 
             if (entity.Comp.StampedBy.Count > 0)
             {
-                // Umbra: Separate into stamps and signatures.
-                var stamps = entity.Comp.StampedBy.FindAll(s => s.Type == StampType.RubberStamp);
-                var signatures = entity.Comp.StampedBy.FindAll(s => s.Type == StampType.Signature);
-
-                // Umbra: If we have stamps, render them.
-                if (stamps.Count > 0)
-                {
-                    var joined = string.Join(", ", stamps.Select(s => Loc.GetString(s.StampedName)));
-                    args.PushMarkup(
-                        Loc.GetString(
-                            "paper-component-examine-detail-stamped-by",
-                            ("paper", entity),
-                            ("stamps", joined)
-                        )
-                    );
-                }
-
-                // Umbra: Ditto for signatures.
-                if (signatures.Count > 0)
-                {
-                    var joined = string.Join(", ", signatures.Select(s => s.StampedName));
-                    args.PushMarkup(
-                        Loc.GetString(
-                            "paper-component-examine-detail-signed-by",
-                            ("paper", entity),
-                            ("stamps", joined)
-                        )
-                    );
-                }
+                var commaSeparated =
+                    string.Join(", ", entity.Comp.StampedBy.Select(s => Loc.GetString(s.StampedName)));
+                args.PushMarkup(
+                    Loc.GetString(
+                        "paper-component-examine-detail-stamped-by",
+                        ("paper", entity),
+                        ("stamps", commaSeparated))
+                );
             }
         }
     }
@@ -179,22 +160,18 @@ public sealed class PaperSystem : EntitySystem
         }
 
         // If a stamp, attempt to stamp paper
-        if (TryComp<StampComponent>(args.Used, out var stampComp) &&
-            TryStamp(entity, GetStampInfo(stampComp), stampComp.StampState))
+        if (TryComp<StampComponent>(args.Used, out var stampComp) && TryStamp(entity, GetStampInfo(stampComp), stampComp.StampState))
         {
             // successfully stamped, play popup
             var stampPaperOtherMessage = Loc.GetString("paper-component-action-stamp-paper-other",
-                ("user", args.User),
-                ("target", args.Target),
-                ("stamp", args.Used));
+                    ("user", args.User),
+                    ("target", args.Target),
+                    ("stamp", args.Used));
 
-            _popupSystem.PopupEntity(stampPaperOtherMessage,
-                args.User,
-                Filter.PvsExcept(args.User, entityManager: EntityManager),
-                true);
+            _popupSystem.PopupEntity(stampPaperOtherMessage, args.User, Filter.PvsExcept(args.User, entityManager: EntityManager), true);
             var stampPaperSelfMessage = Loc.GetString("paper-component-action-stamp-paper-self",
-                ("target", args.Target),
-                ("stamp", args.Used));
+                    ("target", args.Target),
+                    ("stamp", args.Used));
             _popupSystem.PopupClient(stampPaperSelfMessage, args.User, args.User);
 
             _audio.PlayPredicted(stampComp.Sound, entity, args.User);
@@ -276,6 +253,9 @@ public sealed class PaperSystem : EntitySystem
     /// </summary>
     public bool TryStamp(Entity<PaperComponent> entity, StampDisplayInfo stampInfo, string spriteStampState)
     {
+        if (!(entity.Comp.StampingEnabled)) // Moffstation
+            return false;
+
         if (!entity.Comp.StampedBy.Contains(stampInfo))
         {
             entity.Comp.StampedBy.Add(stampInfo);
@@ -288,91 +268,85 @@ public sealed class PaperSystem : EntitySystem
                 _appearance.SetData(entity, PaperVisuals.Stamp, entity.Comp.StampState, appearance);
             }
         }
-
         return true;
     }
 
-    // BEGIN OF UMBRA ADDITIONS
-    // Umbra: Send paper signing alt verb to the client if applicable.
+    // Umbra - Begin - Paper signing
+    // Send paper signing alt verb to the client if applicable.
     // Based on LockSystem.cs for alt-click behavior.
-    private void AddSignVerb(Entity<PaperComponent> uid, ref GetVerbsEvent<AlternativeVerb> args)
+    private void AddSignVerb(Entity<PaperComponent> ent, ref GetVerbsEvent<AlternativeVerb> args)
     {
         if (!args.CanAccess || !args.CanInteract)
             return;
 
-        // Pens have a `Write` tag.
-        if (!args.Using.HasValue || !_tagSystem.HasTag(args.Using.Value, "Write"))
+        // Sanity check
+        if (ent.Owner != args.Target)
             return;
 
-        EntityUid user = args.User;
+        // Pens have a `Write` tag.
+        if (args.Using is not { } item|| !_tagSystem.HasTag(item, WriteTag))
+            return;
+
+        // If theres a fake signature available, get it
+        TryComp<ForgeSignatureComponent>(item, out var fakeSignatureComp);
+
+        var user = args.User;
 
         AlternativeVerb verb = new()
         {
-            Act = () =>
-            {
-                TrySign(uid, user);
-            },
-            Text = Loc.GetString("paper-component-verb-sign")
+            Act = () => TrySign(ent, user, fakeSignatureComp),
+            Text = Loc.GetString("paper-component-verb-sign"),
             // Icon = Don't have an icon yet. Todo for later.
         };
         args.Verbs.Add(verb);
     }
 
     // Umbra: Actual signature code.
-    public bool TrySign(Entity<PaperComponent> paper, EntityUid signer)
+    private bool TrySign(Entity<PaperComponent> ent, EntityUid signer, ForgeSignatureComponent? signatureComp)
     {
+        var signature = signatureComp?.Signature ?? Name(signer);
+
         // Generate display information.
-        StampDisplayInfo info = new StampDisplayInfo
+        var info = new StampDisplayInfo
         {
-            StampedName = Name(signer),
-            StampedColor = Color.FromHex("#333333"),
-            Type = StampType.Signature
+            StampedName = signature,
+            StampedColor = SignatureColor,
+            Type = StampType.Signature,
         };
 
         // Try stamp with the info, return false if failed.
-        if (TryStamp(paper, info, "paper_stamp-generic"))
-        {
-            // Signing successful, popup time.
+        if (!TryStamp(ent, info, "paper_stamp-generic"))
+            return false;
 
-            _popupSystem.PopupEntity(
-                Loc.GetString(
-                    "paper-component-action-signed-other",
-                    ("user", signer),
-                    ("target", paper)
-                ),
-                signer,
-                Filter.PvsExcept(signer, entityManager: EntityManager),
-                true
-            );
+        // Signing successful, popup time.
 
-            _popupSystem.PopupEntity(
-                Loc.GetString(
-                    "paper-component-action-signed-self",
-                    ("target", paper)
-                ),
-                signer,
-                signer
-            );
+        _popupSystem.PopupPredicted(
+            Loc.GetString(
+                "paper-component-action-signed-self",
+                ("target", ent)
+            ),
+            Loc.GetString(
+                "paper-component-action-signed-other",
+                ("user", signer),
+                ("target", ent)
+            ),
+            signer,
+            signer
+        );
 
-            _audio.PlayPvs(paper.Comp.Sound, paper);
+        _audio.PlayPvs(ent.Comp.Sound, ent);
 
-            _adminLogger.Add(LogType.Verb,
-                LogImpact.Low,
-                $"{ToPrettyString(signer):player} has signed {ToPrettyString(paper):paper}.");
+        _adminLogger.Add(LogType.Verb, LogImpact.Low, $"{ToPrettyString(signer):player} has signed {ToPrettyString(ent):paper}.");
 
-            UpdateUserInterface(paper);
+        UpdateUserInterface(ent);
 
-            return true;
-        }
-
-        return false;
+        return true;
     }
-    // END OF UMBRA ADDITIONS
+    // Umbra - End
 
     /// <summary>
     ///     Copy any stamp information from one piece of paper to another.
     /// </summary>
-
     public void CopyStamps(Entity<PaperComponent?> source, Entity<PaperComponent?> target)
     {
         if (!Resolve(source, ref source.Comp) || !Resolve(target, ref target.Comp))
@@ -414,9 +388,7 @@ public sealed class PaperSystem : EntitySystem
 
     private void UpdateUserInterface(Entity<PaperComponent> entity)
     {
-        _uiSystem.SetUiState(entity.Owner,
-            PaperUiKey.Key,
-            new PaperBoundUserInterfaceState(entity.Comp.Content, entity.Comp.StampedBy, entity.Comp.Mode));
+        _uiSystem.SetUiState(entity.Owner, PaperUiKey.Key, new PaperBoundUserInterfaceState(entity.Comp.Content, entity.Comp.StampedBy, entity.Comp.Mode));
     }
 }
 
