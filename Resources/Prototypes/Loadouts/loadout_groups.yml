@@ -810,6 +810,9 @@
   - StationEngineerHazardsuitModern # CD
   - StationEngineerCasualsuit # CD
   - StationEngineerPants # CD
+  - StationEngineerJumpsuitEVA # CD
+  - StationEngineerJumpsuitMechanic # CD
+  - StationEngineerJumpskirtMechanic # CD
   # CD: Separate Senior roles
   # - SeniorEngineerJumpsuit
   # - SeniorEngineerJumpskirt
