@@ -1,7 +1,7 @@
 {
-    "version": 1,
+    "version": 2,
     "license": "CC-BY-SA-3.0",
-    "copyright": "plushie_kai modified by VividWisp from plushielizard.png from commit: https://github.com/Sector-Umbra/Sector-Umbra/commit/ebebb3603acc9d801d5ae87ac948b1c287aa2116. kai-equipped-HELMET modified by VividWisp from commit: https://github.com/space-wizards/space-station-14/pull/30400/commits/eaa585e62c1731429f8030ec3969758b08049866",
+    "copyright": "plushie_kai modified by VividWisp from plushielizard.png from commit: https://github.com/Sector-Umbra/Sector-Umbra/commit/ebebb3603acc9d801d5ae87ac948b1c287aa2116. kai-equipped-HELMET modified by VividWisp from commit: https://github.com/space-wizards/space-station-14/pull/30400/commits/eaa585e62c1731429f8030ec3969758b08049866. inhand-left & inhand-right modified by jacketedgaming (Discord) from https://github.com/space-wizards/space-station-14/pull/32583/commits/c5485a204c9ba043438b604b958e8e7481ef9d52. holding-inhand-left & holding-inhand-right created by jacketedgaming.",
     "size": {
       "x": 32,
       "y": 32
@@ -11,7 +11,23 @@
         "name": "plushie_kai"
       },
       {
-        "name": "kai-equipped-HELMET",
+        "name": "equipped-HELMET",
+        "directions": 4
+      },
+      {
+        "name": "inhand-left",
+        "directions": 4
+      },
+      {
+        "name": "inhand-right",
+        "directions": 4
+      },
+      {
+        "name": "holding-inhand-left",
+        "directions": 4
+      },
+      {
+        "name": "holding-inhand-right",
         "directions": 4
       }
     ]
