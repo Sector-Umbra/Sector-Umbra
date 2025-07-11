@@ -291,6 +291,7 @@
   - CEEnvirosuit # Umbra
   - GroupTankHarness
   - ChiefEngineerHead
+  - EngineeringEyewear # CD
   - ChiefEngineerJumpsuit
   - StationEngineerBackpack
   - ChiefEngineerNeck
@@ -319,6 +320,7 @@
   - EngineerEnvirosuit # Umbra
   - GroupTankHarness
   - StationEngineerHead
+  - EngineeringEyewear # CD
   - StationEngineerJumpsuit
   - StationEngineerBackpack
   - StationEngineerOuterClothing
@@ -334,6 +336,7 @@
   groups:
   - AtmosEnvirosuit # Umbra
   - GroupTankHarness
+  - EngineeringEyewear # CD
   - AtmosphericTechnicianJumpsuit
   - AtmosphericTechnicianBackpack
   - AtmosphericTechnicianOuterClothing
