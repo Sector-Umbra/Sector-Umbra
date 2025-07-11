@@ -23,6 +23,21 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtEngineeringModern
 
+- type: loadout
+  id: StationEngineerJumpsuitEVA
+  equipment: 
+    jumpsuit: ClothingUniformJumpsuitEngineeringEVA
+
+- type: loadout
+  id: StationEngineerJumpsuitMechanic
+  equipment: 
+    jumpsuit: ClothingUniformJumpsuitEngineeringMechanic
+
+- type: loadout
+  id: StationEngineerJumpskirtMechanic
+  equipment: 
+    jumpsuit: ClothingUniformJumpskirtEngineeringMechanic
+
 # OuterClothing
 - type: loadout
   id: StationEngineerJacket
@@ -34,3 +49,14 @@
   id: TechnicalAssistantPDA
   equipment:
     id: TechnicalAssistantPDA
+
+# Glasses
+- type: loadout
+  id: ClothingEyesGlassesMeson
+  equipment:
+    eyes: ClothingEyesGlassesMeson
+
+- type: loadout
+  id: ClothingEyesGlassesMesonPrescription
+  equipment:
+    eyes: ClothingEyesGlassesMesonPrescription
