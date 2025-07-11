@@ -13,7 +13,7 @@
     sprite: _Umbra/PersonalItems/Plushies/kaiplushie.rsi
   - type: Clothing
     quickEquip: false
-    sprite: _Umbra/PersonalItems/Plushies/kaiplushie.rsi
+    sprite: _Umbra/PersonalItems/Plushies/kaiplushie_64.rsi
   - type: Appearance
   - type: Foldable
     canFoldInsideContainer: true
