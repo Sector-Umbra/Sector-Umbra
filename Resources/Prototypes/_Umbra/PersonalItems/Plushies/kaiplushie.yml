@@ -1,6 +1,6 @@
 # Player: Coolsurf6 - Character: Kai
 - type: entity
-  parent: PlushieLizard
+  parent: [ PlushieLizard, BaseFoldable ]
   id: PersonalItemKaiPlushie
   name: kai plushie
   description: A custom made lizard plushie belonging to Kai. No one knows where this came from or why it exists. Putting your ear to it, you can almost hear it say "Goober..."
@@ -9,10 +9,19 @@
   - type: Sprite
     state: plushie_kai
     sprite: _Umbra/PersonalItems/Plushies/kaiplushie.rsi
+  - type: Item
+    sprite: _Umbra/PersonalItems/Plushies/kaiplushie.rsi
   - type: Clothing
     quickEquip: false
-    sprite: _Umbra/PersonalItems/Plushies/kaiplushie.rsi
-    equippedPrefix: kai
+    sprite: _Umbra/PersonalItems/Plushies/kaiplushie_64.rsi
+  - type: Appearance
+  - type: Foldable
+    canFoldInsideContainer: true
+    unfoldVerbText: drag-verb
+    foldVerbText: hold-verb
+  - type: FoldableClothing
+    foldedEquippedPrefix: holding
+    foldedHeldPrefix: holding
 
 - type: loadout
   id: PersonalItemKaiPlushie
