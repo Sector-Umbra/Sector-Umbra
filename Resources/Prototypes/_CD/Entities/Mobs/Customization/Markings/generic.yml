@@ -527,7 +527,7 @@
   id: ArmProstheticLeft
   bodyPart: LArm
   markingCategory: Arms
-  speciesRestriction: [Human, Dwarf, Reptilian, SlimePerson, Arachnid]
+  speciesRestriction: [Human, Dwarf, Reptilian, SlimePerson, Arachnid, Feroxi, Vulpkanin, Moth]
   followSkinColor: false
   coloring:
     default:
@@ -552,7 +552,7 @@
   id: ArmProstheticRight
   bodyPart: RArm
   markingCategory: Arms
-  speciesRestriction: [Human, Dwarf, Reptilian, SlimePerson, Arachnid]
+  speciesRestriction: [Human, Dwarf, Reptilian, SlimePerson, Arachnid, Feroxi, Vulpkanin, Moth]
   followSkinColor: false
   coloring:
     default:
@@ -577,7 +577,7 @@
   id: HandProstheticLeft
   bodyPart: LHand
   markingCategory: Arms
-  speciesRestriction: [Human, Dwarf, Reptilian, SlimePerson, Arachnid]
+  speciesRestriction: [Human, Dwarf, Reptilian, SlimePerson, Arachnid, Feroxi, Vulpkanin, Moth]
   followSkinColor: false
   coloring:
     default:
@@ -602,7 +602,7 @@
   id: HandProstheticRight
   bodyPart: RHand
   markingCategory: Arms
-  speciesRestriction: [Human, Dwarf, Reptilian, SlimePerson, Arachnid]
+  speciesRestriction: [Human, Dwarf, Reptilian, SlimePerson, Arachnid, Feroxi, Vulpkanin, Moth]
   followSkinColor: false
   coloring:
     default:
@@ -778,7 +778,7 @@
   id: FootProstheticLeft
   bodyPart: LFoot
   markingCategory: Legs
-  speciesRestriction: [Human, Dwarf, SlimePerson, Arachnid]
+  speciesRestriction: [Human, Dwarf, Reptilian, SlimePerson, Arachnid, Feroxi, Vulpkanin, Moth]
   followSkinColor: false
   coloring:
     default:
@@ -793,7 +793,7 @@
   id: FootProstheticRight
   bodyPart: RFoot
   markingCategory: Legs
-  speciesRestriction: [Human, Dwarf, SlimePerson, Arachnid]
+  speciesRestriction: [Human, Dwarf, Reptilian, SlimePerson, Arachnid, Feroxi, Vulpkanin, Moth]
   followSkinColor: false
   coloring:
     default:
@@ -808,7 +808,7 @@
   id: LegProstheticLeft
   bodyPart: LLeg
   markingCategory: Legs
-  speciesRestriction: [Human, Dwarf, SlimePerson, Arachnid]
+  speciesRestriction: [Human, Dwarf, Reptilian, SlimePerson, Arachnid, Feroxi, Vulpkanin, Moth]
   followSkinColor: false
   coloring:
     default:
@@ -833,7 +833,7 @@
   id: LegProstheticRight
   bodyPart: RLeg
   markingCategory: Legs
-  speciesRestriction: [Human, Dwarf, SlimePerson, Arachnid]
+  speciesRestriction: [Human, Dwarf, Reptilian, SlimePerson, Arachnid, Feroxi, Vulpkanin, Moth]
   followSkinColor: false
   coloring:
     default:
