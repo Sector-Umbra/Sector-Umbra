@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-4.0",
-  "copyright": "Modified by Boaz1111 (github) from forensic_jacket.rsi taken from https://github.com/cosmatic-drift-14/cosmatic-drift/pull/432/commits/85385b8ee28c3a88892df0b933d9aa4963aee7a5 and les-equipped-NECK taken from https://github.com/space-wizards/space-station-14/pull/13625/commits/77189d4d12f18976c3832fb6117596f568de1ad3.",
+  "copyright": "Modified by Boaz1111 (github) and HexReject (github) from forensic_jacket.rsi taken from https://github.com/cosmatic-drift-14/cosmatic-drift/pull/432/commits/85385b8ee28c3a88892df0b933d9aa4963aee7a5.",
   "size": {
     "x": 32,
     "y": 32

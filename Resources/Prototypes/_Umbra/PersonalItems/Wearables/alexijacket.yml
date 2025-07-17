@@ -3,7 +3,7 @@
   parent: [ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat]
   id: PersonalItemAlexiJacket
   name: Alexi's jacket
-  description: A sturdy black windbreaker with a red collar. The left side of the jacket has multiple pins attached to it, including a lesbian pin and some engineering themed pins.
+  description: A sturdy black windbreaker with a red collar. The left side of the jacket has some small engineering pins attached to it, and the right arm has a lesbian flag patch on it.
   suffix: PersonalItem
   components:
   - type: Sprite
