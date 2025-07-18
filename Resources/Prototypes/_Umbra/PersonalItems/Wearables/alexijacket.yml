@@ -1,0 +1,22 @@
+# Player: Boaz1111 - Character: Alexi Ullman
+- type: entity
+  parent: [ClothingOuterStorageFoldableBase, ClothingOuterWinterCoat]
+  id: PersonalItemAlexiJacket
+  name: Alexi's jacket
+  description: A sturdy black windbreaker with a red collar. The left side of the jacket has some small engineering pins attached to it, and the right arm has a lesbian flag patch on it.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Wearables/alexijacket.rsi
+  - type: Clothing
+    sprite: _Umbra/PersonalItems/Wearables/alexijacket.rsi
+
+- type: loadout
+  id: PersonalItemAlexiJacket
+  storage:
+    back:
+    - PersonalItemAlexiJacket
+  effects:
+  - !type:PersonalItemLoadoutEffect
+     character:
+      - Alexi Ullman
