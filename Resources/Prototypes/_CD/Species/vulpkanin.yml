@@ -52,10 +52,10 @@
       points: 1
       required: false
     Legs:
-      points: 3 # CD
+      points: 4 # CD - 3 - Umbra - Changed to 4
       required: false
     Arms:
-      points: 3 # CD
+      points: 4 # CD - 3 - Umbra - Changed to 4
       required: false
     Snout:
       points: 1
