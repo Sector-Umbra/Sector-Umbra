@@ -278,6 +278,7 @@
         Asphyxiation: -1.0
   - type: FireVisuals
     alternateState: Standing
+  - type: StunVisuals
   - type: LayEmote # CD Change, laying down emote
   - type: CPRPerformer # Umbra Change, all species can provide CPR.
   - type: SetExamine # Umbra Change, all species can set additional examine text.
