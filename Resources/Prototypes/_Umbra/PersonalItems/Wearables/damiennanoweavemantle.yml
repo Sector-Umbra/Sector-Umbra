@@ -1,15 +1,17 @@
-# Player: Jacketed - Character: Ko Karaki
+# Player: Deimos_the_fox - Character: Damien Nesuli
+# Former Player: Jacketed - Character: Ko Karaki
+
 - type: entity
   parent: [Clothing, BaseFoldable]
-  id: PersonalItemKarakiNanoweaveMantle
-  name: Karaki's nanoweave mantle
+  id: PersonalItemDamienNanoweaveMantle
+  name: Damien's nanoweave mantle
   description: A multi piece cloak that can be folded up into a mantle.  Its made out of nanoweave in traditional colours, often worn by Avali across the Illuminate. The fabric is intricately weaved down to the atomic level, making it incredibly strong and durable. A large dream catcher with some sync crystals attached to it hang from the right shoulder. Wearing it feels like the embrace of a forgotten loved one.
   suffix: PersonalItem
   components:
   - type: Item
     size: Small
   - type: Sprite
-    sprite: _Umbra/PersonalItems/Wearables/karakinanoweavemantle.rsi
+    sprite: _Umbra/PersonalItems/Wearables/damiennanoweavemantle.rsi
     layers:
     - state: icon
       map: [ "unfoldedLayer" ]
@@ -17,7 +19,7 @@
       map: [ "foldedLayer" ]
       visible: false
   - type: Clothing
-    sprite: _Umbra/PersonalItems/Wearables/karakinanoweavemantle.rsi
+    sprite: _Umbra/PersonalItems/Wearables/damiennanoweavemantle.rsi
     quickEquip: true
     slots:
     - neck
@@ -33,10 +35,10 @@
     - WhitelistChameleon
 
 - type: loadout
-  id: PersonalItemKarakiNanoweaveMantle
+  id: PersonalItemDamienNanoweaveMantle
   storage:
     back:
-    - PersonalItemKarakiNanoweaveMantle
+    - PersonalItemDamienNanoweaveMantle
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
