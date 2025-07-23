@@ -72,6 +72,9 @@
   - type: Item
     size: Small
     sprite: _RMC/Objects/Medical/blood_pack.rsi
+  - type: Tag
+    tags:
+      - Bloodpack
   - type: SolutionContainerManager
     solutions:
       pack:
