@@ -1,5 +1,4 @@
 # Player: Deimos_the_fox - Character: Damien Nesuli
-# Former Player: Jacketed - Character: Ko Karaki
 
 - type: entity
   parent: [Clothing, BaseFoldable]
