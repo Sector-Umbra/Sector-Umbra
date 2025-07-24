@@ -83,7 +83,7 @@
     contents:
       - id: MedicatedSuture
       - id: RegenerativeMesh
-      - id: CMBloodPackFull
+      - id: CMBloodPackFull # Umbra: Changed Bloodpack to CMBloodPackFull
         amount: 2
 
 - type: entity

@@ -536,7 +536,7 @@
     - id: SyringeInaprovaline
     - id: SyringeEphedrine
     - id: Gauze
-    - id: CMBloodPackFull
+    - id: CMBloodPackFull # Umbra: Changed Bloodpack to CMBloodPackFull
     - id: RegenerativeMesh
     - id: MedicatedSuture
     - id: EmergencyMedipen

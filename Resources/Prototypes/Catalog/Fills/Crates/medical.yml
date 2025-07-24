@@ -10,7 +10,7 @@
         amount: 2
       - id: Gauze
         amount: 2
-      - id: CMBloodPackFull
+      - id: CMBloodPackFull # Umbra: Changed Bloodpack to CMBloodPackFull
         amount: 2
       - id: BoxLatexGloves
       - id: BoxSterileMask

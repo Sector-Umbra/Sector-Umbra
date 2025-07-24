@@ -39,7 +39,7 @@
     - id: Brutepack1
       amount: !type:RangeNumberSelector
         range: 1, 4
-    - id: CMBloodPackFull
+    - id: CMBloodPackFull # Umbra: Changed Bloodpack to CMBloodPackFull
       amount: !type:RangeNumberSelector
     - id: Ointment1
       amount: !type:RangeNumberSelector
