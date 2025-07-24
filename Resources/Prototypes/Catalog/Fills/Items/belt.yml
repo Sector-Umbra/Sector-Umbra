@@ -96,7 +96,7 @@
         amount: 2
       - id: Ointment
         amount: 1
-      - id: Bloodpack
+      - id: CMBloodPackFull # Umbra: Changed Bloodpack to CMBloodPackFull
         amount: 1
       - id: Gauze
       - id: EmergencyMedipen #You never know what people are going to latejoin into
@@ -110,7 +110,7 @@
     contents:
       - id: Brutepack
       - id: Ointment
-      - id: Bloodpack
+      - id: CMBloodPackFull # Umbra: Changed Bloodpack to CMBloodPackFull
       - id: Gauze
       - id: EmergencyMedipen #You never know what people are going to latejoin into
         amount: 3
