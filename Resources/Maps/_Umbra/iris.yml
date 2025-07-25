@@ -13402,16 +13402,12 @@ entities:
       rot: 3.141592653589793 rad
       pos: 26.5,1.5
       parent: 2
-    - type: PaintableAirlock
-      department: Security
   - uid: 564
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 26.5,2.5
       parent: 2
-    - type: PaintableAirlock
-      department: Security
 - proto: AirlockMaint
   entities:
   - uid: 363
