@@ -11,9 +11,10 @@
     heldPrefix: borg
   - type: EmitSoundOnUse
     sound: &BorgPlushieSound
-      path: /Audio/Effects/Cargo/beep.ogg
+      path: /Audio/Effects/Cargo/ping.ogg
       params:
-        volume: -4
+        variation: 0.125
+        volume: -2
   - type: EmitSoundOnLand
     sound: *BorgPlushieSound
   - type: EmitSoundOnActivate
