@@ -119,7 +119,7 @@
 
 - type: entity
   parent: ClothingHeadEnvirosuitBase
-  id: ClothingHeadEnvirosuitCoroner.rsi
+  id: ClothingHeadEnvirosuitCoroner
   name: coroner envirosuit helmet
   components:
   - type: Sprite
