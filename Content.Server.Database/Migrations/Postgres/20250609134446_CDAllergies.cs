@@ -14,9 +14,9 @@ namespace Content.Server.Database.Migrations.Postgres
                 name: "cd_character_allergies",
                 columns: table => new
                 {
-                    allergen = table.Column<string>(type: "TEXT", nullable: false),
-                    cdprofile_id = table.Column<int>(type: "INTEGER", nullable: false),
-                    intensity = table.Column<int>(type: "INTEGER", nullable: false)
+                    allergen = table.Column<string>(type: "text", nullable: false),
+                    cdprofile_id = table.Column<int>(type: "integer", nullable: false),
+                    intensity = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
