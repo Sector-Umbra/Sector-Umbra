@@ -1295,6 +1295,7 @@
               Burn: -5
             types:
               Poison: -2
+              Bloodloss: -0.5 # Umbra; there is no other way to get rid of bloodloss otherwise; 1 per 1u
 
 - type: reagent
   id : Aloxadone
