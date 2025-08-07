@@ -26,18 +26,19 @@
   color: "#3a1d8a"
   metabolisms:
     Medicine:
+      metabolismRate: 0.1   # Umbra
       effects:
       - !type:HealthChange
         damage:
           types:
-            Poison: -1
+            Poison: -0.05   # Umbra; 2 per 1u
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
           min: 20
         damage:
           groups:
-            Brute: 2
+            Brute: 0.1    # Umbra; 4 per 1u
       - !type:Jitter
         conditions:
         - !type:ReagentThreshold
@@ -75,6 +76,7 @@
   color: "#64ffe6"
   metabolisms:
     Medicine:
+      metabolismRate: 0.25    # Umbra
       effects:
       - !type:AdjustReagent
         reagent: Histamine
@@ -91,7 +93,7 @@
       - !type:HealthChange
         damage:
           types:
-            Poison: -3
+            Poison: -1.5    # Umbra; 6 per 1u
 
 - type: reagent
   id: Ethylredoxrazine
@@ -103,6 +105,7 @@
   color: "#2d5708"
   metabolisms:
     Medicine:
+      metabolismRate: 0.25    # Umbra
       effects:
       - !type:GenericStatusEffect
         key: Drunk
@@ -111,7 +114,7 @@
       - !type:HealthChange
         damage:
           types:
-            Poison: -0.5
+            Poison: -0.25   # Umbra; 1 per 1u
 
 - type: reagent
   id: Arithrazine
@@ -123,13 +126,14 @@
   color: "#bd5902"
   metabolisms:
     Medicine:
+      metabolismRate: 0.25    # Umbra
       effects:
       - !type:HealthChange
         damage:
           types:
-            Radiation: -3
+            Radiation: -1.5   # 6 per 1u
           groups:
-            Brute: 1.5
+            Brute: 0.75   # 3 per 1u
 
 - type: reagent
   id: Bicaridine
@@ -141,18 +145,19 @@
   color: "#ffaa00"
   metabolisms:
     Medicine:
+      metabolismRate: 0.1   # Umbra
       effects:
       - !type:EvenHealthChange
         damage:
-          Brute: -1.5
+          Brute: -0.3  # Umbra; 3 per 1u
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
           min: 15
         damage:
           types:
-            Asphyxiation: 0.5
-            Poison: 1.5
+            Asphyxiation: 0.1   # Umbra; 1 per 1u
+            Poison: 0.3   # Umbra;  3 per 1u
       - !type:ChemVomit
         conditions:
         - !type:ReagentThreshold
@@ -223,23 +228,24 @@
   color: "#215263"
   metabolisms:
     Medicine:
+      metabolismRate: 0.25    # Umbra
       effects:
       - !type:HealthChange
         damage:
           types:
-            Heat: -1.5
-            Shock: -1.5
-            Cold: -1.5
+            Heat: -0.75        # Umbra; 3 per 1u
+            Shock: -0.75       # Umbra; 3 per 1u
+            Cold: -0.75        # Umbra; 3 per 1u
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
           min: 10
         damage:
           types:
-            Asphyxiation: 1
-            Cold: 2
+            Asphyxiation: 0.5  # Umbra;  2 per 1u
+            Cold: 1            # Umbra; 4 per 1u
           groups:
-            Brute: 0.5
+            Brute: 0.25        # Umbra;  1 per 1u
       - !type:Jitter
         conditions:
         - !type:ReagentThreshold
@@ -255,20 +261,21 @@
   color: "#0041a8"
   metabolisms:
     Medicine:
+      metabolismRate: 0.1       # Umbra
       effects:
       - !type:HealthChange
         damage:
           types:
-            Asphyxiation: -1
-            Bloodloss: -0.5
+            Asphyxiation: -0.2  # Umbra; 2 per 1u
+            Bloodloss: -0.1     # Umbra; 1 per 1u
       - !type:HealthChange
         conditions:
           - !type:ReagentThreshold
             min: 20
         damage:
           types:
-            Asphyxiation: 3
-            Cold: 1
+            Asphyxiation: 0.6   # Umbra; 6 per 1u
+            Cold: 0.1           # Umbra; 1 per 1u
 
 - type: reagent
   id: DexalinPlus
@@ -280,12 +287,13 @@
   color: "#4da0bd"
   metabolisms:
     Medicine:
+      metabolismRate: 0.25      # Umbra
       effects:
       - !type:HealthChange
         damage:
           types:
-            Asphyxiation: -3.5
-            Bloodloss: -3
+            Asphyxiation: -1.75 # Umbra;  7 per 1u
+            Bloodloss: -1.5     # Umbra;  
       - !type:AdjustReagent
         conditions:
         - !type:ReagentThreshold
@@ -299,8 +307,8 @@
             min: 25
         damage:
           types:
-            Asphyxiation: 5
-            Cold: 3
+            Asphyxiation: 2.5   # Umbra; 10 per 1u
+            Cold: 1.5           # Umbra; 6 per 1u
 
 # this ones a doozy
 - type: reagent
@@ -313,12 +321,13 @@
   color: "#d2fffa"
   metabolisms:
     Medicine:
+      metabolismRate: 0.4         # Umbra
       effects:
       - !type:AdjustReagent
         conditions:
         - !type:ReagentThreshold
           reagent: Histamine
-          min: 45
+          min: 40                 # Umbra; from 45 to 40
         reagent: Histamine
         amount: -5
       - !type:HealthChange
@@ -385,11 +394,12 @@
   color: "#4cb580"
   metabolisms:
     Medicine:
+      metabolismRate: 0.1         # Umbra
       effects:
       - !type:HealthChange
         damage:
           types:
-            Radiation: -1
+            Radiation: -0.2       # Umbra; 2 per 1u
       - !type:ChemVomit
         probability: 0.02
       - !type:HealthChange
@@ -454,13 +464,14 @@
   color: "#bf3d19"
   metabolisms:
     Medicine:
+      metabolismRate: 0.1         # Umbra
       effects:
       - !type:HealthChange
         damage:
           types:
-            Heat: -0.33
-            Shock: -0.33
-            Cold: -0.33
+            Heat: -0.075          # Umbra; 0.75 per 1u
+            Shock: -0.075         # Umbra; 0.75 per 1u
+            Cold: -0.075          # Umbra; 0.75 per 1u
       - !type:SatiateThirst
         factor: -10
         conditions:
@@ -487,11 +498,12 @@
   color: "#ff7db5"
   metabolisms:
     Medicine:
+      metabolismRate: 0.25         # Umbra
       effects:
       - !type:HealthChange
         damage:
           types:
-            Cold: -4
+            Cold: -2               # Umbra; 8 per 1u
       - !type:AdjustTemperature
         conditions:
         - !type:Temperature
@@ -606,13 +618,14 @@
   color: "#9423FF"
   metabolisms:
     Medicine:
+      metabolismRate: 0.25          # Umbra
       effects:
       - !type:HealthChange
         damage:
           groups:
-            Brute: -3.5
+            Brute: -1.75            # Umbra; 7 per 1u
           types:
-            Asphyxiation: -2.5
+            Asphyxiation: -1.25     # Umbra; 5 per 1u
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
@@ -621,7 +634,7 @@
           types:
             Asphyxiation: 3.5
       - !type:ModifyBleedAmount
-        amount: -0.25
+        amount: -0.125            # Umbra
 
 - type: reagent
   id: Ambuzol
@@ -705,11 +718,12 @@
   color: "#f4dab8"
   metabolisms:
     Medicine:
+      metabolismRate: 0.25         # Umbra
       effects:
       - !type:HealthChange
         damage:
           types:
-            Caustic: -5
+            Caustic: -2.5           # Umbra; 10 per 1u
 
 - type: reagent
   id: Stellibinin
@@ -721,18 +735,19 @@
   color: "#2b2f77"
   metabolisms:
     Medicine:
+      metabolismRate: 0.25         # Umbra
       effects:
       - !type:HealthChange
         damage:
           types:
-            Poison: -4
+            Poison: -2              # Umbra; 8 per 1u
       - !type:AdjustReagent
         conditions:
         - !type:ReagentThreshold
           reagent: Amatoxin
           min: 1
         reagent: Amatoxin
-        amount: -3
+        amount: -1.5                # Umbra; 6u removed per 1u
 
 - type: reagent
   id: Synaptizine
@@ -772,18 +787,19 @@
   color: "#ba7d7d"
   metabolisms:
     Medicine:
+      metabolismRate: 0.1         # Umbra
       effects:
       # Medium-large quantities can hurt you instead,
       # but still technically stop your bleeding.
       - !type:ModifyBleedAmount
-        amount: -1.5
+        amount: -0.3              # Umbra; 3 per 1u
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
           min: 15
         damage:
           types:
-            Bloodloss: 3
+            Bloodloss: 0.6          # 6 per 1u
 
 - type: reagent
   id: Tricordrazine
@@ -795,6 +811,7 @@
   color: "#00e5ff"
   metabolisms:
     Medicine:
+      metabolismRate: 0.1         # Umbra
       effects:
       - !type:HealthChange
         conditions:
@@ -802,12 +819,12 @@
           max: 50
         damage:
           groups:
-            Brute: -1
+            Brute: -1             # Umbra; 2 per 1u
           types:
-            Poison: -0.5 ##Should be about what it was when it healed the toxin group
-            Heat: -0.33
-            Shock: -0.33
-            Cold: -0.33
+            Poison: -0.1          # Umbra; 1 per 1u
+            Heat: -0.06           # Umbra; 0.6 per 1u
+            Shock: -0.06          # Umbra; 0.6 per 1u
+            Cold: -0.06           # Umbra; 0.6 per 1u
 
 - type: reagent
   id: Lipozine
@@ -835,13 +852,14 @@
   color: "#fcf7f9"
   metabolisms:
     Medicine:
+      metabolismRate: 0.4         # Umbra
       effects:
       - !type:EvenHealthChange
         damage:
-          Burn: -2
-          Toxin: -2
-          Airloss: -2
-          Brute: -2
+          Burn: -1.6              # Umbra; 4 per 1u
+          Toxin: -1.6             # Umbra; 4 per 1u
+          Airloss: -1.6           # Umbra; 4 per 1u
+          Brute: -1.6             # Umbra; 4 per 1u
 
 - type: reagent
   id: Ultravasculine
@@ -926,6 +944,7 @@
   color: "#d5d5e4"
   metabolisms:
     Medicine:
+      metabolismRate: 0.1            # Umbra
       effects:
       - !type:Jitter
       - !type:GenericStatusEffect
@@ -933,17 +952,17 @@
         component: StutteringAccent
       - !type:ModifyStatusEffect
         effectProto: StatusEffectDrowsiness
-        time: 10
+        time: 1                        # Umbra
         type: Remove
       - !type:ResetNarcolepsy
         conditions:
         - !type:ReagentThreshold
-          min: 10
+          min: 5                       # Umbra
       - !type:PopupMessage
         visualType: Medium
         messages: ["ethyloxyephedrine-effect-feeling-awake", "ethyloxyephedrine-effect-clear-mind"]
         type: Local
-        probability: 0.1
+        probability: 0.05             # Umbra
 
 - type: reagent
   id: Diphenylmethylamine
@@ -955,20 +974,21 @@
   color: "#b0abaa"
   metabolisms:
     Medicine:
+      metabolismRate: 0.05         # Umbra
       effects:
       - !type:ModifyStatusEffect
         effectProto: StatusEffectDrowsiness
-        time: 10
+        time: 3
         type: Remove
       - !type:ResetNarcolepsy
         conditions:
         - !type:ReagentThreshold
-          min: 5
+          min: 2.5                  # Umbra
       - !type:PopupMessage
         visualType: Medium
         messages: ["ethyloxyephedrine-effect-feeling-awake", "ethyloxyephedrine-effect-clear-mind"]
         type: Local
-        probability: 0.1
+        probability: 0.05           # Umbra
 
 - type: reagent
   id: Sigynate
@@ -1372,6 +1392,7 @@
   color: "#baa15d"
   metabolisms:
     Medicine:
+      metabolismRate: 0.1         # Umbra
       effects:
       - !type:GenericStatusEffect
         key: RadiationProtection
@@ -1382,7 +1403,7 @@
       - !type:HealthChange
         conditions:
           - !type:ReagentThreshold
-            min: 20
+            min: 11              # Umbra
         damage:
           types:
             Poison: 1
