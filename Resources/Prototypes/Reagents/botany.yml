@@ -122,8 +122,8 @@
       amount: 1
     - !type:RobustHarvest {}
   metabolisms:
-    metabolismRate: 0.1 # Umbra
     Poison:
+      metabolismRate: 0.1 # Umbra
       effects:
       - !type:HealthChange
         damage:
