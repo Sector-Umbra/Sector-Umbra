@@ -122,16 +122,16 @@
       amount: 1
     - !type:RobustHarvest {}
   metabolisms:
-      metabolismRate: 0.1         # Umbra
+      metabolismRate: 0.1 # Umbra
     Poison:
       effects:
       - !type:HealthChange
         damage:
           types:
-            Poison: -0.4          # Umbra; 4 per 1u
-            Blunt: -0.6           # Umbra; 6 per 1u
-            Slash: -0.6           # Umbra; 6 per 1u
-            Piercing: -0.6        # Umbra; 6 per 1u
+            Poison: -0.4  # Umbra; 4 per 1u
+            Blunt: -0.6 # Umbra; 6 per 1u
+            Slash: -0.6 # Umbra; 6 per 1u
+            Piercing: -0.6  # Umbra; 6 per 1u
         conditions:
         - !type:OrganType
           type: Plant
@@ -143,9 +143,9 @@
           min: 30
         damage:
           types:
-            Asphyxiation: 0.2        # Umbra; 2 per 1u
-            Heat: 0.4                # Umbra; 4 per 1u
-            Poison: 0.2              # Umbra; 2 per 1u
+            Asphyxiation: 0.2 # Umbra; 2 per 1u
+            Heat: 0.4 # Umbra; 4 per 1u
+            Poison: 0.2 # Umbra; 2 per 1u
     Medicine:
       effects:
       - !type:Polymorph
