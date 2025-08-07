@@ -5,7 +5,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtCentcomFormalDress
     back: ClothingBackpackSatchelLeather
-    shoes: ClothingHeadHatCentcomcap
+    shoes: ClothingShoesBootsLaceup
     head: ClothingHeadHatCentcomcap
     eyes: ClothingEyesGlassesCommand
     gloves: WristwatchGold
@@ -77,7 +77,7 @@
   equipment:
     jumpsuit: ClothingUniformCentcommTurtleneck
     back: ClothingBackpackSatchelLeather
-    shoes: ClothingHeadHatCentcomcap
+    shoes: ClothingShoesBootsLaceup
     head: ClothingHeadHatCentcomcap
     eyes: ClothingEyesGlassesCommand
     gloves: WristwatchGold
