@@ -19,3 +19,14 @@
     drawdepth: WallTops
     sprite: _Umbra/Structures/Wallmounts/posters.rsi
     state: leduck_contraband
+
+- type: entity
+  parent: PosterBase
+  id: PosterLegitPlayNice
+  name: "Station Rules"
+  description: "Be kind! Listen when others speak! Clean up after Shift time! Use our inside voice! Always do your best! It's nice to be NICE!"
+  components:
+  - type: Sprite
+    drawdepth: WallTops
+    sprite: _Umbra/Structures/Wallmounts/posters.rsi
+    state: playnice
