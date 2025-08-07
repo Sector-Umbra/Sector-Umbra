@@ -160,22 +160,23 @@
   recognizable: true
   metabolisms:
     Drink:
+      metabolismRate: 0.25         # Umbra
       effects:
       - !type:SatiateThirst
         factor: 1.5
     # Dragon doesn't require airloss healing, so omnizine is still best for humans.
       - !type:ModifyBloodLevel
-        amount: 3
+        amount: 1.5                # Umbra
       - !type:HealthChange
         damage:
           groups:
-            Burn: -5
-            Brute: -5
-            Toxin: -2
+            Burn: -2.5                # Umbra
+            Brute: -2.5               # Umbra
+            Toxin: -1                 # Umbra
           types:
-            Bloodloss: -5
+            Bloodloss: -2.5           # Umbra
       - !type:ModifyBleedAmount
-        amount: -1.5
+        amount: -0.75
   # Just in case you REALLY want to water your plants
   plantMetabolism:
   - !type:PlantAdjustWater
