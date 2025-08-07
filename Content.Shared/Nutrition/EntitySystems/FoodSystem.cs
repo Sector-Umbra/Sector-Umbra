@@ -265,7 +265,7 @@ public sealed class FoodSystem : EntitySystem
             return;
         }
 
-        _reaction.DoEntityReaction(args.Target.Value, solution, ReactionMethod.Ingestion);
+        _reaction.DoEntityReaction(args.Target.Value, split, ReactionMethod.Ingestion);
         _stomach.TryTransferSolution(stomachToUse!.Value.Owner, split, stomachToUse);
 
         var flavors = args.FlavorMessage;
@@ -289,7 +289,7 @@ public sealed class FoodSystem : EntitySystem
             _adminLogger.Add(LogType.Ingestion, LogImpact.Low, $"{ToPrettyString(args.User):target} ate {ToPrettyString(entity.Owner):food}");
         }
 
-        _audio.PlayPredicted(entity.Comp.UseSound, args.Target.Value, args.User, AudioParams.Default.WithVolume(-1f).WithVariation(0.20f));
+        _audio.PlayPredicted(entity.Comp.UseSound, args.Target.Value, args.User, entity.Comp.UseSound.Params.WithVolume(-1f).WithVariation(0.20f));
 
         // Try to break all used utensils
         foreach (var utensil in utensils)

@@ -112,6 +112,8 @@
   - type: Loadout
     prototypes: [ MobAghostGear ]
   - type: BypassInteractionChecks
+  - type: ExplosionResistance
+    damageCoefficient: 0
   - type: CharacterRecordConsole
     consoleType: Admin
     # Needed for security records console functionality
@@ -215,4 +217,3 @@
     priority: -10
   - type: InstantAction
     event: !type:ToggleIntrinsicUIEvent { key: enum.CharacterRecordConsoleKey.Key }
-

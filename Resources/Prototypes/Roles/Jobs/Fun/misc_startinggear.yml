@@ -108,6 +108,11 @@
     jumpsuit: ClothingUniformJumpsuitJacketMonkey
     id: PunPunIDCard
 
+- type: startingGear
+  id: MobPollyGear
+  equipment:
+    ears: ClothingHeadsetEngineering
+
 # Emotional Support Scurret
 
 - type: startingGear
@@ -148,7 +153,7 @@
 - type: startingGear
   id: MobAghostGear
   equipment:
-    back: ClothingBackpackSatchelHolding
+    back: ClothingBackpackSatchelAdmin
     id: AdminPDA
   storage:
     back:
