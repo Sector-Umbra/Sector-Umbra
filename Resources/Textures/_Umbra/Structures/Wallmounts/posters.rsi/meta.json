@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "leduck_contraband and clouds_legit sprited by kezu",
+  "copyright": "leduck_contraband and clouds_legit sprited by kezu (Discord), playnice sprited by Akira (Discord)",
   "size": {
     "x": 32,
     "y": 32
@@ -9,6 +9,9 @@
   "states": [
     {
       "name": "clouds_legit"
+    },
+    {
+      "name": "playnice"
     },
     {
       "name": "leduck_contraband",
