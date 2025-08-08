@@ -28,7 +28,7 @@
     - DeathRattleImplanterCentcomm
 
 - type: startingGear
-  id: InternalAffairsSupervisorHardsuitUmbra
+  id: InternalAffairsAgentHardsuitUmbra
   equipment:
     jumpsuit: ClothingUniformJumpsuitDeathSquad
     back: ClothingBackpackDeathSquad
