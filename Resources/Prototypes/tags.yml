@@ -256,9 +256,6 @@
   id: CartridgeCHIMP
 
 - type: Tag
-  id: CartridgeDeagle
-
-- type: Tag
   id: CartridgeHeavyRifle
 
 - type: Tag
@@ -865,9 +862,6 @@
 
 - type: Tag
   id: MagazineCaselessRifle
-
-- type: Tag
-  id: MagazineDeagle
 
 - type: Tag
   id: MagazineHeavyRifle
