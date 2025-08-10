@@ -1,0 +1,34 @@
+- type: entity
+  id: BulletDeagle
+  name: bullet (.357 magnum)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 65
+
+- type: entity
+  id: BulletDeagleIncendiary
+  name: bullet (.357 magnum incendiary)
+  parent: BaseBulletIncendiary
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 7
+        Heat: 58
+
+- type: entity
+  id: BulletDeagleAP
+  name: bullet (.357 magnum armor-piercing)
+  parent: BaseBulletAP
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 45.5 # 30% decrease
+    ignoreResistances: true

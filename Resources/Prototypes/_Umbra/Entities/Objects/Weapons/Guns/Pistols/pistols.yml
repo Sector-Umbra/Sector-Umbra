@@ -1,0 +1,44 @@
+- type: entity
+  name: Sandstone Taipan
+  parent: [BaseWeaponPistol, BaseSyndicateContraband]
+  id: WeaponPistolSyndicateDeagle
+  description: A formidable foe even for PM 5 grade armours. Elegant cherry wood handle with golden bolts, sleek dark metal, a weapon of destruction only fit for the biggest of scoundrels. The recoil is not a force to be reckoned with, if you'd like to keep your wrist. Chambered in an exceptionally rarely manufactured .357 Magnum.
+  components:
+  - type: Sprite
+    sprite: _Umbra/Objects/Weapons/Guns/Pistols/sandstone_taipan.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Umbra/Objects/Weapons/Guns/Pistols/sandstone_taipan.rsi
+  - type: Gun
+    minAngle: 1
+    maxAngle: 50
+    angleIncrease: 18
+    angleDecay: 14
+    fireRate: 2
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/mateba.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineDeagle
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - MagazineDeagle
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeDeagle
+        priority: 1
+        whitelist:
+          tags:
+          - CartridgeDeagle
