@@ -8,3 +8,14 @@
     sprite: _Umbra/Clothing/Head/Hats/nursehatalt.rsi
   - type: Clothing
     sprite: _Umbra/Clothing/Head/Hats/nursehatalt.rsi
+
+- type: entity
+  parent: [ClothingHeadBase, BaseSyndicateContraband]
+  id: ClothingHeadCapSyndieCommand
+  name: syndicate command cap
+  description: A grand commander's cap only meant for the thinking heads of society. This one's "evil."
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/Head/Hats/syndicatecommandcap.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/Head/Hats/syndicatecommandcap.rsi
