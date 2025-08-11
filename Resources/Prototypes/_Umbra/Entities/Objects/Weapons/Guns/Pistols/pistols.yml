@@ -14,11 +14,12 @@
   - type: Clothing
     sprite: _Umbra/Objects/Weapons/Guns/Pistols/sandstone_taipan.rsi
   - type: Gun
-    minAngle: 1
-    maxAngle: 50
-    angleIncrease: 18
-    angleDecay: 14
-    fireRate: 2
+    minAngle: 4
+    maxAngle: 60
+    angleIncrease: 26
+    angleDecay: 18
+    fireRate: 1.5
+    projectileSpeed: 40
     availableModes:
     - SemiAuto
     soundGunshot:

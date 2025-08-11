@@ -94,7 +94,7 @@
 
 - type: entity
   id: MagazineDeagleIncendiary
-  name: magazine (.357 magnum incendiary)
+  name: pistol magazine (.357 magnum incendiary)
   parent: BaseMagazineDeagle
   description: 8-round single stack pistol magazine. Intended to hold self-igniting incendiary ammunition.
   components:
