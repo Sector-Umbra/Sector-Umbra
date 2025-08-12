@@ -3,6 +3,7 @@
   id: ClothingUniformJumpsuitSyndicateGreat
   name: syndicate greatsuit
   description: A luxurious suit with a golden belt and crimson fur. It features hidden super-light kevlar underneath it. Only for the biggest of scoundrels!
+  suffix: Admin
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Uniforms/Jumpsuit/syndicategreat.rsi

@@ -14,6 +14,7 @@
   id: ClothingHeadCapSyndieCommand
   name: syndicate command cap
   description: A grand commander's cap only meant for the thinking heads of society. This one's "evil."
+  suffix: Admin
   components:
   - type: Sprite
     sprite: _Umbra/Clothing/Head/Hats/syndicatecommandcap.rsi
