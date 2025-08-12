@@ -1875,6 +1875,108 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
 
         #endregion
 
+        #region OAuth
+
+        public async Task<DiscordOAuthToken?> GetOAuthToken(Guid playerId)
+        {
+            await using var db = await GetDb();
+
+            return await db.DbContext.OAuthTokens.FirstOrDefaultAsync(x => x.PlayerUserId == playerId);
+        }
+
+        public async Task SetOAuthToken(Guid playerId, string token, string refreshToken, DateTime expiresAt, string id)
+        {
+            await using var db = await GetDb();
+
+            // We first check if we already have a token.
+            var existingToken = await db.DbContext.OAuthTokens
+                .FirstOrDefaultAsync(x => x.PlayerUserId == playerId);
+
+            var hasPlayerRecord = await db.DbContext.Player
+                .AnyAsync(x => x.UserId == playerId);
+
+            if (!hasPlayerRecord)
+            {
+                // Workaround for the fact that player records only get made on a successful connection.
+                // If we don't have one, we look at the last connection log for this Guid and be happy and use that to make the record.
+                var latestLog = await db.DbContext.ConnectionLog
+                    .OrderByDescending(x => x.Time)
+                    .FirstOrDefaultAsync(x => x.UserId == playerId);
+
+                if (latestLog == null)
+                {
+                    throw new Exception("Player does not exist in DB. This should not happen.");
+                    // player is a ghost
+                }
+
+                await UpdatePlayerRecord(new NetUserId(playerId),
+                    latestLog.UserName,
+                    latestLog.Address,
+                    latestLog.HWId);
+            }
+
+            if (existingToken == null)
+            {
+                db.DbContext.OAuthTokens.Add(new DiscordOAuthToken()
+                {
+                    AccessToken = token,
+                    ExpiresAt = expiresAt,
+                    PlayerUserId = playerId,
+                    RefreshToken = refreshToken,
+                    UserId = id,
+                });
+            }
+            else
+            {
+                existingToken.ExpiresAt = expiresAt;
+                existingToken.PlayerUserId = playerId;
+                existingToken.RefreshToken = refreshToken;
+                existingToken.AccessToken = token;
+                existingToken.UserId = id;
+            }
+
+            await db.DbContext.SaveChangesAsync();
+        }
+
+        public async Task DeleteOAuthToken(DiscordOAuthToken token)
+        {
+            await using var db = await GetDb();
+
+            db.DbContext.OAuthTokens.Remove(token);
+            await db.DbContext.SaveChangesAsync();
+        }
+
+        public async Task<List<DiscordOAuthToken>> GetLostOAuthTokens()
+        {
+            await using var db = await GetDb();
+
+            return await db.DbContext.OAuthTokens
+                .Where(x => x.PlayerUserId == null)
+                .ToListAsync();
+        }
+
+        public async Task<List<DiscordOAuthToken>> GetExpiredOrNearlyExpiredOAuthTokens()
+        {
+            await using var db = await GetDb();
+
+            var threshold = DateTime.UtcNow.AddMinutes(10);
+
+            return await db.DbContext.OAuthTokens
+                .Where(x => x.ExpiresAt <= threshold)
+                .ToListAsync();
+        }
+
+        public async Task<List<DiscordOAuthToken>> GetTokensByDiscordId(string id)
+        {
+            await using var db = await GetDb();
+
+            return await db.DbContext.OAuthTokens
+                .Where(x => x.UserId == id)
+                .ToListAsync();
+        }
+
+        #endregion
+
         public abstract Task SendNotification(DatabaseNotification notification);
 
         // SQLite returns DateTime as Kind=Unspecified, Npgsql actually knows for sure it's Kind=Utc.

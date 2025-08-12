@@ -46,6 +46,7 @@ namespace Content.Server.Database
         public DbSet<RoleWhitelist> RoleWhitelists { get; set; } = null!;
         public DbSet<BanTemplate> BanTemplate { get; set; } = null!;
         public DbSet<IPIntelCache> IPIntelCache { get; set; } = null!;
+        public DbSet<DiscordOAuthToken> OAuthTokens { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -391,6 +392,15 @@ namespace Content.Server.Database
                 .OwnsOne(p => p.HWId)
                 .Property(p => p.Type)
                 .HasDefaultValue(HwidType.Legacy);
+
+            // Since having loose tokens be around is bad, we don't delete them immediately,
+            // we set the FK null to invalidate a token and only then after telling discord to forget about the token do we delete the entity.
+            modelBuilder.Entity<DiscordOAuthToken>()
+                .HasOne(t => t.Player)
+                .WithOne(p => p.DiscordOAuthToken)
+                .HasForeignKey<DiscordOAuthToken>(t => t.PlayerUserId)
+                .HasPrincipalKey<Player>(p => p.UserId)
+                .OnDelete(DeleteBehavior.SetNull);
         }
 
         public virtual IQueryable<AdminLog> SearchLogs(IQueryable<AdminLog> query, string searchText)
@@ -617,6 +627,8 @@ namespace Content.Server.Database
         public List<ServerRoleBan> AdminServerRoleBansCreated { get; set; } = null!;
         public List<ServerRoleBan> AdminServerRoleBansLastEdited { get; set; } = null!;
         public List<RoleWhitelist> JobWhitelists { get; set; } = null!;
+
+        public DiscordOAuthToken? DiscordOAuthToken { get; set; } = null;
     }
 
     [Table("whitelist")]
@@ -1351,5 +1363,22 @@ namespace Content.Server.Database
         /// The score IPIntel returned
         /// </summary>
         public float Score { get; set; }
+    }
+
+    [PrimaryKey(nameof(PlayerUserId))]
+    public class DiscordOAuthToken
+    {
+        [Required, ForeignKey("Player")]
+        public Guid? PlayerUserId { get; set; }
+        public Player? Player { get; set; } = default!;
+
+        public string AccessToken { get; set; } = null!;
+        public string RefreshToken { get; set; } = null!;
+        public DateTime ExpiresAt { get; set; }
+
+        /// <summary>
+        /// The Discord user ID
+        /// </summary>
+        public string UserId { get; set; } = null!;
     }
 }

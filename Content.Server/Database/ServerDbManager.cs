@@ -363,6 +363,39 @@ namespace Content.Server.Database
         Task SendNotification(DatabaseNotification notification);
 
         #endregion
+
+        #region OAuth
+
+        /// <summary>
+        /// Attempts to get a OAuth token for a given player.
+        /// </summary>
+        Task<DiscordOAuthToken?> GetToken(Guid playerId);
+        /// <summary>
+        /// Sets a OAuth token for a player. If one already exists, it will be overwritten.
+        /// </summary>
+        Task SetToken(Guid playerId, string token, string refreshToken, DateTime expiresAt, string id);
+
+        /// <summary>
+        /// Deletes a token. This is a spicy operation, ensure you invalidated the token before doing this.
+        /// </summary>
+        Task DeleteToken(DiscordOAuthToken token);
+
+        /// <summary>
+        /// Gets tokens where the player is null.
+        /// </summary>
+        Task<List<DiscordOAuthToken>> GetLostTokens();
+
+        /// <summary>
+        /// Gets tokens that are expired or about to expire.
+        /// </summary>
+        Task<List<DiscordOAuthToken>> GetNearlyExpiredTokens();
+
+        /// <summary>
+        /// Fetches all OAuth tokens for a given Discord ID. Usually will either be 0 or 1, but may be multiple if multi-keying is enabled.
+        /// </summary>
+        Task<List<DiscordOAuthToken>> GetTokensByDiscordId(string discordAccountId);
+
+        #endregion
     }
 
     /// <summary>
@@ -1069,6 +1102,42 @@ namespace Content.Server.Database
         {
             DbWriteOpsMetric.Inc();
             return RunDbCommand(() => _db.SendNotification(notification));
+        }
+
+        public Task<DiscordOAuthToken?> GetToken(Guid playerId)
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetOAuthToken(playerId));
+        }
+
+        public Task SetToken(Guid playerId, string token, string refreshToken, DateTime expiresAt, string id)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.SetOAuthToken(playerId, token, refreshToken, expiresAt, id));
+        }
+
+        public Task DeleteToken(DiscordOAuthToken token)
+        {
+            DbWriteOpsMetric.Inc();
+            return RunDbCommand(() => _db.DeleteOAuthToken(token));
+        }
+
+        public Task<List<DiscordOAuthToken>> GetLostTokens()
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetLostOAuthTokens());
+        }
+
+        public Task<List<DiscordOAuthToken>> GetNearlyExpiredTokens()
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetExpiredOrNearlyExpiredOAuthTokens());
+        }
+
+        public Task<List<DiscordOAuthToken>> GetTokensByDiscordId(string discordAccountId)
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetTokensByDiscordId(discordAccountId));
         }
 
         private async void HandleDatabaseNotification(DatabaseNotification notification)

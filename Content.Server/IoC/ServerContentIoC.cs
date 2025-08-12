@@ -1,3 +1,4 @@
+using Content.Server._Umbra.Discord;
 using Content.Server.Administration;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
@@ -79,6 +80,7 @@ namespace Content.Server.IoC
 
             IoCManager.Register<DiscordLink>();
             IoCManager.Register<DiscordChatLink>();
+            IoCManager.Register<DiscordOAuthManager>();
         }
     }
 }

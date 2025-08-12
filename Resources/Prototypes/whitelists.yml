@@ -5,3 +5,11 @@
       action: Allow # Allow connection if matched
     - !type:ConditionAlwaysMatch # Condition that always matches
       action: Deny # Deny connection if matched
+
+- type: playerConnectionWhitelist
+  id: umbraWhitelist
+  conditions:
+    - !type:ConditionGuildMembership
+      action: Deny # In order to get the callback url, this condition matches if the membership is NOT there.
+    - !type:ConditionAlwaysMatch
+      action: Allow

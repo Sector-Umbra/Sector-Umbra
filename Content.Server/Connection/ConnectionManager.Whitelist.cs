@@ -86,6 +86,11 @@ public sealed partial class ConnectionManager
                     matched = CheckConditionNotesPlaytimeRange(conditionNotesPlaytimeRange, cacheRemarks, cachePlaytime);
                     denyMessage = Loc.GetString("whitelist-notes");
                     break;
+                case ConditionGuildMembership:
+                    var result = await CheckConditionGuildMembership(data);
+                    matched = result.matched;
+                    denyMessage = result.denyMessage;
+                    break;
                 default:
                     throw new NotImplementedException($"Whitelist condition {condition.GetType().Name} not implemented");
             }
@@ -118,6 +123,27 @@ public sealed partial class ConnectionManager
     }
 
     #region Condition Checking
+
+    private async Task<(bool matched, string denyMessage)> CheckConditionGuildMembership(NetUserData data)
+    {
+        var status = await _discordOAuthManager.GetStatus(data.UserId);
+        if (!status)
+        {
+            // We do not have an OAuth token for this player.
+            var url = _discordOAuthManager.GetAuthUrl(data.UserId);
+            return (true, Loc.GetString("whitelist-guild-membership-auth", ("url", url)));
+        }
+
+        // we have one, holy shit. Now we need to fetch the guilds they are in.
+        var servers = await _discordOAuthManager.GetGuildList(data.UserId);
+        if (!servers.Contains(_cfg.GetCVar(CCVars.DiscordGuildId)))
+        {
+            // not in the required Discord server, welp.
+            return (true, Loc.GetString("whitelist-guild-membership"));
+        }
+
+        return (false, string.Empty);
+    }
 
     private async Task<bool> CheckConditionManualWhitelist(NetUserData data)
     {
