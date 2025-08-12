@@ -9,6 +9,7 @@
 - type: entity
   id: BaseMagazineDeagle
   name: pistol magazine (.357 magnum)
+  suffix: Admin
   parent: [ BaseMagazinePistol, BaseSyndicateContraband ]
   abstract: true
   components:
