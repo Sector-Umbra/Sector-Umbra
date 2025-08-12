@@ -19,9 +19,9 @@
   - type: EmitSoundOnTrigger
     sound: *BasePlushieSound
   - type: UseDelay
-    delay: 1.0
+    delay: 1.0 # Umbra: Reverted slower plushies
   - type: MeleeWeapon
-    attackRate: 0.333
+    # attackRate: 0.333 # Umbra: Reverted slower plushies
     wideAnimationRotation: 180
     soundHit: *BasePlushieSound
     damage:

@@ -1,0 +1,100 @@
+# Umbra Presets for Officials
+
+- type: startingGear
+  id: CentcomGearUmbra
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcomFormalDress
+    back: ClothingBackpackSatchelLeather
+    shoes: ClothingShoesBootsLaceup
+    head: ClothingHeadHatCentcomcap
+    eyes: ClothingEyesGlassesCommand
+    gloves: WristwatchGold
+    neck: ClothingNeckCloakCentcom
+    outerClothing: ClothingOuterArmorCentcommCarapace
+    id: CentcomPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: BoxFolderCentComClipboard
+    pocket1: WeaponPistolN1984
+    pocket2: MagazineMagnum
+  storage:
+    back:
+    - EmergencyMedipen
+    - RubberStampDenied
+    - RubberStampApproved
+    - RubberStampCentcom
+    - CentCommFlippo 
+  inhand:
+    - MindShieldImplanter
+    - DeathRattleImplanterCentcomm
+
+- type: startingGear
+  id: InternalAffairsAgentHardsuitUmbra
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDeathSquad
+    back: ClothingBackpackDeathSquad
+    mask: ClothingMaskGasDeathSquad
+    eyes: ClothingEyesHudSecurity
+    ears: ClothingHeadsetAltCentCom
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitDeathsquad
+    shoes: ClothingShoesBootsMagAdv
+    id: DeathsquadPDA
+    pocket1: EnergySword
+    pocket2: EnergyShield
+    belt: ClothingBeltMilitaryWebbingMedFilled
+  storage:
+    back:
+    - WeaponPulsePistol
+    - WeaponRevolverMatebaAP
+    - SpeedLoaderMagnumAP
+    - SpeedLoaderMagnumAP
+    - BoxFlashbang
+    - ToolDebug # spanish army knife
+    - WelderExperimental
+    - Hypospray
+    - DeathAcidifierImplanter # crew will try to steal their amazing hardsuits
+    - FreedomImplanter
+    - MindShieldImplanter
+    - DeathRattleImplanterCentcomm
+  inhand:
+  - WeaponPulseRifle
+
+- type: startingGear
+  id: CCLawyerGearUmbra
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomAgent
+    back: ClothingBackpackSatchelLeather
+    shoes: ClothingShoesBootsLaceup
+    eyes: ClothingEyesGlassesCommand
+    gloves: WristwatchGold
+    id: CentcomPDA
+    ears: ClothingHeadsetAltCentCom
+    pocket1: BoxFolderCentComClipboard
+    pocket2: RubberStampCentcom
+
+- type: startingGear
+  id: InternGearUmbra
+  equipment:
+    jumpsuit: ClothingUniformCentcommTurtleneck
+    back: ClothingBackpackSatchelLeather
+    shoes: ClothingShoesBootsLaceup
+    head: ClothingHeadHatCentcomcap
+    eyes: ClothingEyesGlassesCommand
+    gloves: WristwatchGold
+    neck: ClothingNeckScarfStripedCentcom
+    outerClothing: ClothingOuterArmorCentcommCarapace
+    id: CentcomPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: BoxFolderCentComClipboard
+    pocket1: WeaponPistolN1984
+    pocket2: MagazineMagnum
+  storage:
+    back:
+    - EmergencyMedipen
+    - RubberStampDenied
+    - RubberStampApproved
+    - RubberStampCentcom
+    - CentCommFlippo 
+  inhand:
+    - MindShieldImplanter
+    - DeathRattleImplanterCentcomm
