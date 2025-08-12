@@ -7,5 +7,5 @@
 .github @TsjipTsjip
 
 # Anything database related
-Content.Server.Database
-Content.Shared.Database
+Content.Server.Database @TsjipTsjip
+Content.Shared.Database @TsjipTsjip
