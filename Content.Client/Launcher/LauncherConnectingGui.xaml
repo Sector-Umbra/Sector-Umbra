@@ -28,6 +28,12 @@
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Bottom"
                                     StyleClasses="OpenRight"/>
+                            <Button Name="OpenInBrowserButton"
+                                    Text="{Loc 'connecting-openurl'}"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Bottom"
+                                    Visible="False"
+                                    StyleClasses="OpenBoth"/>
                             <Button Name="CopyButton"
                                     Text="{Loc 'connecting-copy'}"
                                     HorizontalAlignment="Center"

@@ -152,13 +152,13 @@ namespace Content.Server.Connection
 
             if (deny != null)
             {
-                var (reason, msg, banHits) = deny.Value;
+                var (reason, msg, banHits, properties) = deny.Value;
+                properties ??= new Dictionary<string, object>();
 
                 var id = await _db.AddConnectionLogAsync(userId, e.UserName, addr, hwid, trust, reason, serverId);
                 if (banHits is { Count: > 0 })
                     await _db.AddServerBanHitsAsync(id, banHits);
 
-                var properties = new Dictionary<string, object>();
                 if (reason == ConnectionDenyReason.Full)
                     properties["delay"] = _cfg.GetCVar(CCVars.GameServerFullReconnectDelay);
 
@@ -215,9 +215,11 @@ namespace Content.Server.Connection
          * TODO: Jesus H Christ what is this utter mess of a function
          * TODO: Break this apart into is constituent steps.
          */
-        private async Task<(ConnectionDenyReason, string, List<ServerBanDef>? bansHit)?> ShouldDeny(
+        private async Task<(ConnectionDenyReason, string, List<ServerBanDef>? bansHit, Dictionary<string, object>? additionalProps)?> ShouldDeny(
             NetConnectingArgs e)
         {
+            var additionalProps = new Dictionary<string, object>();
+
             // Check if banned.
             var addr = e.IP.Address;
             var userId = e.UserId;
@@ -233,7 +235,7 @@ namespace Content.Server.Connection
 
             if (modernHwid.Length == 0 && e.AuthType == LoginType.LoggedIn && _cfg.GetCVar(CCVars.RequireModernHardwareId))
             {
-                return (ConnectionDenyReason.NoHwid, Loc.GetString("hwid-required"), null);
+                return (ConnectionDenyReason.NoHwid, Loc.GetString("hwid-required"), null, additionalProps);
             }
 
             var bans = await _db.GetServerBansAsync(addr, userId, hwId, modernHwid, includeUnbanned: false);
@@ -241,7 +243,7 @@ namespace Content.Server.Connection
             {
                 var firstBan = bans[0];
                 var message = firstBan.FormatBanMessage(_cfg, _loc);
-                return (ConnectionDenyReason.Ban, message, bans);
+                return (ConnectionDenyReason.Ban, message, bans, additionalProps);
             }
 
             if (HasTemporaryBypass(userId))
@@ -266,14 +268,14 @@ namespace Content.Server.Connection
                 // Use the custom reason if it exists & they don't have the minimum account age
                 if (customReason != string.Empty && !validAccountAge && !bypassAllowed)
                 {
-                    return (ConnectionDenyReason.Panic, customReason, null);
+                    return (ConnectionDenyReason.Panic, customReason, null, additionalProps);
                 }
 
                 if (showReason && !validAccountAge && !bypassAllowed)
                 {
                     return (ConnectionDenyReason.Panic,
                         Loc.GetString("panic-bunker-account-denied-reason",
-                            ("reason", Loc.GetString("panic-bunker-account-reason-account", ("minutes", minMinutesAge)))), null);
+                            ("reason", Loc.GetString("panic-bunker-account-reason-account", ("minutes", minMinutesAge)))), null, null);
                 }
 
                 var minOverallMinutes = _cfg.GetCVar(CCVars.PanicBunkerMinOverallMinutes);
@@ -283,19 +285,19 @@ namespace Content.Server.Connection
                 // Use the custom reason if it exists & they don't have the minimum time
                 if (customReason != string.Empty && !haveMinOverallTime && !bypassAllowed)
                 {
-                    return (ConnectionDenyReason.Panic, customReason, null);
+                    return (ConnectionDenyReason.Panic, customReason, null, additionalProps);
                 }
 
                 if (showReason && !haveMinOverallTime && !bypassAllowed)
                 {
                     return (ConnectionDenyReason.Panic,
                         Loc.GetString("panic-bunker-account-denied-reason",
-                            ("reason", Loc.GetString("panic-bunker-account-reason-overall", ("minutes", minOverallMinutes)))), null);
+                            ("reason", Loc.GetString("panic-bunker-account-reason-overall", ("minutes", minOverallMinutes)))), null, additionalProps);
                 }
 
                 if (!validAccountAge || !haveMinOverallTime && !bypassAllowed)
                 {
-                    return (ConnectionDenyReason.Panic, Loc.GetString("panic-bunker-account-denied"), null);
+                    return (ConnectionDenyReason.Panic, Loc.GetString("panic-bunker-account-denied"), null, additionalProps);
                 }
             }
 
@@ -313,7 +315,7 @@ namespace Content.Server.Connection
 
             if ((softPlayerCount >= _cfg.GetCVar(CCVars.SoftMaxPlayers) && !adminBypass) && !wasInGame)
             {
-                return (ConnectionDenyReason.Full, Loc.GetString("soft-player-cap-full"), null);
+                return (ConnectionDenyReason.Full, Loc.GetString("soft-player-cap-full"), null, additionalProps);
             }
 
             // Checks for whitelist IF it's enabled AND the user isn't an admin. Admins are always allowed.
@@ -323,7 +325,7 @@ namespace Content.Server.Connection
                 {
                     _sawmill.Error("Whitelist enabled but no whitelists loaded.");
                     // Misconfigured, deny everyone.
-                    return (ConnectionDenyReason.Whitelist, Loc.GetString("generic-misconfigured"), null);
+                    return (ConnectionDenyReason.Whitelist, Loc.GetString("generic-misconfigured"), null, additionalProps);
                 }
 
                 foreach (var whitelist in _whitelists)
@@ -337,8 +339,11 @@ namespace Content.Server.Connection
                     var whitelistStatus = await IsWhitelisted(whitelist, e.UserData, _sawmill);
                     if (!whitelistStatus.isWhitelisted)
                     {
-                        // Not whitelisted.
-                        return (ConnectionDenyReason.Whitelist, Loc.GetString("whitelist-fail-prefix", ("msg", whitelistStatus.denyMessage!)), null);
+                        // if I could I would just pass in a ref into IsWhitelisted, but alas, I cannot.
+                        whitelistStatus.additionalProps
+                            .ToList()
+                            .ForEach(x => additionalProps.Add(x.Key, x.Value));
+                        return (ConnectionDenyReason.Whitelist, Loc.GetString("whitelist-fail-prefix", ("msg", whitelistStatus.denyMessage!)), null, additionalProps);
                     }
 
                     // Whitelisted, don't check any more.
@@ -352,7 +357,7 @@ namespace Content.Server.Connection
                 var result = await _ipintel.IsVpnOrProxy(e);
 
                 if (result.IsBad)
-                    return (ConnectionDenyReason.IPChecks, result.Reason, null);
+                    return (ConnectionDenyReason.IPChecks, result.Reason, null, null);
             }
 
             return null;

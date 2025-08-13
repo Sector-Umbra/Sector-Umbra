@@ -47,8 +47,12 @@ public sealed partial class ConnectionManager
         return playerCount >= whitelist.MinimumPlayers && playerCount <= whitelist.MaximumPlayers;
     }
 
-    public async Task<(bool isWhitelisted, string? denyMessage)> IsWhitelisted(PlayerConnectionWhitelistPrototype whitelist, NetUserData data, ISawmill sawmill)
+    public async Task<(bool isWhitelisted, string? denyMessage, Dictionary<string, object> additionalProps)> IsWhitelisted(
+        PlayerConnectionWhitelistPrototype whitelist,
+        NetUserData data,
+        ISawmill sawmill)
     {
+        var props = new Dictionary<string, object>();
         var cacheRemarks = await _db.GetAllAdminRemarks(data.UserId);
         var cachePlaytime = await _db.GetPlayTimes(data.UserId);
 
@@ -90,6 +94,8 @@ public sealed partial class ConnectionManager
                     var result = await CheckConditionGuildMembership(data);
                     matched = result.matched;
                     denyMessage = result.denyMessage;
+                    if (!string.IsNullOrEmpty(result.url))
+                        props.Add("url", result.url);
                     break;
                 default:
                     throw new NotImplementedException($"Whitelist condition {condition.GetType().Name} not implemented");
@@ -103,14 +109,14 @@ public sealed partial class ConnectionManager
                     if (matched)
                     {
                         sawmill.Verbose($"User {data.UserName} passed whitelist condition {condition.GetType().Name} and it's a breaking condition");
-                        return (true, denyMessage);
+                        return (true, denyMessage, props);
                     }
                     break;
                 case ConditionAction.Deny:
                     if (matched)
                     {
                         sawmill.Verbose($"User {data.UserName} failed whitelist condition {condition.GetType().Name}");
-                        return (false, denyMessage);
+                        return (false, denyMessage, props);
                     }
                     break;
                 default:
@@ -119,19 +125,19 @@ public sealed partial class ConnectionManager
             }
         }
         sawmill.Verbose($"User {data.UserName} passed all whitelist conditions");
-        return (true, null);
+        return (true, null, props);
     }
 
     #region Condition Checking
 
-    private async Task<(bool matched, string denyMessage)> CheckConditionGuildMembership(NetUserData data)
+    private async Task<(bool matched, string denyMessage, string? url)> CheckConditionGuildMembership(NetUserData data)
     {
         var status = await _discordOAuthManager.GetStatus(data.UserId);
         if (!status)
         {
             // We do not have an OAuth token for this player.
             var url = _discordOAuthManager.GetAuthUrl(data.UserId);
-            return (true, Loc.GetString("whitelist-guild-membership-auth", ("url", url)));
+            return (true, Loc.GetString("whitelist-guild-membership-auth", ("url", url)), url);
         }
 
         // we have one, holy shit. Now we need to fetch the guilds they are in.
@@ -139,10 +145,10 @@ public sealed partial class ConnectionManager
         if (!servers.Contains(_cfg.GetCVar(CCVars.DiscordGuildId)))
         {
             // not in the required Discord server, welp.
-            return (true, Loc.GetString("whitelist-guild-membership"));
+            return (true, Loc.GetString("whitelist-guild-membership"), null);
         }
 
-        return (false, string.Empty);
+        return (false, string.Empty, null);
     }
 
     private async Task<bool> CheckConditionManualWhitelist(NetUserData data)

@@ -24,20 +24,23 @@ namespace Content.Client.Launcher
 
         // Pressing reconnect will redial instead of simply reconnecting.
         private bool _redial;
+        private string? _url;
 
         private readonly IRobustRandom _random;
         private readonly IPrototypeManager _prototype;
         private readonly IConfigurationManager _cfg;
         private readonly IClipboardManager _clipboard;
+        private readonly IUriOpener _opener;
 
         public LauncherConnectingGui(LauncherConnecting state, IRobustRandom random,
-            IPrototypeManager prototype, IConfigurationManager config, IClipboardManager clipboard)
+            IPrototypeManager prototype, IConfigurationManager config, IClipboardManager clipboard, IUriOpener uriOpener)
         {
             _state = state;
             _random = random;
             _prototype = prototype;
             _cfg = config;
             _clipboard = clipboard;
+            _opener = uriOpener;
 
             RobustXamlLoader.Load(this);
 
@@ -52,6 +55,7 @@ namespace Content.Client.Launcher
             CopyButton.OnPressed += CopyButtonPressed;
             CopyButtonDisconnected.OnPressed += CopyButtonDisconnectedPressed;
             ExitButton.OnPressed += _ => _state.Exit();
+            OpenInBrowserButton.OnPressed += _ => uriOpener.OpenUri(_url!);
 
             var addr = state.Address;
             if (addr != null)
@@ -119,6 +123,7 @@ namespace Content.Client.Launcher
             {
                 _waitTime = 0;
                 _redial = false;
+                OpenInBrowserButton.Visible = false;
             }
             else
             {
@@ -133,6 +138,16 @@ namespace Content.Client.Launcher
                     _waitTime = RedialWaitTimeSeconds;
                 }
 
+                if (reason.Message.StringOf("url") is { } url)
+                {
+                    OpenInBrowserButton.Visible = true;
+                    _url = url;
+                }
+                else
+                {
+                    OpenInBrowserButton.Visible = false;
+                    _url = null;
+                }
             }
         }
 
