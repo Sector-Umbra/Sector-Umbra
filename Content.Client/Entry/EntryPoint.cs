@@ -1,3 +1,4 @@
+using Content.Client._Umbra.Discord;
 using Content.Client.Administration.Managers;
 using Content.Client.Changelog;
 using Content.Client.Chat.Managers;
@@ -76,6 +77,7 @@ namespace Content.Client.Entry
         [Dependency] private readonly TitleWindowManager _titleWindowManager = default!;
         [Dependency] private readonly IEntitySystemManager _entitySystemManager = default!;
         [Dependency] private readonly ClientsidePlaytimeTrackingManager _clientsidePlaytimeManager = default!;
+        [Dependency] private readonly DiscordOAuthManager _discordOAuthManager = default!;
 
         public override void Init()
         {
@@ -175,6 +177,7 @@ namespace Content.Client.Entry
             _userInterfaceManager.SetActiveTheme(_configManager.GetCVar(CVars.InterfaceTheme));
             _documentParsingManager.Initialize();
             _titleWindowManager.Initialize();
+            _discordOAuthManager.Initialize();
 
             _baseClient.RunLevelChanged += (_, args) =>
             {

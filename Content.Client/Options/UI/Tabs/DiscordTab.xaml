@@ -1,0 +1,17 @@
+﻿<controls:DiscordTab
+    xmlns="https://spacestation14.io"
+    xmlns:controls="clr-namespace:Content.Client.Options.UI.Tabs"
+    xmlns:customcontrols="clr-namespace:Content.Client.UserInterface.Controls">
+    <BoxContainer Orientation="Vertical">
+        <ScrollContainer VerticalExpand="True" HScrollEnabled="False" Visible="False" Name="ScrollContainer">
+            <BoxContainer Orientation="Vertical" Margin="8">
+                <Label Text="{Loc 'ui-options-discord-header'}"
+                       StyleClasses="LabelKeyText"/>
+                <RichTextLabel Name="StatusLabel"/>
+                <Button Name="LinkButton" Visible="False" Text="{Loc 'ui-options-discord-link'}"/>
+                <customcontrols:ConfirmButton Name="UnlinkButton" Text="{Loc 'ui-options-discord-unlink'}" Visible="False"/>
+            </BoxContainer>
+        </ScrollContainer>
+        <Label Name="Loading" Text="{Loc 'ui-options-discord-loading'}" Visible="True"/>
+    </BoxContainer>
+</controls:DiscordTab>

@@ -6,7 +6,7 @@ namespace Content.Shared._Umbra.Discord;
 public sealed class DiscordCCVars
 {
     public static readonly CVarDef<bool> DiscordOAuthEnabled =
-        CVarDef.Create("umbra.discord.oauth.enabled", false, CVar.SERVERONLY);
+        CVarDef.Create("umbra.discord.oauth.enabled", false, CVar.SERVER | CVar.REPLICATED);
 
     public static readonly CVarDef<string> DiscordOAuthClientId =
         CVarDef.Create("umbra.discord.oauth.client_id", "", CVar.SERVERONLY);

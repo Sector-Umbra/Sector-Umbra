@@ -9,5 +9,6 @@
         <tabs:AudioTab Name="AudioTab" />
         <tabs:AccessibilityTab Name="AccessibilityTab" />
         <tabs:AdminOptionsTab Name="AdminOptionsTab" />
+        <tabs:DiscordTab Name="DiscordTab"/>
     </TabContainer>
 </DefaultWindow>

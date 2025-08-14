@@ -8,6 +8,7 @@ ui-options-tab-controls = Controls
 ui-options-tab-audio = Audio
 ui-options-tab-network = Network
 ui-options-tab-misc = General
+ui-options-tab-discord = Discord
 
 ui-options-apply = Save & apply
 ui-options-reset-all = Reset changed
@@ -402,3 +403,15 @@ ui-options-admin-enable-overlay-starting-job = Show starting job
 ui-options-admin-overlay-merge-distance = Stack merge distance
 ui-options-admin-overlay-ghost-fade-distance = Ghost overlay fade range from mouse
 ui-options-admin-overlay-ghost-hide-distance = Ghost overlay hide range from mouse
+
+## Discord
+
+ui-options-discord-header = Manage Discord OAuth
+ui-options-discord-loading = Fetching OAuth Status...
+ui-options-discord-link-status-linked = [bold]Status:[/bold] [color=green]Linked[/color][bold]
+    User:[/bold] {$user}
+# i wish i didn't have to put the bold tag in the first line, but the next line must start with a-ZA-Z or else it explodes :(
+
+ui-options-discord-link-status-not-linked = [bold]Status:[/bold] [color=red]Not Linked[/color]
+ui-options-discord-link = Link Account
+ui-options-discord-unlink = Unlink Account

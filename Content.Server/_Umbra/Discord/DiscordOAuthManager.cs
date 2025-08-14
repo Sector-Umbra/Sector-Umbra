@@ -9,6 +9,7 @@ using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using Content.Server.Database;
 using Content.Shared._Umbra.Discord;
+using Robust.Server.Player;
 using Robust.Server.ServerStatus;
 using Robust.Shared.Configuration;
 using Robust.Shared.Network;
@@ -25,6 +26,8 @@ public sealed class DiscordOAuthManager : IPostInjectInit
     [Dependency] private readonly IStatusHost _statusHost = default!;
     [Dependency] private readonly IServerDbManager _db = default!;
     [Dependency] private readonly IConfigurationManager _cfg = default!;
+    [Dependency] private readonly IServerNetManager _serverNetManager = default!;
+    [Dependency] private readonly IPlayerManager _playerManager = default!;
 
     public static readonly IReadOnlyList<string> Scopes = new List<string>()
     {
@@ -61,12 +64,78 @@ public sealed class DiscordOAuthManager : IPostInjectInit
     {
         _cfg.OnValueChanged(DiscordCCVars.DiscordApiUrl, DiscordApiUrlChanged, true);
         _cfg.OnValueChanged(DiscordCCVars.DiscordOAuthUserAgentUrl, DiscordUrlChanged, true);
+
+        _serverNetManager.RegisterNetMessage<DiscordOAuthAskStatusMessage>(ClientAskStatus);
+        _serverNetManager.RegisterNetMessage<DiscordOAuthStatusMessage>();
+        _serverNetManager.RegisterNetMessage<DiscordOAuthUnlinkMessage>(ClientUnlink);
+        _serverNetManager.RegisterNetMessage<DiscordOAuthStartLinkMessage>(ClientLink);
+        _serverNetManager.RegisterNetMessage<DiscordOAuthOpenUrlMessage>();
+    }
+
+    private void ClientLink(DiscordOAuthStartLinkMessage message)
+    {
+        var url = GetAuthUrl(message.MsgChannel.UserId);
+        message.MsgChannel.SendMessage(new DiscordOAuthOpenUrlMessage()
+        {
+            Url = url,
+        });
     }
 
     public void Shutdown()
     {
         _cfg.UnsubValueChanged(DiscordCCVars.DiscordApiUrl, DiscordApiUrlChanged);
         _cfg.UnsubValueChanged(DiscordCCVars.DiscordOAuthUserAgentUrl, DiscordUrlChanged);
+    }
+
+    private async void ClientUnlink(DiscordOAuthUnlinkMessage message)
+    {
+        try
+        {
+            var status = await GetStatus(message.MsgChannel.UserId);
+            if (!status)
+                return; // we dont have a link anyways
+
+            var token = await _db.GetToken(message.MsgChannel.UserId);
+            if (token == null)
+                return; // how?
+
+            await InvalidateToken(token);
+            await _db.DeleteToken(token);
+
+            message.MsgChannel.SendMessage(new DiscordOAuthStatusMessage()
+            {
+                Username = string.Empty,
+                IsLinked = false,
+            });
+        }
+        catch (Exception e)
+        {
+            Log.Error($"Encountered an error when unlinking status for player {message.MsgChannel.UserId}!\n{e}");
+        }
+    }
+
+    private async void ClientAskStatus(DiscordOAuthAskStatusMessage message)
+    {
+        try
+        {
+            var status = await GetStatus(message.MsgChannel.UserId);
+            var username = string.Empty;
+            if (status)
+            {
+                var info = await GetTokenInfo(message.MsgChannel.UserId);
+                username = info?.User.Username ?? string.Empty;
+            }
+
+            message.MsgChannel.SendMessage(new DiscordOAuthStatusMessage()
+            {
+                Username = username,
+                IsLinked = status,
+            });
+        }
+        catch (Exception e)
+        {
+            Log.Error($"Encountered an error when sending status for player {message.MsgChannel.UserId}!\n{e}");
+        }
     }
 
     public async void Update()
@@ -160,23 +229,27 @@ public sealed class DiscordOAuthManager : IPostInjectInit
 
         foreach (var token in lostTokens)
         {
-            var revokeParams = new Dictionary<string, string>
-            {
-                ["client_id"] = _cfg.GetCVar(DiscordCCVars.DiscordOAuthClientId),
-                ["client_secret"] = _cfg.GetCVar(DiscordCCVars.DiscordOAuthClientSecret),
-                ["token"] = token.AccessToken,
-            };
-
-            using var revokeRequest = new HttpRequestMessage(HttpMethod.Post, $"{_cfg.GetCVar(DiscordCCVars.DiscordOAuthApiUrl)}token/revoke");
-            revokeRequest.Content = new FormUrlEncodedContent(revokeParams);
-
-            await _sharedHttpClient.SendAsync(revokeRequest);
-
+            await InvalidateToken(token);
             await _db.DeleteToken(token);
         }
 
         if (lostTokens.Count != 0)
             Log.Info($"Removed {lostTokens.Count} lost tokens!");
+    }
+
+    private async Task InvalidateToken(DiscordOAuthToken token)
+    {
+        var revokeParams = new Dictionary<string, string>
+        {
+            ["client_id"] = _cfg.GetCVar(DiscordCCVars.DiscordOAuthClientId),
+            ["client_secret"] = _cfg.GetCVar(DiscordCCVars.DiscordOAuthClientSecret),
+            ["token"] = token.AccessToken,
+        };
+
+        using var revokeRequest = new HttpRequestMessage(HttpMethod.Post, $"{_cfg.GetCVar(DiscordCCVars.DiscordOAuthApiUrl)}token/revoke");
+        revokeRequest.Content = new FormUrlEncodedContent(revokeParams);
+
+        await _sharedHttpClient.SendAsync(revokeRequest);
     }
 
     private void DiscordApiUrlChanged(string obj)
@@ -293,6 +366,15 @@ public sealed class DiscordOAuthManager : IPostInjectInit
 
         Log.Debug($"Got token for {state.who}, expires at {expires}!");
         await context.RespondAsync("Account linked! You may now return to the game.", HttpStatusCode.OK);
+        // In case the person is actually on the server IN the options menu, send them their status.
+        if (_playerManager.TryGetSessionById(state.who, out var session))
+        {
+            session.Channel.SendMessage(new DiscordOAuthStatusMessage()
+            {
+                Username = deserialized.User.Username,
+                IsLinked = true,
+            });
+        }
         return true;
     }
 
@@ -334,12 +416,7 @@ public sealed class DiscordOAuthManager : IPostInjectInit
         if (client == null)
             return false;
 
-        var res = await client.GetAsync("v10/oauth2/@me");
-        if (res.StatusCode == HttpStatusCode.Unauthorized || res.StatusCode == HttpStatusCode.Forbidden)
-            return false; // :(
-
-        var stringContent = await res.Content.ReadAsStringAsync();
-        var deserialized = JsonSerializer.Deserialize<Models.OAuthAtMe>(stringContent, JsonSerializerOptions);
+        var deserialized = await GetTokenInfo(client);
         if (deserialized == null)
             return false;
 
@@ -349,6 +426,33 @@ public sealed class DiscordOAuthManager : IPostInjectInit
             return true;
 
         return false;
+    }
+
+    public async Task<Models.OAuthAtMe?> GetTokenInfo(NetUserId id)
+    {
+        using var client = await GetHttpClientFor(id);
+        if (client == null)
+            throw new InvalidOperationException($"No OAuth token for user {id}");
+
+        return await GetTokenInfo(client);
+    }
+
+    private async Task<Models.OAuthAtMe?> GetTokenInfo(HttpClient client)
+    {
+        var res = await client.GetAsync("v10/oauth2/@me");
+        if (res.StatusCode is HttpStatusCode.Unauthorized or HttpStatusCode.Forbidden)
+            return null;
+
+        var stringContent = await res.Content.ReadAsStringAsync();
+        try
+        {
+            var deserialized = JsonSerializer.Deserialize<Models.OAuthAtMe>(stringContent, JsonSerializerOptions);
+            return deserialized;
+        }
+        catch (Exception e)
+        {
+            return null;
+        }
     }
 
     public async Task<List<string>> GetGuildList(NetUserId id)
