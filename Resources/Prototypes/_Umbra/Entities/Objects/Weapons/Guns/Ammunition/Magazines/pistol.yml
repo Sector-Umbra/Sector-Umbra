@@ -5,3 +5,117 @@
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePistolPractice
+
+- type: entity
+  id: BaseMagazineDeagle
+  name: pistol magazine (.357 magnum)
+  suffix: Admin
+  parent: [ BaseMagazinePistol, BaseSyndicateContraband ]
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - MagazineDeagle
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+      - CartridgeDeagle
+    capacity: 8
+
+- type: entity
+  id: MagazineDeagleEmpty
+  name: pistol magazine (.357 magnum any)
+  suffix: empty
+  parent: BaseMagazineDeagle
+  description: 8-round single stack pistol magazine.
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      right:
+      - state: inhand-right-mag
+
+- type: entity
+  id: MagazineDeagle
+  name: pistol magazine (.357 magnum)
+  parent: BaseMagazineDeagle
+  description: 8-round single stack pistol magazine. Intended to hold general-purpose kinetic ammunition.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeDeagle
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      right:
+      - state: inhand-right-mag
+
+- type: entity
+  id: MagazineDeagleAP
+  name: pistol magazine (.357 magnum armor-piercing)
+  parent: BaseMagazineDeagle
+  description: 8-round single stack pistol magazine. Intended to hold rare armor-piercing ammunition.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeDeagleAP
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: stripe
+      color: "#540000"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      - state: inhand-left-stripe
+        color: "#540000"
+      right:
+      - state: inhand-right-mag
+      - state: inhand-right-stripe
+        color: "#540000"
+
+- type: entity
+  id: MagazineDeagleIncendiary
+  name: pistol magazine (.357 magnum incendiary)
+  parent: BaseMagazineDeagle
+  description: 8-round single stack pistol magazine. Intended to hold self-igniting incendiary ammunition.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeDeagleIncendiary
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: stripe
+      color: "#ff6e52"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      - state: inhand-left-stripe
+        color: "#ff6e52"
+      right:
+      - state: inhand-right-mag
+      - state: inhand-right-stripe
+        color: "#ff6e52"
