@@ -5,3 +5,7 @@
 
 # Anything workflow-related or related to github operations
 .github @TsjipTsjip
+
+# Anything database related
+Content.Server.Database @TsjipTsjip
+Content.Shared.Database @TsjipTsjip
