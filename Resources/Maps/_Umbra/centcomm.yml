@@ -56050,10 +56050,10 @@ entities:
         stampedColor: '#FF33CCFF'
         stampedName: Blob
       content: >-
-        Olssv! Aopz pz Isvi! Mbuuf Zvbuk Nhtlthzaly huk Kylht thrly! 
+        Olssv! Aopz pz Isvi! Mbuuf Zvbuk Nhtlthzaly huk Kylht thrly!
 
 
-        P olswlk av thrl aopz thw! Hsvun Zpkl Sbjrf, Svjhs, VclydhajoCvpjl, Ahubrv, huk Xbhkypcpbt! Pcl Thpusf illu mpsspun pu ishur hylhz, Hatvz, Dpypun, Huk hkkpun spaasl mbu aopunz sprl aopz! P ruvd pt wyvihisf uva tlhua av dypal h spaasl uval sprl aopz, olujl aol mhja paz opkklu puzpkl h Wsbzo! 
+        P olswlk av thrl aopz thw! Hsvun Zpkl Sbjrf, Svjhs, Ahubrv, huk Xbhkypcpbt! Pcl Thpusf illu mpsspun pu ishur hylhz, Hatvz, Dpypun, Huk hkkpun spaasl mbu aopunz sprl aopz! P ruvd pt wyvihisf uva tlhua av dypal h spaasl uval sprl aopz, olujl aol mhja paz opkklu puzpkl h Wsbzo!
 
 
         [bolditalic] Dof hyl fvb Jbaapun vwlu yhukvt wsbzoplz fvb mpuk hufdhfz? Fvb tvuzaly, Doha kpk aopz wsbzo lcly kv av fvb? [/bolditalic]
@@ -56341,60 +56341,6 @@ entities:
     components:
     - type: Transform
       pos: 87.29909,35.59577
-      parent: 1
-- proto: PlushieCarp
-  entities:
-  - uid: 6342
-    components:
-    - type: Transform
-      pos: 53.5,31.5
-      parent: 1
-    - type: Physics
-      bodyStatus: InAir
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape: !type:PolygonShape
-            radius: 0.01
-            vertices:
-            - -0.25,-0.25
-            - 0.25,-0.25
-            - 0.25,0.25
-            - -0.25,0.25
-          mask:
-          - Impassable
-          - HighImpassable
-          layer: []
-          density: 20
-          hard: True
-          restitution: 0.3
-          friction: 0.2
-        throw-fixture:
-          shape: !type:PolygonShape
-            radius: 0.01
-            vertices:
-            - -0.25,-0.25
-            - 0.25,-0.25
-            - 0.25,0.25
-            - -0.25,0.25
-          mask:
-          - Impassable
-          - HighImpassable
-          - BulletImpassable
-          layer: []
-          density: 1
-          hard: False
-          restitution: 0
-          friction: 0.4
-    - type: ThrownItem
-      playLandSound: True
-      landTime: 154532.2681094
-      thrownTime: 154532.2454676
-      thrower: invalid
-  - uid: 7636
-    components:
-    - type: Transform
-      pos: 87.684494,34.136425
       parent: 1
 - proto: PlushieDiona
   entities:
@@ -77211,8 +77157,6 @@ entities:
       pos: 86.5,40.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 12017
   - uid: 12016
@@ -77222,8 +77166,6 @@ entities:
       pos: 86.5,58.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 12017
 - proto: WeaponEnergyTurretCommandControlPanel
