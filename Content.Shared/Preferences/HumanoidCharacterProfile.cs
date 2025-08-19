@@ -18,7 +18,6 @@ using Robust.Shared.Utility;
 
 // CD: Imports
 using Content.Shared._CD.Records;
-using Content.Shared.FixedPoint;
 
 namespace Content.Shared.Preferences
 {
@@ -132,9 +131,6 @@ namespace Content.Shared.Preferences
         [DataField("cosmaticDriftCharacterRecords")]
         public PlayerProvidedCharacterRecords? CDCharacterRecords;
 
-        [DataField("cosmaticDriftAllergies")]
-        public Dictionary<string, FixedPoint2> CDAllergies = new();
-
         public HumanoidCharacterProfile(
             string name,
             string flavortext,
@@ -150,8 +146,7 @@ namespace Content.Shared.Preferences
             HashSet<ProtoId<AntagPrototype>> antagPreferences,
             HashSet<ProtoId<TraitPrototype>> traitPreferences,
             Dictionary<string, RoleLoadout> loadouts,
-            PlayerProvidedCharacterRecords? cdCharacterRecords,
-            Dictionary<string, FixedPoint2> cdAllergies)
+            PlayerProvidedCharacterRecords? cdCharacterRecords)
         {
             Name = name;
             FlavorText = flavortext;
@@ -168,7 +163,6 @@ namespace Content.Shared.Preferences
             _traitPreferences = traitPreferences;
             _loadouts = loadouts;
             CDCharacterRecords = cdCharacterRecords;
-            CDAllergies = cdAllergies;
 
             var hasHighPrority = false;
             foreach (var (key, value) in _jobPriorities)
@@ -201,8 +195,7 @@ namespace Content.Shared.Preferences
                 new HashSet<ProtoId<AntagPrototype>>(other.AntagPreferences),
                 new HashSet<ProtoId<TraitPrototype>>(other.TraitPreferences),
                 new Dictionary<string, RoleLoadout>(other.Loadouts),
-                other.CDCharacterRecords,
-                other.CDAllergies)
+                other.CDCharacterRecords)
         {
         }
 
@@ -482,11 +475,6 @@ namespace Content.Shared.Preferences
             return new HumanoidCharacterProfile(this) { CDCharacterRecords = records };
         }
 
-        public HumanoidCharacterProfile WithCDAllergies(Dictionary<string, FixedPoint2> allergies)
-        {
-            return new HumanoidCharacterProfile(this) { CDAllergies = allergies };
-        }
-
         public string Summary =>
             Loc.GetString(
                 "humanoid-character-profile-summary",
@@ -513,7 +501,6 @@ namespace Content.Shared.Preferences
             if (FlavorText != other.FlavorText) return false;
             if (CDCharacterRecords != null && other.CDCharacterRecords != null &&
                 !CDCharacterRecords.MemberwiseEquals(other.CDCharacterRecords)) return false;
-            if (!CDAllergies.SequenceEqual(other.CDAllergies)) return false;
             return Appearance.MemberwiseEquals(other.Appearance);
         }
 

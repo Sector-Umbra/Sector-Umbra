@@ -2,7 +2,6 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Numerics;
-using Content.Client._CD.Humanoid;
 using Content.Client.Humanoid;
 using Content.Client.Lobby.UI.Loadouts;
 using Content.Client.Lobby.UI.Roles;
@@ -40,8 +39,6 @@ using Direction = Robust.Shared.Maths.Direction;
 // CD: Records editor imports
 using Content.Client._CD.Records.UI;
 using Content.Shared._CD.Records;
-using Content.Shared.Chemistry.Reagent;
-using Content.Shared.FixedPoint;
 
 namespace Content.Client.Lobby.UI
 {
@@ -116,9 +113,6 @@ namespace Content.Client.Lobby.UI
 
         // CD: Record editor
         private readonly RecordEditorGui _recordsTab;
-
-        // CD: Allergies editor
-        private readonly AllergyPicker _allergiesTab;
 
         private static readonly ProtoId<GuideEntryPrototype> DefaultSpeciesGuidebook = "Species";
 
@@ -485,10 +479,6 @@ namespace Content.Client.Lobby.UI
 
             #region CosmaticRecords
 
-            _allergiesTab = new AllergyPicker(UpdateAllergies);
-            TabContainer.AddChild(_allergiesTab);
-            TabContainer.SetTabTitle(TabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-cd-allergies-tab"));
-
             _recordsTab = new RecordEditorGui(UpdateProfileRecords);
             TabContainer.AddChild(_recordsTab);
             TabContainer.SetTabTitle(TabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-cd-records-tab"));
@@ -844,7 +834,6 @@ namespace Content.Client.Lobby.UI
 
             // CD: our controls
             UpdateHeightControls();
-            UpdateCDAllergies();
             _recordsTab.Update(profile);
 
             RefreshAntags();
@@ -1150,14 +1139,6 @@ namespace Content.Client.Lobby.UI
                 return;
             Profile = Profile.WithCDCharacterRecords(records);
             IsDirty = true;
-        }
-
-        // CD: Allergies editor
-        private void UpdateAllergies(Dictionary<ReagentPrototype, FixedPoint2> allergies)
-        {
-            Profile = Profile?.WithCDAllergies(allergies.Select(allergy => (allergy.Key.ID, allergy.Value))
-                .ToDictionary());
-            SetDirty();
         }
 
         private void OnFlavorTextChange(string content)
@@ -1535,23 +1516,6 @@ namespace Content.Client.Lobby.UI
                                 (prototype.MaxHeight - prototype.MinHeight);
             CDHeightSlider.Value = sliderPercent;
             CDHeight.Text = Profile.Height.ToString(CultureInfo.InvariantCulture);
-        }
-
-        private void UpdateCDAllergies()
-        {
-            if (Profile == null)
-            {
-                return;
-            }
-
-            var allergies = new Dictionary<ReagentPrototype, FixedPoint2>();
-            foreach (var entry in (Dictionary<string, FixedPoint2>) Profile.CDAllergies)
-            {
-                if (!_prototypeManager.TryIndex(entry.Key, out ReagentPrototype? reagent))
-                    continue;
-                allergies.Add(reagent, entry.Value);
-            }
-            _allergiesTab.SetData(allergies);
         }
 
         private void UpdateSpawnPriorityControls()
