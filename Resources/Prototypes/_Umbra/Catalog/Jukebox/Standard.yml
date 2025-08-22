@@ -1,0 +1,107 @@
+- type: jukebox
+  id: victory
+  name: Koruu Chan - Victory
+  path:
+    path: /Audio/_Umbra/Jukebox/victory.ogg
+
+- type: jukebox
+  id: shibamata
+  name: Shibamata
+  path:
+    path: /Audio/_Umbra/Jukebox/shibamata.ogg
+
+- type: jukebox
+  id: lateraligator
+  name: Silverman Sound Studios - Later Alligator
+  path:
+    path: /Audio/_Umbra/Jukebox/lateraligator.ogg
+
+- type: jukebox
+  id: frontierarrivals
+  name: Troglodyte71 - Frontier Arrivals
+  path:
+    path: /Audio/_Umbra/Jukebox/frontier-arrivals.ogg
+
+- type: jukebox
+  id: singuloose
+  name: Janis Schiedkova - Singuloose
+  path:
+    path: /Audio/Lobby/singuloose.ogg
+
+- type: jukebox
+  id: retrofunky
+  name: Persephone - Retro Funky (SUNDANCE remix)
+  path:
+    path: /Audio/_Umbra/Jukebox/Persephone - Retro Funky (SUNDANCE remix).ogg
+
+- type: jukebox
+  id: sinner
+  name: Beat Mekanik - Sinner
+  path:
+    path: /Audio/_Umbra/Jukebox/Beat Mekanik - Sinner.ogg
+
+- type: jukebox
+  id: sensless
+  name: Beat Mekanik - Sensless
+  path:
+    path: /Audio/_Umbra/Jukebox/Beat Mekanik - Senseless.ogg
+
+- type: jukebox
+  id: lifeisgreat
+  name: Ketsa - Life is Great
+  path:
+    path: /Audio/_Umbra/Jukebox/Ketsa - Life is Great.ogg
+
+- type: jukebox
+  id: dreadpirateroberts
+  name: Xennial - Dread Pirate Roberts
+  path:
+    path: /Audio/_Umbra/Jukebox/Xennial - Dread Pirate Roberts.ogg
+
+- type: jukebox
+  id: caffeinated
+  name: Laughing Manny & The Swinging Dicks - Caffeinated
+  path:
+    path: /Audio/_Umbra/Jukebox/Laughing Manny & The Swinging Dicks - Caffeinated.ogg
+
+- type: jukebox
+  id: bringinthehorns
+  name: Laughing Manny & The Swinging Dicks - Bring In The Horns
+  path:
+    path: /Audio/_Umbra/Jukebox/Laughing Manny & The Swinging Dicks - Bring In The Horns.ogg
+
+- type: jukebox
+  id: meanwhilebackatthesaloon
+  name: Brett Van Donsel - Meanwhile Back At The Saloon
+  path:
+    path: /Audio/_Umbra/Jukebox/Meanwhile Back at the Saloon.ogg
+
+- type: jukebox
+  id: murderonthebayou
+  name: Bryan Teoh - Murder On The Bayou
+  path:
+    path: /Audio/_Umbra/Jukebox/Murder On The Bayou.ogg
+
+- type: jukebox
+  id: dustsucker
+  name: Jens Kiilstofte - Dustsucker
+  path:
+    path: /Audio/_Umbra/Jukebox/Dustsucker.ogg
+
+- type: jukebox
+  id: threesheetstothewind
+  name: Scott Buckley - Three Sheets to the Wind
+  path:
+    path: /Audio/_Umbra/Jukebox/ThreeSheetsToTheWind.ogg
+
+- type: jukebox
+  id: skubstep
+  name: Finket - SKUBSTEP
+  path:
+    path: /Audio/_Umbra/Jukebox/finket_ss14skubstep.ogg
+
+- type: jukebox
+  id: rattlesnakerailroad
+  name: Brett Van Donsel - Rattlesnake Railroad
+  path:
+    path: /Audio/_Umbra/Jukebox/rattlesnake railroad.ogg
