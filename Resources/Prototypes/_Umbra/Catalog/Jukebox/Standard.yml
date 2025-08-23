@@ -1,10 +1,4 @@
 - type: jukebox
-  id: shibamata
-  name: Shibamata
-  path:
-    path: /Audio/_Umbra/Jukebox/shibamata.ogg
-
-- type: jukebox
   id: lateraligator
   name: Silverman Sound Studios - Later Alligator
   path:
