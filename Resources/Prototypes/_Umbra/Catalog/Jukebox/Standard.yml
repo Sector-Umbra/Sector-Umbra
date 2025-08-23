@@ -1,10 +1,4 @@
 - type: jukebox
-  id: victory
-  name: Koruu Chan - Victory
-  path:
-    path: /Audio/_Umbra/Jukebox/victory.ogg
-
-- type: jukebox
   id: shibamata
   name: Shibamata
   path:
@@ -15,12 +9,6 @@
   name: Silverman Sound Studios - Later Alligator
   path:
     path: /Audio/_Umbra/Jukebox/lateraligator.ogg
-
-- type: jukebox
-  id: frontierarrivals
-  name: Troglodyte71 - Frontier Arrivals
-  path:
-    path: /Audio/_Umbra/Jukebox/frontier-arrivals.ogg
 
 - type: jukebox
   id: singuloose
