@@ -118,6 +118,7 @@
     consoleType: Admin
     # Needed for security records console functionality
   - type: CriminalRecordsConsole
+  - type: InteractionToggleable # CD
 
 - type: entity
   abstract: true
