@@ -1,0 +1,60 @@
+- type: entity
+  id: BaseCartridgeDeagle
+  name: cartridge (.357 magnum)
+  parent: [ BaseCartridge, BaseSyndicateContraband ]
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - CartridgeDeagle
+  - type: CartridgeAmmo
+    proto: BulletDeagle
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: CartridgeDeagle
+  name: cartridge (.357 magnum)
+  parent: BaseCartridgeDeagle
+  description: Extra heavy magnum cartridge mostly used by heavy pistols. Standard kinetic ammunition is common and useful in most situations.
+  components:
+  - type: CartridgeAmmo
+    proto: BulletDeagle
+
+- type: entity
+  id: CartridgeDeagleIncendiary
+  name: cartridge (.357 magnum incendiary)
+  parent: BaseCartridgeDeagle
+  description: Extra heavy magnum cartridge mostly used by heavy pistols. Incendiary ammunition contains a self-igniting compound that sets the target ablaze.
+  components:
+  - type: CartridgeAmmo
+    proto: BulletDeagleIncendiary
+  - type: Sprite
+    layers:
+    - state: base
+      map: [ "enum.AmmoVisualLayers.Base" ]
+    - state: tip
+      map: [ "enum.AmmoVisualLayers.Tip" ]
+      color: "#ff6e52"
+
+- type: entity
+  id: CartridgeDeagleAP
+  name: cartridge (.357 magnum armor-piercing)
+  parent: BaseCartridgeDeagle
+  description: Extra heavy magnum cartridge mostly used by heavy pistols. Armor piercing ammunition is renowned for its ability to cut straight through body armor. Especially this one.
+  components:
+  - type: CartridgeAmmo
+    proto: BulletDeagleAP
+  - type: Sprite
+    layers:
+    - state: base
+      map: [ "enum.AmmoVisualLayers.Base" ]
+    - state: tip
+      map: [ "enum.AmmoVisualLayers.Tip" ]
+      color: "#0a0a0a"
