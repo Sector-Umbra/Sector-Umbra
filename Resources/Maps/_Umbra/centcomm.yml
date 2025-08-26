@@ -4611,7 +4611,7 @@ entities:
     - type: RadiationGridResistance
     - type: NavMap
     - type: BecomesStation
-      id: centcom
+      id: centcomm
 - proto: AcousticGuitarInstrument
   entities:
   - uid: 5555
