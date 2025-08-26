@@ -10,28 +10,24 @@
   - type: Item
     heldPrefix: borg
   - type: EmitSoundOnUse
-    sound:
+    sound: &BorgPlushieSound
       path: /Audio/Effects/Cargo/beep.ogg
+      params:
+        volume: -4
   - type: EmitSoundOnLand
-    sound:
-      path: /Audio/Effects/Cargo/beep.ogg
+    sound: *BorgPlushieSound
   - type: EmitSoundOnActivate
-    sound:
-      path: /Audio/Effects/Cargo/beep.ogg
+    sound: *BorgPlushieSound
   - type: EmitSoundOnTrigger
-    sound:
-      path: /Audio/Effects/Cargo/beep.ogg
+    sound: *BorgPlushieSound
   - type: EmitSoundOnCollide
-    sound:
-      path: /Audio/Effects/Cargo/beep.ogg
+    sound: *BorgPlushieSound
   - type: Food
     requiresSpecialDigestion: true
-    useSound:
-      path: /Audio/Effects/Cargo/beep.ogg
+    useSound: *BorgPlushieSound
   - type: MeleeWeapon
     wideAnimationRotation: 180
-    soundHit:
-      path: /Audio/Effects/Cargo/beep.ogg
+    soundHit: *BorgPlushieSound
   - type: Clothing
     quickEquip: false
     sprite: _Moffstation/Objects/Fun/toys.rsi
