@@ -453,7 +453,7 @@ public sealed class ArrivalsSystem : EntitySystem
     private void OnFirstArrival(Entity<ArrivalsShuttleComponent> ent, ref FirstArrivalEvent ev)
     {
         // Fixes to problems exclusive to the group arrivals start
-        if (_cfgManager.GetCVar(CCVars.StartAtArrivals))
+        if (_cfgManager.GetCVar(CCVars.ArrivalsShuttles))
         {
             if (_station.GetStationInMap(Transform(ent.Owner).MapID) is not { } station)
                 return;
