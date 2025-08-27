@@ -1,2 +1,8 @@
 - type: Tag
+  id: CartridgeDeagle
+
+- type: Tag
   id: MantidaeFood
+
+- type: Tag
+  id: MagazineDeagle
