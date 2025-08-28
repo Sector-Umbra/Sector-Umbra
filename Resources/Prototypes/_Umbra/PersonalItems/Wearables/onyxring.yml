@@ -45,6 +45,7 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Onyx Hardt
+  groupBy: "wearables"
 
 #The ring, but broken into pieces.
 - type: entity

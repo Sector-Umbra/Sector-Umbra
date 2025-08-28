@@ -18,3 +18,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Evelyn Owlbane
+  groupBy: "wearables"

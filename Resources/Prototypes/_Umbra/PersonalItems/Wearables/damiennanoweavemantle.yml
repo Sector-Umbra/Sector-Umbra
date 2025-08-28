@@ -42,3 +42,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Damien Nesuli
+  groupBy: "wearables"

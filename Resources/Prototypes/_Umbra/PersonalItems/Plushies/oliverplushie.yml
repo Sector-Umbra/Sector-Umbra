@@ -19,3 +19,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Oliver LaRue
+  groupBy: "plushies"

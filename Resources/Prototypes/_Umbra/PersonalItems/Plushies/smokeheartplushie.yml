@@ -19,3 +19,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Smoke Phillips
+  groupBy: "plushies"

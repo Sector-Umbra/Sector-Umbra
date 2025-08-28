@@ -22,5 +22,4 @@
     - Steals-The-Buckshot
     jobs:
     - JobChiefEngineer
-
-
+  groupBy: "wearables"

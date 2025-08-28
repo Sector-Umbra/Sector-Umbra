@@ -28,3 +28,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - June Mothe
+  groupBy: "wearables"

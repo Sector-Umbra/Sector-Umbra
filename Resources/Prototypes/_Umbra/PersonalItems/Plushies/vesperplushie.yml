@@ -19,3 +19,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Vesper
+  groupBy: "plushies"
