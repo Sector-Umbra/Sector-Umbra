@@ -22,3 +22,4 @@
     - Jalopy Oldman
     jobs:
     - JobHeadOfSecurity
+  groupBy: "wearables"

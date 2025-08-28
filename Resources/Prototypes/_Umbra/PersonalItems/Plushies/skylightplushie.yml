@@ -25,3 +25,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Angel Nightwish
+  groupBy: "plushies"

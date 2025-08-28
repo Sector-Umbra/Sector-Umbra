@@ -25,3 +25,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Skylight Mirth
+  groupBy: "plushies"

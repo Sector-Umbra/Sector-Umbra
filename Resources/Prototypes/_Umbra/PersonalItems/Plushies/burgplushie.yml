@@ -25,3 +25,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Only-Sees-Burgundy
+  groupBy: "plushies"

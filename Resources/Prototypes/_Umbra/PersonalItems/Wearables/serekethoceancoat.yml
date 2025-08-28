@@ -21,3 +21,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Sereketh Pallister II
+  groupBy: "wearables"

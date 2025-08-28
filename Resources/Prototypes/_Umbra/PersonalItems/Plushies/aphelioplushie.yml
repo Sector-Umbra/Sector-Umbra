@@ -25,3 +25,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Aphelio Kuiper
+  groupBy: "plushies"

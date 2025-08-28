@@ -28,3 +28,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Daniella Rose
+  groupBy: "wearables"

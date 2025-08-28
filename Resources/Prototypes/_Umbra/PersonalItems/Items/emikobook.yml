@@ -21,3 +21,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Emiko Sasaki
+  groupBy: "items"

@@ -33,3 +33,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Deeja-Wujeeta
+  groupBy: "wearables"
