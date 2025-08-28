@@ -13,7 +13,7 @@
     sprite: _Umbra/PersonalItems/Plushies/takoplushie.rsi
   - type: Clothing
     quickEquip: false
-    sprite: _Umbra/PersonalItems/Plushies/takoplushie.rsi
+    sprite: _Umbra/PersonalItems/Plushies/takoplushie_64.rsi
   - type: Appearance
   - type: Foldable
     canFoldInsideContainer: true
