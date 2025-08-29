@@ -292,12 +292,12 @@
 
 - type: loadout
   id: Cane
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobLibrarian
-      time: 3600 # 1hr same as Jamjar.
+  #effects:
+  #- !type:JobRequirementLoadoutEffect
+  #  requirement:
+  #    !type:RoleTimeRequirement
+  #    role: JobLibrarian
+  #    time: 3600 # 1hr same as Jamjar.
   storage:
     back:
     - Cane

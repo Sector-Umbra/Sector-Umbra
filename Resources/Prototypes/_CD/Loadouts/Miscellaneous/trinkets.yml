@@ -4,11 +4,11 @@
     back:
     - CDDogtags
 
-- type: loadout
-  id: Cane
-  storage:
-    back:
-    - Cane
+#- type: loadout
+#  id: Cane
+#  storage:
+#    back:
+#    - Cane
 
 - type: loadout
   id: MedCrutchesForearm
