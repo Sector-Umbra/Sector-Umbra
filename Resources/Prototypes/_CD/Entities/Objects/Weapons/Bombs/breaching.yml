@@ -73,6 +73,6 @@
       map: ["base"]
   - type: FlashOnTrigger
     range: 7
-  - type: SoundOnTrigger
+  - type: EmitSoundOnTrigger
     sound:
       path: "/Audio/Effects/flash_bang.ogg"
