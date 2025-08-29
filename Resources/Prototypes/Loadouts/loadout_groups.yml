@@ -3,22 +3,33 @@
   id: Trinkets
   name: loadout-group-trinkets
   minLimit: 0
-  maxLimit: 3
+  maxLimit: 5 # Moffstation - (Nox Loadout Improvements) - After all, why not?
   loadouts:
   - FlowerWreath
   - Hairflower
   - Headphones
   - PlushieLizard
   - PlushieSpaceLizard
-  - PlushieVox # CD
-  - PlushieArachind # CD
-  - PlushieDiona # CD
-  - PlushieHuman # CD
-  - PlushieMoth # CD
+  # Moffstation - Start - Expanded roundstart plushies!
+  - PlushieArachind
+  - PlushieAtmosian
   - PlushieAvali # Umbra
-  - PlushieSharkBlue # CD
-  - PlushieSharkPink # CD
-  - PlushieSharkGrey # CD: Putting these up here so they show up along the existing plushies.
+  - PlushieBee
+  - PlushieBorg
+  - PlushieCarp
+  - PlushieDiona
+  - PlushieExperiment
+  - PlushieHampter
+  - PlushieHuman
+  - PlushieMoth
+  - PlushiePenguin
+  - PlushieSharkBlue
+  - PlushieSharkGrey
+  - PlushieSharkPink
+  - PlushieSlime
+  - PlushieSnake
+  - PlushieVox
+  # Moffstation - End
   - ThreeCandles
   - Lighter
   - CigPackGreen
