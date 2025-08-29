@@ -693,7 +693,7 @@
             type: Feroxi
           factor: 2
         - !type:ModifyBloodLevel
-          amount: 6
+          amount: 0.5
 
 - type: reagent
   id: Siderlac
