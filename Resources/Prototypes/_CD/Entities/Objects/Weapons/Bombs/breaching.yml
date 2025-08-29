@@ -24,7 +24,20 @@
       components:
       - Item
       - Body
-  - type: OnUseTimerTrigger
+  - type: TriggerOnActivate
+  - type: TriggerOnSignal
+  - type: TriggerOnStuck
+    keyOut: stuck
+  - type: ToggleTriggerCondition
+    keys:
+    - stuck
+    toggleVerb: toggle-trigger-condition-stick-verb
+    toggleOn: toggle-trigger-condition-stick-on
+    toggleOff: toggle-trigger-condition-stick-off
+  - type: TimerTrigger
+    keysIn:
+    - trigger
+    - stuck
     delay: 3
     initialBeepDelay: 2.2
     beepInterval: 0.3
@@ -33,12 +46,9 @@
       params:
         volume: 4
         pitch: 1.8
-    startOnStick: true
-    canToggleStartOnStick: true
-  - type: TimerStartOnSignal
   - type: DeviceLinkSink
     ports:
-      - Timer
+      - Trigger
   - type: Explosive #Powerful explosion in an extremely small radius. Doesn't break underplating.
     explosionType: DemolitionCharge
     totalIntensity: 20
@@ -46,6 +56,8 @@
     maxIntensity: 30
     canCreateVacuum: false
   - type: ExplodeOnTrigger
+    keysIn:
+    - timer
 
 - type: entity
   parent: BreachingCharge
