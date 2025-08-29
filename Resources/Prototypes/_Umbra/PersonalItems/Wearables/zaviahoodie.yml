@@ -1,0 +1,22 @@
+# Player: Slugcta - Character: Aelvanni Zavia
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: PersonalItemZaviaHoodie
+  name: puffy maroon hoodie
+  description: A hoodie clearly coming from avali craftsmanship. It's soft, slightly puffy and pleasant to the eye. It looks awfully... Clean?
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Wearables/zaviahoodie.rsi
+  - type: Clothing
+    sprite: _Umbra/PersonalItems/Wearables/zaviahoodie.rsi
+
+- type: loadout
+  id: PersonalItemZaviaHoodie
+  storage:
+    back:
+    - PersonalItemZaviaHoodie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Aelvanni Zavia
