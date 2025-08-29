@@ -59,12 +59,6 @@
     path: /Audio/_Umbra/Jukebox/Meanwhile Back at the Saloon.ogg
 
 - type: jukebox
-  id: murderonthebayou
-  name: Bryan Teoh - Murder On The Bayou
-  path:
-    path: /Audio/_Umbra/Jukebox/Murder On The Bayou.ogg
-
-- type: jukebox
   id: dustsucker
   name: Jens Kiilstofte - Dustsucker
   path:
