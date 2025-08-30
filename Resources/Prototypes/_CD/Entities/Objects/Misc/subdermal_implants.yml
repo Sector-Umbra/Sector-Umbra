@@ -1,5 +1,5 @@
 - type: entity
-  parent: TrackingImplant
+  parent: [TrackingImplant, DeathRattleImplant]
   id: MedicalTrackingImplant
   name: medical tracking implant
   description: This implant has a tracking device attached to the suit sensor network, as well as a condition monitor for the Medical radio channel. Only rattles on the full death of the user.
@@ -8,5 +8,5 @@
     - type: TriggerOnMobstateChange
       mobState:
       - Dead
-    - type: Rattle
+    - type: RattleOnTrigger
       radioChannel: "Medical"
