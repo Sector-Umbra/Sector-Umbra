@@ -9,6 +9,7 @@
   storage:
     back:
     - MedCrutchesForearm
+  groupBy: "canes" # Umbra: Added Cane Grouping
 
 - type: loadout
   id: GoldRing
