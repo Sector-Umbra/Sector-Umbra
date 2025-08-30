@@ -84,7 +84,7 @@ public abstract class SharedWieldableSystem : EntitySystem
     private void OnShootAttempt(EntityUid uid, GunRequiresWieldComponent component, ref ShotAttemptedEvent args)
     {
         if (TryComp<WieldableComponent>(uid, out var wieldable) &&
-            !wieldable.Wielded && args.User != args.Used.Owner) // Moffstation - Add exception for when the user is the gun itself
+            !wieldable.Wielded)
         {
             args.Cancel();
 
