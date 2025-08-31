@@ -5,7 +5,7 @@
   description: trait-raisedbyarachnids-desc
   replaceComponents: true
   cost: 1
-  category: SpeechTraits
+  category: ReplacementSpeechTraits
   components:
     - type: Speech
       speechVerb: Arachnid
@@ -17,7 +17,7 @@
   description: trait-raisedbydiona-desc
   replaceComponents: true
   cost: 1
-  category: SpeechTraits
+  category: ReplacementSpeechTraits
   components:
     - type: Speech
       speechSounds: Alto
@@ -29,7 +29,7 @@
   description: trait-raisedbydwarfs-desc
   replaceComponents: true
   cost: 1
-  category: SpeechTraits
+  category: ReplacementSpeechTraits
   components:
     - type: Speech
       speechSounds: Bass
@@ -41,7 +41,7 @@
   description: trait-raisedbyhumans-desc
   replaceComponents: true
   cost: 1
-  category: SpeechTraits
+  category: ReplacementSpeechTraits
   components:
     - type: Speech
       speechSounds: Alto
@@ -53,7 +53,7 @@
   description: trait-raisedbymoths-desc
   replaceComponents: true
   cost: 1
-  category: SpeechTraits
+  category: ReplacementSpeechTraits
   components:
     - type: Speech
       speechSounds: Alto
@@ -65,7 +65,7 @@
   description: trait-raisedbyreptilians-desc
   replaceComponents: true
   cost: 1
-  category: SpeechTraits
+  category: ReplacementSpeechTraits
   components:
     - type: Speech
       speechSounds: Lizard
@@ -77,7 +77,7 @@
   description: trait-raisedbyslimes-desc
   replaceComponents: true
   cost: 1
-  category: SpeechTraits
+  category: ReplacementSpeechTraits
   components:
     - type: Speech
       speechVerb: Slime
@@ -89,7 +89,7 @@
   description: trait-raisedbyvox-desc
   replaceComponents: true
   cost: 1
-  category: SpeechTraits
+  category: ReplacementSpeechTraits
   components:
     - type: Speech
       speechVerb: Vox
@@ -101,8 +101,8 @@
   name: trait-arachnidvocals-name
   description: trait-arachnidvocals-desc
   replaceComponents: true
-  cost: 2
-  category: SpeechTraits
+  cost: 1
+  category: ReplacementSpeechTraits
   components:
     - type: Speech
       speechVerb: Arachnid
@@ -119,8 +119,8 @@
   name: trait-dionavocals-name
   description: trait-dionavocals-desc
   replaceComponents: true
-  cost: 2
-  category: SpeechTraits
+  cost: 1
+  category: ReplacementSpeechTraits
   components:
     - type: Speech
       speechSounds: Alto
@@ -136,8 +136,8 @@
   name: trait-dwarfvocals-name
   description: trait-dwarfvocals-desc
   replaceComponents: true
-  cost: 2
-  category: SpeechTraits
+  cost: 1
+  category: ReplacementSpeechTraits
   components:
     - type: Speech
       speechSounds: Bass
@@ -155,8 +155,8 @@
   name: trait-humanvocals-name
   description: trait-humanvocals-desc
   replaceComponents: true
-  cost: 2
-  category: SpeechTraits
+  cost: 1
+  category: ReplacementSpeechTraits
   components:
     - type: Speech
       speechSounds: Alto
@@ -172,8 +172,8 @@
   name: trait-mothvocals-name
   description: trait-mothvocals-desc
   replaceComponents: true
-  cost: 2
-  category: SpeechTraits
+  cost: 1
+  category: ReplacementSpeechTraits
   components:
     - type: MothAccent
     - type: Speech
@@ -191,8 +191,8 @@
   name: trait-reptilianvocals-name
   description: trait-reptilianvocals-desc
   replaceComponents: true
-  cost: 2
-  category: SpeechTraits
+  cost: 1
+  category: ReplacementSpeechTraits
   components:
     - type: LizardAccent
     - type: Speech
@@ -209,8 +209,8 @@
   name: trait-slimevocals-name
   description: trait-slimevocals-desc
   replaceComponents: true
-  cost: 2
-  category: SpeechTraits
+  cost: 1
+  category: ReplacementSpeechTraits
   components:
     - type: Speech
       speechVerb: Slime
@@ -227,8 +227,8 @@
   name: trait-voxvocals-name
   description: trait-voxvocals-desc
   replaceComponents: true
-  cost: 2
-  category: SpeechTraits
+  cost: 1
+  category: ReplacementSpeechTraits
   components:
     - type: Speech
       speechVerb: Vox
