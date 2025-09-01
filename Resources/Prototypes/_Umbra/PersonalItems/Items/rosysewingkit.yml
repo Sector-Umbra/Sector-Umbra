@@ -8,12 +8,16 @@
   components:
   - type: Sprite
     sprite: _Umbra/PersonalItems/Items/rosysewingkit.rsi
+    state: icon
   - type: Item
     size: Normal
     sprite: _Umbra/PersonalItems/Items/rosysewingkit.rsi
 
 - type: loadout
   id: PersonalItemRosySewkit
+  storage:
+    back:
+    - PersonalItemRosySewkit
   effects:
   - !type:PersonalItemLoadoutEffect
     character:
