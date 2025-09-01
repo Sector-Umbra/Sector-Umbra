@@ -5,16 +5,11 @@
     - CDDogtags
 
 - type: loadout
-  id: Cane
-  storage:
-    back:
-    - Cane
-
-- type: loadout
   id: MedCrutchesForearm
   storage:
     back:
     - MedCrutchesForearm
+  groupBy: "canes" # Umbra: Added Cane Grouping
 
 - type: loadout
   id: GoldRing
