@@ -1,0 +1,18 @@
+# Player: SadieSilly - Character: Rosy Dayflutter
+- type: entity
+  name: Sewing kit
+  parent: BaseItem
+  id: PersonalItemRosySewkit
+  description: A basic sewing kit, useful for repairing plushies, coats, and other various cloth items.
+  suffix: PersonalItem
+  components:
+  - type: Item
+    size: Medium
+    sprite: _Umbra/PersonalItems/Items/rosysewingkit.rsi
+
+- type: loadout
+  id: PersonalItemRosySewkit
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Rosy Dayflutter
