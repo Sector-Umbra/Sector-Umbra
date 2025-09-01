@@ -1,5 +1,4 @@
 using System.Numerics;
-using Content.Shared._Moffstation.Weapons.Ranged.Components; // Moffstation
 using Content.Shared.Weapons.Ranged.Events;
 using Content.Shared.Weapons.Ranged.Systems;
 using Robust.Shared.Audio;
@@ -265,10 +264,7 @@ public sealed partial class GunComponent : Component
     [DataField]
     public Vector2 DefaultDirection = new Vector2(0, -1);
 
-    // Moffstation - Start - Gun Recoil Kick
-    [DataField]
-    public RecoilKick? RecoilKick;
-
+    // Moffstation - Start - Accidental discharge
     /// <summary>
     /// Odds that the gun will fire upon landing on the ground
     /// </summary>
