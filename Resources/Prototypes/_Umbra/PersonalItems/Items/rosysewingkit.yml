@@ -6,8 +6,10 @@
   description: A basic sewing kit, useful for repairing plushies, coats, and other various cloth items.
   suffix: PersonalItem
   components:
+  - type: Sprite
+    sprite: _Umbra/PersonalItems/Items/rosysewingkit.rsi
   - type: Item
-    size: Medium
+    size: Normal
     sprite: _Umbra/PersonalItems/Items/rosysewingkit.rsi
 
 - type: loadout
