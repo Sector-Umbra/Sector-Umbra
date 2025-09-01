@@ -1,29 +1,7 @@
-- type: Tag
-  id: DockEmergencyPod
-
+# Moffstation - Begin (Survival Box Improvements)
 - type: Tag
   id: SurvivalBoxInsertable
-
-- type: Tag
-  id: CartridgeBigIron
-
-- type: Tag
-  id: SpeedLoaderBigIron
-
-- type: Tag
-  id: Pirate
-
-# Pirate bounty objectives
-
-- type: Tag
-  id: Nuke
-
-- type: Tag
-  id: Chefware
-
-#Revert machine parts
-- type: Tag
-  id: CapacitorStockPart
+# Moffstation - End
 
 - type: Tag
   id: SunglassesCheap
