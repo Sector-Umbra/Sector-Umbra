@@ -34,19 +34,24 @@
             Librarian: [ 1, 1 ]
             ServiceWorker: [ 2, 2 ]
             #engineering (5)
+            SeniorEngineer: [ 1, 1 ]
             AtmosphericTechnician: [ 2, 2 ]
             StationEngineer: [ 3, 3 ]
             TechnicalAssistant: [ 2, 2 ] #intern, not counted
             #medical (6)
+            SeniorPhysician: [ 1, 1 ] # UMBRA
             Chemist: [ 2, 2 ]
             MedicalDoctor: [ 3, 3 ]
             Paramedic: [ 1, 1 ]
             MedicalIntern: [ 2, 2 ] #intern, not counted
+            Psychologist: [ 1, 1 ] # UMBRA
             #science (4)
+            SeniorResearcher: [ 1, 1 ] # UMBRA
             Scientist: [ 4, 4 ]
             ResearchAssistant: [ 2, 2 ] #intern, not counted
             #security (7)
             Warden: [ 1, 1 ]
+            SeniorOfficer: [ 1, 1 ] # UMBRA
             SecurityOfficer: [ 4, 4 ]
             Detective: [ 1, 1 ]
             SecurityCadet: [ 2, 2 ] #intern, not counted
