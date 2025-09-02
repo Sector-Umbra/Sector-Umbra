@@ -1,0 +1,38 @@
+# Player: MissKay1994 - Character: Rekascreva
+- type: entity
+  name: Reka's tablet
+  parent: BaseItem
+  id: PersonalItemRekaTablet
+  description: A worn tablet with a strange symbol on the bottom right.
+  suffix: PersonalItem
+  components:
+    - type: Sprite
+      sprite: _Umbra/PersonalItems/Items/rekatablet.rsi
+      layers:
+        - state: icon
+        - state: icon-on
+          visible: false
+    - type: Appearance
+    - type: ItemToggle
+      soundActivate:
+        path: /Audio/Items/pen_click.ogg
+        params:
+          volume: -6
+      soundDeactivate:
+        path: /Audio/Items/pen_click.ogg
+        params:
+          volume: -6
+    - type: UseDelay
+      delay: 1
+      size: Small
+      sprite: _Umbra/PersonalItems/Items/rekatablet.rsi
+
+- type: loadout
+  id: PersonalItemRekaTablet
+  storage:
+    back:
+      - PersonalItemRekaTablet
+  effects:
+    - !type:PersonalItemLoadoutEffect
+      character:
+        - Rekascreva
