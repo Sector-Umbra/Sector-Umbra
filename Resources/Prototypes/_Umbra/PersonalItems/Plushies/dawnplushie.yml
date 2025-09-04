@@ -1,0 +1,27 @@
+# Player: TheNubMuffin - Character: Dawn Nightflitter
+- type: entity
+  parent: PlushieMoth
+  id: PersonalItemDawnPlushie
+  name: Dawn plushie
+  description: A fuzzy pocket sized Dawn plushie for all your moth hugging needs.
+  suffix: PersonalItem
+  components:
+  - type: Sprite
+    state: plushie_dawn
+    sprite: _Umbra/PersonalItems/Plushies/dawnplushie.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _Umbra/PersonalItems/Plushies/dawnplushie.rsi
+    equippedPrefix: dawn
+    slots:
+    - HEAD
+
+- type: loadout
+  id: PersonalItemDawnPlushie
+  storage:
+    back:
+    - PersonalItemDawnPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - Dawn Nightflitter
