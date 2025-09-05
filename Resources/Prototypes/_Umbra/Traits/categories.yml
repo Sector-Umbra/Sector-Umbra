@@ -1,0 +1,4 @@
+- type: traitCategory
+  id: ReplacementSpeechTraits
+  name: trait-category-replacement-speech
+  maxTraitPoints: 1
