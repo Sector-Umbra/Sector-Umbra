@@ -6,6 +6,7 @@
   - type: Clickable
   - type: InteractionOutline
   - type: MovementIgnoreGravity
+    weightless: true
   - type: Sprite
     sprite: Objects/Fun/immovable_rod.rsi
     state: icon
@@ -15,6 +16,7 @@
     damage: # Umbra
       types:
         Piercing: 300
+  - type: GravityAffected
   - type: Physics
     bodyType: Dynamic
     linearDamping: 0
@@ -82,8 +84,6 @@
     damage:
       types:
         Blunt: 190
-  - type: MovementIgnoreGravity
-    gravityState: true
   - type: InputMover
   - type: MovementSpeedModifier
     baseWeightlessAcceleration: 5
