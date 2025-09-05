@@ -4,6 +4,7 @@
   id: PersonalItemEmikoBook
   name: Prophet of Pyrimov
   description: The cover is a weathered, light blue cloth, its fabric fraying and damaged. At the center, a small planet is depicted, with a single purple flower growing from behind it.
+  suffix: PersonalItem
   components:
   - type: Sprite
     sprite: _Umbra/PersonalItems/Items/emikobook.rsi

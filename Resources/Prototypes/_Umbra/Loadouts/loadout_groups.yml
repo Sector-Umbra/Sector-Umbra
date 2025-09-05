@@ -93,9 +93,11 @@
   - PersonalItemOnyxRing
   - PersonalItemLutlaRing
   - PersonalItemJaytauBook
-  - PersonalItemMindokDrillHat
   - PersonalItemCarlosWornJacket
   - PersonalItemAlexiJacket
+  - PersonalItemZaviaHoodie
+  - PersonalItemRosySewkit
+  - PersonalItemDawnPlushie
 
 # Plasmamen
 - type: loadoutEffectGroup
