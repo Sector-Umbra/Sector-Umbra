@@ -33,3 +33,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Attacus Fischer
+  groupBy: "items"

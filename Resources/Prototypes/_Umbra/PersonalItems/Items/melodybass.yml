@@ -28,3 +28,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Melody Moon
+  groupBy: "items"

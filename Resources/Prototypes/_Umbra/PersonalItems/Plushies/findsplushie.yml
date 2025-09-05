@@ -25,3 +25,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Finds-The-Treasure
+  groupBy: "plushies"

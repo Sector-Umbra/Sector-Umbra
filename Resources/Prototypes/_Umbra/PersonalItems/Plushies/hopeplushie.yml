@@ -25,3 +25,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Sparks-Of-Hope
+  groupBy: "plushies"

@@ -46,3 +46,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Fateseeker
+  groupBy: "items"

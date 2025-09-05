@@ -27,3 +27,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Corinne Coley
+  groupBy: "plushies"
