@@ -82,7 +82,8 @@ namespace Content.IntegrationTests.Tests
             "dm01-entryway",
             "Prime", // Harmony
             "Iris", // Umbra
-			"Wonderland" //	Umbra
+			"Wonderland", // Umbra
+            "Omega", // Harmony, updated from Spanky's version by OrnamentalFreak and CrimsonJupiter
         };
 
         // UMBRA: We need to be able to mark non-upstream maps as not tested.
