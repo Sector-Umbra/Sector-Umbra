@@ -9,7 +9,7 @@
     - id: EmergencyWaterVaporTankFilled
     - id: EmergencyMedipen
     - id: Flare
-    - id: FoodSnackNutribrick
+    - id: BookHowToSurvive # Umbra - Feroxi Emergency Boxes - Moffstation - Chefs rejoice, Nutribrick removed
     - id: DrinkWaterBottleFull
   - type: Label
     currentLabel: reagent-name-water
@@ -25,7 +25,7 @@
     - id: ExtendedEmergencyWaterVaporTankFilled
     - id: EmergencyMedipen
     - id: Flare
-    - id: FoodSnackNutribrick
+    - id: BookHowToSurvive # Umbra - Feroxi Emergency Boxes - Moffstation - Chefs rejoice, Nutribrick removed
     - id: DrinkWaterBottleFull
   - type: Label
     currentLabel: reagent-name-water
@@ -41,7 +41,7 @@
     - id: EmergencyWaterVaporTankFilled
     - id: EmergencyMedipen
     - id: Flare
-    - id: FoodSnackNutribrick
+    - id: BookHowToSurvive # Umbra - Feroxi Emergency Boxes - Moffstation - Chefs rejoice, Nutribrick removed
     - id: DrinkWaterBottleFull
   - type: Label
     currentLabel: reagent-name-water
@@ -57,7 +57,7 @@
     - id: EmergencyWaterVaporTankFilled
     - id: EmergencyMedipen
     - id: Flare
-    - id: FoodSnackNutribrick
+    - id: BookHowToSurvive # Umbra - Feroxi Emergency Boxes - Moffstation - Chefs rejoice, Nutribrick removed
     - id: DrinkWaterBottleFull
   - type: Label
     currentLabel: reagent-name-water
@@ -73,7 +73,7 @@
     - id: EmergencyWaterVaporTankFilled
     - id: EmergencyMedipen
     - id: Flare
-    - id: FoodSnackNutribrick
+    - id: BookHowToSurvive # Umbra - Feroxi Emergency Boxes - Moffstation - Chefs rejoice, Nutribrick removed
     - id: DrinkWaterBottleFull
   - type: Label
     currentLabel: reagent-name-water
@@ -88,7 +88,7 @@
     - id: EmergencyWaterVaporTankFilled
     - id: EmergencyMedipen
     - id: Flare
-    - id: FoodBreadBaguette
+    - id: BookHowToSurvive # Umbra - Feroxi Emergency Boxes - Moffstation - Chefs rejoice, Nutribrick removed
     - id: DrinkWaterBottleFull
   - type: Label
     currentLabel: reagent-name-water
@@ -103,7 +103,7 @@
     - id: ClothingMaskGasSyndicate
     - id: ExtendedEmergencyWaterVaporTankFilled
     - id: EmergencyMedipen
-    - id: FoodSnackNutribrick
+    - id: BookHowToSurvive # Umbra - Feroxi Emergency Boxes - Moffstation - Chefs rejoice, Nutribrick removed
     - id: DrinkWaterBottleFull
   - type: Label
     currentLabel: reagent-name-water

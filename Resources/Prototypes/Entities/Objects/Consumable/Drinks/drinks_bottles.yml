@@ -633,6 +633,12 @@
   - type: Sprite
     sprite: Objects/Consumable/Drinks/colabottle.rsi
   - type: Sealable
+  # Moffstation - Begin (Survival Box Improvements)
+  - type: Tag
+    tags:
+    - SurvivalBoxInsertable
+    - DrinkBottle
+  # Moffstation - End
 
 - type: entity
   parent: [DrinkBottleVisualsAll, DrinkBottlePlasticBaseFull]
@@ -727,6 +733,12 @@
   - type: Label
     currentLabel: reagent-name-water
   - type: Sealable
+  # Moffstation - Begin (Survival Box Improvement Fixes)
+  - type: Tag
+    tags:
+    - SurvivalBoxInsertable
+    - DrinkCup
+  # Moffstation - End
 
 - type: entity
   parent: [DrinkBottleVisualsAll, DrinkBottleGlassSmallBaseFull]
