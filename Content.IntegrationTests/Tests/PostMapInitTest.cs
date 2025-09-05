@@ -82,7 +82,7 @@ namespace Content.IntegrationTests.Tests
             "dm01-entryway",
             "Prime", // Harmony
             "Iris", // Umbra
-			"Wonderland", //	Umbra
+			"Wonderland", // Umbra
             "Omega", // Harmony, updated from Spanky's version by OrnamentalFreak and CrimsonJupiter
         };
 
