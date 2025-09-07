@@ -17,6 +17,7 @@
           emergencyShuttlePath: /Maps/Shuttles/emergency_omega.yml
         - type: StationJobs
           availableJobs: # 48 jobs total w/o latejoins & interns, 57 jobs total w/ latejoins & interns
+            # Umbra: Umbra Jobs - 53 total w/o late joins & interns, 62 total jobs w/ latejoins & interns
             #command (7)
             Captain: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
@@ -33,23 +34,23 @@
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
             ServiceWorker: [ 2, 2 ]
-            #engineering (5)
+            #engineering (5) # Umbra (6)
             SeniorEngineer: [ 1, 1 ] # Umbra: CD Roles
             AtmosphericTechnician: [ 2, 2 ]
             StationEngineer: [ 3, 3 ]
             TechnicalAssistant: [ 2, 2 ] #intern, not counted
-            #medical (6)
+            #medical (6) # Umbra (7)
             SeniorPhysician: [ 1, 1 ] # Umbra: CD Roles
             Chemist: [ 2, 2 ]
             MedicalDoctor: [ 3, 3 ]
             Paramedic: [ 1, 1 ]
             MedicalIntern: [ 2, 2 ] #intern, not counted
             Psychologist: [ 1, 1 ] # Umbra: Added Psychologist
-            #science (4)
+            #science (4) # Umbra (5)
             SeniorResearcher: [ 1, 1 ] # Umbra: CD Roles
             Scientist: [ 4, 4 ]
             ResearchAssistant: [ 2, 2 ] #intern, not counted
-            #security (7)
+            #security (7) # Umbra (8)
             Warden: [ 1, 1 ]
             SeniorOfficer: [ 1, 1 ] # Umbra: CD Roles
             SecurityOfficer: [ 4, 4 ]
