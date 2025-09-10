@@ -22,3 +22,4 @@
     - Jalopy Oldman
     jobs:
     - JobDetective
+  groupBy: "wearables"

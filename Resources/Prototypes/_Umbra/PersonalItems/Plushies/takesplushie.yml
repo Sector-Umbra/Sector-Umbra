@@ -25,3 +25,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Takes-Great-Risk
+  groupBy: "plushies"

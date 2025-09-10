@@ -1,0 +1,18 @@
+# Players: None - Character: None
+- type: entity
+  parent: BookBase
+  id: PersonalItemCategoryItem
+  name: Personal Items
+  description: An item perfect for organizing.
+  suffix: PersonalItem
+
+- type: loadout
+  id: PersonalItemCategoryItem
+  storage:
+    back:
+    - PersonalItemCategoryItem
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - None
+  groupBy: "items"

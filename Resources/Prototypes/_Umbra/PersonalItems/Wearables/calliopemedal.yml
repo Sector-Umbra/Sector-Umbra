@@ -20,3 +20,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Calliope Rosewell
+  groupBy: "wearables"

@@ -23,3 +23,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Annie LaRue
+  groupBy: "wearables"

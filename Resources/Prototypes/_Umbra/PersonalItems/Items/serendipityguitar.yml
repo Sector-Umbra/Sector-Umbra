@@ -33,3 +33,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Serendipity Bluewing
+  groupBy: "items"

@@ -1,0 +1,18 @@
+# Player: None - Character: None
+- type: entity
+  parent: PlushieLizard
+  id: PersonalItemCategoryPlushie
+  name: Personal Plushies
+  description: A lizard plushie perfect for sorting
+  suffix: PersonalItem
+
+- type: loadout
+  id: PersonalItemCategoryPlushie
+  storage:
+    back:
+    - PersonalItemCategoryPlushie
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - None
+  groupBy: "plushies"

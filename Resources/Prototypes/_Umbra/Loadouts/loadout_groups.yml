@@ -13,6 +13,9 @@
   minLimit: 0
   maxLimit: 2
   loadouts:
+  - PersonalItemCategoryPlushie
+  - PersonalItemCategoryWearables
+  - PersonalItemCategoryItem
   - PersonalItemDeejaArtifactNecklace
   - PersonalItemFrostbiteCoat
   - PersonalItemDeejaPlushie
