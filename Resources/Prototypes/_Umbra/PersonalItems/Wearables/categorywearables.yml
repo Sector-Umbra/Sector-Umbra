@@ -1,0 +1,18 @@
+# Player: None - Character: None
+- type: entity
+  parent: ClothingUniformJumpsuitAncient
+  id: PersonalItemCategoryWearables
+  name: Personal Wearables
+  description: This item seems to only want to be arranged
+  suffix: PersonalItem
+
+- type: loadout
+  id: PersonalItemCategoryWearables
+  storage:
+    back:
+    - PersonalItemCategoryWearables
+  effects:
+  - !type:PersonalItemLoadoutEffect
+    character:
+    - None
+  groupBy: "wearables"
