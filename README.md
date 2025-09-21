@@ -1,16 +1,20 @@
+# PROJECT SHUTDOWN 22nd OF SEPTEMBER 2025
+
+Thank you for the amazing times we had together.
+
 <p align="center"> <img alt="Sector Umbra Logo" height="150" src="https://raw.githubusercontent.com/Sector-Umbra/Sector-Umbra/refs/heads/master/Resources/Textures/Logo/logo.png" /></p>
 
-Sector Umbra is a fork of Space Station 14, a remake of SS13 that runs on [Robust Toolbox](https://github.com/space-wizards/RobustToolbox).
+Sector Umbra was a fork of Space Station 14, a remake of SS13 that runs on [Robust Toolbox](https://github.com/space-wizards/RobustToolbox).
 
 This is the primary repository for Sector Umbra, other related repositories are hosted under the Sector-Umbra github organisation account.
 
 ## Links
 
-[Website](https://sector-umbra.net/) | [Wiki](https://wiki.sector-umbra.net/) | [Latest Builds](https://sector-umbra.net/cdn/fork/sectorumbra/)
+[Website](https://sector-umbra.net/)
 
 ## Contributing
 
-We are happy to accept contributions from anybody and our existing contributors are eager to help where necessary!
+We are no longer accepting contributions.
 
 ## Building
 
