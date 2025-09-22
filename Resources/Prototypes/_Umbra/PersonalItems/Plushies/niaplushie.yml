@@ -19,3 +19,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Esther Scarlet
+  groupBy: "plushies"

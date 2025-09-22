@@ -32,3 +32,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Kai
+  groupBy: "plushies"

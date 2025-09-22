@@ -24,3 +24,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - John Morwood
+  groupBy: "wearables"

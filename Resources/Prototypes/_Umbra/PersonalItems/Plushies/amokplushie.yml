@@ -25,3 +25,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Buries-the-Hatchet
+  groupBy: "plushies"

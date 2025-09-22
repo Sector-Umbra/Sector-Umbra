@@ -25,3 +25,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Omi Actias
+  groupBy: "plushies"

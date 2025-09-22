@@ -78,3 +78,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Walks-The-Graves
+  groupBy: "plushies"

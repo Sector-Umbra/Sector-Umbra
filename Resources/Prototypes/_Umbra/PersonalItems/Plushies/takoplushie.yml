@@ -32,3 +32,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Tako-Ja
+  groupBy: "plushies"

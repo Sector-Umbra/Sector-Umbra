@@ -38,3 +38,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Erikrax
+  groupBy: "plushies"

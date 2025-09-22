@@ -27,3 +27,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Gar-Tei
+  groupBy: "plushies"

@@ -40,3 +40,4 @@
   - !type:PersonalItemLoadoutEffect
     character:
     - Michael LaRue
+  groupBy: "items"
